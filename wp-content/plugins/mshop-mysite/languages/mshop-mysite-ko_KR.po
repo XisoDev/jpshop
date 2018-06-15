@@ -1,0 +1,150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 엠샵 마이사이트\n"
+"POT-Creation-Date: 2017-02-21 09:49+0900\n"
+"PO-Revision-Date: 2017-02-21 09:49+0900\n"
+"Last-Translator: Alan <alan@codemstory.com>\n"
+"Language-Team: Alan <alan@codemstory.com>\n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: mshop-mysite.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin/class-msov-admin.php:14
+msgid "엠샵 마이사이트"
+msgstr "엠샵 마이사이트"
+
+#: includes/admin/setting-manager/mshop-setting-helper.php:56
+msgid "비회원"
+msgstr "비회원"
+
+#: includes/admin/settings/class-msov-settings.php:34
+msgid "엠샵 웹사이트 소유권 인증"
+msgstr "엠샵 웹사이트 소유권 인증"
+
+#: includes/admin/settings/class-msov-settings.php:39
+msgid "웹사이트 소유권 인증 기능 사용"
+msgstr "웹사이트 소유권 인증 기능 사용"
+
+#: includes/admin/settings/class-msov-settings.php:43
+#: includes/admin/settings/class-msov-settings.php:107
+msgid "활성화"
+msgstr "활성화"
+
+#: includes/admin/settings/class-msov-settings.php:47
+msgid "웹사이트 소유권 인증 기능을 사용합니다."
+msgstr "웹사이트 소유권 인증 기능을 사용합니다."
+
+#: includes/admin/settings/class-msov-settings.php:53
+msgid "파라미터 설정"
+msgstr "파라미터 설정"
+
+#: includes/admin/settings/class-msov-settings.php:70
+msgid "검색엔진"
+msgstr "검색엔진"
+
+#: includes/admin/settings/class-msov-settings.php:74
+msgid "검색엔진을 선택하세요."
+msgstr "검색엔진을 선택하세요."
+
+#: includes/admin/settings/class-msov-settings.php:76
+#: includes/admin/settings/class-msov-settings.php:141
+msgid "구글(Google)"
+msgstr "구글(Google)"
+
+#: includes/admin/settings/class-msov-settings.php:77
+#: includes/admin/settings/class-msov-settings.php:143
+msgid "네이버(Naver)"
+msgstr "네이버(Naver)"
+
+#: includes/admin/settings/class-msov-settings.php:78
+msgid "빙(Bing)"
+msgstr "빙(Bing)"
+
+#: includes/admin/settings/class-msov-settings.php:79
+msgid "야후(Yahoo)"
+msgstr "야후(Yahoo)"
+
+#: includes/admin/settings/class-msov-settings.php:85
+msgid "컨텐츠"
+msgstr "컨텐츠"
+
+#: includes/admin/settings/class-msov-settings.php:87
+#: includes/admin/settings/class-msov-settings.php:152
+msgid "키값을 입력하세요."
+msgstr "키값을 입력하세요."
+
+#: includes/admin/settings/class-msov-settings.php:99
+msgid "광고 전환 추적"
+msgstr "광고 전환 추적"
+
+#: includes/admin/settings/class-msov-settings.php:103
+msgid "전환 추적 기능 사용"
+msgstr "전환 추적 기능 사용"
+
+#: includes/admin/settings/class-msov-settings.php:111
+msgid "전환 추적 기능을 사용합니다."
+msgstr "전환 추적 기능을 사용합니다."
+
+#: includes/admin/settings/class-msov-settings.php:117
+msgid "아이디 설정"
+msgstr "아이디 설정"
+
+#: includes/admin/settings/class-msov-settings.php:134
+msgid "광고매체"
+msgstr "광고매체"
+
+#: includes/admin/settings/class-msov-settings.php:139
+msgid "광고매체를 선택하세요."
+msgstr "광고매체를 선택하세요."
+
+#: includes/admin/settings/class-msov-settings.php:142
+msgid "페이스북(Facebook)"
+msgstr "페이스북(Facebook)"
+
+#: includes/admin/settings/class-msov-settings.php:150
+msgid "아이디"
+msgstr "아이디"
+
+#. Plugin Name of the plugin/theme
+msgid "MSHOP MY SITE – Easy Website Verify Ownership"
+msgstr "MSHOP MY SITE – Easy Website Verify Ownership"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.codemshop.com/"
+msgstr "http://www.codemshop.com/"
+
+#. Description of the plugin/theme
+msgid "Site Owner Verification Plugin for Google, Naver Search Engine Site Register"
+msgstr "구글, 네이버 검색엔진 등록을 위한 웹사이트 소유권 확인 플러그인"
+
+#. Author of the plugin/theme
+msgid "CodeMShop"
+msgstr "CodeMShop"
+
+#. Author URI of the plugin/theme
+msgid "http://www.codemshop.com"
+msgstr "http://www.codemshop.com"
+
+#~ msgid "엠샵 웹사이트 소유권인증"
+#~ msgstr "엠샵 웹사이트 소유권인증"
+
+#~ msgid "웹사이트 소유권인증 기능 사용"
+#~ msgstr "웹사이트 소유권인증 기능 사용"
+
+#~ msgid "웹사이트 소유권인증 기능 사용을 사용합니다."
+#~ msgstr "웹사이트 소유권인증 기능 사용을 사용합니다."
+
+#~ msgid "Content"
+#~ msgstr "컨텐츠"
+
+#~ msgid "MShop MySite"
+#~ msgstr "엠샵 마이사이트"

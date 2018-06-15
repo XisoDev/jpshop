@@ -1,0 +1,150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MSHOP MY SITE – Easy Website Verify Ownership\n"
+"POT-Creation-Date: 2017-10-13 16:40+0900\n"
+"PO-Revision-Date: 2017-10-13 16:41+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.13\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: mshop-mysite.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin/class-msov-admin-dashboard.php:16
+msgid "엠샵 마이사이트 공지사항"
+msgstr "MShop MySite Notice"
+
+#: includes/admin/class-msov-admin-dashboard.php:65
+msgid "등록된 공지사항이 없습니다."
+msgstr "There are no registered notice."
+
+#: includes/admin/class-msov-admin.php:14
+msgid "엠샵 마이사이트"
+msgstr "MShop MySite"
+
+#: includes/admin/setting-manager/mshop-setting-helper.php:56
+msgid "비회원"
+msgstr "Guest"
+
+#: includes/admin/settings/class-msov-settings.php:34
+msgid "엠샵 웹사이트 소유권 인증"
+msgstr "MShop Website Verify Ownership"
+
+#: includes/admin/settings/class-msov-settings.php:39
+msgid "웹사이트 소유권 인증 기능 사용"
+msgstr "Enable Website Verify Ownership"
+
+#: includes/admin/settings/class-msov-settings.php:43
+#: includes/admin/settings/class-msov-settings.php:107
+msgid "활성화"
+msgstr "Enable"
+
+#: includes/admin/settings/class-msov-settings.php:47
+msgid "웹사이트 소유권 인증 기능을 사용합니다."
+msgstr "Use website verify ownership function."
+
+#: includes/admin/settings/class-msov-settings.php:53
+msgid "파라미터 설정"
+msgstr "Parameter Setting"
+
+#: includes/admin/settings/class-msov-settings.php:70
+msgid "검색엔진"
+msgstr "Search Engine"
+
+#: includes/admin/settings/class-msov-settings.php:74
+msgid "검색엔진을 선택하세요."
+msgstr "Select Search Engine."
+
+#: includes/admin/settings/class-msov-settings.php:76
+msgid "구글(Google)"
+msgstr "Google"
+
+#: includes/admin/settings/class-msov-settings.php:77
+#: includes/admin/settings/class-msov-settings.php:144
+msgid "네이버(Naver)"
+msgstr "Naver"
+
+#: includes/admin/settings/class-msov-settings.php:78
+msgid "빙(Bing)"
+msgstr "Bing"
+
+#: includes/admin/settings/class-msov-settings.php:79
+msgid "야후(Yahoo)"
+msgstr "Yahoo"
+
+#: includes/admin/settings/class-msov-settings.php:85
+msgid "컨텐츠"
+msgstr "Content"
+
+#: includes/admin/settings/class-msov-settings.php:87
+#: includes/admin/settings/class-msov-settings.php:152
+msgid "키값을 입력하세요."
+msgstr "Input Meta Key value."
+
+#: includes/admin/settings/class-msov-settings.php:99
+msgid "광고 전환 추적"
+msgstr "Advertising Conversion Tracking"
+
+#: includes/admin/settings/class-msov-settings.php:103
+msgid "전환 추적 기능 사용"
+msgstr "Enable Advertising Conversion Tracking"
+
+#: includes/admin/settings/class-msov-settings.php:111
+msgid "전환 추적 기능을 사용합니다."
+msgstr "Use Advertising conversion tracking function."
+
+#: includes/admin/settings/class-msov-settings.php:117
+msgid "아이디 설정"
+msgstr "ID Setting"
+
+#: includes/admin/settings/class-msov-settings.php:134
+msgid "광고매체"
+msgstr "Advertising media"
+
+#: includes/admin/settings/class-msov-settings.php:139
+msgid "광고매체를 선택하세요."
+msgstr "Choose your Advertising media."
+
+#: includes/admin/settings/class-msov-settings.php:141
+msgid "구글(광고 전환 추적)"
+msgstr "Google(advertising Conversion tracking)"
+
+#: includes/admin/settings/class-msov-settings.php:142
+msgid "구글(애널리틱스)"
+msgstr "Google(analytics)"
+
+#: includes/admin/settings/class-msov-settings.php:143
+msgid "페이스북(Facebook)"
+msgstr "Facebook"
+
+#: includes/admin/settings/class-msov-settings.php:150
+msgid "아이디"
+msgstr "ID"
+
+#. Plugin Name of the plugin/theme
+msgid "MSHOP MY SITE – Easy Website Verify Ownership"
+msgstr "MSHOP MY SITE – Easy Website Verify Ownership"
+
+#. Description of the plugin/theme
+msgid ""
+"Site Owner Verification Plugin for Google, Naver Search Engine Site Register."
+msgstr ""
+"Site Owner Verification Plugin for Google, Naver Search Engine Site Register"
+
+#. Author of the plugin/theme
+msgid "CodeMShop"
+msgstr "CodeMShop"
+
+#. Author URI of the plugin/theme
+msgid "www.codemshop.com"
+msgstr "www.codemshop.com"

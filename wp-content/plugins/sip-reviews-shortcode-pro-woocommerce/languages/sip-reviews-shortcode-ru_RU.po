@@ -1,0 +1,262 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SIP Reviews Shortcode for WooCommerce Pro\n"
+"POT-Creation-Date: 2015-11-04 19:36+0500\n"
+"PO-Revision-Date: 2015-11-04 19:56+0500\n"
+"Last-Translator: Hafiz Usman <hmubest11@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:111
+#: admin/class-sip-reviews-shortcode-wc-admin.php:259
+msgid "Settings"
+msgstr "настройки"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:114
+msgid "Docs"
+msgstr "документы"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:128
+msgid "SIP Plugin Panel"
+msgstr "SIP Plugin Panel"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:129
+msgid "SIP Plugins"
+msgstr "SIP Plugins"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:176
+#: admin/class-sip-reviews-shortcode-wc-admin.php:177
+msgid "Reviews Shortcode"
+msgstr "Reviews Shortcode"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:231
+msgid "Shopitpress extras"
+msgstr "Shopitpress extras"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:233
+msgid "Plugins"
+msgstr "Плагины"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:234
+msgid "Themes"
+msgstr "Темы"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:256
+msgid "Sip Reviews Shortcode for Woocommerce"
+msgstr "Sip Reviews Shortcode for Woocommerce"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:260
+msgid "Help"
+msgstr "Помогите"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:26
+msgid "Custom Color Settings"
+msgstr "Пользовательские настройки цвета"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:33
+msgid "Save Color"
+msgstr "Сохранить цвет"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:85
+#: public/class-sip-reviews-shortcode-wc-public.php:81
+msgid "Review stars"
+msgstr "Обзор звезды"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:92
+#: public/class-sip-reviews-shortcode-wc-public.php:88
+msgid "Reviews bar summary"
+msgstr "Отзывы краткое бар"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:99
+#: public/class-sip-reviews-shortcode-wc-public.php:95
+msgid "Review background"
+msgstr "Обзор фон"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:106
+#: public/class-sip-reviews-shortcode-wc-public.php:102
+msgid "Review body text"
+msgstr "Текст тела отзыв"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:113
+#: public/class-sip-reviews-shortcode-wc-public.php:109
+msgid "Review title"
+msgstr "заголовок обзора"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:120
+#: public/class-sip-reviews-shortcode-wc-public.php:116
+msgid "Load more button background"
+msgstr "Загрузите больше фон кнопки"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:128
+#: public/class-sip-reviews-shortcode-wc-public.php:124
+msgid "Load more button text"
+msgstr "Загрузите больше текст кнопки"
+
+#: admin/partials/ui/affiliate.php:2
+msgid "Be awesome"
+msgstr "Будь офигенным"
+
+#: admin/partials/ui/affiliate.php:3
+msgid ""
+"Do you like this plugin? Would you like to see even more great features? "
+"Please be awesome and help us maintain and develop free plugins by checking "
+"the option below"
+msgstr ""
+"Вам нравится этот плагин ? Вы хотели бы видеть еще более большие "
+"возможности ? Пожалуйста, удивительным и помочь нам поддерживать и "
+"развивать бесплатные плагины , проверяя ниже вариант"
+
+#: admin/partials/ui/affiliate.php:8
+msgid "Yes, I want to help development of this plugin"
+msgstr "Да, я хочу , чтобы помочь развитию этого плагина"
+
+#: admin/partials/ui/affiliate.php:11
+msgid "Add a discreet credit"
+msgstr "Добавить сдержанный кредит"
+
+#: admin/partials/ui/affiliate.php:12
+msgid "Add my affiliate link"
+msgstr "Добавить свой ​​партнерскую ссылку"
+
+#: admin/partials/ui/affiliate.php:14
+msgid "Input affiliate username/ID"
+msgstr "Ввод имени пользователя филиал / ID"
+
+#: admin/partials/ui/affiliate.php:16
+msgid ""
+"Make money recommending our plugins. Register for an affiliate account at"
+msgstr ""
+"Сделать деньги , рекомендуя наш плагинов. Регистрация в партнерской "
+"внимание на"
+
+#: admin/partials/ui/help.php:3
+msgid "Usage"
+msgstr "Применение"
+
+#: admin/partials/ui/plugin.php:10
+msgid "Display real time proof of your sales and customers.<br>"
+msgstr ""
+"Дисплей в режиме реального времени доказательство ваших продаж и клиентов . "
+"<br>"
+
+#: admin/partials/ui/plugin.php:16
+msgid "Bundle maker with real time offers.<br><br>"
+msgstr ""
+"Bundle производителя с реальными предложениями времени. Каталог <br><br>"
+
+#: admin/partials/ui/plugin.php:22
+msgid "Display product reviews in any post/page with a shortcode."
+msgstr "Отзывы Дисплей продукта в любой записи / страницы с шорткодом "
+
+#: admin/partials/ui/plugin.php:28
+msgid "Encourage visitors to enable cookies so you don’t lose sales."
+msgstr ""
+"Поощряйте посетителей включить куки , так что вы не потеряете продажи."
+
+#: admin/partials/ui/plugin.php:51 admin/partials/ui/themes.php:33
+msgid "Learn more"
+msgstr "Узнать больше"
+
+#: admin/partials/ui/themes.php:10
+msgid "Flat and responsive WooCommerce theme.<br>"
+msgstr "Плоский и реагировать тема WooCommerce . <br>"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:143
+msgid "Insert Product Reviews"
+msgstr "Вставьте Обзоры продукции"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:147
+msgid "Product ID"
+msgstr "Код товара"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:151
+msgid "Product Title"
+msgstr "Название продукта"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:155
+msgid "Number of Reviews"
+msgstr "Количество отзывов"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:158
+msgid "Insert Reviews"
+msgstr "Вставьте Отзывы"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:241
+msgid "Product Reviews"
+msgstr "Отзывы о товаре"
+
+#: public/partials/plugin-form-shortcode-display.php:87
+msgid "Add a review"
+msgstr "Добавить отзыв"
+
+#: public/partials/plugin-form-shortcode-display.php:92
+msgid "Name"
+msgstr "имя"
+
+#: public/partials/plugin-form-shortcode-display.php:97
+msgid "Email"
+msgstr "Эл. адрес"
+
+#: public/partials/plugin-form-shortcode-display.php:110
+msgid "Your Rating"
+msgstr "Ваш рейтинг"
+
+#: public/partials/plugin-form-shortcode-display.php:130
+msgid "Your Review"
+msgstr "Ваш обзор"
+
+#: public/partials/plugin-form-shortcode-display.php:134
+msgid "Submit"
+msgstr "Отправить"
+
+#: public/partials/plugin-form-shortcode-display.php:143
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает модерации."
+
+#: public/partials/plugin-reviews-aggregate.php:163
+#: public/partials/plugin-reviews-shortcode-display.php:127
+msgid "out of"
+msgstr "снаружи"
+
+#: public/partials/plugin-reviews-aggregate.php:163
+#: public/partials/plugin-reviews-shortcode-display.php:127
+msgid "stars"
+msgstr "звезды"
+
+#: public/partials/plugin-reviews-aggregate.php:165
+#: public/partials/plugin-reviews-shortcode-display.php:129
+msgid "reviews"
+msgstr "отзывы"
+
+#: public/partials/plugin-reviews-aggregate.php:170
+#: public/partials/plugin-reviews-shortcode-display.php:134
+msgid "These reviews were created with SIP Reviews Shortcode Plugin"
+msgstr "Эти обзоры были созданы с SIP Reviews Shortcode Plugin"
+
+#: public/partials/plugin-reviews-aggregate.php:381
+#: public/partials/plugin-reviews-shortcode-display.php:232
+#: public/partials/plugin-reviews-shortcode-display.php:352
+msgid "Load More"
+msgstr "Загрузи больше"
+
+#: public/partials/plugin-reviews-aggregate.php:383
+#: public/partials/plugin-reviews-shortcode-display.php:354
+msgid "No products reviews."
+msgstr "Нет товаров отзывов."
+
+#: public/partials/plugin-reviews-shortcode-display.php:234
+#: public/partials/plugin-reviews-shortcode-display.php:238
+msgid "No more comments"
+msgstr "Нет больше комментариев"

@@ -1,0 +1,261 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SIP Reviews Shortcode for WooCommerce Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-04 19:36+0500\n"
+"PO-Revision-Date: Thu Mar 03 2016 11:21:08 GMT+0100 (Romance Standard Time)\n"
+"Last-Translator: Brian - Bagestålet DK <brian@odder-wolter.dk>\n"
+"Language-Team: \n"
+"Language: Danish\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Loco-Target-Locale: da_DK"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:111
+#: admin/class-sip-reviews-shortcode-wc-admin.php:259
+msgid "Settings"
+msgstr "Settings"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:114
+msgid "Docs"
+msgstr "Docs"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:128
+msgid "SIP Plugin Panel"
+msgstr "SIP Plugin Panel"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:129
+msgid "SIP Plugins"
+msgstr "SIP Plugins"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:176
+#: admin/class-sip-reviews-shortcode-wc-admin.php:177
+msgid "Reviews Shortcode"
+msgstr "Reviews Shortcode"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:231
+msgid "Shopitpress extras"
+msgstr "Shopitpress extras"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:233
+msgid "Plugins"
+msgstr "Plugins"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:234
+msgid "Themes"
+msgstr "Themes"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:256
+msgid "Sip Reviews Shortcode for Woocommerce"
+msgstr "Sip Reviews Shortcode for Woocommerce"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:260
+msgid "Help"
+msgstr "Help"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:26
+msgid "Custom Color Settings"
+msgstr "Custom Color Settings"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:33
+msgid "Save Color"
+msgstr "Save Color"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:85
+#: public/class-sip-reviews-shortcode-wc-public.php:81
+msgid "Review stars"
+msgstr "Review stars"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:92
+#: public/class-sip-reviews-shortcode-wc-public.php:88
+msgid "Reviews bar summary"
+msgstr "Reviews bar summary"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:99
+#: public/class-sip-reviews-shortcode-wc-public.php:95
+msgid "Review background"
+msgstr "Review background"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:106
+#: public/class-sip-reviews-shortcode-wc-public.php:102
+msgid "Review body text"
+msgstr "Review body text"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:113
+#: public/class-sip-reviews-shortcode-wc-public.php:109
+msgid "Review title"
+msgstr "Review title"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:120
+#: public/class-sip-reviews-shortcode-wc-public.php:116
+msgid "Load more button background"
+msgstr "Load more button background"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:128
+#: public/class-sip-reviews-shortcode-wc-public.php:124
+msgid "Load more button text"
+msgstr "Load more button text"
+
+#: admin/partials/ui/affiliate.php:2
+msgid "Be awesome"
+msgstr "Be awesome"
+
+#: admin/partials/ui/affiliate.php:3
+msgid ""
+"Do you like this plugin? Would you like to see even more great features? "
+"Please be awesome and help us maintain and develop free plugins by checking "
+"the option below"
+msgstr ""
+"Do you like this plugin? Would you like to see even more great features? "
+"Please be awesome and help us maintain and develop free plugins by checking "
+"the option below"
+
+#: admin/partials/ui/affiliate.php:8
+msgid "Yes, I want to help development of this plugin"
+msgstr "Yes, I want to help development of this plugin"
+
+#: admin/partials/ui/affiliate.php:11
+msgid "Add a discreet credit"
+msgstr "Add a discreet credit"
+
+#: admin/partials/ui/affiliate.php:12
+msgid "Add my affiliate link"
+msgstr "Add my affiliate link"
+
+#: admin/partials/ui/affiliate.php:14
+msgid "Input affiliate username/ID"
+msgstr "Input affiliate username/ID"
+
+#: admin/partials/ui/affiliate.php:16
+msgid "Make money recommending our plugins. Register for an affiliate account at"
+msgstr "Make money recommending our plugins. Register for an affiliate account at"
+
+#: admin/partials/ui/help.php:3
+msgid "Usage"
+msgstr "Usage"
+
+#: admin/partials/ui/plugin.php:10
+msgid "Display real time proof of your sales and customers.<br>"
+msgstr "Display real time proof of your sales and customers.<br>"
+
+#: admin/partials/ui/plugin.php:16
+msgid "Bundle maker with real time offers.<br><br>"
+msgstr "Bundle maker with real time offers.<br><br>"
+
+#: admin/partials/ui/plugin.php:22
+msgid "Display product reviews in any post/page with a shortcode."
+msgstr "Display product reviews in any post/page with a shortcode."
+
+#: admin/partials/ui/plugin.php:28
+msgid "Encourage visitors to enable cookies so you don’t lose sales."
+msgstr "Encourage visitors to enable cookies so you don’t lose sales."
+
+#: admin/partials/ui/plugin.php:51 admin/partials/ui/themes.php:33
+msgid "Learn more"
+msgstr "Learn more"
+
+#: admin/partials/ui/themes.php:10
+msgid "Flat and responsive WooCommerce theme.<br>"
+msgstr "Flat and responsive WooCommerce theme.<br>"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:143
+msgid "Insert Product Reviews"
+msgstr "Insert Product Reviews"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:147
+msgid "Product ID"
+msgstr "Product ID"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:151
+msgid "Product Title"
+msgstr "Product Title"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:155
+msgid "Number of Reviews"
+msgstr "Number of Reviews"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:158
+msgid "Insert Reviews"
+msgstr "Insert Reviews"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:241
+msgid "Product Reviews"
+msgstr "Product Reviews"
+
+#: public/partials/plugin-form-shortcode-display.php:87
+msgid "Add a review"
+msgstr "Tilføj bedømmelse"
+
+#: public/partials/plugin-form-shortcode-display.php:92
+msgid "Name"
+msgstr "Navn og by [Navn, By]"
+
+#: public/partials/plugin-form-shortcode-display.php:97
+msgid "Email"
+msgstr "Email (bliver ikke offentliggjort)"
+
+#: public/partials/plugin-form-shortcode-display.php:110
+msgid "Your Rating"
+msgstr "Din bedømmelse (1=dårligt, 5=Super, det kan jeg anbefale)"
+
+#: public/partials/plugin-form-shortcode-display.php:130
+msgid "Your Review"
+msgstr "Din bedømmelse"
+
+#: public/partials/plugin-form-shortcode-display.php:134
+msgid "Submit"
+msgstr "Send"
+
+#: public/partials/plugin-form-shortcode-display.php:143
+msgid "Your comment is awaiting moderation."
+msgstr ""
+"Mange tak fordi du tog dig tid til at bedømme Bagestålet.<br>Du er i sandhed "
+"en fantastisk person :-)<br><br>Bemærk, at der kan gå op til 24 timer før "
+"anmeldelsen bliver synlig på siden."
+
+#: public/partials/plugin-reviews-aggregate.php:163
+#: public/partials/plugin-reviews-shortcode-display.php:127
+msgid "out of"
+msgstr "ud af"
+
+#: public/partials/plugin-reviews-aggregate.php:163
+#: public/partials/plugin-reviews-shortcode-display.php:127
+msgid "stars"
+msgstr "stjerner"
+
+#: public/partials/plugin-reviews-aggregate.php:165
+#: public/partials/plugin-reviews-shortcode-display.php:129
+msgid "reviews"
+msgstr "anmeldelser"
+
+#: public/partials/plugin-reviews-aggregate.php:170
+#: public/partials/plugin-reviews-shortcode-display.php:134
+msgid "These reviews were created with SIP Reviews Shortcode Plugin"
+msgstr "These reviews were created with SIP Reviews Shortcode Plugin"
+
+#: public/partials/plugin-reviews-aggregate.php:381
+#: public/partials/plugin-reviews-shortcode-display.php:232
+#: public/partials/plugin-reviews-shortcode-display.php:352
+msgid "Load More"
+msgstr "Læs flere"
+
+#: public/partials/plugin-reviews-aggregate.php:383
+#: public/partials/plugin-reviews-shortcode-display.php:354
+msgid "No products reviews."
+msgstr "No products reviews."
+
+#: public/partials/plugin-reviews-shortcode-display.php:234
+#: public/partials/plugin-reviews-shortcode-display.php:238
+msgid "No more comments"
+msgstr "No more comments"

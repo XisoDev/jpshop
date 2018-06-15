@@ -1,0 +1,1112 @@
+# Copyright (C) 2018 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: CPM PRO\n"
+"Report-Msgid-Bugs-To: http://wedevs.com/support/forum/plugin-support/wp-"
+"project-manager/\n"
+"POT-Creation-Date: 2018-03-01 05:10:35+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-03-10 00:01+0900\n"
+"Language-Team: https://shop.redmilk.co.kr\n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: Redmilk <admin@redmilk.co.kr>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko_KR\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: class/ajax.php:55
+msgid "No project found !"
+msgstr "프로젝트를 찾지 못했습니다!"
+
+#: class/ajax.php:71 class/ajax.php:142
+msgid "Project: "
+msgstr "프로젝트 : "
+
+#: class/ajax.php:156
+msgid "Task List: "
+msgstr "작업목록: "
+
+#: class/ajax.php:170
+msgid "Task: "
+msgstr "작업: "
+
+#: class/ajax.php:184
+msgid "Message: "
+msgstr "메세지: "
+
+#: class/ajax.php:197
+msgid "Milestone: "
+msgstr "마일스톤: "
+
+#: class/ajax.php:207
+msgid "No item found !"
+msgstr "항목을 찾을 수 없습니다!"
+
+#: class/ajax.php:247 class/ajax.php:273 class/ajax.php:297
+msgid "Are you cheating?"
+msgstr "속이시는 건가요?"
+
+#: class/ajax.php:253
+msgid "Project ID required"
+msgstr "프로젝트 ID는 필수입니다"
+
+#: class/api.php:112
+msgid "API key does not exist!"
+msgstr "API 키가 없습니다!"
+
+#: class/api.php:116
+msgid "Secret key does not exist!"
+msgstr "Secret 키가 존재하지 않습니다!"
+
+#: class/api.php:122
+msgid "API key does not match!"
+msgstr "API 키가 일치하지 않습니다!"
+
+#: class/api.php:128
+msgid "Secret key does not match!"
+msgstr "Secret 키가 일치하지 않습니다!"
+
+#: class/api.php:198
+msgid "Project API Keys"
+msgstr "프로젝트 API 키"
+
+#: class/api.php:203
+msgid "Generate API Key"
+msgstr "API 키 생성"
+
+#: class/api.php:207
+msgid "Consumer Key:"
+msgstr "Consumer Key:"
+
+#: class/api.php:208
+msgid "Consumer Secret:"
+msgstr "Consumer 시크릿:"
+
+#: class/api.php:216
+msgid "Revoke API Key"
+msgstr "API 키 취소하기"
+
+#: class/digest.php:178
+msgid "[%s] - Project Manager Daily Digest (%s)"
+msgstr "[%s] - Project Manager 일간요약 (%s)"
+
+#: class/digest.php:302 class/digest.php:308
+msgid "Project Daily Digest"
+msgstr "프로젝트 일간요약"
+
+#: class/digest.php:311
+msgid "Project items due or added or completed in the last 24 hours"
+msgstr "지난 24시간 이내에 완료되었거나 추가되었거나 기한이 된 프로젝트 항목"
+
+#: class/digest.php:329
+msgid "This is an automated email from %s, powered by %s."
+msgstr "This is an automated email from %s, powered by %s."
+
+#: class/digest.php:396 class/digest.php:533
+msgid "New to-do items:"
+msgstr "새 할 일 항목:"
+
+#: class/digest.php:436 class/digest.php:561
+msgid "Completed to-do items:"
+msgstr "완료된 할 일 항목:"
+
+#: class/digest.php:478 class/digest.php:591
+msgid "Due to-do items:"
+msgstr "완료해야 할 할 일 항목:"
+
+#: class/digest.php:619 class/digest.php:643
+msgid "New milestones:"
+msgstr "새 마일스톤:"
+
+#: class/digest.php:811
+msgid "(Completed by %s)"
+msgstr "(Completed by %s)"
+
+#: class/files.php:55 class/files.php:56 class/files.php:71 class/files.php:73
+msgid "Documents"
+msgstr "문서"
+
+#: class/files.php:72
+msgid "Document"
+msgstr "문서"
+
+#: class/files.php:74
+msgid "Add Document"
+msgstr "문서 추가"
+
+#: class/files.php:75
+msgid "Add New Document"
+msgstr "새 문서 추가"
+
+#: class/files.php:76
+msgid "Edit"
+msgstr "편집"
+
+#: class/files.php:77
+msgid "Edit Document"
+msgstr "문서 편집"
+
+#: class/files.php:78
+msgid "New Document"
+msgstr "새 문서"
+
+#: class/files.php:79 class/files.php:80
+msgid "View Document"
+msgstr "문서 보기"
+
+#: class/files.php:81
+msgid "Search Documents"
+msgstr "문서 찾기"
+
+#: class/files.php:82
+msgid "No Documents Found"
+msgstr "문서를 찾을 수 없습니다"
+
+#: class/files.php:83
+msgid "No Documentst Found in Trash"
+msgstr "휴지통에 문서가 없습니다"
+
+#: class/files.php:84
+msgid "Parent Document"
+msgstr "상위 문서"
+
+#: class/files.php:106
+msgid "Create a folder"
+msgstr "폴더 생성"
+
+#: class/files.php:107
+msgid "Upload a file"
+msgstr "파일 업로드"
+
+#: class/files.php:108
+msgid "Create a doc"
+msgstr "문서 생성"
+
+#: class/files.php:109
+msgid "Create a document"
+msgstr "문서 생성"
+
+#: class/files.php:110
+msgid "Link to Docs"
+msgstr "문서에 링크"
+
+#: class/files.php:111
+msgid "Back to previous"
+msgstr "이전 단계로 가기"
+
+#: class/files.php:112
+msgid "File uploads"
+msgstr "파일 업로드"
+
+#: class/files.php:113
+msgid "Attach a File"
+msgstr "파일 첨부"
+
+#: class/files.php:114
+msgid "Make files private."
+msgstr "파일 비공개로 보기."
+
+#: class/files.php:115
+msgid "Make this private."
+msgstr "비공개로 보기."
+
+#: class/files.php:116 includes/integrations/erp/cpm-erp.php:143
+msgid "Submit"
+msgstr "등록"
+
+#: class/files.php:117
+msgid "Folder or Documents not found. Please create new folder or document."
+msgstr ""
+"폴더 또는 문서를 찾을 수 없습니다. 새로 폴더나 문서를 생성하여주십시오."
+
+#: class/files.php:118
+msgid "Create Folder"
+msgstr "폴더 생성"
+
+#: class/files.php:119
+msgid "Title"
+msgstr "제목"
+
+#: class/files.php:120
+msgid "Delete File"
+msgstr "파일 삭제"
+
+#: class/files.php:121
+msgid "To attach"
+msgstr "첨부"
+
+#: class/files.php:122
+msgid "select files"
+msgstr "파일 선택"
+
+#: class/files.php:123
+msgid "from your computer"
+msgstr "컴퓨터에서"
+
+#: class/files.php:124
+msgid "Link for  Docs"
+msgstr "문서에 링크"
+
+#: class/files.php:125
+msgid "Download"
+msgstr "내려받기"
+
+#: class/files.php:126
+msgid "Note"
+msgstr "메모"
+
+#: class/files.php:127
+msgid "View Current Post"
+msgstr "현재 글 보기"
+
+#: class/files.php:128
+msgid "View Online"
+msgstr "온라인으로 보기"
+
+#: class/files.php:129
+msgid "Attachments"
+msgstr "첨부 파일"
+
+#: class/files.php:130
+msgid "Comments"
+msgstr "댓글"
+
+#: class/files.php:131
+msgid "On"
+msgstr "켜기"
+
+#: class/files.php:132
+msgid "by"
+msgstr "by"
+
+#: class/files.php:133
+msgid " Load More Files"
+msgstr " 더 많은 파일 로드"
+
+#: class/files.php:134
+msgid "Add Comment"
+msgstr "댓글 추가"
+
+#: class/files.php:135
+msgid "Update Doc"
+msgstr "문서 업데이트"
+
+#: class/files.php:136
+msgid "Cancel Edit"
+msgstr "편집 취소"
+
+#: class/files.php:137
+msgid "Revisions"
+msgstr "수정"
+
+#: class/files.php:138
+msgid "No Revision"
+msgstr "No Revision"
+
+#: class/files.php:139
+msgid "Are you sure to delete this file?"
+msgstr "이 파일을 삭제하시겠습니까?"
+
+#: class/files.php:140
+msgid "Are you sure to delete this folder?"
+msgstr "이 폴더를 삭제하시겠습니까?"
+
+#: class/files.php:141
+msgid "Are you sure to change privacy for this file or folder?"
+msgstr "이 파일/폴더의 공개 규칙을 변경하시겠습니까?"
+
+#: class/files.php:142
+msgid "Please write something in comments!"
+msgstr "댓글을 남겨 주세요!"
+
+#: class/files.php:143
+msgid "Documents & Files"
+msgstr "문서 & 파일"
+
+#: class/files.php:144
+msgid ""
+"Access all the files from all threads in one place. Store your project "
+"related files, docs, images or any other files on-site. Makes sharing and "
+"storing easy and convenient, plus you can add privacy here too."
+msgstr ""
+"모든 스레드의 파일은 한 곳에서 접근할 수 있습니다. 프로젝트와 연관된 파일, 문"
+"서, 이미지 등 모든 파일을 사이트상에 보관하세요. 공유와 보관이 간편합니다. 비"
+"공개로 보관도 가능합니다."
+
+#: class/files.php:145
+msgid "Benefits of Documents"
+msgstr "Benefits of Documents"
+
+#: class/files.php:146
+msgid "Integrate easily with projects or tasks."
+msgstr "프로젝트나 작업을 쉽게 통합할 수 있습니다."
+
+#: class/files.php:147
+msgid "Shared storage keeps all data secure."
+msgstr "보관소에 공유된 데이터는 안전하게 저장됩니다."
+
+#: class/files.php:148
+msgid "File sharing privacy."
+msgstr "비공개로 파일 공유."
+
+#: class/files.php:400
+msgid "Attached to "
+msgstr "Attached to "
+
+#: class/files.php:400
+msgid " by "
+msgstr " 작성자 "
+
+#: class/files.php:581
+msgid "Pleae choose any file first"
+msgstr "먼저 파일을 선택하십시오"
+
+#: class/files.php:607 class/files.php:665
+msgid "Folder name already exist! Please check again."
+msgstr "이미 존재하는 폴더명입니다! 다시 확인하시기 바랍니다."
+
+#: class/files.php:632
+msgid "You have not access to creat folder."
+msgstr "폴더를 생성할 수 있는 권한이 없습니다."
+
+#: class/files.php:718 class/files.php:760 class/files.php:775
+msgid "There is an error while delete, please try again!"
+msgstr "삭제하는 중 오류가 발생했습니다. 다시 시도해 주십시오!"
+
+#: class/files.php:763 class/files.php:778
+msgid "Permission Problem"
+msgstr "권한 문제"
+
+#: class/mention.php:137
+msgid "[%s][%s] Mentioned on comment: %s"
+msgstr "[%s][%s] 댓글에 언급되었습니다 : %s"
+
+#: class/report.php:76
+msgid "Select a milestone"
+msgstr "마일스톤 선택"
+
+#: class/report.php:87
+msgid "No milestone on this Project"
+msgstr "이 프로젝트엔 마일스톤이 없습니다"
+
+#: class/report.php:104
+msgid "Overdue Task"
+msgstr "기한이 지난 작업"
+
+#: class/report.php:105 class/report.php:175 class/report.php:248
+#: class/report.php:323 class/report.php:396 class/report.php:470
+msgid "All Project"
+msgstr "모든 프로젝트"
+
+#: class/report.php:106 class/report.php:176 class/report.php:397
+msgid "All Coworker"
+msgstr "모든 동료"
+
+#: class/report.php:174 views/task/my-task.php:78
+msgid "Completed Task"
+msgstr "완료된 작업"
+
+#: class/report.php:247
+msgid "User Activity Report"
+msgstr "활동 보고서"
+
+#: class/report.php:250
+msgid "<b> Rnage </b>"
+msgstr "<b> 범위 </b>"
+
+#: class/report.php:322
+msgid "All Task by Project"
+msgstr "프로젝트의 모든 작업"
+
+#: class/report.php:326
+msgid "Task Status : All Task"
+msgstr "작업 상태 : 모든 작업"
+
+#: class/report.php:395
+msgid "All Task by Milestone"
+msgstr "마일스톤의 모든 작업"
+
+#: class/report.php:413
+msgid "Milestone"
+msgstr "마일스톤"
+
+#: class/report.php:469
+msgid "All Unassigned Task"
+msgstr "담당자가 없는 모든 작업"
+
+#: class/report.php:534
+msgid "Not assigned"
+msgstr "할당되지 않음"
+
+#: class/report.php:549
+msgid "Not set"
+msgstr "설정되지 않음"
+
+#: class/report.php:550
+msgid "No due date"
+msgstr "기한 없음"
+
+#: class/report.php:551 class/report.php:552
+msgid "Incomplete"
+msgstr "미완료"
+
+#: class/report.php:552
+msgid "Complete"
+msgstr "완료"
+
+#: class/report.php:605
+msgid "Report Title : "
+msgstr "보고서 제목 : "
+
+#: class/report.php:608
+msgid "Project for : "
+msgstr "프로젝트 for : "
+
+#: class/report.php:611
+msgid "Co Worker : "
+msgstr "작업자 : "
+
+#: class/report.php:620 class/report.php:622
+msgid "Task Name"
+msgstr "작업명"
+
+#: class/report.php:620 class/report.php:622
+msgid "Assign to"
+msgstr "에 할당"
+
+#: class/report.php:620 class/report.php:622
+msgid "Assign date"
+msgstr "기한 지정"
+
+#: class/report.php:620 class/report.php:622 class/report.php:831
+#: class/report.php:884 includes/integrations/erp/views/task-form.php:71
+#: views/report/index.php:99 views/report/table.php:126
+#: views/report/table.php:208
+msgid "Due Date"
+msgstr "마감일"
+
+#: class/report.php:620 class/report.php:622 views/report/index.php:100
+msgid "Complete Date"
+msgstr "완료일"
+
+#: class/report.php:620 views/report/index.php:101
+msgid "Time"
+msgstr "시간"
+
+#: class/report.php:620 class/report.php:622 class/report.php:832
+#: class/report.php:885 views/report/table.php:127 views/report/table.php:209
+msgid "Status"
+msgstr "상태"
+
+#: class/report.php:626
+msgid "Project : "
+msgstr "프로젝트 : "
+
+#: class/report.php:783 views/report/table.php:67
+msgid "Year"
+msgstr "년도"
+
+#: class/report.php:786 views/report/table.php:70
+msgid "Month"
+msgstr "달"
+
+#: class/report.php:789 views/report/table.php:73
+msgid "Week"
+msgstr "주"
+
+#: class/report.php:803 views/report/advance_report.php:201
+#: views/report/table.php:88
+msgid "No result found!"
+msgstr "결과가 없습니다!"
+
+#: class/report.php:820 class/report.php:873 views/report/table.php:107
+#: views/report/table.php:189
+msgid "Project Title: "
+msgstr "프로젝트 제목 : "
+
+#: class/report.php:825 class/report.php:878 views/report/table.php:116
+#: views/report/table.php:198
+msgid "Task List Title: "
+msgstr "작업목록명: "
+
+#: class/report.php:828 class/report.php:881 views/report/index.php:96
+#: views/report/table.php:123 views/report/table.php:205
+msgid "Task"
+msgstr "작업"
+
+#: class/report.php:829 class/report.php:882
+msgid "Assign To"
+msgstr "담당자"
+
+#: class/report.php:830 class/report.php:883
+#: includes/integrations/erp/views/task-form.php:59 views/report/table.php:125
+#: views/report/table.php:207
+msgid "Start Date"
+msgstr "시작 일자"
+
+#: class/report.php:858 class/report.php:912 class/task.php:53
+#: class/task.php:65 class/task.php:221 views/project/project_list.php:96
+#: views/report/table.php:168 views/report/table.php:250
+#: views/task/my-task.php:78 views/task/overview.php:36
+msgid "Completed"
+msgstr "완료"
+
+#: class/report.php:858 class/report.php:912 views/report/table.php:168
+#: views/report/table.php:250
+msgid "Incompleted"
+msgstr "미완료"
+
+#: class/task.php:51 class/task.php:58 class/task.php:219
+#: views/task/my-task.php:71
+msgid "Current"
+msgstr "현행"
+
+#: class/task.php:52 class/task.php:61 class/task.php:220
+#: views/task/my-task.php:75
+msgid "Outstanding"
+msgstr "눈에 띄는"
+
+#: class/task.php:351 class/task.php:365
+msgid "No Data Found!"
+msgstr "데이터가 없습니다!"
+
+#: class/updates.php:41
+msgid "Updates"
+msgstr "업데이트"
+
+#: class/updates.php:73
+msgid ""
+"Please <a href=\"%s\">enter</a> your <strong>WP Project Manager</strong> "
+"plugin license key to get regular update and support."
+msgstr ""
+"Please <a href=\"%s\">enter</a> your <strong>WP Project Manager</strong> "
+"plugin license key to get regular update and support."
+
+#: class/updates.php:88
+msgid "Please activate your copy"
+msgstr "활성화 하십시오"
+
+#: class/updates.php:127
+msgid "WP Project Manager Error:"
+msgstr "WP Project Manager Error:"
+
+#: class/updates.php:333
+msgid "Empty email address"
+msgstr "빈 이메일 주소"
+
+#: class/updates.php:337
+msgid "Empty license key"
+msgstr "빈 라이센스 키"
+
+#: class/updates.php:355
+msgid "Settings Saved"
+msgstr "설정이 저장되었습니다"
+
+#: class/updates.php:370
+msgid "Plugin Activation"
+msgstr "플러그인 활성화"
+
+#: class/updates.php:393
+msgid "E-mail Address"
+msgstr "E-mail 주소"
+
+#: class/updates.php:396
+msgid "Enter your purchase Email address"
+msgstr "구매한 이메일 주소 입력"
+
+#: class/updates.php:400
+msgid "License Key"
+msgstr "라이센스 키"
+
+#: class/updates.php:403
+msgid "Enter your license key"
+msgstr "라이선스 키를 입력하세요"
+
+#: class/updates.php:417
+msgid "has been expired %s ago"
+msgstr "%s 전에 만료 되었습니다"
+
+#: class/updates.php:420
+msgid "will expire in %s"
+msgstr "%s에 만료 됩니다"
+
+#: class/updates.php:427
+msgid "Validity:"
+msgstr "사용 :"
+
+#: class/updates.php:432
+msgid "Renew License"
+msgstr "라이선스 갱신"
+
+#: class/updates.php:438
+msgid "Plugin is activated"
+msgstr "플러그인이 활성화 되었습니다"
+
+#: class/updates.php:442
+msgid "Delete License"
+msgstr "라이센스 삭제"
+
+#: cpm-pro.php:117
+msgid "Your Project Manager Pro is almost ready!"
+msgstr "Project Manager Pro가 거의 준비되었습니다!"
+
+#: cpm-pro.php:123
+msgid "Dismiss this notice"
+msgstr "이 알림을 해제하십시오"
+
+#: cpm-pro.php:126
+msgid ""
+"You just need to activate the <strong>%s</strong> to make it functional."
+msgstr "사용하려면 <strong> %s </ strong>을 활성화해야 합니다."
+
+#: cpm-pro.php:128
+msgid "Activate this plugin"
+msgstr "플러그인을 활성화하십시오"
+
+#: cpm-pro.php:128
+msgid "Activate"
+msgstr "활성하기"
+
+#: cpm-pro.php:131
+msgid "You just need to install the %sCore Plugin%s to make it functional."
+msgstr "제대로 작동하려면 %s Core Plugin %s을 설치해야 합니다."
+
+#: cpm-pro.php:134
+msgid "Install Now"
+msgstr "지금 설치하기"
+
+#: cpm-pro.php:184
+msgid "Error: Nonce verification failed"
+msgstr "오류 : Nonce 확인에 실패 했습니다"
+
+#: cpm-pro.php:351
+msgid "Search..."
+msgstr "검색..."
+
+#: cpm-pro.php:374
+msgid "Task start date"
+msgstr "작업 시작일"
+
+#: cpm-pro.php:377
+msgid "Enable task start date field"
+msgstr "작업시작일 필드 활성화"
+
+#: cpm-pro.php:382
+msgid "Logo"
+msgstr "로고"
+
+#: cpm-pro.php:387 views/admin/user-profile.php:8
+msgid "Daily Digest"
+msgstr "일간요약"
+
+#: cpm-pro.php:390
+msgid "Enable Daily Digest"
+msgstr "일간요약 사용"
+
+#: cpm-pro.php:630 cpm-pro.php:641 cpm-pro.php:659 cpm-pro.php:678
+#: includes/integrations/erp/views/task-form.php:81
+msgid "Private"
+msgstr "비공개"
+
+#: cpm-pro.php:689 cpm-pro.php:699 views/project/settings.php:31
+msgid "Client"
+msgstr "클라이언트"
+
+#: cpm-pro.php:715 cpm-pro.php:723 cpm-pro.php:791 views/task/my-task.php:19
+msgid "My Tasks"
+msgstr "내 작업"
+
+#: cpm-pro.php:718
+msgid "My Tasks %s"
+msgstr "내 작업 %s"
+
+#: cpm-pro.php:724 frontend/frontend.php:64 views/calendar/index.php:2
+msgid "Calendar"
+msgstr "달력"
+
+#: cpm-pro.php:728
+msgid "Reports"
+msgstr "보고서"
+
+#: cpm-pro.php:731 views/progress/progress.php:8
+msgid "Progress"
+msgstr "진행"
+
+#: cpm-pro.php:777
+msgid "Projects"
+msgstr "프로젝트"
+
+#: cpm-pro.php:805 views/task/overview.php:68
+msgid "My Calender"
+msgstr "내 캘린더"
+
+#: frontend/frontend.php:39
+msgid "Page Settings"
+msgstr "페이지 설정"
+
+#: frontend/frontend.php:51 includes/integrations/erp/views/task-form.php:13
+#: views/report/index.php:78
+msgid "Project"
+msgstr "프로젝트"
+
+#: frontend/frontend.php:58
+msgid "My Task"
+msgstr "내 작업"
+
+#: frontend/frontend.php:76 frontend/frontend.php:96
+msgid "Sorry, the main plugin is not installed"
+msgstr "필수 플러그인이 설치되어있지 않습니다"
+
+#: frontend/frontend.php:226 views/task/my-task.php:67
+#: views/task/mytask-line-graph.php:14 views/task/overview.php:30
+#: views/task/overview.php:34
+msgid "Activity"
+msgstr "활동"
+
+#: frontend/frontend.php:231 views/task/my-task.php:64
+msgid "Overview"
+msgstr "개요"
+
+#: frontend/frontend.php:238 views/project/settings.php:15
+msgid "Settings"
+msgstr "환경 설정"
+
+#: frontend/frontend.php:277
+msgid "To-do Lists"
+msgstr "할 일 목록"
+
+#: frontend/frontend.php:318
+msgid "Activities"
+msgstr "활동"
+
+#: frontend/frontend.php:461
+msgid "<strong>%s</strong> version %s is now available! %s."
+msgstr "<strong>% s</strong> 버전 %s을 (를) 사용할 수 있습니다! %s."
+
+#: frontend/frontend.php:463
+msgid "%s version %s is now available! Please notify the site administrator."
+msgstr "%s 버전 %s을 (를)사용할 수 있습니다! 사이트 관리자에게 알려주십시오."
+
+#: includes/integrations/erp/cpm-erp.php:142
+msgid "Employee New Task"
+msgstr "Employee New Task"
+
+#: includes/integrations/erp/cpm-erp.php:144
+msgid "Text content is required."
+msgstr "텍스트 콘텐츠가 필요합니다."
+
+#: includes/integrations/erp/includes/class-cpmerp.php:138
+msgid "Department"
+msgstr "부서"
+
+#: includes/integrations/erp/includes/class-cpmerp.php:560
+msgid "Tasks"
+msgstr "업무"
+
+#: includes/integrations/erp/includes/class-cpmerp.php:580
+msgid "This feature is only available in the Pro Version."
+msgstr "이 기능은 프로 버전에서만 사용할 수 있습니다."
+
+#: includes/integrations/erp/includes/class-cpmerp.php:583
+msgid "Upgrade to Pro Version"
+msgstr "Upgrade to Pro Version"
+
+#: includes/integrations/erp/views/fields.php:6
+msgid "Assign co-worker from departments"
+msgstr "부서에서 동료 지정"
+
+#: includes/integrations/erp/views/task-form.php:4
+msgid "- Select -"
+msgstr "- 선택 -"
+
+#: includes/integrations/erp/views/task-form.php:25
+msgid "Task Lists"
+msgstr "작업 목록"
+
+#: includes/integrations/erp/views/task-form.php:37
+msgid "Task Title"
+msgstr "작업명"
+
+#: includes/integrations/erp/views/task-form.php:47
+msgid "Task Content"
+msgstr "작업 내용"
+
+#: includes/integrations/erp/views/task.php:2
+msgid "Assign New Task"
+msgstr "새 작업 할당하기"
+
+#: views/admin/user-profile.php:13
+msgid "Enable project manager Daily Digest"
+msgstr "프로젝트 매니저 일간요약 사용"
+
+#: views/admin/user-profile.php:25
+msgid "Email Notification"
+msgstr "이메일 알림"
+
+#: views/admin/user-profile.php:29
+msgid "Enable project manager email"
+msgstr "프로젝트 매니저 이메일 사용"
+
+#: views/calendar/index.php:42
+msgid "-Select Project"
+msgstr "-프로젝트 선택"
+
+#: views/calendar/index.php:51 views/project/project_list.php:45
+msgid "Filter"
+msgstr "필터"
+
+#: views/calendar/index.php:96
+msgid "There was an error while fetching events!"
+msgstr "이벤트를 가져오는 동안 오류가 발생했습니다!"
+
+#: views/files/filelist.php:60
+msgid "File is private. Click to make file public."
+msgstr "비공개 파일입니다. 파일을 공개하려면 클릭하세요."
+
+#: views/files/filelist.php:60
+msgid "File is public. Click to make file private."
+msgstr "공개 파일입니다. 클릭시 비공개로 전환됩니다."
+
+#: views/files/index.php:1
+msgid "Files"
+msgstr "파일"
+
+#: views/progress/progress.php:21
+msgid "No Progress Found!"
+msgstr "진행상황을 찾을 수 없습니다!"
+
+#: views/progress/progress.php:31 views/task/activity.php:14
+msgid "Load More..."
+msgstr "더 보기..."
+
+#: views/project/project_list.php:26
+msgid "NEW PROJECT"
+msgstr "새 프로젝트"
+
+#: views/project/project_list.php:60
+msgid "All"
+msgstr "모두"
+
+#: views/project/project_list.php:64
+msgid "Active <span class=\"count\">%d</span>"
+msgstr "활동 <span class=\"count\">%d</span>"
+
+#: views/project/project_list.php:68
+msgid "Completed <span class=\"count\">%d</span>"
+msgstr "완료 <span class=\"count\">%d</span>"
+
+#: views/project/project_list.php:147
+msgid "No projects found!"
+msgstr "프로젝트를 찾을 수 없습니다!"
+
+#: views/project/project_list.php:155
+msgid "Start a new project"
+msgstr "새 프로젝트 시작"
+
+#: views/project/project_list.php:159
+msgid "Create a new user"
+msgstr "새 사용자 생성"
+
+#: views/project/settings.php:20
+msgid "Changes saved successfully."
+msgstr "변경사항이 성공적으로 저장되었습니다."
+
+#: views/project/settings.php:30
+msgid "Co-worker"
+msgstr "작업자"
+
+#: views/project/settings.php:70
+msgid "Save Changes"
+msgstr "변경 사항 저장"
+
+#: views/report/advance_report.php:2 views/report/index.php:4
+msgid "Project Report"
+msgstr "프로젝트 보고서"
+
+#: views/report/advance_report.php:24
+msgid "Advance Search Project"
+msgstr "프로젝트 상세 검색"
+
+#: views/report/advance_report.php:45
+msgid "Advance Report Form"
+msgstr "고급 보고서 양식"
+
+#: views/report/advance_report.php:190
+msgid "Please select an filter!"
+msgstr "필터를 선택하세요!"
+
+#: views/report/index.php:5
+msgid "Back to Report Dashboard"
+msgstr "대시보드로 돌아가기"
+
+#: views/report/index.php:6
+msgid "Advanced Report"
+msgstr "고급 보고서"
+
+#: views/report/index.php:21
+msgid "Overdue Tasks"
+msgstr "기한이 지난 작업"
+
+#: views/report/index.php:22
+msgid ""
+"Generate a report based on <strong>tasks</strong> which are <strong>pending</"
+"strong> beyond due dates."
+msgstr ""
+"기한이 지나 <strong>대기중인</strong> <strong>작업을</strong> 기반으로 보고서"
+"를 생성합니다."
+
+#: views/report/index.php:26 views/task/mytask-line-graph.php:35
+msgid "Complete Task"
+msgstr "과제 완료"
+
+#: views/report/index.php:27
+msgid ""
+"Generate a report from <strong>tasks</strong> which were <strong>completed</"
+"strong>."
+msgstr ""
+"<strong>완료된</strong> <strong>작업을</strong> 기반으로 보고서를 생성합니다."
+
+#: views/report/index.php:31
+msgid "User Activities"
+msgstr "유저 활동"
+
+#: views/report/index.php:32
+msgid ""
+"Create a report based on an employee or <strong>all employee</strong> "
+"activity on <strong>tasks</strong>."
+msgstr ""
+"<strong>작업</strong>에 대한 직원 또는 <strong>모든 직원</strong> 활동을 기반"
+"으로 보고서를 작성하십시오."
+
+#: views/report/index.php:36
+msgid "Project Task"
+msgstr "프로젝트 작업"
+
+#: views/report/index.php:37
+msgid "Find out <strong>all tasks</strong> from your <strong>Project</strong>."
+msgstr ""
+"당신의 <strong>프로젝트에서</strong> <strong>모든 작업</strong>을 찾습니다."
+
+#: views/report/index.php:42
+msgid "Task by Milestone"
+msgstr "작업 by 마일스톤"
+
+#: views/report/index.php:43
+msgid ""
+"Browse   <strong>tasks</strong> reports according to <strong>Milestones</"
+"strong> (CSV exportable)."
+msgstr ""
+"<strong>마일스톤</strong>별 <strong>작업을</strong> 검색 할 수 있습니다. (CSV"
+"로 내보내기 가능)"
+
+#: views/report/index.php:49
+msgid ""
+"Find out <strong>all tasks</strong> whichwere not  <strong>assigned</strong> "
+"to any employee."
+msgstr "누구에게도 <strong>할당되지 않은 작업</strong>을 찾습니다."
+
+#: views/report/index.php:69
+msgid "Export to CSV"
+msgstr "CSV로 내보내기"
+
+#: views/report/index.php:70
+msgid "Filter Report"
+msgstr "Filter Report"
+
+#: views/report/index.php:79
+msgid "Coworker"
+msgstr "동료"
+
+#: views/report/index.php:80
+msgid "Total Result"
+msgstr "전체 결과"
+
+#: views/report/index.php:97
+msgid "Assigned to"
+msgstr "지정위치"
+
+#: views/report/index.php:98
+msgid "Assigned Date"
+msgstr "할당일"
+
+#: views/report/index.php:123
+msgid "No Data Found, Please search again!"
+msgstr "데이터를 찾을 수 없습니다. 다시 시도하시기 바랍니다!"
+
+#: views/report/index.php:137 views/report/index.php:145
+#: views/report/index.php:160 views/report/index.php:168
+msgid "Report for"
+msgstr "Report for"
+
+#: views/report/index.php:150
+msgid "All Task"
+msgstr "모든 작업"
+
+#: views/report/index.php:151
+msgid "All Complete Task"
+msgstr "모든 완료 작업"
+
+#: views/report/index.php:153
+msgid "All Incomplete Task"
+msgstr "모든 미완료 작업"
+
+#: views/report/index.php:194 views/report/index.php:227
+#: views/report/index.php:258 views/report/index.php:305
+msgid "Run Report"
+msgstr "보고서 실행"
+
+#: views/report/index.php:283
+msgid "Selec a project"
+msgstr "프로젝트 선택"
+
+#: views/report/table.php:124 views/report/table.php:206
+msgid "Assigned To"
+msgstr "할당"
+
+#: views/task/my-task.php:6 views/task/my-task.php:38
+msgid "You do not have permission to access this page"
+msgstr "이 페이지에 접근할 권한이 없습니다"
+
+#: views/task/my-task.php:33
+msgid "The user could not be found!"
+msgstr "작업자를 찾을 수 없습니다!"
+
+#: views/task/my-task.php:71
+msgid "Current Task"
+msgstr "현재작업"
+
+#: views/task/my-task.php:75
+msgid "Outstanding Task"
+msgstr "눈에 띄는 작업"
+
+#: views/task/my-task.php:89
+msgid "Select an User"
+msgstr "작업자 선택"
+
+#: views/task/mycalender.php:152
+msgid "Unable update, please check your permission!!"
+msgstr "업데이트할 수 없습니다. 권한을 확인하시기 바랍니다!!"
+
+#: views/task/mytask-line-graph.php:25
+msgid "Assign Task"
+msgstr "작업 할당"
+
+#: views/task/overview.php:7
+msgid "At a glance"
+msgstr "한 눈에 보기"
+
+#: views/task/overview.php:19
+msgid "%s Task"
+msgid_plural "%s Tasks"
+msgstr[0] "%s 작업"
+
+#: views/task/overview.php:35
+msgid "Assigned"
+msgstr "할당"
+
+#: views/task/taskhtml.php:65
+msgid "Completed by %s on %s"
+msgstr "Completed by %s on %s"

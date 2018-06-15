@@ -1,0 +1,6 @@
+.idea/
+wp-config.php
+wp-content/download_files
+wp-content/mu-plugins
+wp-content/uploads
+wp-content/zeus_log

@@ -1,0 +1,2191 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Project Manager\n"
+"POT-Creation-Date: 2018-03-09 20:13+0900\n"
+"PO-Revision-Date: 2018-03-10 00:01+0900\n"
+"Last-Translator: Redmilk <admin@redmilk.co.kr>\n"
+"Language-Team: Redmilk <admin@redmilk.co.kr>\n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: cpm.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: class/activity.php:72
+#, php-format
+msgid "Project created by %s"
+msgstr "프로젝트 생성자 %s"
+
+#: class/activity.php:78
+#, php-format
+msgid "Project details updated by %s"
+msgstr "프로젝트 세부 정보가 업데이트됨 - %s"
+
+#: class/activity.php:89
+#, php-format
+msgid "Message \"%s\" created by %s"
+msgstr "메시지\"%s\"이(가) %s에 의해 생성 됨"
+
+#: class/activity.php:101
+#, php-format
+msgid "Message \"%s\" updated by %s"
+msgstr "메시지\"%s\"이(가) %s에 의해 업데이트 됨"
+
+#: class/activity.php:116
+#, php-format
+msgid "Message with ID %d was not found in the database"
+msgstr "데이터베이스에서 ID가%d인 메시지를 찾을 수 없습니다"
+
+#: class/activity.php:122
+#, php-format
+msgid "Message \"%s\" deleted by %s"
+msgstr "메시지\"%s\"이(가) %s에 의해 삭제 됨"
+
+#: class/activity.php:143
+#, php-format
+msgid "Task list \"%s\" created by %s"
+msgstr "작업 목록\"%s\"이(가) %s에 의해 생성 됨"
+
+#: class/activity.php:156
+#, php-format
+msgid "Task list \"%s\" updated by %s"
+msgstr "작업 목록\"%s\"이(가) %s에 의해 업데이트 됨"
+
+#: class/activity.php:169
+#, php-format
+msgid "Task list \"%s\" deleted by %s"
+msgstr "작업 목록\"%s\"이(가) %s에 의해 삭제 됨"
+
+#: class/activity.php:193
+#, php-format
+msgid "Task \"%s\" added to task list \"%s\" by %s"
+msgstr "작업 \"%s\"를 \"%s\"작업 목록에 %s가 추가함"
+
+#: class/activity.php:209
+#, php-format
+msgid "Task \"%s\" updated by %s"
+msgstr "작업 \"%s\"이(가) %s에 의해 업데이트 됨"
+
+#: class/activity.php:225
+#, php-format
+msgid "Task \"%s\" completed by %s"
+msgstr "작업 \"%s\"이(가) %s에 의해 완료 됨"
+
+#: class/activity.php:228
+msgid "Task marked as done"
+msgstr "완료로 표시된 작업"
+
+#: class/activity.php:243
+#, php-format
+msgid "Task \"%s\" marked as undone by %s"
+msgstr "“%s”작업은 %s에 의해 실행 취소 됨으로 표시"
+
+#: class/activity.php:246
+msgid "Task reopened"
+msgstr "작업이 다시 열림"
+
+#: class/activity.php:261
+#, php-format
+msgid "Task \"%s\" deleted from task list \"%s\" by %s"
+msgstr "작업 \"%s\"이(가) 작업 목록 \"%s\"에서 %s에 의해 삭제 됨"
+
+#: class/activity.php:277
+#, php-format
+msgid "%s commented on a %s"
+msgstr "%s이(가) %s에 대해 코멘트 함"
+
+#: class/activity.php:283
+#, php-format
+msgid "%s updated a comment on a %s"
+msgstr "%s이(가)%s 에 대한 댓글을 업데이트 함"
+
+#: class/activity.php:291
+#, php-format
+msgid "%s deleted a comment"
+msgstr "%s이(가 )댓글를 삭제 함"
+
+#: class/activity.php:302
+#, php-format
+msgid "Milestone \"%s\" added by %s"
+msgstr "마일스톤 \"%s\"이(가) %s에 의해 추가 됨"
+
+#: class/activity.php:313
+#, php-format
+msgid "Milestone \"%s\" updated by %s"
+msgstr "마일스톤 \"%s\"이(가) %s에 의해 업데이트 됨"
+
+#: class/activity.php:324
+#, php-format
+msgid "Milestone \"%s\" deleted by %s"
+msgstr "마일스톤 \"%s\"이(가) %s에 의해 삭제 됨"
+
+#: class/activity.php:335
+#, php-format
+msgid "Milestone \"%s\" marked as complete by %s"
+msgstr "마일스톤 \"%s\"를 %s이(가) 완료로 표시 함"
+
+#: class/activity.php:346
+#, php-format
+msgid "Milestone \"%s\" marked as incomplete by %s"
+msgstr "마일스톤 \"%s\"를 %s이(가) 미완료로 표시 함"
+
+#: class/admin.php:34 class/loader.php:59 class/project.php:719 cpm.php:211
+msgid "Settings"
+msgstr "환경 설정"
+
+#: class/admin.php:41
+msgid "General Settings"
+msgstr "일반 설정"
+
+#: class/admin.php:45
+msgid "E-Mail Settings"
+msgstr "이메일 설정"
+
+#: class/admin.php:67
+msgid "Link to Backend"
+msgstr "백엔드에 링크"
+
+#: class/admin.php:69
+msgid "Link to Front-end"
+msgstr "프런트 엔드에 링크"
+
+#: class/admin.php:75
+msgid "File Upload Limit"
+msgstr "파일 업로드 제한"
+
+#: class/admin.php:77
+msgid "File Size in Megabytes. e.g: 2"
+msgstr "파일 크기 (Megabytes). 예 : 2"
+
+#: class/admin.php:81
+msgid "Projects Per Page"
+msgstr "페이지 당 프로젝트"
+
+#: class/admin.php:84
+msgid "-1 for unlimited"
+msgstr "무제한의 경우 -1"
+
+#: class/admin.php:88
+msgid "Task List Style"
+msgstr "작업 목록 스타일"
+
+#: class/admin.php:91
+msgid "Pagination"
+msgstr "페이지 번호"
+
+#: class/admin.php:91 views/project/single.php:23
+msgid "Load More..."
+msgstr "더 보기..."
+
+#: class/admin.php:91
+msgid "Lazy Load"
+msgstr "레이지 로드"
+
+#: class/admin.php:95
+msgid "Task Lists Per Page"
+msgstr "페이지 당 작업 목록"
+
+#: class/admin.php:101
+msgid "Incomplete Tasks Per Page"
+msgstr "페이지 당 미완료 작업"
+
+#: class/admin.php:107
+msgid "Completed Tasks Per Page"
+msgstr "페이지 당 완료 된 작업"
+
+#: class/admin.php:113
+msgid "Project Managing Capability"
+msgstr "프로젝트 관리 능력"
+
+#: class/admin.php:115
+msgid "Select the user roles who can see and manage all projects."
+msgstr "모든 프로젝트를 보고 관리 할 수있는 사용자 역할을 선택하십시오."
+
+#: class/admin.php:121
+msgid "Project Creation Capability"
+msgstr "프로젝트 생성 기능"
+
+#: class/admin.php:123
+msgid "Select the user roles who can create projects."
+msgstr "프로젝트를 만들 수 있는 사용자 역할을 선택하십시오."
+
+#: class/admin.php:132
+msgid "From Email"
+msgstr "발신자 이메일"
+
+#: class/admin.php:139
+msgid "Links in the Email"
+msgstr "이메일에 링크"
+
+#: class/admin.php:141
+msgid ""
+"Select where do you want to take the user. Notification emails contain links."
+msgstr ""
+"사용자를 이동할 위치를 선택하십시오. 알림 이메일에는 링크가 포함되어 있습니"
+"다."
+
+#: class/admin.php:147
+msgid "E-Mail Type"
+msgstr "이메일 유형"
+
+#: class/admin.php:151
+msgid "HTML Mail"
+msgstr "HTML 메일"
+
+#: class/admin.php:152
+msgid "Plain Text"
+msgstr "Plain 텍스트"
+
+#: class/admin.php:157
+msgid "Send email via Bcc"
+msgstr "숨은 참조를 통해 이메일 보내기"
+
+#: class/admin.php:160
+msgid "Enable Bcc"
+msgstr "숨은 참조 활성화"
+
+#: class/admin.php:168 includes/html.php:1443
+msgid "- Select -"
+msgstr "- 선택 -"
+
+#: class/admin.php:225
+msgid "<h2>Flash Sale! 40% Off! Biggest Sale For WP Project Manager!</h2>"
+msgstr "<h2>반짝 세일! 40% 할인! WP Project Manager! 최대 할인!</h2>"
+
+#: class/admin.php:226
+#, php-format
+msgid ""
+"<p>We are running our biggest flash sale! A whopping 40% off for first 100 "
+"orders!</p>"
+msgstr "<p> 우리는 반짝 세일을 실행 중입니다! 선착순 100개 까지 40% off! </p>"
+
+#: class/admin.php:236
+msgid "Get the Offer"
+msgstr "제안 받기"
+
+#: class/ajax.php:227 includes/cpm-api/class-cpm-json-comments.php:90
+#: includes/cpm-api/class-cpm-json-comments.php:207
+#: includes/cpm-api/class-cpm-json-comments.php:288
+#: includes/cpm-api/class-cpm-json-lists.php:49
+#: includes/cpm-api/class-cpm-json-lists.php:99
+#: includes/cpm-api/class-cpm-json-lists.php:148
+#: includes/cpm-api/class-cpm-json-lists.php:203
+#: includes/cpm-api/class-cpm-json-lists.php:254
+#: includes/cpm-api/class-cpm-json-messages.php:49
+#: includes/cpm-api/class-cpm-json-messages.php:53
+#: includes/cpm-api/class-cpm-json-messages.php:99
+#: includes/cpm-api/class-cpm-json-messages.php:147
+#: includes/cpm-api/class-cpm-json-messages.php:211
+#: includes/cpm-api/class-cpm-json-messages.php:255
+#: includes/cpm-api/class-cpm-json-milestones.php:51
+#: includes/cpm-api/class-cpm-json-milestones.php:55
+#: includes/cpm-api/class-cpm-json-milestones.php:99
+#: includes/cpm-api/class-cpm-json-milestones.php:147
+#: includes/cpm-api/class-cpm-json-milestones.php:212
+#: includes/cpm-api/class-cpm-json-milestones.php:261
+#: includes/cpm-api/class-cpm-json-projects.php:146
+#: includes/cpm-api/class-cpm-json-projects.php:193
+#: includes/cpm-api/class-cpm-json-tasks.php:51
+#: includes/cpm-api/class-cpm-json-tasks.php:105
+#: includes/cpm-api/class-cpm-json-tasks.php:163
+#: includes/cpm-api/class-cpm-json-tasks.php:241
+#: includes/cpm-api/class-cpm-json-tasks.php:292
+msgid "Invalid project ID."
+msgstr "프로젝트 ID가 잘못되었습니다."
+
+#: class/ajax.php:419 class/ajax.php:470
+msgid "Access Denied"
+msgstr "접근 거부"
+
+#: class/ajax.php:426
+msgid "Username is required."
+msgstr "사용자 ID은 필수입니다."
+
+#: class/ajax.php:430
+msgid "Email is required."
+msgstr "이메일 주소는 필수입니다."
+
+#: class/ajax.php:434
+msgid "Invalid email"
+msgstr "잘못된 이메일"
+
+#: class/ajax.php:438
+msgid "Username already exist"
+msgstr "사용자 이름이 이미 있습니다"
+
+#: class/ajax.php:442
+msgid "Email already exist"
+msgstr "이미 존재하는 이메일 입니다"
+
+#: class/ajax.php:451 class/ajax.php:482
+msgid "Are you cheating?"
+msgstr "속이시는 건가요?"
+
+#: class/ajax.php:457
+msgid "Project ID required"
+msgstr "프로젝트 ID는 필수입니다"
+
+#: class/ajax.php:528 includes/cpm-api/class-cpm-json-projects.php:103
+#: includes/cpm-api/class-cpm-json-projects.php:107
+#: includes/cpm-api/class-cpm-json-projects.php:159
+msgid "Project name is required."
+msgstr "프로젝트 이름이 필요합니다."
+
+#: class/ajax.php:576 class/ajax.php:1586
+msgid "Manager"
+msgstr "관리자"
+
+#: class/ajax.php:582 class/ajax.php:1593 includes/html.php:1445
+msgid "Co-Worker"
+msgstr "공동 작업자"
+
+#: class/ajax.php:587 class/ajax.php:1598 includes/functions.php:1081
+msgid "Delete"
+msgstr "삭제"
+
+#: class/ajax.php:652
+msgid "A new task has been created successfully."
+msgstr "새 작업이 성공적으로 만들어졌습니다."
+
+#: class/ajax.php:666
+msgid "Task title is required."
+msgstr "작업 제목이 필요합니다."
+
+#: class/ajax.php:667
+msgid "Start date is a date field and should be formatted as Y-m-d"
+msgstr "시작 날짜는 날짜 필드이며 Y-m-d 형식이어야 합니다"
+
+#: class/ajax.php:668
+msgid "Due date is a date field and should be formatted as Y-m-d"
+msgstr "만기 날짜는 날짜 필드이며 Y-m-d 형식이어야 합니다"
+
+#: class/ajax.php:707
+msgid "The task has been updated successfully."
+msgstr "작업이 성공적으로 업데이트되었습니다."
+
+#: class/ajax.php:752
+msgid "The task has been marked as completed."
+msgstr "작업이 완료된 것으로 표시되었습니다."
+
+#: class/ajax.php:777
+msgid "The task has been reopened."
+msgstr "작업이 다시 열렸습니다."
+
+#: class/ajax.php:808
+msgid "The task has been deleted successfully."
+msgstr "작업이 성공적으로 삭제되었습니다."
+
+#: class/ajax.php:831 class/ajax.php:880 class/task.php:222
+#: includes/cpm-api/class-cpm-json-lists.php:165
+#: includes/cpm-api/class-cpm-json-lists.php:211
+msgid "Task list name is required."
+msgstr "작업 목록 이름이 필요합니다."
+
+#: class/ajax.php:862
+msgid "A new task list has been created successfully."
+msgstr "새 작업 목록이 성공적으로 만들어졌습니다."
+
+#: class/ajax.php:908
+msgid "Task list has been updated successfully."
+msgstr "작업 목록이 성공적으로 업데이트되었습니다."
+
+#: class/ajax.php:947
+msgid "Task list has been deleted successfully."
+msgstr "작업 목록이 성공적으로 삭제되었습니다."
+
+#: class/ajax.php:1204 class/ajax.php:1258
+msgid "Successfully updated"
+msgstr "성공적으로 업데이트됨"
+
+#: class/ajax.php:1207
+msgid "Error"
+msgstr "오류"
+
+#: class/ajax.php:1232
+msgid "Add a comment..."
+msgstr "댓글 추가..."
+
+#: class/ajax.php:1313
+msgid "Successfully deleted comment"
+msgstr "댓글을 삭제했습니다"
+
+#: class/ajax.php:1542 class/ajax.php:1569 includes/functions.php:196
+msgid "No users found."
+msgstr "사용자가 없음."
+
+#: class/ajax.php:1542
+msgid "Create a new user?"
+msgstr "새 사용자를 생성하시겠습니까?"
+
+#: class/ajax.php:1918 includes/functions.php:244
+#: views/js-templates/file-uploader.php:9
+msgid "Delete File"
+msgstr "파일 삭제"
+
+#: class/ajax.php:1953
+msgid "Successfully reordered"
+msgstr "성공적으로 재정렬 됨"
+
+#: class/api.php:110
+msgid "API key does not exist!"
+msgstr "API 키가 없습니다!"
+
+#: class/api.php:114
+msgid "Secret key does not exist!"
+msgstr "Secret 키가 존재하지 않습니다!"
+
+#: class/api.php:120
+msgid "API key does not match!"
+msgstr "API 키가 일치하지 않습니다!"
+
+#: class/api.php:126
+msgid "Secret key does not match!"
+msgstr "Secret 키가 일치하지 않습니다!"
+
+#: class/api.php:195
+msgid "Project API Keys"
+msgstr "프로젝트 API 키"
+
+#: class/api.php:200
+msgid "Generate API Key"
+msgstr "API 키 생성하기"
+
+#: class/api.php:204
+msgid "Consumer Key:"
+msgstr "Consumer Key:"
+
+#: class/api.php:205
+msgid "Consumer Secret:"
+msgstr "Consumer 시크릿:"
+
+#: class/api.php:213
+msgid "Revoke API Key"
+msgstr "API 키 취소하기"
+
+#: class/loader.php:16
+msgid "My Tasks"
+msgstr "내 작업"
+
+#: class/loader.php:17
+msgid "Calendar"
+msgstr "달력"
+
+#: class/loader.php:18
+msgid "Reports"
+msgstr "보고서"
+
+#: class/loader.php:19
+msgid "Progress"
+msgstr "진행"
+
+#: class/loader.php:35
+msgid "This feature is only available in the Pro Version."
+msgstr "이 기능은 프로 버전에서만 사용할 수 있습니다."
+
+#: class/loader.php:37
+msgid "Upgrade to Pro Version"
+msgstr "Upgrade to Pro Version"
+
+#: class/message.php:27 class/message.php:43
+msgid "Messages"
+msgstr "메시지"
+
+#: class/message.php:28
+msgid "message post type"
+msgstr "메시지 게시 유형"
+
+#: class/message.php:44 class/message.php:45 views/emails/mention.php:13
+#: views/emails/new-comment.php:14 views/emails/new-message.php:67
+#: views/emails/update-comment.php:14
+msgid "Message"
+msgstr "메시지"
+
+#: class/message.php:46 includes/html.php:611 includes/html.php:697
+msgid "Add Message"
+msgstr "메시지 추가"
+
+#: class/message.php:47
+msgid "Add New Message"
+msgstr "새 메시지 추가"
+
+#: class/message.php:48 class/milestone.php:43 class/project.php:51
+#: class/task.php:114 class/task.php:148 views/project/header.php:24
+msgid "Edit"
+msgstr "편집"
+
+#: class/message.php:49
+msgid "Edit Message"
+msgstr "메시지 편집"
+
+#: class/message.php:50 views/emails/new-message.php:40
+msgid "New Message"
+msgstr "새 메세지"
+
+#: class/message.php:51 class/message.php:52 views/emails/new-message.php:77
+msgid "View Message"
+msgstr "메시지 보기"
+
+#: class/message.php:53
+msgid "Search Messages"
+msgstr "메시지 찾기"
+
+#: class/message.php:54
+msgid "No messages found."
+msgstr "메시지를 찾을 수 없습니다."
+
+#: class/message.php:55
+msgid "No messages found in Trash."
+msgstr "휴지통에 메시지가 없습니다."
+
+#: class/message.php:56
+msgid "Parent Message"
+msgstr "상위 메시지"
+
+#: class/milestone.php:22 class/milestone.php:23 class/milestone.php:38
+#: class/milestone.php:39 class/milestone.php:40 includes/functions.php:513
+msgid "Milestone"
+msgid_plural "Milestones"
+msgstr[0] ""
+
+#: class/milestone.php:41 includes/html.php:815
+#: views/blanktemplate/milestone.php:20
+#: views/js-templates/blanktemplate/milestone.php:12
+#: views/milestone/index.php:40
+msgid "Add Milestone"
+msgstr "마일스톤 추가"
+
+#: class/milestone.php:42
+msgid "Add New Milestone"
+msgstr "새 마일스톤 추가"
+
+#: class/milestone.php:44 includes/html.php:911
+msgid "Edit Milestone"
+msgstr "마일스톤 편집"
+
+#: class/milestone.php:45
+msgid "New Milestone"
+msgstr "새 마일스톤"
+
+#: class/milestone.php:46 class/milestone.php:47
+msgid "View Milestone"
+msgstr "마일스톤 보기"
+
+#: class/milestone.php:48
+msgid "Search Milestone"
+msgstr "마일스톤 찾기"
+
+#: class/milestone.php:49
+msgid "No milestones found."
+msgstr "마일스톤을 찾을 수 없습니다."
+
+#: class/milestone.php:50
+msgid "No milestones found in Trash."
+msgstr "휴지통에 마일스톤이 없습니다."
+
+#: class/milestone.php:51
+msgid "Parent Milestone"
+msgstr "상위 마일스톤"
+
+#: class/notification.php:132
+#, php-format
+msgid "[%s] New Project Invitation: %s"
+msgstr "[%s] 새 프로젝트 초대: %s"
+
+#: class/notification.php:196
+#, php-format
+msgid "[%s] Project Update Invitation: %s"
+msgstr "[%s] 프로젝트 업데이트 초대장 : %s"
+
+#: class/notification.php:239
+#, php-format
+msgid "[%s][%s] Task Completed: %s"
+msgstr "[%s][%s] 작업 완료: %s"
+
+#: class/notification.php:269
+#, php-format
+msgid "[%s][%s] New Message: %s"
+msgstr "[%s][%s] 새 메시지: %s"
+
+#: class/notification.php:305
+#, php-format
+msgid "[%s][%s] New Comment on: %s"
+msgstr "[%s][%s] 새 댓글 on: %s"
+
+#: class/notification.php:341
+#, php-format
+msgid "[%s][%s] Update Comment on: %s"
+msgstr "[%s][%s] 댓글 업데이트 : %s"
+
+#: class/notification.php:383
+#, php-format
+msgid "[%s][%s] New Task Assigned: %s"
+msgstr "[%s][%s] 새 할당 작업: %s"
+
+#: class/notification.php:442
+#, php-format
+msgid "[%s][%s] New Sub Task Assigned: %s"
+msgstr "[%s][%s] 할당 된 새 하위 작업: %s"
+
+#: class/project.php:30 class/project.php:46 class/project.php:47
+#: class/project.php:48 includes/html.php:1562
+msgid "Project"
+msgstr "프로젝트"
+
+#: class/project.php:31
+msgid "project manager post type"
+msgstr "프로젝트 매니저 게시 유형"
+
+#: class/project.php:49
+msgid "Add Project"
+msgstr "프로젝트 추가"
+
+#: class/project.php:50 includes/html.php:1029
+msgid "Add New Project"
+msgstr "새 새로운 프로젝트 추가"
+
+#: class/project.php:52
+msgid "Edit Project"
+msgstr "프로젝트 편집"
+
+#: class/project.php:53 views/emails/new-project.php:13
+#: views/project/index.php:36
+msgid "New Project"
+msgstr "새로운 프로젝트"
+
+#: class/project.php:54 class/project.php:55 views/emails/new-project.php:39
+#: views/emails/update-project.php:40
+msgid "View Project"
+msgstr "프로젝트 보기"
+
+#: class/project.php:56
+msgid "Search Project"
+msgstr "프로젝트 검색"
+
+#: class/project.php:57 views/project/index.php:158
+msgid "No projects found."
+msgstr "프로젝트를 찾을 수 없습니다."
+
+#: class/project.php:58
+msgid "No projects found in Trash."
+msgstr "휴지통에 프로젝트가 없습니다."
+
+#: class/project.php:59
+msgid "Parent Project"
+msgstr "부모 프로젝트"
+
+#: class/project.php:70
+msgctxt "taxonomy general name"
+msgid "Project Categories"
+msgstr "프로젝트 카테고리들"
+
+#: class/project.php:71
+msgctxt "taxonomy singular name"
+msgid "Location"
+msgstr "위치"
+
+#: class/project.php:72
+msgid "Search Project Categories"
+msgstr "프로젝트 카테고리 검색"
+
+#: class/project.php:73
+msgid "All Project Categories"
+msgstr "모든 프로젝트 카테고리"
+
+#: class/project.php:74
+msgid "Parent Project Category"
+msgstr "상위 프로젝트 카테고리"
+
+#: class/project.php:75
+msgid "Parent Project Category:"
+msgstr "상위 프로젝트 카테고리:"
+
+#: class/project.php:76
+msgid "Edit Project Category"
+msgstr "프로젝트 카테고리 편집"
+
+#: class/project.php:77
+msgid "Update Project Category"
+msgstr "﻿프로젝트 카테고리 업데이트"
+
+#: class/project.php:78
+msgid "Add New Project Category"
+msgstr "새 프로젝트 카테고리 추가"
+
+#: class/project.php:79
+msgid "New Project Category Name"
+msgstr "새 프로젝트 카테고리명"
+
+#: class/project.php:80 cpm.php:503
+msgid "Categories"
+msgstr "표시할 카테고리"
+
+#: class/project.php:686 views/project/overview.php:8
+msgid "Overview"
+msgstr "개요"
+
+#: class/project.php:691 views/project/single.php:5
+msgid "Activities"
+msgstr "활동"
+
+#: class/project.php:696 views/message/index.php:10 views/message/single.php:16
+msgid "Discussions"
+msgstr "토론"
+
+#: class/project.php:701 class/task.php:73 views/blanktemplate/todolist.php:3
+#: views/js-templates/blanktemplate/todolist.php:3 views/task/index.php:1
+msgid "Task Lists"
+msgstr "작업 목록"
+
+#: class/project.php:706 views/blanktemplate/milestone.php:11
+#: views/js-templates/blanktemplate/milestone.php:3 views/milestone/index.php:2
+msgid "Milestones"
+msgstr "마일스톤"
+
+#: class/project.php:711 views/files/index.php:1
+msgid "Files"
+msgstr "파일"
+
+#: class/task.php:42
+msgid "Sure to confirm pin task list"
+msgstr "pin 작업 목록 확인 하기"
+
+#: class/task.php:43
+msgid "Sure to confirm un-pin task list"
+msgstr "un-pin 작업 목록 확인 하기"
+
+#: class/task.php:44
+msgid "File uploads"
+msgstr "파일 업로드"
+
+#: class/task.php:45
+msgid "Attach a File"
+msgstr "파일 첨부"
+
+#: class/task.php:46
+msgid "Submit"
+msgstr "등록"
+
+#: class/task.php:47
+msgid "Update"
+msgstr "업데이트"
+
+#: class/task.php:48 includes/html.php:238 includes/html.php:299
+#: includes/html.php:494 includes/html.php:677 includes/html.php:755
+#: includes/html.php:863 includes/html.php:1092
+#: includes/lib/class-wedevs-insights.php:623
+#: views/js-templates/new-task-form.php:53
+#: views/js-templates/todo-list-form.php:29
+msgid "Cancel"
+msgstr "취소"
+
+#: class/task.php:49 class/task.php:112
+msgid "Add Task List"
+msgstr "작업 목록 추가"
+
+#: class/task.php:50 includes/functions.php:1314
+msgid "Update Task List"
+msgstr "작업 목록 업데이트"
+
+#: class/task.php:51 class/task.php:146
+msgid "Add Task"
+msgstr "작업 추가"
+
+#: class/task.php:52
+msgid "Are you sure to update task status?"
+msgstr "작업 상태를 업데이트 하시겠습니까?"
+
+#: class/task.php:54 includes/html.php:207
+#: views/js-templates/new-task-form.php:5
+msgid "Add a new task"
+msgstr "새 작업 추가"
+
+#: class/task.php:55 includes/html.php:211
+#: views/js-templates/new-task-form.php:9
+msgid "Add extra details about this task (optional)"
+msgstr "이 작업에 대한 추가 세부 정보 추가 (선택 사항)"
+
+#: class/task.php:56 views/emails/new-message.php:56
+msgid "Title"
+msgstr "Title (타이틀)"
+
+#: class/task.php:57 includes/html.php:217 includes/html.php:218
+#: views/js-templates/new-task-form.php:15
+#: views/js-templates/task-start-date.php:4
+#: views/js-templates/task-start-date.php:8
+msgid "Start Date"
+msgstr "시작 일자"
+
+#: class/task.php:58 includes/html.php:223 includes/html.php:224
+#: includes/html.php:844 views/emails/new-task.php:8
+#: views/js-templates/new-task-form.php:22
+#: views/js-templates/task-end-date.php:4
+msgid "Due Date"
+msgstr "마감일"
+
+#: class/task.php:59
+msgid "To attach"
+msgstr "첨부"
+
+#: class/task.php:60
+msgid "select files"
+msgstr "파일 선택"
+
+#: class/task.php:61
+msgid "from your computer"
+msgstr "컴퓨터에서"
+
+#: class/task.php:62
+msgid "Attachments"
+msgstr "첨부 파일"
+
+#: class/task.php:63 views/js-templates/task-single.php:169
+#: views/js-templates/todo-list.php:51
+msgid "Comments"
+msgstr "댓글"
+
+#: class/task.php:64 includes/functions.php:501
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "댓글"
+
+#: class/task.php:65
+msgid "Private Task"
+msgstr "비공개 작업"
+
+#: class/task.php:66 includes/html.php:526 views/emails/new-comment.php:65
+#: views/emails/update-comment.php:51 views/js-templates/list-comments.php:13
+#: views/js-templates/task-comments.php:13
+msgid "On"
+msgstr "켜기"
+
+#: class/task.php:67 views/emails/complete-task.php:34
+msgid "Completed by"
+msgstr "완료한 사람"
+
+#: class/task.php:68
+msgid "Close"
+msgstr "닫기"
+
+#: class/task.php:69
+msgid "Add Comment"
+msgstr "댓글 추가"
+
+#: class/task.php:70
+msgid "Are you sure to delete this file?"
+msgstr "이 파일을 삭제하시겠습니까?"
+
+#: class/task.php:71
+msgid "Please write something in comments!"
+msgstr "댓글을 써 주세요!"
+
+#: class/task.php:72 views/js-templates/todo-list-single.php:16
+msgid "Back to Task Lists"
+msgstr "작업 목록으로 돌아 가기"
+
+#: class/task.php:74 views/blanktemplate/todolist.php:6
+#: views/js-templates/blanktemplate/todolist.php:6
+msgid ""
+"You can list all your Tasks in a single discussion using a Task list. Use "
+"these lists to divide a project into several sectors, assign co-workers and "
+"check progress."
+msgstr ""
+"작업 목록을 사용하여 모든 토론을 하나의 토론으로 나열 할 수 있습니다. 이 목록"
+"을 사용하여 프로젝트를 여러 섹터로 나누고, 동료를 지정하고 진행 상황을 확인"
+"할 수 있습니다."
+
+#: class/task.php:75 views/blanktemplate/todolist.php:23
+#: views/js-templates/blanktemplate/todolist.php:22
+msgid "When to use Task Lists?"
+msgstr "작업 목록을 언제 사용합니까?"
+
+#: class/task.php:76 views/blanktemplate/todolist.php:26
+#: views/js-templates/blanktemplate/todolist.php:25
+msgid "To partition a project internals."
+msgstr "프로젝트 분할 설정."
+
+#: class/task.php:77 views/blanktemplate/todolist.php:27
+#: views/js-templates/blanktemplate/todolist.php:26
+msgid "To mark milestone points."
+msgstr "마일스톤 포인트 표시."
+
+#: class/task.php:78 views/blanktemplate/todolist.php:28
+#: views/js-templates/blanktemplate/todolist.php:27
+msgid "To assign people to tasks."
+msgstr "작업 담당자를 지정합니다."
+
+#: class/task.php:79 class/task.php:113 views/blanktemplate/todolist.php:14
+#: views/js-templates/blanktemplate/todolist.php:10
+msgid "Add New Task List"
+msgstr "새 작업목록 추가"
+
+#: class/task.php:93 class/task.php:94 class/task.php:109 class/task.php:110
+#: class/task.php:111 includes/functions.php:489 includes/html.php:955
+#: includes/html.php:1563 views/emails/mention.php:20
+#: views/emails/new-comment.php:21 views/emails/update-comment.php:21
+#: views/task/task-single.php:11 views/task/task-single.php:14
+msgid "Task List"
+msgid_plural "Task Lists"
+msgstr[0] "작업 목록"
+
+#: class/task.php:115
+msgid "Edit Task List"
+msgstr "작업목록 편집"
+
+#: class/task.php:116 includes/functions.php:1313
+msgid "New Task List"
+msgstr "새 작업목록"
+
+#: class/task.php:117 class/task.php:118
+msgid "View Task List"
+msgstr "작업목록 보기"
+
+#: class/task.php:119
+msgid "Search Task List"
+msgstr "작업목록 검색"
+
+#: class/task.php:120
+msgid "No task lists found."
+msgstr "작업 목록이 없습니다."
+
+#: class/task.php:121
+msgid "No task lists found in Trash."
+msgstr "휴지통에 작업 목록이 없습니다."
+
+#: class/task.php:122
+msgid "Parent Task List"
+msgstr "상위 작업목록"
+
+#: class/task.php:127 class/task.php:144 class/task.php:145 class/task.php:1082
+#: includes/functions.php:495 includes/html.php:1564
+#: views/emails/mention.php:25 views/emails/new-comment.php:26
+#: views/emails/update-comment.php:26 views/project/overview.php:43
+#: views/project/overview.php:87
+msgid "Task"
+msgid_plural "Tasks"
+msgstr[0] "작업"
+
+#: class/task.php:128 class/task.php:143
+msgid "Tasks"
+msgstr "업무"
+
+#: class/task.php:147 views/js-templates/single-new-task-field.php:3
+msgid "Add New Task"
+msgstr "새 작업 추가"
+
+#: class/task.php:149
+msgid "Edit Task"
+msgstr "작업 편집"
+
+#: class/task.php:150 views/js-templates/new-task-button.php:2
+#: views/js-templates/new-task-form.php:52
+msgid "New Task"
+msgstr "새 작업"
+
+#: class/task.php:151 class/task.php:152 views/emails/complete-task.php:51
+#: views/emails/new-task.php:47
+msgid "View Task"
+msgstr "작업 보기"
+
+#: class/task.php:153
+msgid "Search Task"
+msgstr "작업 찾기"
+
+#: class/task.php:154 views/js-templates/tasks.php:89
+#: views/js-templates/tasks.php:302
+msgid "No tasks found."
+msgstr "작업이 없습니다."
+
+#: class/task.php:155
+msgid "No tasks found in Trash."
+msgstr "휴지통에 작업이 없습니다."
+
+#: class/task.php:156
+msgid "Parent Task"
+msgstr "상위 작업"
+
+#: class/task.php:282 includes/cpm-api/class-cpm-json-tasks.php:171
+#: includes/cpm-api/class-cpm-json-tasks.php:253
+msgid "Task name is required."
+msgstr "작업 이름은 필수입니다."
+
+#: class/task.php:1115
+msgid "Current Task"
+msgstr "현재작업"
+
+#: class/task.php:1116
+msgid "Outstanding Task"
+msgstr "눈에 띄는 작업"
+
+#: class/task.php:1117
+msgid "Completed Task"
+msgstr "완료된 작업"
+
+#: class/tracker.php:12 includes/lib/class-wedevs-insights.php:282
+msgid ""
+"Want to help make <strong>WP Project Manager</strong> even more awesome?"
+msgstr "<strong>WP Project Manager</strong>를 더욱 멋지게 만드시겠습니까?"
+
+#: class/tracker.php:12 includes/lib/class-wedevs-insights.php:282
+msgid ""
+"Allow weDevs to collect non-sensitive diagnostic data and usage information."
+msgstr ""
+"weDevs가 민감하지 않은 진단 데이터 및 사용 정보를 수집하도록 허용하십시오."
+
+#: class/tracker.php:12
+#, php-format
+msgid "Enjoy <strong>15% discount</strong> on upgrades and add-on purchase."
+msgstr "업그레이드 및 추가 구매시 <strong>15% off</strong>."
+
+#: class/tracker.php:25
+msgid "Number of projects and tasks"
+msgstr "프로젝트 및 작업 수"
+
+#: class/upgrade.php:51
+msgid ""
+"<strong>WP Project Manager Data Update Required</strong> &#8211; Please "
+"click the button below to update to the latest version."
+msgstr ""
+"<strong>WP Project Manager Data Update Required</strong> &#8211; Please "
+"click the button below to update to the latest version."
+
+#: class/upgrade.php:55
+msgid "Run the Update"
+msgstr "업데이트 실행"
+
+#: class/validator.php:66 class/validator.php:101
+msgid " is required."
+msgstr " 필수입니다."
+
+#: class/validator.php:110
+msgid " is email field."
+msgstr " 이메일 필드 입니다."
+
+#: class/validator.php:122
+msgid " is a date field and should be formated as Y-m-d."
+msgstr " 날짜 필드이며 Y-m-d 형식이어야 합니다."
+
+#: cpm.php:209
+msgid "Pro Version"
+msgstr "Pro 버전"
+
+#: cpm.php:210 cpm.php:505
+msgid "Add-ons"
+msgstr "애드-온"
+
+#: cpm.php:456
+msgid "Allowed Files"
+msgstr "허용된 파일"
+
+#: cpm.php:500 views/project/index.php:23
+msgid "Project Manager"
+msgstr "프로젝트 매니저"
+
+#: cpm.php:501 includes/html.php:1444
+msgid "Projects"
+msgstr "프로젝트"
+
+#: includes/add-ons.php:2
+msgid "WP Project Manager Pro - add-ons"
+msgstr "WP Project Manager Pro - add-ons"
+
+#: includes/add-ons.php:41
+msgid "Installed"
+msgstr "설치됨"
+
+#: includes/add-ons.php:43
+msgid "View Details"
+msgstr "세부내역 보기"
+
+#: includes/add-ons.php:51
+msgid "Error fetching add-ons. Please try again later!"
+msgstr "Error fetching add-ons. Please try again later!"
+
+#: includes/cpm-api/class-cpm-json-comments.php:86
+#: includes/cpm-api/class-cpm-json-comments.php:203
+#: includes/cpm-api/class-cpm-json-comments.php:284
+#: includes/cpm-api/class-cpm-json-lists.php:217
+#: includes/cpm-api/class-cpm-json-lists.php:266
+#: includes/cpm-api/class-cpm-json-projects.php:70
+#: includes/cpm-api/class-cpm-json-projects.php:209
+msgid "Invalid post ID."
+msgstr "유효하지 않은 글 ID."
+
+#: includes/cpm-api/class-cpm-json-comments.php:104
+#: includes/cpm-api/class-cpm-json-comments.php:123
+#: includes/cpm-api/class-cpm-json-comments.php:145
+#: includes/cpm-api/class-cpm-json-comments.php:302
+#: includes/cpm-api/class-cpm-json-comments.php:315
+#: includes/cpm-api/class-cpm-json-comments.php:330
+#: includes/cpm-api/class-cpm-json-lists.php:61
+#: includes/cpm-api/class-cpm-json-lists.php:107
+#: includes/cpm-api/class-cpm-json-lists.php:156
+#: includes/cpm-api/class-cpm-json-messages.php:61
+#: includes/cpm-api/class-cpm-json-messages.php:108
+#: includes/cpm-api/class-cpm-json-messages.php:159
+#: includes/cpm-api/class-cpm-json-milestones.php:108
+#: includes/cpm-api/class-cpm-json-milestones.php:159
+#: includes/cpm-api/class-cpm-json-projects.php:64
+#: includes/cpm-api/class-cpm-json-projects.php:151
+#: includes/cpm-api/class-cpm-json-projects.php:199
+#: includes/cpm-api/class-cpm-json-tasks.php:63
+#: includes/cpm-api/class-cpm-json-tasks.php:118
+#: includes/cpm-api/class-cpm-json-tasks.php:179
+msgid "Sorry! You are not assigned to this project."
+msgstr "죄송합니다! 이 프로젝트에 배정되지 않았습니다."
+
+#: includes/cpm-api/class-cpm-json-comments.php:111
+#: includes/cpm-api/class-cpm-json-comments.php:305
+msgid "Sorry! You do not have permission to view this comments."
+msgstr "죄송합니다! 이 댓글을 볼 수 있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-comments.php:126
+#: includes/cpm-api/class-cpm-json-comments.php:133
+#: includes/cpm-api/class-cpm-json-comments.php:151
+#: includes/cpm-api/class-cpm-json-comments.php:318
+#: includes/cpm-api/class-cpm-json-comments.php:321
+#: includes/cpm-api/class-cpm-json-comments.php:333
+msgid "Sorry! You do not have permission to view this comment."
+msgstr "죄송합니다! 이 댓글을 볼 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-comments.php:214
+msgid "Sorry! You do not have permission to edit this comment."
+msgstr "죄송합니다! 이 댓글을 수정할 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-lists.php:53
+#: includes/cpm-api/class-cpm-json-tasks.php:55
+#: includes/cpm-api/class-cpm-json-tasks.php:109
+#: includes/cpm-api/class-cpm-json-tasks.php:167
+msgid "Invalid task list ID."
+msgstr "잘못된 작업 목록 ID입니다."
+
+#: includes/cpm-api/class-cpm-json-lists.php:74
+#: includes/cpm-api/class-cpm-json-tasks.php:66
+#: includes/cpm-api/class-cpm-json-tasks.php:121
+msgid "Sorry! You do not have permission to view this task list."
+msgstr "죄송합니다! 이 작업 목록을 볼 수있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-lists.php:160
+#: includes/cpm-api/class-cpm-json-tasks.php:183
+msgid "Sorry! You do not have permission to create task list."
+msgstr "죄송합니다! 작업 목록을 만들 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-lists.php:207
+#: includes/cpm-api/class-cpm-json-lists.php:258
+#: includes/cpm-api/class-cpm-json-tasks.php:245
+msgid "Invalid list ID."
+msgstr "목록 ID가 잘못되었습니다."
+
+#: includes/cpm-api/class-cpm-json-lists.php:231
+msgid "Sorry! Permission denied to edit task list."
+msgstr "죄송합니다! 작업 목록을 편집 할 수 있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-lists.php:270
+msgid "Permission denied."
+msgstr "권한이 거부되었습니다."
+
+#: includes/cpm-api/class-cpm-json-lists.php:278
+#: includes/cpm-api/class-cpm-json-messages.php:270
+#: includes/cpm-api/class-cpm-json-milestones.php:279
+#: includes/cpm-api/class-cpm-json-projects.php:215
+#: includes/cpm-api/class-cpm-json-tasks.php:310
+msgid "Permanently deleted post"
+msgstr "영구적으로 삭제된 글"
+
+#: includes/cpm-api/class-cpm-json-lists.php:281
+#: includes/cpm-api/class-cpm-json-messages.php:273
+#: includes/cpm-api/class-cpm-json-milestones.php:282
+#: includes/cpm-api/class-cpm-json-projects.php:217
+#: includes/cpm-api/class-cpm-json-tasks.php:313
+msgid "Deleted post"
+msgstr "삭제된 글"
+
+#: includes/cpm-api/class-cpm-json-messages.php:74
+msgid "Sorry! You do not have permission to view this message."
+msgstr "죄송합니다! 이 메시지를 볼 수 있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-messages.php:151
+#: includes/cpm-api/class-cpm-json-messages.php:218
+msgid "Message name is required."
+msgstr "메시지 이름은 필수 항목입니다."
+
+#: includes/cpm-api/class-cpm-json-messages.php:163
+msgid "Sorry! You do not have permission to create message."
+msgstr "죄송합니다! 메시지를 작성할 수 있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-messages.php:214
+#: includes/cpm-api/class-cpm-json-messages.php:259
+msgid "Invalid message ID."
+msgstr "잘못된 메시지 ID입니다."
+
+#: includes/cpm-api/class-cpm-json-messages.php:224
+#: includes/cpm-api/class-cpm-json-messages.php:263
+msgid "Sorry! You do not have permission to edit this message."
+msgstr "죄송합니다! 이 메시지를 편집 할 수 있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-milestones.php:63
+msgid "Sorry! Permission denied."
+msgstr "죄송합니다! 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-milestones.php:73
+msgid "Sorry! You do not have permission to view this milestone."
+msgstr "죄송합니다! 이 마일스톤을 볼 수 있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-milestones.php:151
+#: includes/cpm-api/class-cpm-json-milestones.php:220
+#: includes/cpm-api/class-cpm-json-milestones.php:224
+msgid "Milestone name is required."
+msgstr "마일스톤 이름은 필수 항목입니다."
+
+#: includes/cpm-api/class-cpm-json-milestones.php:163
+msgid "Sorry! You do not have permission to create milestone."
+msgstr "죄송합니다! 마일스톤을 만들 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-milestones.php:216
+#: includes/cpm-api/class-cpm-json-milestones.php:265
+msgid "Invalid milestone ID."
+msgstr "마일스톤 ID가 잘못되었습니다."
+
+#: includes/cpm-api/class-cpm-json-milestones.php:230
+msgid "Sorry! You do not have permission to edit this milestone."
+msgstr "죄송합니다! 이 마일스톤을 편집 할 수 있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-milestones.php:271
+msgid "Sorry! You do not have permission to delete this milestone."
+msgstr "죄송합니다! 이 마일스톤을 삭제할 수 있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-projects.php:99
+msgid "You do not have permission to create projects."
+msgstr "프로젝트를 만들 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-projects.php:114
+msgid "Cannot create project, something wrong!"
+msgstr "잘못된 프로젝트를 만들 수 없습니다!"
+
+#: includes/cpm-api/class-cpm-json-projects.php:155
+msgid "You do not have permission to edit this project."
+msgstr "이 프로젝트를 편집 할 수 있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-projects.php:166
+msgid "Cannot edit project, something wrong!"
+msgstr "프로젝트를 편집 할 수 없습니다. 잘못됐습니다!"
+
+#: includes/cpm-api/class-cpm-json-projects.php:203
+msgid "You do not have permission to delete this project."
+msgstr "이 프로젝트를 삭제할 수 있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-tasks.php:77
+msgid "Sorry! You do not have permission to view this task."
+msgstr "죄송합니다! 이 작업을 볼 수 있는 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-tasks.php:187
+msgid "Sorry! You do not have permission to create task."
+msgstr "죄송합니다! 작업을 만들 권한이 없습니다."
+
+#: includes/cpm-api/class-cpm-json-tasks.php:249
+#: includes/cpm-api/class-cpm-json-tasks.php:296
+msgid "Invalid task ID."
+msgstr "잘못된 작업 ID입니다."
+
+#: includes/cpm-api/class-cpm-json-tasks.php:259
+#: includes/cpm-api/class-cpm-json-tasks.php:302
+msgid "Sorry! You do not have permission to edit this task."
+msgstr "죄송합니다! 이 작업을 편집 할 수 있는 권한이 없습니다."
+
+#: includes/functions.php:39
+msgid "Search by Client..."
+msgstr "Search by Client..."
+
+#: includes/functions.php:41
+msgid "Search All..."
+msgstr "Search All..."
+
+#: includes/functions.php:69
+msgid "- All Categories -"
+msgstr "- 모든 카테고리 -"
+
+#: includes/functions.php:70
+msgid "- Project Category -"
+msgstr "- 프로젝트 카테고리 -"
+
+#: includes/functions.php:119
+msgid "Select Co-Workers"
+msgstr "동료 선택"
+
+#: includes/functions.php:178 includes/html.php:661
+#: views/js-templates/list-comment-form.php:13
+#: views/js-templates/task-comment-form.php:14
+msgid "Notify users"
+msgstr "사용자에게 알리기"
+
+#: includes/functions.php:179 views/js-templates/list-comment-form.php:16
+#: views/js-templates/task-comment-form.php:17
+msgid "Select all"
+msgstr "전체 선택"
+
+#: includes/functions.php:212 views/js-templates/assign-user.php:23
+#: views/js-templates/new-task-form.php:38
+#: views/js-templates/task-single.php:96
+#: views/js-templates/todo-lists-drop-down.php:20
+msgid "Select User"
+msgstr "사용자 선택"
+
+#: includes/functions.php:254 views/js-templates/file-uploader.php:15
+#, php-format
+msgid "To attach, %sselect files%s from your computer."
+msgstr "연결, %s파일 선택%s 사용자의 컴퓨터에서 파일을 선택합니다."
+
+#: includes/functions.php:483 includes/html.php:982
+#: views/blanktemplate/discussion.php:3
+#: views/js-templates/blanktemplate/discussion.php:3
+msgid "Discussion"
+msgid_plural "Discussions"
+msgstr[0] "토론"
+
+#: includes/functions.php:507
+msgid "File"
+msgid_plural "Files"
+msgstr[0] "파일"
+
+#: includes/functions.php:586
+msgid "file access denied"
+msgstr "접근이 거부된 파일"
+
+#: includes/functions.php:593
+msgid "file not found"
+msgstr "파일을 찾을 수 없습니다"
+
+#: includes/functions.php:744 includes/functions.php:748
+#: includes/functions.php:752 includes/functions.php:756
+msgid "Create"
+msgstr "생성"
+
+#: includes/functions.php:745 includes/functions.php:749
+#: includes/functions.php:753 includes/functions.php:757
+msgid "View Private"
+msgstr "비공개로 보기"
+
+#: includes/functions.php:760
+msgid "Upload or create doc"
+msgstr "문서 생성/업로드"
+
+#: includes/functions.php:761
+msgid "View Private files or docs"
+msgstr "비공개 파일/문서 보기"
+
+#: includes/functions.php:1079
+msgid "Delete project"
+msgstr "프로젝트 삭제"
+
+#: includes/functions.php:1079
+msgid "Are you sure to delete this project?"
+msgstr "이 프로젝트를 삭제하시겠습니까?"
+
+#: includes/functions.php:1089
+msgid "Complete"
+msgstr "완료"
+
+#: includes/functions.php:1094
+msgid "Restore"
+msgstr "복구"
+
+#: includes/functions.php:1104
+msgid "Duplicate"
+msgstr "복사"
+
+#: includes/functions.php:1156
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: includes/functions.php:1157
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: includes/functions.php:1311
+msgid "You cannot use this field more than once!"
+msgstr "이필드를 두 번 이상 사용할 수 없습니다!"
+
+#: includes/functions.php:1312
+msgid "You cannot create more than 4 actions!"
+msgstr "4개 이상의 액션을 생성 할 수 없습니다!"
+
+#: includes/functions.php:1315
+msgid "Write a comment..."
+msgstr "의견 작성..."
+
+#: includes/functions.php:1316 includes/html.php:914
+msgid "Are you sure?"
+msgstr "정말 진행하시겠습니까?"
+
+#: includes/html.php:79
+#, php-format
+msgid "Completed by %s on %s"
+msgstr "Completed by %s on %s"
+
+#: includes/html.php:131
+msgid "Are you sure to delete this task?"
+msgstr "이 작업을 삭제 하시겠습니까?"
+
+#: includes/html.php:175
+msgid "Add this task"
+msgstr "이 작업 추가"
+
+#: includes/html.php:183
+msgid "Save Changes"
+msgstr "변경 저장"
+
+#: includes/html.php:257
+msgid "Add List"
+msgstr "목록 추가"
+
+#: includes/html.php:265
+msgid "Update List"
+msgstr "목록 업데이트"
+
+#: includes/html.php:280 views/js-templates/todo-list-form.php:6
+msgid "Task list name"
+msgstr "작업 목록 이름"
+
+#: includes/html.php:284 views/js-templates/todo-list-form.php:10
+msgid "Task list details"
+msgstr "작업 목록 세부 정보"
+
+#: includes/html.php:289 includes/html.php:649 includes/html.php:730
+#: views/js-templates/milestone-dropdown.php:5
+#: views/js-templates/todo-list-form.php:16
+msgid "- Milestone -"
+msgstr "- 마일스톤 -"
+
+#: includes/html.php:333
+msgid "Edit this task list"
+msgstr "이 작업 목록 편집"
+
+#: includes/html.php:334
+msgid "Delete this task list"
+msgstr "이 작업 목록 삭제"
+
+#: includes/html.php:334 views/js-templates/todo-list-single.php:30
+#: views/js-templates/todo-list.php:15
+msgid "Are you sure to delete this task list?"
+msgstr "이 작업 목록을 삭제 하시겠습니까?"
+
+#: includes/html.php:371
+msgid "Add a task"
+msgstr "작업 추가"
+
+#: includes/html.php:387 views/js-templates/todo-list.php:40
+msgid "Completed"
+msgstr "완료"
+
+#: includes/html.php:393 views/js-templates/todo-list.php:46
+msgid "Incomplete"
+msgstr "미완료"
+
+#: includes/html.php:399 views/message/index.php:71 views/message/single.php:30
+#, php-format
+msgid "1 Comment"
+msgid_plural "%d Comments"
+msgstr[0] "%d 댓글"
+
+#: includes/html.php:454
+msgid "Add this comment"
+msgstr "이 댓글 추가"
+
+#: includes/html.php:461 views/emails/update-comment.php:40
+#: views/js-templates/list-comment-form.php:36
+#: views/js-templates/task-comment-form.php:36
+msgid "Update Comment"
+msgstr "댓글 업데이트"
+
+#: includes/html.php:501 includes/html.php:679 includes/html.php:757
+#: includes/html.php:865 includes/html.php:1094
+msgid "Saving..."
+msgstr "저장중..."
+
+#: includes/html.php:623 includes/html.php:708
+msgid "Update Message"
+msgstr "메시지 업데이트"
+
+#: includes/html.php:637 includes/html.php:719
+msgid "Enter message title"
+msgstr "메시지 제목 입력"
+
+#: includes/html.php:784
+#, php-format
+msgid "By %s on %s at %s"
+msgstr "By %s on %s at %s"
+
+#: includes/html.php:824
+msgid "Update Milestone"
+msgstr "마일스톤 업데이트"
+
+#: includes/html.php:840
+msgid "Milestone name"
+msgstr "마일스톤 이름"
+
+#: includes/html.php:898
+msgid "left"
+msgstr "왼쪽"
+
+#: includes/html.php:898
+msgid "late"
+msgstr "지남"
+
+#: includes/html.php:914
+msgid "Delete milestone"
+msgstr "마일스톤 삭제"
+
+#: includes/html.php:918
+msgid "Mark as complete"
+msgstr "완료 표시"
+
+#: includes/html.php:920
+msgid "Mark as incomplete"
+msgstr "미완료로 표시"
+
+#: includes/html.php:1013
+msgid "Completed on:"
+msgstr "완료 :"
+
+#: includes/html.php:1038 views/emails/update-project.php:14
+msgid "Update Project"
+msgstr "프로젝트"
+
+#: includes/html.php:1046
+msgid "Name of the project"
+msgstr "프로젝트명"
+
+#: includes/html.php:1063
+msgid "Some details about the project (optional)"
+msgstr "프로젝트 상세 (선택)"
+
+#: includes/html.php:1069
+msgid "Type 3 or more characters to search users..."
+msgstr "작업자를 검색하려면 3개 이상의 문자를 입력하여 주세요..."
+
+#: includes/html.php:1076
+msgid "Notify Co-Workers"
+msgstr "동료에게 알리기"
+
+#: includes/html.php:1112
+msgid "Username"
+msgstr "사용자 이름(ID)"
+
+#: includes/html.php:1117
+msgid "First Name"
+msgstr "닉네임"
+
+#: includes/html.php:1122
+msgid "Last Name"
+msgstr "성"
+
+#: includes/html.php:1127
+msgid "Email"
+msgstr "이메일"
+
+#: includes/html.php:1446
+msgid "Status"
+msgstr "상태"
+
+#: includes/html.php:1447
+msgid "Time Range"
+msgstr "Time Range"
+
+#: includes/html.php:1464
+msgid "All Projects"
+msgstr "모든 프로젝트들"
+
+#: includes/html.php:1487 includes/html.php:1511
+msgid "Select a Co-Worker"
+msgstr "담당자 선택"
+
+#: includes/html.php:1488 includes/html.php:1512
+msgid "All Co-Workers"
+msgstr "모든 동료"
+
+#: includes/html.php:1535
+msgid "All Status"
+msgstr "모든상태"
+
+#: includes/html.php:1536
+msgid "Active"
+msgstr "활성화"
+
+#: includes/html.php:1537
+msgid "Inactive"
+msgstr "비활성화"
+
+#: includes/html.php:1555 views/project/index.php:70
+msgid "All"
+msgstr "모두"
+
+#: includes/html.php:1556
+msgid "Yearly"
+msgstr "연간"
+
+#: includes/html.php:1557
+msgid "Monthly"
+msgstr "월간"
+
+#: includes/html.php:1558
+msgid "Weekly"
+msgstr "주간"
+
+#: includes/html.php:1567 includes/html.php:1581
+msgid "From"
+msgstr "발신"
+
+#: includes/html.php:1569 includes/html.php:1583
+msgid "To"
+msgstr "수신"
+
+#: includes/html.php:1597
+msgid "Generate Report"
+msgstr "보고서 생성"
+
+#: includes/html.php:1598
+msgid "Export to CSV"
+msgstr "CSV로 내보내기"
+
+#: includes/lib/class-wedevs-insights.php:184
+msgid "Server environment details (PHP, MySQL, server, WordPress versions)"
+msgstr "서버 환경 세부 정보 (PHP, MySQL, 서버, WordPress 버전)"
+
+#: includes/lib/class-wedevs-insights.php:185
+msgid "Number of users in your site"
+msgstr "귀하의 사이트에 있는 사용자 수"
+
+#: includes/lib/class-wedevs-insights.php:186
+msgid "Site language"
+msgstr "사이트 언어"
+
+#: includes/lib/class-wedevs-insights.php:187
+msgid "Number of active and inactive plugins"
+msgstr "활성 및 비활성 플러그인 수"
+
+#: includes/lib/class-wedevs-insights.php:188
+msgid "Site name and url"
+msgstr "사이트 이름 및 URL"
+
+#: includes/lib/class-wedevs-insights.php:189
+msgid "Your name and email address"
+msgstr "귀하의 이름과 이메일 주소"
+
+#: includes/lib/class-wedevs-insights.php:287
+msgid "what we collect"
+msgstr "우리가 수집 한 것"
+
+#: includes/lib/class-wedevs-insights.php:288
+msgid "No sensitive data is tracked."
+msgstr "민감한 데이터는 추적되지 않습니다."
+
+#: includes/lib/class-wedevs-insights.php:293
+msgid "Allow"
+msgstr "허용함"
+
+#: includes/lib/class-wedevs-insights.php:294
+msgid "No thanks"
+msgstr "아니요, 됐습니다"
+
+#: includes/lib/class-wedevs-insights.php:471
+msgid "Once Weekly"
+msgstr "일주일에 한 번"
+
+#: includes/lib/class-wedevs-insights.php:510
+msgid "I couldn't understand how to make it work"
+msgstr "어떻게 작동시키는지 이해할 수 없음"
+
+#: includes/lib/class-wedevs-insights.php:512
+msgid "Would you like us to assist you?"
+msgstr "우리가 당신을 도와드릴까요?"
+
+#: includes/lib/class-wedevs-insights.php:516
+msgid "I found a better plugin"
+msgstr "더 나은 플러그인을 찾았습니다"
+
+#: includes/lib/class-wedevs-insights.php:518
+msgid "Which plugin?"
+msgstr "어떤 플러그인 입니까?"
+
+#: includes/lib/class-wedevs-insights.php:522
+msgid "The plugin is great, but I need specific feature that you don't support"
+msgstr "플러그인은 좋지만 지원하지 않는 특정 기능이 필요합니다"
+
+#: includes/lib/class-wedevs-insights.php:524
+msgid "Could you tell us more about that feature?"
+msgstr "그 기능에 대해 좀 더 자세히 말씀해 주시겠습니까?"
+
+#: includes/lib/class-wedevs-insights.php:528
+msgid "The plugin is not working"
+msgstr "플러그인이 작동하지 않음"
+
+#: includes/lib/class-wedevs-insights.php:530
+msgid "Could you tell us a bit more whats not working?"
+msgstr "뭐가 잘 안 되는지 좀 더 말씀해 주시겠어요?"
+
+#: includes/lib/class-wedevs-insights.php:534
+msgid "It's not what I was looking for"
+msgstr "이건 제가 찾던게 아닙니다"
+
+#: includes/lib/class-wedevs-insights.php:540
+msgid "The plugin didn't work as expected"
+msgstr "플러그인이 예상대로 작동하지 않았습니다"
+
+#: includes/lib/class-wedevs-insights.php:542
+msgid "What did you expect?"
+msgstr "당신은 무엇을 기대 하나요?"
+
+#: includes/lib/class-wedevs-insights.php:546
+msgid "Other"
+msgstr "기타"
+
+#: includes/lib/class-wedevs-insights.php:548
+msgid "Could you tell us a bit more?"
+msgstr "조금 더 말씀해 주시겠습니까?"
+
+#: includes/lib/class-wedevs-insights.php:607
+msgid "If you have a moment, please let us know why you are deactivating:"
+msgstr "잠시 시간이 있으시면, 왜 비활성화 하시는지 알려 주십시오:"
+
+#: includes/lib/class-wedevs-insights.php:621
+msgid "I rather wouldn't say"
+msgstr "저는 말하지 않겠습니다"
+
+#: includes/lib/class-wedevs-insights.php:622
+msgid "Submit & Deactivate"
+msgstr "제출 & 비활성화"
+
+#: includes/lib/class-weforms-upsell.php:77
+msgid "Install Now"
+msgstr "지금 설치하기"
+
+#: includes/lib/class-weforms-upsell.php:80
+#: includes/lib/class-weforms-upsell.php:81
+msgid "Dismiss this notice."
+msgstr "이 알림 무시."
+
+#: includes/lib/class-weforms-upsell.php:353
+msgid "You don't have permission to install the plugins"
+msgstr "플러그인을 설치할 수있는 권한이 없습니다"
+
+#: includes/lib/class.settings-api.php:352
+msgid "Choose File"
+msgstr "파일 선택"
+
+#: includes/shortcodes.php:104 includes/shortcodes.php:107
+msgid "discussion"
+msgstr "토론"
+
+#: views/blanktemplate/discussion.php:6
+#: views/js-templates/blanktemplate/discussion.php:6
+msgid ""
+"Use our built in discussion panel to create an open discussion, a group "
+"discussion or a private conversation. Note that the Admin can always "
+"moderate these discussions."
+msgstr ""
+"우리의 기본 토론 패널을 사용하여 공개 토론, 그룹 토론 또는 비공개 대화를 만"
+"들 수 있습니다. 관리자는 항상 이러한 토론을 검토 할 수 있습니다."
+
+#: views/blanktemplate/discussion.php:15
+#: views/js-templates/blanktemplate/discussion.php:15
+#: views/message/index.php:21
+msgid "Add New Discussion"
+msgstr "새 토론 추가"
+
+#: views/blanktemplate/discussion.php:18
+#: views/js-templates/blanktemplate/discussion.php:18
+#: views/message/index.php:24
+msgid "Create a new message"
+msgstr "새 메시지 작성"
+
+#: views/blanktemplate/discussion.php:25
+#: views/js-templates/blanktemplate/discussion.php:25
+msgid "When to use Discussions?"
+msgstr "토론을 언제 사용하시겠습니까?"
+
+#: views/blanktemplate/discussion.php:28
+#: views/js-templates/blanktemplate/discussion.php:28
+msgid "To discuss a work matter privately."
+msgstr "이 문제를 비공개로 토론 합니다."
+
+#: views/blanktemplate/discussion.php:29
+#: views/js-templates/blanktemplate/discussion.php:29
+msgid "To exchange files privately."
+msgstr "파일을 비공개로 전환합니다."
+
+#: views/blanktemplate/discussion.php:30
+#: views/js-templates/blanktemplate/discussion.php:30
+msgid "To discuss in a group."
+msgstr "그룹에서 토론합니다."
+
+#: views/blanktemplate/discussion.php:31
+#: views/js-templates/blanktemplate/discussion.php:31
+msgid "To create an open discussion visible to all."
+msgstr "모두가 볼 수 있는 공개 토론을 생성합니다."
+
+#: views/blanktemplate/files.php:3 views/js-templates/blanktemplate/files.php:3
+msgid "Documents & Files"
+msgstr "문서 & 파일"
+
+#: views/blanktemplate/files.php:6 views/js-templates/blanktemplate/files.php:6
+msgid ""
+"Access all the files from all discussions in one place. Store your project "
+"related files, docs, images or any other files on-site. Makes sharing and "
+"storing easy and convenient, plus you can add privacy here too."
+msgstr ""
+"한 곳에서 모든 토론의 모든 파일에 액세스하십시오. 프로젝트 관련 파일, 문서, "
+"이미지 또는 기타 모든 파일을 현장에 저장하십시오. 쉽고 편리하게 공유하고 저장"
+"하게하고 여기에도 개인 정보를 추가 할 수 있습니다."
+
+#: views/blanktemplate/files.php:12
+#: views/js-templates/blanktemplate/files.php:12
+msgid "Benefits of Documents"
+msgstr "Benefits of Documents"
+
+#: views/blanktemplate/files.php:15
+#: views/js-templates/blanktemplate/files.php:15
+msgid "Integrate easily with projects or tasks."
+msgstr "프로젝트나 작업을 쉽게 통합할 수 있습니다."
+
+#: views/blanktemplate/files.php:16
+#: views/js-templates/blanktemplate/files.php:16
+msgid "Shared storage keeps all data secure."
+msgstr "보관소에 공유된 데이터는 안전하게 저장됩니다."
+
+#: views/blanktemplate/files.php:17
+#: views/js-templates/blanktemplate/files.php:17
+msgid "File sharing privacy."
+msgstr "비공개로 파일 공유."
+
+#: views/blanktemplate/milestone.php:14
+#: views/js-templates/blanktemplate/milestone.php:6
+msgid ""
+"Create a lifecycle of your projects using milestones. Time mark the "
+"different stages of your project with multiple milestones and also it will "
+"help the assigned people to aim for a date to complete the project according "
+"to those steps."
+msgstr ""
+"마일스톤을 이용해 프로젝트의 라이프사이클을 생성하세요. 프로젝트의 각 단계에 "
+"마일스톤을 표시하면, 각 작업에 할당 된 사람들이 각 단계별 일정을 목표로 하는 "
+"데 도움이 됩니다."
+
+#: views/blanktemplate/milestone.php:29
+#: views/js-templates/blanktemplate/milestone.php:21
+msgid "When to use Milestones?"
+msgstr "마일스톤s은 언제 사용합니까?"
+
+#: views/blanktemplate/milestone.php:32
+#: views/js-templates/blanktemplate/milestone.php:24
+msgid "To set a target date for the project overall."
+msgstr "프로젝트 목표 마감일 설정."
+
+#: views/blanktemplate/milestone.php:33
+#: views/js-templates/blanktemplate/milestone.php:25
+msgid "To divide a project into several development-time phases."
+msgstr "프로젝트를 여러 단계로 나눕니다."
+
+#: views/blanktemplate/milestone.php:34
+#: views/js-templates/blanktemplate/milestone.php:26
+msgid "To coordinate projects and assigned persons timely."
+msgstr "적시에 프로젝트와 담당자를 조정합니다."
+
+#: views/emails/complete-task.php:9
+msgid "Date"
+msgstr "일자"
+
+#: views/emails/complete-task.php:27
+msgid "New task has been completed"
+msgstr "새 작업이 완료되었습니다"
+
+#: views/emails/mention.php:37 views/emails/new-project.php:27
+#: views/emails/update-project.php:27
+msgid "Hello"
+msgstr "안녕하세요"
+
+#: views/emails/mention.php:39
+msgid "You are mentioned in a comment by"
+msgstr "댓글에 언급되었습니다"
+
+#: views/emails/mention.php:41
+msgid "Please click the link bellow to view the comment."
+msgstr "댓글을 보려면 아래 링크를 클릭하십시오."
+
+#: views/emails/mention.php:47 views/emails/new-comment.php:82
+#: views/emails/update-comment.php:69
+msgid "View Comment"
+msgstr "댓글 보기"
+
+#: views/emails/new-comment.php:54
+msgid "New Comment"
+msgstr "새 댓글"
+
+#: views/emails/new-comment.php:61 views/emails/update-comment.php:47
+msgid "Commented By"
+msgstr "댓글 단 사람"
+
+#: views/emails/new-comment.php:72 views/emails/update-comment.php:59
+msgid "Author:"
+msgstr "글쓴이:"
+
+#: views/emails/new-comment.php:73 views/emails/update-comment.php:60
+msgid "Permalink:"
+msgstr "고유주소:"
+
+#: views/emails/new-comment.php:73 views/emails/update-comment.php:60
+msgid "Comment link"
+msgstr "댓글 링크"
+
+#: views/emails/new-comment.php:74 views/emails/update-comment.php:61
+msgid "Comment:"
+msgstr "댓글:"
+
+#: views/emails/new-message.php:47
+msgid "Message Created By"
+msgstr "메시지 작성자"
+
+#: views/emails/new-project.php:20
+msgid "Project Created By"
+msgstr "프로젝트 생성자"
+
+#: views/emails/new-project.php:29
+#, php-format
+msgid "You are assigned to a new project \"%s\" by %s."
+msgstr "\"%s\"이(가) %s에 의해 새 프로젝트가 할당되었습니다."
+
+#: views/emails/new-project.php:30 views/emails/update-project.php:30
+msgid "You can see the project by going here:"
+msgstr "여기에서 프로젝트 진행 상황을 볼 수 있습니다:"
+
+#: views/emails/new-task.php:24
+msgid "New task has been assigned to you"
+msgstr "당신에게 새로운 작업이 할당되었습니다"
+
+#: views/emails/new-task.php:30
+msgid "Created By"
+msgstr "작성자"
+
+#: views/emails/update-project.php:20
+msgid "Project Updated By"
+msgstr "프로젝트 업데이트 한 사람"
+
+#: views/emails/update-project.php:29
+#, php-format
+msgid "You are assigned to a project update \"%s\" by %s."
+msgstr "\"%s\"이(가) %s에 의해 프로젝트 업데이트가 할당되었습니다."
+
+#: views/files/index.php:80
+#, php-format
+msgid "Attached to <a href=\"%s\">%s</a> by %s"
+msgstr "<a href=\"%s\">%s</a>에 첨부됨. 첨부한 사람 %s"
+
+#: views/js-templates/assign-user.php:5
+msgid "Assign User"
+msgstr "사용자 할당"
+
+#: views/js-templates/assign-user.php:34 views/js-templates/task-single.php:107
+msgid "No Man’s Sky"
+msgstr "No Man’s Sky"
+
+#: views/js-templates/list-comment-form.php:35
+#: views/js-templates/task-comment-form.php:35
+msgid "Add New Comment"
+msgstr "새 댓글 추가"
+
+#: views/js-templates/list-comments.php:3 views/task/single.php:10
+msgid "Discuss this task list"
+msgstr "이 작업 목록 토론"
+
+#: views/js-templates/new-task-form.php:51
+msgid "Update Task"
+msgstr "작업 업데이트"
+
+#: views/js-templates/task-comments.php:3 views/task/task-single.php:22
+msgid "Discuss this task"
+msgstr "이 작업에 대해 토론"
+
+#: views/js-templates/task-description.php:2
+#: views/js-templates/task-description.php:5
+msgid "Description"
+msgstr "설명"
+
+#: views/js-templates/task-single.php:62
+msgid "Make public"
+msgstr "공개로 설정"
+
+#: views/js-templates/task-single.php:63
+msgid "Make private"
+msgstr "비공개로 설정"
+
+#: views/js-templates/task-single.php:64
+msgid "Edit Task Title"
+msgstr "작업 제목 편집"
+
+#: views/js-templates/task-single.php:126
+#: views/js-templates/task-single.php:132
+#: views/js-templates/task-single.php:152
+msgid "Edit Task Description"
+msgstr "작업 설명 편집"
+
+#: views/js-templates/task-single.php:180
+msgid "Update Description"
+msgstr "업데이트 설명"
+
+#: views/js-templates/task-single.php:193
+msgid "Shift+Enter for line break"
+msgstr "줄 바꿈 Shift+Enter"
+
+#: views/js-templates/tasks.php:3
+msgid "Incomplete Tasks"
+msgstr "완료되지 않은 작업"
+
+#: views/js-templates/tasks.php:91 views/js-templates/tasks.php:182
+#: views/js-templates/tasks.php:308 views/js-templates/tasks.php:381
+msgid "More Tasks"
+msgstr "더 많은 작업"
+
+#: views/js-templates/tasks.php:98
+msgid "Completed Tasks"
+msgstr "완료된 작업"
+
+#: views/js-templates/tasks.php:179 views/js-templates/tasks.php:379
+msgid "No completed tasks."
+msgstr "완료된 작업이 없습니다."
+
+#: views/js-templates/todo-list-single.php:29
+#: views/js-templates/todo-list.php:14
+msgid "Edit this List"
+msgstr "이 목록 편집"
+
+#: views/js-templates/todo-list-single.php:30
+#: views/js-templates/todo-list.php:15
+msgid "Delete this List"
+msgstr "이 목록 삭제"
+
+#: views/js-templates/todo-lists-drop-down.php:5
+msgid "Lists"
+msgstr "목록"
+
+#: views/js-templates/todo-lists-drop-down.php:31
+msgid "Select Task List"
+msgstr "작업 목록 선택"
+
+#: views/message/index.php:33
+msgid "Discussion List"
+msgstr "토론 목록"
+
+#: views/message/index.php:53
+#, php-format
+msgid "By %s on %s"
+msgstr "By %s on %s"
+
+#: views/message/index.php:61
+msgid "Delete this message"
+msgstr "이 메시지 삭제"
+
+#: views/message/index.php:61
+msgid "Are you sure to delete this message?"
+msgstr "이 메시지를 삭제하시겠습니까?"
+
+#: views/message/single.php:7
+msgid "Error: Message not found"
+msgstr "오류:메시지를 찾을 수 없습니다"
+
+#: views/message/single.php:12 views/task/task-single.php:7
+msgid "You do not have permission to access this page."
+msgstr "이 페이지에 액세스 할 수 있는 권한이 없습니다."
+
+#: views/message/single.php:47
+msgid "No comments found."
+msgstr "댓글이 없습니다."
+
+#: views/milestone/index.php:54
+msgid "Late Milestones"
+msgstr "지난 마일스톤"
+
+#: views/milestone/index.php:66
+msgid "Upcoming Milestones"
+msgstr "다가오는 마일스톤"
+
+#: views/milestone/index.php:78
+msgid "Completed Milestones"
+msgstr "완료된 마일스톤"
+
+#: views/project/header.php:7
+msgid "Error: Project not found"
+msgstr "오류:프로젝트를 찾을 수 없습니다"
+
+#: views/project/header.php:12
+msgid "Error: Permission denied"
+msgstr "오류:사용 권한이 거부됨"
+
+#: views/project/header.php:52 views/project/index.php:170
+msgid "Create a new user"
+msgstr "새 사용자 생성"
+
+#: views/project/index.php:55
+msgid "Filter"
+msgstr "필터"
+
+#: views/project/index.php:74
+#, php-format
+msgid "Active <span class=\"count\">%d</span>"
+msgstr "활동 <span class=\"count\">%d</span>"
+
+#: views/project/index.php:78
+#, php-format
+msgid "Completed <span class=\"count\">%d</span>"
+msgstr "완료 <span class=\"count\">%d</span>"
+
+#: views/project/index.php:106
+msgctxt "Single project status"
+msgid "Completed"
+msgstr "완료"
+
+#: views/project/index.php:166
+msgid "Start a new project"
+msgstr "새 프로젝트 시작"
+
+#: views/project/overview.php:39
+msgid "Last 30 days"
+msgstr "최근 30일"
+
+#: views/project/overview.php:43 views/project/overview.php:77
+msgid "Activity"
+msgstr "활동"
+
+#: views/project/overview.php:53
+msgid "Users"
+msgstr "사용자"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Project Manager"
+msgstr "WP Project Manager"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/wedevs-project-manager/"
+msgstr "https://wordpress.org/plugins/wedevs-project-manager/"
+
+#. Description of the plugin/theme
+msgid ""
+"WordPress Project Management plugin. Manage your projects and tasks, get "
+"things done."
+msgstr ""
+"WordPress Project Management 플러그인. 프로젝트 및 작업을 손쉽게 관리할 수 있"
+"습니다."
+
+#. Author of the plugin/theme
+msgid "Tareq Hasan"
+msgstr "타레크 하산(Tareq Hasan)"
+
+#. Author URI of the plugin/theme
+msgid "https://tareq.co"
+msgstr "https://tareq.co"

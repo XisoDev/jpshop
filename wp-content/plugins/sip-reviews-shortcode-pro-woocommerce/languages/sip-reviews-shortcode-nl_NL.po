@@ -1,0 +1,607 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SIP Reviews Shortcode Pro WooCommerce v1.1.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2016-06-17 09:07:29+0000\n"
+"Last-Translator: johnston <johnston@chipbizz.nl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:116
+#: admin/class-sip-reviews-shortcode-wc-admin.php:261
+#: admin/partials/ui/settings.php:2
+#@ sip-reviews-shortcode
+msgid "Settings"
+msgstr "Instellingen"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:118
+#@ sip-reviews-shortcode
+msgid "Docs"
+msgstr "Documenten"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:132
+#@ sip-reviews-shortcode
+msgid "SIP Plugin Panel"
+msgstr "SIP plugin admin"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:133
+#@ sip-reviews-shortcode
+msgid "SIP Plugins"
+msgstr "SIP plugins"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:180
+#: admin/class-sip-reviews-shortcode-wc-admin.php:181
+#@ sip-reviews-shortcode
+msgid "Reviews Shortcode"
+msgstr "Reviews shortcode"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:234
+#@ sip-reviews-shortcode
+msgid "Shopitpress extras"
+msgstr "SIP extra's"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:236
+#@ sip-reviews-shortcode
+msgid "Plugins"
+msgstr "Plugins"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:237
+#@ sip-reviews-shortcode
+msgid "Themes"
+msgstr "Thema's"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:258
+#@ sip-reviews-shortcode
+msgid "Sip Reviews Shortcode for Woocommerce"
+msgstr "SIP reviews shortcode voor WooCommerce"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:262
+#@ sip-reviews-shortcode
+msgid "Licenses"
+msgstr "Licenties"
+
+#: admin/class-sip-reviews-shortcode-wc-admin.php:263
+#@ sip-reviews-shortcode
+msgid "Help"
+msgstr "Help"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:26
+#@ sip-reviews-shortcode
+msgid "Custom Color Settings"
+msgstr "Aangepaste kleuren"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:33
+#@ sip-reviews-shortcode
+msgid "Save Color"
+msgstr ""
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:89
+#: public/class-sip-reviews-shortcode-wc-public.php:81
+#@ sip-reviews-shortcode
+msgid "Review stars"
+msgstr "Review sterren"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:96
+#: public/class-sip-reviews-shortcode-wc-public.php:88
+#@ sip-reviews-shortcode
+msgid "Reviews bar summary"
+msgstr "Reviews samenvatting balken"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:103
+#: public/class-sip-reviews-shortcode-wc-public.php:95
+#@ sip-reviews-shortcode
+msgid "Review background"
+msgstr "Reviews achtergrond"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:110
+#: public/class-sip-reviews-shortcode-wc-public.php:102
+#@ sip-reviews-shortcode
+msgid "Review body text"
+msgstr "Reviews body tekst"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:117
+#: public/class-sip-reviews-shortcode-wc-public.php:109
+#@ sip-reviews-shortcode
+msgid "Review title"
+msgstr "Review titel"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:124
+#: public/class-sip-reviews-shortcode-wc-public.php:116
+#@ sip-reviews-shortcode
+msgid "Load more button background"
+msgstr "'Meer laden' knop achtergrond"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:132
+#: public/class-sip-reviews-shortcode-wc-public.php:124
+#@ sip-reviews-shortcode
+msgid "Load more button text"
+msgstr "'Meer reviews' knop tekst"
+
+#: admin/partials/class-sip-reviews-shortcode-wc-admin-setting.php:140
+#@ sip-reviews-shortcode
+msgid "Accent color"
+msgstr "Accentkleur"
+
+#: admin/partials/ui/affiliate.php:2
+#@ sip-reviews-shortcode
+msgid "Be awesome"
+msgstr "Wees geweldig"
+
+#: admin/partials/ui/affiliate.php:3
+#@ sip-reviews-shortcode
+msgid "Do you like this plugin? Would you like to see even more great features? Please be awesome and help us maintain and develop free plugins by checking the option below"
+msgstr "Vindt je dit een fijne plugin? Wil je graag nog meer geweldige functies? Wees een held en help ons deze plugin te onderhouden en te ontwikkelen door de onderstaande optie aan te vinken."
+
+#: admin/partials/ui/affiliate.php:8
+#@ sip-reviews-shortcode
+msgid "Yes, I want to help development of this plugin"
+msgstr "Ja, ik wil helpen bij het ontwikkelen van deze plugin"
+
+#: admin/partials/ui/affiliate.php:11
+#@ sip-reviews-shortcode
+msgid "Add a discreet credit"
+msgstr "Voeg een discrete vernoeming toe voor SIP"
+
+#: admin/partials/ui/affiliate.php:12
+#@ sip-reviews-shortcode
+msgid "Add my affiliate link"
+msgstr "Voeg mijn affiliate link toe"
+
+#: admin/partials/ui/affiliate.php:14
+#@ sip-reviews-shortcode
+msgid "Input affiliate username/ID"
+msgstr "Voer affiliate gebruikersnaam / ID in"
+
+#: admin/partials/ui/affiliate.php:16
+#@ sip-reviews-shortcode
+msgid "Make money recommending our plugins. Register for an affiliate account at"
+msgstr "Verdien met het aanbevelen van onze plugins en registreer voor een affiliate account via "
+
+#: admin/partials/ui/help.php:3
+#@ sip-reviews-shortcode
+msgid "Usage"
+msgstr "Gebruik"
+
+#: admin/partials/ui/plugin.php:10
+#@ sip-reviews-shortcode
+msgid "Display real time proof of your sales and customers.<br>"
+msgstr "Toon actuele bewijzen van verkoop aan klanten. <br>"
+
+#: admin/partials/ui/plugin.php:16
+#@ sip-reviews-shortcode
+msgid "Bundle maker with real time offers.<br><br>"
+msgstr "Bundels creëren met het actuele aanbod. <br><br>"
+
+#: admin/partials/ui/plugin.php:22
+#@ sip-reviews-shortcode
+msgid "Display product reviews in any post/page with a shortcode."
+msgstr "Geef productrecensies weer in iedere post / pagina met behulp van een shortcode."
+
+#: admin/partials/ui/plugin.php:28
+#@ sip-social-proof
+msgid "Powerful email automation."
+msgstr "Krachtige e-mail automatisering."
+
+#: admin/partials/ui/plugin.php:34
+#@ sip-reviews-shortcode
+msgid "Encourage visitors to enable cookies so you don’t lose sales."
+msgstr "Moedig bezoekers aan om cookies in te schakelen zodat u geen verkoop misloopt."
+
+#: admin/partials/ui/plugin.php:57
+#: admin/partials/ui/themes.php:33
+#@ sip-reviews-shortcode
+msgid "Learn more"
+msgstr "Meer te weten komen"
+
+#: admin/partials/ui/settings.php:8
+#@ sip-reviews-shortcode
+msgid "Yes, I want to link to comments"
+msgstr "Ja, ik wil comments als link hebben"
+
+#: admin/partials/ui/settings.php:12
+#@ sip-reviews-shortcode
+msgid "Yes, I want to show product name in aggregate reviews"
+msgstr "Ja, ik wil de productnamen tonen in geaggregeerde recensies"
+
+#: admin/partials/ui/settings.php:16
+#@ sip-reviews-shortcode
+msgid "Limit review to number of characters. 0 mean complete review"
+msgstr "Beperk het aantal tekens. Voer 0 in om altijd de complete recensie te tonen"
+
+#: admin/partials/ui/settings.php:23
+#@ sip-reviews-shortcode
+msgid "Hold for moderation by an admin"
+msgstr "Vasthouden voor moderatie door administrator"
+
+#: admin/partials/ui/settings.php:27
+#@ sip-reviews-shortcode
+msgid "Automatically publish"
+msgstr "Automatisch publiceren"
+
+#: admin/partials/ui/settings.php:32
+#@ sip-reviews-shortcode
+msgid "Notify admin when new reviews are submitted"
+msgstr "Notificeer administrator wanneer nieuwe reviews worden ingezonden"
+
+#: admin/partials/ui/themes.php:10
+#@ sip-social-proof
+msgid "Flat and responsive WooCommerce theme.<br>"
+msgstr "Simpel en mobielvriendelijk WooCommerce thema. <br>"
+
+#: am/admin/class-wc-api-manager-menu.php:38
+#: am/admin/class-wc-api-manager-menu.php:47
+#@ sip-reviews-shortcode
+msgid "Save Changes"
+msgstr "Wijzigingen opslaan"
+
+#: am/admin/class-wc-api-manager-menu.php:61
+#@ sip-reviews-shortcode
+msgid "API License Activation"
+msgstr "API licentie-activatie"
+
+#: am/admin/class-wc-api-manager-menu.php:62
+#@ sip-reviews-shortcode
+msgid "API License Key Status"
+msgstr "Status API licentiesleutel"
+
+#: am/admin/class-wc-api-manager-menu.php:63
+#@ sip-reviews-shortcode
+msgid "API License Key"
+msgstr "API licentiesleutel"
+
+#: am/admin/class-wc-api-manager-menu.php:64
+#@ sip-reviews-shortcode
+msgid "API License email"
+msgstr "API licentie e-mail"
+
+#: am/admin/class-wc-api-manager-menu.php:68
+#@ sip-reviews-shortcode
+msgid "API License Deactivation"
+msgstr "API licentie deactivatie"
+
+#: am/admin/class-wc-api-manager-menu.php:69
+#@ sip-reviews-shortcode
+msgid "Deactivate API License Key"
+msgstr "Deactivatie van API licentiesleutel"
+
+#: am/admin/class-wc-api-manager-menu.php:149
+#@ sip-reviews-shortcode
+msgid "Plugin activated. "
+msgstr "Plugin geactiveerd."
+
+#: am/admin/class-wc-api-manager-menu.php:155
+#@ sip-reviews-shortcode
+msgid "Connection failed to the License Key API server. Try again later."
+msgstr "Verbinding met de API licentiesleutel server is mislukt . Probeer het later nog eens."
+
+#: am/admin/class-wc-api-manager-menu.php:242
+#@ sip-reviews-shortcode
+msgid "The license could not be deactivated. Use the License Deactivation tab to manually deactivate the license before activating a new license."
+msgstr "De licentie kon niet worden gedeactiveerd. Gebruik de tab 'Licentie deactivatie' om de licentie handmatig te deactiveren voordat u een nieuwe licentie activeert."
+
+#: am/admin/class-wc-api-manager-menu.php:281
+#@ sip-reviews-shortcode
+msgid "Plugin license deactivated. "
+msgstr "Licentie voor deze plugin is gedeactiveerd."
+
+#: am/admin/class-wc-api-manager-menu.php:349
+#@ sip-reviews-shortcode
+msgid "Deactivates an API License Key so it can be used on another blog."
+msgstr "Deactiveert API licentiesleutel zodat deze gebruikt kan worden voor een andere blog."
+
+#: am/classes/class-wc-plugin-update.php:341
+#, php-format
+#@ sip-reviews-shortcode
+msgid "The license key for %s has expired. You can reactivate or purchase a license key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "De licentiesleutel voor %s is verlopen. U kunt deze heractiveren of een licentiesleutel aanschaffen via uw <a href=\"%s\" target=\"_blank\">account</a>."
+
+#: am/classes/class-wc-plugin-update.php:352
+#, php-format
+#@ sip-reviews-shortcode
+msgid "The subscription for %s is on-hold. You can reactivate the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "De aanmelding voor %s staat in de wacht. Je kunt heractiveren via jouw  <a href=\"%s\" target=\"_blank\">account</a>."
+
+#: am/classes/class-wc-plugin-update.php:363
+#, php-format
+#@ sip-reviews-shortcode
+msgid "The subscription for %s has been cancelled. You can renew the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new license key will be emailed to you after your order has been completed."
+msgstr "De inschrijving voor %s is geannuleerd. Je kunt je inschrijving vernieuwen vanaf jouw  <a href=\"%s\" target=\"_blank\">account</a>. Na voltooien van je order wordt een nieuwe licentiesleutel opgestuurd per e-mail."
+
+#: am/classes/class-wc-plugin-update.php:374
+#, php-format
+#@ sip-reviews-shortcode
+msgid "The subscription for %s has expired. You can reactivate the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "De inschrijving voor %s is verlopen. Je kunt de inschrijving heractiveren vanaf jouw <a href=\"%s\" target=\"_blank\">dashboard</a>."
+
+#: am/classes/class-wc-plugin-update.php:385
+#, php-format
+#@ sip-reviews-shortcode
+msgid "The subscription for %s has been suspended. You can reactivate the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "De inschrijving voor %s is tijdelijk opgeheven. Je kunt de inschrijving heractiveren via jouw  <a href=\"%s\" target=\"_blank\">account</a>."
+
+#: am/classes/class-wc-plugin-update.php:396
+#, php-format
+#@ sip-reviews-shortcode
+msgid "The subscription for %s is still pending. You can check on the status of the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "De inschrijving voor %s is nog afwachtende. Je kunt de status van de inschrijving inzien via jouw <a href=\"%s\" target=\"_blank\">account</a>."
+
+#: am/classes/class-wc-plugin-update.php:407
+#, php-format
+#@ sip-reviews-shortcode
+msgid "The subscription for %s has been placed in the trash and will be deleted soon. You can purchase a new subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "De inschrijving voor %s is verplaatst naar de prullenbak en zal binnenkort worden verwijderd. Je kunt een nieuwe inschrijving aanschaffen via jouw <a href=\"%s\" target=\"_blank\">account</a>."
+
+#: am/classes/class-wc-plugin-update.php:418
+#, php-format
+#@ sip-reviews-shortcode
+msgid "A subscription for %s could not be found. You can purchase a subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Er is geen inschrijving gevonden voor %s. Je kunt een inschrijving aanschaffen via jouw <a href=\"%s\" target=\"_blank\">account</a>."
+
+#: am/classes/class-wc-plugin-update.php:429
+#, php-format
+#@ sip-reviews-shortcode
+msgid "A license key for %s could not be found. Maybe you forgot to enter a license key when setting up %s, or the key was deactivated in your account. You can reactivate or purchase a license key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "De licentiesleutel voor %s is niet gevonden. Heeft u uw licentiesleutel ingevoerd bij het instellen van %s? Is de licentiesleutel nog actief in uw account? Je kunt de licentiesleutel vernieuwen of opnieuw aanschaffen via jouw <a href=\"%s\" target=\"_blank\">account</a>."
+
+#: am/classes/class-wc-plugin-update.php:440
+#, php-format
+#@ sip-reviews-shortcode
+msgid "Download permission for %s has been revoked possibly due to a license key or subscription expiring. You can reactivate or purchase a license key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Toegang tot de download voor %s is ingetrokken, mogelijk doordat de licentiesleutel of inschrijivng binnenkort beëindigt, of reeds is beëindigd. Je kunt de licentiesleutel opnieuw aanschaffen of heractiveren via jouw <a href=\"%s\" target=\"_blank\">account</a>."
+
+#: am/classes/class-wc-plugin-update.php:451
+#, php-format
+#@ sip-reviews-shortcode
+msgid "%s has not been activated. Go to the settings page and enter the license key and license email to activate %s."
+msgstr "%s is niet actief. Ga naar de instellingenpagina en voer de licentiesleutel en bijbehorende e-mailadres in om % te activeren."
+
+#: am/classes/class-wc-plugin-update.php:462
+#, php-format
+#@ sip-reviews-shortcode
+msgid "You changed the subscription for %s, so you will need to enter your new API License Key in the settings page. The License Key should have arrived in your email inbox, if not you can get it by logging into your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Je hebt je inschrijving voor %s gewijzigd, dus dient u een nieuwe API licentiesleutel in te voeren bij de instellingenpagina. U heeft licentiesleutel als het goed is reeds ontvangen in uw e-mail inbox. Indien dit niet het geval dan kunt u de licentiesleutel achterhalen via uw <a href=\"%s\" target=\"_blank\">account</a>."
+
+#: public/class-sip-reviews-shortcode-wc-public.php:143
+#@ sip-reviews-shortcode
+msgid "Insert Product Reviews"
+msgstr "Productrecensies toevoegen"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:147
+#@ sip-reviews-shortcode
+msgid "Product ID"
+msgstr "Product ID"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:151
+#@ sip-reviews-shortcode
+msgid "Product Title"
+msgstr "Product titel"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:155
+#@ sip-reviews-shortcode
+msgid "Number of Reviews"
+msgstr "Aantal recensies"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:158
+#@ sip-reviews-shortcode
+msgid "Insert Reviews"
+msgstr "Recensies toevoegen"
+
+#: public/class-sip-reviews-shortcode-wc-public.php:241
+#@ sip-reviews-shortcode
+msgid "Product Reviews"
+msgstr "Productrecensies"
+
+#: public/partials/plugin-form-shortcode-display.php:106
+#@ sip-reviews-shortcode
+msgid "Name"
+msgstr "Naam"
+
+#: public/partials/plugin-form-shortcode-display.php:111
+#@ sip-reviews-shortcode
+msgid "Email"
+msgstr "E-mailadres"
+
+#: public/partials/plugin-form-shortcode-display.php:124
+#@ sip-reviews-shortcode
+msgid "Your Rating"
+msgstr "Uw beoordeling"
+
+#: public/partials/plugin-form-shortcode-display.php:144
+#@ sip-reviews-shortcode
+msgid "Your Review"
+msgstr "Uw recentie"
+
+#: public/partials/plugin-form-shortcode-display.php:148
+#@ sip-reviews-shortcode
+msgid "Submit"
+msgstr "Verzenden"
+
+#: public/partials/plugin-form-shortcode-display.php:157
+#@ sip-reviews-shortcode
+msgid "Your comment is awaiting moderation."
+msgstr "Uw recensie is ingediend ter recensie"
+
+#: public/partials/plugin-reviews-aggregate.php:274
+#: public/partials/plugin-reviews-shortcode-display.php:162
+#: public/partials/plugin-reviews-shortcode-display.php:642
+#: public/partials/plugin-reviews-shortcode-widgets-aggregate.php:242
+#: public/partials/plugin-reviews-shortcode-widgets.php:169
+#@ sip-reviews-shortcode
+msgid "out of"
+msgstr "van de"
+
+#: public/partials/plugin-reviews-aggregate.php:274
+#: public/partials/plugin-reviews-shortcode-display.php:162
+#: public/partials/plugin-reviews-shortcode-display.php:642
+#: public/partials/plugin-reviews-shortcode-widgets-aggregate.php:242
+#: public/partials/plugin-reviews-shortcode-widgets.php:169
+#@ sip-reviews-shortcode
+msgid "stars"
+msgstr "sterren"
+
+#: public/partials/plugin-reviews-aggregate.php:276
+#: public/partials/plugin-reviews-shortcode-display.php:164
+#: public/partials/plugin-reviews-shortcode-display.php:643
+#: public/partials/plugin-reviews-shortcode-widgets-aggregate.php:244
+#: public/partials/plugin-reviews-shortcode-widgets.php:171
+#@ sip-reviews-shortcode
+msgid "reviews"
+msgstr "reviews"
+
+#: public/partials/plugin-reviews-aggregate.php:281
+#: public/partials/plugin-reviews-shortcode-display.php:169
+#: public/partials/plugin-reviews-shortcode-widgets-aggregate.php:249
+#: public/partials/plugin-reviews-shortcode-widgets.php:176
+#@ sip-reviews-shortcode
+msgid "These reviews were created with SIP Reviews Shortcode Plugin"
+msgstr "Deze recensies zijn gecreëerd met behulp van de SIP Reviews Shortcode Plugin"
+
+#: public/partials/plugin-reviews-aggregate.php:592
+#: public/partials/plugin-reviews-shortcode-display.php:275
+#: public/partials/plugin-reviews-shortcode-display.php:505
+#: public/partials/plugin-reviews-shortcode-display.php:755
+#: public/partials/plugin-reviews-shortcode-display.php:973
+#@ sip-reviews-shortcode
+msgid "Load More"
+msgstr "Meer recensies"
+
+#: public/partials/plugin-reviews-aggregate.php:595
+#: public/partials/plugin-reviews-shortcode-display.php:507
+#: public/partials/plugin-reviews-shortcode-display.php:977
+#@ sip-reviews-shortcode
+msgid "No products reviews."
+msgstr "Geen productrecensies"
+
+#: public/partials/plugin-reviews-shortcode-display.php:277
+#: public/partials/plugin-reviews-shortcode-display.php:281
+#: public/partials/plugin-reviews-shortcode-display.php:757
+#: public/partials/plugin-reviews-shortcode-display.php:761
+#@ sip-reviews-shortcode
+msgid "No more comments"
+msgstr "Geen verdere berichten"
+
+#: public/partials/plugin-reviews-shortcode-display.php:721
+#@ sip-reviews-shortcode
+msgid "Read More"
+msgstr "Meer lezen"
+
+#: public/partials/plugin-reviews-shortcode-widgets-aggregate.php:21
+#@ sip-reviews-shortcode
+msgid "SIP Aggregate reviews for WooCommerce"
+msgstr "SIP Aggregate reviews for WooCommerce"
+
+#: public/partials/plugin-reviews-shortcode-widgets-aggregate.php:24
+#@ sip-reviews-shortcode
+msgid "Display products aggregate reviews in any post/page with a widget.."
+msgstr "Toon geaggregeerde productrecensies in iedere post / pagina met behulp van een widget."
+
+#: public/partials/plugin-reviews-shortcode-widgets-aggregate.php:407
+#: public/partials/plugin-reviews-shortcode-widgets.php:307
+#@ default
+msgid "Title:"
+msgstr "Titel: "
+
+#: public/partials/plugin-reviews-shortcode-widgets-aggregate.php:415
+#@ default
+msgid "Multiple Ids:"
+msgstr "Meerdere ID's:"
+
+#: public/partials/plugin-reviews-shortcode-widgets-aggregate.php:419
+#@ default
+msgid "Category:"
+msgstr "Categorie:"
+
+#: public/partials/plugin-reviews-shortcode-widgets-aggregate.php:424
+#: public/partials/plugin-reviews-shortcode-widgets.php:311
+#@ default
+msgid "ID:"
+msgstr "ID:"
+
+#: public/partials/plugin-reviews-shortcode-widgets-aggregate.php:428
+#: public/partials/plugin-reviews-shortcode-widgets.php:326
+#@ default
+msgid "No of reviews:"
+msgstr "Aantal recensies: "
+
+#: public/partials/plugin-reviews-shortcode-widgets.php:21
+#@ sip-reviews-shortcode
+msgid "SIP reviews for WooCommerce"
+msgstr "SIP reviews for WooCommerce"
+
+#: public/partials/plugin-reviews-shortcode-widgets.php:24
+#@ sip-reviews-shortcode
+msgid "Display product reviews in any post/page with a widget.."
+msgstr "Productrecensies tonen in iedere gewenste post / pagina met behulp van een widget."
+
+#. translators: plugin header field 'Name'
+#: sip-reviews-shortcode-pro-woocommerce.php:0
+#@ sip-reviews-shortcode
+msgid "SIP Reviews Shortcode Pro WooCommerce"
+msgstr "SIP Reviews Shortcode Pro WooCommerce"
+
+#. translators: plugin header field 'PluginURI'
+#: sip-reviews-shortcode-pro-woocommerce.php:0
+#@ sip-reviews-shortcode
+msgid "https://shopitpress.com/plugins/sip-reviews-shortcode-woocommerce/"
+msgstr "https://shopitpress.com/plugins/sip-reviews-shortcode-woocommerce/"
+
+#. translators: plugin header field 'Description'
+#: sip-reviews-shortcode-pro-woocommerce.php:0
+#@ sip-reviews-shortcode
+msgid "Creates a shortcode, [woocommerce_reviews id=\"n\"],  that displays the reviews, of any WooCommerce product. [woocommerce_reviews] will show the reviews of the current product if applicable.  This plugin requires WooCommerce."
+msgstr "Maakt een shortcode beschikbaar om productrecensies te tonen voor ieder gewenst product, op iedere gewenste pagina. Voor deze plugin is WooCommerce vereist. Gebruik:  [woocommerce_reviews id=\\\"x\\\"] om reviews te tonen voor een specifiek product. Gebruik [woocommerce_reviews] om reviews voor het huidige product te tonen indien van toepassing."
+
+#. translators: plugin header field 'Author'
+#: sip-reviews-shortcode-pro-woocommerce.php:0
+#@ sip-reviews-shortcode
+msgid "ShopitPress <hello@shopitpress.com>"
+msgstr "ShopitPress <hello@shopitpress.com>"
+
+#. translators: plugin header field 'AuthorURI'
+#: sip-reviews-shortcode-pro-woocommerce.php:0
+#@ sip-reviews-shortcode
+msgid "https://shopitpress.com"
+msgstr "https://shopitpress.com"
+
+#. translators: plugin header field 'Version'
+#: sip-reviews-shortcode-pro-woocommerce.php:0
+#@ sip-reviews-shortcode
+msgid "1.1.6"
+msgstr "1.1.6"
+
+#: sip-reviews-shortcode-pro-woocommerce.php:242
+#@ api-manager-rswc
+msgid "License Activation"
+msgstr "Licentie activatie"
+
+#: sip-reviews-shortcode-pro-woocommerce.php:243
+#@ api-manager-rswc
+msgid "License Deactivation"
+msgstr "Licentie deactivatie"
+
+#: sip-reviews-shortcode-pro-woocommerce.php:444
+#, php-format
+#@ api-manager-rswc
+msgid "The Reviews Shortcode Pro API License Key has not been activated, so the plugin is inactive! %sClick here%s to activate the license key and the plugin."
+msgstr "De Reviews Shortcode Pro API licentiesleutel is niet geactiveerd, dus de plugin is niet actief! %sKlik hier%s om de licentiesleutel en de plugin te activeren."
+
+#: sip-reviews-shortcode-pro-woocommerce.php:463
+#, php-format
+#@ api-manager-rswc
+msgid "<b>Warning!</b> You're blocking external requests which means you won't be able to get %s updates. Please add %s to %s."
+msgstr "<b>Waarschuwing!</b> Externe verzoeken worden geblokkeerd, dus u kunt geen updates ontvangen. Voeg %s toe aan %s."
+
+

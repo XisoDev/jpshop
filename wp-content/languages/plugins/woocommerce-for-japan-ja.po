@@ -1,0 +1,1107 @@
+# Translation of Plugins - WooCommerce For Japan - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - WooCommerce For Japan - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-04-18 00:17:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - WooCommerce For Japan - Stable (latest release)\n"
+
+#: includes/views/html-admin-setting-screen.php:12
+msgid "Payment Setting"
+msgstr "支払方法設定"
+
+#: includes/views/html-admin-setting-screen.php:11
+msgid "Shipment Setting"
+msgstr "配送方法設定"
+
+#: includes/views/html-admin-screen.php:14
+msgid "Payment"
+msgstr "支払方法"
+
+#: includes/views/html-admin-screen.php:13
+msgid "Shipment"
+msgstr "配送方法"
+
+#: includes/class-wc-admin-screen-4jp.php:458
+msgid "Delivery tracking"
+msgstr "配送追跡"
+
+#: includes/class-wc-admin-screen-4jp.php:410
+msgid "Please enter the date term long holiday of your store."
+msgstr "店舗の出荷しない長期休暇の期間を入力してください。"
+
+#: includes/class-wc-admin-screen-4jp.php:404
+msgid "Holiday End Date"
+msgstr "休日最終日"
+
+#: includes/class-wc-admin-screen-4jp.php:398
+msgid "Holiday Start Date"
+msgstr "休日初日"
+
+#: includes/class-wc-admin-screen-4jp.php:389
+msgid "Please check the days of the week that you do not ship. In case of continuous, we will correspond up to three days."
+msgstr "出荷しない曜日をチェックしてください。連続では最大3日間設定できます。"
+
+#: includes/class-wc-admin-screen-4jp.php:379
+msgid "Saturday"
+msgstr "土"
+
+#: includes/class-wc-admin-screen-4jp.php:375
+msgid "Friday"
+msgstr "金"
+
+#: includes/class-wc-admin-screen-4jp.php:371
+msgid "Thursday"
+msgstr "木"
+
+#: includes/class-wc-admin-screen-4jp.php:367
+msgid "Wednesday"
+msgstr "水"
+
+#: includes/class-wc-admin-screen-4jp.php:363
+msgid "Tuesday"
+msgstr "火"
+
+#: includes/class-wc-admin-screen-4jp.php:359
+msgid "Moday"
+msgstr "月"
+
+#: includes/class-wc-admin-screen-4jp.php:354
+msgid "Sunday"
+msgstr "日"
+
+#: includes/class-wc-admin-screen-4jp.php:131
+#: includes/class-wc-admin-screen-4jp.php:152
+#: includes/class-wc-admin-screen-4jp.php:176
+msgid "Your settings have been saved."
+msgstr "設定が保存されました。"
+
+#: includes/class-wc-admin-screen-4jp.php:100
+msgid "Delivery Time designation"
+msgstr "配達時間設定"
+
+#: includes/class-wc-admin-screen-4jp.php:97
+#: includes/class-wc-admin-screen-4jp.php:409
+msgid "Holiday term"
+msgstr "祝日期間"
+
+#: includes/class-wc-admin-screen-4jp.php:96
+msgid "No delivery weekday"
+msgstr "未出荷曜日"
+
+#: includes/class-wc-address-field-4jp.php:715
+#: includes/class-wc-address-field-4jp.php:731
+msgid "Scheduled Time Zone"
+msgstr "配達予定時間"
+
+#: includes/class-wc-address-field-4jp.php:711
+#: includes/class-wc-address-field-4jp.php:727
+msgid "Scheduled Delivery Date"
+msgstr "配達予定日"
+
+#: includes/class-wc-address-field-4jp.php:707
+#: includes/class-wc-address-field-4jp.php:723
+msgid "Scheduled Delivery date and time"
+msgstr "配達予定日時"
+
+#: includes/class-wc-address-field-4jp.php:986
+msgid "Okinawa-Ken"
+msgstr "沖縄県"
+
+#: includes/class-wc-address-field-4jp.php:985
+msgid "Kagoshima-Ken"
+msgstr "鹿児島県"
+
+#: includes/class-wc-address-field-4jp.php:984
+msgid "Miyazaki-Ken"
+msgstr "宮崎県"
+
+#: includes/class-wc-address-field-4jp.php:983
+msgid "Oita-Ken"
+msgstr "大分県"
+
+#: includes/class-wc-address-field-4jp.php:982
+msgid "Kumamoto-Ken"
+msgstr "熊本県"
+
+#: includes/class-wc-address-field-4jp.php:981
+msgid "Nagasaki-Ken"
+msgstr "長崎県"
+
+#: includes/class-wc-address-field-4jp.php:980
+msgid "Saga-Ken"
+msgstr "佐賀県"
+
+#: includes/class-wc-address-field-4jp.php:979
+msgid "Fukuoka-Ken"
+msgstr "福岡県"
+
+#: includes/class-wc-address-field-4jp.php:978
+msgid "Kochi-Ken"
+msgstr "高知県"
+
+#: includes/class-wc-address-field-4jp.php:977
+msgid "Ehime-Ken"
+msgstr "愛媛県"
+
+#: includes/class-wc-address-field-4jp.php:976
+msgid "Kagawa-Ken"
+msgstr "香川県"
+
+#: includes/class-wc-address-field-4jp.php:975
+msgid "Tokushima-Ken"
+msgstr "徳島県"
+
+#: includes/class-wc-address-field-4jp.php:974
+msgid "Yamaguchi-Ken"
+msgstr "山口県"
+
+#: includes/class-wc-address-field-4jp.php:973
+msgid "Hiroshima-Ken"
+msgstr "広島県"
+
+#: includes/class-wc-address-field-4jp.php:972
+msgid "Okayama-Ken"
+msgstr "岡山県"
+
+#: includes/class-wc-address-field-4jp.php:971
+msgid "Shimane-Ken"
+msgstr "島根県"
+
+#: includes/class-wc-address-field-4jp.php:970
+msgid "Tottori-Ken"
+msgstr "鳥取県"
+
+#: includes/class-wc-address-field-4jp.php:969
+msgid "Wakayama-Ken"
+msgstr "和歌山県"
+
+#: includes/class-wc-address-field-4jp.php:968
+msgid "Nara-Ken"
+msgstr "奈良県"
+
+#: includes/class-wc-address-field-4jp.php:967
+msgid "Hyogo-Ken"
+msgstr "兵庫県"
+
+#: includes/class-wc-address-field-4jp.php:966
+msgid "Osaka-Fu"
+msgstr "大阪府"
+
+#: includes/class-wc-address-field-4jp.php:965
+msgid "Kyoto-Fu"
+msgstr "京都府"
+
+#: includes/class-wc-address-field-4jp.php:964
+msgid "Shiga-Ken"
+msgstr "滋賀県"
+
+#: includes/class-wc-address-field-4jp.php:963
+msgid "Mie-Ken"
+msgstr "三重県"
+
+#: includes/class-wc-address-field-4jp.php:962
+msgid "Aichi-Ken"
+msgstr "愛知県"
+
+#: includes/class-wc-address-field-4jp.php:961
+msgid "Shizuoka-Ken"
+msgstr "静岡県"
+
+#: includes/class-wc-address-field-4jp.php:960
+msgid "Gifu-Ken"
+msgstr "岐阜県"
+
+#: includes/class-wc-address-field-4jp.php:959
+msgid "Nagano-Ken"
+msgstr "長野県"
+
+#: includes/class-wc-address-field-4jp.php:958
+msgid "Yamanashi-Ken"
+msgstr "山梨県"
+
+#: includes/class-wc-address-field-4jp.php:957
+msgid "Fukui-Ken"
+msgstr "福井県"
+
+#: includes/class-wc-address-field-4jp.php:956
+msgid "Ishikawa-Ken"
+msgstr "石川県"
+
+#: includes/class-wc-address-field-4jp.php:955
+msgid "Toyama-Ken"
+msgstr "富山県"
+
+#: includes/class-wc-address-field-4jp.php:954
+msgid "Niigata-Ken"
+msgstr "新潟県"
+
+#: includes/class-wc-address-field-4jp.php:953
+msgid "Kanagawa-Ken"
+msgstr "神奈川県"
+
+#: includes/class-wc-address-field-4jp.php:952
+msgid "Chiba-Ken"
+msgstr "千葉県"
+
+#: includes/class-wc-address-field-4jp.php:951
+msgid "Saitama-Ken"
+msgstr "埼玉県"
+
+#: includes/class-wc-address-field-4jp.php:950
+msgid "Gunma-Ken"
+msgstr "群馬県"
+
+#: includes/class-wc-address-field-4jp.php:949
+msgid "Tochigi-Ken"
+msgstr "栃木県"
+
+#: includes/class-wc-address-field-4jp.php:948
+msgid "Ibaraki-Ken"
+msgstr "茨城県"
+
+#: includes/class-wc-address-field-4jp.php:947
+msgid "Fukushima-Ken"
+msgstr "福島県"
+
+#: includes/class-wc-address-field-4jp.php:946
+msgid "Yamagata-Ken"
+msgstr "山形県"
+
+#: includes/class-wc-address-field-4jp.php:945
+msgid "Akita-Ken"
+msgstr "秋田県"
+
+#: includes/class-wc-address-field-4jp.php:944
+msgid "Miyagi-Ken"
+msgstr "宮城県"
+
+#: includes/class-wc-address-field-4jp.php:943
+msgid "Iwate-Ken"
+msgstr "岩手県"
+
+#: includes/class-wc-address-field-4jp.php:942
+msgid "Aomori-Ken"
+msgstr "青森県"
+
+#: includes/class-wc-admin-screen-4jp.php:333
+msgid "Check from here."
+msgstr "ここからチェックしてください。"
+
+#: includes/class-wc-admin-screen-4jp.php:332
+msgid "Please enter the format when you want to save the data by format. Use PHP format type."
+msgstr "ここに保存したい日付のフォーマットを入力してください。PHP のフォーマット形式です。"
+
+#: includes/class-wc-admin-screen-4jp.php:94
+#: includes/class-wc-admin-screen-4jp.php:331
+msgid "Date format"
+msgstr "日付フォーマット"
+
+#: includes/class-wc-address-field-4jp.php:932
+msgid "Actually shipped to date"
+msgstr "実際の納品日"
+
+#: includes/class-wc-address-field-4jp.php:930
+msgid "Tracking Ship Date"
+msgstr "出荷日"
+
+#: includes/class-wc-address-field-4jp.php:923
+msgid "Time Zone on which the customer wished delivery."
+msgstr "お客様が配達を希望した時間帯。"
+
+#: includes/class-wc-address-field-4jp.php:915
+msgid "Date on which the customer wished delivery."
+msgstr "お客様が配達を希望した日付。"
+
+#: includes/class-wc-address-field-4jp.php:866
+msgid "Shipping Detail"
+msgstr "配達詳細"
+
+#: woocommerce/myaccount/form-edit-account.php:57
+msgid "Confirm new password"
+msgstr "新しいパスワードを再入力"
+
+#: woocommerce/myaccount/form-edit-account.php:53
+msgid "New password (leave blank to leave unchanged)"
+msgstr "新しいパスワード(そのままの場合は空白)"
+
+#: woocommerce/myaccount/form-edit-account.php:49
+msgid "Current password (leave blank to leave unchanged)"
+msgstr "現在のパスワード(そのままの場合は空白)"
+
+#: woocommerce/myaccount/form-edit-account.php:46
+msgid "Password change"
+msgstr "パスワードの変更"
+
+#: woocommerce/myaccount/form-edit-account.php:41
+msgid "Email address"
+msgstr "メールアドレス"
+
+#: woocommerce/myaccount/form-edit-account.php:35
+msgid "First name"
+msgstr "名"
+
+#: woocommerce/myaccount/form-edit-account.php:31
+msgid "Last name"
+msgstr "姓"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:195
+msgid "Please select one from these as %s."
+msgstr "%s として、これらから選択してください。"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:186
+msgid "Please input %s."
+msgstr "%s を入力してください。"
+
+#: includes/class-wc-admin-screen-4jp.php:241
+msgid "Honorific Suffix(Sama)"
+msgstr "敬称（様）"
+
+#: includes/class-wc-admin-screen-4jp.php:82
+msgid "Honorific suffix(Sama)"
+msgstr "敬称（様）"
+
+#: woocommerce-for-japan.php:131
+msgid "Thank you for selling with WooCommerce for Japan."
+msgstr "WooCommerce for Japan を利用してくださいまして、ありがとうございます。"
+
+#: woocommerce-for-japan.php:123
+msgid "Thanks :)"
+msgstr "ありがとう！ :)"
+
+#: woocommerce-for-japan.php:123
+msgid "If you like <strong>WooCommerce for Japan</strong> please leave us a %s&#9733;&#9733;&#9733;&#9733;&#9733;%s rating. A huge thanks in advance!"
+msgstr "もし、<strong>WooCommerce for Japan</strong> を気に入って頂けたら%s&#9733;&#9733;&#9733;&#9733;&#9733;%s 評価してもらえたら、とても嬉しいです。"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:240
+msgid "WooCommerce Doc in Japanese"
+msgstr "日本語の WooCommerce ドキュメント"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:239
+msgid "Created by"
+msgstr "Created by"
+
+#: includes/views/html-admin-setting-screen.php:30
+msgid "on WordPress.org"
+msgstr "on WordPress.org"
+
+#: includes/views/html-admin-setting-screen.php:30
+msgid "Rate it 5"
+msgstr "5つ星評価"
+
+#: includes/views/html-admin-setting-screen.php:29
+msgid "Do you like this plugin?"
+msgstr "このプラグインを気に入ってもらえましたか？"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:229
+msgid "Join Us!"
+msgstr "参加しませんか！"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:228
+msgid "<a href=\"%s\" target=\"_blank\" title=\"Kansai WooCommerce Meetup\">Kansai WooCommerce Meetup</a>."
+msgstr "<a href=\"%s\" target=\"_blank\" title=\"Kansai WooCommerce Meetup\">関西 WooCommerce Meetup</a>"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:227
+msgid "<a href=\"%s\" target=\"_blank\" title=\"Tokyo WooCommerce Meetup\">Tokyo WooCommerce Meetup</a>."
+msgstr "<a href=\"%s\" target=\"_blank\" title=\"Tokyo WooCommerce Meetup\">東京 WooCommerce Meetup</a>"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:226
+msgid "Where is the study group of Woocommerce in Japan?"
+msgstr "WooCommerce の勉強会はどこでありますか？"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:216
+msgid "One the security, latest update is the most important thing. If you need site maintenance support, please consider about <a href=\"%s\" target=\"_blank\" title=\"Support forum\">Site Maintenance Support service</a>."
+msgstr "セキュリティーにおいて、最新版にアップデートすることはとても重要です。もし、サイトのメンテナンスサポートが必要なら、<a href=\"%s\" target=\"_blank\" title=\"Support forum\">サイトメンテナンスサポートサービス</a>の利用をご検討ください。"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:215
+msgid "Finished Latest Update, WordPress and WooCommerce?"
+msgstr "WordPress や WooCommerce の最新版へのアップデートは終わっていますか？"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:206
+msgid "If you need professional support, please consider about <a href=\"%1$s\" target=\"_blank\" title=\"Site Construction Support service\">Site Construction Support service</a> or <a href=\"%2$s\" target=\"_blank\" title=\"Maintenance Support service\">Maintenance Support service</a>."
+msgstr "もしプロフェッショナルなサポートが必要でしたら、<a href=\"%1$s\" target=\"_blank\" title=\"Site Construction Support service\">サイト構築サポートサービス</a>か<a href=\"%2$s\" target=\"_blank\" title=\"Maintenance Support service\">メンテナンスサポートサービス</a>をご検討ください。"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:205
+msgid "If you are having problems with this plugin, talk about them in the <a href=\"%s\" target=\"_blank\" title=\"Support forum\">Support forum</a>."
+msgstr "このプラグインで何か問題があったら<a href=\"%s\" target=\"_blank\" title=\"Support forum\">サポートフォーラム</a>で聞いてみてください。"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:204
+msgid "Need support?"
+msgstr "サポートが必要ですか？"
+
+#: includes/views/html-admin-setting-screen.php:20
+msgid "WooCommerce for Japan"
+msgstr "WooCommerce for Japan"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:168
+msgid "Please check it if you want to use %s."
+msgstr "%s を利用する場合はチェックしてください。"
+
+#: includes/class-wc-admin-screen-4jp.php:281
+msgid "Yahoo! APP ID"
+msgstr "Yahoo! アプリケーション ID"
+
+#: includes/class-wc-admin-screen-4jp.php:282
+msgid "If you use it a bit for testing, you do not need to enter it here. But if you want to use Automatic zip code entry, you must get and input %s here. Please get it from <a href=\"https://e.developer.yahoo.co.jp/dashboard/\" target=\"_blank\">here</a>. If you need our support, please access <a href=\"https://wc.artws.info/shop/setting-support/yahoo-app-id/\" target=\"_blank\">here</a> and pay for an aid to development costs "
+msgstr "もし試しに郵便番号自動入力を少し使う場合は、ここは入力する必要はありません。しかし、実際に利用する場合は%sを取得して入力する必要があります。<a href=\"https://e.developer.yahoo.co.jp/dashboard/\" target=\"_blank\">ここから</a>取得してください。もし Yahoo! アプリケーション ID の取得に関してサポートが必要な場合は、開発費の援助のためにも<a href=\"https://wc.artws.info/shop/setting-support/yahoo-app-id/\" target=\"_blank\">こちらのサポート(1,080円税込)</a>をご利用頂けるとうれしいです。"
+
+#: includes/class-wc-admin-screen-4jp.php:302
+msgid "Please enter the number of days until the first day you can receive the delivery date / time. If you enter 0 you can specify delivery from today."
+msgstr "受付開始を始めるまでの日数を入力してください。当日配送ができる場合は0を入れてください。"
+
+#: includes/class-wc-admin-screen-4jp.php:311
+msgid "Reception period"
+msgstr "受付期間"
+
+#: includes/class-wc-admin-screen-4jp.php:312
+msgid "Please enter the number of days for which you can accept the delivery reservation. Please enter 1 or more."
+msgstr "配達予定を受付けできる期間の日数を入れてください。1以上の数字を入れてください。"
+
+#: includes/class-wc-admin-screen-4jp.php:321
+msgid "Unspecified Date"
+msgstr "配達指定日なし表記"
+
+#: includes/class-wc-admin-screen-4jp.php:322
+msgid "Please enter the sentence when you do not need to specify the delivery date."
+msgstr "配達指定の日がない場合の文言を入力してください。"
+
+#: includes/class-wc-admin-screen-4jp.php:323
+msgid "No specified date"
+msgstr "配達指定日なし"
+
+#: includes/class-wc-admin-screen-4jp.php:343
+msgid "Please enter the time delivery deadline of your store."
+msgstr "店舗の最終出荷時間を入力ください。"
+
+#: includes/class-wc-admin-screen-4jp.php:430
+msgid "Unspecified Time"
+msgstr "時間指定なし表記"
+
+#: includes/class-wc-admin-screen-4jp.php:431
+msgid "Please enter the sentence when you do not need to specify the delivery time."
+msgstr "配達時間指定をしない時の文言を入力ください。"
+
+#: includes/class-wc-admin-screen-4jp.php:432
+msgid "No designated time zone"
+msgstr "配達時間指定なし"
+
+#: includes/class-wc-admin-screen-4jp.php:440
+msgid "Delivery time zone Management"
+msgstr "配達時間帯管理"
+
+#: includes/class-wc-admin-screen-4jp.php:545
+msgid "Delivery time zone start time"
+msgstr "配達時間帯開始時間"
+
+#: includes/class-wc-admin-screen-4jp.php:547
+msgid "Delivery time zone end time"
+msgstr "配達時間帯終了時間"
+
+#: includes/class-wc-admin-screen-4jp.php:552
+msgid "Remove selected Time Zone"
+msgstr "選択された時間帯を削除"
+
+#: includes/class-wc-admin-screen-4jp.php:552
+msgid "+ Add Time Zone"
+msgstr "+ 時間帯を追加"
+
+#: includes/class-wc-admin-screen-4jp.php:621
+msgid "<a href=\"%s\" target=\"_blank\" title=\"Paygent Payment\">Paygent Payment</a> :  You can handle Credit Card payment and Convini payment, etc<br >"
+msgstr "<a href=\"%s\" target=\"_blank\" title=\"Paygent Payment\">ペイジェント決済</a> :  クレジットカードやコンビニ決済などの決済が利用できます。<br >"
+
+#: includes/class-wc-admin-screen-4jp.php:611
+msgid "Settings saved."
+msgstr "設定を保存しました。"
+
+#: includes/class-wc-admin-screen-4jp.php:622
+msgid "<a href=\"%s\" target=\"_blank\" title=\"WooCommerce Subscriptions\">WooCommerce Subscriptions</a> : You can handle Subscriptions.<br >"
+msgstr "<a href=\"%s\" target=\"_blank\" title=\"WooCommerce Subscriptions\">WooCommerce Subscriptions</a> : 定期購入の販売が出来るようになります。<br >"
+
+#: includes/class-wc-admin-screen-4jp.php:630
+msgid "<a href=\"%s\" target=\"_blank\" title=\"Payment Setting Support\">Payment Setting Support</a> :  We support Payment Plugins Setting.<br >"
+msgstr "<a href=\"%s\" target=\"_blank\" title=\"Payment Setting Support\">決済設定サポート</a> :  決済プラグインの設定をサポートします。<br >"
+
+#: includes/class-wc-admin-screen-4jp.php:631
+msgid "<a href=\"%s\" target=\"_blank\" title=\"Support Tickets\">Support Tickets</a> : We support your WordPress and WooCommmerce questions.<br >"
+msgstr "<a href=\"%s\" target=\"_blank\" title=\"Support Tickets\">サポートチケット</a> :  WordPress と WooCommmerce の質問にお答えします。<br >"
+
+#: includes/class-wc-admin-screen-4jp.php:632
+msgid "<a href=\"%s\" target=\"_blank\" title=\"Maintenance Support\">Maintenance Support</a> : We support your WordPress and WooCommmerce site, update or somethings.<br >"
+msgstr "　<a href=\"%s\" target=\"_blank\" title=\"Maintenance Support\">メンテナンスサポート</a> : WordPress と WooCommmerce のサイトをアップデートなどにおいてサポートします。<br >"
+
+#: includes/class-wc-admin-screen-4jp.php:654
+#: includes/wc4jp-framework/class-wc4jp-setting.php:263
+msgid "Toggle panel"
+msgstr "トグルパネル"
+
+#: includes/views/html-admin-info-screen.php:2
+msgid "Information of Our Support"
+msgstr "サポート情報"
+
+#: includes/views/html-admin-info-screen.php:3
+msgid "Sorry, Mainly Japanese and some English support Only"
+msgstr "主に日本語や英語でのサポートしか対応していません"
+
+#: includes/views/html-admin-info-screen.php:26
+msgid "Nice to meet you on Facebook page!"
+msgstr "Facebook で会いましょう！"
+
+#: includes/views/html-admin-info-screen.php:27
+msgid "Woo Japan Wave Facebook page!"
+msgstr "Woo Japan Wave Facebook ページ!"
+
+#: includes/views/html-admin-setting-screen.php:10
+msgid "General Setting"
+msgstr "一般設定"
+
+#: includes/class-wc-address-field-4jp.php:479
+msgid "Please enter a hyphen [-] when entering a zip code."
+msgstr "郵便番号を入れる時はハイフン [ - ] を入力してください。"
+
+#: includes/class-wc-address-field-4jp.php:547
+msgid "Delivery request date and time"
+msgstr "配達希望日時"
+
+#: includes/class-wc-address-field-4jp.php:604
+#: includes/class-wc-admin-screen-4jp.php:90
+msgid "Preferred delivery date"
+msgstr "配達希望日"
+
+#: includes/class-wc-address-field-4jp.php:620
+#: includes/class-wc-address-field-4jp.php:624
+msgid "Y/m/d"
+msgstr "Y年n月j日"
+
+#: includes/class-wc-address-field-4jp.php:637
+msgid "Delivery Time Zone"
+msgstr "配達時間帯"
+
+#: includes/class-wc-address-field-4jp.php:642
+msgid "-"
+msgstr "〜"
+
+#: includes/class-wc-address-field-4jp.php:913
+msgid "Delivery Date"
+msgstr "配達希望日"
+
+#: includes/class-wc-address-field-4jp.php:922
+msgid "Time Zone"
+msgstr "時間帯"
+
+#: includes/class-wc-address-field-4jp.php:799
+msgid "Delivery"
+msgstr "配達希望日時"
+
+#: includes/class-wc-admin-screen-4jp.php:85
+#: includes/class-wc-admin-screen-4jp.php:271
+msgid "Automatic zip code entry"
+msgstr "郵便番号自動住所入力"
+
+#: includes/class-wc-admin-screen-4jp.php:86
+msgid "Yahoo APP ID"
+msgstr "Yahoo! APP ID"
+
+#: includes/class-wc-admin-screen-4jp.php:89
+#: includes/class-wc-admin-screen-4jp.php:291
+msgid "Delivery date designation"
+msgstr "配達日指定"
+
+#: includes/class-wc-admin-screen-4jp.php:91
+#: includes/class-wc-admin-screen-4jp.php:301
+msgid "Start Date"
+msgstr "配達予約可能開始日"
+
+#: includes/class-wc-admin-screen-4jp.php:92
+msgid "Delivery Term"
+msgstr "配達予約可能期間"
+
+#: includes/class-wc-admin-screen-4jp.php:93
+msgid "Unspecified date description"
+msgstr "指定されていない日の説明"
+
+#: includes/class-wc-admin-screen-4jp.php:95
+#: includes/class-wc-admin-screen-4jp.php:342
+msgid "Delivery deadline"
+msgstr "最終集荷時間"
+
+#: includes/class-wc-admin-screen-4jp.php:101
+#: includes/class-wc-admin-screen-4jp.php:420
+msgid "Delivery time zone"
+msgstr "配達時間帯"
+
+#: includes/class-wc-admin-screen-4jp.php:102
+msgid "Unspecified Time description"
+msgstr "指定されていない時間の説明"
+
+#: includes/class-wc-admin-screen-4jp.php:103
+msgid "Delivery time zone management"
+msgstr "配達時間帯管理"
+
+#: includes/class-wc-admin-screen-4jp.php:119
+msgid "Plugins Information"
+msgstr "プラグイン情報"
+
+#: includes/class-wc-admin-screen-4jp.php:120
+msgid "Featured Plugins"
+msgstr "注目のプラグイン"
+
+#: includes/class-wc-admin-screen-4jp.php:123
+msgid "Professional services Information"
+msgstr "プロフェッショナルなサービス情報"
+
+#: includes/class-wc-admin-screen-4jp.php:124
+msgid "Featured Services"
+msgstr "注目のサービス"
+
+#: includes/class-wc-admin-screen-4jp.php:114
+#: includes/class-wc-admin-screen-4jp.php:498
+msgid "COD for Subscriptions"
+msgstr "定期購入対応代金引換"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:122
+msgid "Accept COD if the order is virtual"
+msgstr "バーチャル商品の注文でも代金引換を受け付ける"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:121
+msgid "Accept for virtual orders"
+msgstr "バーチャル商品の注文を受け付ける"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:117
+msgid "Select shipping methods"
+msgstr "有効にする配送方法を選んでください"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:113
+msgid "If COD is only available for certain methods, set it up here. Leave blank to enable for all methods."
+msgstr "代金引換が特定メソッドに対してのみ利用可能であるなら、それをここで設定します。すべてのメソッドに対して有効にする場合は空欄にします"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:108
+msgid "Enable for shipping methods"
+msgstr "配送方法を選択する"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:103
+msgid "Instructions that will be added to the thank you page."
+msgstr "thank youページに追加される指示"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:97
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:104
+msgid "Pay with cash upon delivery."
+msgstr "配達時に現金で支払う。"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:96
+msgid "Payment method description that the customer will see on your website."
+msgstr "ウェブサイト上で表示される支払方法の説明"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:90
+msgid "Cash on Delivery"
+msgstr "代金引換"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:81
+msgid "Enable Cash on Delivery"
+msgstr "代金引換を有効"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:80
+msgid "Enable COD"
+msgstr "代金引換を有効"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:33
+msgid "Have your customers pay with cash (or by other means) upon delivery."
+msgstr "お客様が配達時に現金（または他の手段による）でお支払いします。"
+
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:32
+msgid "Cash on Delivery for Subscriptions"
+msgstr "定期購入対応代金引換"
+
+#: includes/gateways/cod/class-wc-addons-gateway-cod.php:127
+msgid "COD Failed (%s)"
+msgstr "代金引換失敗 (%s)"
+
+#: includes/gateways/cod/class-wc-addons-gateway-cod.php:100
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:221
+msgid "Payment to be made upon delivery."
+msgstr "お支払いは、配達時の商品引取りの際にお願い致します"
+
+#: includes/class-wc-admin-screen-4jp.php:598
+msgid "Please check it if you want to use input field for %s"
+msgstr "%s の項目を使う場合は、チェックしてください。"
+
+#: includes/class-wc-admin-screen-4jp.php:84
+#: includes/class-wc-admin-screen-4jp.php:261
+msgid "Free Shipping Display"
+msgstr "送料無料表示"
+
+#. Author URI of the plugin/theme
+msgid "https://wc.artws.info/"
+msgstr "https://wc.artws.info/"
+
+#. Author of the plugin/theme
+msgid "Artisan Workshop"
+msgstr "職人工房"
+
+#. Description of the plugin/theme
+msgid "Woocommerce toolkit for Japanese use."
+msgstr "日本国内向けのWooCommerceの標準ツールキット"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/woocommerce-for-japan/"
+msgstr "https://wordpress.org/plugins/woocommerce-for-japan/"
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce For Japan"
+msgstr "WooCommerce For Japan"
+
+#: woocommerce-for-japan.php:187
+msgid "WooCommerce for Japanese is enabled but not effective. It requires WooCommerce in order to work."
+msgstr "WooCommerce for Japaneseは利用可能ですが、動いておりません。WooCommerceをインストールして、アクティブにする必要があります。"
+
+#: woocommerce/myaccount/form-edit-account.php:67
+msgid "Save changes"
+msgstr "変更を保存"
+
+#: includes/wc4jp-framework/class-wc4jp-setting.php:177
+msgid "Please check it if you want to use the payment method of %s."
+msgstr "もし、%s を利用したい場合はチェックをしてください。"
+
+#: includes/class-wc-admin-screen-4jp.php:113
+#: includes/class-wc-admin-screen-4jp.php:488
+msgid "Pay at store"
+msgstr "店頭支払い"
+
+#: includes/class-wc-admin-screen-4jp.php:110
+msgid "Payment Method"
+msgstr "追加支払い方法"
+
+#: includes/class-wc-admin-screen-4jp.php:81
+#: includes/class-wc-admin-screen-4jp.php:231
+msgid "Name Yomigana"
+msgstr "名前（よみがな）"
+
+#: includes/class-wc-admin-screen-4jp.php:79
+msgid "Address Display Setting"
+msgstr "顧客入力項目設定"
+
+#: includes/views/html-admin-screen.php:15
+msgid "Infomations"
+msgstr "関連情報"
+
+#: includes/views/html-admin-screen.php:12
+msgid "Setting"
+msgstr "設定"
+
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:269
+msgid "Awaiting Post Office BANK payment"
+msgstr "郵便振替入金待ち"
+
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:227
+msgid "Our Post Office Bank Details"
+msgstr "ゆうちょ口座詳細"
+
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:110
+msgid "Bank Symbol"
+msgstr "記号"
+
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:104
+msgid "Post Office Account Details"
+msgstr "ゆうちょ口座詳細"
+
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:81
+msgid "Make your payment directly into our Post Office Bank account."
+msgstr "ゆうちょ口座に直接振り込んで頂きます。"
+
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:67
+msgid "Enable Postal transfer"
+msgstr "郵便振替を利用する"
+
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:25
+msgid "Allows payments by Postal transfer in Japan."
+msgstr "郵便振替での支払いを許可する。"
+
+#: includes/class-wc-admin-screen-4jp.php:112
+#: includes/class-wc-admin-screen-4jp.php:478
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:24
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:74
+msgid "Postal transfer"
+msgstr "郵便振替"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:286
+msgid "Awaiting BANK payment"
+msgstr "銀行振込入金待ち"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:240
+msgid "Our Bank Details"
+msgstr "銀行口座詳細"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:122
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:117
+msgid "Remove selected account(s)"
+msgstr "選択した口座を削除"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:122
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:117
+msgid "+ Add Account"
+msgstr "口座を追加"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:117
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:246
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:112
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:240
+msgid "Account Name"
+msgstr "口座名義"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:116
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:245
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:111
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:242
+msgid "Account Number"
+msgstr "口座番号"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:115
+msgid "Bank Type"
+msgstr "口座種別"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:114
+msgid "Bank Branch"
+msgstr "支店名"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:113
+msgid "Bank Name"
+msgstr "銀行名"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:107
+msgid "Account Details"
+msgstr "振込銀行口座詳細"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:84
+msgid "Make your payment directly into our bank account."
+msgstr "銀行口座に直接振り込んで頂きます。"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:77
+msgid "Bank Transfer in Japan"
+msgstr "銀行振込（日本国内）"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:70
+msgid "Enable Bank Transfer"
+msgstr "銀行振込（日本国内向け）を利用する"
+
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:26
+msgid "Allows payments by bank transfer in Japan."
+msgstr "日本の銀行向けの日本国内での銀行振込での支払いを許可する。"
+
+#: includes/class-wc-admin-screen-4jp.php:111
+#: includes/class-wc-admin-screen-4jp.php:468
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:25
+msgid "BANK PAYMENT IN JAPAN"
+msgstr "銀行振込（日本向け）"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:115
+msgid "Awaiting At Store payment"
+msgstr "店頭払い待ち"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:74
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:90
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:87
+msgid "Instructions that will be added to the thank you page and emails."
+msgstr "サンクスページやメールの案内で使われる説明書きです。"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:72
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:88
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:101
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:85
+msgid "Instructions"
+msgstr "説明書き"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:68
+msgid "Please pay the fee at Store."
+msgstr "お店で代金をお支払い下さい。"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:67
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:83
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:89
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:80
+msgid "Payment method description that the customer will see on your checkout."
+msgstr "支払い時に購入者が見る支払い方法の説明です。"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:65
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:81
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:94
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:78
+msgid "Description"
+msgstr "説明"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:61
+msgid "At Store Payment"
+msgstr "店頭支払い"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:60
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:76
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:73
+msgid "This controls the title which the user sees during checkout."
+msgstr "支払い時に購入者が見る支払いのタイトルです"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:58
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:74
+#: includes/gateways/cod/class-wc-gateway-cod-4sub.php:87
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:71
+msgid "Title"
+msgstr "タイトル"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:54
+msgid "Enable At Store Payment"
+msgstr "店頭支払いを利用する"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:52
+#: includes/gateways/bank-jp/class-wc-gateway-bank-jp.php:68
+#: includes/gateways/postofficebank/class-wc-gateway-postofficebank-jp.php:65
+msgid "Enable/Disable"
+msgstr "有効"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:26
+msgid "Allows At Store payments."
+msgstr "店頭での支払いを使います"
+
+#: includes/gateways/atstore/class-wc-gateway-atstore-jp.php:25
+msgid "Pay At Store"
+msgstr "店頭払い"
+
+#: includes/class-wc-cod-fee-4jp.php:187
+msgid "The fee is taxes excluded"
+msgstr "税抜き"
+
+#: includes/class-wc-cod-fee-4jp.php:186
+msgid "The fee is taxes included"
+msgstr "税込"
+
+#: includes/class-wc-cod-fee-4jp.php:185
+msgid "Do not calculate taxes"
+msgstr "非課税"
+
+#: includes/class-wc-cod-fee-4jp.php:183
+msgid "Calculate taxes on this fee"
+msgstr "この手数料の税金を計算"
+
+#: includes/class-wc-cod-fee-4jp.php:180
+msgid "Includes taxes"
+msgstr "手数料の消費税処理"
+
+#: includes/class-wc-cod-fee-4jp.php:175
+msgid "If you dont need this setting, please set empty, 0."
+msgstr "もし、無料設定が必要でない場合は、0に設定してください。"
+
+#: includes/class-wc-cod-fee-4jp.php:173
+msgid "Maximum cart value for adding fee"
+msgstr "追加費用が発生する小計金額"
+
+#: includes/class-wc-cod-fee-4jp.php:170
+msgid "Maximum cart value to which adding fee"
+msgstr "手数料無料設定金額"
+
+#: includes/class-wc-cod-fee-4jp.php:161 includes/class-wc-cod-fee-4jp.php:164
+msgid "Extra charge amount"
+msgstr "手数料金額"
+
+#: includes/class-wc-cod-fee-4jp.php:156
+msgid "COD Payment method fee"
+msgstr "代引き手数料"
+
+#: includes/class-wc-cod-fee-4jp.php:152 includes/class-wc-cod-fee-4jp.php:155
+msgid "Fee name"
+msgstr "手数料表記名"
+
+#: includes/class-wc-cod-fee-4jp.php:148
+msgid "Extra charge for COD method"
+msgstr "代引き手数料設定"
+
+#: includes/class-wc-admin-screen-4jp.php:46
+msgid "For Japanese"
+msgstr "日本対応"
+
+#: includes/class-wc-address-field-4jp.php:374
+#: includes/class-wc-address-field-4jp.php:430
+msgid "Phone"
+msgstr "電話番号"
+
+#: includes/class-wc-address-field-4jp.php:337
+#: includes/class-wc-address-field-4jp.php:370
+#: includes/class-wc-address-field-4jp.php:396
+#: includes/class-wc-address-field-4jp.php:419
+msgid "First Name Yomigana"
+msgstr "名（よみがな）"
+
+#: includes/class-wc-address-field-4jp.php:333
+#: includes/class-wc-address-field-4jp.php:366
+#: includes/class-wc-address-field-4jp.php:392
+#: includes/class-wc-address-field-4jp.php:415
+msgid "Last Name Yomigana"
+msgstr "姓（よみがな）"
+
+#: includes/class-wc-address-field-4jp.php:170
+#: includes/class-wc-address-field-4jp.php:267
+msgid "Shipping Phone"
+msgstr "送付先電話番号"
+
+#: includes/class-wc-address-field-4jp.php:159
+msgid "Billing Phone"
+msgstr "請求先電話番号"
+
+#: includes/class-wc-address-field-4jp.php:138
+msgctxt "placeholder"
+msgid "Apartment, suite, unit etc. (optional)"
+msgstr "アパート等の詳細"
+
+#: includes/class-wc-address-field-4jp.php:133
+msgctxt "placeholder"
+msgid "Street address"
+msgstr "丁目、番地、号など"
+
+#: includes/class-wc-address-field-4jp.php:132
+msgid "Address"
+msgstr "住所詳細"
+
+#: includes/class-wc-address-field-4jp.php:126
+#: includes/class-wc-address-field-4jp.php:127
+msgid "Town / City"
+msgstr "市区町村"
+
+#: includes/class-wc-address-field-4jp.php:118
+msgid "Prefecture"
+msgstr "都道府県"
+
+#: includes/class-wc-address-field-4jp.php:109
+msgctxt "placeholder"
+msgid "123-4567"
+msgstr "123-4567"
+
+#: includes/class-wc-address-field-4jp.php:108
+msgid "Postcode / Zip"
+msgstr "郵便番号（例:123-4567）"
+
+#: includes/class-wc-address-field-4jp.php:104
+#: includes/class-wc-admin-screen-4jp.php:83
+#: includes/class-wc-admin-screen-4jp.php:251
+msgid "Company Name"
+msgstr "会社名"
+
+#: includes/class-wc-address-field-4jp.php:98
+msgid "First Name (Yomigana)"
+msgstr "名（よみがな）"
+
+#: includes/class-wc-address-field-4jp.php:93
+msgid "Last Name (Yomigana)"
+msgstr "姓（よみがな）"
+
+#: includes/class-wc-address-field-4jp.php:87
+msgid "First Name"
+msgstr "名"
+
+#: includes/class-wc-address-field-4jp.php:82
+msgid "Last Name"
+msgstr "姓"
+
+#: includes/class-wc-address-field-4jp.php:77
+#: includes/class-wc-address-field-4jp.php:144
+msgid "Country"
+msgstr "国"
