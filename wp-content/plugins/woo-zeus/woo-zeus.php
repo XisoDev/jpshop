@@ -56,7 +56,7 @@ class WC_Zeus{
 		// Zeus Payment Gateway
 		if(get_option('wc-zeus-cc')) {
 			include_once( plugin_dir_path( __FILE__ ).'/includes/gateways/zeus/class-wc-gateway-zeus-cc.php' );	// Credit Card
-			include_once( plugin_dir_path( __FILE__ ).'/includes/gateways/zeus/class-wc-addons-gateway-zeus-cc.php' );	// Credit Card Subscriptions
+//			include_once( plugin_dir_path( __FILE__ ).'/includes/gateways/zeus/class-wc-addons-gateway-zeus-cc.php' );	// Credit Card Subscriptions
 		}
 		if(get_option('wc-zeus-cs')) include_once( plugin_dir_path( __FILE__ ).'/includes/gateways/zeus/class-wc-gateway-zeus-cs.php' );	// Convenience store
 		if(get_option('wc-zeus-bt')) include_once( plugin_dir_path( __FILE__ ).'/includes/gateways/zeus/class-wc-gateway-zeus-bt.php' );	// Entrusted payment

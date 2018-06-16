@@ -165,12 +165,6 @@ class WC_Gateway_Zeus_CS extends WC_Payment_Gateway {
 		$site_code = getSiteOrderCode();
 
 		$order = new WC_Order( $order_id );
-		$user = wp_get_current_user();
-        if($order->user_id){
-            $customer_id   = $user->ID;
-        }else{
-            $customer_id   = $order->id.'-user';
-        }
 		$connect_url = WC_ZEUS_CS_URL;
 		$post_data = array();
         $post_data['clientip'] = $this->authentication_clientip;
@@ -185,26 +179,18 @@ class WC_Gateway_Zeus_CS extends WC_Payment_Gateway {
         if(!$post_data['username']) {
             $post_data['username'] = mb_convert_encoding($post_data['username'], 'SJIS', 'auto');
         }
-        if($this->test_mode == 'yes'){
-            $post_data['username'] = $post_data['username'].'_'.$this->test_id;
-        }
+
         $post_data['telno'] = str_replace('-','',$order->billing_phone);
         $post_data['email'] = $order->billing_email;
-        $post_data['sendpoint'] = $site_code["order_code"] . $order->id;
-        $post_data['sendid'] = $site_code["order_code"] . $order->id;
+        $post_data['sendpoint'] = $site_code["order_code"] . $order->get_id();
+        $post_data['sendid'] = $site_code["order_code"] . $order->get_id();
         $post_data['siteurl'] = esc_url( home_url( '/' ) );
         $post_data['sitestr'] =  mb_convert_encoding("サイトに戻る", "SJIS", "auto");
 
-        //Note for Message
-//        $message = ', '.__( 'Authorization number :', 'woo-zeus' ).$response_array['pay_no2'].', '.__( 'Pay limit :', 'woo-zeus' ).$response_array[ 'pay_limit' ];
-        // Mark as pending (we're awaiting the payment)
         $order->update_status( 'pending', __( 'Awaiting Convenience Store payment', 'woo-zeus' ) );
 
-        //set transaction id for Zeus Order Number
-        update_post_meta( $order->id, '_transaction_id', wc_clean( $response_array[ 'order_no' ] ) );
-
         // Reduce stock levels
-        $order->reduce_order_stock();
+        $order->wc_reduce_stock_levels();
 
         // Remove cart
         WC()->cart->empty_cart();
@@ -233,7 +219,7 @@ class WC_Gateway_Zeus_CS extends WC_Payment_Gateway {
 			if ( $this->instructions ) {
 				echo wpautop( wptexturize( $this->instructions ) ) . PHP_EOL;
 			}
-			$this->zeus_cs_details( $order->id );
+			$this->zeus_cs_details( $order->get_id() );
     	}elseif ( ! $sent_to_admin && 'zeus_cs' === $order->payment_method && 'processing' === $order->status ) {
 	    	echo $this->processing_email_body;
 		}
@@ -242,7 +228,7 @@ class WC_Gateway_Zeus_CS extends WC_Payment_Gateway {
     /**
      * Get Convini Payment details and place into a list format
      */
-	private function zeus_cs_details( $order_id = '' ) {
+	private function zeus_cs_details( $order_id = false ) {
 		$cvs_array = $this->cs_stores;
 		$cvs_array = array(
 			'D001' => array(//Seven Eleven
@@ -250,7 +236,7 @@ class WC_Gateway_Zeus_CS extends WC_Payment_Gateway {
 				'number_title'=>__('Payment slip number :','woo-zeus'),
 				'confirm_num'=>'no',
 				'url' =>'711.html',
-				'pay_url' => get_post_meta( $order->id, '_zeus_pay_url')
+				'pay_url' => get_post_meta( $order_id, '_zeus_pay_url')
 			),
 			'D002' => array(//Lawson
 				'name' =>$cvs_array['D002'], 
@@ -291,9 +277,9 @@ class WC_Gateway_Zeus_CS extends WC_Payment_Gateway {
 		);
 		global $woocommerce;
 		$order = new WC_Order( $order_id );
-		$cvs_id = get_post_meta($order->id, '_zeus_cvs_id',true);
-		$pay_no1 = get_post_meta($order->id, '_zeus_pay_no1',true);
-		$pay_no2 = get_post_meta($order->id, '_zeus_pay_no2',true);
+		$cvs_id = get_post_meta($order->get_id(), '_zeus_cvs_id',true);
+		$pay_no1 = get_post_meta($order->get_id(), '_zeus_pay_no1',true);
+		$pay_no2 = get_post_meta($order->get_id(), '_zeus_pay_no2',true);
 		
 		echo __('CVS Name : ', 'woo-zeus').$cvs_array[$cvs_id]['name'].'<br />'.PHP_EOL;
 		echo $cvs_array[$cvs_id]['number_title'].$pay_no1.'<br />'.PHP_EOL;
@@ -305,7 +291,7 @@ class WC_Gateway_Zeus_CS extends WC_Payment_Gateway {
 		}
 		echo __('How to Pay via CVS expalin URL : ', 'woo-zeus').'http://www.cardservice.co.jp/info/cvd/pc/'.$cvs_array[$cvs_id]['url'].'<br />'.PHP_EOL;
 		if(isset($this->payment_limit_description)){
-			$pay_limit = get_post_meta($order->id, '_zeus_pay_limit',true);
+			$pay_limit = get_post_meta($order->get_id(), '_zeus_pay_limit',true);
 			echo __('Payment limit term : ', 'woo-zeus').$pay_limit.'<br />'.$this->payment_limit_description;
 		}
 	}

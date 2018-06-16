@@ -104,12 +104,7 @@ class WC_Gateway_Zeus_BT extends WC_Payment_Gateway {
 		global $wpdb;
         $site_code = getSiteOrderCode();
 		$order = new WC_Order( $order_id );
-		$user = wp_get_current_user();
-		if($order->user_id){
-			$customer_id   = $user->ID;
-		}else{
-			$customer_id   = $order->id.'-user';
-		}
+
 		$connect_url = WC_ZEUS_BT_URL;
 		$post_data = array();
 		$post_data['clientip'] = $this->authentication_clientip;
@@ -128,21 +123,16 @@ class WC_Gateway_Zeus_BT extends WC_Payment_Gateway {
 		}
 		$post_data['telno'] = str_replace('-','',$order->billing_phone);
 		$post_data['email'] = $order->billing_email;
-		$post_data['sendpoint'] = $site_code["order_code"] . $order->id;
-		$post_data['sendid'] = $site_code["order_code"] . $order->id;
+		$post_data['sendpoint'] = $site_code["order_code"] . $order->get_id();
+		$post_data['sendid'] = $site_code["order_code"] . $order->get_id();
 		$post_data['siteurl'] = esc_url( home_url( '/' ) );
 		$post_data['sitestr'] =  mb_convert_encoding(__( 'Back to Store', 'woo-zeus' ), "SJIS", "auto");
 
-		//Note for Message
-//		$message = ', '.__( 'Authorization number :', 'woo-zeus' ).$response_array['pay_no2'].', '.__( 'Pay limit :', 'woo-zeus' ).$response_array[ 'pay_limit' ];
 		// Mark as pending (we're awaiting the payment)
 		$order->update_status( 'pending', __( 'Awaiting Bank transfer payment', 'woo-zeus' ));
 
-		//set transaction id for Zeus Order Number
-		update_post_meta( $order->id, '_transaction_id', wc_clean( $response_array[ 'order_no' ] ) );
-
 		// Reduce stock levels
-		$order->reduce_order_stock();
+		$order->wc_reduce_stock_levels();
 
 		// Remove cart
 		WC()->cart->empty_cart();

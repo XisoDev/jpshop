@@ -23,9 +23,8 @@ class WC_Gateway_Zeus_CC extends WC_Payment_Gateway {
 	 * @return void
 	 */
 	public function __construct() {
-
-		include_once( 'includes/class-wc-gateway-zeus-request.php' );
-		include_once( 'includes/class-wc-zeus-error-message.php' );
+//		include_once( 'includes/class-wc-gateway-zeus-request.php' );
+//		include_once( 'includes/class-wc-zeus-error-message.php' );
 
 		$this->id                = 'zeus_cc';
 		$this->has_fields        = false;
@@ -208,8 +207,8 @@ class WC_Gateway_Zeus_CC extends WC_Payment_Gateway {
         $post_data['email'] = $order->billing_email;
 
         $site_code = getSiteOrderCode();
-        $post_data['sendid'] = $site_code["order_code"] . $order->id;
-        $post_data['sendpoint'] = $site_code["order_code"] . $order->id;
+        $post_data['sendid'] = $site_code["order_code"] . $order->get_id();
+        $post_data['sendpoint'] = $site_code["order_code"] . $order->get_id();
         $post_data['success_url'] = $this->get_return_url( $order );
         $post_data['success_str'] = mb_convert_encoding("決済完了", "SJIS", "auto");;
         $post_data['failure_url'] = esc_url( home_url( '/' ) );
@@ -219,7 +218,7 @@ class WC_Gateway_Zeus_CC extends WC_Payment_Gateway {
         $order->update_status( 'pending', __( 'Proceed to Zeus Credit Card', 'woo-zeus' ) );
 
         // Reduce stock levels
-        $order->reduce_order_stock();
+        $order->wc_reduce_stock_levels();
 
         // Remove cart
         WC()->cart->empty_cart();
