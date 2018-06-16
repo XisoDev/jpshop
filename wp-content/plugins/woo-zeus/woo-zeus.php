@@ -46,6 +46,7 @@ class WC_Zeus{
 	private function includes() {
 		// Module
 		define('WC_ZEUS_PLUGIN_PATH',plugin_dir_path( __FILE__ ));
+		define('WC_ZEUS_CC_URL','https://linkpt.cardservice.co.jp/cgi-bin/credit/order.cgi');
 		define('WC_ZEUS_CC_API_URL','https://linkpt.cardservice.co.jp/cgi-bin/secure/api.cgi');
 		define('WC_ZEUS_SECURE_API_URL','https://linkpt.cardservice.co.jp/cgi-bin/secure.cgi');
 		define('WC_ZEUS_CS_URL','https://linkpt.cardservice.co.jp/cgi-bin/cvs.cgi');
@@ -134,16 +135,18 @@ function zeus_recieved_func(){
         $output->error = -1;
         $output->message = "not received datas";
     }else{
+        $woocommerce_zeus_cc = get_option('woocommerce_zeus_cc_settings');
         $woocommerce_zeus_cs = get_option('woocommerce_zeus_cs_settings');
         $woocommerce_zeus_bt = get_option('woocommerce_zeus_bt_settings');
         $clientip_array = array(
+            'cc' => $woocommerce_zeus_cc['authentication_clientip'],
             'cs' => $woocommerce_zeus_cs['authentication_clientip'],
             'bt' => $woocommerce_zeus_bt['authentication_clientip']
         );
 
-        $get_order_id = substr($_GET['sendpoint'],3);
+        $get_order_id = substr($_GET['sendpoint'],4);
         $order = new WC_Order( $get_order_id );
-        $order_status = $order->status;
+        //$order_status = $order->status;
 
         //편의점결제 완료 수신
         if(isset($_GET['clientip']) and $_GET['clientip'] == $clientip_array['cs']){
@@ -162,21 +165,21 @@ function zeus_recieved_func(){
             }
 
             //Note for Message
-            $message = '';
+            $message = ' - ';
             if(wc_clean( $_GET['pay_cvs']) == 'D001'){
-                $message = '('.__( 'Seven Eleven', 'woo-zeus' ).') ,'.__('Payment slip number :','woo-zeus').$_GET['pay_no1'];
+                $message .= '('.__( 'Seven Eleven', 'woo-zeus' ).') ,'.__('Payment slip number :','woo-zeus').$_GET['pay_no1'];
             }elseif(wc_clean( $_GET['pay_cvs'])=='D002'){
-                $message = '('.__( 'Lawson', 'woo-zeus' ).')'.__('Receipt number :','woo-zeus').$_GET['pay_no1'].', '.__('Authorization number :','woo-zeus').$_GET['pay_no2'];
+                $message .= '('.__( 'Lawson', 'woo-zeus' ).')'.__('Receipt number :','woo-zeus').$_GET['pay_no1'].', '.__('Authorization number :','woo-zeus').$_GET['pay_no2'];
             }elseif(wc_clean( $_GET['pay_cvs'])=='D030'){
-                $message = '('.__( 'Family Mart', 'woo-zeus' ).') ,'.__('Order number :','woo-zeus').$_GET['pay_no1'].', '.__('Corporate code :','woo-zeus').$_GET['pay_no2'];
+                $message .= '('.__( 'Family Mart', 'woo-zeus' ).') ,'.__('Order number :','woo-zeus').$_GET['pay_no1'].', '.__('Corporate code :','woo-zeus').$_GET['pay_no2'];
             }elseif(wc_clean( $_GET['pay_cvs'])=='D040'){
-                $message = '('.__( 'Circle K', 'woo-zeus' ).') ,'.__('Payment receipt number :','woo-zeus').$_GET['pay_no1'];
+                $message .= '('.__( 'Circle K', 'woo-zeus' ).') ,'.__('Payment receipt number :','woo-zeus').$_GET['pay_no1'];
             }elseif(wc_clean( $_GET['pay_cvs'])=='D015'){
-                $message = '('.__( 'Seicomart', 'woo-zeus' ).') ,'.__('Payment receipt number :','woo-zeus').$_GET['pay_no1'];
+                $message .= '('.__( 'Seicomart', 'woo-zeus' ).') ,'.__('Payment receipt number :','woo-zeus').$_GET['pay_no1'];
             }elseif(wc_clean( $_GET['pay_cvs'])=='D050'){
-                $message = '('.__( 'Mini Stop', 'woo-zeus' ).') ,'.__('Receipt number :','woo-zeus').$_GET['pay_no1'].', '.__('Authorization number :','woo-zeus').$_GET['pay_no2'];
+                $message .= '('.__( 'Mini Stop', 'woo-zeus' ).') ,'.__('Receipt number :','woo-zeus').$_GET['pay_no1'].', '.__('Authorization number :','woo-zeus').$_GET['pay_no2'];
             }elseif(wc_clean( $_GET['pay_cvs'])=='D060'){
-                $message = '('.__( 'Daily Yamazaki', 'woo-zeus' ).') ,'.__('Online payment number :','woo-zeus').$_GET['pay_no1'];
+                $message .= '('.__( 'Daily Yamazaki', 'woo-zeus' ).') ,'.__('Online payment number :','woo-zeus').$_GET['pay_no1'];
             }
 //            update_post_meta( $get_order_id, '_zeus_cvs_description', $message );
 
@@ -188,17 +191,65 @@ function zeus_recieved_func(){
             if($_GET['status'] == '01'){//Finish process
                 $output->message = "process finish";
                 $order->update_status( 'on-hold', __( 'Awaiting Convenience Store payment', 'woo-zeus' ).$message );
-            }elseif($_GET['status'] == '04'){//Finish payment
+
+            }elseif($_GET['status'] == '02'){//Failed
+                $output->message = "payment Failed";
+                $order->update_status( 'failed', '支払いの不承認' . $message);
+
+            }elseif($_GET['status'] == '03'){//Limit Date
+                $output->message = "payment Failed";
+                $order->update_status( 'failed', '期限超過' . $message);
+
+            }elseif($_GET['status'] == '04') {//Finish payment
                 $output->message = "payment finish";
-                    $order->update_status( 'processing' );
+                $order->update_status('processing', __('Proceed to Zeus Convenience store Payment', 'woo-zeus') . $message);
+
             }elseif($_GET['status'] == '06'){//Cancelled
                 $output->message = "cancel";
-                    $order->update_status( 'cancelled' );
+                $order->update_status( 'cancelled','キャンセル' . $message);
+
             }elseif($_GET['status'] == '05'){//Finish sales
                 $output->message = "completed";
-                    $order->update_status( 'completed' );
+                $order->update_status( 'completed','入金完了' . $message);
             }
             $output->txt_message = $message;
+            //카드 수신
+        }elseif(isset($_GET['clientip']) and $_GET['clientip'] == $clientip_array['cc']){
+            $output->method = "Credit Card";
+
+            //기본정보 업데이트
+            update_post_meta( $get_order_id, '_transaction_id', wc_clean( $_GET[ 'ordd' ] ) );
+
+            $message = ' - ';
+
+            if($_GET['cardbrand'] == 'V'){
+                $message .= "brand : VISA";
+            }elseif($_GET['cardbrand'] == 'M'){
+                $message .= "brand : Mastercard";
+            }elseif($_GET['cardbrand'] == 'J'){
+                $message .= "brand : JCB";
+            }elseif($_GET['cardbrand'] == 'A'){
+                $message .= "brand : American Express";
+            }elseif($_GET['cardbrand'] == 'I'){
+                $message .= "brand : Discover";
+            }elseif($_GET['cardbrand'] == 'D'){
+                $message .= "brand : Diners";
+            }else{
+                $message .= "brand : Proper";
+            }
+            $message .= " / Last 4 : " . $_GET['cardnumber'];
+
+            if($_GET['result'] == 'NG'){//Finish process
+                $output->message = "process failed";
+                $order->update_status( 'failed' ,__( 'Fail to authority for sale, please update sale in Zeus Admin site.' , 'woo-zeus' ) . $message);
+            }elseif($_GET['result'] == 'OK'){//Finish payment
+                $output->message = "payment finish";
+                $order->update_status( 'processing', __( 'Zeus Auto finished to sale.' , 'woo-zeus' ) . $message );
+            }
+
+            //set transaction id for Zeus Order Number
+            update_post_meta( $get_order_id, '_transaction_id', wc_clean( $_GET[ 'order_no' ] ) );
+
             //은행결제 수신
         }elseif(isset($_GET['clientip']) and $_GET['clientip'] == $clientip_array['bt']){
             $output->method = "Bank transper";
@@ -206,10 +257,16 @@ function zeus_recieved_func(){
             //Bank transfer
             if($_GET['status'] == '02'){//Finish process
                 $output->message = "process finish";
-                $order->update_status( 'on-hold' );
+                $order->update_status( 'on-hold' ,'未入金');
             }elseif($_GET['status'] == '03'){//Finish payment
                 $output->message = "payment finish";
-                $order->update_status( 'processing' );
+                $order->update_status( 'processing','入金完了');
+            }elseif($_GET['status'] == '04'){//Error
+                $output->message = "payment error";
+                $order->update_status( 'failed','入金エラー。');
+            }elseif($_GET['status'] == '05'){//Limit Date
+                $output->message = "limit date";
+                $order->update_status( 'failed','期限超過');
             }
 
             //set transaction id for Zeus Order Number

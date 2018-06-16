@@ -1,6 +1,7 @@
 <?php
 
 include("../load_excel.php");
+$site_code = getSiteOrderCode();
 // Rename worksheet
 $objPHPExcel->getActiveSheet()->setTitle('패킹리스트');
 
@@ -62,7 +63,7 @@ foreach($order_list as $no => $order_id){
 
     $objPHPExcel->getActiveSheet()->setCellValue("A" . ($no+3),($no+1));
     $objPHPExcel->getActiveSheet()->setCellValue("B" . ($no+3),"항공");
-    $objPHPExcel->getActiveSheet()->setCellValue("C" . ($no+3),"swp-" . trim(str_replace('#', '', $order->get_order_number())));
+    $objPHPExcel->getActiveSheet()->setCellValue("C" . ($no+3),$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())));
     $objPHPExcel->getActiveSheet()->setCellValueExplicit("D" . ($no+3),$order->get_meta('ywot_tracking_code'), PHPExcel_Cell_DataType::TYPE_STRING);
     $objPHPExcel->getActiveSheet()->setCellValue("E" . ($no+3),get_post_meta( $product_id, '수출용_상품명', true));
     $objPHPExcel->getActiveSheet()->setCellValue("F" . ($no+3),get_post_meta( $product_id, '수출용_재질', true));
@@ -85,7 +86,7 @@ foreach($order_list as $no => $order_id){
 
 // Redirect output to a client’s web browser (Excel2007)
 header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-header('Content-Disposition: attachment;filename="sweetplus.jp_'.date('Ymd').'.xlsx"');
+header('Content-Disposition: attachment;filename="packinglist_'.$site_code["fullname"].'_'.date('Ymd').'.xlsx"');
 header('Cache-Control: max-age=0');
 // If you're serving to IE 9, then the following may be needed
 header('Cache-Control: max-age=1');

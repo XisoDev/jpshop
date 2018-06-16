@@ -5,12 +5,12 @@
  * Date: 2018. 3. 15.
  * Time: PM 3:00
  */
-
+$site_code = getSiteOrderCode();
 foreach($order_list as $order_id){
     $order = new WC_Order( $order_id );
 
     $oData = array();
-    $oData['orderNumber'] = "swp-" . trim(str_replace('#', '', $order->get_order_number()));
+    $oData['orderNumber'] = $site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number()));
     $oData['receiverName'] = $order->get_shipping_last_name();
     $oData['receiverName2'] = $order->get_shipping_first_name();
     $oData['receiverPost'] = $order->get_shipping_postcode();
@@ -61,7 +61,7 @@ foreach($order_list as $order_id){
     $oData['itemInfo'] = "";
     $oData['countInfo'] = "1x" . count($items);
     $oData['proxy'] = "0";
-    $oData['barcode'] = "*swp-".$oData['orderNumber']."*";
+    $oData['barcode'] = "*".$oData['orderNumber']."*";
 
 //    print_r($oData);
 //    echo "<br />";
@@ -75,7 +75,7 @@ foreach($order_list as $order_id){
 //exit();
 
 header("Content-type: text/csv");
-header("Content-Disposition: attachment; filename=".date("Y-m-d_")."sagawa_uploader.csv");
+header("Content-Disposition: attachment; filename=".date("Y-m-d_")."sagawa_".$site_code["fullname"]."_uploader.csv");
 header("Pragma: no-cache");
 header("Expires: 0");
 $out = fopen("php://output", 'w');

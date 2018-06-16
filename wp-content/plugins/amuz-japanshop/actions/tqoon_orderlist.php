@@ -33,14 +33,14 @@ cellWidth("I:L",20);
 cellWidth("M:N",13);
 cellHeight("1",20);
 
-
+$site_code = getSiteOrderCode();
 
 //set Data
 foreach($order_list as $no => $order_id){
     $order = new WC_Order( $order_id );
 
     $objPHPExcel->getActiveSheet()->setCellValue("A" . ($no+2),$order->get_date_created()->format("Y.m.d H:i"));
-    $objPHPExcel->getActiveSheet()->setCellValue("B" . ($no+2),"swp-" . trim(str_replace('#', '', $order->get_order_number())));
+    $objPHPExcel->getActiveSheet()->setCellValue("B" . ($no+2),$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())));
 
     // Sum line item costs.
     $cart_total = 0;
@@ -90,7 +90,7 @@ foreach($order_list as $no => $order_id){
 
 // Redirect output to a client’s web browser (Excel2007)
 header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-header('Content-Disposition: attachment;filename="주문내역_sweetplus.jp_'.date('Ymd').'.xlsx"');
+header('Content-Disposition: attachment;filename="orderlist_'.$site_code["fullname"].'_'.date('Ymd').'.xlsx"');
 header('Cache-Control: max-age=0');
 // If you're serving to IE 9, then the following may be needed
 header('Cache-Control: max-age=1');

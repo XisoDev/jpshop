@@ -1,6 +1,8 @@
 <?php
 
 global $woocommerce;
+$site_code = getSiteOrderCode();
+
 ?>
 
 <h3><?php echo __( '상품데이터 커스터마이징', 'amuz-japanshop' );?></h3>
@@ -23,7 +25,7 @@ global $woocommerce;
             <h5>썸네일 생성</h5>
             <input type="hidden" id="data_action_type" name="action" value="" />
             <?php wp_nonce_field( 'my-nonce-key','wc-am-jp-datacenter');?>
-            Prefix : <input type="text" name="wc-amuz-japanshop-prefix" value="sweetplus" size="15" />
+            Prefix : <input type="text" name="wc-amuz-japanshop-prefix" value="<?=$site_code["fullname"]?>" size="15" />
             제한할용량 : <input type="text" name="wc-amuz-japanshop-limit_storage" value="25" size="5" /> MB
             <input type="submit" onclick="return jQuery('#hidden_frame_thumbnail').show();" value="생성" class="button action" />
         </form>

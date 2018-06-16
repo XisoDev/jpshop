@@ -93,50 +93,6 @@ class WC_Gateway_Zeus_CS extends WC_Payment_Gateway {
 				'type'        => 'text',
 				'description' => sprintf( __( 'Enter Authentication Client IP.', 'woo-zeus' )),
 			),
-//			'setting_cs_se' => array(
-//				'title'       => __( 'Set Convenience Store', 'woo-zeus' ),
-//				'id'              => 'wc-paygent-cs-se',
-//				'type'        => 'checkbox',
-//				'label'       => __( 'Seven Eleven', 'woo-zeus' ),
-//				'default'     => 'yes',
-//			),
-//			'setting_cs_ls' => array(
-//				'id'              => 'wc-paygent-cs-ls',
-//				'type'        => 'checkbox',
-//				'label'       => __( 'Lawson', 'woo-zeus' ),
-//				'default'     => 'yes',
-//			),
-//			'setting_cs_fm' => array(
-//				'id'              => 'wc-paygent-cs-f',
-//				'type'        => 'checkbox',
-//				'label'       => __( 'Family Mart', 'woo-zeus' ),
-//				'default'     => 'yes',
-//			),
-//			'setting_cs_ck' => array(
-//				'id'              => 'wc-paygent-cs-ctd',
-//				'type'        => 'checkbox',
-//				'label'       => __( 'Circle K', 'woo-zeus' ),
-//				'default'     => 'yes',
-//			),
-//			'setting_cs_sm' => array(
-//				'id'              => 'wc-paygent-cs-sm',
-//				'type'        => 'checkbox',
-//				'label'       => __( 'Seicomart', 'woo-zeus' ),
-//				'default'     => 'yes',
-//			),
-//			'setting_cs_ms' => array(
-//				'id'              => 'wc-paygent-cs-ms',
-//				'type'        => 'checkbox',
-//				'label'       => __( 'Mini Stop', 'woo-zeus' ),
-//				'default'     => 'yes',
-//			),
-//			'setting_cs_dy' => array(
-//				'id'              => 'wc-paygent-cs-ctd',
-//				'type'        => 'checkbox',
-//				'label'       => __( 'Daily Yamazaki', 'woo-zeus' ),
-//				'default'     => 'yes',
-//				'description' => sprintf( __( 'Please check them you are able to use Convenience Store', 'woo-zeus' ))
-//			),
 			'processing_email_subject'       => array(
 				'title'       => __( 'Email Subject when complete payment check', 'woo-zeus' ),
 				'type'        => 'text',
@@ -206,6 +162,8 @@ class WC_Gateway_Zeus_CS extends WC_Payment_Gateway {
 		global $woocommerce;
 		global $wpdb;
 
+		$site_code = getSiteOrderCode();
+
 		$order = new WC_Order( $order_id );
 		$user = wp_get_current_user();
         if($order->user_id){
@@ -232,8 +190,8 @@ class WC_Gateway_Zeus_CS extends WC_Payment_Gateway {
         }
         $post_data['telno'] = str_replace('-','',$order->billing_phone);
         $post_data['email'] = $order->billing_email;
-        $post_data['sendpoint'] = 'swp-'.$order->id;
-        $post_data['sendid'] = 'swp-'.$order->id;
+        $post_data['sendpoint'] = $site_code["order_code"] . $order->id;
+        $post_data['sendid'] = $site_code["order_code"] . $order->id;
         $post_data['siteurl'] = esc_url( home_url( '/' ) );
         $post_data['sitestr'] =  mb_convert_encoding("サイトに戻る", "SJIS", "auto");
 

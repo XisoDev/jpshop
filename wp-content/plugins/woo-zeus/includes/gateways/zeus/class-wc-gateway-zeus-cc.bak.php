@@ -37,6 +37,19 @@ class WC_Gateway_Zeus_CC extends WC_Payment_Gateway {
 		$this->init_settings();
 		$this->method_title       = __( 'Zeus Credit Card Payment Gateway', 'woo-zeus' );
 		$this->method_description = __( 'Allows payments by Zeus Credit Card in Japan.', 'woo-zeus' );
+		$this->supports = array(
+			'products',
+			'refunds',
+			'tokenization',
+			'subscriptions',
+			'subscription_cancellation',
+			'subscription_reactivation',
+			'subscription_suspension',
+			'subscription_amount_changes',
+			'default_credit_card_form',
+			'subscription_date_changes',
+			'multiple_subscriptions',
+		);
 
 		// Get setting values
 		foreach ( $this->settings as $key => $val ) $this->$key = $val;
@@ -62,6 +75,11 @@ class WC_Gateway_Zeus_CC extends WC_Payment_Gateway {
 		add_action( 'woocommerce_receipt_zeus_cc',                              array( $this, 'receipt_page' ) );
 		add_action( 'woocommerce_update_options_payment_gateways',              array( $this, 'process_admin_options' ) );
 		add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, array( $this, 'process_admin_options' ) );
+		add_action( 'woocommerce_order_status_changed', array( $this, 'zeus_payment_completed' ),1,3 );
+		// For Subscripstion Order
+		add_action( 'scheduled_subscription_payment_' . $this->id, array( $this, 'process_scheduled_subscription_payment' ), 10, 3 );
+
+//		add_action( 'wp_enqueue_scripts',                                       array( $this, 'add_zeus_cc_scripts' ) );
 	}
 
       /**
@@ -99,6 +117,13 @@ class WC_Gateway_Zeus_CC extends WC_Payment_Gateway {
 				'type'        => 'text',
 				'description' => sprintf( __( 'Enter Authentication Key.', 'woo-zeus' )),
 			),
+/*			'store_card_info' => array(
+				'title'       => __( 'Store Card Infomation', 'woo-zeus' ),
+				'type'        => 'checkbox',
+				'label'       => __( 'Enable Store Card Infomation', 'woo-zeus' ),
+				'default'     => 'no',
+				'description' => sprintf( __( 'Store user Credit Card information in Zeus Server.(Option)', 'woo-zeus' )),
+			),*/
 			'setting_card_vm' => array(
 				'title'       => __( 'Set Credit Card', 'woo-zeus' ),
 				'id'              => 'wc-zeus-cc-vm',
@@ -185,57 +210,163 @@ class WC_Gateway_Zeus_CC extends WC_Payment_Gateway {
        */
 		function payment_fields() {
 		// Description of payment method from settings
-			if ( $this->description ) {
-            		echo $this->description;
-			}
-        }
+			if ( $this->description ) { ?>
+            		<p><?php echo $this->description; ?></p>
+      		<?php } ?>
+      		
+		<fieldset  style="padding-left: 40px;">
+				<?php
+				$user = wp_get_current_user();
+				$zeus_tokens = $this->user_has_stored_data( $user->ID );
+				if($this->store_card_info == 'yes' and isset($zeus_tokens)){ ?>
+					<fieldset>
+						<input type="radio" name="zeus-use-stored-payment-info" id="zeus-use-stored-payment-info-yes" value="yes" checked="checked" onclick="document.getElementById('zeus-new-info').style.display='none'; document.getElementById('zeus-stored-info').style.display='block'"; />
+						<label for="zeus-use-stored-payment-info-yes" style="display: inline;"><?php _e( 'Use a stored credit card', 'woo-zeus' ) ?></label>
+						<div id="zeus-stored-info" style="padding: 10px 0 0 40px; clear: both;">
+						<p>
+						<?php echo __( 'credit card last 4 numbers and expires: ', 'woo-zeus' ).'<br />';
+							foreach($zeus_tokens as $zeus_token) { 
+								$key =+ 1;
+							?>
+								<input type="radio" name="zeus-token-cc" value="<?php echo $key;?>" id="stored-info">
+								****-****-****-<?php echo $zeus_token->get_last4(); ?> (<?php echo $zeus_token->get_expiry_year(); ?>/<?php $zeus_token->get_expiry_month(); ?>)
+								<br />
+							<?php }?>
+						</p>
+						<p class="form-row form-row-first">
+							<label for="-card-cvc"><?php echo __( 'Security Code', 'woo-zeus' ) ?> <span class="required">*</span></label>
+							<input id="-card-cvc" class="input-text wc-credit-card-form-card-cvc" type="text" autocomplete="off" placeholder="CVC" name="-card-cvc">
+						</p>
+						</fieldset>
+						<fieldset>
+							<input type="radio" name="zeus-use-stored-payment-info" id="zeus-use-stored-payment-info-no" value="no" onclick="document.getElementById('zeus-stored-info').style.display='none'; document.getElementById('zeus-new-info').style.display='block'"; />
+		                  	<label for="zeus-use-stored-payment-info-no"  style="display: inline;"><?php _e( 'Use a new payment method', 'woo-zeus' ) ?></label>
+						</fieldset>
+		                	<div id="zeus-new-info" style="display:none">
+				<?php } else { ?>
+              			<fieldset>
+              				<!-- Show input boxes for new data -->
+              				<div id="zeus-new-info">
+              	<?php } ?>
+						<!-- Credit card number -->
+				<?PHP $credit_card_form = new WC_Payment_Gateway_CC;
+					$credit_card_form->form();
+					//$this->credit_card_form( array( 'fields_have_names' => true ) ); 
+				?>
+						<!-- Credit card holder Name -->
+                    	<p class="form-row form-row-first">
+							<label for="ccname"><?php echo __( 'Credit Card holder Name', 'woo-zeus' ) ?> <span class="required">*</span></label>
+							<input type="text" class="input-text" id="card_holder_name" name="card_holder_name" maxlength="32" />
+                    	</p>
+                <?php if($this->payment_installments == 'yes'){ ?>
+						<!-- Credit card holder Name -->
+                    	<p class="form-row form-row-first">
+							<label for="payment_times"><?php echo __( 'Payment Times', 'woo-zeus' ) ?> <span class="required">*</span></label>
+							<select name="zeus-payment-count" class="zeus-payment-count">
+							<?php
+							$payment_setting_array = get_option('woocommerce_zeus_cc_settings');
+							echo '<option value="01">1'.__( ' times', 'woo-zeus' ).'</option>';
+							if($this->twice_payment == 'yes'){
+								echo '<option value="02">2'.__( ' times', 'woo-zeus' ).'</option>';
+							}
+							foreach($payment_setting_array['payment_counts'] as $key => $value){
+								if(substr($value,0,1) == 0){$value = substr($value,1,1);}
+								echo '<option value="'.$value.'">'.$value.__( ' times', 'woo-zeus' ).'</option>';
+							}
+							if($this->revolving_repayment == 'yes'){
+								echo '<option value="99">'.__( 'Revolving repayment', 'woo-zeus' ).'</option>';
+							}
+							if($this->bonus_pay == 'yes'){
+								echo '<option value="B1">'.__( 'Enable Bonus pay', 'woo-zeus' ).'</option>';
+							}
+							?>
+							</select>
+                    	</p>
+                <?php } ?>
+            	</fieldset>
+			</fieldset>
+<?php
+    }
 
 	/**
 	 * Process the payment and return the result.
 	 */
 	function process_payment( $order_id ) {
+		include_once( 'includes/class-wc-gateway-zeus-request.php' );
 
-        global $woocommerce;
-        global $wpdb;
+		global $woocommerce;
+		global $wpdb;
 
-        $order = new WC_Order( $order_id );
+		$connect_url = WC_ZEUS_CC_API_URL;
 
-        $connect_url = WC_ZEUS_CC_URL;
-        $post_data = array();
-        $post_data['clientip'] = $this->authentication_clientip;
-        $post_data['money'] = $order->order_total;
-        $post_data['telno'] = str_replace('-','',$order->billing_phone);
-        $post_data['email'] = $order->billing_email;
+		$order = new WC_Order( $order_id );
+		$user_id = $order->user_id;
+//		$order->add_order_note($post_data['uniq_key']['sendid']);
+		$this_setting = array(
+			'clientip' => $this->authentication_clientip,
+			'key' => $this->authentication_key,
+			'payment_installments' => $this->payment_installments,
+			'store_card_info' => $this->store_card_info,
+		);
+		$zeus_stored_cc = $this->user_has_stored_data( $order->user_id );
+//		$order->add_order_note('test01');
 
-        $site_code = getSiteOrderCode();
-        $post_data['sendid'] = $site_code["order_code"] . $order->id;
-        $post_data['sendpoint'] = $site_code["order_code"] . $order->id;
-        $post_data['success_url'] = $this->get_return_url( $order );
-        $post_data['success_str'] = mb_convert_encoding("決済完了", "SJIS", "auto");;
-        $post_data['failure_url'] = esc_url( home_url( '/' ) );
-        $post_data['failure_str'] = mb_convert_encoding("支払いに失敗しました。", "SJIS", "auto");
+		$zeus_request = new WC_Gateway_Zeus_Request( $this );
+		$post_request = $zeus_request->make_post_request_cc($order, 'no');
+		
+		$sendid = 'swp-'.$order->id;
+		$post_data = $zeus_request->make_post_data_cc($order, $this_setting, $zeus_stored_cc, $sendid);
 
-        //Note for Message
-        $order->update_status( 'pending', __( 'Proceed to Zeus Credit Card', 'woo-zeus' ) );
+		$response_array = $zeus_request->send_zeus_pay_request($post_request, $post_data, $order, $connect_url);
+		if($response_array->result->status == 'success'){
+			// Mark as processing (we're awaiting the shipment)
+			$order->update_status( 'processing', __( 'Finished Payment. Order Number:', 'woo-zeus' ).$response_array->order_number );
+			$transaction_id = (string) $response_array->order_number;
+			//set transaction id for Zeus Order Number
+			update_post_meta( $order->id, '_transaction_id', $transaction_id );
+			if($post_data['uniq_key']['sendid']){
+				update_post_meta( $order->id, '_zeus_customer_cc_id', wc_clean( $post_data['uniq_key']['sendid'] ) );
+			}
 
-        // Reduce stock levels
-        $order->reduce_order_stock();
+			if($this->store_card_info == 'yes'){
+				$token = new WC_Payment_Token_CC();
+				$token->set_token( $sendid ); // Token comes from payment processor
+				$token->set_gateway_id( $this->id );
+				if((string) $response_array->addition_value->ctype == 'V'){
+					$token->set_card_type( 'visa' );
+				}elseif((string) $response_array->addition_value->ctype == 'M'){
+					$token->set_card_type( 'mastercard' );
+				}elseif((string) $response_array->addition_value->ctype == 'J'){
+					$token->set_card_type( 'jcb' );
+				}elseif((string) $response_array->addition_value->ctype == 'A'){
+					$token->set_card_type( 'american express' );
+				}elseif((string) $response_array->addition_value->ctype == 'I'){
+					$token->set_card_type( 'discover' );
+				}elseif((string) $response_array->addition_value->ctype == 'D'){
+					$token->set_card_type( 'diners' );
+				}
+				$token->set_last4( (string)$response_array->card->number->suffix );
+				$token->set_expiry_month( (string)$response_array->card->expires->month );
+				$token->set_expiry_year( (string)$response_array->card->expires->year );
+				$token->set_user_id( get_current_user_id() );
+				// Save the new token to the database
+				$token->save();
+				// Set this token as the users new default token
+//				WC_Payment_Tokens::set_users_default( get_current_user_id(), $token->get_id() );
+			}
+			// Reduce stock levels
+			$order->reduce_order_stock();
 
-        // Remove cart
-        WC()->cart->empty_cart();
-        return array(
-            'result'   => 'success',
-            'redirect' => $this->get_zeus_url( $post_data ,$connect_url)
-        );
-
+			// Remove cart
+			WC()->cart->empty_cart();
+			return array(
+				'result'   => 'success',
+				'redirect' => $this->get_return_url( $order )
+			);
+		}else{
+			$this->notice_invalid($response_array->result->code, $order, 'Auth');
+		}
 	}
-
-    private function get_zeus_url( $post_data , $connect_url) {
-        $url = $connect_url;
-        $url .= '?'.http_build_query($post_data);
-        return $url;
-    }
-
 
     /**
      * Check if the user has any billing records in the Customer Vault
@@ -245,6 +376,53 @@ class WC_Gateway_Zeus_CC extends WC_Payment_Gateway {
 		return $tokens;
 	}
 
+    /**
+     * Check payment details for valid format
+     */
+	function validate_fields() {
+
+		if ( $this->get_post( 'zeus-use-stored-payment-info' ) == 'yes' ) return;
+
+		global $woocommerce;
+
+		// Check for saving payment info without having or creating an account
+		if ( $this->get_post( 'saveinfo' )  && ! is_user_logged_in() && ! $this->get_post( 'createaccount' ) ) {
+        wc_add_notice( __( 'Sorry, you need to create an account in order for us to save your payment information.', 'woo-zeus'), $notice_type = 'error' );
+        return false;
+      }
+
+		$cardNumber          = str_replace(array(" ","/" ), "",$this->get_post( '-card-number' ));
+		$cardCVC             = $this->get_post( '-card-cvc' );
+		$countCVC = strlen($cardCVC);
+
+		// Check card number
+		if ( empty( $cardNumber ) || ! ctype_digit( $cardNumber ) ) {
+			wc_add_notice( __( 'Card number is invalid.', 'woo-zeus' ), $notice_type = 'error' );
+			return false;
+		}
+		// Check CVC number
+		if ( empty( $cardCVC ) || ! ctype_digit( $cardCVC ) ) {
+			wc_add_notice( __( 'Card CVV is invalid.', 'woo-zeus' ), $notice_type = 'error' );
+			return false;
+		} elseif ( $countCVC > 5 ) {
+			wc_add_notice( __( 'Card CVV is invalid.', 'woo-zeus' ), $notice_type = 'error' );
+			return false;
+		}
+		$card_valid_term = str_replace(array(" ","/" ), "", $this->get_post( '-card-expiry' ) );
+		$ct_year = substr($card_valid_term, -2);
+		$ct_month = substr($card_valid_term, 0, -2);
+		$this_month = date('ym');
+		$ct_month = $ct_year.$ct_month;
+		if(strlen($card_valid_term) > 4){
+			wc_add_notice( __( 'Card ternm is invalid. MM/YY only', 'woo-zeus' ), $notice_type = 'error' );
+			return false;
+		}elseif($ct_month <= $this_month){
+			wc_add_notice( __( 'Card ternm is past date.', 'woo-zeus' ), $notice_type = 'error' );
+			return false;			
+		}
+		return true;
+
+	}
 	/**
 	* Notice Error in Request Invalid
 	*/

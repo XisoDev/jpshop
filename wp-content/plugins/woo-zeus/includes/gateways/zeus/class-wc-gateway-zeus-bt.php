@@ -102,7 +102,7 @@ class WC_Gateway_Zeus_BT extends WC_Payment_Gateway {
 
 		global $woocommerce;
 		global $wpdb;
-
+        $site_code = getSiteOrderCode();
 		$order = new WC_Order( $order_id );
 		$user = wp_get_current_user();
 		if($order->user_id){
@@ -128,8 +128,8 @@ class WC_Gateway_Zeus_BT extends WC_Payment_Gateway {
 		}
 		$post_data['telno'] = str_replace('-','',$order->billing_phone);
 		$post_data['email'] = $order->billing_email;
-		$post_data['sendpoint'] = 'swp-'.$order->id;
-		$post_data['sendid'] = 'swp-'.$order->id;
+		$post_data['sendpoint'] = $site_code["order_code"] . $order->id;
+		$post_data['sendid'] = $site_code["order_code"] . $order->id;
 		$post_data['siteurl'] = esc_url( home_url( '/' ) );
 		$post_data['sitestr'] =  mb_convert_encoding(__( 'Back to Store', 'woo-zeus' ), "SJIS", "auto");
 
