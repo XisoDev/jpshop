@@ -218,7 +218,7 @@ class WC_Gateway_Zeus_CC extends WC_Payment_Gateway {
         $order->update_status( 'pending', __( 'Proceed to Zeus Credit Card', 'woo-zeus' ) );
 
         // Reduce stock levels
-        $order->reduce_order_stock();
+        wc_reduce_stock_levels($order->get_id());
 
         // Remove cart
         WC()->cart->empty_cart();
