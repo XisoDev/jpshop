@@ -210,9 +210,9 @@ class WC_Gateway_Zeus_CC extends WC_Payment_Gateway {
         $post_data['sendid'] = $site_code["order_code"] . $order->get_id();
         $post_data['sendpoint'] = $site_code["order_code"] . $order->get_id();
         $post_data['success_url'] = $this->get_return_url( $order );
-        $post_data['success_str'] = mb_convert_encoding("決済完了", "SJIS", "auto");;
+        $post_data['success_str'] = mb_convert_encoding("決済完了", "SJIS", "auto");
         $post_data['failure_url'] = esc_url( home_url( '/' ) );
-        $post_data['failure_str'] = mb_convert_encoding("支払いに失敗しました。", "SJIS", "auto");
+        $post_data['failure_str'] = mb_convert_encoding("サイトに戻る", "SJIS", "auto");
 
         //Note for Message
         $order->update_status( 'pending', __( 'Proceed to Zeus Credit Card', 'woo-zeus' ) );
