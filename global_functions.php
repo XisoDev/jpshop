@@ -11,21 +11,26 @@ function getSiteOrderCode(){
 }
 
 //  편의점 결제 용
+add_action( 'woocommerce_cart_calculate_fees','woocommerce_custom_fee' );
+
 function woocommerce_custom_fee( ) {
     global $woocommerce;
     if ( ( is_admin() && ! defined( 'DOING_AJAX' ) ) || ! is_checkout() )
         return;
     add_action("woocommerce_cart_contents", "get_cart");
+
     $deli = $woocommerce->cart->shipping_total;
+
     $total = WC()->cart->cart_contents_total;
     $fee = 0;
+
     if ($total+$deli < 1000) $fee = 130;
     elseif ($total+$deli < 2000) $fee = 150;
     elseif ($total+$deli < 3000) $fee = 180;
-    elseif ($total+$deli < 10000)$fee = 210;
+    elseif ($total+$deli < 10000) $fee = 210;
     elseif ($total+$deli < 30000) $fee = 270;
     elseif ($total+$deli < 100000) $fee = 410;
-    elseif ($total+$deli < 150000)$fee = 560;
+    elseif ($total+$deli < 150000) $fee = 560;
     elseif ($total+$deli < 300000) $fee = 770;
 
     $fee_fee = $fee / 1.08;
@@ -35,8 +40,8 @@ function woocommerce_custom_fee( ) {
     if ( $chosen_gateway == 'zeus_cs' ) {
         WC()->cart->add_fee( '代引き手数料(税込)', $fee_fee, true, '' );
     }
+    echo WC()->session->chosen_payment_method;
 }
-add_action( 'woocommerce_cart_calculate_fees','woocommerce_custom_fee' );
 
 add_action( 'wp_footer', 'cart_update_script', 999 );
 
