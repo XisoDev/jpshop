@@ -40,7 +40,6 @@ function woocommerce_custom_fee( ) {
     if ( $chosen_gateway == 'zeus_cs' ) {
         WC()->cart->add_fee( '代引き手数料(税込)', $fee_fee, true, '' );
     }
-    echo WC()->session->chosen_payment_method;
 }
 
 add_action( 'wp_footer', 'cart_update_script', 999 );
