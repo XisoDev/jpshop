@@ -15,16 +15,13 @@ function getSiteOrderCode(){
 
 
 function woocommerce_custom_fee() {
-
-    if ( ( is_admin() && ! defined( 'DOING_AJAX' ) ) || ! is_checkout() )
+    global $woocommerce;
+    if ( is_admin() && ! defined( 'DOING_AJAX' ))
         return;
 
-    global $woocommerce;
-
     $deli = $woocommerce->cart->shipping_total;
-
     $total = $woocommerce->cart->cart_contents_total;
-
+    echo $total;
     $fee = 0;
 
     if ($total+$deli < 1000) $fee = 130;
@@ -65,10 +62,12 @@ function cart_update_script() {
                     $checkout_form.trigger( 'update' );
                 });
 
-
             });
         </script>
         <?php
     endif;
 }
 add_action( 'wp_footer', 'cart_update_script', 999 );
+
+
+?>
