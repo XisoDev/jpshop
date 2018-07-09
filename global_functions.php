@@ -16,7 +16,7 @@ function getSiteOrderCode(){
 
 function woocommerce_custom_fee() {
 
-    if ( is_admin() && ! defined( 'DOING_AJAX' ))
+    if ( ( is_admin() && ! defined( 'DOING_AJAX' ) ) || ! is_checkout() )
         return;
 
     global $woocommerce;
@@ -39,7 +39,7 @@ function woocommerce_custom_fee() {
 
 
     if ( $chosen_gateway == 'zeus_cs' ) {
-        $woocommerce->cart->add_fee( '代引き手数料(税込)', $fee_fee, true, '' );
+        $woocommerce->cart->add_fee( 'コンビニの手数料', $fee_fee, true, '' );
     }
 }
 
@@ -52,7 +52,6 @@ function cart_update_script() {
         <script>
             jQuery( function( $ ) {
 
-                // woocommerce_params is required to continue, ensure the object exists
                 if ( typeof woocommerce_params === 'undefined' ) {
                     return false;
                 }
@@ -69,6 +68,4 @@ function cart_update_script() {
     endif;
 }
 add_action( 'wp_footer', 'cart_update_script', 999 );
-
-
 ?>

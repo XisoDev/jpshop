@@ -55,7 +55,18 @@ class Amuz_Japanshop{
      * Admin Screen output
      */
     public function wc_japanshop_datacenter_output() {
-        $tab = ! empty( $_GET['tab'] ) && $_GET['tab'] == 'product' ? 'product' : 'data';
+        if (!empty($_GET['tab']) && $_GET['tab'] == 'product') {
+            $tab = 'product';
+        }
+        elseif(!empty($_GET['tab']) && $_GET['tab'] == 'calculate'){
+            $tab = 'calculate';
+        }
+        elseif(!empty($_GET['tab']) && $_GET['tab'] == 'calculate-edit'){
+            $tab = 'calculate-edit';
+        }
+        else {
+            $tab = 'data';
+        }
         include( 'views/html-admin-screen.php' );
     }
 
