@@ -15,13 +15,14 @@ function getSiteOrderCode(){
 
 
 function woocommerce_custom_fee() {
-    global $woocommerce;
+
     if ( is_admin() && ! defined( 'DOING_AJAX' ))
         return;
 
+    global $woocommerce;
+
     $deli = $woocommerce->cart->shipping_total;
     $total = $woocommerce->cart->cart_contents_total;
-    echo $total;
     $fee = 0;
 
     if ($total+$deli < 1000) $fee = 130;
