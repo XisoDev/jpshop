@@ -1,7 +1,7 @@
 <?php
 
 global $woocommerce;
-include 'define_arrays.php';
+include ("../define_arrays.php");
 
 $site_code = getSiteOrderCode();
 
