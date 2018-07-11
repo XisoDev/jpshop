@@ -74,7 +74,7 @@ foreach($order_list as $no => $order_id){
     }
 
     $objPHPExcel->getActiveSheet()->setCellValue("F" . ($no+2),number_format($order->get_shipping_total()));
-    $objPHPExcel->getActiveSheet()->setCellValue("G" . ($no+2),$payment_list[$order->payment_method]);
+    $objPHPExcel->getActiveSheet()->setCellValue("G" . ($no+2),get_payment_method($order->payment_method));
     $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),$status_list["wc-".$order->get_status()]);
     $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),get_post_meta( trim(str_replace('#', '', $order->get_order_number())), '_paid_date', true));
     $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),$order->get_meta('ywot_pick_up_date' ));
