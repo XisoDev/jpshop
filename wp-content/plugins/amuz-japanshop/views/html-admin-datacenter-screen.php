@@ -205,7 +205,7 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
             }else{
                 echo "<td>미배송</td>";
             }
-            echo "<td>".get_payment_method($order->payment_method)."</td>";
+            echo "<td>{$payment_list[$order->payment_method]}</td>";
 
             $total['discount'] += $order->get_total_discount();
             $total['tax'] += $order->get_total_tax();
