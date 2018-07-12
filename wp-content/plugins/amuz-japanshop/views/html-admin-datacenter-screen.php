@@ -2,29 +2,7 @@
 
 global $woocommerce;
 
-$status_list = array(
-    "wc-pending" => "주문", //결제 대기중
-    "wc-processing" => "배송중", //처리중
-    "wc-on-hold" => "입금대기", //보류중
-    "wc-completed" => "완료", //완료됨
-    "wc-cancelled" => "취소", //취소됨
-    "wc-refunded" => "환불", //환불됨
-    "wc-failed" => "실패", //실패함
-);
-$payment_list = array(
-    "codpf" => "대인결제",
-    "zeus_cc" => "신용카드",
-    "zeus_cs" => "편의점",
-    "zeus_bt" => "은행결제",
-);
-$date_list = array(
-    "start_date" => "검색 시작일",
-    "end_date" => "검색 종료일"
-);
-$shipping_list = array(
-    "SAGAWA_EX" => array("사가와", "https://track.aftership.com/sagawa/%s")
-);
-
+include __DIR__.'./../define_arrays.php';
 
 $site_code = getSiteOrderCode();
 
@@ -206,7 +184,7 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
             }else{
                 echo "<td>미배송</td>";
             }
-            echo "<td>{$payment_list[$order->payment_method]}</td>";
+            echo "<td>".get_payment_method($order->payment_method)."</td>";
 
             $total['discount'] += $order->get_total_discount();
             $total['tax'] += $order->get_total_tax();
