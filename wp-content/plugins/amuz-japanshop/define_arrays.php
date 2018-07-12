@@ -11,7 +11,7 @@
     );
 
 function get_payment_method($method){
-    if($method == "" || !$method) return "기타";
+    if($method == ""||$method =="other" || !$method) return "기타";
     $payment_list = array(
         "codpf" => "대인결제",
         "zeus_cc" => "신용카드",
