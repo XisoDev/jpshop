@@ -10,16 +10,13 @@
         "wc-failed" => "실패",
     );
 
-function get_payment_method($method){
-    if($method == "" || !$method) return "기타";
     $payment_list = array(
         "codpf" => "대인결제",
         "zeus_cc" => "신용카드",
         "zeus_cs" => "편의점",
         "zeus_bt" => "은행결제",
     );
-    return $payment_list[$method];
-}
+
 $date_list = array(
     "start_date" => "검색 시작일",
     "end_date" => "검색 종료일"
