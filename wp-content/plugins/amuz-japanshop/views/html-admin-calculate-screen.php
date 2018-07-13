@@ -186,7 +186,8 @@ foreach($order_list as $no => $order) {
     echo "<td>".$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())) . "</td>";
 
     echo "<td>{$payment}</td>";
-    print_r($token);
+
+    print_r($token->get_data());
     $itemtotal = $order->get_subtotal();
     #환불 받은 가격
     $refund = $order->get_total_refunded();
