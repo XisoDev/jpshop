@@ -190,14 +190,15 @@ foreach($order_list as $no => $order) {
     $itemtotal = $order->get_subtotal();
     #환불 받은 가격
     $refund = $order->get_total_refunded();
+    print_r($refund);
+    echo "<br>";
     # + 배송비용
     $delivery = $order->get_shipping_total();
     $totalm_tax = $order->get_subtotal() * 0.08;                   #총 결제금액의 -수수료 계산
     $totalm_excise = ($order->get_subtotal() - $totalm_tax) * 0.08; # -소비세 계산
     $totaltax = $refund * 0.08;                  # 총 결제금액의 수수료 계산
     $totalexcise = ($refund - $totaltax) * 0.08; # 소비세 계산
-    if($payment == '신용카드') $card_type = $token->get_card_type();
-    echo $card_type;
+    $card_type = $token->get_card_type();
 
     if ($payment == '편의점') {
             if($refund < 1)$pg_tax = 0;
