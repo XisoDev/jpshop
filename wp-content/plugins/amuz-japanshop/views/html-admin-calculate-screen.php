@@ -166,10 +166,10 @@ $total['customs'] = 0;          #돌려받은 관세
 $total['m_customs'] = 0;        #부과된 관세
 
 $hs_codes = array();
-include __DIR__."./hscodes.php";
+include_once __DIR__."hscodes.php";
 
 $hs_codes_refund = array();
-include __DIR__."./hscodes_refund.php";
+include_once __DIR__."./hscodes_refund.php";
 foreach($order_list as $no => $order) {
 
     echo "<tr>";
