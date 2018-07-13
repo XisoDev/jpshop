@@ -136,7 +136,6 @@ function getHsValues($hs_codes, $items){
                 $tax = 0;
                 /*무세 면세 일 경우 제품가격 그대로*/
             }
-            $lactose_content = 0;
             elseif ($lactose != "0" and $lactose_content >= "10") {   #만약 유당 함유량이 10% 이상이라면
                 $item_total = ($prices + ($fix * $quantity)) + ($lactose_content * 7);
                 $tax = ($fix * $quantity) + ($lactose_content * 7);
