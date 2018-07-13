@@ -178,7 +178,7 @@ foreach($order_list as $no => $order) {
     <input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
     # 주문번호 앞에 있는 체크박스
     $order = new WC_Order($order->ID);
-    $token = new WC_Payment_Token_CC($token->ID);
+    $token = new WC_Payment_Token_CC($order->ID);
     $payment = get_payment_method($order->payment_method);
 
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
@@ -187,7 +187,7 @@ foreach($order_list as $no => $order) {
 
     echo "<td>{$payment}</td>";
 
-    print_r($token->get_data());
+    print_r($token->get_card_type());
     $itemtotal = $order->get_subtotal();
     #환불 받은 가격
     $refund = $order->get_total_refunded();
