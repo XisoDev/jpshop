@@ -195,7 +195,7 @@ foreach($order_list as $no => $order) {
     $totalm_excise = ($order->get_subtotal() - $totalm_tax) * 0.08; # -소비세 계산
     $totaltax = $refund * 0.08;                  # 총 결제금액의 수수료 계산
     $totalexcise = ($refund - $totaltax) * 0.08; # 소비세 계산
-
+    echo $token->get_card_type();
     if ($payment == '편의점') {
             if($refund < 1)$pg_tax = 0;
             elseif($refund < 2000) $pg_tax = 125 * 1.08;
