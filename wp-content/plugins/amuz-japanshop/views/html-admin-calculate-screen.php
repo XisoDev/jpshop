@@ -170,6 +170,7 @@ include"hscodes.php";
 
 $hs_codes_refund = array();
 include"hscodes_refund.php";
+
 foreach($order_list as $no => $order) {
 
     echo "<tr>";
@@ -177,7 +178,7 @@ foreach($order_list as $no => $order) {
     <input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
     # 주문번호 앞에 있는 체크박스
     $order = new WC_Order($order->ID);
-    $token = new WC_Payment_Token_CC();
+    $token = new WC_Payment_Token_CC($token->ID);
     $payment = get_payment_method($order->payment_method);
 
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
@@ -195,7 +196,9 @@ foreach($order_list as $no => $order) {
     $totalm_excise = ($order->get_subtotal() - $totalm_tax) * 0.08; # -소비세 계산
     $totaltax = $refund * 0.08;                  # 총 결제금액의 수수료 계산
     $totalexcise = ($refund - $totaltax) * 0.08; # 소비세 계산
-    echo $token->get_card_type();
+    if($payment == '신용카드') $card_type = $token->get_card_type();
+    echo $card_type;
+
     if ($payment == '편의점') {
             if($refund < 1)$pg_tax = 0;
             elseif($refund < 2000) $pg_tax = 125 * 1.08;
@@ -206,9 +209,9 @@ foreach($order_list as $no => $order) {
             elseif ($refund < 150000) $pg_tax = 400 * 1.08;
             elseif ($refund < 300000) $pg_tax = 600 * 1.08;
         } elseif ($payment == '신용카드'){
-        if($token ->get_card_type()=='JCB' || $token ->get_card_type()=='American Express') $pg_tax = 0;
-        elseif($token ->get_card_type()=='Visa'||$token ->get_card_type()=='MasterCard')$pg_tax = 0;
-        elseif($token ->get_card_type()=='Discover')$pg_tax = 0;
+        if($card_type=='JCB' || $card_type=='American Express') $pg_tax = 0;
+        elseif($card_type=='Visa'||$card_type=='MasterCard')$pg_tax = 0;
+        elseif($card_type=='Discover')$pg_tax = 0;
         else $pg_tax = 0;
         }
         elseif ($payment == '은행결제') $pg_tax = (($refund * 1.50) / 100) * 1.08;
@@ -226,11 +229,11 @@ foreach($order_list as $no => $order) {
             elseif ($zeusm < 150000) $pgm_tax = 400 * 1.08;
             elseif ($zeusm < 300000) $pgm_tax = 600 * 1.08;
         } elseif ($payment == '신용카드'){
-            if($token ->get_card_type()=='jcb' || $token ->get_card_type()=='american express')
+            if($card_type=='jcb' || $card_type=='american express')
                 $pgm_tax = ($zeusm * 3.35 / 100)*1.08;
-            elseif($token ->get_card_type()=='visa'||$token ->get_card_type()=='mastercard')
+            elseif($card_type=='visa'||$card_type=='mastercard')
                 $pgm_tax = ($zeusm * 2.85 / 100)*1.08;
-            elseif($token ->get_card_type()=='diners')
+            elseif($card_type=='diners')
                 $pgm_tax = ($zeusm * 3.35 / 100)*1.08;
             else $pgm_tax = 0;
         }
