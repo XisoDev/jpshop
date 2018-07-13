@@ -190,8 +190,6 @@ foreach($order_list as $no => $order) {
     $itemtotal = $order->get_subtotal();
     #환불 받은 가격
     $refund = $order->get_total_refunded();
-    print_r($refund);
-    echo "<br>";
     # + 배송비용
     $delivery = $order->get_shipping_total();
     $totalm_tax = $order->get_subtotal() * 0.08;                   #총 결제금액의 -수수료 계산
