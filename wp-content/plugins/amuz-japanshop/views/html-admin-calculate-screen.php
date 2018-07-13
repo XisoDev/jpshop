@@ -178,15 +178,17 @@ foreach($order_list as $no => $order) {
     <input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
     # 주문번호 앞에 있는 체크박스
     $order = new WC_Order($order->ID);
+    $token = new WC_Payment_Token_CC($token->ID);
+    $payment = get_payment_method($order->payment_method);
     $WC_Payment_Token_CC = new WC_Payment_Token_CC();
-    $var = $WC_Payment_Token_CC->get_card_type();
-    echo $var;
+    $card_type = $WC_Payment_Token_CC->get_card_type( $context );
+
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
     #주문번호
     echo "<td>".$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())) . "</td>";
 
     echo "<td>{$payment}</td>";
-
+    $token->get_data();
     $itemtotal = $order->get_subtotal();
     #환불 받은 가격
     $refund = $order->get_total_refunded();
@@ -196,7 +198,6 @@ foreach($order_list as $no => $order) {
     $totalm_excise = ($order->get_subtotal() - $totalm_tax) * 0.08; # -소비세 계산
     $totaltax = $refund * 0.08;                  # 총 결제금액의 수수료 계산
     $totalexcise = ($refund - $totaltax) * 0.08; # 소비세 계산
-    $card_type = $token->get_card_type();
 
     if ($payment == '편의점') {
             if($refund < 1)$pg_tax = 0;
