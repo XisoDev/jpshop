@@ -181,8 +181,8 @@ foreach($order_list as $no => $order) {
     $token = new WC_Payment_Token_CC($token->ID);
     $payment = get_payment_method($order->payment_method);
     $WC_Payment_Token_CC = new WC_Payment_Token_CC();
-    $card_type = $WC_Payment_Token_CC->get_card_type( $context );
-    print_r($WC_Payment_Token_CC);
+    $card_type = $WC_Payment_Token_CC->get_card_type( $context );######여기 손보고 있었음!!!
+    ##카드 정보가 안받아와져!
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
     #주문번호
     echo "<td>".$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())) . "</td>";
