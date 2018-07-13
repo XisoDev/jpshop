@@ -166,10 +166,10 @@ $total['customs'] = 0;          #돌려받은 관세
 $total['m_customs'] = 0;        #부과된 관세
 
 $hs_codes = array();
-include 'hscodes.php';
+include __DIR__."./hscodes.php";
 
 $hs_codes_refund = array();
-include "hscodes_refund.php";
+include __DIR__."./hscodes_refund.php";
 foreach($order_list as $no => $order) {
 
     echo "<tr>";
@@ -191,12 +191,10 @@ foreach($order_list as $no => $order) {
     $refund = $order->get_total_refunded();
     # + 배송비용
     $delivery = $order->get_shipping_total();
-    $totalm_tax = round($order->get_subtotal() * 0.08);                   #총 결제금액의 -수수료 계산
-    $totalm_excise = round(($order->get_subtotal() - $totalm_tax) * 0.08); # -소비세 계산
-    $totaltax = round($refund * 0.08);                  # 총 결제금액의 수수료 계산
-    $totalexcise = round(($refund - $totaltax) * 0.08); # 소비세 계산
-
-    if($payment == '신용카드')$token->set_card_type('visa');
+    $totalm_tax = $order->get_subtotal() * 0.08;                   #총 결제금액의 -수수료 계산
+    $totalm_excise = ($order->get_subtotal() - $totalm_tax) * 0.08; # -소비세 계산
+    $totaltax = $refund * 0.08;                  # 총 결제금액의 수수료 계산
+    $totalexcise = ($refund - $totaltax) * 0.08; # 소비세 계산
 
     if ($payment == '편의점') {
             if($refund < 1)$pg_tax = 0;
