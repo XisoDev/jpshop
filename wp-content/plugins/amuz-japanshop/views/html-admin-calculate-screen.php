@@ -182,6 +182,9 @@ foreach($order_list as $no => $order) {
     $order = new WC_Order($order->ID);
     $payment = get_payment_method($order->payment_method);
     $token = new WC_Payment_Token_CC();
+    echo $token -> get_card_type();
+
+
     ##카드 정보가 안받아와져!
 
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
@@ -189,7 +192,7 @@ foreach($order_list as $no => $order) {
     echo "<td>".$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())) . "</td>";
 
     echo "<td>{$payment}</td>";
-    $token->get_data();
+
 
     $itemtotal = $order->get_subtotal();
     #환불 받은 가격
