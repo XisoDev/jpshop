@@ -183,7 +183,7 @@ foreach($order_list as $no => $order) {
     $payment = get_payment_method($order->payment_method);
     $token = new WC_Payment_Token_CC();
     echo $token -> get_card_type();
-
+    echo $token;
 
     ##카드 정보가 안받아와져!
 
