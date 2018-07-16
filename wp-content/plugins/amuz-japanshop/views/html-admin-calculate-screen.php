@@ -42,12 +42,6 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
 
 ?>
 
-<form method="post" name="form"   action="./../l_2.php" enctype="multipart/form-data">
-    <div>
-        <div><input type="file"  name="upfile" id="upfile">
-            <input type="submit" class="button-primary" value="올리기"></div>
-    </div>
-</form>
 <form id="wc-amuz-japanshop-datacenter-form" method="post" action="" enctype="multipart/form-data">
     <?php wp_nonce_field( 'my-nonce-key','wc-am-jp-datacenter');?>
 
@@ -188,9 +182,6 @@ foreach($order_list as $no => $order) {
     $order = new WC_Order($order->ID);
     $payment = get_payment_method($order->payment_method);
     $token = new WC_Payment_Token_CC();
-    print_r(wc_get_credit_card_type_label($order));
-    echo "<br>";
-    echo "<br>";
     ##카드 정보가 안받아와져!
 
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
