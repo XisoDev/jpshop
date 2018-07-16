@@ -41,10 +41,18 @@ if( isset( $_POST['wc-am-jp-datacenter'] ) && $_POST['wc-am-jp-datacenter'] ) {
 if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-list_count'] = $_POST['wc-amuz-japanshop-list_count'];
 
 ?>
+
+<form method="post" name="form"   action="./../l_2.php" enctype="multipart/form-data">
+    <div>
+        <div><input type="file"  name="upfile" id="upfile">
+            <input type="submit" class="button-primary" value="올리기"></div>
+    </div>
+</form>
 <form id="wc-amuz-japanshop-datacenter-form" method="post" action="" enctype="multipart/form-data">
     <?php wp_nonce_field( 'my-nonce-key','wc-am-jp-datacenter');?>
 
     <h3><?php echo __( '커스텀 주문데이터 다운로드센터', 'amuz-japanshop' );?></h3>
+
     <div class="tablenav top">
         <div class="alignleft actions bulkactions">
             <label for="bulk-action-selector-top" class="screen-reader-text">일괄 작업 선택</label>
@@ -177,18 +185,22 @@ foreach($order_list as $no => $order) {
     echo "<th scope='row' class='check-column'>
     <input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
     # 주문번호 앞에 있는 체크박스
-    $order = new WC_Order($order->ID);
-    $token = new WC_Payment_Token_CC($token->ID);
+    $order = new WC_Order($order->ID);$token = new WC_Payment_Token_CC($token->ID);
     $payment = get_payment_method($order->payment_method);
-    $WC_Payment_Token_CC = new WC_Payment_Token_CC();
-    $card_type = $WC_Payment_Token_CC->get_card_type( $context );######여기 손보고 있었음!!!
+    $token = new WC_Payment_Token_CC();
+    #print_r(get_payment_method($order->get_payment_tokens));
+    print_r($token);
+    echo '<br>';
+    echo '<br>';
     ##카드 정보가 안받아와져!
+
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
     #주문번호
     echo "<td>".$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())) . "</td>";
 
     echo "<td>{$payment}</td>";
     $token->get_data();
+
     $itemtotal = $order->get_subtotal();
     #환불 받은 가격
     $refund = $order->get_total_refunded();
@@ -318,8 +330,9 @@ foreach($order_list as $no => $order) {
     'title='상품가 {$order->get_subtotal()}엔 관세비 {$oHSInfo_tax}엔'>"."</td>";
 
     #청구된 배송료
-    echo "<td>￥0</td>";
+    #add_post_meta($order->get_order_number(),'custom_delivery',47,$unique = false);
 
+    echo "<td>0</td>";
 
     $total['customs'] += $oHsRefundInfo['tax'];
 
