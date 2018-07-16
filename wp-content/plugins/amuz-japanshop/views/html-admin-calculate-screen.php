@@ -181,9 +181,8 @@ foreach($order_list as $no => $order) {
     # 주문번호 앞에 있는 체크박스
     $order = new WC_Order($order->ID);
     $payment = get_payment_method($order->payment_method);
-    $token = new WC_Payment_Token_CC();
-    echo $token -> get_card_type();
-    echo $token;
+    $token = new WC_Payment_Token_CC;
+
 
     ##카드 정보가 안받아와져!
 
