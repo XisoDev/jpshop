@@ -201,12 +201,7 @@ foreach($order_list as $no => $order) {
     echo "<td>".$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())) . "</td>";
 
     echo "<td>{$payment}</td>";
-    if($payment =='신용카드') {
-        $aa = wc_get_account_saved_payment_methods_list_item_cc($order->get_items(), $token);
-        print_r($aa);
 
-        echo "<br>";
-    }
     $itemtotal = $order->get_subtotal();
     #환불 받은 가격
     $refund = $order->get_total_refunded();
