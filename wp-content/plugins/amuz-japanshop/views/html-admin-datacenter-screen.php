@@ -162,7 +162,8 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
             echo "<tr>";
             echo "<th scope='row' class='check-column'><input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
             $order = new WC_Order( $order->ID );
-            echo "<td>". $site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())) . "</td>";
+            echo "<td>"."<a href='".get_edit_post_link( $order->get_order_number() )."' target='_blank'>".$site_code["order_code"]
+                .trim(str_replace('#', '', $order->get_order_number())) ."</a></td>";
 
             if($order->get_customer_id() != 0){
                 $user = get_userdata($order->get_customer_id());
