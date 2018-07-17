@@ -7,6 +7,9 @@ include __DIR__.'./../define_arrays.php';
 $site_code = getSiteOrderCode();
 
 //데이터가 들어오는것과 상관없이 일단 쿠키를 세션에 집어넣음.
+$date_list = array(
+    "start_date" => "검색 시작일",
+);
 foreach ($date_list as $key => $value) {
     $date_method_str = 'wc-amuz-japanshop-' . $key;
     $_SESSION[$date_method_str] = $_COOKIE[$date_method_str];
@@ -20,7 +23,7 @@ if( isset( $_POST['wc-am-jp-datacenter'] ) && $_POST['wc-am-jp-datacenter'] ) {
             if (isset($_POST[$status_method_str]) && $_POST[$status_method_str]) {
                 update_option($status_method_str, $_POST[$status_method_str]);
             } else {
-                update_option($status_method_str, 'N');
+                update_option($status_method_str, 'Y');
             }
         }
 
@@ -68,13 +71,16 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
 
             //조회할 상태지정
             $post_status = array();
+            $status_list = array(
+                "wc-completed" => "완료",
+                "wc-refunded" => "환불",
+            );
             foreach ($status_list as $key => $value) {
                 $status_method_str = "wc-amuz-japanshop-".$key;
                 $options = get_option($status_method_str);
                 if($options == "Y") $post_status[] = $key;
-                echo '<label for="woocommerce_input_'.$key.'"><input type="checkbox" id="woocommerce_input_'.$key.'" name="' . $status_method_str . '" value="Y" ';
-                checked($options, 'Y');
-                echo '>' . $value . '</label> &nbsp; ';
+                echo '<label for="woocommerce_input_'.$key.'">';
+                echo '</label> &nbsp; ';
             }
             ?>
             <input name="save" class="button-primary" type="submit" value="조회">
@@ -173,6 +179,9 @@ include"hscodes.php";
 $hs_codes_refund = array();
 include"hscodes_refund.php";
 
+
+
+
 foreach($order_list as $no => $order) {
 
     echo "<tr>";
@@ -184,6 +193,7 @@ foreach($order_list as $no => $order) {
     $token = new WC_Payment_Token_CC;
 
 
+    echo "<br>";
     ##카드 정보가 안받아와져!
 
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
@@ -191,8 +201,12 @@ foreach($order_list as $no => $order) {
     echo "<td>".$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())) . "</td>";
 
     echo "<td>{$payment}</td>";
+    if($payment =='신용카드') {
+        $aa = wc_get_account_saved_payment_methods_list_item_cc($order->get_items(), $token);
+        print_r($aa);
 
-
+        echo "<br>";
+    }
     $itemtotal = $order->get_subtotal();
     #환불 받은 가격
     $refund = $order->get_total_refunded();
@@ -345,13 +359,6 @@ foreach($order_list as $no => $order) {
     $total['pgm_tax'] += $pgm_tax;
 echo "</tr>";
 
-
-    /*echo "<br>";
-    foreach ($order->get_items() as $item_key => $item_values){
-        $item_data = $item_values->get_data();
-        $product_id = $item_data['product_id'];
-        echo "product_id".$product_id;
-    }*/
 }
 
 echo "</tbody>";
