@@ -88,14 +88,15 @@ try {
 
     $maxRow = $objWorksheet->getHighestRow();
 
-    for ($i = 2 ; $i <= $maxRow ; $i++) {
+    for ($i = 0 ; $i <= $maxRow ; $i++) {
 
         $NO = $objWorksheet->getCell('A' . $i)->getValue(); // NO 열
         $addr1 = $objWorksheet->getCell('C' . $i)->getValue(); // 주문번호 열
         $addr2 = $objWorksheet->getCell('J' . $i)->getValue(); // 배송비 열
         $order = array();
-
+        if(!is_numeric($NO))continue;
             if ($addr1 != "" && $addr2 != "") {
+
                 echo "| ".$NO." 번열 |";
                 $order_id = preg_replace("/[^0-9]*/s", "", $addr1);
                 echo " 주문번호 : " . $addr1;
