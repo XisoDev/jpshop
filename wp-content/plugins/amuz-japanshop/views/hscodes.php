@@ -64,12 +64,14 @@ function getHsValues($hs_codes, $items){
         $fix = $hs_info->fix;
 
         #/kg같은 조건이 존재할때
-        $unit = $hs_info->unit;
-
+        if($hs_info->unit !="") {
+            $unit = 1 * $quantity;
+        }else $unit = 0;
         # 높은세율을 선택해야할떄
         if ($hs_info->taxrate != ""){
             $taxrate = $hs_info->taxrate;
         }
+
         #둘다 아니라면 공백
         else {
             $taxrate = "";
@@ -95,9 +97,10 @@ function getHsValues($hs_codes, $items){
             $tax = 0;
             $item_tax = 0;
         }
+
         if ($per != "0" and $or == "Y" and $fix != "0") {     # 또는 높은세율 낮은세율 조건이 필요할때
             $D = $prices + (($prices * $per) / 100);
-            $E = $prices + ($fix * ($quantity * $unit));
+            $E = $prices + ($fix * $unit);
             /* 1. 제품값 + ??% ,  2. 제품값 + 고정값 * 물건의 양 * /?? 둘 중 하나 조건에 맞춰 하나만 출력*/
 
             /* 제품값 + ??%  제품값 + 고정값 /?? 둘중 값이 높은것 출력*/
@@ -108,6 +111,7 @@ function getHsValues($hs_codes, $items){
                     $E = $item_total;
                 }
             }
+
             /* 제품값 + ??%  제품값 + 고정값 /?? 둘중 값이 낮은것 출력*/
             elseif ($taxrate == "낮은 세율") {
                 if ($D < $E) {
@@ -118,25 +122,27 @@ function getHsValues($hs_codes, $items){
             }
         } else { # 관세 = %값과 fix값을 +
             if ($per != "0" and $hs_info->{'plus'} == "1" and $fix != "0") {
-                $item_total = ($prices + ($prices * $per) / 100) + ($fix * ($quantity * $unit));
-                $tax = (($prices * $per) / 100) + $fix;
+                $item_total = ($prices + ($prices * $per) / 100) + ($fix * $unit);
+                $tax = (($prices * $per) / 100)."% ,".$fix;
+                $item_tax = (($prices * $per) / 100) + ($fix * $unit);
 
                 /* ( 제품값 + ??% ) + (고정값 * (무게 * /??)) */
             } elseif ($per == "0" and $fix != "0") {    #관세 = fix
                 $item_total = ($fix * $unit) + $prices;
                 $tax = $fix * $unit;
+                $item_tax = $prices + $tax;
                 /*제품값 + 고정값 * /?? */
             } elseif ($per != "0" and $fix == "0") {                    # 관세 = 물건의 % 값
                 $item_total = $prices + (($prices * $per) / 100);
-                $tax = $per;
+                $tax = $per."%";
                 $item_tax = $prices  * $per / 100;
                 /*제품값 + ??% */
             } elseif ($free != "") {
                 $item_total = $prices;
                 $tax = 0;
+                $item_tax = 0;
                 /*무세 면세 일 경우 제품가격 그대로*/
-            }
-            elseif ($lactose != "0" and $lactose_content >= "10") {   #만약 유당 함유량이 10% 이상이라면
+            } elseif ($lactose != "0" and $lactose_content >= "10") {   #만약 유당 함유량이 10% 이상이라면
                 $item_total = ($prices + ($fix * $quantity)) + ($lactose_content * 7);
                 $tax = ($fix * $quantity) + ($lactose_content * 7);
                 /* 물건값 + 70엔 * /kg 유당함유율 + 10% 이상일시 1%당 + 7엔*/
@@ -156,9 +162,7 @@ function getHsValues($hs_codes, $items){
         $oHSInfo['item_data'] = $item_data;
         $oHSInfo['product_id'] = $item_data['product_id'];
         #print_r($oHSInfo['item_data']);
-
     }
-
     return $oHSInfo;
 }
 ?>

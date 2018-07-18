@@ -67,8 +67,9 @@ function getHsRefundValues($hs_codes_refund, $refund)
             $fix = $hs_in_refund->fix;
 
             #/kg같은 조건이 존재할때
-            $unit = $hs_in_refund->unit;
-
+            if($hs_in_refund->unit) {
+                $unit = 1 * $refund_quantity;
+            }else $unit = 0;
             # 높은세율을 선택해야할떄
             if ($hs_in_refund->taxrate != "") {
                 $taxrate = $hs_in_refund->taxrate;
@@ -99,7 +100,7 @@ function getHsRefundValues($hs_codes_refund, $refund)
             }
             if ($per != "0" and $or == "Y" and $fix != "0") {     # 또는 높은세율 낮은세율 조건이 필요할때
                 $D = $refund + (($refund * $per) / 100);
-                $E = $refund + ($fix * ($refund_quantity * $unit));
+                $E = $refund + ($fix *  $unit);
                 /* 1. 제품값 + ??% ,  2. 제품값 + 고정값 * 물건의 양 * /?? 둘 중 하나 조건에 맞춰 하나만 출력*/
 
                 /* 제품값 + ??%  제품값 + 고정값 /?? 둘중 값이 높은것 출력*/
@@ -119,22 +120,22 @@ function getHsRefundValues($hs_codes_refund, $refund)
                 }
             } else { # 관세 = %값과 fix값을 +
                 if ($per != "0" and $hs_in_refund->{'plus'} == "1" and $fix != "0") {
-                    $item_total = ($refund + ($refund * $per) / 100) + ($fix * ($refund_quantity * $unit));
+                    $item_total = ($refund + ($refund * $per) / 100) + ($fix * $unit);
                     $tax = (($refund * $per) / 100) + $fix;
-
                     /* ( 제품값 + ??% ) + (고정값 * (무게 * /??)) */
                 } elseif ($per == "0" and $fix != "0") {    #관세 = fix
                     $item_total = ($fix * $unit) + $refund;
                     $tax = $fix * $unit;
                     /*제품값 + 고정값 * /?? */
                 } elseif ($per != "0" and $fix == "0") {                    # 관세 = 물건의 % 값
-                    $item_total = $refund + (($refund * $per) / 100);
+                    $item_total = $refund + ($refund * $per / 100);
                     $tax = $per;
                     $item_tax = $refund * $per / 100;
                     /*제품값 + ??% */
                 } elseif ($free != "") {
                     $item_total = $refund;
                     $tax = 0;
+                    $item_tax = 0;
                     /*무세 면세 일 경우 제품가격 그대로*/
                 } elseif ($lactose != "0" and $lactose_content >= "10") {   #만약 유당 함유량이 10% 이상이라면
                     $item_total = ($refund + ($fix * $refund_quantity)) + ($lactose_content * 7);
@@ -142,8 +143,6 @@ function getHsRefundValues($hs_codes_refund, $refund)
                     /* 물건값 + 70엔 * /kg 유당함유율 + 10% 이상일시 1%당 + 7엔*/
                 }
             }
-
-
 ///
             $oHsRefundInfo['total'] = $item_data['total'];
             $oHsRefundInfo['ttax'][$item_data['product_id']] = $tax;
