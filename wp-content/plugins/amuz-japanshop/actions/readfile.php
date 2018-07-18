@@ -1,4 +1,5 @@
 <?php
+global $wpdb;
 if($_FILES['upfile']['name']!=""){
 
 // 저장될 디렉토리
