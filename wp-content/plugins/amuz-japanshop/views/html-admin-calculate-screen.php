@@ -60,12 +60,7 @@ foreach($data as $d){
     echo $d;
 }*/
 ?>
-<form method="post" id="excelupload" name="excelupload" action="../wp-content/plugins/amuz-japanshop/actions/readfile.php" enctype="multipart/form-data" >
-    <div>
-        <input type="file" name="upfile" id="upfile" >
-        <input type="submit" id="upload" value="올리기" >
-        </div>
-</form>
+
 
 <form id="wc-amuz-japanshop-datacenter-form" method="post" action="" enctype="multipart/form-data">
     <?php wp_nonce_field( 'my-nonce-key','wc-am-jp-datacenter');?>
@@ -282,7 +277,12 @@ foreach($order_list as $no => $order) {
     else $remittance = 0;
 
     #청구 배송료 추가
-
+    for($i = 0; $i<$num; $i++) {
+        $cus_deli = $x2[$i];
+        if($cus_deli['order_id']==$order->get_order_number() && get_post_meta($order->get_order_number(),'custom_delivery')[0]== ""){
+            add_post_meta($order->get_order_number(),'custom_delivery',$cus_deli['delivery']);
+        }
+    }
 
     if(get_post_meta($order->get_order_number(),'custom_delivery')[0]!= "")
         $custom_delivery = get_post_meta($order->get_order_number(),'custom_delivery')[0];
