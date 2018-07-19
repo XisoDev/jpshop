@@ -3,8 +3,8 @@ global $wpdb;
 if($_FILES['upfile']['name']!=""){
 
 // 저장될 디렉토리
-$upfile_dir ="";
-echo $upfile_dir;
+$upfile_dir ="./upfile/";
+
 //CSV데이타 추출시 한글깨짐방지
 //setlocale(LC_CTYPE, 'ko_KR.utf8');
 setlocale(LC_CTYPE, 'ko_KR.eucKR'); // CSV 한글 깨짐 문제
