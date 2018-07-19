@@ -72,10 +72,7 @@ $x2 = unserialize(urldecode($_POST['view']));
         <div class="alignleft actions bulkactions">
             <label for="bulk-action-selector-top" class="screen-reader-text">일괄 작업 선택</label>
             <select name="action" id="bulk-action-selector-top" onchange="jQuery('#data_action_type').val(jQuery(this).val());">
-                <option value="">일괄 작업</option>
-                <option value="sagawa">운송장 - 사가와</option>
-                <option value="tqoon_packing">패킹리스트 - 티쿤</option>
-                <option value="tqoon_orderlist">주문내역 - 티쿤</option>
+                <option value="calculate">정산표</option>
             </select>
             <input type="button" id="doaction" class="button action" value="저장" onclick="jQuery('#wc-amuz-japanshop-orderlist-cart').submit();" />
         </div>
@@ -85,7 +82,7 @@ $x2 = unserialize(urldecode($_POST['view']));
             //조회일 지정
             foreach ($date_list as $key => $value) {
                 $date_method_str = "wc-amuz-japanshop-".$key;
-                echo '<input type="date" name="' . $date_method_str . '" value="'.$_SESSION[$date_method_str].'" /> &nbsp; ';
+                echo '<input type="month" name="' . $date_method_str . '" value="'.$_SESSION[$date_method_str].'" /> &nbsp; ';
             }
 
 
