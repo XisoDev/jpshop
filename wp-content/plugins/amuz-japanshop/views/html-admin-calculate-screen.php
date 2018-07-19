@@ -41,6 +41,7 @@ if( isset( $_POST['wc-am-jp-datacenter'] ) && $_POST['wc-am-jp-datacenter'] ) {
                 setcookie($date_method_str, null, -1);
                 $_SESSION[$date_method_str] = false;
             }
+
         }
     }
 }
@@ -87,8 +88,11 @@ $x2 = unserialize(urldecode($_POST['view']));
                 echo '<input type="date" name="' . $date_method_str . '" value="'.$_SESSION[$date_method_str].'" /> &nbsp; ';
             }
 
+
             //조회할 상태지정
             $post_status = array();
+            $date_arr = array();
+
 
             foreach ($status_list as $key => $value) {
                 $status_method_str = "wc-amuz-japanshop-".$key;
@@ -102,9 +106,20 @@ $x2 = unserialize(urldecode($_POST['view']));
         </div>
         <?php
         //페이지네이션을 위해 쿼리를 미리 실행
-
-        $date_arr = array();
-
+/*
+        $currentYear = date('Y');
+        $currentMonth = date('m');
+        $startMonth = 01;
+        $selectMonth = $currentMonth;
+        echo '<select name="year">';
+        foreach (range($currentMonth, $startMonth) as $Month) {
+            $selected = "";
+            if($Month == $selectMonth) { $selected = " selected"; }
+            $date = $currentYear ." 년 ". $Month ." 월 ";
+            echo '<option  ' . $selected . '>' .$date. '</option>';
+        }
+        echo '</select>';
+*/
         if($_SESSION['wc-amuz-japanshop-start_date']){
             $ymd = explode("-",$_SESSION['wc-amuz-japanshop-start_date']);
             $date_arr["after"] = array(
@@ -203,7 +218,7 @@ foreach($order_list as $no => $order) {
     $order = new WC_Order($order->ID);
     $payment = get_payment_method($order->payment_method);
     $token = new WC_Payment_Token_CC;
-
+    echo $token -> get_gateway_id($this->id);
     ##카드 정보가 안받아와져!
 
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
@@ -235,7 +250,7 @@ foreach($order_list as $no => $order) {
         } elseif ($payment == '신용카드'){
         if($card_type=='visa'||$card_type=='mastercard')
             $pg_tax = ($refund * 2.85 / 100)*1.08;
-        else {$pg_tax = ($refund * 3.35 / 100)*1.08;}
+        else $pg_tax = ($refund * 3.35 / 100)*1.08;
         }
         elseif ($payment == '은행결제') $pg_tax = (($refund * 1.50) / 100) * 1.08;
         elseif ($payment == '대인결제') $pg_tax = 0;

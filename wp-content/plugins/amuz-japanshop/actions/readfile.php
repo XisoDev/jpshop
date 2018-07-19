@@ -49,17 +49,16 @@ if ($upfile_name){
     }
 }
 
-require_once __DIR__.'./../Classes/PHPExcel.php'; // PHPExcel.php을 불러와야 하며, 경로는 사용자의 설정에 맞게 수정해야 한다.
+require_once __DIR__.'./../Classes/PHPExcel.php';
 
 $objPHPExcel = new PHPExcel();
 
-require_once __DIR__.'./../Classes/PHPExcel/IOFactory.php'; // IOFactory.php을 불러와야 하며, 경로는 사용자의 설정에 맞게 수정해야 한다.
+require_once __DIR__.'./../Classes/PHPExcel/IOFactory.php';
 
-$filename = $upload_file; // 읽어들일 엑셀 파일의 경로와 파일명을 지정한다.
+$filename = $upload_file;
 
 try {
 
-    // 업로드 된 엑셀 형식에 맞는 Reader객체를 만든다.
 
     $objReader = PHPExcel_IOFactory::createReaderForFile($filename);
 
@@ -94,19 +93,29 @@ try {
         $addr1 = $objWorksheet->getCell('C' . $i)->getValue(); // 주문번호 열
         $addr2 = $objWorksheet->getCell('J' . $i)->getValue(); // 배송비 열
         $order = array();
+
         echo "<div align='center'>";
         if($addr2 ==0 )$addr2="0";
         if(!is_numeric($NO))continue;
-        echo "<table border = '1'>";
+
+        echo "<table style='width: 500px' border = '1'>";
+
         if ($addr1 != "" && $addr2 != "") {
-            echo "<tr><td>".$NO."</td> <td>번열</td>";
+            echo "<tr><td style='width: 20%'>".$NO." 번열</td>";
+
             $order_id = preg_replace("/[^0-9]*/s", "", $addr1);
-            echo "<td>주문번호</td><td>" . $addr1."</td>";
-            echo "<td>배송비</td><td>" . $addr2 . " 엔 </td></tr>";
+
+            echo "<td  style='width: 40%' >주문번호 : " . $addr1."</td>";
+
+            echo "<td  style='width: 40%'> 배송비 : " . $addr2 . " 엔 </td></tr>";
+
             $order['id']['order_id'] = $order_id;
+
             $order['id']['delivery'] = $addr2;
+
             $pp[]=$order['id'];
             }
+
         echo "</table>";
         }
 
@@ -123,10 +132,11 @@ echo "이상이 엑셀 파일에서 추출한 값입니다 맞습니까?";
 echo "<form id='aa' method='POST' action='../../../../wp-admin/admin.php?page=wc4amuz_japanshop_datacenter_output&tab=calculate'>";
 echo "<input type='hidden' id = 'number' name = 'number' value = '$number'>";
 echo "<input type='hidden' id = 'pirce' name = 'view' value = '$x1'>";
-echo "<input type='submit' id = 'YES' value = '네'>";
-echo "<input type='button' value = '아니오'>";
-echo "</form>";
-    echo "</div>";
+echo "<table>";
+echo "<tr><td><input type='submit' value = '네'></td>";
+echo "</form><form method='POST'>";
+echo "<td><input type='submit' value='아니오' formaction='../../../../wp-admin/admin.php?page=wc4amuz_japanshop_datacenter_output&tab=calculate'></td></tr> ";
+    echo "</form></table></div>";
 
 unlink($upload_file);
 }
