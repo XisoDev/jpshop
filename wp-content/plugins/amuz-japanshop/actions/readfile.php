@@ -87,6 +87,8 @@ try {
     }
 
     $maxRow = $objWorksheet->getHighestRow();
+    echo "<div align='center'>";
+    echo "<table style='width: 500px' border = '1' >";
     for ($i = 0 ; $i <= $maxRow ; $i++) {
 
         $NO = $objWorksheet->getCell('A' . $i)->getValue(); // NO 열
@@ -94,11 +96,9 @@ try {
         $addr2 = $objWorksheet->getCell('J' . $i)->getValue(); // 배송비 열
         $order = array();
 
-        echo "<div align='center'>";
+
         if($addr2 ==0 )$addr2="0";
         if(!is_numeric($NO))continue;
-
-        echo "<table style='width: 500px' border = '1'>";
 
         if ($addr1 != "" && $addr2 != "") {
             echo "<tr><td style='width: 20%'>".$NO." 번열</td>";
@@ -116,9 +116,9 @@ try {
             $pp[]=$order['id'];
             }
 
-        echo "</table>";
-        }
 
+        }
+    echo "</table>";
 }
 catch (exception $e) {
 
