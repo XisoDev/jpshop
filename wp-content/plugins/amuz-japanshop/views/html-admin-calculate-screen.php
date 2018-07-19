@@ -54,15 +54,6 @@ $x2 = unserialize(urldecode($_POST['view']));
 
 ?>
 
-<form method="post" id="excelupload" name="excelupload" action="../wp-content/plugins/amuz-japanshop/actions/readfile.php" enctype="multipart/form-data" >
-    <div align="right" id="test_div" style="display: none">
-        <input type="file" name="upfile" id="upfile" >
-        <input type="submit" id="upload" value="변경" >
-        </div>
-    <div align="right">
-    <input type="button" id="excelup" value="청구 배송료 추가" onclick="div_show();"/>
-    </div>
-</form>
 <form id="wc-amuz-japanshop-datacenter-form" method="post" action="" enctype="multipart/form-data">
     <?php wp_nonce_field( 'my-nonce-key','wc-am-jp-datacenter');?>
     <h3><?php echo __( '커스텀 주문데이터 다운로드센터', 'amuz-japanshop' );?></h3>
