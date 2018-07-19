@@ -48,20 +48,21 @@ if( isset( $_POST['wc-am-jp-datacenter'] ) && $_POST['wc-am-jp-datacenter'] ) {
 //기타변수처리
 if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-list_count'] = $_POST['wc-amuz-japanshop-list_count'];
 
+//엑셀에서 받아온 row수, 배열
 $num = $_POST['number'];
 $x2 = unserialize(urldecode($_POST['view']));
 
-
-/*$data = json_decode(stripslashes($_POST['data']));
-
-// here i would like use foreach:
-
-foreach($data as $d){
-    echo $d;
-}*/
 ?>
 
-
+<form method="post" id="excelupload" name="excelupload" action="../wp-content/plugins/amuz-japanshop/actions/readfile.php" enctype="multipart/form-data" >
+    <div align="right" id="test_div" style="display: none">
+        <input type="file" name="upfile" id="upfile" >
+        <input type="submit" id="upload" value="변경" >
+        </div>
+    <div align="right">
+    <input type="button" id="excelup" value="청구 배송료 추가" onclick="div_show();"/>
+    </div>
+</form>
 <form id="wc-amuz-japanshop-datacenter-form" method="post" action="" enctype="multipart/form-data">
     <?php wp_nonce_field( 'my-nonce-key','wc-am-jp-datacenter');?>
     <h3><?php echo __( '커스텀 주문데이터 다운로드센터', 'amuz-japanshop' );?></h3>
@@ -79,10 +80,6 @@ foreach($data as $d){
         </div>
         <div class="alignleft actions">
             <?php
-
-            if( isset( $_POST['fruits'] ) ) {
-                print_r( $_POST['fruits'] );
-            }
 
             //조회일 지정
             foreach ($date_list as $key => $value) {
@@ -221,9 +218,9 @@ foreach($order_list as $no => $order) {
     $refund = $order->get_total_refunded();
     # + 배송비용
     $delivery = $order->get_shipping_total();
-    $totalm_tax = $order->get_subtotal() * 0.08;                   #총 결제금액의 -수수료 계산
+    $totalm_tax = ceil($order->get_subtotal() * 0.08);                   #총 결제금액의 -수수료 계산
     $totalm_excise = ($order->get_subtotal() - $totalm_tax) * 0.08; # -소비세 계산
-    $totaltax = $refund * 0.08;                  # 총 결제금액의 수수료 계산
+    $totaltax = ceil($refund) * 0.08;                  # 총 결제금액의 수수료 계산
     $totalexcise = ($refund - $totaltax) * 0.08; # 소비세 계산
 
     if ($payment == '편의점') {
@@ -236,10 +233,9 @@ foreach($order_list as $no => $order) {
             elseif ($refund < 150000) $pg_tax = 400 * 1.08;
             elseif ($refund < 300000) $pg_tax = 600 * 1.08;
         } elseif ($payment == '신용카드'){
-        if($card_type=='JCB' || $card_type=='American Express') $pg_tax = 0;
-        elseif($card_type=='Visa'||$card_type=='MasterCard')$pg_tax = 0;
-        elseif($card_type=='Discover')$pg_tax = 0;
-        else $pg_tax = 0;
+        if($card_type=='visa'||$card_type=='mastercard')
+            $pg_tax = ($refund * 2.85 / 100)*1.08;
+        else {$pg_tax = ($refund * 3.35 / 100)*1.08;}
         }
         elseif ($payment == '은행결제') $pg_tax = (($refund * 1.50) / 100) * 1.08;
         elseif ($payment == '대인결제') $pg_tax = 0;
@@ -258,7 +254,6 @@ foreach($order_list as $no => $order) {
         } elseif ($payment == '신용카드'){
             if($card_type=='visa'||$card_type=='mastercard')
                 $pgm_tax = ($zeusm * 2.85 / 100)*1.08;
-
             else $pgm_tax = ($zeusm * 3.35 / 100)*1.08;
         }
         elseif ($payment == '은행결제') $pgm_tax = (($zeusm * 1.50) / 100) * 1.08;
@@ -271,22 +266,27 @@ foreach($order_list as $no => $order) {
 
     $oHsRefundInfo = getHsRefundValues($hs_codes_refund, $order->get_refunds());
 
+
     #송금 수수료
     if($order->get_meta('Remittance fee')!="")
     $remittance = $order->get_meta('Remittance fee');
     else $remittance = 0;
 
+
     #청구 배송료 추가
+    $custom_delivery = get_post_meta($order->get_order_number(),'custom_delivery')[0];
+
     for($i = 0; $i<$num; $i++) {
         $cus_deli = $x2[$i];
-        if($cus_deli['order_id']==$order->get_order_number() && get_post_meta($order->get_order_number(),'custom_delivery')[0]== ""){
+        if($cus_deli['order_id']==$order->get_order_number() and $custom_delivery == "" ){
             add_post_meta($order->get_order_number(),'custom_delivery',$cus_deli['delivery']);
         }
+        elseif($cus_deli['order_id']==$order->get_order_number() and $custom_delivery != ""and $cus_deli['delivery'] != $custom_delivery ){
+            update_post_meta($order->get_order_number(),'custom_delivery',$cus_deli['delivery'],$custom_delivery);
+        }
     }
+    if($custom_delivery== "") $custom_delivery = 0;
 
-    if(get_post_meta($order->get_order_number(),'custom_delivery')[0]!= "")
-        $custom_delivery = get_post_meta($order->get_order_number(),'custom_delivery')[0];
-    else $custom_delivery = 0;
 
     # 총 합계 배송비
     $total['delivery'] += $delivery;
@@ -310,7 +310,7 @@ foreach($order_list as $no => $order) {
     $total['m_tax'] += $totalm_tax;
 
     #  + 합계금액
-    $total_calculate = $order->get_subtotal() + $delivery + $totaltax + $totalexcise+$pg_tax+$oHsRefundInfo['tax'];
+    $total_calculate = $order->get_subtotal() + $delivery + $totaltax + $totalexcise + $pg_tax + $oHsRefundInfo['tax'];
 
     # - 합계금액
     $total_m_calculate = $refund + $totalm_tax + $totalm_excise + $oHSInfo['tax'] + $pgm_tax + $remittance + $custom_delivery;
@@ -338,7 +338,6 @@ foreach($order_list as $no => $order) {
     echo "<td>￥" . number_format($pg_tax) . "</td>";
     //관세 받아올것
     #+관세
-
     $oHSInfo_refund_tax = number_format($oHsRefundInfo['tax']);
     echo "<td>".$oHSInfo_refund_tax."</td>";
     #-소비세
@@ -357,7 +356,7 @@ foreach($order_list as $no => $order) {
     echo $implode = "관세".implode("%"."<br>"."관세",$oHSInfo["ttax"]);*/
 
     $oHSInfo_tax = number_format($oHSInfo['tax']);
-    echo "<td class='yellow_circle'>￥".$oHSInfo_tax."</td>";
+    echo "<td>￥".$oHSInfo_tax."</td>";
 
     #청구된 배송료
     /*if($order->get_order_number() == 724){
@@ -447,24 +446,17 @@ echo "</table>";
         });
     });
 
-    $("#upload").on("click", function() {
-        var file_data = $("#upfile").prop("upfile")[0];
-        var form_data = new FormData();
-        form_data.append("file", file_data);
-        alert(form_data);
-        $.ajax({
-            url: "../wp-content/plugins/amuz-japanshop/actions/readfile.php",
-            dataType: 'script',
-            cache: false,
-            contentType: false,
-            processData: false,
-            data: form_data,
-            type: 'post',
-            success: function(){
-                alert("works");
-            }
-        });
-    });
+    var button = document.getElementById('excelup');
+    button.onclick = function() {
+        var div = document.getElementById('test_div');
+        if (div.style.display !== 'none') {
+            div.style.display = 'none';
+        }
+        else {
+            div.style.display = 'block';
+        }
+    };
+
 
 </script>
 

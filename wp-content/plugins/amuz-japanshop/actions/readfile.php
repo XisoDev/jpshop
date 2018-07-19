@@ -88,24 +88,26 @@ try {
     }
 
     $maxRow = $objWorksheet->getHighestRow();
-
     for ($i = 0 ; $i <= $maxRow ; $i++) {
 
         $NO = $objWorksheet->getCell('A' . $i)->getValue(); // NO 열
         $addr1 = $objWorksheet->getCell('C' . $i)->getValue(); // 주문번호 열
         $addr2 = $objWorksheet->getCell('J' . $i)->getValue(); // 배송비 열
         $order = array();
+        echo "<div align='center'>";
+        if($addr2 ==0 )$addr2="0";
         if(!is_numeric($NO))continue;
-            if ($addr1 != "" && $addr2 != "") {
-
-                echo "| ".$NO." 번열 |";
-                $order_id = preg_replace("/[^0-9]*/s", "", $addr1);
-                echo " 주문번호 : " . $addr1;
-                echo " | 배송비 : " . $addr2 . " 엔 |<br>";
-                    $order['id']['order_id'] = $order_id;
-                    $order['id']['delivery'] = $addr2;
-                    $pp[]=$order['id'];
+        echo "<table border = '1'>";
+        if ($addr1 != "" && $addr2 != "") {
+            echo "<tr><td>".$NO."</td> <td>번열</td>";
+            $order_id = preg_replace("/[^0-9]*/s", "", $addr1);
+            echo "<td>주문번호</td><td>" . $addr1."</td>";
+            echo "<td>배송비</td><td>" . $addr2 . " 엔 </td></tr>";
+            $order['id']['order_id'] = $order_id;
+            $order['id']['delivery'] = $addr2;
+            $pp[]=$order['id'];
             }
+        echo "</table>";
         }
 
 }
@@ -117,13 +119,14 @@ catch (exception $e) {
     $x1 = urlencode(serialize($pp));
     $number = $maxRow - 2;
 echo "이상이 엑셀 파일에서 추출한 값입니다 맞습니까?";
-echo "<br>";
+
 echo "<form id='aa' method='POST' action='../../../../wp-admin/admin.php?page=wc4amuz_japanshop_datacenter_output&tab=calculate'>";
 echo "<input type='hidden' id = 'number' name = 'number' value = '$number'>";
 echo "<input type='hidden' id = 'pirce' name = 'view' value = '$x1'>";
 echo "<input type='submit' id = 'YES' value = '네'>";
-    echo "<input type='submit' id = 'NO' value = '아니오'>";
-    echo "<br> </form>";
+echo "<input type='button' value = '아니오'>";
+echo "</form>";
+    echo "</div>";
 
 unlink($upload_file);
 }
