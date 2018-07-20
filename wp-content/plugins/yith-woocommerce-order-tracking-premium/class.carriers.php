@@ -521,7 +521,7 @@ if ( ! class_exists( 'Carriers' ) ) {
 				),
 				'SAGAWA_EX'         => array(
 					'name'      => 'SAGAWA EXPRESS',
-					'track_url' => 'http://k2k.sagawa-exp.co.jp/p/sagawa/web/okurijosearcheng.jsp',
+                    'track_url' => 'https://track.aftership.com/sagawa/',
 				),
 				'TOLLGROUP'         => array(
 					'name'      => 'Toll Priority | Toll Group',
