@@ -521,7 +521,7 @@ if ( ! class_exists( 'Carriers' ) ) {
 				),
 				'SAGAWA_EX'         => array(
 					'name'      => 'SAGAWA EXPRESS',
-					'track_url' => 'https://www.aftership.com/couriers/sagawa/[TRACK_CODE]',
+					'track_url' => 'https://track.aftership.com/sagawa/[TRACK_CODE]',
 				),
 				'TOLLGROUP'         => array(
 					'name'      => 'Toll Priority | Toll Group',
