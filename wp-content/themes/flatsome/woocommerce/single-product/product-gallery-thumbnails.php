@@ -46,7 +46,7 @@ if ( $attachment_ids ) {
 
     if ( has_post_thumbnail() ) : ?>
     <?php
-      $image_size = 'thumbnail';
+      $image_size = 'gallery_thumbnail';
 
       // Check if custom gallery thumbnail size is set and use that
       if( fl_woocommerce_version_check('3.3.3') ) {
