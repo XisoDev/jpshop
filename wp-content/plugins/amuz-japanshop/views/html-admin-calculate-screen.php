@@ -249,8 +249,8 @@ foreach($order_list as $no => $order) {
     }
     $discounttax = round($discount * 0.08);
     $discountexcise = round(($discount-$discounttax)*0.08);
-    $totalm_tax = $m_tax - $discounttax;
-    $totalm_excise = $m_excise - $discountexcise;
+    $totalm_tax = $m_tax ;
+    $totalm_excise = $m_excise ;
 
     #환불 수수료 계산
     foreach ($order->get_refunds() as $item_key => $item_values) {
