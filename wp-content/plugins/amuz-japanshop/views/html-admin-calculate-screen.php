@@ -246,7 +246,7 @@ foreach($order_list as $no => $order) {
         $item_data = $item_values->get_data();
         $line_total = $item_data['total'];
         $m_tax += round($line_total * 0.08);
-        $m_excise += round(($line_total - $totalm_tax) * 0.08);
+        $m_excise += round(($line_total - $m_tax) * 0.08);
     }
     $discounttax = round($discount * 0.08);
     $discountexcise = round(($discount-$discounttax)*0.08);
