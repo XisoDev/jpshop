@@ -65,7 +65,7 @@ $x2 = unserialize(urldecode($_POST['view']));
 </form>
 <form id="wc-amuz-japanshop-datacenter-form" method="post" action="" enctype="multipart/form-data">
     <?php wp_nonce_field( 'my-nonce-key','wc-am-jp-datacenter');?>
-    <h3><?php echo __( '커스텀 주문데이터 다운로드센터', 'amuz-japanshop' );?></h3>
+    <h3><?php echo __( '정산표', 'amuz-japanshop' );?></h3>
 
     <div class="tablenav top">
         <div class="alignleft actions bulkactions">
@@ -73,7 +73,7 @@ $x2 = unserialize(urldecode($_POST['view']));
             <select name="action" id="bulk-action-selector-top" onchange="jQuery('#data_action_type').val(jQuery(this).val());">
                 <option value="calculate">정산표</option>
             </select>
-            <input type="button" id="doaction" class="button action" value="저장" onclick="jQuery('#wc-amuz-japanshop-orderlist-cart').submit();" />
+
         </div>
         <div class="alignleft actions">
             <?php
@@ -102,7 +102,7 @@ $x2 = unserialize(urldecode($_POST['view']));
         </div>
         <?php
         //페이지네이션을 위해 쿼리를 미리 실행
-
+/*
         $currentYear = date('Y');
         $currentMonth = date('m');
         $startMonth = 01;
@@ -117,7 +117,7 @@ $x2 = unserialize(urldecode($_POST['view']));
             else echo '<option  ' . $selected . '>' .$currentYear ."년 ". $Month ."월 ". '</option>';
         }
         echo '</select>';
-
+*/
         if($_SESSION['wc-amuz-japanshop-start_date']){
             $ymd = explode("-",$_SESSION['wc-amuz-japanshop-start_date']);
             $date_arr["after"] = array(
@@ -259,8 +259,6 @@ foreach($order_list as $no => $order) {
         $total_tax += round($line_amount * 0.08);                  # 총 결제금액의 수수료 계산
         $total_excise += round(($line_amount - $total_tax) * 0.08); # 소비세 계산
     }
-
-
 
     if ($payment == '편의점') {
             if($refund < 1)$pg_tax = 0;
