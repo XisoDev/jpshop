@@ -214,20 +214,27 @@ foreach($order_list as $no => $order) {
     <input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
     # 주문번호 앞에 있는 체크박스
     $order = new WC_Order($order->ID);
-
     $payment = get_payment_method($order->payment_method);
     $token = new WC_Payment_Token_CC;
-    echo $token -> get_gateway_id($this->id);
+    echo $token->get_gateway_id($this->id);
     ##카드 정보가 안받아와져!
 
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
     #주문번호
-    echo "<td>"."<a href='".get_edit_post_link( $order->get_order_number() )."' target='_blank'>".$site_code["order_code"]
-        .trim(str_replace('#', '', $order->get_order_number())) ."</a></td>";
+    echo "<td>" . "<a href='" . get_edit_post_link($order->get_order_number()) . "' target='_blank'>" . $site_code["order_code"]
+        . trim(str_replace('#', '', $order->get_order_number())) . "</a></td>";
 
     echo "<td>{$payment}</td>";
 
-    $itemtotal = $order->get_subtotal();
+    if ($order->get_discount_total() != 0){
+        $itemtotal = $order->get_subtotal() - $order->get_discount_total();
+        $discount = $order->get_discount_total();
+    }
+
+    else {
+        $itemtotal = $order->get_subtotal();
+        $discount = $order->get_discount_total();
+        }
     #환불 받은 가격
     $refund = $order->get_total_refunded();
     # + 배송비용
@@ -237,16 +244,20 @@ foreach($order_list as $no => $order) {
     foreach ($order->get_items() as $item_key => $item_values) {
         $item_data = $item_values->get_data();
         $line_total = $item_data['total'];
-        $totalm_tax += floor($line_total * 0.08);
-        $totalm_excise += floor(($line_total - $totalm_tax) * 0.08);
+        $m_tax += round($line_total * 0.08);
+        $m_excise += round(($line_total - $totalm_tax) * 0.08);
     }
+    $discounttax = round($discount * 0.08);
+    $discountexcise = round(($discount-$discounttax)*0.08);
+    $totalm_tax = $m_tax - $discounttax;
+    $totalm_excise = $m_excise - $discountexcise;
 
     #환불 수수료 계산
     foreach ($order->get_refunds() as $item_key => $item_values) {
         $item_data = $item_values->get_data();
         $line_amount = $item_data['amount'];
-        $total_tax += floor($line_amount * 0.08);                  # 총 결제금액의 수수료 계산
-        $total_excise += floor(($line_amount - $total_tax) * 0.08); # 소비세 계산
+        $total_tax += round($line_amount * 0.08);                  # 총 결제금액의 수수료 계산
+        $total_excise += round(($line_amount - $total_tax) * 0.08); # 소비세 계산
     }
 
 
@@ -320,7 +331,7 @@ foreach($order_list as $no => $order) {
     $total['delivery'] += $delivery;
 
     # 상품가 합계(정산)
-    $total['amount'] += $order->get_subtotal();
+    $total['amount'] += $itemtotal;
 
     # 환불 합계
     $total['refund'] += $refund;
@@ -361,7 +372,9 @@ foreach($order_list as $no => $order) {
     #배송비
     echo "<td>￥" . number_format($delivery) . "</td>";
     #상품정산
-    echo "<td>￥" . number_format($order->get_subtotal()) . "</td>";
+
+    echo "<td>￥" . number_format($itemtotal) . "</td>";
+
     #PG 결제 수수료
     echo "<td>￥" . number_format($pg_tax) . "</td>";
     //관세 받아올것
@@ -417,8 +430,8 @@ foreach($order_list as $no => $order) {
     $total['Remittance'] += $remittance;
     $total['custom_delivery'] += $custom_delivery;
 
-    $totalm_tax=0;
-    $totalm_excise = 0;
+    $m_tax=0;
+    $m_excise = 0;
     $total_tax = 0;
     $total_excise = 0;
 echo "</tr>";
