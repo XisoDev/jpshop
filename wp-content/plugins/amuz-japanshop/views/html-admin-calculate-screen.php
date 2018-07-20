@@ -31,7 +31,6 @@ if( isset( $_POST['wc-am-jp-datacenter'] ) && $_POST['wc-am-jp-datacenter'] ) {
                 update_option($status_method_str, 'Y');
             }
         }
-
         foreach ($date_list as $key => $value) {
             $date_method_str = 'wc-amuz-japanshop-' . $key;
             if (isset($_POST[$date_method_str]) && $_POST[$date_method_str]) {
@@ -103,7 +102,7 @@ $x2 = unserialize(urldecode($_POST['view']));
         </div>
         <?php
         //페이지네이션을 위해 쿼리를 미리 실행
-/*
+
         $currentYear = date('Y');
         $currentMonth = date('m');
         $startMonth = 01;
@@ -112,11 +111,13 @@ $x2 = unserialize(urldecode($_POST['view']));
         foreach (range($currentMonth, $startMonth) as $Month) {
             $selected = "";
             if($Month == $selectMonth) { $selected = " selected"; }
-            $date = $currentYear ." 년 ". $Month ." 월 ";
-            echo '<option  ' . $selected . '>' .$date. '</option>';
+            $date = $currentYear ."-". $Month;
+            if($Month < 10)
+                echo '<option  ' . $selected . '>' .$currentYear ."년 0". $Month ."월 ". '</option>';
+            else echo '<option  ' . $selected . '>' .$currentYear ."년 ". $Month ."월 ". '</option>';
         }
         echo '</select>';
-*/
+
         if($_SESSION['wc-amuz-japanshop-start_date']){
             $ymd = explode("-",$_SESSION['wc-amuz-japanshop-start_date']);
             $date_arr["after"] = array(
@@ -207,7 +208,8 @@ $hs_codes_refund = array();
 include"hscodes_refund.php";
 
 foreach($order_list as $no => $order) {
-
+print_r($order_list);
+echo "<br>";echo "<br>";
     echo "<tr>";
     echo "<th scope='row' class='check-column'>
     <input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
@@ -230,10 +232,24 @@ foreach($order_list as $no => $order) {
     $refund = $order->get_total_refunded();
     # + 배송비용
     $delivery = $order->get_shipping_total();
-    $totalm_tax = ceil($order->get_subtotal() * 0.08);                   #총 결제금액의 -수수료 계산
-    $totalm_excise = ($order->get_subtotal() - $totalm_tax) * 0.08; # -소비세 계산
-    $totaltax = ceil($refund) * 0.08;                  # 총 결제금액의 수수료 계산
-    $totalexcise = ($refund - $totaltax) * 0.08; # 소비세 계산
+
+    # 상품 수수료 계산
+    foreach ($order->get_items() as $item_key => $item_values) {
+        $item_data = $item_values->get_data();
+        $line_total = $item_data['total'];
+        $totalm_tax += floor($line_total * 0.08);
+        $totalm_excise += floor(($line_total - $totalm_tax) * 0.08);
+    }
+
+    #환불 수수료 계산
+    foreach ($order->get_refunds() as $item_key => $item_values) {
+        $item_data = $item_values->get_data();
+        $line_amount = $item_data['amount'];
+        $total_tax += floor($line_amount * 0.08);                  # 총 결제금액의 수수료 계산
+        $total_excise += floor(($line_amount - $total_tax) * 0.08); # 소비세 계산
+    }
+
+
 
     if ($payment == '편의점') {
             if($refund < 1)$pg_tax = 0;
@@ -310,10 +326,10 @@ foreach($order_list as $no => $order) {
     $total['refund'] += $refund;
 
     # 소비세 합계
-    $total['excise'] += $totalexcise;
+    $total['excise'] += $total_excise;
 
     # 수수료 합계
-    $total['tax'] += $totaltax;
+    $total['tax'] += $total_tax;
 
     # - 소비세 합계
     $total['m_excise'] += $totalm_excise;
@@ -322,7 +338,7 @@ foreach($order_list as $no => $order) {
     $total['m_tax'] += $totalm_tax;
 
     #  + 합계금액
-    $total_calculate = $order->get_subtotal() + $delivery + $totaltax + $totalexcise + $pg_tax + $oHsRefundInfo['tax'];
+    $total_calculate = $order->get_subtotal() + $delivery + $total_tax + $total_excise + $pg_tax + $oHsRefundInfo['tax'];
 
     # - 합계금액
     $total_m_calculate = $refund + $totalm_tax + $totalm_excise + $oHSInfo['tax'] + $pgm_tax + $remittance + $custom_delivery;
@@ -339,9 +355,9 @@ foreach($order_list as $no => $order) {
     # -합계 = 환불 +
     echo "<td>￥" . number_format($total_m_calculate) . "</td>";
     #소비세
-    echo "<td>￥" . number_format($totalexcise) . "</td>";
+    echo "<td>￥" . number_format($total_excise) . "</td>";
     #수수료
-    echo "<td>￥" . number_format($totaltax) . "</td>";
+    echo "<td>￥" . number_format($total_tax) . "</td>";
     #배송비
     echo "<td>￥" . number_format($delivery) . "</td>";
     #상품정산
@@ -400,6 +416,11 @@ foreach($order_list as $no => $order) {
 
     $total['Remittance'] += $remittance;
     $total['custom_delivery'] += $custom_delivery;
+
+    $totalm_tax=0;
+    $totalm_excise = 0;
+    $total_tax = 0;
+    $total_excise = 0;
 echo "</tr>";
 
 }
