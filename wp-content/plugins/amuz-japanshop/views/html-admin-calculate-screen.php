@@ -348,7 +348,7 @@ foreach($order_list as $no => $order) {
     $total['m_tax'] += $totalm_tax;
 
     #  + 합계금액
-    $total_calculate = $order->get_subtotal() + $delivery + $total_tax + $total_excise + $pg_tax + $oHsRefundInfo['tax'];
+    $total_calculate = $itemtotal + $delivery + $total_tax + $total_excise + $pg_tax + $oHsRefundInfo['tax'];
 
     # - 합계금액
     $total_m_calculate = $refund + $totalm_tax + $totalm_excise + $oHSInfo['tax'] + $pgm_tax + $remittance + $custom_delivery;
