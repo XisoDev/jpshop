@@ -214,8 +214,7 @@ foreach($order_list as $no => $order) {
     <input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
     # 주문번호 앞에 있는 체크박스
     $order = new WC_Order($order->ID);
-    print_r($order);
-    echo "<br>";echo "<br>";
+
     $payment = get_payment_method($order->payment_method);
     $token = new WC_Payment_Token_CC;
     echo $token->get_gateway_id($this->id);
