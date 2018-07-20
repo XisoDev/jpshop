@@ -208,8 +208,7 @@ $hs_codes_refund = array();
 include"hscodes_refund.php";
 
 foreach($order_list as $no => $order) {
-print_r($order_list);
-echo "<br>";echo "<br>";
+
     echo "<tr>";
     echo "<th scope='row' class='check-column'>
     <input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
