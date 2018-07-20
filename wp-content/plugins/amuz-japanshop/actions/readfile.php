@@ -93,7 +93,7 @@ try {
 
         $NO = $objWorksheet->getCell('A' . $i)->getValue(); // NO 열
         $addr1 = $objWorksheet->getCell('C' . $i)->getValue(); // 주문번호 열
-        $addr2 = $objWorksheet->getCell('J' . $i)->getValue(); // 배송비 열
+        $addr2 = $objWorksheet->getCell('I' . $i)->getValue(); // 배송비 열
         $order = array();
 
 
