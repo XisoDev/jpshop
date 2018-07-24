@@ -1,3 +1,3 @@
 <a href="<?php the_permalink();?>">
-    <?php the_post_thumbnail('large'); ?>
+    <?php the_post_thumbnail('full'); ?>
 </a>
