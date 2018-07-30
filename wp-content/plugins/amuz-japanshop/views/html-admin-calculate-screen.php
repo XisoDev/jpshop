@@ -306,8 +306,8 @@ foreach($order_list as $no => $order) {
 
 
     #송금 수수료
-    if($order->get_meta('Remittance fee')!="")
-    $remittance = $order->get_meta('Remittance fee');
+    if($order->get_meta('remittance_fee')!="")
+    $remittance = $order->get_meta('remittance_fee');
     else $remittance = 0;
 
 
