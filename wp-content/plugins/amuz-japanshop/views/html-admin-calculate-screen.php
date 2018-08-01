@@ -231,13 +231,26 @@ foreach($order_list as $no => $order) {
         $itemtotal = $order->get_subtotal() - $order->get_discount_total();
         $discount = $order->get_discount_total();
     }
-
     else {
         $itemtotal = $order->get_subtotal();
         $discount = $order->get_discount_total();
         }
+
+
     #환불 받은 가격
-    $refund = $order->get_total_refunded();
+    $refunds = $order->get_total_refunded();
+    #환불 시 돌려줄 배송료
+    $shipping_refunded = $order->get_total_shipping_refunded();
+    #환불 시 돌려줄 총 수수료
+    $tax_refunded = $order->get_total_tax_refunded();
+
+    #환불 시 돌려줄 zeus 수수료
+    if($refunds&&$tax_refunded&&$shipping_refunded) $zeus_fee = $refunds-$tax_refunded-$shipping_refunded-$itemtotal;
+    else $zeus_fee=0;
+    #환불 받은 상품 가격
+    $refund = $refunds - $tax_refunded - $shipping_refunded - $zeus_fee;
+
+
     # + 배송비용
     $delivery = $order->get_shipping_total();
 
@@ -256,54 +269,55 @@ foreach($order_list as $no => $order) {
     #환불 수수료 계산
     foreach ($order->get_refunds() as $item_key => $item_values) {
         $item_data = $item_values->get_data();
-        $line_amount = $item_data['amount'];
+        $line_amount = $refund;
         $total_tax += round($line_amount * 0.08);                  # 총 결제금액의 수수료 계산
         $total_excise += round(($line_amount - $total_tax) * 0.08); # 소비세 계산
     }
-
+    $pay_refund = $refunds + $shipping_refunded;
     if ($payment == '편의점') {
-            if($refund < 1)$pg_tax = 0;
-            elseif($refund < 2000) $pg_tax = 125 * 1.08;
-            elseif ($refund < 3000) $pg_tax = 140 * 1.08;
-            elseif ($refund < 10000) $pg_tax = 185 * 1.08;
-            elseif ($refund < 30000) $pg_tax = 230 * 1.08;
-            elseif ($refund < 100000) $pg_tax = 300 * 1.08;
-            elseif ($refund < 150000) $pg_tax = 400 * 1.08;
-            elseif ($refund < 300000) $pg_tax = 600 * 1.08;
+            if($pay_refund < 1)$pg_tax = 0;
+            elseif($pay_refund < 2000) $pg_tax = 125;
+            elseif ($pay_refund < 3000) $pg_tax = 140;
+            elseif ($pay_refund < 10000) $pg_tax = 185;
+            elseif ($pay_refund < 30000) $pg_tax = 230;
+            elseif ($pay_refund < 100000) $pg_tax = 300;
+            elseif ($pay_refund < 150000) $pg_tax = 400;
+            elseif ($pay_refund < 300000) $pg_tax = 600;
         } elseif ($payment == '신용카드'){
         if($card_type=='visa'||$card_type=='mastercard')
-            $pg_tax = ($refund * 2.85 / 100)*1.08;
-        else $pg_tax = ($refund * 3.35 / 100)*1.08;
+            $pg_tax = $pay_refund * 2.85 / 100;
+        else $pg_tax = $pay_refund * 3.35 / 100;
         }
-        elseif ($payment == '은행결제') $pg_tax = (($refund * 1.50) / 100) * 1.08;
+        elseif ($payment == '은행결제') $pg_tax = ($pay_refund * 1.50) / 100;
         elseif ($payment == '대인결제') $pg_tax = 0;
         elseif ($payment == '기타')$pg_tax = 0;
+        $pg_tax = $pg_tax*1.08;
 
     $zeusm = $order->get_total();
         if ($payment == '편의점') {
             if($zeusm < 1)$pgm_tax = 0;
-            elseif($zeusm < 2000) $pgm_tax = 125 * 1.08;
-            elseif ($zeusm < 3000) $pgm_tax = 140 * 1.08;
-            elseif ($zeusm < 10000) $pgm_tax = 185 * 1.08;
-            elseif ($zeusm < 30000) $pgm_tax = 230 * 1.08;
-            elseif ($zeusm < 100000) $pgm_tax = 300 * 1.08;
-            elseif ($zeusm < 150000) $pgm_tax = 400 * 1.08;
-            elseif ($zeusm < 300000) $pgm_tax = 600 * 1.08;
+            elseif($zeusm < 2000) $pgm_tax = 125;
+            elseif ($zeusm < 3000) $pgm_tax = 140;
+            elseif ($zeusm < 10000) $pgm_tax = 185;
+            elseif ($zeusm < 30000) $pgm_tax = 230;
+            elseif ($zeusm < 100000) $pgm_tax = 300;
+            elseif ($zeusm < 150000) $pgm_tax = 400;
+            elseif ($zeusm < 300000) $pgm_tax = 600;
         } elseif ($payment == '신용카드'){
             if($card_type=='visa'||$card_type=='mastercard')
-                $pgm_tax = ($zeusm * 2.85 / 100)*1.08;
-            else $pgm_tax = ($zeusm * 3.35 / 100)*1.08;
+                $pgm_tax = $zeusm * 2.85 / 100;
+            else $pgm_tax = $zeusm * 3.35 / 100;
         }
-        elseif ($payment == '은행결제') $pgm_tax = (($zeusm * 1.50) / 100) * 1.08;
+        elseif ($payment == '은행결제') $pgm_tax = ($zeusm * 1.50) / 100;
         elseif ($payment == '대인결제') $pgm_tax = 0;
         elseif ($payment == '기타') $pgm_tax=0;
+        $pgm_tax=$pgm_tax*1.08;
 
     $oHSInfo = getHsValues($hs_codes, $order->get_items());
 
     $refunds = $order->get_refunds();
-
+    //print_r($refunds);
     $oHsRefundInfo = getHsRefundValues($hs_codes_refund, $order->get_refunds());
-
 
     #송금 수수료
     if($order->get_meta('remittance_fee')!="")
