@@ -339,7 +339,6 @@ foreach($order_list as $no => $order) {
     }
     if($custom_delivery== "") $custom_delivery = 0;
 
-
     # 총 합계 배송비
     $total['delivery'] += $delivery;
 
