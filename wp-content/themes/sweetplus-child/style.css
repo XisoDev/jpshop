@@ -27,6 +27,7 @@ Version: 3.6.0.1533112807
     position: relative;
     margin: 0 auto !important;;
 }
+
 .sidebars .leftbar,
 .sidebars .rightbar {
     z-index: 99999;
