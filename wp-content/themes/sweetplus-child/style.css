@@ -42,13 +42,10 @@ Version: 3.6.0.1533112807
 .sidebars .leftbar {
     left: -120px;
 }
-.single-product{
-    font-size: 1px!important;
-}
 
 @media all and (max-width:540px) {
     .product-title{
-        font-size: 11px!important;
+        font-size: 11px;
     }
     span.woocommerce-Price-amount {
         font-size:11px;
