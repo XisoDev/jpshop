@@ -6,45 +6,52 @@ Author URI: http://www.uxthemes.com/
 Version: 3.6.0.1533112807
 */
 
-@import url( "../flatsome/style.css" );
 
-    .home .sidebars .leftbar,
-    .home .sidebars .rightbar {
-        top: 840px;
-    }
-    .product-template-default .sidebars .leftbar,
-    .product-template-default .sidebars .rightbar {
-        top: 300px;
-    }
-    .post-template-default .sidebars .leftbar,
-    .post-template-default .sidebars .rightbar {
-        top: 525px;
-    }
-    .header {
-        z-index: 10000;
-    }
-    .sidebars {
-        width: 1100px;
-        position: relative;
-        margin: 0 auto !important;;
-    }
-    .sidebars .leftbar,
-    .sidebars .rightbar {
-        position: absolute;
-        padding: 0;
-        margin: 0;
-        top: 215px;
-        width: 120px;
-    }
-    .sidebars .rightbar {
+.home .sidebars .leftbar,
+.home .sidebars .rightbar {
+    top: 840px;
+}
+.product-template-default .sidebars .leftbar,
+.product-template-default .sidebars .rightbar {
+    top: 300px;
+}
+.post-template-default .sidebars .leftbar,
+.post-template-default .sidebars .rightbar {
+    top: 525px;
+}
+.header {
+    z-index: 10000;
+}
+.sidebars {
+    width: 1100px;
+    position: relative;
+    margin: 0 auto !important;;
+}
+.sidebars .leftbar,
+.sidebars .rightbar {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 215px;
+    width: 120px;
+}
+.sidebars .rightbar {
+    right: -135px;
+    width: 135px;
+}
+.sidebars .leftbar {
+    left: -120px;
+}
+.single-product{
+    font-size: 1px!important;
+}
 
-        right: -135px;
-        width: 135px;
+@media all and (max-width:540px) {
+    .product-title{
+        font-size: 15px!important;
     }
-    .sidebars .leftbar {
-        left: -120px;
-    }
-@media all and (max-width:980px){
+}
+@media all and (max-width:800px){
     .sidebars{
         display:none;
     }
