@@ -49,8 +49,14 @@ Version: 3.6.0.1533112807
     .product-title{
         font-size: 11px;
     }
+    .product-title.entry-title{
+        font-size: 20px;
+    }
     span.woocommerce-Price-amount {
         font-size:11px;
+    }
+    span.woocommerce-Price-amount.amount{
+        font-size:17px;
     }
 
 }
