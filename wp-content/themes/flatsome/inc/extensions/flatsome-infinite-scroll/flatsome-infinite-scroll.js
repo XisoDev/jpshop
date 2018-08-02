@@ -1,18 +1,18 @@
 jQuery(document).ready(function () {
-  let container = jQuery('.shop-container > .products')
-  let paginationNext = '.woocommerce-pagination li a.next'
+  var container = jQuery('.shop-container .products')
+  var paginationNext = '.woocommerce-pagination li a.next'
 
   if (container.length === 0 || jQuery(paginationNext).length === 0) {
     return
   }
 
-  let viewMoreButton = jQuery('button.view-more-button.products-archive')
-  let byButton = flatsome_infinite_scroll.type === 'button'
-  let isMasonry = flatsome_infinite_scroll.list_style === 'masonry'
+  var viewMoreButton = jQuery('button.view-more-button.products-archive')
+  var byButton = flatsome_infinite_scroll.type === 'button'
+  var isMasonry = flatsome_infinite_scroll.list_style === 'masonry'
   // Set packery instance as outlayer when masonry is set.
-  let outlayer = isMasonry ? Packery.data(container[0]) : false
+  var outlayer = isMasonry ? Packery.data(container[0]) : false
 
-  let $container = container.infiniteScroll({
+  var $container = container.infiniteScroll({
     path: paginationNext,
     append: '.product',
     checkLastPage: true,
@@ -61,14 +61,14 @@ jQuery(document).ready(function () {
     }
 
     if (window.ga && ga.loaded && typeof ga === 'function') {
-      let link = document.createElement('a')
+      var link = document.createElement('a')
       link.href = path
       ga('set', 'page', link.pathname)
       ga('send', 'pageview')
     }
   })
 
-  let flatsomeInfiniteScroll = {
+  var flatsomeInfiniteScroll = {
     attachBehaviors: function (response) {
       Flatsome.attach('quick-view', response)
       Flatsome.attach('tooltips', response)

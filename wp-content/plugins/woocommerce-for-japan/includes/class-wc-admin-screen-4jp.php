@@ -124,7 +124,7 @@ class WC_4JP_Admin_Screen {
 		add_settings_field( 'wc4jp_informations_services', __( 'Featured Services', 'woocommerce-for-japan' ), array( $this, 'wc4jp_informations_services' ), 'wc4jp_informations', 'wc4jp_services' );
 
 		if( isset( $_POST['_wpnonce']) and isset($_GET['page']) and $_GET['page'] == 'wc4jp-options' ){
-			if(isset($_GET['tab']) and $_GET['tab'] == 'setting'){
+			if((isset($_GET['tab']) and $_GET['tab'] == 'setting') or is_null($_GET['tab'])){
 				//Save general setting
 				$add_methods = array('yomigana', 'honorific-suffix', 'company-name', 'free-shipping', 'zip2address', 'yahoo-app-id');
 				$this->wc4jp_save_methods( $add_methods );

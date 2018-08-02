@@ -16,8 +16,7 @@
 
 !defined( 'ABSPATH' ) && exit; // Exit if accessed directly
 
-wp_enqueue_script( 'yith-enhanced-select' );
-wp_enqueue_style( 'woocommerce_admin_styles' );
+yith_plugin_fw_enqueue_enhanced_select();
 
 $default_field = array(
     'id'       => '',

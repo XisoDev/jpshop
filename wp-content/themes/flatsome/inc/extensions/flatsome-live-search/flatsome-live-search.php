@@ -36,7 +36,7 @@ function flatsome_ajax_search_posts( $args ) {
  *
  * @return array Products.
  */
-function flatsome_ajax_search_get_products( string $search_type, array $args ) {
+function flatsome_ajax_search_get_products( $search_type, array $args ) {
 	global $woocommerce;
 	$order_by      = get_theme_mod( 'search_products_order_by', 'relevance' );
 	$ordering_args = $woocommerce->query->get_catalog_ordering_args( $order_by, 'ASC' );

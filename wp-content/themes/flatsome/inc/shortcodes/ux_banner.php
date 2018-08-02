@@ -123,7 +123,7 @@ function flatsome_ux_banner( $atts, $content = null ){
    $start_link = "";
    $end_link = "";
 
-   if($link) {$start_link = '<a href="'.$link.'"' . flatsome_parse_target_rel( $link_atts ) . 'class="fill">'; $end_link = '</a>';};
+   if($link) {$start_link = '<a class="fill" href="'.$link.'"' . flatsome_parse_target_rel( $link_atts ) . '>'; $end_link = '</a>';};
 
    /* Parallax  */
    if($parallax){

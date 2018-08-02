@@ -93,7 +93,7 @@ function shortcode_latest_from_blog($atts, $content = null, $tag) {
 	  $current_grid = 0;
 	  $grid = flatsome_get_grid($grid);
 	  $grid_total = count($grid);
-	  echo flatsome_get_grid_height($grid_height, $_id);
+	  flatsome_get_grid_height($grid_height, $_id);
 	}
 
 	// Fix overlay
@@ -147,7 +147,7 @@ function shortcode_latest_from_blog($atts, $content = null, $tag) {
 	$repeater['slider_nav_position'] = $slider_nav_position;
 	$repeater['slider_nav_color'] = $slider_nav_color;
 	$repeater['slider_bullets'] = $slider_bullets;
-  $repeater['auto_slide'] = $auto_slide;
+    $repeater['auto_slide'] = $auto_slide;
 	$repeater['row_spacing'] = $col_spacing;
 	$repeater['row_width'] = $width;
 	$repeater['columns'] = $columns;
@@ -169,11 +169,13 @@ function shortcode_latest_from_blog($atts, $content = null, $tag) {
 	if ( !empty( $ids ) ) {
 		$ids = explode( ',', $ids );
 		$ids = array_map( 'trim', $ids );
-		$posts = 9999;
-		$offset = 0;
 
 		$args = array(
 			'post__in' => $ids,
+            'post_type' => array(
+                'post',
+                'featured_item', // Include for its tag archive listing.
+            ),
 			'numberposts' => -1,
 			'orderby' => 'post__in',
 			'posts_per_page' => 9999,
@@ -188,8 +190,8 @@ if ( $recentPosts->post_count < ($repeater['columns']+1) ) {
 	if($repeater['type'] == 'slider') $repeater['type'] = 'row';
 }
 
-// Get Repater HTML
-echo get_flatsome_repeater_start($repeater);
+// Get repeater HTML.
+get_flatsome_repeater_start($repeater);
 
 while ( $recentPosts->have_posts() ) : $recentPosts->the_post();
 
@@ -296,8 +298,8 @@ while ( $recentPosts->have_posts() ) : $recentPosts->the_post();
 <?php endwhile;
 wp_reset_query();
 
-// Get repeater end
-echo get_flatsome_repeater_end($atts);
+// Get repeater end.
+get_flatsome_repeater_end($atts);
 
 $content = ob_get_contents();
 ob_end_clean();

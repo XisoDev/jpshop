@@ -72,7 +72,7 @@ function ux_image( $atts, $content = null ) {
 				$image_overlay = 'rgba(0,0,0,.2)';
 			}
 		}
-		$link_start = '<a href="' . $link . '"' . flatsome_parse_target_rel( $link_atts ) . 'class="' . $link_class . '">';
+		$link_start = '<a class="' . $link_class . '" href="' . $link . '"' . flatsome_parse_target_rel( $link_atts ) . '>';
 		$link_end   = '</a>';
 	} elseif ( $lightbox ) {
 		$link_start = '<a class="image-lightbox lightbox-gallery" href="' . $org_img . '" title="' . $caption . '">';

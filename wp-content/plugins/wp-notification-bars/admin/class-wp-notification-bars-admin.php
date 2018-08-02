@@ -137,6 +137,15 @@
 					)
 				);
 			}
+
+			wp_enqueue_script(
+				$this->plugin_name,
+				plugin_dir_url( __FILE__ ) . 'js/wp-nb-admin-notices.js',
+				array(
+					'jquery',
+				),
+				$this->version, false
+			);
 		}
 
 		//////////////////////
@@ -725,6 +734,43 @@
 					if ( isset( $_GET['activate'] ) ) {
 						unset( $_GET['activate'] );
 					}
+				}
+			}
+		}
+
+		public function wp_notification_bar_admin_notice() {
+			global $current_user ;
+			$user_id = $current_user->ID;
+			/* Check that the user hasn't already clicked to ignore the message */
+			/* Only show the notice 2 days after plugin activation */
+			if ( ! get_user_meta($user_id, 'wp_notification_bar_ignore_notice') && time() >= (get_option( 'wp_notification_bar_activated', 0 ) + (2 * 24 * 60 * 60)) ) {
+				echo '<div class="updated notice-info wp-notification-bar-notice" id="wpnotificationbar-notice" style="position:relative;">';
+				echo __('<p>Like WP Notification Bar plugin? You will LOVE <a target="_blank" href="https://mythemeshop.com/plugins/wp-notification-bar/?utm_source=WP+Notification+Bars&utm_medium=Notification+Link&utm_content=WP+Notification+Bar+Pro+LP&utm_campaign=WordPressOrg"><strong>WP Notification Bar Pro!</strong></a></p><a class="notice-dismiss mtsnb-notice-dismiss" data-ignore="0" href="#"></a>', $this->plugin_name);
+				echo "</div>";
+			}
+			/* Other notice appears right after activating */
+			/* And it gets hidden after showing 3 times */
+			if ( ! get_user_meta($user_id, 'wp_notification_bar_ignore_notice_2') && get_option('wp_notification_bar_notice_views', 0) < 3 && get_option( 'wp_notification_bar_activated', 0 ) ) {
+				$views = get_option('wp_notification_bar_notice_views', 0);
+				update_option( 'wp_notification_bar_notice_views', ($views + 1) );
+				echo '<div class="updated notice-info wp-notification-bar-notice" id="wpnotificationbar-notice2" style="position:relative;">';
+				echo '<p>';
+				_e('Thank you for trying WP Notification Bar. We hope you will like it.', $this->plugin_name);
+				echo '</p>';
+				echo '<a class="notice-dismiss mtsnb-notice-dismiss" data-ignore="1" href="#"></a>';
+				echo "</div>";
+			}
+		}
+
+		public function wp_notification_bar_admin_notice_ignore() {
+			global $current_user;
+			$user_id = $current_user->ID;
+			/* If user clicks to ignore the notice, add that to their user meta */
+			if ( isset($_POST['dismiss']) ) {
+				if ( '0' == $_POST['dismiss'] ) {
+					add_user_meta($user_id, 'wp_notification_bar_ignore_notice', '1', true);
+				} elseif ( '1' == $_POST['dismiss'] ) {
+					add_user_meta($user_id, 'wp_notification_bar_ignore_notice_2', '1', true);
 				}
 			}
 		}

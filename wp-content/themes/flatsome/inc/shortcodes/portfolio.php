@@ -86,7 +86,7 @@ function flatsome_portfolio_shortcode($atts, $content = null, $tag) {
     $current_grid = 0;
     $grid = flatsome_get_grid($grid);
     $grid_total = count($grid);
-    echo flatsome_get_grid_height($grid_height, $_id);
+    flatsome_get_grid_height($grid_height, $_id);
   }
 
   // Set box style
@@ -215,7 +215,7 @@ if ( $wp_query->post_count < ($repeater['columns']+1) ) {
 
 
 // Get repeater structure
-echo get_flatsome_repeater_start($repeater);
+get_flatsome_repeater_start($repeater);
 
  ?>
   <?php
@@ -255,14 +255,14 @@ echo get_flatsome_repeater_start($repeater);
           <div class="col-inner" <?php echo get_shortcode_inline_css($css_col); ?>>
           <a href="<?php echo $link; ?>" class="plain <?php echo $has_lightbox; ?>">
           <div class="<?php echo implode(' ', $classes_box); ?>">
-            <div class="box-image">
+            <div class="box-image" <?php echo get_shortcode_inline_css( $css_args_img ); ?>>
                 <div class="<?php echo implode(' ', $classes_image); ?>"<?php echo get_shortcode_inline_css($css_image_height); ?>>
                 <?php echo wp_get_attachment_image($image, $image_size); ?>
                 <?php if($image_overlay) { ?><div class="overlay" style="background-color:<?php echo $image_overlay; ?>"></div><?php } ?>
                 <?php if($style == 'shade'){ ?><div class="shade"></div><?php } ?>
                 </div>
             </div><!-- box-image -->
-            <div class="<?php echo implode(' ', $classes_text); ?>">
+            <div class="<?php echo implode(' ', $classes_text); ?>" <?php echo get_shortcode_inline_css( $css_args ); ?>>
                   <div class="box-text-inner">
                       <h6 class="uppercase portfolio-box-title"><?php the_title(); ?></h6>
                       <p class="uppercase portfolio-box-category is-xsmall op-6">
@@ -281,7 +281,7 @@ echo get_flatsome_repeater_start($repeater);
           endif;
           wp_reset_query();
 
-  echo get_flatsome_repeater_end($repeater);
+  get_flatsome_repeater_end($repeater);
   echo '</div>';
 
   $args = array(

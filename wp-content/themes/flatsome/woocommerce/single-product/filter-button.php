@@ -6,7 +6,6 @@ $filter_text = $custom_filter_text ? $custom_filter_text : __( 'Filter', 'woocom
   <a href="#product-sidebar"
     data-open="#product-sidebar"
     data-pos="left"
-    data-visible-after="true"
     class="filter-button uppercase plain">
       <i class="icon-menu"></i>
       <strong><?php echo $filter_text ?></strong>

@@ -3,13 +3,13 @@
  * Plugin Name: WooCommerce For Japan
  * Plugin URI: https://wordpress.org/plugins/woocommerce-for-japan/
  * Description: Woocommerce toolkit for Japanese use.
- * Version: 1.2.20
+ * Version: 1.2.22
  * Author: Artisan Workshop
  * Author URI: https://wc.artws.info/
- * Requires at least: 4.7.0
+ * Requires at least: 4.4.0
  * Tested up to: 4.9.5
- * WC requires at least: 2.4.0
- * WC tested up to: 3.3.5
+ * WC requires at least: 2.6.0
+ * WC tested up to: 3.4.4
  *
  * Text Domain: woocommerce-for-japan
  * Domain Path: /i18n/
@@ -31,7 +31,7 @@ class WooCommerce4jp{
 	 *
 	 * @var string
 	 */
-	public $version = '1.2.20';
+	public $version = '1.2.22';
 
 	/**
 	 * WooCommerce for Japan Constructor.

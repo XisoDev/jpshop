@@ -1,5 +1,5 @@
 Flatsome.behavior('cart-refresh', {
-  attach () {
+  attach: function () {
     if (!jQuery('.cart-auto-refresh').length) {
       return
     }

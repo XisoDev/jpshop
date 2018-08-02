@@ -106,12 +106,13 @@
 
 #of_container #content .section-checkbox .option > div{
 	display: table-cell;
-	padding-right: 15px;
+	padding-right: 5px;
 	vertical-align: top;
 }
 
-#of_container #content .section-checkbox .option > .controls{
-	width:20px;
+#of_container #content input[type=checkbox] {
+	width: 17px;
+	min-width: 17px;
 }
 
 
