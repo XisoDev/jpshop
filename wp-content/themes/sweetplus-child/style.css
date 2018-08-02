@@ -6,7 +6,7 @@ Author URI: http://www.uxthemes.com/
 Version: 3.6.0.1533112807
 */
 
-
+/* 사이드바 css */
 .home .sidebars .leftbar,
 .home .sidebars .rightbar {
     top: 840px;
@@ -45,6 +45,12 @@ Version: 3.6.0.1533112807
     left: -120px;
 }
 
+/* Q&A 서비스 버튼 css */
+div.sc-bwzfXH.dcuyeY{
+    left:21px;
+    bottom:10px;
+}
+/* 모바일 폰트 조정 css */
 @media all and (max-width:540px) {
     .product-title{
         font-size: 11px;
@@ -58,13 +64,15 @@ Version: 3.6.0.1533112807
     span.woocommerce-Price-amount.amount{
         font-size:17px;
     }
-
 }
+
 @media all and (max-width:850px){
+    /* 사이드바 모바일 비출력 css */
     .sidebars{
         display:none;
     }
 
+    /* 모바일 추천 카테고리 2칸씩 출력 */
     .gallery-columns-4 .gallery-item, .large-columns-4>.col, .large-columns-4 .flickity-slider>.col{
         max-width: 50%;
         -ms-flex-preferred-size: 50%;
