@@ -29,6 +29,7 @@ Version: 3.6.0.1533112807
 }
 .sidebars .leftbar,
 .sidebars .rightbar {
+    z-index: 99999;
     position: absolute;
     padding: 0;
     margin: 0;

@@ -38,9 +38,13 @@ if($_POST['action'] == "sagawa"){
     include('./tqoon_orderlist.php');
 }else if($_POST['action'] == "tqoon_packing") {
     include('./tqoon_packing.php');
-}else{
+}else if($_POST['action'] == "tqoon_orderlist"){
     include('./tqoon_orderlist.php');
 }
-
+/*
+else if($_POST['action'] == "calculate") {
+    include('./calculate.php');
+}
+*/
 
 ?>
