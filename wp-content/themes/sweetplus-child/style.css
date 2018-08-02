@@ -48,7 +48,10 @@ Version: 3.6.0.1533112807
 
 @media all and (max-width:540px) {
     .product-title{
-        font-size: 15px!important;
+        font-size: 12px!important;
+    }
+    span.woocommerce-Price-amount {
+        font-size:12px;
     }
 }
 @media all and (max-width:800px){
