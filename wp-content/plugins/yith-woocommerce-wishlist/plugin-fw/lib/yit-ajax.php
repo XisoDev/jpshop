@@ -83,7 +83,7 @@ if ( !class_exists( 'YIT_Ajax' ) ) {
 
             $request = $request ? $request : $_REQUEST;
 
-            $term = (string) wc_clean( stripslashes( $request[ 'term' ] ) );
+            $term = (string) sanitize_text_field( stripslashes( $request[ 'term' ] ) );
             if ( empty( $term ) ) {
                 die();
             }
@@ -208,7 +208,7 @@ if ( !class_exists( 'YIT_Ajax' ) ) {
 
             check_ajax_referer( 'search-terms', 'security' );
 
-            $term = (string) wc_clean( stripslashes( $_REQUEST[ 'term' ] ) );
+            $term = (string) sanitize_text_field( stripslashes( $_REQUEST[ 'term' ] ) );
 
             if ( empty( $term ) ) {
                 die();

@@ -15,7 +15,7 @@ function flatsome_cart_refresh_script() {
 	global $extensions_uri;
 	$theme   = wp_get_theme( get_template() );
 	$version = $theme->get( 'Version' );
-	wp_enqueue_script( 'flatsome-cart-refresh', $extensions_uri . '/flatsome-cart-refresh/flatsome-cart-refresh.js', array( 'jquery' ), $version, true );
+	wp_enqueue_script( 'flatsome-cart-refresh', $extensions_uri . '/flatsome-cart-refresh/flatsome-cart-refresh.js', array( 'jquery', 'flatsome-js' ), $version, true );
 }
 
 /**

@@ -160,6 +160,10 @@ class MTSNBF {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
+		/* Display a notice */
+		$this->loader->add_action( 'admin_notices', $plugin_admin, 'wp_notification_bar_admin_notice' );
+		$this->loader->add_action( 'wp_ajax_mts_dismiss_nb_notice', $plugin_admin, 'wp_notification_bar_admin_notice_ignore' );
+
 		// Register our post type
 		$this->loader->add_action( 'init', $plugin_admin, 'mts_notification_cpt' );
 

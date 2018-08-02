@@ -2,9 +2,9 @@
 Contributors: artisan-workshop-1, shohei.tanaka, mt8biz
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=info@artws.info&item_name=Donation+for+Artisan&currency_code=JPY
 Tags: woocommerce, ecommerce, e-commerce, Japanese
-Requires at least: 4.1.0
+Requires at least: 4.4.0
 Tested up to: 4.9.1
-Stable tag: 1.2.20
+Stable tag: 1.2.22
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -61,6 +61,12 @@ http://support.artws.info/forums/forum/woocommerce-for-japan-plugins-forum/
 5. Admin Panel WooCommerce for Japan Setting Screen for Payment.
 
 == Changelog ==
+
+= 1.2.22 - 2018-07-27 =
+* Fix - bug at admin in save action.
+
+= 1.2.21 - 2018-07-14 =
+* Tweak - My account template update for 3.4.
 
 = 1.2.20 - 2018-04-17 =
 * Dev - Add filter in Shipping time zone and date.

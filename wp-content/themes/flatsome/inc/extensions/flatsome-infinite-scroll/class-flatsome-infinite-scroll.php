@@ -22,7 +22,7 @@ class Flatsome_Infinite_Scroll {
 	 *
 	 * @var string
 	 */
-	private $version = '1.2';
+	private $version = '1.3';
 
 	/**
 	 * Holds loader type selected from theme settings.

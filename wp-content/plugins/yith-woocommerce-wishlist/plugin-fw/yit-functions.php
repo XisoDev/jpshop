@@ -187,8 +187,8 @@ if ( !function_exists( 'yit_plugin_string' ) ) {
      *
      * @param string $before What there is before the main string
      * @param string $string The main string. If it is empty or null, the functions return null.
-     * @param string $after What there is after the main string
-     * @param bool   $echo If echo or only return it
+     * @param string $after  What there is after the main string
+     * @param bool   $echo   If echo or only return it
      *
      * @return string The complete string, if the main string is not empty or null
      * @since 2.0.0
@@ -282,7 +282,7 @@ if ( !function_exists( 'yit_plugin_get_attachment_id' ) ) {
                 continue;
             }
 
-            foreach ( (array) $meta[ 'sizes' ] as $size => $values ) {
+            foreach ( (array)$meta[ 'sizes' ] as $size => $values ) {
                 if ( $values[ 'file' ] == $file && $url == str_replace( 'https://', 'http://', array_shift( wp_get_attachment_image_src( $id, $size ) ) ) ) {
 
                     return $id;
@@ -349,7 +349,7 @@ if ( !function_exists( 'yit_get_post_meta' ) ) {
      *
      * This function retrieve the value of a metabox attached to a post. It return either a single value or an array.
      *
-     * @param int    $id Post ID.
+     * @param int    $id   Post ID.
      * @param string $meta The meta key to retrieve.
      *
      * @return mixed Single value or array
@@ -380,8 +380,8 @@ if ( !function_exists( 'yit_string' ) ) {
      *
      * @param string $before What there is before the main string
      * @param string $string The main string. If it is empty or null, the functions return null.
-     * @param string $after What there is after the main string
-     * @param bool   $echo If echo or only return it
+     * @param string $after  What there is after the main string
+     * @param bool   $echo   If echo or only return it
      *
      * @return string The complete string, if the main string is not empty or null
      * @since 2.0.0
@@ -450,7 +450,7 @@ if ( !function_exists( 'yit_pagination' ) ) {
             for ( $i = 1; $i <= $pages; $i++ ) {
                 if ( 1 != $pages && ( !( $i >= $paged + $range + 1 || $i <= $paged - $range - 1 ) || $pages <= $showitems ) ) {
                     $class = ( $paged == $i ) ? " class='selected'" : '';
-                    $html .= "<a href='" . get_pagenum_link( $i ) . "'$class >$i</a>";
+                    $html  .= "<a href='" . get_pagenum_link( $i ) . "'$class >$i</a>";
                 }
             }
 
@@ -484,7 +484,7 @@ if ( !function_exists( 'yit_registered_sidebars' ) ) {
             $return = array( '' => '' );
         }
 
-        foreach ( ( array ) $wp_registered_sidebars as $the_ ) {
+        foreach ( ( array )$wp_registered_sidebars as $the_ ) {
             $return[ $the_[ 'name' ] ] = $the_[ 'name' ];
         }
 
@@ -1051,7 +1051,7 @@ if ( !function_exists( 'yith_plugin_fw_html_data_to_string' ) ) {
         if ( is_array( $data ) ) {
             foreach ( $data as $key => $value ) {
                 $current_value = !is_array( $value ) ? $value : implode( ',', $value );
-                $html_data .= " data-$key='$current_value'";
+                $html_data     .= " data-$key='$current_value'";
             }
             $html_data .= ' ';
         }
@@ -1071,5 +1071,71 @@ if ( !function_exists( 'yith_plugin_fw_get_icon' ) ) {
 if ( !function_exists( 'yith_plugin_fw_is_true' ) ) {
     function yith_plugin_fw_is_true( $value ) {
         return true === $value || 1 === $value || '1' === $value || 'yes' === $value;
+    }
+}
+
+
+if ( !function_exists( 'yith_plugin_fw_enqueue_enhanced_select' ) ) {
+    function yith_plugin_fw_enqueue_enhanced_select() {
+        wp_enqueue_script( 'yith-enhanced-select' );
+        $select2_style_to_enqueue = function_exists( 'WC' ) ? 'woocommerce_admin_styles' : 'yith-select2-no-wc';
+        wp_enqueue_style( $select2_style_to_enqueue );
+    }
+}
+
+if ( !function_exists( 'yit_add_select2_fields' ) ) {
+    /**
+     * Add select 2
+     *
+     * @param array $args
+     */
+    function yit_add_select2_fields( $args = array() ) {
+        $default = array(
+            'type'              => 'hidden',
+            'class'             => '',
+            'id'                => '',
+            'name'              => '',
+            'data-placeholder'  => '',
+            'data-allow_clear'  => false,
+            'data-selected'     => '',
+            'data-multiple'     => false,
+            'data-action'       => '',
+            'value'             => '',
+            'style'             => '',
+            'custom-attributes' => array()
+        );
+
+        $args = wp_parse_args( $args, $default );
+
+        $custom_attributes = array();
+        foreach ( $args[ 'custom-attributes' ] as $attribute => $attribute_value ) {
+            $custom_attributes[] = esc_attr( $attribute ) . '="' . esc_attr( $attribute_value ) . '"';
+        }
+        $custom_attributes = implode( ' ', $custom_attributes );
+
+        if ( !function_exists( 'WC' ) || version_compare( WC()->version, '2.7.0', '>=' ) ) {
+            if ( $args[ 'data-multiple' ] === true && substr( $args[ 'name' ], -2 ) != '[]' ) {
+                $args[ 'name' ] = $args[ 'name' ] . '[]';
+            }
+            $select2_template_name = 'select2.php';
+
+        } else {
+            if ( $args[ 'data-multiple' ] === false && is_array( $args[ 'data-selected' ] ) ) {
+                $args[ 'data-selected' ] = current( $args[ 'data-selected' ] );
+            }
+            $select2_template_name = 'select2-wc-2.6.php';
+        }
+
+        $template = YIT_CORE_PLUGIN_TEMPLATE_PATH . '/fields/resources/' . $select2_template_name;
+        if ( file_exists( $template ) ) {
+            include $template;
+        }
+    }
+}
+
+if ( !function_exists( 'yith_plugin_fw_get_version' ) ) {
+    function yith_plugin_fw_get_version() {
+        $plugin_fw_data = get_file_data( trailingslashit( YIT_CORE_PLUGIN_PATH ) . 'init.php', array( 'Version' => 'Version' ) );
+        return $plugin_fw_data[ 'Version' ];
     }
 }

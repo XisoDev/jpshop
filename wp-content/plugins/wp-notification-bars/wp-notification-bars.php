@@ -1,11 +1,10 @@
 <?php
-
 /**
  * @wordpress-plugin
  * Plugin Name:       WP Notification Bars
  * Plugin URI:        https://mythemeshop.com/plugins/wp-notification-bars/
  * Description:       WP Notification Bars is a custom notification and alert bar plugin for WordPress which is perfect for marketing promotions, alerts, increasing click throughs to other pages and so much more.
- * Version:           1.0.2
+ * Version:           1.0.4
  * Author:            MyThemeShop
  * Author URI:        https://mythemeshop.com/
  * Text Domain:       wp-notification-bars
@@ -34,6 +33,7 @@ if ( !defined( 'MTSNBF_PLUGIN_BASE') )
 function activate_mts_notification_bar_f() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wp-notification-bars-activator.php';
 	MTSNBF_Activator::activate();
+	update_option('wp_notification_bar_activated', time());
 }
 
 /**

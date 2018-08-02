@@ -11,10 +11,9 @@
  * the readme will list any important changes.
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
- * @author  WooThemes
  * @editor  Shohei Tanaka
  * @package WooCommerce/Templates
- * @version 2.6.0
+ * @version 3.4.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -37,9 +36,17 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 	</p>
 	<div class="clear"></div>
 
+	<?php if(version_compare( WC_VERSION, '3.4', '>=' )): ?>
+		<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+		<label for="account_display_name"><?php esc_html_e( 'Display name', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
+		<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_display_name" id="account_display_name" value="<?php echo esc_attr( $user->display_name ); ?>" /> <span><em><?php esc_html_e( 'This will be how your name will be displayed in the account section and in reviews', 'woocommerce' ); ?></em></span>
+	</p>
+	<div class="clear"></div>
+	<?php endif; ?>
+
 	<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-		<label for="account_email"><?php _e( 'Email address', 'woocommerce' ); ?> <span class="required">*</span></label>
-		<input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" value="<?php echo esc_attr( $user->user_email ); ?>" />
+		<label for="account_email"><?php esc_html_e( 'Email address', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
+		<input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" autocomplete="email" value="<?php echo esc_attr( $user->user_email ); ?>" />
 	</p>
 
 	<fieldset>

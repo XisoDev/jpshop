@@ -1,3 +1,19 @@
+--- 3.6.1 ---
+FIXED: Scroll to position when height changes in the page occur.
+FIXED: Accordion scroll position after opening section on mobile devices.
+FIXED: JS error: Flatsome is not defined, in some cases on auto cart refresh.
+FIXED: Disable featured image on single posts removed image on listings also.
+FIXED: Sidebar category filter revealed itself on the page after opening.
+FIXED: Portfolio element: text background color did not affect live site.
+FIXED: Portfolio: tag archive did not render its posts.
+FIXED: Padding on text within elements when only depth on hover was added.
+FIXED: Grid: mispositioned image when link was added.
+FIXED: Improved backward WC compatibility for Update Cart.
+FIXED: Live search with older PHP versions.
+FIXED: Updated Klarna payment icon.
+
+TWEAK: Infinite Scroll improvement with other plugins.
+
 --- 3.6.0 ---
 NEW: Compatibility with WooCommerce 3.4 (GDPR ready)
 NEW: Create 404 layout with a custom block in UX Builder.
