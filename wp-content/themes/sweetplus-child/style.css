@@ -52,9 +52,16 @@ Version: 3.6.0.1533112807
     span.woocommerce-Price-amount {
         font-size:11px;
     }
+
 }
-@media all and (max-width:800px){
+@media all and (max-width:850px){
     .sidebars{
         display:none;
+    }
+
+    .gallery-columns-4 .gallery-item, .large-columns-4>.col, .large-columns-4 .flickity-slider>.col{
+        max-width: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     }
 }
