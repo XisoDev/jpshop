@@ -16,8 +16,8 @@
 <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'flatsome' ); ?></a>
 
 <div class="sidebars">
-    <div class="leftbar"><?php do_shortcode('[block id="sidebar"]') ?></div>
-    <div class="rightbar"><?php do_shortcode('[block id="right_sidebar"]') ?></div>
+    <div class="leftbar"><?=do_shortcode('[block id="sidebar"]') ?></div>
+    <div class="rightbar"><?=do_shortcode('[block id="right_sidebar"]') ?></div>
 </div>
 
 
