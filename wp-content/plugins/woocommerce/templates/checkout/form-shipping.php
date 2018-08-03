@@ -53,18 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php endif; ?>
 </div>
-<div class="precautions">
-
-<?php
-#주문 발송 소요기간 안내
-$days = "7~14日";
-echo"発送までに".$days."ほどいただいておりますので<br>
-    お急ぎの方はお早めにご注文下さいませ。";
-?>
-
-</div>
 <div class="woocommerce-additional-fields">
-
 	<?php do_action( 'woocommerce_before_order_notes', $checkout ); ?>
 
 	<?php if ( apply_filters( 'woocommerce_enable_order_notes_field', 'yes' === get_option( 'woocommerce_enable_order_comments', 'yes' ) ) ) : ?>
