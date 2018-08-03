@@ -48,8 +48,8 @@ Version: 3.6.0.1533112807
 /* Q&A 서비스 버튼 css */
 .sc-htpNat.hWLckn.hWLckn{
     position: fixed;
-    left: 10px;
-    bottom: 10px;
+    right: 9px;
+    bottom: 70px;
 }
 /* 모바일 폰트 조정 css */
 @media all and (max-width:540px) {
