@@ -14,7 +14,18 @@ Updated: 2018-08-01 17:42:05
     .product-title{
         font-size: 11px;
     }
+    .product-title.entry-title{
+        font-size: 20px;
+    }
     span.woocommerce-Price-amount {
         font-size:11px;
     }
+    span.woocommerce-Price-amount.amount{
+        font-size:17px;
+    }
+}
+.sc-htpNat .fLTCSA .fLTCSA {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
 }
