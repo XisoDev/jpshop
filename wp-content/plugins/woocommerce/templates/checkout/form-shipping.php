@@ -54,11 +54,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php endif; ?>
 </div>
 <div class="precautions">
+
 <?php
+#주문 발송 소요기간 안내
 $days = "7~14日";
 echo"発送までに".$days."ほどいただいておりますので<br>
     お急ぎの方はお早めにご注文下さいませ。";
 ?>
+
 </div>
 <div class="woocommerce-additional-fields">
 
