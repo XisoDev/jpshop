@@ -46,7 +46,10 @@ Version: 3.6.0.1533112807
 }
 
 /* Q&A 서비스 버튼 css */
-
+div#ch-plugin-launcher.sc-htpNat.hWLckn.dcuyeY{
+    right:50px;
+    bottom:10px;
+}
 /* 모바일 폰트 조정 css */
 @media all and (max-width:540px) {
     .product-title{
