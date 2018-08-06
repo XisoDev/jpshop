@@ -246,9 +246,9 @@ echo "<div class='V1'>";
 
     # 할인되는 쿠폰 총합
     $discount = $order->get_discount_total();
-    echo $order->get_subtotal() ;
+    $order->get_subtotal() ;
     # 상품가
-    echo $itemtotal = $order->get_subtotal() - $discount;
+    $itemtotal = $order->get_subtotal() - $discount;
 
     # 상품 수수료 계산
     foreach ($order->get_items() as $item_key => $item_values) {
@@ -338,27 +338,6 @@ echo "<div class='V1'>";
 
     if($custom_delivery== "") $custom_delivery = 0;
 
-    # 총 합계 배송비
-    $total['delivery'] += $delivery;
-
-    # 상품가 합계(정산)
-    $total['amount'] += $itemtotal;
-
-    # 환불 합계
-    $total['refund'] += $refund;
-
-    # 소비세 합계
-    $total['excise'] += $total_excise;
-
-    # 수수료 합계
-    $total['tax'] += $total_tax;
-
-    # - 소비세 합계
-    $total['m_excise'] += $totalm_excise;
-
-    # - 수수료 합계
-    $total['m_tax'] += $totalm_tax;
-
     #  + 합계금액
     $total_calculate = $itemtotal + $delivery + $total_tax + $total_excise + $pg_tax + $oHsRefundInfo['tax'];
 
@@ -374,6 +353,8 @@ echo "<div class='V1'>";
         $totalm_excise = 0;
         $totalm_tax = 0;
         $oHSInfo_tax = 0;
+        $total_m_calculate = 0;
+        $total_calculate = 0;
     }
 
     # 총 정산금액
@@ -415,6 +396,28 @@ echo "<div class='V1'>";
 
     echo "<td>￥".number_format($custom_delivery)."</td>";
 
+
+    # 총 합계 배송비
+    $total['delivery'] += $delivery;
+
+    # 상품가 합계(정산)
+    $total['amount'] += $itemtotal;
+
+    # 환불 합계
+    $total['refund'] += $refund;
+
+    # 소비세 합계
+    $total['excise'] += $total_excise;
+
+    # 수수료 합계
+    $total['tax'] += $total_tax;
+
+    # - 소비세 합계
+    $total['m_excise'] += $totalm_excise;
+
+    # - 수수료 합계
+    $total['m_tax'] += $totalm_tax;
+
     $total['customs'] += $oHsRefundInfo['tax'];
 
     #-관세 총합
@@ -442,11 +445,13 @@ echo "<div class='V1'>";
     $total_excise = 0;
     echo "</tr>";
     echo "</div>";
-
+    if($itemtotal==0)
+        echo "<div style='display:none'>";
+    else
+        echo "<div>";
     foreach ($order->get_items() as $item_key => $item_values) {
-        echo "<div class='V2'><tr style='background:#fff8e1; ' id='hidethis'>";
+        echo "<tr style='background:#fff8e1;'>";
         $item_data = $item_values->get_data();
-
         $product_name = $item_data['name'];
         $quantity = $item_data['quantity'];
         $line_total = $item_data['total'];
