@@ -246,9 +246,9 @@ echo "<div class='V1'>";
 
     # 할인되는 쿠폰 총합
     $discount = $order->get_discount_total();
-
+    echo $order->get_subtotal() ;
     # 상품가
-    $itemtotal = $order->get_subtotal() - $discount;
+    echo $itemtotal = $order->get_subtotal() - $discount;
 
     # 상품 수수료 계산
     foreach ($order->get_items() as $item_key => $item_values) {
@@ -368,7 +368,13 @@ echo "<div class='V1'>";
     # 정산금액
     $jungsan = $total_calculate - $total_m_calculate;
 
-
+    $oHSInfo_refund_tax = number_format($oHsRefundInfo['tax']);
+    $oHSInfo_tax = number_format($oHSInfo['tax']);
+    if($itemtotal==0){
+        $totalm_excise = 0;
+        $totalm_tax = 0;
+        $oHSInfo_tax = 0;
+    }
 
     # 총 정산금액
     echo "<td>￥" . number_format($jungsan) . "</td>";
@@ -390,7 +396,6 @@ echo "<div class='V1'>";
     echo "<td>￥" . number_format($pg_tax) . "</td>";
     //관세 받아올것
     #+관세
-    $oHSInfo_refund_tax = number_format($oHsRefundInfo['tax']);
     echo "<td>".$oHSInfo_refund_tax."</td>";
     #-소비세
     echo "<td>￥" . number_format($totalm_excise) . "</td>";
@@ -406,8 +411,6 @@ echo "<div class='V1'>";
     #-관세
     /*echo $implode = "상품의 관세".implode("<br>"."상품의 관세",$oHSInfo["items"]);
     echo $implode = "관세".implode("%"."<br>"."관세",$oHSInfo["ttax"]);*/
-
-    $oHSInfo_tax = number_format($oHSInfo['tax']);
     echo "<td>￥".$oHSInfo_tax."</td>";
 
     echo "<td>￥".number_format($custom_delivery)."</td>";
