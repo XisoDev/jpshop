@@ -265,7 +265,7 @@ echo "<div class='V1'>";
     $discountexcise = round(($discount-$discounttax)*0.08);
     $totalm_tax = $m_tax ;
     $totalm_excise = $m_excise ;
-print_r($order);
+
     #환불 수수료 계산
     foreach ($order->get_refunds() as $item_key => $item_values) {
         $item_data = $item_values->get_data();
