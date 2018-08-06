@@ -28,7 +28,7 @@ function getHsValues($hs_codes, $items){
     foreach ($items as $item_key => $item_values) {
 
         $item_data = $item_values->get_data();
-
+        $order_id=$item_data['order_id'];
         $product_id = $item_data['product_id'];
         $hscode = get_post_meta($product_id, '수출용_관세코드', true);
         $hs_info = $hs_codes[$hscode];
@@ -160,8 +160,15 @@ function getHsValues($hs_codes, $items){
         $oHSInfo['total'] += $item_total;
         $oHSInfo['tax'] +=$item_tax;
         $oHSInfo['item_data'] = $item_data;
-        $oHSInfo['product_id'] = $item_data['product_id'];
+        $oHSInfo['itemtax'][$hscode]=$order_id;
+        $oHSInfo['itemtax'][$order_id]=$tax;
         #print_r($oHSInfo['item_data']);
+        /*echo "주문번호".$order_id." = ".$tax;
+        echo "상품번호".$item_data['product_id']." = ".$tax;
+        echo "<br>";*/
+        $oHSInfo['product_id'][$item_data['product_id']]=$tax;
+        $oHSInfo['order_id'][$order_id]=$oHSInfo['product_id'];
+
     }
     return $oHSInfo;
 }

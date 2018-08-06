@@ -169,7 +169,7 @@ $x2 = unserialize(urldecode($_POST['view']));
     <form id="wc-amuz-japanshop-orderlist-cart" method="post" onsubmit="if(this.action.value ==''){ alert('내려받을 데이터 유형을 선택하세요.'); return false;}" action="/wp-content/plugins/amuz-japanshop/actions/savefile.php" enctype="multipart/form-data">
         <input type="hidden" id="data_action_type" name="action" value="" />
 <?php
-echo "<table class='wp-list-table widefat fixed striped posts'>";
+echo "<table class='wp-list-table widefat fixed striped posts' id='film'>";
 echo "<cols>    
             <col width='30' />
         </cols>";
@@ -208,8 +208,8 @@ $hs_codes_refund = array();
 include"hscodes_refund.php";
 
 foreach($order_list as $no => $order) {
-
-    echo "<tr>";
+echo "<div class='V1'>";
+    echo "<tr ID='1'>";
     echo "<th scope='row' class='check-column'>
     <input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
     # 주문번호 앞에 있는 체크박스
@@ -337,6 +337,7 @@ foreach($order_list as $no => $order) {
             update_post_meta($order->get_order_number(),'custom_delivery',$cus_deli['delivery'],$custom_delivery);
         }
     }
+
     if($custom_delivery== "") $custom_delivery = 0;
 
     # 총 합계 배송비
@@ -411,14 +412,6 @@ foreach($order_list as $no => $order) {
     $oHSInfo_tax = number_format($oHSInfo['tax']);
     echo "<td>￥".$oHSInfo_tax."</td>";
 
-    #청구된 배송료
-    /*if($order->get_order_number() == 724){
-        if(get_post_meta($order->get_order_number(),'custom_delivery')[0]=="") {
-            add_post_meta(724, 'custom_delivery', 600, $unique = false);
-        }
-    }*/
-
-
     echo "<td>￥".number_format($custom_delivery)."</td>";
 
     $total['customs'] += $oHsRefundInfo['tax'];
@@ -446,8 +439,38 @@ foreach($order_list as $no => $order) {
     $m_excise = 0;
     $total_tax = 0;
     $total_excise = 0;
-echo "</tr>";
+    echo "</tr>";
+    echo "</div>";
 
+    foreach ($order->get_items() as $item_key => $item_values) {
+        echo "<div class='V2'><tr style='background:#fff8e1;' id='hidethis'>";
+        $item_data = $item_values->get_data();
+
+        $product_name = $item_data['name'];
+        $quantity = $item_data['quantity'];
+        $line_total = $item_data['total'];
+        $line_total_tax = $item_data['total_tax'];
+
+        $product_id = $item_data['product_id'];
+        $product_code = get_post_meta( $product_id, '원청_상품코드', true);
+        $hs_code = get_post_meta( $product_id, '수출용_관세코드', true);
+        $hs_title = get_post_meta( $product_id, '수출용_상품명', true);
+        $hs_fabric = get_post_meta( $product_id, '수출용_재질', true);
+        $order_id = $item_data['order_id'];
+        $aa = array_keys($oHSInfo['order_id']);
+        if($order_id = $aa[0]){
+            $bb=$oHSInfo['order_id'][$aa[0]];
+            //echo "상품번호".$product_id. "=" ."관세율".$bb[$product_id];
+            echo "<td colspan='3'></td>";
+            echo "<td><a href='".get_permalink( $product_id )."' target='_blank'>상품보기</a></td>";
+            echo "<td colspan='3'>[$product_code] $product_name x $quantity</td>";
+            echo "<td colspan='3'>[$hs_code] $hs_title // $hs_fabric</td>";
+            echo "<td>" . $line_total_tax . "</td>";
+            echo "<td>" . number_format($line_total) . "</td>";
+            echo "<td colspan='2'>" ."관세율  ".$bb[$product_id]."</td>";
+        }
+        echo "</tr></div>";
+    }
 }
 
 
@@ -514,7 +537,6 @@ echo "</table>";
             div.style.display = 'block';
         }
     };
-
 
 </script>
 
