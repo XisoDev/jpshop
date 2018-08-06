@@ -226,17 +226,14 @@ echo "<div class='V1'>";
         . trim(str_replace('#', '', $order->get_order_number())) . "</a></td>";
 
     echo "<td>{$payment}</td>";
-
     if ($order->get_discount_total() != 0){
         $itemtotal = $order->get_subtotal() - $order->get_discount_total();
-        $discount = $order->get_discount_total();
         }
     else {
         $itemtotal = $order->get_subtotal();
-        $discount = $order->get_discount_total();
         }
-
-
+    $discount = $order->get_discount_total();
+    echo $discount;
     #환불 받은 가격
     $refunds = $order->get_total_refunded();
     #환불 시 돌려줄 배송료
