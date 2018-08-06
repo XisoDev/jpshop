@@ -443,7 +443,7 @@ echo "<div class='V1'>";
     echo "</div>";
 
     foreach ($order->get_items() as $item_key => $item_values) {
-        echo "<div class='V2'><tr style='background:#fff8e1;' id='hidethis'>";
+        echo "<div class='V2'><tr style='background:#fff8e1; ' id='hidethis'>";
         $item_data = $item_values->get_data();
 
         $product_name = $item_data['name'];
@@ -465,8 +465,7 @@ echo "<div class='V1'>";
             echo "<td><a href='".get_permalink( $product_id )."' target='_blank'>상품보기</a></td>";
             echo "<td colspan='3'>[$product_code] $product_name x $quantity</td>";
             echo "<td colspan='3'>[$hs_code] $hs_title // $hs_fabric</td>";
-            echo "<td>" . $line_total_tax . "</td>";
-            echo "<td>" . number_format($line_total) . "</td>";
+            echo "<td>￥". number_format($line_total) . "</td>";
             echo "<td colspan='2'>" ."관세율  ".$bb[$product_id]."</td>";
         }
         echo "</tr></div>";
