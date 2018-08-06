@@ -355,6 +355,7 @@ echo "<div class='V1'>";
         $oHSInfo_tax = 0;
         $total_m_calculate = 0;
         $total_calculate = 0;
+        $jungsan=0;
     }
 
     # 총 정산금액
