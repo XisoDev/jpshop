@@ -226,14 +226,7 @@ echo "<div class='V1'>";
         . trim(str_replace('#', '', $order->get_order_number())) . "</a></td>";
 
     echo "<td>{$payment}</td>";
-    if ($order->get_discount_total() != 0){
-        $itemtotal = $order->get_subtotal() - $order->get_discount_total();
-        }
-    else {
-        $itemtotal = $order->get_subtotal();
-        }
-    $discount = $order->get_discount_total();
-    echo $discount;
+
     #환불 받은 가격
     $refunds = $order->get_total_refunded();
     #환불 시 돌려줄 배송료
@@ -251,6 +244,12 @@ echo "<div class='V1'>";
     # + 배송비용
     $delivery = $order->get_shipping_total();
 
+    # 할인되는 쿠폰 총합
+    $discount = $order->get_discount_total();
+
+    # 상품가
+    $itemtotal = $order->get_subtotal() - $discount;
+
     # 상품 수수료 계산
     foreach ($order->get_items() as $item_key => $item_values) {
         $item_data = $item_values->get_data();
@@ -258,10 +257,12 @@ echo "<div class='V1'>";
         $m_tax += round($line_total * 0.08);
         $m_excise += round(($line_total - $m_tax) * 0.08);
     }
+    #쿠폰의 수수료 계산
     $discounttax = round($discount * 0.08);
     $discountexcise = round(($discount-$discounttax)*0.08);
-    $totalm_tax = $m_tax ;
-    $totalm_excise = $m_excise ;
+    #상품 수수료 - 쿠폰 수수료
+    $totalm_tax = $m_tax - $discounttax;
+    $totalm_excise = $m_excise - $discountexcise;
 
     #환불 수수료 계산
     foreach ($order->get_refunds() as $item_key => $item_values) {
