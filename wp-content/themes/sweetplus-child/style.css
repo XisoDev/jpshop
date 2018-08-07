@@ -30,7 +30,7 @@ Version: 3.6.0.1533112807
 
 .sidebars .leftbar,
 .sidebars .rightbar {
-    z-index:99999;
+    z-index:9999;
     position: absolute;
     padding: 0;
     margin: 0;
@@ -69,7 +69,6 @@ Version: 3.6.0.1533112807
 .precautions{
     font-size : 20px;
     color : #FF6699;
-    
 }
 @media all and (max-width:850px){
     /* 사이드바 모바일 비출력 css */
@@ -84,3 +83,17 @@ Version: 3.6.0.1533112807
         flex-basis: 50%;
     }
 }
+.page-template-full-width .sidebars{
+    display: none!IMportant;
+}
+
+.back-to-top.button.icon{
+    right: 20px;
+    bottom:20px;
+}
+
+.back-to-down{margin:0;opacity:0;bottom:20px;right:20px;pointer-events:none;-ms-transform:translateY(-30%);transform:translateY(-30%)}
+.back-to-down.active{opacity:1;pointer-events:inherit;-ms-transform:translateY(0);transform:translateY(0)}
+.logo{line-height:1;margin:0}
+.logo-tagline{font-style:italic;font-size:.9em;line-height:1;margin:.85em 0}
+.logo a{text-decoration:none;display:block;color:#446084;font-size:32px;text-transform:uppercase;font-weight:bolder;margin:0}
