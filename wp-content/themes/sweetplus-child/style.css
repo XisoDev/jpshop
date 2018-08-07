@@ -45,12 +45,6 @@ Version: 3.6.0.1533112807
     left: -120px;
 }
 
-/* Q&A 서비스 버튼 css */
-.sc-htpNat.hWLckn.hWLckn{
-    position: fixed;
-    right: 9px;
-    bottom: 70px;
-}
 /* 모바일 폰트 조정 css */
 @media all and (max-width:540px) {
     .product-title{
@@ -75,7 +69,6 @@ Version: 3.6.0.1533112807
     .sidebars{
         display:none;
     }
-
     /* 모바일 추천 카테고리 2칸씩 출력 */
     .gallery-columns-4 .gallery-item, .large-columns-4>.col, .large-columns-4 .flickity-slider>.col{
         max-width: 50%;
@@ -83,6 +76,13 @@ Version: 3.6.0.1533112807
         flex-basis: 50%;
     }
 }
+/* Q&A 서비스 버튼 css */
+.sc-htpNat{
+    position: fixed;
+    right: 9px;
+    bottom: 70px;
+}
+
 .page-template-full-width .sidebars{
     display: none!IMportant;
 }
@@ -91,9 +91,3 @@ Version: 3.6.0.1533112807
     right: 20px;
     bottom:20px;
 }
-
-.back-to-down{margin:0;opacity:0;bottom:20px;right:20px;pointer-events:none;-ms-transform:translateY(-30%);transform:translateY(-30%)}
-.back-to-down.active{opacity:1;pointer-events:inherit;-ms-transform:translateY(0);transform:translateY(0)}
-.logo{line-height:1;margin:0}
-.logo-tagline{font-style:italic;font-size:.9em;line-height:1;margin:.85em 0}
-.logo a{text-decoration:none;display:block;color:#446084;font-size:32px;text-transform:uppercase;font-weight:bolder;margin:0}
