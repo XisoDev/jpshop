@@ -26,7 +26,6 @@ Updated: 2018-08-01 17:42:05
 }
 .sc-htpNat{
     position: fixed;
-    right: 16px;
-    bottom: 70px;
-
+    right: -5px;
+    bottom: 50px;
 }
