@@ -84,7 +84,7 @@ Version: 3.6.0.1533112807
 }
 
 
-.page-template-full-width .sidebars{
+.page-template.page-template-page-blank .sidebars{
     display: none!IMportant;
 }
 
