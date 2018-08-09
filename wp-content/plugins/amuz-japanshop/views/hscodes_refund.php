@@ -148,7 +148,7 @@ function getHsRefundValues($hs_codes_refund, $refund)
             $oHsRefundInfo['ttax'][$item_data['product_id']] = $tax;
             $oHsRefundInfo["items"][$item_data['product_id']] = $item_tax;
             $oHsRefundInfo['product_code'][$item_data['product_id']] = $item_data['product_id'];
-            $oHsRefundInfo['total'] += $item_total;
+            $oHsRefundInfo['total'] += round($item_total);
             $oHsRefundInfo['tax'] += $item_tax;
             $oHsRefundInfo['item_data'] = $item_data;
         }

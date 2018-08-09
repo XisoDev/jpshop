@@ -156,16 +156,12 @@ function getHsValues($hs_codes, $items){
         $oHSInfo['ttax'][$item_data['product_id']]=$tax;
         $oHSInfo["items"][$item_data['product_id']]=$item_tax;
         $oHSInfo['product_code'][$item_data['product_id']]=$item_tax;
-        $oHSInfo["total"] += 0;
-        $oHSInfo['total'] += $item_total;
+        $oHSInfo['total'] += round($item_total);
         $oHSInfo['tax'] +=$item_tax;
         $oHSInfo['item_data'] = $item_data;
         $oHSInfo['itemtax'][$hscode]=$order_id;
         $oHSInfo['itemtax'][$order_id]=$tax;
-        #print_r($oHSInfo['item_data']);
-        /*echo "주문번호".$order_id." = ".$tax;
-        echo "상품번호".$item_data['product_id']." = ".$tax;
-        echo "<br>";*/
+
         $oHSInfo['product_id'][$item_data['product_id']]=$tax;
         $oHSInfo['order_id'][$order_id]=$oHSInfo['product_id'];
 
