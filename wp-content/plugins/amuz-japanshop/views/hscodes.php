@@ -16,6 +16,7 @@ foreach($order_list as $no => $order) {
 $hs_in= "'".join("','",$hs_codes)."'";
 $get_hscode_db = $wpdb->get_results("select * from wp_hscode where HScode in ({$hs_in})");
 
+
 foreach ( $get_hscode_db as $hs_code )
 {
     $hs_codes[$hs_code->HScode] = $hs_code;

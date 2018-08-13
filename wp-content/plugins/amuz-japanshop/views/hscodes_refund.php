@@ -21,6 +21,7 @@ $hs_in_refund= "'".join("','",$hs_codes_refund)."'";
 
 $get_hscode_db_refund = $wpdb->get_results("select * from wp_hscode where HScode in ({$hs_in_refund})");
 
+
 foreach ( $get_hscode_db_refund as $hs_code_refund )
 {
     $hs_codes_refund[$hs_code_refund->HScode] = $hs_code_refund;
