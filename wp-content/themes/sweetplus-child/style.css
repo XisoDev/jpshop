@@ -77,12 +77,11 @@ Version: 3.6.0.1533112807
     }
 }
 /* Q&A 서비스 버튼 css */
-.sc-bwzfXH{
+.sc-bwzfXH.cgzdsS{
     position: fixed;
     right: -5px;
     bottom: 60px;
 }
-
 
 .page-template.page-template-page-blank .sidebars{
     display: none!IMportant;
