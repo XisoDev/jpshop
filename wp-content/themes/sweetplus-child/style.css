@@ -77,7 +77,7 @@ Version: 3.6.0.1533112807
     }
 }
 /* Q&A 서비스 버튼 css */
-.sc-htpNat{
+.sc-bwzfXH{
     position: fixed;
     right: -5px;
     bottom: 60px;
@@ -88,7 +88,15 @@ Version: 3.6.0.1533112807
     display: none!IMportant;
 }
 
-.back-to-top.button.icon{
+.back-to-top.button.icon {
+    right: 20px;
+    bottom: 20px;
+}
+/*
+.back-to-down.button.icon{
     right: 20px;
     bottom:20px;
 }
+.back-to-down{margin:0;opacity:0;bottom:20px;right:20px;pointer-events:none;-ms-transform:translateY(-30%);transform:translateY(-30%)}
+.back-to-down.active{opacity:1;pointer-events:inherit;-ms-transform:translateY(0);transform:translateY(0)}
+*/
