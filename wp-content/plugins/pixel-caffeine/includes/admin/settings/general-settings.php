@@ -89,6 +89,11 @@ return array(
 		'default' => 'yes'
 	),
 
+	'aepc_enable_advanced_matching' => array(
+		'type' => 'checkbox',
+		'default' => 'yes'
+	),
+
 	'aepc_custom_fields_event' => array(
 		'type' => 'array',
 		'default' => array()

@@ -2,15 +2,13 @@
  * UI scripts for admin settings page
  */
 
-import 'bootstrap/js/collapse';
-import 'bootstrap/js/tooltip';
-import 'bootstrap/js/popover';
-import 'bootstrap/js/modal';
-import 'bootstrap/js/transition';
+import $ from 'jquery';
+import 'bootstrap-sass/assets/javascripts/bootstrap/collapse';
+import 'bootstrap-sass/assets/javascripts/bootstrap/tooltip';
+import 'bootstrap-sass/assets/javascripts/bootstrap/popover';
+import 'bootstrap-sass/assets/javascripts/bootstrap/modal';
 import 'bootstrap-material-design/scripts/material';
 import 'select2';
-
-const $ = jQuery;
 
 const Common = {
 

@@ -1,23 +1,23 @@
 [
     {
         "name": "a5hleyrich/wp-background-processing",
-        "version": "1.0",
-        "version_normalized": "1.0.0.0",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/A5hleyRich/wp-background-processing.git",
-            "reference": "15a8a79130a15366d9d550d078f14232ed83d3ba"
+            "reference": "1f070aab5058dbaf45d5435a343033ddd8a641b1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/A5hleyRich/wp-background-processing/zipball/15a8a79130a15366d9d550d078f14232ed83d3ba",
-            "reference": "15a8a79130a15366d9d550d078f14232ed83d3ba",
+            "url": "https://api.github.com/repos/A5hleyRich/wp-background-processing/zipball/1f070aab5058dbaf45d5435a343033ddd8a641b1",
+            "reference": "1f070aab5058dbaf45d5435a343033ddd8a641b1",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2"
         },
-        "time": "2016-08-07T10:26:07+00:00",
+        "time": "2018-02-12T09:24:05+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -27,7 +27,7 @@
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "GPLv2+"
+            "GPL-2.0-only"
         ],
         "authors": [
             {
@@ -213,23 +213,24 @@
     },
     {
         "name": "symfony/filesystem",
-        "version": "v2.8.32",
-        "version_normalized": "2.8.32.0",
+        "version": "v2.8.43",
+        "version_normalized": "2.8.43.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/filesystem.git",
-            "reference": "15ceb6736a9eebd0d99f9e05a62296ab6ce1cf2b"
+            "reference": "5cfc856c5b665ef5de0df796e98c54bef0fe595b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/filesystem/zipball/15ceb6736a9eebd0d99f9e05a62296ab6ce1cf2b",
-            "reference": "15ceb6736a9eebd0d99f9e05a62296ab6ce1cf2b",
+            "url": "https://api.github.com/repos/symfony/filesystem/zipball/5cfc856c5b665ef5de0df796e98c54bef0fe595b",
+            "reference": "5cfc856c5b665ef5de0df796e98c54bef0fe595b",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.9"
+            "php": ">=5.3.9",
+            "symfony/polyfill-ctype": "~1.8"
         },
-        "time": "2017-11-19T18:39:05+00:00",
+        "time": "2018-07-09T13:24:25+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -261,5 +262,62 @@
         ],
         "description": "Symfony Filesystem Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/polyfill-ctype",
+        "version": "v1.8.0",
+        "version_normalized": "1.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-ctype.git",
+            "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
+            "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2018-04-30T19:57:29+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Ctype\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            },
+            {
+                "name": "Gert de Pagter",
+                "email": "BackEndTea@gmail.com"
+            }
+        ],
+        "description": "Symfony polyfill for ctype functions",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "ctype",
+            "polyfill",
+            "portable"
+        ]
     }
 ]

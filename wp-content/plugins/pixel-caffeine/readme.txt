@@ -4,8 +4,8 @@ Donate link: https://adespresso.com/
 Tags: facebook, facebook pixel, facebook ad, facebook insertions, custom audiences, dynamic events, woocommerce
 Requires at least: 4.4
 Requires PHP: 5.3.9
-Tested up to: 4.9.5
-Stable tag: 2.0.4
+Tested up to: 4.9.8
+Stable tag: 2.0.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -123,6 +123,14 @@ Unfortunately there isn’t any way at the moment to import custom audiences _fr
 7. Product Catalog created
 
 == Changelog ==
+
+= 2.0.5 - 2018-08-02
+* Important - **FB API Bracking Change** It's **mandatory** upgrade the plugin in order to have the custom audience working back again because of a change to the custom audience creation API from Facebook, this version of plugin will fix with the new version of FB API
+* Add - Enable/Disable advanced matching option
+* Fix - Stats chart in dashboard
+* Fix - URL in checkout_url, now to product add to cart URL
+* Fix - Feed URL when automatic upload is enabled
+* Fix - Bad format of price in the pixel when more decimal digits
 
 = 2.0.4 - 2018-04-12
 * Add - New option to choose a short description as description for the feed item

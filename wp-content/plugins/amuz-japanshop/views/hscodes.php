@@ -156,8 +156,8 @@ function getHsValues($hs_codes, $items){
         $oHSInfo['ttax'][$item_data['product_id']]=$tax;
         $oHSInfo["items"][$item_data['product_id']]=$item_tax;
         $oHSInfo['product_code'][$item_data['product_id']]=$item_tax;
-        $oHSInfo['total'] += round($item_total);
-        $oHSInfo['tax'] +=$item_tax;
+        $oHSInfo['total'] += $item_total;
+        $oHSInfo['tax'] +=round($item_tax);
         $oHSInfo['item_data'] = $item_data;
         $oHSInfo['itemtax'][$hscode]=$order_id;
         $oHSInfo['itemtax'][$order_id]=$tax;

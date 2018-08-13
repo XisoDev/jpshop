@@ -129,6 +129,22 @@ $highlight_fbpixel = isset( $_GET['ref'] ) && 'fblogin' == $_GET['ref'] && $fb->
 										</div>
 									</div><!-- ./control-wrap -->
 								</div><!-- ./form-group -->
+
+								<div class="form-group">
+									<div class="control-wrap">
+										<div class="checkbox">
+											<label>
+												<input
+													type="checkbox"
+													name="<?php $page->field_name( 'aepc_enable_advanced_matching' ) ?>"
+													id="<?php $page->field_id( 'aepc_enable_advanced_matching' ) ?>"
+													<?php checked( $page->get_value( 'aepc_enable_advanced_matching' ), 'yes' ) ?>>
+												<?php _e( 'Enable Advanced Matching', 'pixel-caffeine' ) ?>
+											</label>
+											<small class="text"><?php _e( 'Enable the advanced matching in the pixels.', 'pixel-caffeine' ) ?></small>
+										</div>
+									</div><!-- ./control-wrap -->
+								</div><!-- ./form-group -->
 							</div>
 						</div><!-- ./panel-body -->
 					</div><!-- ./panel-settings-set-fb-px -->

@@ -63,7 +63,7 @@ class AEPC_Pixel_Scripts {
 		}
 
 		// Logged in user information
-		if ( is_user_logged_in() ) {
+		if ( 'yes' === get_option( 'aepc_enable_advanced_matching', 'yes' ) && is_user_logged_in() ) {
 			$user = wp_get_current_user();
 
 			$args['user'] = array(
@@ -118,7 +118,7 @@ class AEPC_Pixel_Scripts {
 			<?php if ( ! PixelCaffeine()->is_debug_mode() ) : ?>
 			!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 				n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-				n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+				n.push=n;n.loaded=!0;n.version='2.0';n.agent='dvpixelcaffeinewordpress';n.queue=[];t=b.createElement(e);t.async=!0;
 				t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 				document,'script','https://connect.facebook.net/en_US/fbevents.js');
 			<?php else : ?>

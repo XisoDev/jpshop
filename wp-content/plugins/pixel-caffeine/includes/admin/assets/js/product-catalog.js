@@ -2,12 +2,13 @@
  * UI scripts for admin settings page
  */
 
+import $ from 'jquery';
 import Utils from './utils';
 import Config from './config';
 import Common from './common';
 import 'select2';
 
-jQuery(document).ready(function($){
+jQuery(document).ready(function(){
     'use strict';
 
     let productStatusRefreshing = false,

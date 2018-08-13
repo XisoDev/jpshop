@@ -622,7 +622,8 @@ class AEPC_Admin {
 
 			// Convert array to work better after
 			foreach ( $stats as $i => $stat ) {
-				$stat->timestamp                                   = new DateTime( $stat->timestamp );
+				$stat->timestamp = new DateTime( $stat->timestamp );
+				$stat->timestamp->setTime(0, 0);
 				$stats[ $stat->timestamp->format( DATE_ISO8601 ) ] = $stat->data[0]->count;
 				unset( $stats[ $i ] );
 			}

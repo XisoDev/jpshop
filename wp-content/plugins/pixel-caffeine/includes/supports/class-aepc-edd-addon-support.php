@@ -393,7 +393,7 @@ class AEPC_Edd_Addon_Support extends AEPC_Addon_Factory implements ECommerceAddO
 			->set_price_tax( $product_price_tax )
 			->set_sale_price( null )
 			->set_sale_price_tax( null )
-			->set_checkout_url( $this->get_checkout_url() )
+			->set_checkout_url( home_url( '/edd-add/' . $product_id ) )
 			->set_if_needs_shipping( false )
 			->set_shipping_weight( null )
 			->set_shipping_weight_unit( null )
