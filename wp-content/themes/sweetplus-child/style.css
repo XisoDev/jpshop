@@ -83,11 +83,9 @@ Version: 3.6.0.1533112807
     bottom: 60px;
 }
 
-
 .page-template.page-template-page-blank .sidebars{
     display: none!IMportant;
 }
-
 .back-to-top.button.icon {
     right: 20px;
     bottom: 20px;
