@@ -530,11 +530,11 @@ class AEPC_Woocommerce_Addon_Support extends AEPC_Addon_Factory implements EComm
 			->set_image_url( $product_image_link )
 			->set_additional_image_urls( array_filter( $product_additional_image_ids ) )
 			->set_currency( get_woocommerce_currency() )
-			->set_price( $product_price )
-			->set_price_tax( $product_price_tax )
-			->set_sale_price( $product_sale_price )
-			->set_sale_price_tax( $product_sale_price_tax )
-			->set_checkout_url( $this->get_checkout_url() )
+			->set_price( $this->format_price( $product_price ) )
+			->set_price_tax( $this->format_price( $product_price_tax ) )
+			->set_sale_price( $this->format_price( $product_sale_price ) )
+			->set_sale_price_tax( $this->format_price( $product_sale_price_tax ) )
+			->set_checkout_url( $product_is_variation ? add_query_arg( [ 'variation_id' => $product_id, 'add-to-cart' => $product_parent_id ], $product->get_permalink() ) : add_query_arg( 'add-to-cart', $product_id, $product->get_permalink() ) )
 			->set_if_needs_shipping( $product->needs_shipping() )
 			->set_shipping_weight( $product->get_weight() )
 			->set_shipping_weight_unit( get_option( 'woocommerce_weight_unit' ) )
@@ -914,5 +914,25 @@ class AEPC_Woocommerce_Addon_Support extends AEPC_Addon_Factory implements EComm
 		$products = $this->do_query( $products_query, $product_catalog, new Metaboxes() );
 
 		return ! empty( $products );
+	}
+
+	/**
+	 * Format the price with fixed decimals following the WooCommerce settings
+	 *
+	 * @param $price
+	 *
+	 * @return string
+	 */
+	protected function format_price( $price ) {
+		$decimals = wc_get_price_decimals();
+		$negative = $price < 0;
+		$price    = apply_filters( 'raw_woocommerce_price', floatval( $negative ? $price * -1 : $price ) );
+		$price    = round( $price, $decimals );
+
+		if ( apply_filters( 'woocommerce_price_trim_zeros', false ) && $decimals > 0 ) {
+			$price = wc_trim_zeros( $price );
+		}
+
+		return $price;
 	}
 }

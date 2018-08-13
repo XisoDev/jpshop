@@ -2,11 +2,10 @@
  * UI scripts for admin settings page
  */
 
+import $ from 'jquery';
 import 'select2';
 import Config from './config';
 import Common from './common';
-
-const $ = jQuery;
 
 const Utils = {
 

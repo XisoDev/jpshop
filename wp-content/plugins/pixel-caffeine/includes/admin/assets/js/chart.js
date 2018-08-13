@@ -2,9 +2,10 @@
  * UI scripts for admin settings page
  */
 
+import $ from 'jquery';
 import Highcharts from 'highcharts/highstock';
 
-jQuery(document).ready(function($){
+jQuery(document).ready(function(){
     'use strict';
 
 	let chartBox = $('#activity-chart');

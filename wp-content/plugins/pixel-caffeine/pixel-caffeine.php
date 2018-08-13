@@ -7,7 +7,7 @@
  * Author URI:      https://adespresso.com/
  * Text Domain:     pixel-caffeine
  * Domain Path:     /languages
- * Version:         2.0.4
+ * Version:         2.0.5
  * WC requires at least: 3.0.0
  * WC tested up to: 3.3.5
  *
@@ -24,12 +24,12 @@ if ( ! class_exists( 'PixelCaffeine' ) ) :
 	 * Main PixelCaffeine Class.
 	 *
 	 * @class PixelCaffeine
-	 * @version	2.0.4
+	 * @version	2.0.5
 	 */
 	final class PixelCaffeine {
 
 		/** @var string PixelCaffeine version. */
-		public $version = '2.0.4';
+		public $version = '2.0.5';
 
 		/** @var PixelCaffeine The single instance of the class. */
 		protected static $_instance = null;

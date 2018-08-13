@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Pixel Caffeine package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Pixel Caffeine 2.0.4\n"
+"Project-Id-Version: Pixel Caffeine 2.0.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pixel-caffeine\n"
-"POT-Creation-Date: 2018-04-12 12:51:18+00:00\n"
+"POT-Creation-Date: 2018-08-02 17:15:11+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-Bookmarks: \n"
 "X-Textdomain-Support: yes\n"
-"X-Generator: grunt-wp-i18n1.0.1\n"
+"X-Generator: grunt-wp-i18n1.0.2\n"
 
 #: includes/admin/class-aepc-admin-ajax.php:449
 #: includes/admin/class-aepc-admin-ca.php:837
@@ -575,65 +575,65 @@ msgstr ""
 msgid "14 Days"
 msgstr ""
 
-#: includes/admin/class-aepc-admin.php:699
+#: includes/admin/class-aepc-admin.php:700
 msgid "<strong>RSS Error</strong>: %s"
 msgstr ""
 
-#: includes/admin/class-aepc-admin.php:711
+#: includes/admin/class-aepc-admin.php:712
 msgid ""
 "An error has occurred, which probably means the feed is down. Try again "
 "later."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:143
+#: includes/admin/class-aepc-facebook-adapter.php:154
 msgid "Empty Token"
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:153
+#: includes/admin/class-aepc-facebook-adapter.php:164
 msgid "Expired Token"
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:161
+#: includes/admin/class-aepc-facebook-adapter.php:172
 msgid "Invalid login, please try again."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:194
+#: includes/admin/class-aepc-facebook-adapter.php:205
 msgid "Please, grant the permissions requested"
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:196
+#: includes/admin/class-aepc-facebook-adapter.php:207
 msgid "Please, grant the permissions: %s"
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:199
+#: includes/admin/class-aepc-facebook-adapter.php:210
 msgid "Facebook authentication error"
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:213
+#: includes/admin/class-aepc-facebook-adapter.php:224
 msgid ""
 "<strong>Facebook connected</strong> Your facebook account is properly "
 "connected now."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:365
+#: includes/admin/class-aepc-facebook-adapter.php:376
 msgid ""
 "Please, connect your facebook account to make operations to the custom "
 "audiences of your Ad account."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:410
+#: includes/admin/class-aepc-facebook-adapter.php:421
 msgid ""
 "Something went wrong during the connection with Facebook API. Please, try "
 "to %1$srefresh the page%2$s."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:423
+#: includes/admin/class-aepc-facebook-adapter.php:434
 msgid ""
 "Cannot save on facebook account because of something gone wrong during "
 "facebook connection."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:429
+#: includes/admin/class-aepc-facebook-adapter.php:440
 msgid ""
 "The request goes in error from your server due by some oldest version of "
 "\"cUrl\" package. Please, ask to your hosting to upgrade it in order to fix "
@@ -642,86 +642,86 @@ msgid ""
 "service, to give their more details about the issue."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:445
+#: includes/admin/class-aepc-facebook-adapter.php:456
 msgid "Facebook connection timed out. Please, login again from %shere%s"
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:468
+#: includes/admin/class-aepc-facebook-adapter.php:479
 msgid ""
 "Facebook connection timed out or you need to authorize again. Please, login "
 "again from %shere%s"
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:469
+#: includes/admin/class-aepc-facebook-adapter.php:480
 msgid "Permission error: %s"
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:470
+#: includes/admin/class-aepc-facebook-adapter.php:481
 msgid "This Ads action requires the user to be admin of the application."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:471
+#: includes/admin/class-aepc-facebook-adapter.php:482
 msgid "This Ads action requires the user to be admin of the ad account."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:472
+#: includes/admin/class-aepc-facebook-adapter.php:483
 msgid ""
 "The ad account is not enabled for usage in Ads API. Please add it in "
 "developers.facebook.com/apps -> select your app -> settings -> advanced -> "
 "advertising accounts -> Ads API."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:473
+#: includes/admin/class-aepc-facebook-adapter.php:484
 msgid "The facebook object you are trying to use does not exist."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:474
+#: includes/admin/class-aepc-facebook-adapter.php:485
 msgid "You have to extend permission for ads_read to complete the action."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:475
+#: includes/admin/class-aepc-facebook-adapter.php:486
 msgid "You have to extend permission for ads_management to complete the action."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:476
+#: includes/admin/class-aepc-facebook-adapter.php:487
 msgid "Failed to update the custom audience."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:477
+#: includes/admin/class-aepc-facebook-adapter.php:488
 msgid "Failed to create lookalike custom audience."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:478
+#: includes/admin/class-aepc-facebook-adapter.php:489
 msgid "Failed to create custom audience on your facebook account."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:479
+#: includes/admin/class-aepc-facebook-adapter.php:490
 msgid ""
 "Terms of service has not been accepted. To accept, go to "
 "https://www.facebook.com/ads/manage/customaudiences/tos.php"
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:480
+#: includes/admin/class-aepc-facebook-adapter.php:491
 msgid "Failed to delete custom audience because associated lookalikes exist."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:481
+#: includes/admin/class-aepc-facebook-adapter.php:492
 msgid ""
 "Terms of service has not been accepted. To accept, go to "
 "https://www.facebook.com/customaudiences/app/tos"
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:482
+#: includes/admin/class-aepc-facebook-adapter.php:493
 msgid ""
 "The corporate terms of service has not been accepted. To accept, go to "
 "https://business.facebook.com/ads/manage/customaudiences/tos.php"
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:483
+#: includes/admin/class-aepc-facebook-adapter.php:494
 msgid "Specified audience is too small."
 msgstr ""
 
-#: includes/admin/class-aepc-facebook-adapter.php:990
+#: includes/admin/class-aepc-facebook-adapter.php:998
 msgid ""
 "Unable to create a product catalog because there isn't any business ID "
 "associated to your Ad account."
@@ -866,7 +866,7 @@ msgid "Custom audiences"
 msgstr ""
 
 #: includes/admin/templates/general-settings.php:44
-#: includes/admin/templates/general-settings.php:143
+#: includes/admin/templates/general-settings.php:159
 #: includes/admin/templates/parts/panels/set-facebook-pixel.php:23
 msgid "Enable"
 msgstr ""
@@ -933,76 +933,84 @@ msgstr ""
 msgid "Add UTM tags as parameters in all Pixels if they exist."
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:141
+#: includes/admin/templates/general-settings.php:142
+msgid "Enable Advanced Matching"
+msgstr ""
+
+#: includes/admin/templates/general-settings.php:144
+msgid "Enable the advanced matching in the pixels."
+msgstr ""
+
+#: includes/admin/templates/general-settings.php:157
 msgid "Conversions"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:156
+#: includes/admin/templates/general-settings.php:172
 msgid "eCommerce Tracking is ON!"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:158
+#: includes/admin/templates/general-settings.php:174
 msgid "eCommerce Tracking is OFF!"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:166
+#: includes/admin/templates/general-settings.php:182
 msgid "eCommerce plugin detected"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:178
+#: includes/admin/templates/general-settings.php:194
 msgid "Track this eCommerce Conversions"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:179
+#: includes/admin/templates/general-settings.php:195
 msgid ""
 "Enable the DPA event you want to track for your website. Pixel Caffeine "
 "will automatically track it when they should from the supported plugins."
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:193
+#: includes/admin/templates/general-settings.php:209
 msgid "View product"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:206
+#: includes/admin/templates/general-settings.php:222
 msgid "Add to cart"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:219
+#: includes/admin/templates/general-settings.php:235
 msgid "View Checkout"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:232
+#: includes/admin/templates/general-settings.php:248
 msgid "Add payment info"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:245
+#: includes/admin/templates/general-settings.php:261
 #: includes/admin/templates/parts/forms/ca-filter.php:118
 msgid "Purchase"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:258
+#: includes/admin/templates/general-settings.php:274
 #: includes/admin/templates/parts/forms/ca-filter.php:124
 msgid "Lead"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:271
+#: includes/admin/templates/general-settings.php:287
 #: includes/admin/templates/parts/forms/ca-filter.php:130
 msgid "CompleteRegistration"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:281
+#: includes/admin/templates/general-settings.php:297
 msgid "eCommerce plugin not detected"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:283
+#: includes/admin/templates/general-settings.php:299
 msgid "You can still track custom conversions %shere%s"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:288
+#: includes/admin/templates/general-settings.php:304
 msgid "Supported plugins"
 msgstr ""
 
-#: includes/admin/templates/general-settings.php:307
+#: includes/admin/templates/general-settings.php:323
 #: includes/admin/templates/parts/modals/ca-edit.php:51
 #: includes/admin/templates/parts/modals/conversion-edit.php:51
 msgid "Save"

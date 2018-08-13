@@ -413,7 +413,7 @@ class ProductCatalogManager {
 		$product_catalog_name = $this->configuration()->get( Configuration::OPTION_FB_PRODUCT_CATALOG_NAME );
 		$product_feed_name = sprintf( 'Automatic product feed from %s', untrailingslashit( preg_replace( '/http(s)?:\/\//', '', home_url() ) ) );
 		$schedule_options = array(
-			'url' => $this->get_url(),
+			'url' => esc_url( $this->get_url() ),
 			'interval' => $this->configuration()->get( Configuration::OPTION_FB_PRODUCT_FEED_SCHEDULE_INTERVAL ),
 			'interval_count' => $this->configuration()->get( Configuration::OPTION_FB_PRODUCT_FEED_SCHEDULE_INTERVAL_COUNT ),
 			'day_of_week' => $this->configuration()->get( Configuration::OPTION_FB_PRODUCT_FEED_SCHEDULE_DAY_OF_WEEK ),
