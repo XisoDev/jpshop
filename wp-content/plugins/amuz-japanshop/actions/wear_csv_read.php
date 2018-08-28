@@ -356,10 +356,8 @@ if($_FILES['upfile']['name']!="") {
         $Q = '1';
         $R = '通常';
         $S = '1';
-        $T = $price;
-        if($sale_price==0)
-            $sale_price=$price;
-        $U = $sale_price;
+        $T = '500';
+        $U = '500';
         $V = 'その他';
         $W = '39';
         $X = 'FREE';
