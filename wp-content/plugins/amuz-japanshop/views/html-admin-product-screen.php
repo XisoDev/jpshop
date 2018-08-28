@@ -12,7 +12,7 @@ $site_code = getSiteOrderCode();
     <div class="postbox">
         <h2 class="hndle"><span>야후재팬</span></h2>
         <div class="inside">
-        <form id="wc-amuz-japanshop-yahoojapan" method="post" action="/wp-content/plugins/amuz-japanshop/actions/yahoo.php" enctype="multipart/form-data">
+        <form id="wc-amuz-japanshop-yahoojapan" method="post" action="../wp-content/plugins/amuz-japanshop/actions/yahoo.php" enctype="multipart/form-data">
             <h5>상품데이터 추출</h5>
             <input type="hidden" id="data_action_type" name="action" value="" />
             <?php wp_nonce_field( 'my-nonce-key','wc-am-jp-datacenter');?>
@@ -33,4 +33,24 @@ $site_code = getSiteOrderCode();
         </div>
     </div>
     </div>
+
+
+    <div class="postbox-container" style="margin-left : 10%;">
+        <div class="postbox">
+            <h2 class="hndle"><span> WEAR 엑셀 변환</span></h2>
+            <div class="inside">
+                <form id="wc-amuz-japanshop-wear" method="post" action="../wp-content/plugins/amuz-japanshop/actions/wear_csv_read.php" enctype="multipart/form-data">
+                    <h5>상품데이터 추출</h5>
+                    <input type="hidden" id="data_action_type" name="action" value="" />
+                    <?php wp_nonce_field( 'my-nonce-key','wc-am-jp-datacenter');?>
+                    페이지당 <input type="text" name="wear-list-count" value="100" size="5" /> 건 /
+                    <input type="text" name="wear-list-page" value="1" size="3" /> 페이지
+                    <h5>상품파일 업로드</h5>
+                    <input type="file" name="upfile" id="upfile" >
+                    <input type="submit" id="upload" value="다운로드" class="button action" />
+                    <br>
+                </form>
+                </div>
+            </div>
+        </div>
 </div>
