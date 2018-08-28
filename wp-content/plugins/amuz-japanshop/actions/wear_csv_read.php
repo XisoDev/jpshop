@@ -446,8 +446,10 @@ if($_FILES['upfile']['name']!="") {
         echo "<td>" . $rist[$i]['Z'] . "</td>";
         echo "<td>" . $rist[$i]['AA'] . "</td>";
         echo "<td>" . $rist[$i]['AB'] . "</td>";
-        echo $price = get_post_meta( $rist[$i]['D'], '_regular_price', true);
-        echo $url=get_permalink($rist[$i]['D']);
+        $product = new WC_Product($rist[$i]['D']);
+        echo $product->get_regular_price();
+        echo $product->get_sale_price();
+        echo $product->get_price();
         echo "</tr>";
         $b += $a;
     }
