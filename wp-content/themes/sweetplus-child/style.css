@@ -89,14 +89,6 @@ Version: 3.6.0.1533112807
     bottom: 20px;
 }
 
-.container-width, .full-width .ubermenu-nav, .container, .row{
-    max-width:1260px;
-}
-
-.row.row-small{
-    max-width:1245px;
-}
-
 /*
 .back-to-down.button.icon{
     right: 20px;

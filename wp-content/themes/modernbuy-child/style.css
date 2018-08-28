@@ -29,3 +29,11 @@ Updated: 2018-08-01 17:42:05
     right:10px;
     bottom: 60px;
 }
+
+.container-width, .full-width .ubermenu-nav, .container, .row{
+    max-width:1260px;
+}
+
+.row.row-small{
+    max-width:1245px;
+}
