@@ -1,5 +1,6 @@
 <?php
 global $wpdb;
+global $woocommerce;
 
 if($_FILES['upfile']['name']!="") {
 
@@ -445,9 +446,7 @@ if($_FILES['upfile']['name']!="") {
         echo "<td>" . $rist[$i]['Z'] . "</td>";
         echo "<td>" . $rist[$i]['AA'] . "</td>";
         echo "<td>" . $rist[$i]['AB'] . "</td>";
-        echo $product = wc_get_product($rist[$i]['A']);
-        echo $price = $product->get_price();
-        echo $sale_price = $product->get_sale_price();
+        echo $price = get_post_meta( $rist[$i]['D'], '_regular_price', true);
         echo $url=get_permalink($rist[$i]['D']);
         echo "</tr>";
         $b += $a;
