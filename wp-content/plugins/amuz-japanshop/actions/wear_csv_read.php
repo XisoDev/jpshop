@@ -366,7 +366,7 @@ if($_FILES['upfile']['name']!="") {
         $Z = $read[$i]['C'];
         $AA = 'サイトURL';
         $AB = '1';
-        $ID = $read[$i]['ID'];
+        $ID = $read[$i]['A'];
         $b += $a;
 
         $rist[$b] = array('A' => $A, 'B' => $B, 'C' => $C, 'D' => $D, 'E' => $E, 'F' => $F,
