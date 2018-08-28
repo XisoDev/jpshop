@@ -445,10 +445,10 @@ if($_FILES['upfile']['name']!="") {
         echo "<td>" . $rist[$i]['Z'] . "</td>";
         echo "<td>" . $rist[$i]['AA'] . "</td>";
         echo "<td>" . $rist[$i]['AB'] . "</td>";
-        echo $product = wc_get_product( $read[$i]['C']);
+        echo $product = wc_get_product( $rist[$i]['D']);
         echo $price = $product->get_price();
         echo $sale_price = $product->get_sale_price();
-        echo $url=get_permalink($read[$i]['C']);
+        echo $url=get_permalink($rist[$i]['D']);
         echo "</tr>";
         $b += $a;
     }
