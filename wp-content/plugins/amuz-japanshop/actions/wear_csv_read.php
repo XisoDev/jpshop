@@ -366,13 +366,13 @@ if($_FILES['upfile']['name']!="") {
         $Z = $read[$i]['C'];
         $AA = 'サイトURL';
         $AB = '1';
-
+        $ID = $read[$i]['ID'];
         $b += $a;
 
         $rist[$b] = array('A' => $A, 'B' => $B, 'C' => $C, 'D' => $D, 'E' => $E, 'F' => $F,
             'G' => $G, 'H' => $H, 'I' => $I, 'J' => $J, 'K' => $K, 'L' => $L, 'M' => $M,
             'N' => $N, 'O' => $O, 'P' => $P, 'Q' => $Q, 'R' => $R, 'S' => $S, 'T' => $T,
-            'U' => $U, 'V' => $V, 'W' => $W, 'X' => $X, 'Y' => $Y, 'Z' => $Z, 'AA' => $AA, 'AB' => $AB, 'NO' => $b);
+            'U' => $U, 'V' => $V, 'W' => $W, 'X' => $X, 'Y' => $Y, 'Z' => $Z, 'AA' => $AA, 'AB' => $AB, 'NO' => $b,'ID'=> $ID);
     }
     $MaxRow = $b;
 
@@ -412,7 +412,7 @@ if($_FILES['upfile']['name']!="") {
     <th>商品性別ID</th><th>ブランド名</th><th>ブランドID</th><th>親カテゴリ</th><th>親カテID</th><th>子カテゴリ</th>
     <th>子カテID</th><th>販売国</th><th>販売国ID</th><th>商品説明</th><th>販売タイプ</th><th>販売タイプID</th>
     <th>価格タイプ</th><th>価格タイプID</th><th>定価</th><th>セール価格</th><th>色</th><th>色ID</th><th>サイズ</th>
-    <th>サイズID</th><th>CS品番</th><th>ECサイト商品詳細ページURL</th><th>親アイテムフラグ</th>";
+    <th>サイズID</th><th>CS品番</th><th>ECサイト商品詳細ページURL</th><th>親アイテムフラグ</th><th>ID</th>";
 
     for ($i=$for; $i<=$limited; $i++) {
 
@@ -446,9 +446,12 @@ if($_FILES['upfile']['name']!="") {
         echo "<td>" . $rist[$i]['Z'] . "</td>";
         echo "<td>" . $rist[$i]['AA'] . "</td>";
         echo "<td>" . $rist[$i]['AB'] . "</td>";
-        $sku=$rist[$i]['D'];
-        $product_id = wc_get_product_id_by_sku( $sku );
-        echo $product_id;
+        echo "<td>" . $rist[$i]['ID'] . "</td>";
+        $product_id=$rist[$i]['ID'];
+        $product = new WC_Product($product_id);
+        echo $product->get_regular_price();
+        echo $product->get_sale_price();
+        echo $product->get_price();
         echo "</tr>";
         $b += $a;
     }
