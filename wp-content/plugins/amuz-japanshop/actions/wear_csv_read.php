@@ -1,6 +1,5 @@
 <?php
 global $wpdb;
-global $woocommerce;
 
 if($_FILES['upfile']['name']!="") {
 
@@ -448,10 +447,7 @@ if($_FILES['upfile']['name']!="") {
         echo "<td>" . $rist[$i]['AB'] . "</td>";
         echo "<td>" . $rist[$i]['ID'] . "</td>";
         $product_id=$rist[$i]['ID'];
-        $product = new WC_Product($product_id);
-        echo $product->get_regular_price();
-        echo $product->get_sale_price();
-        echo $product->get_price();
+        echo $link = get_permalink( $product_id );
         echo "</tr>";
         $b += $a;
     }
