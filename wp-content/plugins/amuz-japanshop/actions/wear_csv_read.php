@@ -446,10 +446,9 @@ if($_FILES['upfile']['name']!="") {
         echo "<td>" . $rist[$i]['Z'] . "</td>";
         echo "<td>" . $rist[$i]['AA'] . "</td>";
         echo "<td>" . $rist[$i]['AB'] . "</td>";
-        $product = new WC_Product($rist[$i]['D']);
-        echo $product->get_regular_price();
-        echo $product->get_sale_price();
-        echo $product->get_price();
+        $sku=$rist[$i]['D'];
+        $product_id = wc_get_product_id_by_sku( $sku );
+        echo $product_id;
         echo "</tr>";
         $b += $a;
     }
