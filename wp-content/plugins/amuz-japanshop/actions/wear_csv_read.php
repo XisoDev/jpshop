@@ -336,6 +336,7 @@ if($_FILES['upfile']['name']!="") {
         if ($read[$i]['H'] == "") {
             $description = "商品説明";
         } else $description = $read[$i]['H'];
+
         $A = $read[$i]['D'];
         $B = '';
         $C = "59473";
@@ -355,8 +356,10 @@ if($_FILES['upfile']['name']!="") {
         $Q = '1';
         $R = '通常';
         $S = '1';
-        $T = '500';
-        $U = '500';
+        $T = $price;
+        if($sale_price==0)
+            $sale_price=$price;
+        $U = $sale_price;
         $V = 'その他';
         $W = '39';
         $X = 'FREE';
@@ -399,11 +402,12 @@ if($_FILES['upfile']['name']!="") {
     $Remain = ($MaxRow - $limit*$page);
     $a=1;
     $b=2;
+
     echo "<div align='center'>";
     echo "총 상품 '".$MaxRow."' 개 중<br>";
     echo "선택된 상품들은 '".$wearpage."' 페이지의 총 '".$Remainpage."' 개 입니다.<br>";
     echo "남은 상품은 '".$Remain."' 개 입니다.<br>";
-    /*
+
     echo "<table border='1'>";
     echo "<th>No</th><th>商品名</th><th>バーコードNo</th><th>取り扱いECサイトID</th><th>ブランド品番</th><th>商品性別</th>
     <th>商品性別ID</th><th>ブランド名</th><th>ブランドID</th><th>親カテゴリ</th><th>親カテID</th><th>子カテゴリ</th>
@@ -411,26 +415,8 @@ if($_FILES['upfile']['name']!="") {
     <th>価格タイプ</th><th>価格タイプID</th><th>定価</th><th>セール価格</th><th>色</th><th>色ID</th><th>サイズ</th>
     <th>サイズID</th><th>CS品番</th><th>ECサイト商品詳細ページURL</th><th>親アイテムフラグ</th>";
 
+    for ($i=$for; $i<=$limited; $i++) {
 
-    $limit = 100;
-    $page = 1;
-    if ($page == 1) {
-        $for = ($limit * $page) - ($limit) + 1;
-        if ($limit * $page > $MaxRow)
-            $limit = $MaxRow;
-        else $limit = ($limit * $page) - $page;
-    } else {
-        $for = (($limit * $page) - ($limit) - ($page - 1));
-        if ($limit * $page > $MaxRow)
-            $limit = $MaxRow;
-        else$limit = ($limit * $page) - $page;
-    }
-
-    $a = 1;
-    $b = 2;
-
-    for ($i = $for; $i <= $limit - 1; $i++) {
-        if ($rist[$i]['A'] == "") break;
         echo "<tr>";
         echo "<td>" . $b . "</td>";
         echo "<td>" . $rist[$i]['A'] . "</td>";
@@ -461,12 +447,16 @@ if($_FILES['upfile']['name']!="") {
         echo "<td>" . $rist[$i]['Z'] . "</td>";
         echo "<td>" . $rist[$i]['AA'] . "</td>";
         echo "<td>" . $rist[$i]['AB'] . "</td>";
+        echo $product = wc_get_product( $read[$i]['C']);
+        echo $price = $product->get_price();
+        echo $sale_price = $product->get_sale_price();
+        echo $url=get_permalink($read[$i]['C']);
         echo "</tr>";
         $b += $a;
     }
 
     echo "</table>";
-*/
+
     $rist1 = urlencode(serialize($rist));
     echo "<form method='POST' action='wear_csv_save.php'>";
     echo "<input type='hidden' name='rist' value='$rist1'>
