@@ -40,7 +40,7 @@ $site_code = getSiteOrderCode();
             <h2 class="hndle"><span> WEAR 엑셀 변환</span></h2>
             <div class="inside">
                 <form id="wc-amuz-japanshop-wear" method="post" action="../wp-content/plugins/amuz-japanshop/actions/wear_csv_read.php" enctype="multipart/form-data">
-                    <h5>상품데이터 추출</h5>
+                    <h5>상품데이터 wear 업로드 파일로 변환</h5>
                     <input type="hidden" id="data_action_type" name="action" value="" />
                     <?php wp_nonce_field( 'my-nonce-key','wc-am-jp-datacenter');?>
                     페이지당 <input type="text" name="wear-list-count" value="100" size="5" /> 건 /

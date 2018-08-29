@@ -1,5 +1,6 @@
 <?php
 global $wpdb;
+global $product;
 
 if($_FILES['upfile']['name']!="") {
 
@@ -374,10 +375,13 @@ if($_FILES['upfile']['name']!="") {
             'U' => $U, 'V' => $V, 'W' => $W, 'X' => $X, 'Y' => $Y, 'Z' => $Z, 'AA' => $AA, 'AB' => $AB, 'NO' => $b,'ID'=> $ID);
     }
     $MaxRow = $b;
-
-    $limit=$wearcount;
+    if($wearcount>100){
+        $limit = 100;
+    }
+    else $limit=$wearcount;
     $page=$wearpage;
     $Remainpage=$limit;
+
     if($page==1){
         $for=1;
         if($limit*$page > $MaxRow) {
@@ -403,8 +407,9 @@ if($_FILES['upfile']['name']!="") {
 
     echo "<div align='center'>";
     echo "총 상품 '".$MaxRow."' 개 중<br>";
-    echo "선택된 상품들은 '".$wearpage."' 페이지의 총 '".$Remainpage."' 개 입니다.<br>";
-    echo "남은 상품은 '".$Remain."' 개 입니다.<br>";
+    echo "선택된 상품들은 '".$wearpage."' 페이지의 총 '".($Remainpage)."' 개 에서 <br>'1'번째 카테고리 열을 제외한
+     '".($Remainpage-1)."'개 입니다.<br>";
+    echo "남은 상품은 '".($Remain+1)."' 개 입니다.<br>";
 
     echo "<table border='1'>";
     echo "<th>No</th><th>商品名</th><th>バーコードNo</th><th>取り扱いECサイトID</th><th>ブランド品番</th><th>商品性別</th>
@@ -412,43 +417,54 @@ if($_FILES['upfile']['name']!="") {
     <th>子カテID</th><th>販売国</th><th>販売国ID</th><th>商品説明</th><th>販売タイプ</th><th>販売タイプID</th>
     <th>価格タイプ</th><th>価格タイプID</th><th>定価</th><th>セール価格</th><th>色</th><th>色ID</th><th>サイズ</th>
     <th>サイズID</th><th>CS品番</th><th>ECサイト商品詳細ページURL</th><th>親アイテムフラグ</th><th>ID</th>";
-
+    $p=1;
     for ($i=$for; $i<=$limited; $i++) {
 
-        echo "<tr>";
-        echo "<td>" . $b . "</td>";
-        echo "<td>" . $rist[$i]['A'] . "</td>";
-        echo "<td>" . $rist[$i]['B'] . "</td>";
-        echo "<td>" . $rist[$i]['C'] . "</td>";
-        echo "<td>" . $rist[$i]['D'] . "</td>";
-        echo "<td>" . $rist[$i]['E'] . "</td>";
-        echo "<td>" . $rist[$i]['F'] . "</td>";
-        echo "<td>" . $rist[$i]['G'] . "</td>";
-        echo "<td>" . $rist[$i]['H'] . "</td>";
-        echo "<td>" . $rist[$i]['I'] . "</td>";
-        echo "<td>" . $rist[$i]['J'] . "</td>";
-        echo "<td>" . $rist[$i]['K'] . "</td>";
-        echo "<td>" . $rist[$i]['L'] . "</td>";
-        echo "<td>" . $rist[$i]['M'] . "</td>";
-        echo "<td>" . $rist[$i]['N'] . "</td>";
-        echo "<td>" . $rist[$i]['O'] . "</td>";
-        echo "<td>" . $rist[$i]['P'] . "</td>";
-        echo "<td>" . $rist[$i]['Q'] . "</td>";
-        echo "<td>" . $rist[$i]['R'] . "</td>";
-        echo "<td>" . $rist[$i]['S'] . "</td>";
-        echo "<td>" . $rist[$i]['T'] . "</td>";
-        echo "<td>" . $rist[$i]['U'] . "</td>";
-        echo "<td>" . $rist[$i]['V'] . "</td>";
-        echo "<td>" . $rist[$i]['W'] . "</td>";
-        echo "<td>" . $rist[$i]['X'] . "</td>";
-        echo "<td>" . $rist[$i]['Y'] . "</td>";
-        echo "<td>" . $rist[$i]['Z'] . "</td>";
-        echo "<td>" . $rist[$i]['AA'] . "</td>";
-        echo "<td>" . $rist[$i]['AB'] . "</td>";
-        echo "<td>" . $rist[$i]['ID'] . "</td>";
-        $product_id=$rist[$i]['ID'];
-        echo $link = get_permalink( $product_id );
-        echo "</tr>";
+
+        if($p>6) {
+            if($p<$limited-6) {
+                if($p==(round($limited/2))){
+                    echo "<tr><th colspan='30'> <h2 align='center'>이하 생략</h2> </th></tr>";
+                }
+                $p += 1;
+                $b += $a;
+                continue;
+            }
+        }
+            echo "<tr>";
+            echo "<td>" . $b . "</td>";
+            echo "<td>" . $rist[$i]['A'] . "</td>";
+            echo "<td>" . $rist[$i]['B'] . "</td>";
+            echo "<td>" . $rist[$i]['C'] . "</td>";
+            echo "<td>" . $rist[$i]['D'] . "</td>";
+            echo "<td>" . $rist[$i]['E'] . "</td>";
+            echo "<td>" . $rist[$i]['F'] . "</td>";
+            echo "<td>" . $rist[$i]['G'] . "</td>";
+            echo "<td>" . $rist[$i]['H'] . "</td>";
+            echo "<td>" . $rist[$i]['I'] . "</td>";
+            echo "<td>" . $rist[$i]['J'] . "</td>";
+            echo "<td>" . $rist[$i]['K'] . "</td>";
+            echo "<td>" . $rist[$i]['L'] . "</td>";
+            echo "<td>" . $rist[$i]['M'] . "</td>";
+            echo "<td>" . $rist[$i]['N'] . "</td>";
+            echo "<td>" . $rist[$i]['O'] . "</td>";
+            echo "<td>" . $rist[$i]['P'] . "</td>";
+            echo "<td>" . $rist[$i]['Q'] . "</td>";
+            echo "<td>" . $rist[$i]['R'] . "</td>";
+            echo "<td>" . $rist[$i]['S'] . "</td>";
+            echo "<td>" . $rist[$i]['T'] . "</td>";
+            echo "<td>" . $rist[$i]['U'] . "</td>";
+            echo "<td>" . $rist[$i]['V'] . "</td>";
+            echo "<td>" . $rist[$i]['W'] . "</td>";
+            echo "<td>" . $rist[$i]['X'] . "</td>";
+            echo "<td>" . $rist[$i]['Y'] . "</td>";
+            echo "<td>" . $rist[$i]['Z'] . "</td>";
+            echo "<td>" . $rist[$i]['AA'] . "</td>";
+            echo "<td>" . $rist[$i]['AB'] . "</td>";
+            echo "<td>" . $rist[$i]['ID'] . "</td>";
+            $product_id = $rist[$i]['ID'];
+            echo "</tr>";
+        $p+=1;
         $b += $a;
     }
 
