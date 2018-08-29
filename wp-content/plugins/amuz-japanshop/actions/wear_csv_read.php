@@ -421,8 +421,8 @@ if($_FILES['upfile']['name']!="") {
     for ($i=$for; $i<=$limited; $i++) {
 
 
-        if($p>6) {
-            if($p<$limited-6) {
+        if($p>4) {
+            if($p<$limited-2) {
                 if($p==(round($limited/2))){
                     echo "<tr><th colspan='30'> <h2 align='center'>이하 생략</h2> </th></tr>";
                 }
