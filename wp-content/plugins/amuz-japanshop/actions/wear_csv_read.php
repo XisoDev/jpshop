@@ -422,8 +422,8 @@ if($_FILES['upfile']['name']!="") {
 
 
         if($p>4) {
-            if($p<$limited-2) {
-                if($p==(round($limited/2))){
+            if($p<$limit-2) {
+                if($p==(round($limit/2))){
                     echo "<tr><th colspan='30'> <h2 align='center'>이하 생략</h2> </th></tr>";
                 }
                 $p += 1;
