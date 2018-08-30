@@ -78,15 +78,15 @@ Version: 3.6.0.1533112807
 }
 /* Q&A 서비스 버튼 css */
 .sc-bwzfXH.cgzdsS{
-    position: fixed;
-    bottom: 60px;
+    position: fixed !important;
+    bottom: 60px !important;
 }
 .page-template.page-template-page-blank .sidebars{
-    display: none!IMportant;
+    display: none!important;
 }
 .back-to-top.button.icon {
-    right: 20px;
-    bottom: 20px;
+    right: 20px !important;
+    bottom: 20px !important;
 }
 
 
