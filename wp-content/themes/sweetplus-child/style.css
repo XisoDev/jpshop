@@ -88,6 +88,24 @@ Version: 3.6.0.1533112807
     right: 20px;
     bottom: 20px;
 }
+ul {
+    list-style: none;
+}
+.color-chip {
+    text-align: left;
+    margin: 0px;
+}
+.color-chip li {
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    margin: 0 1px;
+}
+.col-inner ul li{
+    margin-left:0;
+    border-radius: 50%;
+}
+
 
 /*
 .back-to-down.button.icon{
