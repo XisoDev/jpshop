@@ -70,7 +70,7 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
 
             <!-- color-chip -->
             <?php
-            /*$color = $product->get_attribute( 'color' );
+            $color = $product->get_attribute( 'color' );
             if(strpos($color , '|'))        $array = explode("|", $color);
             elseif(strpos($color , ','))    $array = explode(",", $color);
             else $array[] = $color;
@@ -80,12 +80,12 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
                 echo "<ul class='color-chip'>";
                 for($i=0; $i<=($color_count-1);$i++) {
                     ?>
-                    <li style="background:<?=$array[$i]?>;border: 1px solid;"></li>
+                    <li style="background:<?=$array[$i] ?>;border: 1px solid;"></li>
                     <?php
                 }
                 echo "</ul>";
             }
-*/
+
 				echo '<div class="title-wrapper">';
 				do_action( 'woocommerce_shop_loop_item_title' );
 				echo '</div>';
