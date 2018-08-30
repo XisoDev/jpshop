@@ -70,6 +70,7 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
 
             <!-- color-chip -->
             <?php
+            /*
             $color = $product->get_attribute( 'color' );
             if(strpos($color , '|'))        $array = explode("|", $color);
             elseif(strpos($color , ','))    $array = explode(",", $color);
@@ -85,7 +86,7 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
                 }
                 echo "</ul>";
             }
-
+*/
 				echo '<div class="title-wrapper">';
 				do_action( 'woocommerce_shop_loop_item_title' );
 				echo '</div>';
