@@ -37,12 +37,3 @@ Updated: 2018-08-01 17:42:05
 .row.row-small{
     max-width:1245px;
 }
-
-.large-3 {
-    max-width: 20% !important;
-    flex-basis: 20% !important;
-}
-.large-9 {
-    max-width: 80% !important;
-    flex-basis: 80% !important;
-}
