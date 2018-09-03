@@ -24,7 +24,8 @@ Updated: 2018-08-01 17:42:05
         font-size:17px;
     }
 }
-.sc-bwzfXH.eCZfBk{
+/*QA 버튼 위치 조정*/
+#ch-plugin-core:nth-of-type(3){
     position: fixed !important;
     right:10px !important;
     bottom: 60px !important;
@@ -36,4 +37,14 @@ Updated: 2018-08-01 17:42:05
 
 .row.row-small{
     max-width:1245px;
+}
+
+/* 카테고리, 상품 썸네일 사이즈 조정 */
+.row.category-pagae-row.col.large-3{
+    max-width: 20%;
+    flex-basis: 20%;
+}
+.row.category-pagae-row.col.large-9{
+    max-width: 80%;
+    flex-basis: 80%;
 }
