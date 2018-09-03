@@ -76,11 +76,13 @@ Version: 3.6.0.1533112807
         flex-basis: 50%;
     }
 }
-/* Q&A 서비스 버튼 css */
-
-div#ch-plugin-core div:nth-of-type(3){
-    position: fixed !important;
-    bottom: 60px !important;
+/* Only PC */
+@media all and (min-width:851px) {
+    /* Q&A 서비스 버튼 css */
+    div#ch-plugin-core div:nth-of-type(3) {
+        position: fixed !important;
+        bottom: 60px !important;
+    }
 }
 /*페이지 템플릿 PULL 상태일떄 사이드바 비출력*/
 .page-template.page-template-page-blank .sidebars{
