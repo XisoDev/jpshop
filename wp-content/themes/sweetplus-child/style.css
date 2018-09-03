@@ -77,13 +77,17 @@ Version: 3.6.0.1533112807
     }
 }
 /* Q&A 서비스 버튼 css */
-.sc-bwzfXH.knYKBQ{
+
+div#ch-plugin-core div:nth-of-type(3){
     position: fixed !important;
     bottom: 60px !important;
 }
+/*페이지 템플릿 PULL 상태일떄 사이드바 비출력*/
 .page-template.page-template-page-blank .sidebars{
-    display: none!important;
+    display: none;
 }
+
+/* 스크롤 top 버튼 css */
 .back-to-top.button.icon {
     right: 20px !important;
     bottom: 20px !important;
