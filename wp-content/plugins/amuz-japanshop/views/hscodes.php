@@ -40,7 +40,6 @@ function getHsValues($hs_codes, $items){
         $prices = $item_data['total'];
         #주문 된 상품의 갯수
         $quantity = $item_data['quantity'];
-
         #관세 값이 적용된 총 가격
         $item_total = 0;
 
@@ -166,7 +165,38 @@ function getHsValues($hs_codes, $items){
         $oHSInfo['product_id'][$item_data['product_id']]=$tax;
         $oHSInfo['order_id'][$order_id]=$oHSInfo['product_id'];
 
+
+
+
+        //orderlist
+        //카운트
+        $oHSInfo['order_count']+=count($item_data);
+
+        $oHSInfo['tax_total']+= $tax;
+        //판매대행수수료
+        $sale_fee = $prices*0.08;
+        //일본소비세
+        $japan_fee = $prices*(1+0.08);
+
+        $oHSInfo['sale_fee']+=$sale_fee;
+        $oHSInfo['japan_fee']+=$japan_fee;
+        $oHSInfo['prices']+=$prices;
+
+        // 애드프린트수입가 => 판매가(-소비세 - 수수료) , 국제송료 250 ￥/kg 고정
+        // 제휴사 공급가 => (애드프린트수입가 -(국제송료 × (1 + 관세율)) / (1 + 관세율)
+        //제휴사 공급가
+        $addprint=($prices-(floor($prices*0.08)+round(floor($prices*0.08)/1.08)));
+        $oHSInfo['addprint']=($addprint-(250*(1+($tax/100))))/(1+($tax/100));
+        //티쿤 요구 관세 (제휴사 공급가 + 국제송료(250))*관세율
+        $oHSInfo['tqoon_tax']+=round($oHSInfo['addprint']+250)*($tax/100);
+
+        //관세 확률 합
+        $oHSInfo['tqoon_per']+=$item_tax;
     }
+    //카운트 총합
+    $oHSInfo['total_count']+=$oHSInfo['item_count'];
+    //관세 확률 총합
+    $oHSInfo['tqoon_itemtax_total']+=$oHSInfo['tqoon_per'];
     return $oHSInfo;
 }
 ?>

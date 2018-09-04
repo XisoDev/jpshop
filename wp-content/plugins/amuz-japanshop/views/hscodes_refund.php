@@ -40,9 +40,9 @@ function getHsRefundValues($hs_codes_refund, $refund)
             $hscode_refund = get_post_meta($product_id, '수출용_관세코드', true);
             $hs_in_refund = $hs_codes_refund[$hscode_refund];
 
-            #주문 된 상품가격
+            #환불 된 상품가격
             $refund = $item_data['total'] * -1;
-            #주문 된 상품의 갯수
+            #환불 된 상품의 갯수
             $refund_quantity = $item_data['quantity'] * -1;
 
             #관세 값이 적용된 총 가격
@@ -152,6 +152,17 @@ function getHsRefundValues($hs_codes_refund, $refund)
             $oHsRefundInfo['total'] += $item_total;
             $oHsRefundInfo['tax'] += round($item_tax);
             $oHsRefundInfo['item_data'] = $item_data;
+
+            $readdprint=($refund-(round($refund*0.08)+round(round($refund*0.08)/1.08)));
+            $oHsRefundInfo['addprint']=($readdprint-(250*(1+($tax/100))))/(1+($tax/100));
+
+            //티쿤 요구 관세 (제휴사 공급가 + 국제송료(250))*관세율
+            $oHsRefundInfo['tqoon_tax']+=round($oHsRefundInfo['addprint']+250)*($tax/100);
+
+            //관세 확률
+
+
+            $oHsRefundInfo['tqoon_per']+=$item_tax;
         }
     }
     return $oHsRefundInfo;

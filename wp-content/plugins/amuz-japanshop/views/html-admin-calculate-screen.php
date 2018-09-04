@@ -218,7 +218,6 @@ echo "<div class='V1'>";
     $payment = get_payment_method($order->payment_method);
     $token = new WC_Payment_Token_CC;
     echo $token->get_gateway_id($this->id);
-    ##카드 정보가 안받아와져!
 
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
     #주문번호
@@ -251,25 +250,18 @@ echo "<div class='V1'>";
     $itemtotal = $order->get_subtotal() - $discount;
 
     # 상품 수수료 계산
-    foreach ($order->get_items() as $item_key => $item_values) {
-        $item_data = $item_values->get_data();
-        $line_total = $item_data['total'];
-        $m_tax += round($line_total * 0.08);
-        $m_excise += round(($line_total - $m_tax) * 0.08);
-    }
-    #쿠폰의 수수료 계산
-    $discounttax = round($discount * 0.08);
-    $discountexcise = round(($discount-$discounttax)*0.08);
-    #상품 수수료 - 쿠폰 수수료
-    $totalm_tax = $m_tax - $discounttax;
-    $totalm_excise = $m_excise - $discountexcise;
+
+    //소비세
+    $totalm_excise =round(($itemtotal*0.08)/1.08);
+    //수수료
+    $totalm_tax=round($itemtotal*0.08);
 
     #환불 수수료 계산
     foreach ($order->get_refunds() as $item_key => $item_values) {
         $item_data = $item_values->get_data();
         $line_amount = $refund;
         $total_tax += round($line_amount * 0.08);                  # 총 결제금액의 수수료 계산
-        $total_excise += round(($line_amount - $total_tax) * 0.08); # 소비세 계산
+        $total_excise += round($total_tax / 1.08); # 소비세 계산
     }
     $pay_refund = $refunds + $shipping_refunded;
     if ($payment == '편의점') {
@@ -291,7 +283,7 @@ echo "<div class='V1'>";
         elseif ($payment == '기타')$pg_tax = 0;
         $pg_tax = $pg_tax*1.08;
 
-    $zeusm = $order->get_total();
+    $zeusm = $itemtotal;
         if ($payment == '편의점') {
             if($zeusm < 1)$pgm_tax = 0;
             elseif($zeusm < 2000) $pgm_tax = 125;
@@ -307,9 +299,11 @@ echo "<div class='V1'>";
             else $pgm_tax = $zeusm * 3.35 / 100;
         }
         elseif ($payment == '은행결제') $pgm_tax = ($zeusm * 1.50) / 100;
-        elseif ($payment == '대인결제') $pgm_tax = 0;
+        elseif ($payment == '대인결제'){$pgm_tax = 0;
+            $totalm_excise = 0;
+        }
         elseif ($payment == '기타') $pgm_tax=0;
-        $pgm_tax=$pgm_tax*1.08;
+        $pgm_tax=round(round($pgm_tax)*1.08);
 
     $oHSInfo = getHsValues($hs_codes, $order->get_items());
 
@@ -347,8 +341,8 @@ echo "<div class='V1'>";
     # 정산금액
     $jungsan = $total_calculate - $total_m_calculate;
 
-    $oHSInfo_refund_tax = number_format($oHsRefundInfo['tax']);
-    $oHSInfo_tax = number_format($oHSInfo['tax']);
+    $oHSInfo_refund_tax = number_format($oHsRefundInfo['tqoon_tax']);
+    $oHSInfo_tax = number_format($oHSInfo['tqoon_tax']);
     if($itemtotal==0){
         $totalm_excise = 0;
         $totalm_tax = 0;
@@ -419,10 +413,10 @@ echo "<div class='V1'>";
     # - 수수료 합계
     $total['m_tax'] += $totalm_tax;
 
-    $total['customs'] += $oHsRefundInfo['tax'];
+    $total['customs'] += $oHsRefundInfo['tqoon_tax'];
 
     #-관세 총합
-    $total['m_customs'] += $oHSInfo['tax'];
+    $total['m_customs'] += $oHSInfo['tqoon_tax'];
 
     # 총 합계 +합계금액
     $total['plus'] += $total_calculate;
