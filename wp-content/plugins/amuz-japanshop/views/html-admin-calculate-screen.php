@@ -237,8 +237,9 @@ echo "<div class='V1'>";
     if($refunds&&$tax_refunded&&$shipping_refunded) $zeus_fee = $refunds-$tax_refunded-$shipping_refunded-$itemtotal;
     else $zeus_fee=0;
     #환불 받은 상품 가격
-    $refund = $refunds - $tax_refunded - $shipping_refunded - $zeus_fee;
+    $refund_subtotal = $refunds - $tax_refunded - $shipping_refunded - $zeus_fee;
 
+    $refund = $refund_subtotal + round ($refund_subtotal * 0.08);
 
     # + 배송비용
     $delivery = $order->get_shipping_total();
@@ -247,8 +248,8 @@ echo "<div class='V1'>";
     $discount = $order->get_discount_total();
     $order->get_subtotal() ;
     # 상품가
-    $itemtotal = $order->get_subtotal() - $discount;
-
+    $item_subtotal = $order->get_subtotal() - $discount;
+    $itemtotal = $item_subtotal+round($item_subtotal*0.08);
     # 상품 수수료 계산
 
     //소비세
@@ -333,10 +334,10 @@ echo "<div class='V1'>";
     if($custom_delivery== "") $custom_delivery = 0;
 
     #  + 합계금액
-    $total_calculate = $itemtotal + $delivery + $total_tax + $total_excise + $pg_tax + $oHsRefundInfo['tax'];
+    $total_calculate = ($itemtotal + $delivery + $total_tax + $total_excise + $pg_tax + round($oHsRefundInfo['tqoon_tax']));
 
     # - 합계금액
-    $total_m_calculate = $refund + $totalm_tax + $totalm_excise + $oHSInfo['tax'] + $pgm_tax + $remittance + $custom_delivery;
+    $total_m_calculate = $refund + $totalm_tax + $totalm_excise +  $oHSInfo['tqoon_tax'] + $pgm_tax + $remittance + $custom_delivery;
 
     # 정산금액
     $jungsan = $total_calculate - $total_m_calculate;
@@ -365,7 +366,6 @@ echo "<div class='V1'>";
     #배송비
     echo "<td>￥" . number_format($delivery) . "</td>";
     #상품정산
-
     echo "<td>￥" . number_format($itemtotal) . "</td>";
 
     #PG 결제 수수료
