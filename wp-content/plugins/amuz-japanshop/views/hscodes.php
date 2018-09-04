@@ -185,7 +185,8 @@ function getHsValues($hs_codes, $items){
         // 애드프린트수입가 => 판매가(-소비세 - 수수료) , 국제송료 250 ￥/kg 고정
         // 제휴사 공급가 => (애드프린트수입가 -(국제송료 × (1 + 관세율)) / (1 + 관세율)
         //제휴사 공급가
-        $addprint=($prices-(floor($prices*0.08)+round(floor($prices*0.08)/1.08)));
+        $product_price = $prices+round($prices*0.08);
+        $addprint=($product_price-(floor($product_price*0.08)+round(floor($product_price*0.08)/1.08)));
         $oHSInfo['addprint']=($addprint-(250*(1+($tax/100))))/(1+($tax/100));
         //티쿤 요구 관세 (제휴사 공급가 + 국제송료(250))*관세율
         $oHSInfo['tqoon_tax']+=round($oHSInfo['addprint']+250)*($tax/100);

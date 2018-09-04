@@ -153,7 +153,8 @@ function getHsRefundValues($hs_codes_refund, $refund)
             $oHsRefundInfo['tax'] += round($item_tax);
             $oHsRefundInfo['item_data'] = $item_data;
 
-            $readdprint=($refund-(round($refund*0.08)+round(round($refund*0.08)/1.08)));
+            $product_refund=$refund+round($refund*0.08);
+            $readdprint=($product_refund-(round($product_refund*0.08)+round(round($product_refund*0.08)/1.08)));
             $oHsRefundInfo['addprint']=($readdprint-(250*(1+($tax/100))))/(1+($tax/100));
 
             //티쿤 요구 관세 (제휴사 공급가 + 국제송료(250))*관세율
