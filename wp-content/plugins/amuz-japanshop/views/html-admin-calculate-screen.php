@@ -301,7 +301,6 @@ echo "<div class='V1'>";
         }
         elseif ($payment == '은행결제') $pgm_tax = ($zeusm * 1.50) / 100;
         elseif ($payment == '대인결제'){$pgm_tax = 0;
-            $totalm_excise = 0;
         }
         elseif ($payment == '기타') $pgm_tax=0;
         $pgm_tax=round(round($pgm_tax)*1.08);
