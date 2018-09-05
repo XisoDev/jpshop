@@ -342,7 +342,13 @@ if($_FILES['upfile']['name']!="") {
 
         $A = $read[$i]['D'];
         $B = '';
-        $C = "59473";
+        if($site_code=='sweetplus') {
+            $C = "59473";
+        }
+        elseif($site_code=='modernbuy'){
+            $C = "60508";
+        }
+
         $D = $read[$i]['C'];
         $E = "女性";
         $F = '2';
