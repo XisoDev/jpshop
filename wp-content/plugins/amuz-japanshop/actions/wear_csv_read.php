@@ -60,7 +60,7 @@ if($_FILES['upfile']['name']!="") {
     $wearcount=$_POST['wear-list-count'];
     $wearpage=$_POST['wear-list-page'];
 
-    $site_code = getSiteOrderCode();
+    $site_code = $_POST['site_code'];
 
     try {
 
@@ -347,15 +347,14 @@ if($_FILES['upfile']['name']!="") {
         $E = "女性";
         $F = '2';
 
-        if($site_code["fullname"]=='sweetplus') {
+        if($site_code=='sweetplus') {
             $G = 'SWEETPLUS';
             $H = '29207';
         }
-        elseif($site_code["fullname"]=='modernbuy'){
+        elseif($site_code=='modernbuy'){
             $G = 'MODERNBUY';
             $H = '29987';
         }
-
         $I = $category;
         $J = $category_id;
         $K = $kocategory;
@@ -486,6 +485,7 @@ if($_FILES['upfile']['name']!="") {
             <input type='hidden' name='wear-list-count' value='$wearcount'>
             <input type='hidden' name='wear-list-page' value='$wearpage'>
             <input type='hidden' name='maxrow' value='$MaxRow'>
+            <input type='hidden' name='full_name' value='$site_code'>
             <table><tr><th><input type='submit' value='변환'></th>";
     echo "</form><form method='POST'>";
     echo "<th><input type='submit' value='돌아가기' formaction='../../../../wp-admin/admin.php?page=wc4amuz_japanshop_datacenter_output&tab=product'></th></form></table>";

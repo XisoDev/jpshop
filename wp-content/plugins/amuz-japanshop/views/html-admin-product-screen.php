@@ -47,6 +47,7 @@ $site_code = getSiteOrderCode();
                     <input type="text" name="wear-list-page" value="1" size="3" /> 페이지
                     <h5>상품파일 업로드</h5>
                     <input type="file" name="upfile" id="upfile" >
+                    <input type="hidden" name="site_code" value="<?=$site_code["fullname"]?>">
                     <input type="submit" id="upload" value="다운로드" class="button action" />
                     <br>
                 </form>
