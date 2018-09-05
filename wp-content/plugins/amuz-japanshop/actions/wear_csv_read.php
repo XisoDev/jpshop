@@ -60,6 +60,8 @@ if($_FILES['upfile']['name']!="") {
     $wearcount=$_POST['wear-list-count'];
     $wearpage=$_POST['wear-list-page'];
 
+    $site_code = getSiteOrderCode();
+
     try {
 
         // 업로드 된 엑셀 형식에 맞는 Reader객체를 만든다.
@@ -344,8 +346,16 @@ if($_FILES['upfile']['name']!="") {
         $D = $read[$i]['C'];
         $E = "女性";
         $F = '2';
-        $G = 'SWEETPLUS';
-        $H = '29207';
+
+        if($site_code["fullname"]=='sweetplus') {
+            $G = 'SWEETPLUS';
+            $H = '29207';
+        }
+        elseif($site_code["fullname"]=='modernbuy'){
+            $G = 'MODERNBUY';
+            $H = '29987';
+        }
+
         $I = $category;
         $J = $category_id;
         $K = $kocategory;
