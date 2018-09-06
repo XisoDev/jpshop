@@ -111,11 +111,12 @@ if($_FILES['upfile']['name']!="") {
             $U = $objWorksheet->getCell('U' . $i)->getValue();
             $V = $objWorksheet->getCell('V' . $i)->getValue();
             $W = $objWorksheet->getCell('W' . $i)->getValue();
-            $X = $objWorksheet->getCell('Y' . $i)->getValue();
-            $Y = $objWorksheet->getCell('X' . $i)->getValue();
+            $X = $objWorksheet->getCell('X' . $i)->getValue();
+            $Y = $objWorksheet->getCell('Y' . $i)->getValue();
             $Z = $objWorksheet->getCell('Z' . $i)->getValue();
             $AA = $objWorksheet->getCell('AA' . $i)->getValue();
             $AB = $objWorksheet->getCell('AB' . $i)->getValue();
+            $AC = $objWorksheet->getCell('AF' . $i)->getValue();
 
             /* echo "<tr>";
              echo  "<td>" . $A . "</td>" . "<td>" . $B . "</td>" . "<td>" . $C . "</td>"
@@ -132,7 +133,7 @@ if($_FILES['upfile']['name']!="") {
             $read[$i] = array('A' => $A, 'B' => $B, 'C' => $C, 'D' => $D, 'E' => $E, 'F' => $F,
                 'G' => $G, 'H' => $H, 'I' => $I, 'J' => $J, 'K' => $K, 'L' => $L, 'M' => $M,
                 'N' => $N, 'O' => $O, 'P' => $P, 'Q' => $Q, 'R' => $R, 'S' => $S, 'T' => $T,
-                'U' => $U, 'V' => $V, 'W' => $W, 'X' => $X, 'Y' => $Y, 'Z' => $Z, 'AA' => $AA, 'AB' => $AB);
+                'U' => $U, 'V' => $V, 'W' => $W, 'X' => $X, 'Y' => $Y, 'Z' => $Z, 'AA' => $AA, 'AB' => $AB,'AC'=> $AC, 'NO'=>$i);
 
         }
     } catch (exception $e) {
@@ -140,11 +141,16 @@ if($_FILES['upfile']['name']!="") {
         echo '엑셀파일을 읽는도중 오류가 발생하였습니다.';
 
     }
+    echo "X".$read['10']['X'];
+    echo "Y".$read['10']['Y'];
     $a = 1;
     $b = 0;
-
+    $search_no = 1;
     for ($i = 2; $i <= $maxRow; $i++) {
-        if ($read[$i]['C'] == "") continue;
+
+        if ($read[$i]['B'] == "variation"){
+            continue;
+        }
 
         $category = '';
         $category_id = '';
@@ -379,16 +385,40 @@ if($_FILES['upfile']['name']!="") {
         $X = 'FREE';
         $Y = '3216';
         $Z = $read[$i]['C'];
-        $AA = 'サイトURL';
+
+        $product_id = $read[$i]['A'];
+        $site_url = get_permalink( $product_id );
+        if($site_url=="") $AA = 'site url';
+        else $AA = $site_url;
+
         $AB = '1';
         $ID = $read[$i]['A'];
         $b += $a;
-
         $rist[$b] = array('A' => $A, 'B' => $B, 'C' => $C, 'D' => $D, 'E' => $E, 'F' => $F,
             'G' => $G, 'H' => $H, 'I' => $I, 'J' => $J, 'K' => $K, 'L' => $L, 'M' => $M,
             'N' => $N, 'O' => $O, 'P' => $P, 'Q' => $Q, 'R' => $R, 'S' => $S, 'T' => $T,
             'U' => $U, 'V' => $V, 'W' => $W, 'X' => $X, 'Y' => $Y, 'Z' => $Z, 'AA' => $AA, 'AB' => $AB, 'NO' => $b,'ID'=> $ID);
     }
+
+for ($i = 2; $i <= $maxRow; $i++) {
+    for ($j = 1; $j <= $b; $j++) {
+        if (in_array($read[$i]['AC'], $rist[$j])) {
+            if ($read[$i]['AC'] == $rist[$j]['D']) {
+                //echo $read[$i]['AC']." : ".$read[$j]['C'];
+                //echo $read[$j]['NO'].$read[$j]['C']."<br>";
+                //echo $read[$j]['X']." : ".$read[$j]['X'] . "<br>";
+                //print_r($read[$i]);
+                echo $read[$i]['X'];
+                if ($read[$i]['X'] == "")
+                    $rist[$j]['U'] = $read[$i]['Y'];
+                else$rist[$j]['U'] = $read[$i]['X'];
+                $rist[$j]['T'] = $read[$i]['Y'];
+                break;
+            }
+        }
+    }
+}
+
     $MaxRow = $b;
     if($wearcount>100){
         $limit = 100;
@@ -477,6 +507,7 @@ if($_FILES['upfile']['name']!="") {
             echo "<td>" . $rist[$i]['AA'] . "</td>";
             echo "<td>" . $rist[$i]['AB'] . "</td>";
             echo "<td>" . $rist[$i]['ID'] . "</td>";
+            echo "<td>".$i."</td>";
             $product_id = $rist[$i]['ID'];
             echo "</tr>";
         $p+=1;
