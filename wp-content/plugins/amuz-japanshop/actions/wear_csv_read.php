@@ -141,8 +141,6 @@ if($_FILES['upfile']['name']!="") {
         echo '엑셀파일을 읽는도중 오류가 발생하였습니다.';
 
     }
-    echo "X".$read['10']['X'];
-    echo "Y".$read['10']['Y'];
     $a = 1;
     $b = 0;
     $search_no = 1;
@@ -450,12 +448,13 @@ for ($i = 2; $i <= $maxRow; $i++) {
     $a=1;
     $b=2;
 
+
     echo "<div align='center'>";
-    echo "총 상품 '".$MaxRow."' 개 중<br>";
+    echo $site_code."의 총 상품 '".$MaxRow."' 개 중<br>";
     echo "선택된 상품들은 '".$wearpage."' 페이지의 총 '".($Remainpage)."' 개 에서 <br>'1'번째 카테고리 열을 제외한
      '".($Remainpage-1)."'개 입니다.<br>";
     echo "남은 상품은 '".($Remain+1)."' 개 입니다.<br>";
-
+/*
     echo "<table border='1'>";
     echo "<th>No</th><th>商品名</th><th>バーコードNo</th><th>取り扱いECサイトID</th><th>ブランド品番</th><th>商品性別</th>
     <th>商品性別ID</th><th>ブランド名</th><th>ブランドID</th><th>親カテゴリ</th><th>親カテID</th><th>子カテゴリ</th>
@@ -515,7 +514,7 @@ for ($i = 2; $i <= $maxRow; $i++) {
     }
 
     echo "</table>";
-
+*/
     $rist1 = urlencode(serialize($rist));
     echo "<form method='POST' action='wear_csv_save.php'>";
     echo "<input type='hidden' name='rist' value='$rist1'>
