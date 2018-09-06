@@ -1,6 +1,6 @@
 <?php
+include_once '../../../../wp-config.php';
 global $wpdb;
-global $product;
 
 if($_FILES['upfile']['name']!="") {
 
@@ -386,10 +386,10 @@ if($_FILES['upfile']['name']!="") {
         $Y = '3216';
         $Z = $read[$i]['C'];
 
-        $product_id = $read[$i]['A'];
-        $site_url = get_permalink( $product_id );
-        if($site_url=="") $AA = 'site url';
-        else $AA = $site_url;
+        $post_id = $read[$i]['A'];
+        $url = get_permalink( $post_id );
+        if($post_id!="") $AA = $url;
+        else $AA = 'site url';
 
         $AB = '1';
         $ID = $read[$i]['A'];
@@ -527,5 +527,11 @@ for ($i = 2; $i <= $maxRow; $i++) {
     echo "</form><form method='POST'>";
     echo "<th><input type='submit' value='돌아가기' formaction='../../../../wp-admin/admin.php?page=wc4amuz_japanshop_datacenter_output&tab=product'></th></form></table>";
     echo "</div>";
+}
+else{
+    echo "<script>
+		alert('엑셀 파일을 선택해주세요.');
+		location.href='javascript:history.back()';
+		</script>";
 }
 ?>
