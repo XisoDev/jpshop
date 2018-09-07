@@ -43,7 +43,7 @@ print_r($site_code);
                     <h5>상품데이터 wear 업로드 파일로 변환 ( 페이지당 최대 50건 )</h5>
                     <input type="hidden" id="data_action_type" name="action" value="" />
                     <?php wp_nonce_field( 'my-nonce-key','wc-am-jp-datacenter');?>
-                    페이지당 <input type="text" name="wear-list-count" value="100" size="5" /> 건 /
+                    페이지당 <input type="text" name="wear-list-count" value="50" size="5" /> 건 /
                     <input type="text" name="wear-list-page" value="1" size="3" /> 페이지
                     <h5>상품파일 업로드</h5>
                     <input type="file" name="upfile" id="upfile" >
