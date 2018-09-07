@@ -418,42 +418,38 @@ for ($i = 2; $i <= $maxRow; $i++) {
 }
 
     $MaxRow = $b;
-    if($wearcount>100){
-        $limit = 100;
+    $page=$wearpage;
+    if($wearcount>50){
+        $limit = 50;
     }
     else $limit=$wearcount;
-    $page=$wearpage;
-    $Remainpage=$limit;
 
     if($page==1){
-        $for=1;
-        if($limit*$page > $MaxRow) {
-            $limited = $MaxRow;
-            $Remainpage = $limit * $page - $MaxRow;
-        }
-        else
-            $limited=($limit*$page)-1;
+        $for = 1;
+    }
+    else{$for = ($limit * $page)-$limit;}
+    $Remainpage = $MaxRow-($limit*$page)+1;
 
+    if($Remainpage<0){
+        $Remainpage=0;
     }
-    else {
-        $for=($limit*$page)-($limit)+2-$page;
-        if ($limit * $page > $MaxRow){
-            $limited = $MaxRow;
-            $Remainpage = $limit*$page - $MaxRow;
-        }
-        else
-            $limited = ($limit * $page)-$page;
-    }
-    $Remain = ($MaxRow - $limit*$page);
+
     $a=1;
     $b=2;
 
+    $PP = ($MaxRow)/($limit);
+    if($PP>floor($PP)) {
+        $PP = (floor($PP) + 1);
+    }
+    if($limit*$page>$MaxRow){
+        $limit=$MaxRow-$for;
+    }
 
     echo "<div align='center'>";
-    echo $site_code."의 총 상품 '".$MaxRow."' 개 중<br>";
-    echo "선택된 상품들은 '".$wearpage."' 페이지의 총 '".($Remainpage)."' 개 에서 <br>'1'번째 카테고리 열을 제외한
-     '".($Remainpage-1)."'개 입니다.<br>";
-    echo "남은 상품은 '".($Remain+1)."' 개 입니다.<br>";
+    echo $site_code."의 총 ".$PP."페이지의 상품 '".$MaxRow."' 개 중<br>";
+    echo "선택된 상품은 '".$wearpage."' 페이지의 총 '".($limit)."' 개 에서 <br>'1'번째 카테고리 열을 제외한
+     '".($limit-1)."'개 입니다.<br>";
+    echo "남은 상품은 '".($Remainpage)."' 개 ,".($PP-$page)."페이지 입니다.<br>";
 /*
     echo "<table border='1'>";
     echo "<th>No</th><th>商品名</th><th>バーコードNo</th><th>取り扱いECサイトID</th><th>ブランド品番</th><th>商品性別</th>
@@ -519,7 +515,7 @@ for ($i = 2; $i <= $maxRow; $i++) {
     echo "<form method='POST' action='wear_csv_save.php'>";
     echo "<input type='hidden' name='rist' value='$rist1'>
             <input type='hidden' name='wear-list-count' value='$wearcount'>
-            <input type='hidden' name='wear-list-page' value='$wearpage'>
+            <input type='hidden' name='wear-list-page' value='$page'>
             <input type='hidden' name='maxrow' value='$MaxRow'>
             <input type='hidden' name='full_name' value='$site_code'>
             <table><tr><th><input type='submit' value='변환'></th>";

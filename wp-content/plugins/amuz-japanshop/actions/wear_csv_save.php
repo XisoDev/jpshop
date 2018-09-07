@@ -3,6 +3,8 @@ $maxRow=$_POST['maxrow'];
 $read= unserialize(urldecode($_POST['rist']));
 $wearcount=$_POST['wear-list-count'];
 $wearpage=$_POST['wear-list-page'];
+$MaxRow = $_POST['maxrow'];
+
 include("../load_excel.php");
 
 $objPHPExcel->getActiveSheet()->setTitle('商品情報入力シート');
@@ -42,55 +44,57 @@ $limit=$wearcount;
 $page=$wearpage;
 
 if($page==1){
-    $for=1;
-    if($limit*$page > $maxRow)
-        $limited=$maxRow;
-    else
-        $limited=($limit*$page)-1;
+    $for = 1;
+    $limit = ($limit*$page)-1;
+}
+else{
+    $for = ($limit * $page)-$limit;
+    $limit = ($limit*$page)-2;
+}
 
-}
-else {
-    $for=($limit*$page)-($limit)+2-$page;
-    if ($limit * $page > $maxRow)
-        $limited = $maxRow;
-    else
-        $limited = ($limit * $page)-$page;
-}
 
 $a=1;
-$b=2;
+$c=2;
 
-for($i=$for; $i<=$limited; $i++) {
+for($i=$for; $i<=$limit; $i++) {
+    if($i == $MaxRow) break;
+    $no =1;
+    for($b=$c;$b<=$c+1;$b++) {
+        $objPHPExcel->getActiveSheet()->setCellValue("A" . ($b), $read[$i]['A']);
+        $objPHPExcel->getActiveSheet()->setCellValue("B" . ($b), $read[$i]['B']);
+        $objPHPExcel->getActiveSheet()->setCellValue("C" . ($b), $read[$i]['C']);
+        $objPHPExcel->getActiveSheet()->setCellValue("D" . ($b), $read[$i]['D']);
+        $objPHPExcel->getActiveSheet()->setCellValue("E" . ($b), $read[$i]['E']);
+        $objPHPExcel->getActiveSheet()->setCellValue("F" . ($b), $read[$i]['F']);
+        $objPHPExcel->getActiveSheet()->setCellValue("G" . ($b), $read[$i]['G']);
+        $objPHPExcel->getActiveSheet()->setCellValue("H" . ($b), $read[$i]['H']);
+        $objPHPExcel->getActiveSheet()->setCellValue("I" . ($b), $read[$i]['I']);
+        $objPHPExcel->getActiveSheet()->setCellValue("J" . ($b), $read[$i]['J']);
+        $objPHPExcel->getActiveSheet()->setCellValue("K" . ($b), $read[$i]['K']);
+        $objPHPExcel->getActiveSheet()->setCellValue("L" . ($b), $read[$i]['L']);
+        $objPHPExcel->getActiveSheet()->setCellValue("M" . ($b), $read[$i]['M']);
+        $objPHPExcel->getActiveSheet()->setCellValue("N" . ($b), $read[$i]['N']);
+        $objPHPExcel->getActiveSheet()->setCellValue("O" . ($b), $read[$i]['O']);
+        $objPHPExcel->getActiveSheet()->setCellValue("P" . ($b), $read[$i]['P']);
+        $objPHPExcel->getActiveSheet()->setCellValue("Q" . ($b), $read[$i]['Q']);
+        $objPHPExcel->getActiveSheet()->setCellValue("R" . ($b), $read[$i]['R']);
+        $objPHPExcel->getActiveSheet()->setCellValue("S" . ($b), $read[$i]['S']);
+        $objPHPExcel->getActiveSheet()->setCellValue("T" . ($b), $read[$i]['T']);
+        $objPHPExcel->getActiveSheet()->setCellValue("U" . ($b), $read[$i]['U']);
+        $objPHPExcel->getActiveSheet()->setCellValue("V" . ($b), $read[$i]['V']);
+        $objPHPExcel->getActiveSheet()->setCellValue("W" . ($b), $read[$i]['W']);
+        $objPHPExcel->getActiveSheet()->setCellValue("X" . ($b), $read[$i]['X']);
+        $objPHPExcel->getActiveSheet()->setCellValue("Y" . ($b), $read[$i]['Y']);
+        $objPHPExcel->getActiveSheet()->setCellValue("Z" . ($b), $read[$i]['Z']);
+        $objPHPExcel->getActiveSheet()->setCellValue("AA" . ($b), $read[$i]['AA']);
+        if($no==2)
+        {$objPHPExcel->getActiveSheet()->setCellValue("AB" . ($b), 0);}
+        else
+        {$objPHPExcel->getActiveSheet()->setCellValue("AB" . ($b), $read[$i]['AB']);}
 
-    $objPHPExcel->getActiveSheet()->setCellValue("A" . ($b),$read[$i]['A']);
-    $objPHPExcel->getActiveSheet()->setCellValue("B" . ($b),$read[$i]['B']);
-    $objPHPExcel->getActiveSheet()->setCellValue("C" . ($b),$read[$i]['C']);
-    $objPHPExcel->getActiveSheet()->setCellValue("D" . ($b),$read[$i]['D']);
-    $objPHPExcel->getActiveSheet()->setCellValue("E" . ($b),$read[$i]['E']);
-    $objPHPExcel->getActiveSheet()->setCellValue("F" . ($b),$read[$i]['F']);
-    $objPHPExcel->getActiveSheet()->setCellValue("G" . ($b),$read[$i]['G']);
-    $objPHPExcel->getActiveSheet()->setCellValue("H" . ($b),$read[$i]['H']);
-    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($b),$read[$i]['I']);
-    $objPHPExcel->getActiveSheet()->setCellValue("J" . ($b),$read[$i]['J']);
-    $objPHPExcel->getActiveSheet()->setCellValue("K" . ($b),$read[$i]['K']);
-    $objPHPExcel->getActiveSheet()->setCellValue("L" . ($b),$read[$i]['L']);
-    $objPHPExcel->getActiveSheet()->setCellValue("M" . ($b),$read[$i]['M']);
-    $objPHPExcel->getActiveSheet()->setCellValue("N" . ($b),$read[$i]['N']);
-    $objPHPExcel->getActiveSheet()->setCellValue("O" . ($b),$read[$i]['O']);
-    $objPHPExcel->getActiveSheet()->setCellValue("P" . ($b),$read[$i]['P']);
-    $objPHPExcel->getActiveSheet()->setCellValue("Q" . ($b),$read[$i]['Q']);
-    $objPHPExcel->getActiveSheet()->setCellValue("R" . ($b),$read[$i]['R']);
-    $objPHPExcel->getActiveSheet()->setCellValue("S" . ($b),$read[$i]['S']);
-    $objPHPExcel->getActiveSheet()->setCellValue("T" . ($b),$read[$i]['T']);
-    $objPHPExcel->getActiveSheet()->setCellValue("U" . ($b),$read[$i]['U']);
-    $objPHPExcel->getActiveSheet()->setCellValue("V" . ($b),$read[$i]['V']);
-    $objPHPExcel->getActiveSheet()->setCellValue("W" . ($b),$read[$i]['W']);
-    $objPHPExcel->getActiveSheet()->setCellValue("X" . ($b),$read[$i]['X']);
-    $objPHPExcel->getActiveSheet()->setCellValue("Y" . ($b),$read[$i]['Y']);
-    $objPHPExcel->getActiveSheet()->setCellValue("Z" . ($b),$read[$i]['Z']);
-    $objPHPExcel->getActiveSheet()->setCellValue("AA" . ($b),$read[$i]['AA']);
-    $objPHPExcel->getActiveSheet()->setCellValue("AB" . ($b),$read[$i]['AB']);
-    $b+=$a;
+        $no+=1;
+    }
+    $c+=$a+1;
 }
 // Redirect output to a client’s web browser (Excel2007)
 header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
