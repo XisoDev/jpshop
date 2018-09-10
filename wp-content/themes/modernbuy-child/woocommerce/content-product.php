@@ -77,6 +77,7 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
             $color_count=count($array)-1;
             $array=array_map('trim',$array);
 
+
             if($color!="") {
                 echo "<ul class='color-chip'>";
                 for ($i=0; $i<= $color_count; $i++) {
@@ -92,7 +93,7 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
                     elseif ($array[$i] == "GRAY") $array[$i] = "#a8a8a8";
                     elseif ($array[$i] == "GREEN") $array[$i] = "#056e16";
                     elseif ($array[$i] == "IVORY") $array[$i] = "#fbfaf7";
-                    elseif ($array[$i] == "KHAKI") $array[$i] = "#2b3f1e";
+                    elseif ($array[$i] == "KHAKI") $array[$i] = "#3677965";
                     elseif ($array[$i] == "LIME") $array[$i] = "#e5ffcc";
                     elseif ($array[$i] == "MINT") $array[$i] = "#a3e09e";
                     elseif ($array[$i] == "MUSTARD") $array[$i] = "#ffbe0e";
@@ -102,6 +103,16 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
                     elseif ($array[$i] == "RED") $array[$i] = "#FF0000";
                     elseif ($array[$i] == "WINE") $array[$i] = "#bb0f38";
                     elseif ($array[$i] == "YELLOW") $array[$i] = "#ffd200";
+                    elseif ($array[$i] == "SKY BLUE") $array[$i] = "#87CEEB";
+                    elseif ($array[$i] == "SKYBLUE") $array[$i] = "#87CEEB";
+                    elseif ($array[$i] == "PURPLE") $array[$i] = "#eba1f8";
+                    elseif ($array[$i] == "PEACH") $array[$i] = "#F98B88";
+                    elseif ($array[$i] == "NAVY") $array[$i] = "#000080";
+                    elseif ($array[$i] == "PEACH") $array[$i] = "#F98B88";
+                    elseif ($array[$i] == "LIGHT BLUE") $array[$i] = "#ADD8E6";
+                    elseif ($array[$i] == "LIGHTBLUE") $array[$i] = "#ADD8E6";
+
+
                     ?>
                     <li style="background:<?= $array[$i] ?>; border:1px solid;"></li>
                     <?php
