@@ -75,13 +75,12 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
             elseif(strpos($color,','))  $array=explode(",", $color);
             else $array[]=$color;
             $color_count=count($array)-1;
-            $array=array_map('trim',$array);
-
+            $array = preg_replace('/\s+/', '', $array);
 
             if($color!="") {
                 echo "<ul class='color-chip'>";
                 for ($i=0; $i<= $color_count; $i++) {
-
+                    $array[$i]= strtoupper($array[$i]);
                     if($array[$i] == "WHITE") $array[$i] = "#FFFFFF";
                     elseif ($array[$i] == "BEIGE") $array[$i] = "#ddc5ac";
                     elseif ($array[$i] == "BLACK") $array[$i] = "#000000";
@@ -103,14 +102,13 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
                     elseif ($array[$i] == "RED") $array[$i] = "#FF0000";
                     elseif ($array[$i] == "WINE") $array[$i] = "#bb0f38";
                     elseif ($array[$i] == "YELLOW") $array[$i] = "#ffd200";
-                    elseif ($array[$i] == "SKY BLUE") $array[$i] = "#87CEEB";
                     elseif ($array[$i] == "SKYBLUE") $array[$i] = "#87CEEB";
                     elseif ($array[$i] == "PURPLE") $array[$i] = "#eba1f8";
                     elseif ($array[$i] == "PEACH") $array[$i] = "#F98B88";
                     elseif ($array[$i] == "NAVY") $array[$i] = "#000080";
                     elseif ($array[$i] == "PEACH") $array[$i] = "#F98B88";
-                    elseif ($array[$i] == "LIGHT BLUE") $array[$i] = "#ADD8E6";
                     elseif ($array[$i] == "LIGHTBLUE") $array[$i] = "#ADD8E6";
+                    elseif ($array[$i] == "LIGHTGARY") $array[$i] = "#D3D3D3";
 
 
                     ?>
