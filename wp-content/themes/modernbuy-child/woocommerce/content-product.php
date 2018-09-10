@@ -92,7 +92,7 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
                     elseif ($array[$i] == "GRAY") $array[$i] = "#a8a8a8";
                     elseif ($array[$i] == "GREEN") $array[$i] = "#056e16";
                     elseif ($array[$i] == "IVORY") $array[$i] = "#fbfaf7";
-                    elseif ($array[$i] == "KHAKI") $array[$i] = "#3677965";
+                    elseif ($array[$i] == "KHAKI") $array[$i] = "#677965";
                     elseif ($array[$i] == "LIME") $array[$i] = "#e5ffcc";
                     elseif ($array[$i] == "MINT") $array[$i] = "#a3e09e";
                     elseif ($array[$i] == "MUSTARD") $array[$i] = "#ffbe0e";
@@ -109,7 +109,6 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
                     elseif ($array[$i] == "PEACH") $array[$i] = "#F98B88";
                     elseif ($array[$i] == "LIGHTBLUE") $array[$i] = "#ADD8E6";
                     elseif ($array[$i] == "LIGHTGARY") $array[$i] = "#D3D3D3";
-
 
                     ?>
                     <li style="background:<?= $array[$i] ?>; border:1px solid;"></li>
