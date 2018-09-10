@@ -214,7 +214,7 @@ echo "<div class='V1'>";
     <input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
     # 주문번호 앞에 있는 체크박스
     $order = new WC_Order($order->ID);
-
+    $order_refund = $order->get_refunds();
     $payment = get_payment_method($order->payment_method);
     $token = new WC_Payment_Token_CC;
     echo $token->get_gateway_id($this->id);
@@ -225,9 +225,20 @@ echo "<div class='V1'>";
         . trim(str_replace('#', '', $order->get_order_number())) . "</a></td>";
 
     echo "<td>{$payment}</td>";
-
     #환불 받은 가격
-    $refunds = $order->get_total_refunded();
+    #오차 수정이 발생했을 경우 meta data
+    $errorcorrection=0;
+    $get_refunds = $order->get_total_refunded();
+
+    if($order->get_total_refunded()!="0"){
+        if ($order->get_meta('수수료 오차 수정') !="") {
+            if ($order->get_total_refunded() == $order->get_subtotal()) {
+                $errorcorrection = 0;
+            }
+            else$errorcorrection = $order->get_meta('수수료 오차 수정');
+        }
+    }
+    $refunds= ($get_refunds)-($errorcorrection);
     #환불 시 돌려줄 배송료
     $shipping_refunded = $order->get_total_shipping_refunded();
     #환불 시 돌려줄 총 수수료
@@ -246,7 +257,6 @@ echo "<div class='V1'>";
 
     # 할인되는 쿠폰 총합
     $discount = $order->get_discount_total();
-    $order->get_subtotal() ;
     # 상품가
     $item_subtotal = $order->get_subtotal() - $discount;
     $itemtotal = $item_subtotal+round($item_subtotal*0.08);
@@ -307,7 +317,6 @@ echo "<div class='V1'>";
 
     $oHSInfo = getHsValues($hs_codes, $order->get_items());
 
-    $refunds = $order->get_refunds();
     //print_r($refunds);
     $oHsRefundInfo = getHsRefundValues($hs_codes_refund, $order->get_refunds());
 
@@ -450,7 +459,6 @@ echo "<div class='V1'>";
         $quantity = $item_data['quantity'];
         $line_total = $item_data['total'];
         $line_total_tax = $item_data['total_tax'];
-
         $product_id = $item_data['product_id'];
         $product_code = get_post_meta( $product_id, '원청_상품코드', true);
         $hs_code = get_post_meta( $product_id, '수출용_관세코드', true);

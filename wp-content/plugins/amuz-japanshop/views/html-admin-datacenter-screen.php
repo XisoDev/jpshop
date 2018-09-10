@@ -194,8 +194,19 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
 
             echo "<td>￥".number_format($order->get_total_discount())."</td>";
             echo "<td>{$order->get_shipping_total()}</td>";
-            echo "<td>￥".number_format($order->get_total_tax())."</td>";
-            echo "<td>￥".number_format($order->get_total())."</td>";
+
+            //가격 오차 발생시
+            $errorcorrection=0;
+                if ($order->get_meta('수수료 오차 수정') != "")
+                    $errorcorrection = $order->get_meta('수수료 오차 수정');
+
+            $error_total = floor($errorcorrection/1.08);
+            $error_tax = round($errorcorrection*0.08);
+            $order_total_tax = $order->get_total_tax() - $error_tax;
+            $order_total = $order->get_total()-$errorcorrection;
+
+            echo "<td>￥".number_format($order_total_tax)."</td>";
+            echo "<td>￥".number_format($order_total)."</td>";
 
             echo "<td rowspan='". (count($order->get_items())+1) ."'>" . $order->get_meta('비고') . "</td>";
 
