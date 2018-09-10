@@ -53,3 +53,28 @@ Updated: 2018-08-01 17:42:05
         bottom: 60px !important;
     }
 }
+
+ul{
+    list-style:none;
+    -webkit-appearance: none;
+}
+.box-text.box-text-products{
+    padding-top:0px;
+    -webkit-appearance:none;
+}
+.color-chip{
+    text-align:left;
+    margin:0px;
+    -webkit-appearance: none;
+}
+.color-chip li{
+    display: inline-flex;
+    width:10px;
+    height:10px;
+    margin:0 1px;
+    -webkit-appearance: none;
+}
+.col-inner ul li{
+    margin-left:0;
+    -webkit-appearance: none;
+}
