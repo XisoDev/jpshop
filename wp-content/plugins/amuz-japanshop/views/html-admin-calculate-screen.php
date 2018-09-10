@@ -225,7 +225,37 @@ echo "<div class='V1'>";
         . trim(str_replace('#', '', $order->get_order_number())) . "</a></td>";
 
     echo "<td>{$payment}</td>";
+
+    #배송비용
+    $delivery = $order->get_shipping_total();
+
+    # 할인되는 쿠폰 총합
+    $discount = $order->get_discount_total();
+    # 상품가
+    $item_subtotal = $order->get_subtotal() - $discount;
+    $itemtotal = $item_subtotal+round($item_subtotal*0.08);
+
+    if($payment=="편의점") {
+        if ($itemtotal + $delivery < 1000) $fee = 130;
+        elseif ($itemtotal + $delivery < 2000) $fee = 150;
+        elseif ($itemtotal + $delivery < 3000) $fee = 180;
+        elseif ($itemtotal + $delivery < 10000) $fee = 210;
+        elseif ($itemtotal + $delivery < 30000) $fee = 270;
+        elseif ($itemtotal + $delivery < 100000) $fee = 410;
+        elseif ($itemtotal + $delivery < 150000) $fee = 560;
+        elseif ($itemtotal + $delivery < 300000) $fee = 770;
+
+        $Convenience = $fee / 1.08;
+        $Convenience_fee = $Convenience * 0.08;
+    }
+    else{
+        $Convenience=0;
+        $Convenience_fee=0;
+    }
+    $total_Convenience = $Convenience+$Convenience_fee;
+
     #환불 받은 가격
+
     #오차 수정이 발생했을 경우 meta data
     $errorcorrection=0;
     $get_refunds = $order->get_total_refunded();
@@ -238,30 +268,28 @@ echo "<div class='V1'>";
             else$errorcorrection = $order->get_meta('수수료 오차 수정');
         }
     }
+
     $refunds= ($get_refunds)-($errorcorrection);
+
     #환불 시 돌려줄 배송료
     $shipping_refunded = $order->get_total_shipping_refunded();
     #환불 시 돌려줄 총 수수료
     $tax_refunded = $order->get_total_tax_refunded();
+    #환불 시 돌려줄 주문(편의점 카드 수수료 등) 수수료
+    $custom_tax = $order->get_total()-$order->get_total_tax()-$order->get_shipping_total();
 
-    #환불 시 돌려줄 zeus 수수료
-    if($refunds&&$tax_refunded&&$shipping_refunded) $zeus_fee = $refunds-$tax_refunded-$shipping_refunded-$itemtotal;
-    else $zeus_fee=0;
+
     #환불 받은 상품 가격
-    $refund_subtotal = $refunds - $tax_refunded - $shipping_refunded - $zeus_fee;
+    if($refunds!="0") {
+        $refund_subtotal = $refunds - $tax_refunded - $shipping_refunded - $Convenience;
+        $refund = $refund_subtotal + round($refund_subtotal * 0.08);
+    }
+    else{
+        $refund_subtotal=0;
+        $refund=0;
+    }
 
-    $refund = $refund_subtotal + round ($refund_subtotal * 0.08);
-
-    # + 배송비용
-    $delivery = $order->get_shipping_total();
-
-    # 할인되는 쿠폰 총합
-    $discount = $order->get_discount_total();
-    # 상품가
-    $item_subtotal = $order->get_subtotal() - $discount;
-    $itemtotal = $item_subtotal+round($item_subtotal*0.08);
     # 상품 수수료 계산
-
     //소비세
     $totalm_excise =round(($itemtotal*0.08)/1.08);
     //수수료
