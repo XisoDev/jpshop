@@ -69,45 +69,45 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
 		<div class="box-text <?php echo flatsome_product_box_text_class(); ?>">
 
             <?php
-
+            $array=array();
             $color = $product->get_attribute('color');
             if(strpos($color,'|'))      $array=explode("|", $color);
             elseif(strpos($color,','))  $array=explode(",", $color);
             else $array[]=$color;
+            $color_count=count($array)-1;
+            $array=array_map('trim',$array);
 
-            $color_count=count($array);
-            if($color!=""){
+            if($color!="") {
                 echo "<ul class='color-chip'>";
-                for($i=0;$i<=($color_count-1);$i++){
-                    if(strpos($array[$i],"BEIGE"))$array[$i]="#ddc5ac";
-                    elseif(strpos($array[$i],"BLACK"))$array[$i]="#000000";
-                    elseif(strpos($array[$i],"WHITE"))$array[$i]="#FFFFFF";
-                    elseif(strpos($array[$i],"BLUE"))$array[$i]="#0f4ad0";
-                    elseif(strpos($array[$i],"BROWN"))$array[$i]="#832b13";
-                    elseif(strpos($array[$i],"CAMEL"))$array[$i]="#d27028";
-                    elseif(strpos($array[$i],"DARKBLUE"))$array[$i]="#021b76";
-                    elseif(strpos($array[$i],"DARKGRAY"))$array[$i]="#393939";
-                    elseif(strpos($array[$i],"GRAY"))$array[$i]="#a8a8a8";
-                    elseif(strpos($array[$i],"GREEN"))$array[$i]="#056e16";
-                    elseif(strpos($array[$i],"IVORY"))$array[$i]="#fbfaf7";
-                    elseif(strpos($array[$i],"KHAKI"))$array[$i]="#2b3f1e";
-                    elseif(strpos($array[$i],"LIME"))$array[$i]="#e5ffcc";
-                    elseif(strpos($array[$i],"MINT"))$array[$i]="#a3e09e";
-                    elseif(strpos($array[$i],"MUSTARD"))$array[$i]="#ffbe0e";
-                    elseif(strpos($array[$i],"ORABGE"))$array[$i]="#ff7e15";
-                    elseif(strpos($array[$i],"PINK"))$array[$i]="#ff81a5";
-                    elseif(strpos($array[$i],"PURPLE"))$array[$i]="#eba1f8";
-                    elseif(strpos($array[$i],"RED"))$array[$i]="#FF0000";
-                    elseif(strpos($array[$i],"WINE"))$array[$i]="#bb0f38";
-                    elseif(strpos($array[$i],"YELLOW"))$array[$i]="#ffd200";
+                for ($i=0; $i<= $color_count; $i++) {
 
+                    if($array[$i] == "WHITE") $array[$i] = "#FFFFFF";
+                    elseif ($array[$i] == "BEIGE") $array[$i] = "#ddc5ac";
+                    elseif ($array[$i] == "BLACK") $array[$i] = "#000000";
+                    elseif ($array[$i] == "BLUE") $array[$i] = "#0f4ad0";
+                    elseif ($array[$i] == "BROWN") $array[$i] = "#832b13";
+                    elseif ($array[$i] == "CAMEL") $array[$i] = "#d27028";
+                    elseif ($array[$i] == "DARKBLUE") $array[$i] = "#021b76";
+                    elseif ($array[$i] == "DARKGRAY") $array[$i] = "#393939";
+                    elseif ($array[$i] == "GRAY") $array[$i] = "#a8a8a8";
+                    elseif ($array[$i] == "GREEN") $array[$i] = "#056e16";
+                    elseif ($array[$i] == "IVORY") $array[$i] = "#fbfaf7";
+                    elseif ($array[$i] == "KHAKI") $array[$i] = "#2b3f1e";
+                    elseif ($array[$i] == "LIME") $array[$i] = "#e5ffcc";
+                    elseif ($array[$i] == "MINT") $array[$i] = "#a3e09e";
+                    elseif ($array[$i] == "MUSTARD") $array[$i] = "#ffbe0e";
+                    elseif ($array[$i] == "ORABGE") $array[$i] = "#ff7e15";
+                    elseif ($array[$i] == "PINK") $array[$i] = "#ff81a5";
+                    elseif ($array[$i] == "PURPLE") $array[$i] = "#eba1f8";
+                    elseif ($array[$i] == "RED") $array[$i] = "#FF0000";
+                    elseif ($array[$i] == "WINE") $array[$i] = "#bb0f38";
+                    elseif ($array[$i] == "YELLOW") $array[$i] = "#ffd200";
                     ?>
-                    <li style="background:<?=$array[$i]?>; border:1px solid;"></li>
+                    <li style="background:<?= $array[$i] ?>; border:1px solid;"></li>
                     <?php
                 }
                 echo "</ul>";
             }
-
 				echo '<div class="title-wrapper">';
 				do_action( 'woocommerce_shop_loop_item_title' );
 				echo '</div>';
