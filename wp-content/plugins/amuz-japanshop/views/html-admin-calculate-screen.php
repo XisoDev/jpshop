@@ -375,10 +375,7 @@ echo "<div class='V1'>";
             $interper = $pgm_tax;
         }
         else $interper=0;
-        if($payment == '편의점') {
-        $M_Convenience=$pgm_tax;
-        }
-        else $M_Convenience=0;
+
 
 
     $oHSInfo = getHsValues($hs_codes, $order->get_items());
@@ -409,7 +406,7 @@ echo "<div class='V1'>";
     if($custom_delivery== "") $custom_delivery = 0;
 
     #  + 합계금액
-    $total_calculate = ($itemtotal + $delivery + $total_tax + $total_excise + $interper + $pg_tax -$M_Convenience + $total_Convenience + round($oHsRefundInfo['tqoon_tax']));
+    $total_calculate = ($itemtotal + $delivery + $total_tax + $total_excise + $interper + $pg_tax + $total_Convenience + round($oHsRefundInfo['tqoon_tax']));
 
     # - 합계금액
     $total_m_calculate = $refund + $totalm_tax + $totalm_excise +  $oHSInfo['tqoon_tax'] + $pgm_tax + $remittance + $custom_delivery;
