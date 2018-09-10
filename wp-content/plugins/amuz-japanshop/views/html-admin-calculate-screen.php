@@ -233,7 +233,7 @@ echo "<div class='V1'>";
     $discount = $order->get_discount_total();
     # 상품가
     $item_subtotal = $order->get_subtotal() - $discount;
-    $itemtotal = $item_subtotal+round($item_subtotal*0.08);
+    $itemtotal = round($item_subtotal*1.08);
 
     if($payment=="편의점") {
         if ($itemtotal + $delivery < 1000) $fee = 130;
@@ -282,7 +282,7 @@ echo "<div class='V1'>";
     #환불 받은 상품 가격
     if($refunds!="0") {
         $refund_subtotal = $refunds - $tax_refunded - $shipping_refunded - $Convenience;
-        $refund = $refund_subtotal + round($refund_subtotal * 0.08);
+        $refund = round($refund_subtotal * 1.08);
     }
     else{
         $refund_subtotal=0;
@@ -318,7 +318,15 @@ echo "<div class='V1'>";
         else $pg_tax = $pay_refund * 3.35 / 100;
         }
         elseif ($payment == '은행결제') $pg_tax = ($pay_refund * 1.50) / 100;
-        elseif ($payment == '대인결제') $pg_tax = 0;
+        elseif ($payment == '대인결제'){
+            if($pay_refund < 1)$pg_tax = 0;
+            elseif($pay_refund < 10000) $pg_tax = 300;
+            elseif ($pay_refund < 30000) $pg_tax = 400;
+            elseif ($pay_refund < 100000) $pg_tax = 600;
+            elseif ($pay_refund < 300000) $pg_tax = 1000;
+            elseif ($pay_refund < 500000) $pg_tax = 2000;
+            elseif ($pay_refund < 600000) $pg_tax = 6000;
+        }
         elseif ($payment == '기타')$pg_tax = 0;
         $pg_tax = $pg_tax*1.08;
 
@@ -338,12 +346,20 @@ echo "<div class='V1'>";
             else $pgm_tax = $zeusm * 3.35 / 100;
         }
         elseif ($payment == '은행결제') $pgm_tax = ($zeusm * 1.50) / 100;
-        elseif ($payment == '대인결제'){$pgm_tax = 0;
+        elseif ($payment == '대인결제'){
+            if($zeusm < 1)$pgm_tax = 0;
+            elseif($zeusm < 10000) $pgm_tax = 300;
+            elseif ($zeusm < 30000) $pgm_tax = 400;
+            elseif ($zeusm < 100000) $pgm_tax = 600;
+            elseif ($zeusm < 300000) $pgm_tax = 1000;
+            elseif ($zeusm < 500000) $pgm_tax = 2000;
+            elseif ($zeusm < 600000) $pgm_tax = 6000;
         }
         elseif ($payment == '기타') $pgm_tax=0;
         $pgm_tax=round(round($pgm_tax)*1.08);
 
     $oHSInfo = getHsValues($hs_codes, $order->get_items());
+
 
     //print_r($refunds);
     $oHsRefundInfo = getHsRefundValues($hs_codes_refund, $order->get_refunds());
@@ -370,7 +386,7 @@ echo "<div class='V1'>";
     if($custom_delivery== "") $custom_delivery = 0;
 
     #  + 합계금액
-    $total_calculate = ($itemtotal + $delivery + $total_tax + $total_excise + $pg_tax + round($oHsRefundInfo['tqoon_tax']));
+    $total_calculate = ($itemtotal + $delivery + $total_tax + $total_excise + $pg_tax + $total_Convenience + round($oHsRefundInfo['tqoon_tax']));
 
     # - 합계금액
     $total_m_calculate = $refund + $totalm_tax + $totalm_excise +  $oHSInfo['tqoon_tax'] + $pgm_tax + $remittance + $custom_delivery;
