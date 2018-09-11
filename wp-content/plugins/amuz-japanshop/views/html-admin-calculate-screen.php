@@ -216,8 +216,13 @@ echo "<div class='V1'>";
     $order = new WC_Order($order->ID);
     $order_refund = $order->get_refunds();
     $payment = get_payment_method($order->payment_method);
-    $token = new WC_Payment_Token_CC;
-    echo $token->get_gateway_id($this->id);
+
+/*
+    if ($order->get_meta('ywot_pick_up_date') !="") {
+    echo $order->get_meta('ywot_pick_up_date');
+}
+echo $order->get_date_created()->format("y/m/d");
+*/
 
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
     #주문번호
@@ -225,6 +230,7 @@ echo "<div class='V1'>";
         . trim(str_replace('#', '', $order->get_order_number())) . "</a></td>";
 
     echo "<td>{$payment}</td>";
+
 
     #배송비용
     $delivery = $order->get_shipping_total();
@@ -235,25 +241,24 @@ echo "<div class='V1'>";
     $item_subtotal = $order->get_subtotal() - $discount;
     $itemtotal = round($item_subtotal*1.08);
 
-    if($payment=="편의점") {
-        if ($itemtotal + $delivery < 1000) $fee = 130;
-        elseif ($itemtotal + $delivery < 2000) $fee = 150;
-        elseif ($itemtotal + $delivery < 3000) $fee = 180;
-        elseif ($itemtotal + $delivery < 10000) $fee = 210;
-        elseif ($itemtotal + $delivery < 30000) $fee = 270;
-        elseif ($itemtotal + $delivery < 100000) $fee = 410;
-        elseif ($itemtotal + $delivery < 150000) $fee = 560;
-        elseif ($itemtotal + $delivery < 300000) $fee = 770;
+    $custom_fee = $order->get_fees();
+    $fees=0;
 
-        $Convenience = $fee / 1.08;
-        $Convenience_fee = $Convenience * 0.08;
+    foreach ($custom_fee as $fee) {
+        if($fee->get_amount()!=""){
+            $Convenience = $fee->get_amount() / 1.08;
+            $Convenience_fee = $Convenience * 0.08;
+        }
+
+        else{
+            $Convenience=0;
+            $Convenience_fee=0;
+        }
     }
-    else{
-        $Convenience=0;
-        $Convenience_fee=0;
-    }
+
     $total_Convenience = $Convenience+$Convenience_fee;
 
+    echo $total_Convenience;
     #환불 받은 가격
 
     #오차 수정이 발생했을 경우 meta data
