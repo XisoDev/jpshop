@@ -11,8 +11,16 @@ function getSiteOrderCode(){
 }
 
 
-//  편의점 결제 용
+function get_site_id(){
 
+    $site_id = array(
+            "official"=>"00000",
+            "SWEETPLUS"=>"29207",
+            "MODERNBUY"=>"29987",
+    );
+    return $site_id;
+}
+//  편의점 결제 용
 
 function woocommerce_custom_fee() {
 

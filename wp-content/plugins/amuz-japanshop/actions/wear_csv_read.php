@@ -1,6 +1,13 @@
 <?php
 include_once '../../../../wp-config.php';
+include_once '../../../../global_functions.php';
 global $wpdb;
+
+$site_code = getSiteOrderCode();
+$site_id = get_site_id();
+
+$site_name = $site_code["fullname"];
+$site_id[$site_name];
 
 if($_FILES['upfile']['name']!="") {
 
@@ -356,15 +363,8 @@ if($_FILES['upfile']['name']!="") {
         $D = $read[$i]['C'];
         $E = "女性";
         $F = '2';
-
-        if($site_code=='sweetplus') {
-            $G = 'SWEETPLUS';
-            $H = '29207';
-        }
-        elseif($site_code=='modernbuy'){
-            $G = 'MODERNBUY';
-            $H = '29987';
-        }
+        $G = $site_name;
+        $H = $site_id[$site_name];
         $I = $category;
         $J = $category_id;
         $K = $kocategory;
