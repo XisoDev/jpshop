@@ -446,7 +446,7 @@ for ($i = 2; $i <= $maxRow; $i++) {
     }
 
     echo "<div align='center'>";
-    echo $site_code."의 총 ".$PP."페이지의 상품 '".$MaxRow."' 개 중<br>";
+    echo $site_name."의 총 ".$PP."페이지의 상품 '".$MaxRow."' 개 중<br>";
     echo "선택된 상품은 '".$wearpage."' 페이지의 총 '".($limit)."' 개 에서 <br>'1'번째 카테고리 열을 제외한
      '".($limit-1)."'개 입니다.<br>";
     echo "남은 상품은 '".($Remainpage)."' 개 ,".($PP-$page)."페이지 입니다.<br>";
