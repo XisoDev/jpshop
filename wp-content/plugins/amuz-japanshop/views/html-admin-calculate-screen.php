@@ -243,18 +243,17 @@ echo $order->get_date_created()->format("y/m/d");
 
     $custom_fee = $order->get_fees();
     $fees=0;
-
+if ($payment == '편의점') {
     foreach ($custom_fee as $fee) {
-        if($fee->get_amount()!=""){
+        if ($fee->get_amount() != "") {
             $Convenience = $fee->get_amount() / 1.08;
             $Convenience_fee = $Convenience * 0.08;
         }
-
-        else{
-            $Convenience=0;
-            $Convenience_fee=0;
-        }
     }
+}else {
+    $Convenience = 0;
+    $Convenience_fee = 0;
+}
 
     $total_Convenience = $Convenience+$Convenience_fee;
 
@@ -264,6 +263,7 @@ echo $order->get_date_created()->format("y/m/d");
     #오차 수정이 발생했을 경우 meta data
     $errorcorrection=0;
     $get_refunds = $order->get_total_refunded();
+
 
     if($order->get_total_refunded()!="0"){
         if ($order->get_meta('수수료 오차 수정') !="") {
