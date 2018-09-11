@@ -257,9 +257,8 @@ if ($payment == '편의점') {
 
     $total_Convenience = $Convenience+$Convenience_fee;
 
-    echo $total_Convenience;
-    #환불 받은 가격
 
+    #환불 받은 가격
     #오차 수정이 발생했을 경우 meta data
     $errorcorrection=0;
     $get_refunds = $order->get_total_refunded();
