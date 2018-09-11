@@ -6,7 +6,7 @@ global $wpdb;
 $site_code = getSiteOrderCode();
 $site_id = get_site_id();
 
-$site_name = $site_code["fullname"];
+$site_name = strtoupper($site_code["fullname"]);
 $site_id[$site_name];
 
 if($_FILES['upfile']['name']!="") {

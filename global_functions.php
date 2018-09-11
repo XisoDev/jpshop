@@ -14,7 +14,7 @@ function getSiteOrderCode(){
 function get_site_id(){
 
     $site_id = array(
-            "official"=>"00000",
+            "OFFICIAL"=>"00000",
             "SWEETPLUS"=>"29207",
             "MODERNBUY"=>"29987",
     );
