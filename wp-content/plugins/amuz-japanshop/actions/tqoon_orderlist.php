@@ -41,7 +41,7 @@ foreach($order_list as $no => $order_id){
             $item_title = $item["name"];
         }
         //총소비세
-        $cart_tax_total += round($item->get_total_tax(),0);
+        $cart_tax_total += $item->get_total_tax();
         //총상품가
         $cart_total    += $item->get_total();
     }
@@ -49,7 +49,7 @@ foreach($order_list as $no => $order_id){
         $item_title .= sprintf(" 외 %d종", count($items));
     }
     $objPHPExcel->getActiveSheet()->setCellValue("C" . ($no+2),$item_title);
-    $objPHPExcel->getActiveSheet()->setCellValue("D" . ($no+2),number_format($cart_total+$cart_tax_total));
+    $objPHPExcel->getActiveSheet()->setCellValue("D" . ($no+2),number_format($cart_total+round($cart_tax_total)));
     if($order->payment_method == "codpf"){
         $fee_total = 0;
         foreach ( $order->get_fees() as $fee ) {
