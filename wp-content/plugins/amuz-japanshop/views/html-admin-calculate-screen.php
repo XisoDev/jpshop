@@ -508,7 +508,7 @@ if ($payment == '편의점') {
     $total_tax = 0;
     $total_excise = 0;
     echo "</tr>";
-
+/*
     if($itemtotal==0)
         echo "<div style='display:none'>";
     else
@@ -538,7 +538,7 @@ if ($payment == '편의점') {
             echo "<td colspan='2'>" ."관세율  ".$bb[$product_id]."</td>";
         }
         echo "</tr></div>";
-    }
+    }*/
 }
 
 
