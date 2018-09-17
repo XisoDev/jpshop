@@ -3,7 +3,6 @@
 global $woocommerce ;
 
 include __DIR__.'./../define_arrays.php';
-
 $site_code = getSiteOrderCode();
 
 //데이터가 들어오는것과 상관없이 일단 쿠키를 세션에 집어넣음.
@@ -83,12 +82,9 @@ $x2 = unserialize(urldecode($_POST['view']));
                 $date_method_str = "wc-amuz-japanshop-".$key;
                 echo '<input type="month" name="' . $date_method_str . '" value="'.$_SESSION[$date_method_str].'" /> &nbsp; ';
             }
-
-
             //조회할 상태지정
             $post_status = array();
             $date_arr = array();
-
 
             foreach ($status_list as $key => $value) {
                 $status_method_str = "wc-amuz-japanshop-".$key;
@@ -218,19 +214,18 @@ echo "<div class='V1'>";
     $payment = get_payment_method($order->payment_method);
 
 /*
-    if ($order->get_meta('ywot_pick_up_date') !="") {
-    echo $order->get_meta('ywot_pick_up_date');
+    $array=array();
+    $del_date=$order->get_meta('ywot_pick_up_date');
+    if ($del_date !="") {
+        if(strpos($del_date,'-'))      $array=explode("-", $del_date);
 }
-echo $order->get_date_created()->format("y/m/d");
 */
-
     echo "<td>{$order->get_date_created()->format("m / d")}</td>";
     #주문번호
     echo "<td>" . "<a href='" . get_edit_post_link($order->get_order_number()) . "' target='_blank'>" . $site_code["order_code"]
         . trim(str_replace('#', '', $order->get_order_number())) . "</a></td>";
 
     echo "<td>{$payment}</td>";
-
 
     #배송비용
     $delivery = $order->get_shipping_total();
@@ -254,7 +249,6 @@ if ($payment == '편의점') {
     $Convenience = 0;
     $Convenience_fee = 0;
 }
-
     $total_Convenience = $Convenience+$Convenience_fee;
 
 
@@ -262,7 +256,6 @@ if ($payment == '편의점') {
     #오차 수정이 발생했을 경우 meta data
     $errorcorrection=0;
     $get_refunds = $order->get_total_refunded();
-
 
     if($order->get_total_refunded()!="0"){
         if ($order->get_meta('수수료 오차 수정') !="") {
@@ -515,7 +508,7 @@ if ($payment == '편의점') {
     $total_tax = 0;
     $total_excise = 0;
     echo "</tr>";
-    echo "</div>";
+    /*
     if($itemtotal==0)
         echo "<div style='display:none'>";
     else
@@ -546,6 +539,7 @@ if ($payment == '편의점') {
         }
         echo "</tr></div>";
     }
+    */
 }
 
 

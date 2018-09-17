@@ -158,6 +158,9 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
     $total['tax'] = 0;
     $total['delivery'] = 0;
     $total['amount'] = 0;
+
+    $hs_codes = array();
+    include"hscodes.php";
         foreach($order_list as $no => $order){
             echo "<tr>";
             echo "<th scope='row' class='check-column'><input type='checkbox' name='cart[]' class='cart' value='{$order->ID}'></th>";
@@ -209,8 +212,8 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
             echo "<td>￥".number_format($order_total)."</td>";
 
             echo "<td rowspan='". (count($order->get_items())+1) ."'>" . $order->get_meta('비고') . "</td>";
-
             echo "</tr>";
+            $oHSInfo = getHsValues($hs_codes, $order->get_items());
             foreach ($order->get_items() as $item_key => $item_values){
                 echo "<tr style='background:#fff8e1;' class='product_list'>";
                 $item_data = $item_values->get_data();
@@ -226,12 +229,17 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
                 $hs_title = get_post_meta( $product_id, '수출용_상품명', true);
                 $hs_fabric = get_post_meta( $product_id, '수출용_재질', true);
 
+                $aa = array_keys($oHSInfo['order_id']);
+                $bb=$oHSInfo['order_id'][$aa[0]];
+
                 echo "<td colspan='3'></td>";
                 echo "<td><a href='".get_permalink( $product_id )."' target='_blank'>상품보기</a></td>";
                 echo "<td colspan='3'>[$product_code] $product_name x $quantity</td>";
-                echo "<td colspan='3'>[$hs_code] $hs_title // $hs_fabric</td>";
+                echo "<td colspan='2'>[$hs_code] $hs_title // $hs_fabric</td>";
+                echo "<td>" ."관세율  ".$bb[$product_id]."</td>";
                 echo "<td>" . $line_total_tax . "</td>";
                 echo "<td>" . number_format($line_total) . "</td>";
+
                 echo "</tr>";
             }
         }
