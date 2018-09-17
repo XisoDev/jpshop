@@ -9,8 +9,10 @@ foreach($order_list as $no => $order) {
         $product_id = $item_data['product_id'];
         $hscode = get_post_meta($product_id, '수출용_관세코드', true);
         $hs_codes[$hscode] = $hscode;
-
+        print_r($item_data);
+        echo "<br>";
     }
+
 }
 
 $hs_in= "'".join("','",$hs_codes)."'";
@@ -33,9 +35,6 @@ function getHsValues($hs_codes, $items){
         $product_id = $item_data['product_id'];
         $hscode = get_post_meta($product_id, '수출용_관세코드', true);
         $hs_info = $hs_codes[$hscode];
-        echo $product_id ;
-        print_r($hs_info);
-        echo "<br>";
         ///식
         ///
         #주문 된 상품가격
