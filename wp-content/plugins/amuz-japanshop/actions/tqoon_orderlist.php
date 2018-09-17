@@ -45,9 +45,8 @@ foreach($order_list as $no => $order_id){
         //총상품가
         $cart_total    += $item->get_total();
     }
-
     if(count($items) > 1){
-        $item_title = sprintf(" 외 %d종", count($items));
+        $item_title .= sprintf(" 외 %d종", count($items));
     }
     $objPHPExcel->getActiveSheet()->setCellValue("C" . ($no+2),$item_title);
     $objPHPExcel->getActiveSheet()->setCellValue("D" . ($no+2),number_format($cart_total+$cart_tax_total));
