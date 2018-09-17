@@ -5,7 +5,7 @@
  * @package YITH WooCommerce Points and Rewards
  * @since   1.0.0
  * @version 1.1.3
- * @author  Yithemes
+ * @author  YITH
  */
 
 

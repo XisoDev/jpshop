@@ -69,19 +69,23 @@ if ( !class_exists( 'YIT_Assets' ) ) {
             wp_register_style( 'yit-plugin-metaboxes', YIT_CORE_PLUGIN_URL . '/assets/css/metaboxes.css' );
             wp_register_style( 'yith-plugin-fw-fields', YIT_CORE_PLUGIN_URL . '/assets/css/yith-fields.css', false, $this->version );
 
+            $wc_version_suffix = '';
             if ( function_exists( 'WC' ) || !empty( $woocommerce ) ) {
                 $woocommerce_version = function_exists( 'WC' ) ? WC()->version : $woocommerce->version;
                 $wc_version_suffix   = version_compare( $woocommerce_version, '3.0.0', '>=' ) ? '' : '-wc-2.6';
 
                 wp_register_style( 'woocommerce_admin_styles', $woocommerce->plugin_url() . '/assets/css/admin.css', array(), $woocommerce_version );
-
-                wp_register_script( 'yith-enhanced-select', YIT_CORE_PLUGIN_URL . '/assets/js/yith-enhanced-select' . $wc_version_suffix . $suffix . '.js', array( 'jquery', 'select2', 'woocommerce_admin' ), '1.0.0', true );
-                wp_localize_script( 'yith-enhanced-select', 'yith_framework_enhanced_select_params', array(
-                    'ajax_url'           => admin_url( 'admin-ajax.php' ),
-                    'search_posts_nonce' => wp_create_nonce( 'search-posts' ),
-                    'search_terms_nonce' => wp_create_nonce( 'search-terms' ),
-                ) );
+            } else {
+                wp_register_script( 'select2', '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js', array( 'jquery' ), '4.0.3', true );
+                wp_register_style( 'yith-select2-no-wc', YIT_CORE_PLUGIN_URL . '/assets/css/yith-select2-no-wc.css', false, $this->version );
             }
+
+            wp_register_script( 'yith-enhanced-select', YIT_CORE_PLUGIN_URL . '/assets/js/yith-enhanced-select' . $wc_version_suffix . $suffix . '.js', array( 'jquery', 'select2' ), '1.0.0', true );
+            wp_localize_script( 'yith-enhanced-select', 'yith_framework_enhanced_select_params', array(
+                'ajax_url'           => admin_url( 'admin-ajax.php' ),
+                'search_posts_nonce' => wp_create_nonce( 'search-posts' ),
+                'search_terms_nonce' => wp_create_nonce( 'search-terms' ),
+            ) );
 
             wp_enqueue_style( 'yith-plugin-fw-admin', YIT_CORE_PLUGIN_URL . '/assets/css/admin.css', array(), $this->version );
 

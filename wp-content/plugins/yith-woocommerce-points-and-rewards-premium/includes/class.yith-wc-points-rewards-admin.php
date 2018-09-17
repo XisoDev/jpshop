@@ -10,7 +10,7 @@ if ( !defined( 'ABSPATH' ) || !defined( 'YITH_YWPAR_VERSION' ) ) {
  * @class   YITH_WC_Points_Rewards_Admin
  * @package YITH WooCommerce Points and Rewards
  * @since   1.0.0
- * @author  Yithemes
+ * @author  YITH
  */
 if ( !class_exists( 'YITH_WC_Points_Rewards_Admin' ) ) {
 
@@ -98,7 +98,7 @@ if ( !class_exists( 'YITH_WC_Points_Rewards_Admin' ) ) {
             add_action( 'admin_init', array( $this, 'actions_from_settings_panel' ), 9);
             //Add action links
             add_filter( 'plugin_action_links_' . plugin_basename( YITH_YWPAR_DIR . '/' . basename( YITH_YWPAR_FILE ) ), array( $this, 'action_links' ) );
-            add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 4 );
+	        add_filter( 'yith_show_plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 5 );
 
             //Add extra options fields in setting panels
             add_action( 'yit_panel_options-conversion', array( $this, 'admin_options_conversion' ), 10, 2 );
@@ -168,7 +168,7 @@ if ( !class_exists( 'YITH_WC_Points_Rewards_Admin' ) ) {
 	         ?>
 				<div id="ywpar-notice-is-dismissable" class="error notice is-dismissible">
 					<p>
-						<strong><?php _e( 'YITH WooCommerce Points and Rewards', 'yith-woocommerce-points-and-rewards' ); ?></strong>
+						<strong><?php _ex( 'YITH WooCommerce Points and Rewards', 'Do not translate', 'yith-woocommerce-points-and-rewards' ); ?></strong>
 					</p>
 
 					<p>
@@ -313,8 +313,8 @@ if ( !class_exists( 'YITH_WC_Points_Rewards_Admin' ) ) {
             $args = apply_filters( 'ywpar_admin_panel_options', array(
                 'create_menu_page' => true,
                 'parent_slug'      => '',
-                'page_title'       => _x( 'Points and Rewards', 'Plugin name in admin page title', 'yith-woocommerce-points-and-rewards' ),
-                'menu_title'       => _x( 'Points and Rewards', 'Plugin name in admin WP menu', 'yith-woocommerce-points-and-rewards' ),
+                'page_title'       => 'Points and Rewards',
+                'menu_title'       => 'Points and Rewards',
                 'capability'       => 'manage_options',
                 'parent'           => 'ywpar',
                 'parent_page'      => 'yit_plugin_panel',
@@ -470,6 +470,7 @@ if ( !class_exists( 'YITH_WC_Points_Rewards_Admin' ) ) {
 	            $points = get_user_meta( $user_id, '_ywpar_user_total_points', true );
                 if ( $_REQUEST['action'] == 'save' && wp_verify_nonce( $_POST['ywpar_update_points'], 'update_points' ) ) {
 
+                    if  ( $points == '' ) { $points = 0; }
                     $new_points     = $_REQUEST['user_points'] + $points;
                     update_user_meta( $user_id, '_ywpar_user_total_points', $new_points );
 					$points_to_add = $_REQUEST['user_points'];
@@ -1070,15 +1071,13 @@ endif;
          * @return mixed
          * @use      plugin_action_links_{$plugin_file_name}
          */
-        public function action_links( $links ) {
+		public function action_links( $links ) {
+			if ( function_exists( 'yith_add_action_links' ) ) {
+				$links = yith_add_action_links( $links, $this->_panel_page, true );
+			}
 
-            $links[] = '<a href="' . admin_url( "admin.php?page={$this->_panel_page}" ) . '">' . __( 'Settings', 'yith-woocommerce-points-and-rewards' ) . '</a>';
-            if ( defined( 'YITH_YWPAR_FREE_INIT' ) ) {
-                $links[] = '<a href="' . $this->get_premium_landing_uri() . '" target="_blank">' . __( 'Premium Version', 'yith-woocommerce-points-and-rewards' ) . '</a>';
-            }
-
-            return $links;
-        }
+			return $links;
+		}
 
         /**
          * plugin_row_meta
@@ -1095,14 +1094,19 @@ endif;
          * @author   Andrea Grillo <andrea.grillo@yithemes.com>
          * @use      plugin_row_meta
          */
-        public function plugin_row_meta( $plugin_meta, $plugin_file, $plugin_data, $status ) {
 
-            if ( defined( 'YITH_YWPAR_INIT' ) && YITH_YWPAR_INIT == $plugin_file ) {
-                $plugin_meta[] = '<a href="' . $this->doc_url . '" target="_blank">' . __( 'Plugin Documentation', 'yith-woocommerce-points-and-rewards' ) . '</a>';
-            }
-            return $plugin_meta;
-        }
+		public function plugin_row_meta( $new_row_meta_args, $plugin_meta, $plugin_file, $plugin_data, $status, $init_file = 'YITH_YWPAR_INIT' ) {
+			if ( defined( $init_file ) && constant( $init_file ) == $plugin_file ) {
+				$new_row_meta_args['slug'] = YITH_YWPAR_SLUG;
+			}
 
+
+			if ( defined( $init_file ) && constant( $init_file ) == $plugin_file ){
+				$new_row_meta_args['is_premium'] = true;
+			}
+
+			return $new_row_meta_args;
+		}
         /**
          * Get the premium landing uri
          *

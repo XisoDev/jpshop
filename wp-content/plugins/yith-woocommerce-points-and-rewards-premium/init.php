@@ -1,21 +1,21 @@
 <?php
-/*
-Plugin Name: YITH WooCommerce Points and Rewards Premium
-Description: YITH WooCommerce Points and Rewards allows you to add a rewarding program to your site and encourage your customers collecting points.
-Version: 1.5.3
-Author: YITHEMES
-Author URI: http://yithemes.com/
-Text Domain: yith-woocommerce-points-and-rewards
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-WC requires at least: 3.0.0
-WC tested up to: 3.4.0
-*/
+/**
+ * Plugin Name: YITH WooCommerce Points and Rewards Premium
+ * Plugin URI: https://yithemes.com/themes/plugins/yith-woocommerce-points-and-rewards/
+ * Description: <code><strong>YITH WooCommerce Points and Rewards Premium</strong></code> allows you to add a rewarding program to your site and encourage your customers collecting points. <a href="https://yithemes.com/" target="_blank">Find new awesome plugins on <strong>YITH</strong></a>.
+ * Version: 1.5.4
+ * Author: YITHEMES
+ * Author URI: https://yithemes.com/
+ * Text Domain: yith-woocommerce-points-and-rewards
+ * Domain Path: /languages/
+ * WC requires at least: 3.0.0
+ * WC tested up to: 3.4.0
+ **/
 
 /*
  * @package YITH WooCommerce Points and Rewards Premium
  * @since   1.0.0
- * @author  YITHEMES
+ * @author  YITH
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -46,7 +46,7 @@ yit_maybe_plugin_fw_loader( YITH_YWPAR_DIR  );
 if ( defined( 'YITH_YWPAR_VERSION' ) ) {
     return;
 }else{
-    define( 'YITH_YWPAR_VERSION', '1.5.3' );
+    define( 'YITH_YWPAR_VERSION', '1.5.4' );
 }
 
 if ( ! defined( 'YITH_YWPAR_PREMIUM' ) ) {

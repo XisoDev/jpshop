@@ -5,7 +5,7 @@
  * @package YITH WooCommerce Points and Rewards
  * @since   1.0.0
  * @version 1.0.0
- * @author  Yithemes
+ * @author  YITH
  */
 
 do_action( 'woocommerce_email_header', $email_heading, $email );

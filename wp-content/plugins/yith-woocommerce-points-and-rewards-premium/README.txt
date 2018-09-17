@@ -1,10 +1,10 @@
 ﻿=== YITH WooCommerce Points and Rewards  ===
 
-Contributors: yithemes
+Contributors: yith
 Tags: points, rewards, Points and Rewards, point, woocommerce, yith, point collection, reward, awards, credits, multisite, advertising, affiliate, beans, coupon, credit, Customers, discount, e-commerce, ecommerce, engage, free, incentive, incentivize, loyalty, loyalty program, marketing, promoting, referring, retention, woocommerce, woocommerce extension, WooCommerce Plugin
 Requires at least: 3.5.1
 Tested up to: 4.9.6
-Stable tag: 1.5.3
+Stable tag: 1.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,7 +26,19 @@ Important: First of all, you have to download and activate WooCommerce plugin, w
 
 == Changelog ==
 
-*YITH WooCommerce Points and Rewards Premium*
+= Version 1.5.4 - Released: Aug 22, 2018 =
+New: Support to WordPress 4.9.8
+Dev: New filter 'ywpar_discount_applied_message'
+Dev: New filter 'ywpar_approx_function'
+Dev: New filter ywpar_update_wp_cache and force update user meta replacing the wp user cache
+Update: Plugin Core 3.0.21
+Update: Language files
+Fix: Issue with rewards coupons with WooCommerce Multilingual
+Fix: Issue with PHP 7.2
+Fix: Fixed non-numeric value on adding points to user for first time when $pointsvar is empty
+Fix: Counter on repeating rules for extra points
+Fix: Added missing string for WPML
+
 = Version 1.5.3 - Released: May 17, 2018 =
 New: Support to WordPress 4.9.6 RC2
 New: Support to WooCommerce 3.4.0 RC1

@@ -3,8 +3,8 @@ Contributors: Codemstory
 Donate link: http://www.codemshop.com/
 Tags: 구글, 네이버, 페이스북, 웹사이트 소유권 인증, 검색등록, 광고효과, 전환추적, 광고 스크립트, 야후, 빙, Google, Naver, Facebook, WebSite Owership, WebSite Verify, Google Script, Facebook Script, Naver Script, AD Words Script, Yahoo, Bing, Codemshop
 Requires at least: 4.6.0
-Tested up to: 4.9.4
-Stable tag: 1.0.15
+Tested up to: 4.9.8
+Stable tag: 1.0.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -127,68 +127,55 @@ Naver Webmaster : http://webmastertool.naver.com
 Not yet.
 
 == Changelog ==
+
+= 1.0.16 =
+네이버 공통 스크립트 및 전환 스크립트 출력 시 네이버페이 사용 여부 체크
+
 = 1.0.15 =
-Fix warning message on thankyou page for google analytics
 구글 애널리틱스 사용시 Thankyou 페이지 경고 메시지 수정
 
 = 1.0.14 =
-Fix dashboard errors
 대쉬보드 오류 수정
 
 = 1.0.13 =
-Tested on WordPress version 4.9.4.
-Minor updates.
 워드프레스 버전 4.9.4 지원.
 기타 기능 개선.
 
 = 1.0.12 =
-Google Conversion Track template modified.
 구글 전환추적 템플릿 수정.
 
 = 1.0.11 =
-Google Conversion Track script position modified.
 구글 전환추적 스크립트 위치 수정.
 
 = 1.0.10 =
-Google Analytics script support Modified.
 구글 애널리틱스 스크립트 지원 수정.
 
 = 1.0.9 =
-Google Analytics script support.
 구글 애널리틱스 스크립트 지원.
 
 = 1.0.8 =
-Dashboard Mysite Plugin notice add.
 알림판 마이사이트 플러그인 공지사항 추가.
 
 = 1.0.7 =
-Facebook & Naver Template Modified.
 페이스북 및 네이버 템플릿 수정.
 
 = 1.0.6 =
-Fixed Meta Name.
 메타 명 수정.
 
 = 1.0.5 =
-Add ad conversion tracking settings.
 광고 전환 추적 설정 추가.
 
 = 1.0.4 =
-Exception added.
 예외처리 추가.
 
 = 1.0.3 =
-Tested WP 4.7
 워드프레스 4.7 호환 테스트 완료.
 
 = 1.0.2 =
-Admin Menu Hide Issue Solved.
 관리자 메뉴에서 마이사이트 숨김 현상 해결.
 
 = 1.0.1 =
-Tested WP 4.6
 워드프레스 4.6 호환 테스트 완료.
 
 = 1.0 =
-First Release.
 최초 릴리즈.

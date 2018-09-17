@@ -231,21 +231,23 @@ function flatsome_header_mobile_elements_top(){
 
    return $options;
 }
+
 // Fix old product sidebar layout
-function flatsome_product_layout(){
-  $old_sidebar = get_theme_mod('product_sidebar');
-  if(isset($old_sidebar)){
-    if($old_sidebar === 'no_sidebar'){
+function flatsome_product_layout() {
+  $old_sidebar = get_theme_mod( 'product_sidebar' );
+  if( isset( $old_sidebar ) ) {
+    if( $old_sidebar === 'no_sidebar' ) {
       return 'right-sidebar-small';
-    } else if($old_sidebar === 'full_width'){
+    } else if( $old_sidebar === 'full_width' ) {
       return 'no-sidebar';
-    } else if($old_sidebar === 'left_sidebar'){
+    } else if( $old_sidebar === 'left_sidebar' ) {
       return 'left-sidebar-full';
-    } else if($old_sidebar === 'right_sidebar'){
+    } else if( $old_sidebar === 'right_sidebar' ) {
       return 'right-sidebar';
-    } else if($old_sidebar === 'right_sidebar_fullheight'){
+    } else if( $old_sidebar === 'right_sidebar_fullheight' ) {
       return 'right-sidebar-full';
     }
+    return 'right-sidebar-small';
   } else {
     return 'right-sidebar-small';
   }

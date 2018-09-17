@@ -234,8 +234,7 @@ if ( !class_exists( 'YITH_Debug' ) ) {
          * @return string
          */
         public function get_plugin_framework_info() {
-            $plugin_fw_data      = get_file_data( trailingslashit( YIT_CORE_PLUGIN_PATH ) . 'init.php', array( 'Version' => 'Version' ) );
-            $plugin_fw_version   = $plugin_fw_data[ 'Version' ];
+            $plugin_fw_version   = yith_plugin_fw_get_version();
             $plugin_fw_loaded_by = basename( dirname( YIT_CORE_PLUGIN_PATH ) );
 
             return "$plugin_fw_version (by $plugin_fw_loaded_by)";

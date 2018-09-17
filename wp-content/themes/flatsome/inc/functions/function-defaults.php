@@ -119,7 +119,7 @@ if(!function_exists('flatsome_defaults')){
       'type_headings' => array('font-family'=> 'Lato','variant' => '700'),
       'type_texts' => array('font-family'=> 'Lato','variant' => '400'),
       'type_nav' => array('font-family'=> 'Lato','variant' => '700'),
-      'type_alt' => array('font-family'=> 'Dancing Script'),
+      'type_alt' => array('font-family'=> 'Dancing Script','variant' => '400'),
       'nav_uppercase_bottom' => 1,
       'breadcrumb_title_pos' => 'left',
       'breadcrumb_nav_pos' => 'right',

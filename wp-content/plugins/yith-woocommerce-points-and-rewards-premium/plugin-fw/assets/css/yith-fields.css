@@ -362,3 +362,41 @@ ul.yit-icons-manager-list li.active {
 .yith-plugin-fw-buttons-field-wrapper {
     margin-top : 7px;
 }
+
+/* ------- Select Images ------- */
+.yith-plugin-fw-select-images__list {
+    margin    : 0;
+    display   : flex;
+    flex-wrap : wrap;
+}
+
+.yith-plugin-fw-select-images__item {
+    width           : calc(20% - 10px);
+    min-width       : 150px;
+    margin          : 0 10px 10px 0;
+    padding         : 10px;
+    box-sizing      : border-box;
+    cursor          : pointer;
+    transition      : all .3s;
+    border          : 2px solid #eee;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+}
+
+.yith-plugin-fw-select-images__item:hover,
+.yith-plugin-fw-select-images__item.yith-plugin-fw-select-images__item--selected {
+    border-color : #07bcce;
+}
+
+.yith-plugin-fw-select-images__item__label {
+    text-align    : center;
+    font-weight   : 600;
+    margin-bottom : 10px;
+}
+
+.yith-plugin-fw-select-images__item img {
+    display   : block;
+    max-width : 100%;
+    margin    : 0 auto;
+}

@@ -8,7 +8,7 @@ if ( !defined( 'ABSPATH' ) || ! defined( 'YITH_YWPAR_VERSION' ) ) {
  *
  * @package YITH WooCommerce Points and Rewards
  * @since   1.0.0
- * @author  Yithemes
+ * @author  YITH
  */
 
 global $yith_ywpar_db_version;
@@ -346,6 +346,26 @@ if ( function_exists( 'wcml_is_multi_currency_on' ) && wcml_is_multi_currency_on
 			}
 
 			return $currencies;
+		}
+	}
+
+	add_action('woocommerce_coupon_loaded', 'remove_wcml_filter', 1);
+	if ( ! function_exists( 'remove_wcml_filter' ) ) {
+
+		/**
+		 * Remove wcml filter when a coupon is loaded
+		 * @param $coupon
+		 *
+		 * @author Emanuela Castorina <emanuela.castorina@yithemes.com>
+		 */
+		function remove_wcml_filter( $coupon ) {
+			global $woocommerce_wpml;
+			if ( YITH_WC_Points_Rewards_Redemption()->check_coupon_is_ywpar( $coupon ) ) {
+				remove_action( 'woocommerce_coupon_loaded', array(
+					$woocommerce_wpml->multi_currency->coupons,
+					'filter_coupon_data'
+				), 10 );
+			}
 		}
 	}
 

@@ -22,6 +22,7 @@
           <key name="rewards_cart_message" />
           <key name="expiration_email_content" />
           <key name="update_point_email_content" />
+          <key name="my_account_page_label" />
         </key>
     </admin-texts>
 </wpml-config>

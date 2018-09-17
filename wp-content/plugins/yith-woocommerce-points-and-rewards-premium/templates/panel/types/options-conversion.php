@@ -11,7 +11,7 @@
 /**
  * Text Plugin Admin View
  *
- * @package    Yithemes
+ * @package    YITH
  * @author     Emanuela Castorina <emanuela.castorina@yithemes.it>
  * @since      1.0.0
  */
@@ -50,7 +50,7 @@ foreach ( $currencies as $current_currency ) :
                 <input type="number" name="<?php echo $name ?>[points]" step="1" min="0" id="<?php echo $id ?>-points"
                        value="<?php echo esc_attr( $points ) ?>"/>
                 <span><?php _e( 'Points', 'yith-woocommerce-points-and-rewards' ) ?></span>
-                <input type="number" name="<?php echo $name ?>[money]" step="1" min="0" id="<?php echo $id ?>-money"
+                <input type="<?php echo apply_filters('ywpar_conversion_money_field_type', 'number') ?>" name="<?php echo $name ?>[money]" step="1" min="0" id="<?php echo $id ?>-money"
                        value="<?php echo esc_attr( $money ) ?>"/>
                 <span><?php echo get_woocommerce_currency_symbol( $current_currency ) ?></span>
             </div>

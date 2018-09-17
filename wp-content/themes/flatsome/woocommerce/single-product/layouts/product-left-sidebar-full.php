@@ -1,5 +1,22 @@
 <div class="product-main">
- <div class="row content-row row-divided row-large row-reverse">
+ <div class="row content-row row-divided row-large">
+
+ 	<div id="product-sidebar" class="col large-3 hide-for-medium shop-sidebar <?php flatsome_sidebar_classes(); ?>">
+		<?php
+			do_action('flatsome_before_product_sidebar');
+			/**
+			 * woocommerce_sidebar hook
+			 *
+			 * @hooked woocommerce_get_sidebar - 10
+			 */
+			if (is_active_sidebar( 'product-sidebar' ) ) {
+				dynamic_sidebar('product-sidebar');
+			} else if(is_active_sidebar( 'shop-sidebar' )) {
+				dynamic_sidebar('shop-sidebar');
+			}
+		?>
+	</div><!-- col large-3 -->
+
 	<div class="col large-9">
 		<div class="row">
 			<div class="large-<?php echo flatsome_option('product_image_width'); ?> col">
@@ -50,22 +67,6 @@
 			</div>
 	
     </div><!-- col large-9 -->
-
-    <div id="product-sidebar" class="col large-3 hide-for-medium shop-sidebar <?php flatsome_sidebar_classes(); ?>">
-		<?php
-			do_action('flatsome_before_product_sidebar');
-			/**
-			 * woocommerce_sidebar hook
-			 *
-			 * @hooked woocommerce_get_sidebar - 10
-			 */
-			if (is_active_sidebar( 'product-sidebar' ) ) {
-				dynamic_sidebar('product-sidebar');
-			} else if(is_active_sidebar( 'shop-sidebar' )) {
-				dynamic_sidebar('shop-sidebar');
-			}
-		?>
-	</div><!-- col large-3 -->
 
 </div><!-- .row -->
 </div><!-- .product-main -->

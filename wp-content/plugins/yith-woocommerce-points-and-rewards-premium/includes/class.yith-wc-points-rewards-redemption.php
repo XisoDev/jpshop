@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) || ! defined( 'YITH_YWPAR_VERSION' ) ) {
  * @class   YITH_WC_Points_Rewards_Redemption
  * @package YITH WooCommerce Points and Rewards
  * @since   1.0.0
- * @author  Yithemes
+ * @author  YITH
  */
 if ( ! class_exists( 'YITH_WC_Points_Rewards_Redemption' ) ) {
 
@@ -299,7 +299,7 @@ if ( ! class_exists( 'YITH_WC_Points_Rewards_Redemption' ) ) {
 					WC()->session->set( 'ywpar_coupon_code_points', $input_points );
 					WC()->session->set( 'ywpar_coupon_code_discount', $input_max_discount );
 					$discount = $input_max_discount;
-					$discount = apply_filters('ywpar_adjust_discount_value', $discount );
+					$discount = apply_filters( 'ywpar_adjust_discount_value', $discount );
 
 
 				};
@@ -479,7 +479,7 @@ if ( ! class_exists( 'YITH_WC_Points_Rewards_Redemption' ) ) {
 			$message_changed = $this->check_coupons_in_cart( yit_get_prop( $coupon, 'code' ) );
 			$is_par          = $this->check_coupon_is_ywpar( $coupon );
 
-			$m = $is_par ? __( 'Reward Discount Applied Successfully', 'yith-woocommerce-points-and-rewards' ) : $message;
+			$m = $is_par ? apply_filters( 'ywpar_discount_applied_message', __( 'Reward Discount Applied Successfully', 'yith-woocommerce-points-and-rewards' ) ) : $message;
 			if ( $message_changed ) {
 				switch ( $message_changed ) {
 					case  'removed_par':
@@ -593,6 +593,14 @@ if ( ! class_exists( 'YITH_WC_Points_Rewards_Redemption' ) ) {
 
 				update_user_meta( $customer_user, '_ywpar_user_total_points', $new_point );
 				update_user_meta( $customer_user, '_ywpar_user_total_discount', $current_discount_total_amount + $discount_amount );
+
+				if( apply_filters( 'ywpar_update_wp_cache', false) ) {
+					$cached_user_meta = wp_cache_get( $customer_user, 'user_meta');
+					$cached_user_meta['_ywpar_user_total_points'] = array( $new_point );
+					$cached_user_meta['_ywpar_user_total_discount'] = array( $current_discount_total_amount + $discount_amount );
+					$result = wp_cache_set( $customer_user, $cached_user_meta, 'user_meta' );
+				}
+
 				yit_save_prop( $order, '_ywpar_redemped_points', $points, false, true );
 
 				YITH_WC_Points_Rewards()->register_log( $customer_user, 'redeemed_points', yit_get_prop( $order, 'id' ), - $points );
@@ -790,9 +798,10 @@ if ( ! class_exists( 'YITH_WC_Points_Rewards_Redemption' ) ) {
 					}
 				}
 
-				$this->max_discount = apply_filters('ywpar_calculate_rewards_discount_max_discount_fixed', $this->max_discount );
+				$this->max_discount = apply_filters( 'ywpar_calculate_rewards_discount_max_discount_fixed', $this->max_discount );
 
-				$this->max_points = ceil( $this->max_discount / $conversion['money'] * $conversion['points'] );
+                $appfun = apply_filters('ywpar_approx_function', 'ceil' );
+                $this->max_points = call_user_func( $appfun, $this->max_discount / $conversion['money'] * $conversion['points'] );
 
 				if ( $this->max_points > $points_usable ) {
 					$this->max_points   = $points_usable;
@@ -969,7 +978,7 @@ if ( ! class_exists( 'YITH_WC_Points_Rewards_Redemption' ) ) {
 				}
 			}
 
-			return apply_filters('ywpar_calculate_product_max_discounts', $max_discount );
+			return apply_filters( 'ywpar_calculate_product_max_discounts', $max_discount );
 
 		}
 

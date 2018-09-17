@@ -20,7 +20,7 @@ $num_members_products_activate  = $this->get_number_of_membership_products();
 ?>
 
 <div class="yit-container product-licence-activation">
-    <h2><?php _e( 'Yithemes License Activation', 'yith-plugin-fw' ) ?></h2>
+    <h2><?php _e( 'YITH License Activation', 'yith-plugin-fw' ) ?></h2>
 
     <div class="licence-check-section">
         <form method="post" id="licence-check-update" action="<?php echo admin_url( 'admin-ajax.php' ) ?>">

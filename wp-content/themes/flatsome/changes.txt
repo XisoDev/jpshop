@@ -1,3 +1,21 @@
+--- 3.6.2 ---
+FIXED: Outdated WooCommerce 3.4.4 files.
+FIXED: Mobile off-canvas sidebar did not work on product stacked layout.
+FIXED: Double upsells in full height templates if in sidebar.
+FIXED: Text align right for star rating on product summary.
+FIXED: Singular 'product' output in for categories element with only one product.
+FIXED: Scroll To: double # when value was added with # as link.
+FIXED: Corrected add to cart button positioning in overlay/shade style.
+FIXED: Arrow in select dropdown fields for FireFox.
+FIXED: Live search category dropdown resizing.
+FIXED: PHP warning 'Illegal string offset'.
+FIXED: Title element: link position in RTL.
+FIXED: Improved few translations.
+
+TWEAK: Login popup now acts as link on all account pages.
+TWEAK: Infinite Scroll history can now be disabled by action filter.
+TWEAK: Improved WPML configuration.
+
 --- 3.6.1 ---
 FIXED: Scroll to position when height changes in the page occur.
 FIXED: Accordion scroll position after opening section on mobile devices.

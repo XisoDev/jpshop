@@ -147,7 +147,7 @@ if ( ! function_exists( 'flatsome_product_box_actions_add_to_cart' ) ) {
 		}
 		global $product;
 		echo apply_filters( 'woocommerce_loop_add_to_cart_link',
-			sprintf( '<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s %s add-to-cart-grid" style="width:0">
+			sprintf( '<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s %s add-to-cart-grid no-padding" style="width:0;display:block">
             <div class="cart-icon tooltip absolute is-small" title="%s"><strong>+</strong></div></a>',
 				esc_url( $product->add_to_cart_url() ),
 				esc_attr( isset( $quantity ) ? $quantity : 1 ),

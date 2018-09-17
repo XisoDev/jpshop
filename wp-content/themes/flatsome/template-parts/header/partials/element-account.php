@@ -28,7 +28,7 @@
 <?php } else { ?>
 <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"
     class="nav-top-link nav-top-not-logged-in <?php if($icon_style && $icon_style !== 'image') echo get_flatsome_icon_class($icon_style, 'small'); ?>"
-    <?php if(!is_checkout() && get_theme_mod('account_login_style','lightbox') == 'lightbox') echo 'data-open="#login-form-popup"'; ?>
+    <?php if( get_theme_mod('account_login_style','lightbox') == 'lightbox' && !is_checkout() && !is_account_page() ) echo 'data-open="#login-form-popup"'; ?>
   >
   <?php if(get_theme_mod('header_account_title', 1)) { ?>
   <span>

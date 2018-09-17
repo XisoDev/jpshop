@@ -41,6 +41,24 @@
       </div></div>
 		</div><!-- .summary -->
 
+	<div id="product-sidebar" class="mfp-hide">
+		<div class="sidebar-inner">
+			<?php
+			do_action( 'flatsome_before_product_sidebar' );
+			/**
+			 * woocommerce_sidebar hook
+			 *
+			 * @hooked woocommerce_get_sidebar - 10
+			 */
+			if ( is_active_sidebar( 'product-sidebar' ) ) {
+				dynamic_sidebar( 'product-sidebar' );
+			} else if ( is_active_sidebar( 'shop-sidebar' ) ) {
+				dynamic_sidebar( 'shop-sidebar' );
+			}
+			?>
+		</div><!-- .sidebar-inner -->
+	</div>
+
 	</div><!-- .row -->
 </div><!-- .product-main -->
 

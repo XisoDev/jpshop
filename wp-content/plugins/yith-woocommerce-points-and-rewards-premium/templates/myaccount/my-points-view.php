@@ -6,7 +6,7 @@
  *
  * @package YITH WooCommerce Points and Rewards
  * @since   1.0.0
- * @author  Yithemes
+ * @author  YITH
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

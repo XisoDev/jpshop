@@ -285,7 +285,7 @@ if ( !class_exists( 'YIT_Upgrade' ) ) {
                 return new WP_Error( 'no_package', $upgrader->strings[ 'no_package' ] );
             }
 
-            $upgrader->skin->feedback( 'downloading_package', __( 'YIThemes Repository', 'yith-plugin-fw' ) );
+            $upgrader->skin->feedback( 'downloading_package', __( 'YITH Repository', 'yith-plugin-fw' ) );
 
             $download_file = $this->_download_url( $package, $args );
 

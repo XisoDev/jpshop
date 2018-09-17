@@ -113,13 +113,13 @@ class Flatsome_Upgrade {
 	 * Performs upgrades to Flatsome 3.6.0
 	 */
 	private function update_360() {
-    
-    // Set cart layout as checkout layout if its set.
-    if(get_theme_mod('checkout_layout')) {
-      set_theme_mod( 'cart_layout', get_theme_mod('checkout_layout') );
-    }
 
-    // Fixes old headlines
+		// Set cart layout as checkout layout if its set.
+		if ( get_theme_mod( 'checkout_layout' ) ) {
+			set_theme_mod( 'cart_layout', get_theme_mod( 'checkout_layout' ) );
+		}
+
+		// Fixes old headlines.
 		$fonts = array(
 			'type_headings' => array(
 				'font-family' => 'Lato',
@@ -135,6 +135,7 @@ class Flatsome_Upgrade {
 			),
 			'type_alt'      => array(
 				'font-family' => 'Dancing Script',
+				'variant'     => '400',
 			),
 		);
 

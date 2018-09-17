@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Points and Rewards\n"
-"POT-Creation-Date: 2018-05-14 13:11+0100\n"
-"PO-Revision-Date: 2018-05-14 13:13+0100\n"
+"POT-Creation-Date: 2018-08-22 14:28+0200\n"
+"PO-Revision-Date: 2018-08-22 14:29+0200\n"
 "Last-Translator: \n"
 "Language-Team: Yithemes <plugins@yithemes.com>\n"
 "Language: nl_NL\n"
@@ -59,8 +59,8 @@ msgid "Subtotal"
 msgstr "Subtotaal"
 
 #: ../includes/admin/yith-wc-points-rewards-customers-view.php:112
-#: ../includes/class.yith-wc-points-rewards-admin.php:1017
-#: ../includes/class.yith-wc-points-rewards-admin.php:1049
+#: ../includes/class.yith-wc-points-rewards-admin.php:1018
+#: ../includes/class.yith-wc-points-rewards-admin.php:1050
 msgid "View History"
 msgstr "Bekijk Geschiedenis"
 
@@ -75,8 +75,9 @@ msgid "Filter"
 msgstr "Filter"
 
 #: ../includes/class.yith-wc-points-rewards-admin.php:171
+msgctxt "Do not translate"
 msgid "YITH WooCommerce Points and Rewards"
-msgstr "YITH WooCommerce Points and Rewards"
+msgstr ""
 
 #: ../includes/class.yith-wc-points-rewards-admin.php:175
 msgid "Due to some bugs, the point expiration system has been disabled."
@@ -96,7 +97,6 @@ msgid "The file import is empty"
 msgstr "Het importeerbestand is leeg"
 
 #: ../includes/class.yith-wc-points-rewards-admin.php:299
-#: ../includes/class.yith-wc-points-rewards-admin.php:1075
 msgid "Settings"
 msgstr "Instellingen"
 
@@ -135,23 +135,13 @@ msgstr "Berichten"
 msgid "Import/Export"
 msgstr "Import/Export"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:316
-msgctxt "Plugin name in admin page title"
-msgid "Points and Rewards"
-msgstr "Points and Rewards"
-
-#: ../includes/class.yith-wc-points-rewards-admin.php:317
-msgctxt "Plugin name in admin WP menu"
-msgid "Points and Rewards"
-msgstr "Points and Rewards"
-
-#: ../includes/class.yith-wc-points-rewards-admin.php:523
-#: ../includes/class.yith-wc-points-rewards-admin.php:723
-#: ../includes/class.yith-wc-points-rewards-admin.php:782
+#: ../includes/class.yith-wc-points-rewards-admin.php:524
+#: ../includes/class.yith-wc-points-rewards-admin.php:724
+#: ../includes/class.yith-wc-points-rewards-admin.php:783
 msgid "Points Earned"
 msgstr "Punten Verdiend"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:526
+#: ../includes/class.yith-wc-points-rewards-admin.php:527
 msgid ""
 "This field allows you to override global and category rules for point "
 "collection.\n"
@@ -167,36 +157,36 @@ msgstr ""
 "procentuele waarde om algemene- of categorie regels toe te passen volgens "
 "percentage (200&#37; voor dubbele punt)."
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:537
-#: ../includes/class.yith-wc-points-rewards-admin.php:793
+#: ../includes/class.yith-wc-points-rewards-admin.php:538
+#: ../includes/class.yith-wc-points-rewards-admin.php:794
 msgid "Validity for extra point reward (optional)"
 msgstr "Validiteit voor extra beloning punten (optioneel)"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:538
-#: ../includes/class.yith-wc-points-rewards-admin.php:654
-#: ../includes/class.yith-wc-points-rewards-admin.php:733
-#: ../includes/class.yith-wc-points-rewards-admin.php:795
+#: ../includes/class.yith-wc-points-rewards-admin.php:539
+#: ../includes/class.yith-wc-points-rewards-admin.php:655
+#: ../includes/class.yith-wc-points-rewards-admin.php:734
+#: ../includes/class.yith-wc-points-rewards-admin.php:796
 msgctxt "placeholder"
 msgid "From&hellip;"
 msgstr "Vanaf&hellip;"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:539
-#: ../includes/class.yith-wc-points-rewards-admin.php:659
-#: ../includes/class.yith-wc-points-rewards-admin.php:734
-#: ../includes/class.yith-wc-points-rewards-admin.php:796
+#: ../includes/class.yith-wc-points-rewards-admin.php:540
+#: ../includes/class.yith-wc-points-rewards-admin.php:660
+#: ../includes/class.yith-wc-points-rewards-admin.php:735
+#: ../includes/class.yith-wc-points-rewards-admin.php:797
 msgctxt "placeholder"
 msgid "To&hellip;"
 msgstr "Tot&hellip;"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:545
-#: ../includes/class.yith-wc-points-rewards-admin.php:741
-#: ../includes/class.yith-wc-points-rewards-admin.php:802
+#: ../includes/class.yith-wc-points-rewards-admin.php:546
+#: ../includes/class.yith-wc-points-rewards-admin.php:742
+#: ../includes/class.yith-wc-points-rewards-admin.php:803
 #: ../plugin-options/general-options.php:108
 #: ../plugin-options/general-options.php:134
 msgid "Maximum discount"
 msgstr "Maximale korting"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:548
+#: ../includes/class.yith-wc-points-rewards-admin.php:549
 msgid ""
 "Maximum discount applicable to this product. You can add a constant value or "
 "a percentage value that edits the maximum quantity of points\n"
@@ -208,14 +198,14 @@ msgstr ""
 "                 die gebruikt kan worden om een korting te krijgen volgens "
 "productprijs. Deze waarde overschrijft algemene- en categorie regels."
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:557
-#: ../includes/class.yith-wc-points-rewards-admin.php:645
-#: ../includes/class.yith-wc-points-rewards-admin.php:752
-#: ../includes/class.yith-wc-points-rewards-admin.php:814
+#: ../includes/class.yith-wc-points-rewards-admin.php:558
+#: ../includes/class.yith-wc-points-rewards-admin.php:646
+#: ../includes/class.yith-wc-points-rewards-admin.php:753
+#: ../includes/class.yith-wc-points-rewards-admin.php:815
 msgid "Reward percent discount (%)"
 msgstr "Beloning procentuele korting (%)"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:560
+#: ../includes/class.yith-wc-points-rewards-admin.php:561
 msgid ""
 "Discount applicable to this product. This option edits redeem percent "
 "discount that can be applied on product price and overrides global and "
@@ -225,11 +215,11 @@ msgstr ""
 "procentuele korting die kan worden toegepast op productprijs en overschrijft "
 "algemene- en categorie regels."
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:628
+#: ../includes/class.yith-wc-points-rewards-admin.php:629
 msgid "Points Earned:"
 msgstr "Punten verdiend:"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:628
+#: ../includes/class.yith-wc-points-rewards-admin.php:629
 msgid ""
 "This field allows you to override global and category rules for point "
 "collection.\n"
@@ -246,11 +236,11 @@ msgstr ""
 "algemene- of categorie regels toe te passen volgens percentage (200&#37; "
 "voor dubbele punt)."
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:635
+#: ../includes/class.yith-wc-points-rewards-admin.php:636
 msgid "Maximum discount:"
 msgstr "Maximale korting:"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:636
+#: ../includes/class.yith-wc-points-rewards-admin.php:637
 msgid ""
 "Maximum discount applicable to this variation. You can add a constant value "
 "or a percentage value that edits the maximum quantity of points\n"
@@ -262,7 +252,7 @@ msgstr ""
 "                 die gebruikt kan worden om een korting te krijgen volgens "
 "productprijs. Deze waarde overschrijft algemene- en categorie regels."
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:646
+#: ../includes/class.yith-wc-points-rewards-admin.php:647
 msgid ""
 "Discount applicable to this variation.\n"
 "                            This option edits the redeem percent discount "
@@ -274,16 +264,16 @@ msgstr ""
 "korting die kan worden toegepast op productprijs en overschrijft algemene- "
 "en categorie regels."
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:653
+#: ../includes/class.yith-wc-points-rewards-admin.php:654
 msgid "Validity of extra point rewards (optional) - From:"
 msgstr "Validiteit voor extra beloning punten (optioneel) - Vanaf:"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:658
+#: ../includes/class.yith-wc-points-rewards-admin.php:659
 msgid "To: "
 msgstr "Tot: "
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:726
-#: ../includes/class.yith-wc-points-rewards-admin.php:785
+#: ../includes/class.yith-wc-points-rewards-admin.php:727
+#: ../includes/class.yith-wc-points-rewards-admin.php:786
 msgid ""
 "This field allows you to override global rules for point collection in all "
 "products belonging to this category.\n"
@@ -304,8 +294,8 @@ msgstr ""
 "                Deze waarde kan, in ruil, worden overschreven door regels "
 "voor gespecificeerd voor single producten."
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:736
-#: ../includes/class.yith-wc-points-rewards-admin.php:797
+#: ../includes/class.yith-wc-points-rewards-admin.php:737
+#: ../includes/class.yith-wc-points-rewards-admin.php:798
 msgid ""
 "You can set a start and end date for validity of rules specified in the "
 "field above"
@@ -313,7 +303,7 @@ msgstr ""
 "U kunt een start- en einddatum stellen voor validiteit van regels "
 "gespecificeerd in het veld hierboven"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:744
+#: ../includes/class.yith-wc-points-rewards-admin.php:745
 msgid ""
 "Maximum discount applicable to products in this category. You can add a "
 "constant value or a percentage value that edits the maximum quantity of "
@@ -329,7 +319,7 @@ msgstr ""
 "worden door\n"
 "                 regels in een single product."
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:755
+#: ../includes/class.yith-wc-points-rewards-admin.php:756
 msgid ""
 "Discount applicable to products in this category. This option edits the "
 "redeem percent discount that can be applied on product price.\n"
@@ -339,7 +329,7 @@ msgstr ""
 "inlossing procentuele korting die kan worden toegepast op productprijs.\n"
 "                    Dit overschrijft algemene- en categorie regels."
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:805
+#: ../includes/class.yith-wc-points-rewards-admin.php:806
 msgid ""
 "Maximum discount applicable to products in this category. You can add a "
 "constant value or a percent value that edits the maximum quantity of points\n"
@@ -353,7 +343,7 @@ msgstr ""
 "winkelwagen. Deze waarde kan overschreven worden door\n"
 "                 regels in een single product."
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:817
+#: ../includes/class.yith-wc-points-rewards-admin.php:818
 msgid ""
 "Discount applicable to products in this category. This option edits the "
 "percent discount that can be applied to product price.\n"
@@ -363,45 +353,37 @@ msgstr ""
 "procentuele korting die kan worden toegepast op productprijs.\n"
 "                    Dit overschrijft algemene- en categorie regels."
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:924
+#: ../includes/class.yith-wc-points-rewards-admin.php:925
 #, php-format
 msgid "<strong>%d</strong> order has been updated"
 msgid_plural "<strong>%d</strong> orders have been updated"
 msgstr[0] "<strong>%d</strong> bestelling is geupdate"
 msgstr[1] "<strong>%d</strong> bestellingen zijn geupdate"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:944
+#: ../includes/class.yith-wc-points-rewards-admin.php:945
 #, php-format
 msgid "<strong>%d</strong> point has been updated"
 msgid_plural "<strong>%d</strong> points have been updated"
 msgstr[0] "<strong>%d</strong> punt is geupdate"
 msgstr[1] "<strong>%d</strong> punten zijn geupdate"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:962
-#: ../includes/class.yith-wc-points-rewards-admin.php:1161
+#: ../includes/class.yith-wc-points-rewards-admin.php:963
+#: ../includes/class.yith-wc-points-rewards-admin.php:1165
 msgid "Done!"
 msgstr "Klaar!"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:984
+#: ../includes/class.yith-wc-points-rewards-admin.php:985
 msgid "Best Point Earners"
 msgstr "Beste Punten Verdieners"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:990
+#: ../includes/class.yith-wc-points-rewards-admin.php:991
 msgid "Best Point Rewards"
 msgstr "Beste Punten Beloningen"
 
-#: ../includes/class.yith-wc-points-rewards-admin.php:1023
-#: ../includes/class.yith-wc-points-rewards-admin.php:1055
+#: ../includes/class.yith-wc-points-rewards-admin.php:1024
+#: ../includes/class.yith-wc-points-rewards-admin.php:1056
 msgid "No users found"
 msgstr "Geen gebruikers gevonden"
-
-#: ../includes/class.yith-wc-points-rewards-admin.php:1077
-msgid "Premium Version"
-msgstr "Premium Versie"
-
-#: ../includes/class.yith-wc-points-rewards-admin.php:1101
-msgid "Plugin Documentation"
-msgstr "Plugin Documentatie"
 
 #: ../includes/class.yith-wc-points-rewards-earning.php:461
 #, php-format
@@ -430,7 +412,7 @@ msgstr "%d %s verwijderd voor restitutie bestelling."
 msgid "Added %d %s for order %s."
 msgstr "%d %s toegevoegd voor bestelling %s."
 
-#: ../includes/class.yith-wc-points-rewards-earning.php:922
+#: ../includes/class.yith-wc-points-rewards-earning.php:924
 #: ../plugin-options/labels-options.php:73
 #: ../plugin-options/labels-options.php:76
 #: ../plugin-options/tab-options/extra-points-options.php:5
@@ -471,7 +453,7 @@ msgstr ""
 msgid "You can't use this coupon with Rewards Discount"
 msgstr "U kunt deze coupon niet gebruiken met Beloningskorting"
 
-#: ../includes/class.yith-wc-points-rewards-redemption.php:601
+#: ../includes/class.yith-wc-points-rewards-redemption.php:609
 #, php-format
 msgid "%d %s to get a reward"
 msgstr "%d %s om een beloning te krijgen"
@@ -1267,10 +1249,10 @@ msgstr "huidige punten krediet"
 #: ../plugin-options/update-options.php:44
 msgid ""
 "Hi {username}, you can find below latest updates about your {label_points}. "
-"{latest_updates} Total is &eacute; {total_points}."
+"{latest_updates} Total is {total_points}."
 msgstr ""
 "Hoi {username}, hieronder vindt u de laatste updates van uw {label_points}. "
-"{latest_updates} Totaal is &eacute; {total_points}."
+"{latest_updates} Totaal is {total_points}."
 
 #: ../templates/admin/customers-tab.php:2
 msgid "Customer's Points"
@@ -1401,3 +1383,20 @@ msgstr "Start"
 #: ../templates/panel/types/options-percentual-conversion.php:55
 msgid "%"
 msgstr "%"
+
+#~ msgid "YITH WooCommerce Points and Rewards"
+#~ msgstr "YITH WooCommerce Points and Rewards"
+
+#~ msgctxt "Plugin name in admin page title"
+#~ msgid "Points and Rewards"
+#~ msgstr "Points and Rewards"
+
+#~ msgctxt "Plugin name in admin WP menu"
+#~ msgid "Points and Rewards"
+#~ msgstr "Points and Rewards"
+
+#~ msgid "Premium Version"
+#~ msgstr "Premium Versie"
+
+#~ msgid "Plugin Documentation"
+#~ msgstr "Plugin Documentatie"

@@ -3,7 +3,7 @@
 Plugin Name: MSHOP MY SITE – Easy Website Verify Ownership
 Plugin URI: 
 Description: Site Owner Verification Plugin for Google, Naver Search Engine Site Register.
-Version: 1.0.15
+Version: 1.0.16
 Author: CodeMShop
 Author URI: www.codemshop.com
 License: GPLv2 or later
@@ -20,7 +20,7 @@ if ( ! class_exists( 'MShop_Ownership_Verification' ) ) {
 		protected static $_instance = null;
 
 		protected $slug;
-		public $version = '1.0.15';
+		public $version = '1.0.16';
 		public $plugin_url;
 		public $plugin_path;
 		public function __construct() {

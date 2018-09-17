@@ -74,12 +74,12 @@ jQuery( function ( $ ) {
             var custom_uploader_states = [
                 // Main states.
                 new wp.media.controller.Library( {
-                    library   : wp.media.query(),
-                    multiple  : false,
-                    title     : 'Choose Image',
-                    priority  : 20,
-                    filterable: 'uploaded'
-                } )
+                                                     library   : wp.media.query(),
+                                                     multiple  : false,
+                                                     title     : 'Choose Image',
+                                                     priority  : 20,
+                                                     filterable: 'uploaded'
+                                                 } )
             ];
 
             // Create the media frame.
@@ -145,10 +145,10 @@ jQuery( function ( $ ) {
                                                                                     },
                                                                                     states: [
                                                                                         new wp.media.controller.Library( {
-                                                                                            title     : $t.data( 'choose' ),
-                                                                                            filterable: 'all',
-                                                                                            multiple  : true
-                                                                                        } )
+                                                                                                                             title     : $t.data( 'choose' ),
+                                                                                                                             filterable: 'all',
+                                                                                                                             multiple  : true
+                                                                                                                         } )
                                                                                     ]
                                                                                 } );
 
@@ -193,7 +193,7 @@ jQuery( function ( $ ) {
 
                                  $t.find( 'li.image' ).css( 'cursor', 'default' ).each( function () {
                                      var attachment_id = $( this ).attr( 'data-attachment_id' );
-                                     attachment_ids    = attachment_ids + attachment_id + ',';
+                                     attachment_ids = attachment_ids + attachment_id + ',';
                                  } );
 
                                  $t.closest( '.image-gallery' ).find( '.image_gallery_ids' ).val( attachment_ids );
@@ -212,7 +212,7 @@ jQuery( function ( $ ) {
 
             $gallery.find( 'li.image' ).css( 'cursor', 'default' ).each( function () {
                 var attachment_id = $( this ).attr( 'data-attachment_id' );
-                attachment_ids    = attachment_ids + attachment_id + ',';
+                attachment_ids = attachment_ids + attachment_id + ',';
             } );
 
             $image_gallery_ids.val( attachment_ids );
@@ -283,7 +283,7 @@ jQuery( function ( $ ) {
                               range: 'min',
                               step : step,
 
-                              create: function() {
+                              create: function () {
                                   $( this ).find( '.ui-slider-handle' ).text( $( this ).slider( "value" ) );
                               },
 
@@ -347,4 +347,18 @@ jQuery( function ( $ ) {
         } );
     } );
 
+    /** Select Images */
+    $( document ).on( 'click', '.yith-plugin-fw-select-images__item', function () {
+        var item    = $( this ),
+            key     = item.data( 'key' ),
+            wrapper = item.closest( '.yith-plugin-fw-select-images__wrapper' ),
+            items   = wrapper.find( '.yith-plugin-fw-select-images__item' ),
+            select  = wrapper.find( 'select' ).first();
+
+        if ( select.length ) {
+            select.val( key );
+            items.removeClass( 'yith-plugin-fw-select-images__item--selected' );
+            item.addClass( 'yith-plugin-fw-select-images__item--selected' );
+        }
+    } );
 } );

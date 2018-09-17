@@ -219,7 +219,10 @@ function ux_product_categories($atts, $content = null, $tag) {
                       </h5>
                       <?php if($show_count) { ?>
                       <p class="is-xsmall uppercase count <?php if($style == 'overlay') echo 'show-on-hover hover-reveal reveal-small'; ?>">
-                        <?php if ( $category->count > 0 ) echo apply_filters( 'woocommerce_subcategory_count_html', ' ' . $category->count . ' '.__('Products','woocommerce').'', $category); ?>
+	                      <?php if ( $category->count > 0 ) {
+		                      echo apply_filters( 'woocommerce_subcategory_count_html', $category->count . ' ' . ( $category->count > 1 ? __( 'Products', 'woocommerce' ) : __( 'Product', 'woocommerce' ) ), $category );
+	                      }
+	                      ?>
                       </p>
                       <?php } ?>
                       <?php

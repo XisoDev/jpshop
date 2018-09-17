@@ -11,7 +11,7 @@ if ( !defined( 'ABSPATH' ) || !defined( 'YITH_YWPAR_VERSION' ) ) {
  * @class   YWPAR_Multivendor
  * @package YITH WooCommerce Points and Rewards
  * @since   1.1.3
- * @author  Yithemes
+ * @author  YITH
  */
 if ( ! class_exists( 'YWPAR_Multivendor' ) ) {
 

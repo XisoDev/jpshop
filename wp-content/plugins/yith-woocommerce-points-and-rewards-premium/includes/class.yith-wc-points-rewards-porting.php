@@ -10,7 +10,7 @@ if ( !defined( 'ABSPATH' ) || !defined( 'YITH_YWPAR_VERSION' ) ) {
  * @class   YITH_WC_Points_Rewards_Porting
  * @package YITH WooCommerce Points and Rewards
  * @since   1.0.0
- * @author  Yithemes
+ * @author  YITH
  */
 if ( !class_exists( 'YITH_WC_Points_Rewards_Porting' ) ) {
 

@@ -19,7 +19,7 @@ jQuery(document).ready(function () {
     status: '.page-load-status',
     hideNav: '.woocommerce-pagination',
     button: '.view-more-button',
-    history: 'push',
+    history: flatsome_infinite_scroll.history,
     debug: false,
     outlayer: outlayer,
     scrollThreshold: parseInt(flatsome_infinite_scroll.scroll_threshold)

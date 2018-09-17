@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) || ! defined( 'YITH_YWPAR_VERSION' ) ) {
  * @class   YYITH_WC_Points_Rewards_Earning
  * @package YITH WooCommerce Points and Rewards
  * @since   1.0.0
- * @author  Yithemes
+ * @author  YITH
  */
 if ( ! class_exists( 'YITH_WC_Points_Rewards_Earning' ) ) {
 
@@ -845,7 +845,9 @@ if ( ! class_exists( 'YITH_WC_Points_Rewards_Earning' ) ) {
 								$flag = false;
 							}
 						} else {
-							$counter = ( isset( $ue_item['counter'] ) ) ? $ue_item['counter'] : 0;
+							if( $ue_item['option'] == $rule['option'] ) {
+                                $counter = ( isset( $ue_item['counter'] ) ) ? $ue_item['counter'] : 0;
+                            }
 						}
 					}
 				}

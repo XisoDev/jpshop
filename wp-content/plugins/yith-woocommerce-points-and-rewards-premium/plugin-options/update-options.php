@@ -41,7 +41,7 @@ $update = array(
                     __( 'current point credit', 'yith-woocommerce-points-and-rewards' ) ),
 
                 'type' => 'textarea',
-                'std'  => __('Hi {username}, you can find below latest updates about your {label_points}. {latest_updates} Total is &eacute; {total_points}.', 'yith-woocommerce-points-and-rewards')
+                'std'  => __('Hi {username}, you can find below latest updates about your {label_points}. {latest_updates} Total is {total_points}.', 'yith-woocommerce-points-and-rewards')
             ),
 
             array( 'type' => 'close' ),

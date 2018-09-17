@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) || ! defined( 'YITH_YWPAR_VERSION' ) ) {
  * @class   YITH_WC_Points_Rewards
  * @package YITH WooCommerce Points and Rewards
  * @since   1.0.0
- * @author  Yithemes
+ * @author  YITH
  */
 if ( ! class_exists( 'YITH_YWPAR_Expiration' ) ) {
 
@@ -42,7 +42,7 @@ if ( ! class_exists( 'YITH_YWPAR_Expiration' ) ) {
 
 			// Call parent constructor
 			parent::__construct();
-
+			$this->customer_email = true;
 			// Other settings
 			$this->recipient = $this->get_option( 'recipient' );
 

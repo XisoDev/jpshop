@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-$cat_style = flatsome_option('cat_style');
+$cat_style = get_theme_mod( 'cat_style', 'badge' );
 $color = '';
 $text_pos = '';
 
@@ -61,7 +61,10 @@ $classes = array('product-category','col');
 	       					<?php echo $category->name; ?>
 					</h5>
 					<p class="is-xsmall uppercase count">
-						<?php if ( $category->count > 0 ) echo apply_filters( 'woocommerce_subcategory_count_html', ' ' . $category->count . ' '.__('Products','woocommerce').'', $category); ?>
+						<?php if ( $category->count > 0 ) {
+							echo apply_filters( 'woocommerce_subcategory_count_html', $category->count . ' ' . ( $category->count > 1 ? __( 'Products', 'woocommerce' ) : __( 'Product', 'woocommerce' ) ), $category );
+						}
+						?>
 					</p>
 					<?php
 						/**

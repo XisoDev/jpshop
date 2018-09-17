@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) || ! defined( 'YITH_YWPAR_VERSION' ) ) {
  * @class   YITH_WC_Points_Rewards_Frontend
  * @package YITH WooCommerce Points and Rewards
  * @since   1.0.0
- * @author  Yithemes
+ * @author  YITH
  */
 if ( ! class_exists( 'YITH_WC_Points_Rewards_Frontend' ) ) {
 
@@ -141,7 +141,7 @@ if ( ! class_exists( 'YITH_WC_Points_Rewards_Frontend' ) ) {
 
 				add_action( 'woocommerce_account_' . $this->endpoint . '_endpoint', array( $this, 'add_endpoint' ) );
 				add_filter( 'woocommerce_account_menu_items', array( $this, 'ywpar_add_points_menu_items' ), 20 );
-				flush_rewrite_rules();
+				function_exists( 'get_home_path' ) && flush_rewrite_rules();
 			}
 
 

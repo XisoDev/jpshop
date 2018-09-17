@@ -341,7 +341,7 @@ function flatsome_presentage_bubble( $product ) {
 // Account login style
 function flatsome_account_login_lightbox(){
   // Show Login Lightbox if selected
-  if (!is_checkout() && !is_user_logged_in() && get_theme_mod('account_login_style','lightbox') == 'lightbox') {
+  if ( !is_user_logged_in() && get_theme_mod('account_login_style','lightbox') == 'lightbox' && !is_checkout() && !is_account_page() ) {
     $is_facebook_login = is_nextend_facebook_login();
     $is_google_login = is_nextend_google_login();
     wp_enqueue_script( 'wc-password-strength-meter' );
