@@ -165,7 +165,6 @@ function getHsValues($hs_codes, $items){
         $oHSInfo['product_id'][$item_data['product_id']]=$tax;
         $oHSInfo['order_id'][$order_id]=$oHSInfo['product_id'];
 
-        print_r($oHSInfo['product_id']);
 
         //orderlist
         //카운트
