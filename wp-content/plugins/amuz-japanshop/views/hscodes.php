@@ -20,6 +20,8 @@ $get_hscode_db = $wpdb->get_results("select * from wp_hscode where HScode in ({$
 foreach ( $get_hscode_db as $hs_code )
 {
     $hs_codes[$hs_code->HScode] = $hs_code;
+    print_r($hs_codes);
+    echo "<br>";
 }
 
 function getHsValues($hs_codes, $items){
