@@ -236,7 +236,10 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
 
                 echo "<td colspan='3'></td>";
                 echo "<td><a href='" . get_permalink($product_id) . "' target='_blank'>상품보기</a></td>";
-                echo "<td colspan='3'>[$product_code] $product_name x $quantity</td>";
+                echo "<td colspan='2'>[$product_code] $product_name x $quantity</td>";
+                echo "<td colspan='1'>";
+                print_r($bb);
+                echo "</td>";
                 echo "<td colspan='2'>[$hs_code] $hs_title // $hs_fabric</td>";
                 echo "<td>" . "관세율  " . $bb[$product_id] . "</td>";
                 echo "<td>" . $line_total_tax . "</td>";
