@@ -152,7 +152,7 @@ function getHsValues($hs_codes, $items){
 
 ///
         if($product_id == 6256)
-            $tax = 10.90;
+            $tax = "10.90%";
         $oHSInfo['total']=$item_data['total'];
         $oHSInfo['ttax'][$item_data['product_id']]=$tax;
         $oHSInfo["items"][$item_data['product_id']]=$item_tax;
