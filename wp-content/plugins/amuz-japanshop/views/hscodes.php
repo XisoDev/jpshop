@@ -151,7 +151,8 @@ function getHsValues($hs_codes, $items){
 
 
 ///
-        $product_code = get_post_meta( $product_id, '원청_상품코드', true);
+        if($product_id == 6256)
+            $tax = 10.90;
         $oHSInfo['total']=$item_data['total'];
         $oHSInfo['ttax'][$item_data['product_id']]=$tax;
         $oHSInfo["items"][$item_data['product_id']]=$item_tax;
