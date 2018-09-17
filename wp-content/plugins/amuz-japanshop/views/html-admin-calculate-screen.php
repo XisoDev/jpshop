@@ -227,6 +227,7 @@ echo "<div class='V1'>";
 
     echo "<td>{$payment}</td>";
 
+
     #배송비용
     $delivery = $order->get_shipping_total();
 
