@@ -214,7 +214,7 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
             echo "<td rowspan='". (count($order->get_items())+1) ."'>" . $order->get_meta('비고') . "</td>";
             echo "</tr>";
             $oHSInfo = getHsValues($hs_codes, $order->get_items());
-            foreach ($order->get_items() as $item_key => $item_values){
+            foreach ($order->get_items() as $item_key => $item_values) {
                 echo "<tr style='background:#fff8e1;' class='product_list'>";
                 $item_data = $item_values->get_data();
 
@@ -224,20 +224,23 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
                 $line_total_tax = $item_data['total_tax'];
 
                 $product_id = $item_data['product_id'];
-                $product_code = get_post_meta( $product_id, '원청_상품코드', true);
-                $hs_code = get_post_meta( $product_id, '수출용_관세코드', true);
-                $hs_title = get_post_meta( $product_id, '수출용_상품명', true);
-                $hs_fabric = get_post_meta( $product_id, '수출용_재질', true);
+                $product_code = get_post_meta($product_id, '원청_상품코드', true);
+                $hs_code = get_post_meta($product_id, '수출용_관세코드', true);
+                $hs_title = get_post_meta($product_id, '수출용_상품명', true);
+                $hs_fabric = get_post_meta($product_id, '수출용_재질', true);
                 $order_id = $item_data['order_id'];
                 $aa = array_keys($oHSInfo['order_id']);
-                $bb = $oHSInfo['order_id'][$aa[0]];
-                    echo "<td colspan='3'></td>";
-                    echo "<td><a href='" . get_permalink($product_id) . "' target='_blank'>상품보기</a></td>";
-                    echo "<td colspan='3'>[$product_code] $product_name x $quantity</td>";
-                    echo "<td colspan='2'>[$hs_code] $hs_title // $hs_fabric</td>";
-                    echo "<td>" . "관세율  " . $bb[$product_id] . "</td>";
-                    echo "<td>" . $line_total_tax . "</td>";
-                    echo "<td>" . number_format($line_total) . "</td>";
+                if ($order_id = $aa[0])
+                    $bb = $oHSInfo['order_id'][$aa[0]];
+                else $bb = $product_id;
+
+                echo "<td colspan='3'></td>";
+                echo "<td><a href='" . get_permalink($product_id) . "' target='_blank'>상품보기</a></td>";
+                echo "<td colspan='3'>[$product_code] $product_name x $quantity</td>";
+                echo "<td colspan='2'>[$hs_code] $hs_title // $hs_fabric</td>";
+                echo "<td>" . "관세율  " . $bb[$product_id] . "</td>";
+                echo "<td>" . $line_total_tax . "</td>";
+                echo "<td>" . number_format($line_total) . "</td>";
 
                 echo "</tr>";
             }
