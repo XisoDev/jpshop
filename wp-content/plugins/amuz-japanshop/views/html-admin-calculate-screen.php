@@ -449,7 +449,7 @@ if ($payment == '편의점') {
     #-PG 결제 수수료
     echo "     <td>￥" . number_format($pgm_tax) . "</td>";
     #환불
-    echo "<td>￥" . number_format($refund) . "</td>";
+    echo "<td>￥" . number_format($refund + $shipping_refunded) . "</td>";
     #송금 수수료
     echo "<td>￥".number_format($remittance)."</td>";
 
