@@ -327,7 +327,7 @@ if ($payment == '편의점') {
         elseif ($payment == '기타')$pg_tax = 0;
         $pg_tax = $pg_tax*1.08;
 
-    $zeusm = $itemtotal;
+    $zeusm = $itemtotal + $delivery;
         if ($payment == '편의점') {
             if($zeusm < 1)$pgm_tax = 0;
             elseif($zeusm < 2000) $pgm_tax = 125;
