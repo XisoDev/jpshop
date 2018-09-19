@@ -5,10 +5,13 @@ global $wpdb;
 
 $site_code = getSiteOrderCode();
 $site_id = get_site_id();
-echo $site_code."-".$site_id;
+
 $site_name = strtoupper($site_code["fullname"]);
 $site_id[$site_name];
 
+echo $site_id[$site_name];
+echo "=";
+echo $site_name;
 if($_FILES['upfile']['name']!="") {
 
 // 저장될 디렉토리
