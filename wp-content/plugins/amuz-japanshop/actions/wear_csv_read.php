@@ -5,7 +5,7 @@ global $wpdb;
 
 $site_code = getSiteOrderCode();
 $site_id = get_site_id();
-
+echo $site_code."-".$site_id;
 $site_name = strtoupper($site_code["fullname"]);
 $site_id[$site_name];
 
