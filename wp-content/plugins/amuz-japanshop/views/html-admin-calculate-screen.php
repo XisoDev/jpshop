@@ -295,12 +295,11 @@ if ($payment == '편의점') {
 
     #환불 수수료 계산
     foreach ($order->get_refunds() as $item_key => $item_values) {
-        $item_data = $item_values->get_data();
         $line_amount = $refund;
-        $total_tax += round($line_amount * 0.08);                  # 총 결제금액의 수수료 계산
+        $total_tax += $line_amount * 0.08;                  # 총 결제금액의 수수료 계산
         $total_excise += round($total_tax / 1.08); # 소비세 계산
     }
-    $pay_refund = $refunds + $shipping_refunded;
+    $pay_refund = $refund + $shipping_refunded;
     if ($payment == '편의점') {
             if($pay_refund < 1)$pg_tax = 0;
             elseif($pay_refund < 2000) $pg_tax = 125;
