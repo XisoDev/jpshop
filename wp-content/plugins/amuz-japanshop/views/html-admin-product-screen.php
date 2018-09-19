@@ -2,7 +2,7 @@
 
 global $woocommerce;
 $site_code = getSiteOrderCode();
-print_r($site_code);
+
 ?>
 
 <h3><?php echo __( '상품데이터 커스터마이징', 'amuz-japanshop' );?></h3>
