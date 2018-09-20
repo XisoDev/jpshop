@@ -315,7 +315,7 @@ if ($payment == '편의점') {
             $pg_tax = $pay_refund * 2.85 / 100;
         else $pg_tax = $pay_refund * 3.35 / 100;
         }
-        elseif ($payment == '은행결제') $pg_tax = ($pay_refund * 1.50) / 100;
+        elseif ($payment == '은행결제') $pg_tax = /*($pay_refund * 1.50) / 100;*/0;
         elseif ($payment == '대인결제'){
             if($pay_refund < 1)$pg_tax = 0;
             elseif($pay_refund < 10000) $pg_tax = 300;
