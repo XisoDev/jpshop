@@ -7404,7 +7404,7 @@ if (!class_exists('Uap_Db')){
 			 */
 			return array(
 					'sign_up_referrals' => array(
-							'label' => __('SignUp Referrals (CPL)', 'uap'),
+							'label' => __(/*'SignUp Referrals (CPL)'*/'가입 추천 (CPL)', 'uap'),
 							'link' => admin_url('admin.php?page=ultimate_affiliates_pro&tab=magic_features&subtab=sign_up_referrals'),
 							'icon' => 'fa-sign-in-ref-uap',
 							'description' => __('Available for membership system, awarding commission when referred user signs up', 'uap'),
@@ -7412,19 +7412,19 @@ if (!class_exists('Uap_Db')){
 							'extra_class' => '',
 					),
 					'pay_per_click' => array(
-							'label' => __('Pay Per Click  (CPC)', 'uap'),
+							'label' => __(/*'Pay Per Click  (CPC)'*/'클릭 당 수익(CPC)', 'uap'),
 							'link' => admin_url('admin.php?page=ultimate_affiliates_pro&tab=magic_features&subtab=pay_per_click'),
 							'icon' => 'fa-pay_per_click-uap',
 							'extra_class' => '',
-							'description' => __('PPC Campaign for affiliate users', 'uap'),
+							'description' => __(/*'PPC Campaign for affiliate users'*/'제휴 사용자를 위한 PPC 캠페인', 'uap'),
 							'enabled' => $this->is_magic_feat_enable('pay_per_click'),
 					),
 					'cpm_commission' => array(
-							'label' => __('CPM Commission', 'uap'),
+							'label' => __(/*'CPM Commission'*/'CPM 위원회', 'uap'),
 							'link' => admin_url('admin.php?page=ultimate_affiliates_pro&tab=magic_features&subtab=cpm_commission'),
 							'icon' => 'fa-cpm_commission-uap',
 							'extra_class' => '',
-							'description' => __('Cost Per Mile (CPM) Campaign for affiliate users', 'uap'),
+							'description' => __(/*'Cost Per Mile (CPM) Campaign for affiliate users'*/'제휴 사용자를 위한 마일당 비용(CPM) 캠페인', 'uap'),
 							'enabled' => $this->is_magic_feat_enable('cpm_commission'),
 					),
 					'lifetime_commissions' => array(
@@ -7694,27 +7694,28 @@ if (!class_exists('Uap_Db')){
 							'enabled' => 1,
 					),
 					'ranks_pro' => array(
-							'label' => __('Ranks PRO', 'uap'),
+							'label' => __('등급 PRO', 'uap'),
 							'link' => admin_url('admin.php?page=ultimate_affiliates_pro&tab=magic_features&subtab=ranks_pro'),
 							'icon' => 'fa-ranks_pro-uap',
 							'extra_class' => '',
-							'description' => __('Dynamic Ranks Achievements workflow', 'uap'),
+							'description' => __(/*'Dynamic Ranks Achievements workflow'*/'동적 순위 달성 워크플로우', 'uap'),
 							'enabled' => $this->is_magic_feat_enable('ranks_pro'),
 					),
 					'landing_pages' => array(
-							'label' => __('Affiliate Landing Pages', 'uap'),
+							'label' => __(/*'Affiliate Landing Pages'*/'Affiliate 랜딩 페이지', 'uap'),
 							'link' => admin_url('admin.php?page=ultimate_affiliates_pro&tab=magic_features&subtab=landing_pages'),
 							'icon' => 'fa-landing_pages-uap',
 							'extra_class' => '',
-							'description' => __('Affiliate Landing Pages instead of affiliate links', 'uap'),
+							'description' => __(/*'Affiliate Landing Pages instead of affiliate links'*/'제휴사 링크 대신 제휴 랜딩 페이지', 'uap'),
 							'enabled' => $this->is_magic_feat_enable('landing_pages'),
 					),
 					'pushover_referral_notifications' => array(
-							'label' => __('Pushover Notifications', 'uap'),
+							'label' => __('푸시 오버 알림', 'uap'),
 							'link' => admin_url('admin.php?page=ultimate_affiliates_pro&tab=magic_features&subtab=pushover_referral_notifications'),
 							'icon' => 'fa-pushover_referral_notifications-uap',
 							'extra_class' => '',
-							'description' => __('Users receive notifications on mobile via Pushover', 'uap'),
+							'description' => __(/*'Users receive notifications on mobile via Pushover'*/
+                                '사용자가 푸시 오버를 통해 모바일에서 알림을받습니다.', 'uap'),
 							'enabled' => $this->is_magic_feat_enable('pushover_referral_notifications'),
 					),
 					'rest_api' => array(
@@ -7722,7 +7723,7 @@ if (!class_exists('Uap_Db')){
 							'link' => admin_url('admin.php?page=ultimate_affiliates_pro&tab=magic_features&subtab=rest_api'),
 							'icon' => 'fa-rest_api-uap',
 							'extra_class' => '',
-							'description' => __('CRUD actions for main affiliate system data', 'uap'),
+							'description' => __(/*'CRUD actions for main affiliate system data'*/'주요 제휴 시스템 데이터에 대한 CRUD 조치', 'uap'),
 							'enabled' => $this->is_magic_feat_enable('rest_api'),
 					),
 			);
