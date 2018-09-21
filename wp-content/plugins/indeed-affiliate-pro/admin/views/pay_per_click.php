@@ -1,11 +1,12 @@
 			<form action="" method="post">
 				<div class="uap-stuffbox">
-					<h3 class="uap-h3"><?php _e('PayPerClick Campaign', 'uap');?></h3>
+					<h3 class="uap-h3"><?php _e(/*'PayPerClick Campaign'*/'클릭 당 수당 캠페인', 'uap');?></h3>
 					<div class="inside">
 						<div class="row">
 						<div class="col-xs-4">
-							<h3><?php _e('Activate/Hold PayPerClick Campaign', 'uap');?></h3>
-							<p><?php _e('Affiliates will receive a PPC Referral with flat amount each time a new referred user visit your website.', 'uap');?></p>
+							<h3><?php _e('활성화/보류 클릭 당 수당 캠페인', 'uap');?></h3>
+							<p><?php //_e('Affiliates will receive a PPC Referral with flat amount each time a new referred user visit your website.', 'uap');
+                                _e('새로운 추천 사용자가 귀하의 웹 사이트를 방문 할 때마다 제휴사는 일정 금액의 PPC 추천을 받게됩니다.', 'uap');?></p>
 							<label class="uap_label_shiwtch" style="margin:10px 0 10px -10px;">
 								<?php $checked = ($data['metas']['uap_pay_per_click_enabled']) ? 'checked' : '';?>
 								<input type="checkbox" class="uap-switch" onClick="uap_check_and_h(this, '#uap_pay_per_click_enabled');" <?php echo $checked;?> />
@@ -20,8 +21,9 @@
 						<div class="row">
 							<div class="col-xs-5">
 							<?php if (!empty($data['rank_list'])) :?>
-							<h3><?php _e('PPC Amount For Each Rank', 'uap');?></h3>
-								<p><?php _e('Set a special PPC amount for each rank. This option will also become available in the “Rank Settings” page.', 'uap');?></p>
+							<h3><?php _e(/*'PPC Amount For Each Rank'*/'각 순위당 PPC 금액', 'uap');?></h3>
+								<p><?php _e(/*'Set a special PPC amount for each rank. This option will also become available in the “Rank Settings” page.'*/'
+								각 등급에 대해 특별한 PPC 금액을 설정합니다. 이 옵션은 "순위 설정" 페이지에서도 사용할 수 있습니다.', 'uap');?></p>
 							<?php foreach ($data['rank_list'] as $id=>$label) :?>
 									<div class="input-group" style="margin-bottom:20px;">
 										<span class="input-group-addon" id="basic-addon1"><?php echo $label;?></span>

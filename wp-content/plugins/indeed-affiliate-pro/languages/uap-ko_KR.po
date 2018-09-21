@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-09-20 10:04+0900\n"
+"PO-Revision-Date: 2018-09-20 17:47+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -43,7 +43,7 @@ msgstr "여기"
 
 #: ../admin/Uap_Main_Admin.class.php:440 ../admin/views/dashboard.php:81
 msgid "Affiliates"
-msgstr "제휴시스템"
+msgstr "제휴사 목록"
 
 #: ../admin/Uap_Main_Admin.class.php:441 ../admin/views/ranks-list.php:5
 #: ../indeed-affiliate-pro.php:185
@@ -795,7 +795,7 @@ msgstr "성과 보기:"
 
 #: ../admin/views/account-page.php:94
 msgid "Show Rank:"
-msgstr "랭크 표시:"
+msgstr "등급 표시:"
 
 #: ../admin/views/account-page.php:99
 msgid "Welcome Message:"
@@ -1295,7 +1295,7 @@ msgstr "은행 송금"
 #: ../admin/views/transactions.php:22 ../classes/Uap_Db.class.php:6009
 #: ../classes/Uap_Db.class.php:7233
 msgid "Stripe"
-msgstr "Stripe"
+msgstr "스트라이프"
 
 #: ../admin/views/affiliates-list.php:172 ../admin/views/payment-form.php:51
 msgid "Stripe V2"
@@ -1433,11 +1433,11 @@ msgstr "사용 가능한 배너가 없습니다!"
 
 #: ../admin/views/bonus_on_rank.php:3 ../classes/Uap_Db.class.php:7273
 msgid "Bonus On Ranks"
-msgstr "랭크 별 보너스"
+msgstr "등급 별 보너스"
 
 #: ../admin/views/bonus_on_rank.php:7
 msgid "Activate/Hold Bonus On Ranks"
-msgstr "랭크 별 보너스 활성화/보류"
+msgstr "등급 별 보너스 활성화/보류"
 
 #: ../admin/views/bonus_on_rank.php:8
 msgid ""
@@ -1626,7 +1626,7 @@ msgstr "쿠폰 코드"
 #: ../admin/views/simple_links.php:99 ../classes/Uap_Db.class.php:1933
 #: ../classes/Uap_Db.class.php:1942 ../utilities.php:1024
 msgid "Affiliate"
-msgstr "제휴시스템"
+msgstr "제휴사"
 
 #: ../admin/views/coupons-add_edit.php:41
 msgid "Activate/Hold Coupon"
@@ -1815,7 +1815,7 @@ msgstr "상위 순위"
 
 #: ../admin/views/dashboard.php:56
 msgid "Total Affiliates per Rank"
-msgstr "랭크 별 총 계열사"
+msgstr "등급 별 총 계열사"
 
 #: ../admin/views/dashboard.php:65
 msgid "Last 5 Referrals"
@@ -2353,7 +2353,7 @@ msgstr ""
 #: ../admin/views/migrate_affiliates_pro.php:8
 #: ../admin/views/migrate_wp_affiliates.php:8
 msgid "Assign rank:"
-msgstr "랭크 할당:"
+msgstr "등급 할당:"
 
 #: ../admin/views/migrate_affiliate_wp.php:19
 #: ../admin/views/migrate_affiliates_pro.php:19
@@ -2436,7 +2436,7 @@ msgstr "행렬 옵션"
 
 #: ../admin/views/mlm.php:37
 msgid "Children Limit"
-msgstr "어린이 제한"
+msgstr "하위 제휴사 수 제한"
 
 #: ../admin/views/mlm.php:41
 msgid "Matrix Depth(Levels)"
@@ -3256,7 +3256,7 @@ msgstr "사이렌"
 
 #: ../admin/views/pushover.php:93
 msgid "Space Alarm"
-msgstr "스페이스 알람"
+msgstr "스페이스 알람Referrals"
 
 #: ../admin/views/pushover.php:94
 msgid "Tug Boat"
@@ -3308,7 +3308,7 @@ msgstr "랭크 관리"
 
 #: ../admin/views/ranks-add_edit.php:10
 msgid "Activate/Hold Rank"
-msgstr "랭크 활성화/보류"
+msgstr "등급 활성화/보류"
 
 #: ../admin/views/ranks-add_edit.php:11
 msgid "Activate or deactivate a specific rank without needing to delete it."
@@ -3459,7 +3459,7 @@ msgstr "사용 가능한 등급 없음!"
 
 #: ../admin/views/reccuring_referrals.php:3 ../classes/Uap_Db.class.php:7207
 msgid "Recurring Referrals"
-msgstr "반복 참조"
+msgstr "반복 조회"
 
 #: ../admin/views/reccuring_referrals.php:7
 msgid "Activate/Hold Reccuring Referrals"
@@ -4937,7 +4937,7 @@ msgstr "장치"
 
 #: ../admin/views/visits.php:90
 msgid "Just Visit"
-msgstr "바로 방문하기"
+msgstr "방금 접속"
 
 #: ../admin/views/visits.php:110
 msgid "No Visits Stored!"
@@ -4947,11 +4947,11 @@ msgstr "기록된 방문목록이 없습니다!"
 #: ../classes/Uap_Db.class.php:1754 ../classes/Uap_Db.class.php:7313
 #: ../classes/Uap_Db.class.php:8129 ../public/views/account_page-header.php:191
 msgid "Wallet"
-msgstr "Wallet"
+msgstr "월렛"
 
 #: ../admin/views/wallet.php:7
 msgid "Activate/Hold Wallet"
-msgstr "Wallet 활성화/보류"
+msgstr "월렛 활성화/보류"
 
 #: ../admin/views/wallet.php:8
 msgid ""
@@ -4995,7 +4995,7 @@ msgstr ""
 
 #: ../admin/views/wp_social_login.php:9 ../classes/Uap_Db.class.php:7401
 msgid "Wp Social Login Integration"
-msgstr "워드프레스 소셜 로그인 통합"
+msgstr "WP 소셜 통합 로그인"
 
 #: ../admin/views/wp_social_login.php:14
 msgid "Wp Social Login it's not active on Your system. You can find "
@@ -5020,7 +5020,7 @@ msgstr "새 사용자에게 할당된 등급"
 
 #: ../admin/views/wp_social_login.php:90
 msgid "Wordpress Social Login - Settings"
-msgstr "워드프레스 소셜 로그인 - 세팅"
+msgstr "WP 소셜 로그인 - 세팅"
 
 #: ../classes/ResetPassword.class.php:52 ../classes/ResetPassword.class.php:108
 msgid "Password reset on "
@@ -5457,19 +5457,19 @@ msgstr "계정 페이지 메뉴 아이템 생성 및 재정렬"
 
 #: ../classes/Uap_Db.class.php:7441
 msgid "Migrate AffiliateWP"
-msgstr "마이그레이션 AffiliateWP"
+msgstr "Migrate AffiliateWP"
 
 #: ../classes/Uap_Db.class.php:7445
 msgid "Migrate data from AffiliateWP plugin"
-msgstr "AffiliateWP 플러그인에서 데이터 마이그레이션"
+msgstr "AffiliateWP 플러그인에서 Migrate data 으로"
 
 #: ../classes/Uap_Db.class.php:7449
 msgid "Migrate Affiliates Pro"
-msgstr "마이그레이션 Affiliates Pro"
+msgstr "Migrate Affiliates Pro"
 
 #: ../classes/Uap_Db.class.php:7453
 msgid "Migrate data from Affiliates Pro plugin"
-msgstr "Affiliates Pro 플러그인 에서 Migrate data"
+msgstr "Affiliates Pro 플러그인 에서 Migrate data 으로"
 
 #: ../classes/Uap_Db.class.php:7457
 msgid "Migrate WP Affiliate"
