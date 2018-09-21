@@ -345,6 +345,7 @@ if ($payment == '편의점') {
         }
         elseif ($payment == '은행결제') $pgm_tax = ($zeusm * 1.50) / 100;
         elseif ($payment == '대인결제'){
+            $zeusm = $item_subtotal;
             if($zeusm < 1)$pgm_tax = 0;
             elseif($zeusm < 10000){
                 $pgm_tax = 300;
@@ -422,6 +423,7 @@ if ($payment == '편의점') {
     //관세
     $oHSInfo_tax = number_format($oHSInfo['tqoon_tax']);
 
+    //만약 아이템 가격이 0원이라면
     if($itemtotal==0){
         $totalm_excise = 0;
         $totalm_tax = 0;
