@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-09-20 17:47+0900\n"
+"PO-Revision-Date: 2018-09-21 11:50+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -224,7 +224,7 @@ msgstr "확인됨으로 표시"
 
 #: ../admin/Uap_Main_Admin.class.php:1084
 msgid "Payments For Affiliates"
-msgstr "계열사에 대한 지급액"
+msgstr "제휴사에 대한 지급액"
 
 #: ../admin/Uap_Main_Admin.class.php:1085
 msgid "All UnPaid Referrals"
@@ -542,27 +542,27 @@ msgstr "설정"
 
 #: ../admin/Uap_Main_Admin.class.php:3137
 msgid "Affiliates - Login Page"
-msgstr "계열사-로그인 페이지"
+msgstr "제휴사-로그인 페이지"
 
 #: ../admin/Uap_Main_Admin.class.php:3140
 msgid "Affiliates - Register Page"
-msgstr "계열사-페이지 등록"
+msgstr "제휴사-페이지 등록"
 
 #: ../admin/Uap_Main_Admin.class.php:3143
 msgid "Affiliates - Lost Password"
-msgstr "계열사-비밀 번호 분실"
+msgstr "제휴사-비밀 번호 분실"
 
 #: ../admin/Uap_Main_Admin.class.php:3146
 msgid "Affiliates - LogOut Page"
-msgstr "계열사-로그 아웃 페이지"
+msgstr "제휴사-로그 아웃 페이지"
 
 #: ../admin/Uap_Main_Admin.class.php:3149
 msgid "Affiliates - User Page"
-msgstr "계열사-사용자 페이지"
+msgstr "제휴사-사용자 페이지"
 
 #: ../admin/Uap_Main_Admin.class.php:3152
 msgid "Affiliates - TOS"
-msgstr "계열사-TOS"
+msgstr "제휴사-TOS"
 
 #: ../admin/Uap_Main_Admin.class.php:3174
 msgid "Affiliates Pro - Default Pages"
@@ -1716,7 +1716,7 @@ msgstr "비활성화"
 #: ../public/views/account_page-generate_links.php:79
 #: ../public/views/account_page-header.php:110
 msgid "Custom Affiliate Slug"
-msgstr "사용자 정의 제휴 슬러그"
+msgstr "Custom 제휴 Slug"
 
 #: ../admin/views/custom_affiliate_slug.php:11
 msgid "Activate/Hold Custom Affiliate Slug"
@@ -1860,7 +1860,7 @@ msgstr "이미 제휴로 등록 되었습니다."
 
 #: ../admin/views/edit_wp_user.php:8
 msgid "Remove from Affiliates list"
-msgstr "계열사 목록에서 제거"
+msgstr "제휴사 목록에서 제거"
 
 #: ../admin/views/edit_wp_user.php:11
 msgid "Make This User Affiliate"
@@ -4958,7 +4958,7 @@ msgid ""
 "Affiliates will have the option to spend their earnings directly in the "
 "website by using generated coupons with a specific flat discount."
 msgstr ""
-"계열사들은 특정한 균일 할인과 함께 생성된 쿠폰을 사용하여 수익을 웹사이트에"
+"제휴사들은 특정한 균일 할인과 함께 생성된 쿠폰을 사용하여 수익을 웹사이트에"
 "서 직접 지출할 수 있다."
 
 #: ../admin/views/wallet.php:19
@@ -5390,7 +5390,7 @@ msgid ""
 "Affiliates will have the option to spend their earnings directly in the "
 "website"
 msgstr ""
-"계열사들은 그들의 수입을 웹사이트에서 직접 쓸 수 있는 선택권을 갖게 될 것이다"
+"제휴사들은 그들의 수입을 웹사이트에서 직접 쓸 수 있는 선택권을 갖게 될 것이다"
 
 #: ../classes/Uap_Db.class.php:7324
 msgid ""
@@ -5415,7 +5415,7 @@ msgstr "관리자 조회 알림"
 
 #: ../classes/Uap_Db.class.php:7364
 msgid "Affiliates will receive periodical email reports about their stats"
-msgstr "계열사는 자신의 통계에 대한 정기적 이메일 보고서를 받게 됩니다"
+msgstr "제휴사는 자신의 통계에 대한 정기적 이메일 보고서를 받게 됩니다"
 
 #: ../classes/Uap_Db.class.php:7372
 msgid "The Affiliate Links can be provided as QR Codes"
