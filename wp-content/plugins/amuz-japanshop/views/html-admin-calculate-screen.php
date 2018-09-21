@@ -345,7 +345,6 @@ if ($payment == '편의점') {
         }
         elseif ($payment == '은행결제') $pgm_tax = ($zeusm * 1.50) / 100;
         elseif ($payment == '대인결제'){
-            $zeusm = $item_subtotal;
             if($zeusm < 1)$pgm_tax = 0;
             elseif($zeusm < 10000){
                 $pgm_tax = 300;
@@ -370,8 +369,31 @@ if ($payment == '편의점') {
 
         $pgm_tax=round(round($pgm_tax)*1.08);
 
+    $interpers = $item_subtotal;
+    $inter=0;
+    if ($payment == '대인결제'){
+        if($interpers < 1)$inter = 0;
+        elseif($interpers < 10000){
+            $inter = 300;
+        }
+        elseif ($interpers < 30000){
+            $inter = 400;
+        }
+        elseif ($interpers < 100000){
+            $inter = 600;
+        }
+        elseif ($interpers < 300000){
+            $inter = 1000;
+        }
+        elseif ($interpers < 500000){
+            $inter = 2000;
+        }
+        elseif ($interpers < 600000){
+            $inter = 6000;
+        }
+    }
         if ($payment == '대인결제') {
-            $interper = $pgm_tax;
+            $interper = round($inter * 1.08);
         }
         else $interper=0;
 
@@ -423,7 +445,6 @@ if ($payment == '편의점') {
     //관세
     $oHSInfo_tax = number_format($oHSInfo['tqoon_tax']);
 
-    //만약 아이템 가격이 0원이라면
     if($itemtotal==0){
         $totalm_excise = 0;
         $totalm_tax = 0;
