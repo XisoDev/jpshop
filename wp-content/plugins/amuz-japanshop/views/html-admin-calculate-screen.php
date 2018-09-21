@@ -374,9 +374,15 @@ if ($payment == '편의점') {
         }
         else $interper=0;
 
+    //환불시 돌려받는 관세
+    $oHSInfo_refund_tax = number_format($oHsRefundInfo['tqoon_tax']);
+    //관세
+    $oHSInfo_tax = number_format($oHSInfo['tqoon_tax']);
+
     //환불(발송후 환불) 수수료만 청구 없음
         if(!$order->get_meta('ywot_tracking_code' )){
             $total_excise=0;
+            $oHSInfo_refund_tax=0;
     }
 
     $oHSInfo = getHsValues($hs_codes, $order->get_items());
@@ -406,6 +412,7 @@ if ($payment == '편의점') {
 
     if($custom_delivery== "") $custom_delivery = 0;
 
+
     #  + 합계금액
     $total_calculate = ($itemtotal + $delivery + $total_tax + $total_excise + $interper + $pg_tax + $total_Convenience + round($oHsRefundInfo['tqoon_tax']));
 
@@ -415,8 +422,7 @@ if ($payment == '편의점') {
     # 정산금액
     $jungsan = $total_calculate - $total_m_calculate;
 
-    $oHSInfo_refund_tax = number_format($oHsRefundInfo['tqoon_tax']);
-    $oHSInfo_tax = number_format($oHSInfo['tqoon_tax']);
+
     if($itemtotal==0){
         $totalm_excise = 0;
         $totalm_tax = 0;
