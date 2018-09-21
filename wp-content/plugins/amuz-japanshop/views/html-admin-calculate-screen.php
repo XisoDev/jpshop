@@ -374,19 +374,17 @@ if ($payment == '편의점') {
         }
         else $interper=0;
 
-    //환불(발송후 환불) 수수료만 청구 없음
-        if($order->get_meta('환불시 배송여부') !=""){
-            $total_excise=0;
-            $oHsRefundInfo['tqoon_tax']=0;
-        }
-
 
 
     $oHSInfo = getHsValues($hs_codes, $order->get_items());
 
-
-    //print_r($refunds);
     $oHsRefundInfo = getHsRefundValues($hs_codes_refund, $order->get_refunds());
+
+    //환불(발송후 환불) 수수료만 청구 없음
+    if($order->get_meta('환불시 배송여부') !=""){
+        $total_excise=0;
+        $oHsRefundInfo['tqoon_tax']=0;
+    }
 
     #송금 수수료
     if($order->get_meta('remittance_fee')!="")
