@@ -377,6 +377,7 @@ if ($payment == '편의점') {
     //환불(발송후 환불) 수수료만 청구 없음
         if(!$order->get_meta('ywot_tracking_code' )){
             $total_excise=0;
+            $oHsRefundInfo['tqoon_tax']=0;
     }
 
     $oHSInfo = getHsValues($hs_codes, $order->get_items());
