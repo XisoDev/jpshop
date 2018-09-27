@@ -329,7 +329,7 @@ if ($payment == '편의점') {
 
         $pg_tax = $pg_tax*1.08;
     if($pay_refund!=0 and $payment == '신용카드')
-        $pgm_tax = $pg_tax + 5;
+        $pg_tax = $pg_tax + 5;
 
     $zeusm = $itemtotal + $delivery;
         if ($payment == '편의점') {
