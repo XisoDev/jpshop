@@ -327,10 +327,9 @@ if ($payment == '편의점') {
         }
         elseif ($payment == '기타')$pg_tax = 0;
 
+        $pg_tax = $pg_tax*1.08;
     if($pay_refund!=0 and $payment == '신용카드')
         $pgm_tax = $pg_tax + 5;
-    else
-        $pg_tax = $pg_tax*1.08;
 
     $zeusm = $itemtotal + $delivery;
         if ($payment == '편의점') {
@@ -371,11 +370,9 @@ if ($payment == '편의점') {
         }
         elseif ($payment == '기타') $pgm_tax=0;
 
-        if($zeusm!=0 and $payment == '신용카드')
-        $pgm_tax=$pgm_tax+5;
-        else
         $pgm_tax=round(round($pgm_tax)*1.08);
-
+    if($zeusm!=0 and $payment == '신용카드')
+        $pgm_tax=$pgm_tax+5;
 
     $interpers = $item_subtotal;
     $inter=0;
