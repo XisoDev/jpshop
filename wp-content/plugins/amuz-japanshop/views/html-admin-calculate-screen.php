@@ -312,8 +312,8 @@ if ($payment == '편의점') {
             elseif ($pay_refund < 300000) $pg_tax = 600;
         } elseif ($payment == '신용카드'){
         if($card_type=='visa'||$card_type=='mastercard')
-            $pg_tax = $pay_refund * 2.85 / 100;
-        else $pg_tax = $pay_refund * 3.35 / 100;
+            $pg_tax = $pay_refund * 3.35 / 100;
+        else $pg_tax = $pay_refund * 2.85 / 100;
         }
         elseif ($payment == '은행결제') $pg_tax = /*($pay_refund * 1.50) / 100;*/0;
         elseif ($payment == '대인결제'){
@@ -344,8 +344,8 @@ if ($payment == '편의점') {
             elseif ($zeusm < 300000) $pgm_tax = 600;
         } elseif ($payment == '신용카드'){
             if($card_type=='visa'||$card_type=='mastercard')
-                $pgm_tax = $zeusm * 2.85 / 100;
-            else $pgm_tax = $zeusm * 3.35 / 100;
+                $pgm_tax = $zeusm * 3.35 / 100;
+            else $pgm_tax = $zeusm * 2.85 / 100;
         }
         elseif ($payment == '은행결제') $pgm_tax = ($zeusm * 1.50) / 100;
         elseif ($payment == '대인결제'){
