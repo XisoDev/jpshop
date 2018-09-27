@@ -74,8 +74,18 @@ if($_FILES['upfile']['name']!="") {
 
     try {
 
+        $objReader = PHPExcel_IOFactory::createReaderForFile($filename);
+
+        print_r($objReader);
         // 업로드 된 엑셀 형식에 맞는 Reader객체를 만든다.
-        $objExcel = PHPExcel_IOFactory::load($filename);
+
+        // 읽기전용으로 설정
+
+        $objReader->setReadDataOnly(true);
+
+        // 엑셀파일을 읽는다
+
+        $objExcel = $objReader->load($filename);
 
         // 첫번째 시트를 선택
 
@@ -198,7 +208,8 @@ if($_FILES['upfile']['name']!="") {
             $category_id = '101';
             $kocategory = 'スウェット';
             $kocategory_id = '2020';
-        } elseif (strpos($read[$i]['D'], 'カーディガン') !== false || strpos($read[$i]['Z'], 'カーディガン') !== false) {
+        } elseif ((strpos($read[$i]['D'], 'カーディガン') !== false || strpos($read[$i]['Z'], 'カーディガン') !== false)&&
+        (strpos($read[$i]['D'], 'カーディガン') !== false || strpos($read[$i]['Z'], 'CARDIGAN') !== false)) {
             $category = 'トップス';
             $category_id = '101';
             $kocategory = 'Tシャツ・カットソー';
@@ -228,9 +239,24 @@ if($_FILES['upfile']['name']!="") {
             $category_id = '101';
             $kocategory = 'タンクトップ';
             $kocategory_id = '2009';
-        } ##바지
+        }
+        elseif (strpos($read[$i]['D'], 'タンクトップ') !== false || strpos($read[$i]['Z'], 'タンクトップ') !== false) {
+            $category = 'トップス';
+            $category_id = '101';
+            $kocategory = 'タンクトップ';
+            $kocategory_id = '2009';
+        }
+        elseif (strpos($read[$i]['D'], 'スリーブ') !== false || strpos($read[$i]['Z'], 'TOP') !== false) {
+            $category = 'トップス';
+            $category_id = '101';
+            $kocategory = 'その他トップス';
+            $kocategory_id = '2211';
+        }
+
+        ##바지
         elseif ((strpos($read[$i]['D'], 'ボトムス') !== false || strpos($read[$i]['Z'], 'ボトムス') !== false) and
-            (strpos($read[$i]['D'], 'デニム') !== false || strpos($read[$i]['Z'], 'デニム')) !== false
+            (strpos($read[$i]['D'], 'デニム') !== false || strpos($read[$i]['Z'], 'デニム')) !== false or
+            (strpos($read[$i]['Z'], 'BOTTOM') !== false || strpos($read[$i]['Z'], 'PANTS')) !== false
         ) {
             $category = 'パンツ';
             $category_id = '112';
@@ -250,7 +276,80 @@ if($_FILES['upfile']['name']!="") {
             $category_id = '112';
             $kocategory = 'パンツ';
             $kocategory_id = '2040';
-        } ##스커트
+        }
+        ##신발
+        elseif ((strpos($read[$i]['D'], 'サンダル') !== false || strpos($read[$i]['Z'], 'SHOES') !== false)
+        ) {
+            $category = 'シューズ';
+            $category_id = '118';
+            $kocategory = 'サンダル';
+            $kocategory_id = '2090';
+        }
+        elseif ((strpos($read[$i]['D'], 'ブーツ') !== false || strpos($read[$i]['Z'], 'SHOES') !== false)
+        ) {
+            $category = 'シューズ';
+            $category_id = '118';
+            $kocategory = 'ブーツ';
+            $kocategory_id = '2092';
+        }
+        elseif ((strpos($read[$i]['D'], 'スニーカー') !== false || strpos($read[$i]['Z'], 'SHOES') !== false)
+        ) {
+            $category = 'シューズ';
+            $category_id = '118';
+            $kocategory = 'スニーカー';
+            $kocategory_id = '2093';
+        }
+        elseif ((strpos($read[$i]['D'], 'シューズ') !== false || strpos($read[$i]['Z'], 'SHOES') !== false)&&
+            (strpos($read[$i]['D'], 'サボ') !== false || strpos($read[$i]['Z'], 'SHOES') !== false)&&
+            (strpos($read[$i]['D'], 'ミュール') !== false || strpos($read[$i]['Z'], 'SHOES') !== false)
+        ) {
+            $category = 'シューズ';
+            $category_id = '118';
+            $kocategory = 'その他シューズ';
+            $kocategory_id = '2094';
+        }
+        elseif ((strpos($read[$i]['D'], 'ビーチサンダル') !== false || strpos($read[$i]['Z'], 'SHOES') !== false)&&
+            (strpos($read[$i]['D'], 'ビーサン') !== false || strpos($read[$i]['Z'], 'SHOES') !== false)
+        ) {
+            $category = 'シューズ';
+            $category_id = '118';
+            $kocategory = 'ビーチサンダル';
+            $kocategory_id = '2352';
+        }
+        elseif ((strpos($read[$i]['D'], 'スリッポン') !== false || strpos($read[$i]['Z'], 'SHOES') !== false)
+        ) {
+            $category = 'シューズ';
+            $category_id = '118';
+            $kocategory = 'スリッポン';
+            $kocategory_id = '2374';
+        }
+        elseif ((strpos($read[$i]['D'], 'ローファー') !== false || strpos($read[$i]['Z'], 'SHOES') !== false)
+        ) {
+            $category = 'シューズ';
+            $category_id = '118';
+            $kocategory = 'ローファー';
+            $kocategory_id = '2375';
+        }
+        elseif ((strpos($read[$i]['D'], 'ヒール') !== false || strpos($read[$i]['Z'], 'SHOES') !== false) &&
+            (strpos($read[$i]['D'], 'パンプス') !== false || strpos($read[$i]['Z'], 'SHOES') !== false)
+        ) {
+            $category = 'シューズ';
+            $category_id = '118';
+            $kocategory = 'パンプス';
+            $kocategory_id = '2091';
+        }
+        ##양말
+
+        elseif ((strpos($read[$i]['D'], 'ソックス') !== false || strpos($read[$i]['Z'], 'ACC') !== false)
+        ) {
+            $category = 'レッグウェア';
+            $category_id = '132';
+            $kocategory = 'ソックス/靴下';
+            $kocategory_id = '2087';
+        }
+
+
+        ##스커트
         elseif ((strpos($read[$i]['D'], 'デニム') !== false || strpos($read[$i]['Z'], 'デニム') !== false) &&
             (strpos($read[$i]['D'], 'スカート') !== false || strpos($read[$i]['Z'], 'スカート') !== false)
         ) {
@@ -263,7 +362,71 @@ if($_FILES['upfile']['name']!="") {
             $category_id = '113';
             $kocategory = 'スカート';
             $kocategory_id = '2246';
-        } ##속옷
+        }
+        elseif ((strpos($read[$i]['D'], 'バック') !== false || strpos($read[$i]['Z'], 'BAG') !== false)
+        ) {
+            $category = 'バック';
+            $category_id = '114';
+            $kocategory = 'ハンドバッグ';
+            $kocategory_id = '2051';
+        }
+
+        ##악세사리
+        elseif ((strpos($read[$i]['D'], 'ブレスレット') !== false || strpos($read[$i]['Z'], 'ACC') !== false)&&
+            (strpos($read[$i]['D'], 'ミサンガ') !== false || strpos($read[$i]['Z'], 'ACC') !== false)
+        ) {
+            $category = 'アクセサリー';
+            $category_id = '115';
+            $kocategory = 'ブレスレット';
+            $kocategory_id = '2056';
+        }
+        elseif ((strpos($read[$i]['D'], 'リング') !== false || strpos($read[$i]['Z'], 'ACC') !== false)
+        ) {
+            $category = 'アクセサリー';
+            $category_id = '115';
+            $kocategory = 'リング';
+            $kocategory_id = '2058';
+        }
+        elseif ((strpos($read[$i]['D'], 'チョーカー') !== false || strpos($read[$i]['Z'], 'ACC') !== false)
+        ) {
+            $category = 'アクセサリー';
+            $category_id = '115';
+            $kocategory = 'チョーカー';
+            $kocategory_id = '2372';
+        }
+        elseif ((strpos($read[$i]['D'], 'カチューシャ') !== false || strpos($read[$i]['Z'], 'HAIR') !== false)
+        ) {
+            $category = 'ヘアアクセサリー';
+            $category_id = '135';
+            $kocategory = 'カチューシャ';
+            $kocategory_id = '2279';
+        }
+        elseif ((strpos($read[$i]['D'], 'ベルト') !== false || strpos($read[$i]['Z'], 'BELT') !== false)
+        ) {
+            $category = 'ファッション雑貨';
+            $category_id = '117';
+            $kocategory = 'ベルト';
+            $kocategory_id = '2089';
+        }
+
+        ##모자
+        elseif ((strpos($read[$i]['D'], 'キャップ') !== false || strpos($read[$i]['Z'], 'HAT') !== false)&&
+            (strpos($read[$i]['D'], 'ハット') !== false || strpos($read[$i]['Z'], 'HAT') !== false)
+        ) {
+            $category = '帽子';
+            $category_id = '119';
+            $kocategory = 'キャップ';
+            $kocategory_id = '2096';
+        }
+        elseif ((strpos($read[$i]['D'], 'ニット') !== false || strpos($read[$i]['Z'], 'HAT') !== false)
+        ) {
+            $category = '帽子';
+            $category_id = '119';
+            $kocategory = 'ニットキャップ・ビーニー';
+            $kocategory_id = '2097';
+        }
+
+        ##속옷
         elseif ((strpos($read[$i]['D'], 'ブラ') !== false || strpos($read[$i]['Z'], 'ブラ') !== false) and
             (strpos($read[$i]['D'], 'ランジェリ') !== false || strpos($read[$i]['Z'], 'ランジェリ') !== false)
         ) {
@@ -299,8 +462,7 @@ if($_FILES['upfile']['name']!="") {
             $kocategory = 'ルームウェア';
             $kocategory_id = '2018';
         } ##원피스
-        elseif ((strpos($read[$i]['D'], 'シャツ') !== false || strpos($read[$i]['Z'], 'シャツ') !== false) &&
-            (strpos($read[$i]['D'], 'ワンピース') !== false || strpos($read[$i]['Z'], 'ワンピース') !== false)
+        elseif ((strpos($read[$i]['D'], 'シャツ') !== false || strpos($read[$i]['Z'], 'シャツ') !== false)
         ) {
             $category = 'ワンピース';
             $category_id = '111';
@@ -311,7 +473,17 @@ if($_FILES['upfile']['name']!="") {
             $category_id = '111';
             $kocategory = 'ワンピース';
             $kocategory_id = '2035';
-        } ##수영복
+        }
+        elseif((strpos($read[$i]['D'], 'ワンピ') !== false || strpos($read[$i]['Z'], 'DRESS') !== false)&&
+            (strpos($read[$i]['D'], 'エスニック') !== false || strpos($read[$i]['Z'], 'DRESS') !== false)&&
+            (strpos($read[$i]['D'], 'トレーニング') !== false || strpos($read[$i]['Z'], 'DRESS') !== false)&&
+            (strpos($read[$i]['D'], 'ワンピース') !== false || strpos($read[$i]['Z'], 'DRESS') !== false)) {
+            $category = 'ワンピース';
+            $category_id = '111';
+            $kocategory = 'ワンピース';
+            $kocategory_id = '2035';
+        }
+        ##수영복
         elseif ((strpos($read[$i]['D'], 'ラッシュガード') !== false || strpos($read[$i]['Z'], 'ラッシュガード') !== false)
             && strpos($read[$i]['Z'], '水着') !== false
         ) {
@@ -319,12 +491,21 @@ if($_FILES['upfile']['name']!="") {
             $category_id = '137';
             $kocategory = 'ラッシュガード';
             $kocategory_id = '2377';
-        } elseif (strpos($read[$i]['D'], '水着') !== false || strpos($read[$i]['Z'], '水着') !== false) {
+        } elseif(strpos($read[$i]['D'], '水着') !== false || strpos($read[$i]['Z'], '水着') !== false)
+        {
             $category = '水着・着物・浴衣';
             $category_id = '137';
             $kocategory = '水着';
             $kocategory_id = '2083';
-        } ##레깅스
+        }
+        elseif(strpos($read[$i]['D'], 'キニ') !== false || strpos($read[$i]['Z'], 'SUMMER') !== false)
+        {
+            $category = '水着・着物・浴衣';
+            $category_id = '137';
+            $kocategory = '水着';
+            $kocategory_id = '2083';
+        }
+        ##레깅스
         elseif (strpos($read[$i]['D'], 'レギンス') !== false || strpos($read[$i]['Z'], 'レギンス') !== false) {
             $category = 'レッグウェア';
             $category_id = '132';
@@ -337,13 +518,56 @@ if($_FILES['upfile']['name']!="") {
             $category_id = '132';
             $kocategory = 'タイツ・ストッキング';
             $kocategory_id = '2176';
-        } ##자켓
-        elseif (strpos($read[$i]['D'], 'ジャケット') !== false || strpos($read[$i]['Z'], 'ジャケット') !== false) {
+        }
+        ##자켓
+        ##코드
+        elseif ((strpos($read[$i]['D'], 'トレンチコート') !== false || strpos($read[$i]['Z'], 'COAT') !== false)&&
+            (strpos($read[$i]['D'], 'ロング') !== false || strpos($read[$i]['Z'], 'COAT') !== false)&&
+            (strpos($read[$i]['D'], 'チェックコート') !== false || strpos($read[$i]['Z'], 'COAT') !== false))
+        {
+            $category = 'ジャケット・アウター';
+            $category_id = '108';
+            $kocategory = 'トレンチコート';
+            $kocategory_id = '2228';
+        }
+        elseif ((strpos($read[$i]['D'], 'テーラード') !== false || strpos($read[$i]['Z'], 'JACKET') !== false))
+        {
+            $category = 'ジャケット・アウター';
+            $category_id = '108';
+            $kocategory = 'テーラードジャケット';
+            $kocategory_id = '2196';
+        }
+        elseif ((strpos($read[$i]['D'], 'デニム') !== false || strpos($read[$i]['Z'], 'JACKET') !== false))
+        {
+            $category = 'ジャケット・アウター';
+            $category_id = '108';
+            $kocategory = 'デニムジャケット';
+            $kocategory_id = '2219';
+        }
+        elseif ((strpos($read[$i]['D'], 'ダウン') !== false || strpos($read[$i]['Z'], 'OUTER') !== false))
+        {
+            $category = 'ジャケット・アウター';
+            $category_id = '108';
+            $kocategory = 'ダウンジャケット/コート';
+            $kocategory_id = '2182';
+        }
+        elseif ((strpos($read[$i]['D'], 'ジャケット') !== false || strpos($read[$i]['Z'], 'JACKET') !== false)&&
+            (strpos($read[$i]['D'], 'フェイクファー') !== false || strpos($read[$i]['Z'], 'OUTER') !== false)&&
+            (strpos($read[$i]['D'], 'ジャケット') !== false || strpos($read[$i]['Z'], 'ジャケット') !== false))
+        {
             $category = 'ジャケット・アウター';
             $category_id = '108';
             $kocategory = 'その他アウター';
             $kocategory_id = '2169';
-        } ##마타니티 웨어
+        }
+        elseif ((strpos($read[$i]['D'], 'ライダース') !== false || strpos($read[$i]['Z'], 'JACKET') !== false))
+        {
+            $category = 'ジャケット・アウター';
+            $category_id = '108';
+            $kocategory = 'ライダースジャケット';
+            $kocategory_id = '2217';
+        }
+        ##마타니티 웨어
         elseif (strpos($read[$i]['D'], 'マタニティウェア') !== false || strpos($read[$i]['Z'], 'マタニティウェア') !== false) {
             $category = 'マタニティ・ベビー';
             $category_id = '126';
