@@ -331,6 +331,8 @@ if ($payment == '편의점') {
     if($pay_refund!=0 and $payment == '신용카드') {
         $pg_tax = $pg_tx + 5;
     }
+    else
+        $pg_tax = $pg_tx;
 
     $zeusm = $itemtotal + $delivery;
         if ($payment == '편의점') {
@@ -375,6 +377,7 @@ if ($payment == '편의점') {
     if($zeusm!=0 and $payment == '신용카드') {
         $pgm_tax = $pgm_tx + 5;
     }
+    else $pgm_tax= $pgm_tx;
 
     $interpers = $item_subtotal;
     $inter=0;
