@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-09-18 20:50+0900\n"
+"PO-Revision-Date: 2018-09-28 16:32+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgid ""
 "rewarded. Check your stage "
 msgstr ""
 "一部のアフィリエイトユーザーはランクを割り当てられておらず、報酬を得られない"
-"可能性があります。 ステージを確認する"
+"可能性があります。 ステージを確認する "
 
 #: ../admin/Uap_Main_Admin.class.php:202 ../admin/views/settings-captcha.php:12
 #: ../admin/views/wp_social_login.php:14
@@ -528,15 +528,13 @@ msgid "The Force Matrix Plan"
 msgstr "フォースマトリックスプラン"
 
 #: ../admin/Uap_Main_Admin.class.php:2552
-#, fuzzy
 msgid "Binary Plan"
 msgstr "バイナリプラン"
 
 #: ../admin/Uap_Main_Admin.class.php:2736
 #: ../admin/Uap_Main_Admin.class.php:2756
-#, fuzzy
 msgid "Shortcode Generator"
-msgstr "ショートジェネレータ"
+msgstr "ショートコードジェネレータ"
 
 #: ../admin/Uap_Main_Admin.class.php:2737
 #: ../admin/Uap_Main_Admin.class.php:2757 ../admin/views/import_export.php:17
@@ -545,37 +543,30 @@ msgid "Settings"
 msgstr "設定"
 
 #: ../admin/Uap_Main_Admin.class.php:3137
-#, fuzzy
 msgid "Affiliates - Login Page"
 msgstr "アフィリエイト-ログインページ"
 
 #: ../admin/Uap_Main_Admin.class.php:3140
-#, fuzzy
 msgid "Affiliates - Register Page"
 msgstr "アフィリエイト-登録ページ"
 
 #: ../admin/Uap_Main_Admin.class.php:3143
-#, fuzzy
 msgid "Affiliates - Lost Password"
 msgstr "アフィリエイト-パスワードを忘れました"
 
 #: ../admin/Uap_Main_Admin.class.php:3146
-#, fuzzy
 msgid "Affiliates - LogOut Page"
 msgstr "アフィリエイト-ログアウトページ"
 
 #: ../admin/Uap_Main_Admin.class.php:3149
-#, fuzzy
 msgid "Affiliates - User Page"
 msgstr "アフィリエイト-ユーザーページ"
 
 #: ../admin/Uap_Main_Admin.class.php:3152
-#, fuzzy
 msgid "Affiliates - TOS"
-msgstr "アフィリエイト-TOS"
+msgstr "アフィリエイト-トス"
 
 #: ../admin/Uap_Main_Admin.class.php:3174
-#, fuzzy
 msgid "Affiliates Pro - Default Pages"
 msgstr "アフィリエイトプロ-デフォルトのページ"
 
@@ -603,20 +594,17 @@ msgstr "パスワードを忘れた"
 #: ../admin/Uap_Main_Admin.class.php:3193 ../classes/Uap_Db.class.php:1707
 #: ../classes/Uap_Db.class.php:5721 ../classes/Uap_Db.class.php:8153
 #: ../indeed-affiliate-pro.php:200 ../public/views/account_page-header.php:261
-#, fuzzy
 msgid "LogOut"
 msgstr "ログアウト"
 
 #: ../admin/Uap_Main_Admin.class.php:3194 ../classes/Uap_Db.class.php:5722
-#, fuzzy
 msgid "User Account"
 msgstr "ユーザーアカウント"
 
 #: ../admin/Uap_Main_Admin.class.php:3195 ../classes/Uap_Db.class.php:5723
 #: ../indeed-affiliate-pro.php:202
-#, fuzzy
 msgid "TOS"
-msgstr "Tos"
+msgstr "トス"
 
 #: ../admin/Uap_Main_Admin.class.php:3281
 #: ../admin/views/affiliate-payment-settings.php:32
@@ -678,49 +666,41 @@ msgid "Cart Items"
 msgstr "カート内商品"
 
 #: ../admin/utilities.php:21
-#, fuzzy
 msgid "Current Rank"
 msgstr "現在のランク"
 
 #: ../admin/utilities.php:39
-#, fuzzy
 msgid "Field "
-msgstr "フィールド"
+msgstr "フィールド "
 
 #: ../admin/utilities.php:56
-#, fuzzy
 msgid "Bank Transfer Details: "
-msgstr "銀行振込の詳細:"
+msgstr "銀行振込の詳細: "
 
 #: ../admin/utilities.php:58 ../admin/utilities.php:65
 #: ../admin/utilities.php:79
-#, fuzzy
 msgid "Incomplete Payment Settings"
-msgstr "不完全な支払い設定"
+msgstr "未了決済設定"
 
 #: ../admin/utilities.php:63
-#, fuzzy
 msgid "PayPal E-mail Address: "
-msgstr "PayPal の電子メールアドレス:"
+msgstr "PayPal の電子メールアドレス: "
 
 #: ../admin/utilities.php:73
-#, fuzzy
 msgid "Name on Card: "
-msgstr "カード上の名前:"
+msgstr "カード上の名前: "
 
 #: ../admin/utilities.php:74
-#, fuzzy
 msgid "Card Number: "
-msgstr "カード番号:"
+msgstr "カード番号: "
 
 #: ../admin/utilities.php:76
 msgid "Expiration: "
 msgstr "有効期限 "
 
 #: ../admin/views/access.php:3
-#, fuzzy
 msgid "Roles allowed to enter into WordPress Admin Dashboard:"
-msgstr "ロールは、ワードプレスの管理ダッシュボードに入力することができます:"
+msgstr "WordPress Admin Dashboardに入力できる役割:"
 
 #: ../admin/views/access.php:7
 msgid "Administrator"
@@ -788,55 +768,45 @@ msgid "Save"
 msgstr "保存"
 
 #: ../admin/views/account-page.php:23
-#, fuzzy
 msgid "Accont Page"
-msgstr "Accont ページ"
+msgstr "アカウント ページ"
 
 #: ../admin/views/account-page.php:35
-#, fuzzy
 msgid "Top Section:"
 msgstr "トップセクション:"
 
 #: ../admin/views/account-page.php:40 ../admin/views/account-page.php:175
-#, fuzzy
 msgid "Select Template:"
 msgstr "テンプレートの選択:"
 
 #: ../admin/views/account-page.php:58
-#, fuzzy
 msgid "Show Avatar Image:"
 msgstr "アバターの画像を表示:"
 
 #: ../admin/views/account-page.php:67
-#, fuzzy
 msgid "Show Earning:"
 msgstr "収益を表示:"
 
 #: ../admin/views/account-page.php:76
-#, fuzzy
 msgid "Show Referrals:"
 msgstr "紹介を表示:"
 
 #: ../admin/views/account-page.php:85
-#, fuzzy
 msgid "Show Achievement:"
 msgstr "成果を表示:"
 
 #: ../admin/views/account-page.php:94
-#, fuzzy
 msgid "Show Rank:"
 msgstr "ランクを表示:"
 
 #: ../admin/views/account-page.php:99
-#, fuzzy
 msgid "Welcome Message:"
-msgstr "ウェルカムメッセージ:"
+msgstr "Welcomeメッセージ:"
 
 #: ../admin/views/account-page.php:104 ../admin/views/account-page.php:266
 #: ../admin/views/account-page.php:306
-#, fuzzy
 msgid "Regular constants"
-msgstr "標準定数"
+msgstr "正規定数"
 
 #: ../admin/views/account-page.php:130 ../admin/views/account-page.php:276
 #: ../admin/views/account-page.php:331
@@ -844,23 +814,20 @@ msgstr "標準定数"
 #: ../admin/views/notifications-add_edit.php:99
 #: ../admin/views/periodically_reports.php:58
 #: ../admin/views/referral_notifications.php:58
-#, fuzzy
 msgid "Custom Fields constants"
 msgstr "ユーザー設定フィールドの定数"
 
 #: ../admin/views/account-page.php:144
-#, fuzzy
 msgid "Background/Banner Image:"
-msgstr "背景/バナー画像:"
+msgstr "Background/バナー画像:"
 
 #: ../admin/views/account-page.php:145
-#, fuzzy
 msgid "The cover or background image, based on what theme you have chosen"
 msgstr "選択したテーマに基づいてカバーまたは背景イメージ"
 
 #: ../admin/views/account-page.php:157
 msgid "Remove Background Image"
-msgstr "背景画像を削除します。"
+msgstr "背景画像を削除します"
 
 #: ../admin/views/account-page.php:164 ../admin/views/account-page.php:292
 #: ../admin/views/account-page.php:343 ../admin/views/account-page.php:352
@@ -881,23 +848,19 @@ msgid "Save Changes"
 msgstr "変更を保存"
 
 #: ../admin/views/account-page.php:171
-#, fuzzy
 msgid "Content Section:"
 msgstr "コンテンツセクション:"
 
 #: ../admin/views/account-page.php:188
-#, fuzzy
 msgid "Menu Tabs:"
 msgstr "メニュータブ:"
 
 #: ../admin/views/account-page.php:205
-#, fuzzy
 msgid "Activate the Tab:"
-msgstr "タブをアクティブにします。"
+msgstr "タブをアクティブにします:"
 
 #: ../admin/views/account-page.php:214 ../admin/views/bp_account_page.php:22
 #: ../admin/views/woo_account_page.php:22
-#, fuzzy
 msgid "Menu Label"
 msgstr "メニューラベル"
 
@@ -912,17 +875,14 @@ msgid "Icon"
 msgstr "アイコン"
 
 #: ../admin/views/account-page.php:298
-#, fuzzy
 msgid "Footer Section:"
 msgstr "フッターセクション:"
 
 #: ../admin/views/account-page.php:301
-#, fuzzy
 msgid "Footer Content:"
 msgstr "フッターの内容:"
 
 #: ../admin/views/account-page.php:347
-#, fuzzy
 msgid "Additional Settings:"
 msgstr "その他の設定:"
 
@@ -931,17 +891,14 @@ msgid "Custom CSS:"
 msgstr "カスタム CSS:"
 
 #: ../admin/views/account_page_menu.php:13
-#, fuzzy
 msgid "Account Page - Customize Menu"
 msgstr "[アカウント] ページ-[カスタマイズ] メニュー"
 
 #: ../admin/views/account_page_menu.php:17
-#, fuzzy
 msgid "Activate/Hold Customize Menu"
 msgstr "アクティブ/ホールドのカスタマイズメニュー"
 
 #: ../admin/views/account_page_menu.php:35
-#, fuzzy
 msgid "Add new Menu Item"
 msgstr "新しいメニュー項目の追加"
 
@@ -970,14 +927,12 @@ msgid "Label"
 msgstr "ラベル"
 
 #: ../admin/views/account_page_menu.php:71
-#, fuzzy
 msgid "ReOrder Menu Items"
-msgstr "メニュー項目を並べ替える"
+msgstr "注文メニュー項目"
 
 #: ../admin/views/achievements.php:5
-#, fuzzy
 msgid "Affiliate Username: "
-msgstr "アフィリエイトのユーザー名:"
+msgstr "アフィリエイトのユーザー名: "
 
 #: ../admin/views/achievements.php:6 ../admin/views/affiliates-list.php:57
 #: ../admin/views/lifetime_commissions.php:68 ../admin/views/mlm.php:156
@@ -986,7 +941,6 @@ msgid "Search"
 msgstr "検索"
 
 #: ../admin/views/achievements.php:12
-#, fuzzy
 msgid "Last 50 Achievements"
 msgstr "最終50実績"
 
@@ -1008,9 +962,8 @@ msgid "On"
 msgstr "オン"
 
 #: ../admin/views/achievements.php:20
-#, fuzzy
 msgid "has moved from "
-msgstr "から移動している"
+msgstr "から移動している "
 
 #: ../admin/views/achievements.php:20 ../admin/views/offers-list.php:40
 #: ../public/views/account_page-reports.php:81
@@ -1019,18 +972,15 @@ msgstr "から"
 
 #: ../admin/views/admin_referral_notifications.php:3
 #: ../admin/views/referral_notifications.php:3 ../classes/Uap_Db.class.php:7345
-#, fuzzy
 msgid "Referral Notifications"
 msgstr "紹介通知"
 
 #: ../admin/views/admin_referral_notifications.php:8
 #: ../admin/views/referral_notifications.php:8
-#, fuzzy
 msgid "Activate/Hold Referral Notifications"
 msgstr "紹介通知の有効化/ホールド"
 
 #: ../admin/views/admin_referral_notifications.php:9
-#, fuzzy
 msgid ""
 "If this module is activated, admins have the option to receive instant "
 "notifications when an affiliate gets a new referral."
@@ -1050,24 +1000,20 @@ msgstr "通知の内容"
 
 #: ../admin/views/admin_referral_notifications.php:33
 #: ../admin/views/referral_notifications.php:33
-#, fuzzy
 msgid "Referral details constants"
 msgstr "参照の詳細定数"
 
 #: ../admin/views/admin_referral_notifications.php:37
-#, fuzzy
 msgid "WooCommerce Order Details"
 msgstr "WooCommerce 注文の詳細"
 
 #: ../admin/views/admin_referral_notifications.php:39
 #: ../admin/views/periodically_reports.php:38
 #: ../admin/views/referral_notifications.php:38
-#, fuzzy
 msgid "Native Fields constants"
 msgstr "ネイティブフィールド定数"
 
 #: ../admin/views/affiliate-payment-settings.php:3
-#, fuzzy
 msgid "Affiliate Payment Settings"
 msgstr "アフィリエイトのお支払い設定"
 
@@ -1076,7 +1022,6 @@ msgid "Payment Type:"
 msgstr "お支払い方法:"
 
 #: ../admin/views/affiliate-payment-settings.php:12
-#, fuzzy
 msgid "Name on Card:"
 msgstr "カード上の名前:"
 
@@ -1085,12 +1030,10 @@ msgid "Card Number:"
 msgstr "カード番号："
 
 #: ../admin/views/affiliate-payment-settings.php:14
-#, fuzzy
 msgid "CVC:"
 msgstr "Cvc："
 
 #: ../admin/views/affiliate-payment-settings.php:15
-#, fuzzy
 msgid "Expiration:"
 msgstr "有効 期限："
 
@@ -1099,18 +1042,15 @@ msgid "Type:"
 msgstr "タイプ："
 
 #: ../admin/views/affiliate-payment-settings.php:21
-#, fuzzy
 msgid "Bank Transfer Details:"
 msgstr "銀行振込の詳細:"
 
 #: ../admin/views/affiliate-payment-settings.php:26
-#, fuzzy
 msgid "PayPal E-mail Address:"
 msgstr "PayPal の電子メールアドレス:"
 
 #: ../admin/views/affiliate-payment-settings.php:35
 #: ../classes/Uap_Db.class.php:7803
-#, fuzzy
 msgid "Birth day"
 msgstr "誕生日"
 
@@ -1144,7 +1084,6 @@ msgstr "市区町村"
 
 #: ../admin/views/affiliate-payment-settings.php:41
 #: ../classes/Uap_Db.class.php:7809
-#, fuzzy
 msgid "Line1"
 msgstr "Line1"
 
@@ -1173,69 +1112,57 @@ msgstr "口座番号"
 
 #: ../admin/views/affiliate-payment-settings.php:46
 #: ../classes/Uap_Db.class.php:7814
-#, fuzzy
 msgid "SSN last 4"
 msgstr "SSN 最後の4"
 
 #: ../admin/views/affiliate-payment-settings.php:47
 #: ../classes/Uap_Db.class.php:7815
-#, fuzzy
 msgid "Personal id number"
 msgstr "個人 id 番号"
 
 #: ../admin/views/affiliate-payment-settings.php:48
 #: ../classes/Uap_Db.class.php:7816
-#, fuzzy
 msgid "Business name"
 msgstr "事業名"
 
 #: ../admin/views/affiliate-payment-settings.php:49
 #: ../classes/Uap_Db.class.php:7817
-#, fuzzy
 msgid "Business tax id"
 msgstr "ビジネス税 id"
 
 #: ../admin/views/affiliate-payment-settings.php:50
 #: ../classes/Uap_Db.class.php:7818
-#, fuzzy
 msgid "Personal Address City"
 msgstr "個人用アドレスの市区町村"
 
 #: ../admin/views/affiliate-payment-settings.php:51
 #: ../classes/Uap_Db.class.php:7819
-#, fuzzy
 msgid "Personal Address Line1"
 msgstr "個人アドレス Line1"
 
 #: ../admin/views/affiliate-payment-settings.php:52
 #: ../classes/Uap_Db.class.php:7820
 #: ../public/views/account_page-payment_settings.php:230
-#, fuzzy
 msgid "Personal Address Postal Code"
 msgstr "個人住所郵便番号"
 
 #: ../admin/views/affiliates-add_edit.php:3
-#, fuzzy
 msgid "Add/Edit Affiliate"
 msgstr "アフィリエイトの追加/編集"
 
 #: ../admin/views/affiliates-list.php:2
-#, fuzzy
 msgid "Listing Affiliates"
 msgstr "上場会社"
 
 #: ../admin/views/affiliates-list.php:3
-#, fuzzy
 msgid "Add new Affiliate"
 msgstr "新しいアフィリエイトを追加"
 
 #: ../admin/views/affiliates-list.php:8
-#, fuzzy
 msgid "Add Filters"
 msgstr "フィルタの追加"
 
 #: ../admin/views/affiliates-list.php:21
-#, fuzzy
 msgid "Search by Name or Username"
 msgstr "名前またはユーザー名で検索"
 
@@ -1279,7 +1206,6 @@ msgid "ID"
 msgstr "ID"
 
 #: ../admin/views/affiliates-list.php:48
-#, fuzzy
 msgid "Registered Time"
 msgstr "登録時刻"
 
@@ -1292,12 +1218,10 @@ msgid "DESC"
 msgstr "降順"
 
 #: ../admin/views/affiliates-list.php:65
-#, fuzzy
 msgid "Number of Users to Display:"
 msgstr "表示するユーザー数:"
 
 #: ../admin/views/affiliates-list.php:84
-#, fuzzy
 msgid "Update Rank"
 msgstr "ランクの更新"
 
@@ -1307,14 +1231,12 @@ msgstr "アフィリエイトID"
 
 #: ../admin/views/affiliates-list.php:94 ../admin/views/affiliates-list.php:115
 #: ../admin/views/top_affiliates.php:76
-#, fuzzy
 msgid "UserName"
-msgstr "名"
+msgstr "ユーザー名"
 
 #: ../admin/views/affiliates-list.php:97 ../admin/views/affiliates-list.php:118
 #: ../admin/views/payment-form.php:83 ../admin/views/payment-form.php:94
 #: ../admin/views/payment-form.php:172 ../admin/views/payment-form.php:183
-#, fuzzy
 msgid "Rank"
 msgstr "ランク"
 
@@ -1332,27 +1254,23 @@ msgstr "支払金額"
 
 #: ../admin/views/affiliates-list.php:102
 #: ../admin/views/affiliates-list.php:123 ../admin/views/reports.php:40
-#, fuzzy
 msgid "UnPaid Amount"
 msgstr "未払い金額"
 
 #: ../admin/views/affiliates-list.php:103
 #: ../admin/views/affiliates-list.php:124
-#, fuzzy
 msgid "Wp Role"
 msgstr "Wp の役割"
 
 #: ../admin/views/affiliates-list.php:105
 #: ../admin/views/affiliates-list.php:126
-#, fuzzy
 msgid "E-mail Status"
 msgstr "電子メールの状態"
 
 #: ../admin/views/affiliates-list.php:107
 #: ../admin/views/affiliates-list.php:128
-#, fuzzy
 msgid "Affiliate Since"
-msgstr "アフィリエイト以来"
+msgstr "アフィリエイトする"
 
 #: ../admin/views/affiliates-list.php:108
 #: ../admin/views/affiliates-list.php:129
@@ -1382,7 +1300,6 @@ msgid "Stripe"
 msgstr "Stripe"
 
 #: ../admin/views/affiliates-list.php:172 ../admin/views/payment-form.php:51
-#, fuzzy
 msgid "Stripe V2"
 msgstr "ストライプ V2"
 
@@ -1395,12 +1312,10 @@ msgid "Edit"
 msgstr "編集"
 
 #: ../admin/views/affiliates-list.php:186
-#, fuzzy
 msgid "Approve Affiliate"
 msgstr "アフィリエイトの承認"
 
 #: ../admin/views/affiliates-list.php:190
-#, fuzzy
 msgid "Approve E-mail"
 msgstr "電子メールの承認"
 
@@ -1417,12 +1332,10 @@ msgid "Proceed"
 msgstr "続行"
 
 #: ../admin/views/affiliates-list.php:226 ../admin/views/payments.php:169
-#, fuzzy
 msgid "Pay All"
 msgstr "すべてを支払う"
 
 #: ../admin/views/affiliates-list.php:238
-#, fuzzy
 msgid "Unapproved"
 msgstr "未承認"
 
@@ -1431,36 +1344,30 @@ msgid "Transactions"
 msgstr "トランザクション"
 
 #: ../admin/views/affiliates-list.php:253 ../admin/views/mlm.php:20
-#, fuzzy
 msgid "MLM Matrix"
-msgstr "マルチ商法マトリックス"
+msgstr "MLMマトリックス"
 
 #: ../admin/views/affiliates-list.php:271
-#, fuzzy
 msgid "No Affiliates Stored!"
-msgstr "いいえアフィリエイトは保存!"
+msgstr "保存されたアフィリエイトがありません!"
 
 #: ../admin/views/allow_own_referrence.php:3
-#, fuzzy
 msgid "Allow Own Referrence"
 msgstr "独自の参考を許可する"
 
 #: ../admin/views/allow_own_referrence.php:7
-#, fuzzy
 msgid "Activate/Hold Allow Own Referrence"
 msgstr "アクティブ/ホールドは、独自の参考を許可する"
 
 #: ../admin/views/allow_own_referrence.php:8
-#, fuzzy
 msgid ""
 "Affiliates will be able to earn a commission on their own purchases via "
 "their own referral links."
 msgstr ""
-"アフィリエイトは、独自の紹介リンクを介して自分の購入に手数料を獲得することが"
+"アフィリエイトは、自分の紹介リンクを介して自分の購入に手数料を獲得することが"
 "できます。"
 
 #: ../admin/views/banners-add_edit.php:4
-#, fuzzy
 msgid "Manage Banners"
 msgstr "バナーの管理"
 
@@ -1472,17 +1379,14 @@ msgid "Description:"
 msgstr "説明:"
 
 #: ../admin/views/banners-add_edit.php:21 ../admin/views/ranks-add_edit.php:49
-#, fuzzy
 msgid "Some details..."
 msgstr "いくつかの詳細..."
 
 #: ../admin/views/banners-add_edit.php:28
-#, fuzzy
 msgid "Banner Options:"
 msgstr "バナーのオプション:"
 
 #: ../admin/views/banners-add_edit.php:29
-#, fuzzy
 msgid ""
 "Predefined URL And Image for your Custom Banner available for Affiliates"
 msgstr ""
@@ -1493,29 +1397,24 @@ msgid "URL:"
 msgstr "URL:"
 
 #: ../admin/views/banners-add_edit.php:34
-#, fuzzy
 msgid "Banner Image:"
 msgstr "バナー画像:"
 
 #: ../admin/views/banners-add_edit.php:37
-#, fuzzy
 msgid "Remove Banner Image"
 msgstr "バナー画像の削除"
 
 #: ../admin/views/banners-list.php:2
-#, fuzzy
 msgid "Listing Banners"
 msgstr "リストバナー"
 
 #: ../admin/views/banners-list.php:3
-#, fuzzy
 msgid "Add New Banner"
 msgstr "新しいバナーを追加する"
 
 #: ../admin/views/banners-list.php:4
-#, fuzzy
 msgid "...create Banners for your Affiliates"
-msgstr "... あなたのアフィリエイトのバナーを作成する"
+msgstr "...提携会社バナー作り"
 
 #: ../admin/views/banners-list.php:15 ../admin/views/banners-list.php:24
 msgid "Image"
@@ -1528,27 +1427,22 @@ msgid "URL"
 msgstr "URL"
 
 #: ../admin/views/banners-list.php:17 ../admin/views/banners-list.php:26
-#, fuzzy
 msgid "Create Time"
 msgstr "時間の作成"
 
 #: ../admin/views/banners-list.php:54
-#, fuzzy
 msgid "No Banners Available!"
-msgstr "バナーはありません!"
+msgstr "バナーがありません!"
 
 #: ../admin/views/bonus_on_rank.php:3 ../classes/Uap_Db.class.php:7273
-#, fuzzy
 msgid "Bonus On Ranks"
 msgstr "ランクのボーナス"
 
 #: ../admin/views/bonus_on_rank.php:7
-#, fuzzy
 msgid "Activate/Hold Bonus On Ranks"
 msgstr "ランクのボーナスの有効化/ホールド"
 
 #: ../admin/views/bonus_on_rank.php:8
-#, fuzzy
 msgid ""
 "Affiliates will receive a bonus flat amount each time they will reach a "
 "specific rank."
@@ -1557,12 +1451,10 @@ msgstr ""
 "す。"
 
 #: ../admin/views/bonus_on_rank.php:23 ../admin/views/sign_up_referrals.php:49
-#, fuzzy
 msgid "Amount For Each Rank"
 msgstr "各ランクの金額"
 
 #: ../admin/views/bonus_on_rank.php:24
-#, fuzzy
 msgid ""
 "Set a special bonus amount for each rank. This option will also become "
 "available in the “Rank Settings” page."
@@ -1571,79 +1463,69 @@ msgstr ""
 "も使用できるようになります。"
 
 #: ../admin/views/bonus_on_rank.php:41 ../admin/views/sign_up_referrals.php:32
-#, fuzzy
 msgid "Default Referral Status"
 msgstr "既定の参照状態"
 
 #: ../admin/views/bp_account_page.php:3
-#, fuzzy
 msgid "BuddyPress Account Page"
-msgstr "バディアカウントページ"
+msgstr "BuddyPressアカウントページ"
 
 #: ../admin/views/bp_account_page.php:8 ../admin/views/woo_account_page.php:8
-#, fuzzy
 msgid "Activate/Hold Affiliate Section"
 msgstr "アフィリエイトのセクションをアクティブ/ホールド"
 
 #: ../admin/views/bp_account_page.php:9
-#, fuzzy
 msgid ""
 "Fully integrate a user’s “Affiliate Account” in their “BuddyPress Profile”. "
 "Once activated, a new tab in their “BuddyPress” menu will show up."
 msgstr ""
 "ユーザーの「アフィリエイト」アカウントを「バディプロファイル」に完全に統合し"
-"ます。アクティブにすると、\"バディ\" メニューの新しいタブが表示されます。"
+"ます。アクティブにすると、\"バディプレス\" メニューの新しいタブが表示されま"
+"す。"
 
 #: ../admin/views/bp_account_page.php:31 ../admin/views/woo_account_page.php:31
 msgid "Menu Position"
 msgstr "メニューの位置"
 
 #: ../admin/views/bp_account_page.php:39 ../admin/views/woo_account_page.php:39
-#, fuzzy
 msgid "Non-Affiliate Users"
 msgstr "非アフィリエイトユーザー"
 
 #: ../admin/views/bp_account_page.php:40 ../admin/views/woo_account_page.php:40
-#, fuzzy
 msgid ""
 "Even the non-affiliate users will see the new option but instead of "
 "“Affiliate Account Page”, custom content will show up."
 msgstr ""
-"も、非アフィリエイトのユーザーは、新しいオプションが表示されます \"アフィリエ"
-"イトのアカウントページ\" の代わりに、カスタムコンテンツが表示されます。"
+"非アフィリエイトのユーザーも、使用者も新しいオプションを見ることができる"
+"が、\"Affiliate Account Page\"の代わりに、利用者指定のコンテンツが表示されま"
+"す。"
 
 #: ../admin/views/bp_account_page.php:52 ../admin/views/woo_account_page.php:52
-#, fuzzy
 msgid "Custom Content for Non-Affiliate Users:"
 msgstr "非アフィリエイトユーザーのためのカスタムコンテンツ:"
 
 #: ../admin/views/checkout_select_referral.php:3
 #: ../classes/Uap_Db.class.php:7321
-#, fuzzy
 msgid "Fair Checkout Reward"
 msgstr "公正なチェックアウトの報酬"
 
 #: ../admin/views/checkout_select_referral.php:7
-#, fuzzy
 msgid "Activate/Hold  Checkout Reward"
-msgstr "チェックアウト報酬の有効化/ホールド"
+msgstr "活性化/ホールド ェックアウト補償"
 
 #: ../admin/views/checkout_select_referral.php:8
-#, fuzzy
 msgid ""
 "Once activated the customer will have the option to select an affiliate for "
 "commission during the checkout process."
 msgstr ""
-"一度有効にすると、顧客は、チェックアウトプロセス中に手数料のためのアフィリエ"
-"イトを選択するオプションがあります。"
+"活性化されれば、顧客は、チェックアウトプロセス中に手数料のためのアフィリエイ"
+"トを選択するオプションがあります。"
 
 #: ../admin/views/checkout_select_referral.php:22
-#, fuzzy
 msgid "Form Label field"
 msgstr "フォームラベルフィールド"
 
 #: ../admin/views/checkout_select_referral.php:23
-#, fuzzy
 msgid ""
 "The label name for the additional field available inside the checkout form."
 msgstr "チェックアウトフォーム内で使用できる追加フィールドのラベル名。"
@@ -1657,22 +1539,18 @@ msgid "Selection Type"
 msgstr "選択タイプ"
 
 #: ../admin/views/checkout_select_referral.php:38
-#, fuzzy
 msgid "Client select Affiliate from list"
 msgstr "クライアントの一覧からアフィリエイトを選択"
 
 #: ../admin/views/checkout_select_referral.php:38
-#, fuzzy
 msgid "Client write the Username of Affiliate"
 msgstr "クライアントは、アフィリエイトのユーザー名を書く"
 
 #: ../admin/views/checkout_select_referral.php:47
-#, fuzzy
 msgid "Affiliate Name Display"
 msgstr "アフィリエイト名の表示"
 
 #: ../admin/views/checkout_select_referral.php:48
-#, fuzzy
 msgid "How affiliates will be displayed."
 msgstr "アフィリエイトがどのように表示されるか。"
 
@@ -1685,22 +1563,19 @@ msgid "User Nicename"
 msgstr "ユーザー ナイスネーム"
 
 #: ../admin/views/checkout_select_referral.php:63
-#, fuzzy
 msgid "Affiliate List"
-msgstr "アフィリエイト一覧"
+msgstr "アフィリエイトリスト"
 
 #: ../admin/views/checkout_select_referral.php:64
-#, fuzzy
 msgid ""
 "Choose specific affiliates to show up in checkout selection if you do not "
 "want to display all of them."
 msgstr ""
-"あなたがそれらのすべてを表示したくない場合は、チェックアウトの選択に表示する"
-"特定のアフィリエイトを選択してください。"
+"あなたがそれらのすべてを表示したくない場合は、チェックアウト選択に表示する特"
+"定のアフィリエイトを選択してください。"
 
 #: ../admin/views/checkout_select_referral.php:74
 #: ../admin/views/offers-add_edit.php:118
-#, fuzzy
 msgid "Removing tag"
 msgstr "タグの削除"
 
@@ -1709,12 +1584,10 @@ msgid "Additional Settings"
 msgstr "追加設定"
 
 #: ../admin/views/checkout_select_referral.php:91
-#, fuzzy
 msgid "Rewrite current Affiliate"
 msgstr "現在のアフィリエイトを書き換える"
 
 #: ../admin/views/checkout_select_referral.php:92
-#, fuzzy
 msgid ""
 "If there is an affiliate already assigned for the current visitor/customer "
 "this one can be ignored. If not, the checkout option will not show up."
@@ -1724,12 +1597,10 @@ msgstr ""
 "ん。"
 
 #: ../admin/views/checkout_select_referral.php:103
-#, fuzzy
 msgid "Require select Affiliate"
 msgstr "必要なアフィリエイトを選択"
 
 #: ../admin/views/checkout_select_referral.php:104
-#, fuzzy
 msgid ""
 "Force the customer to select an affiliate to continue the checkout process. "
 "The additional field will be set as required."
@@ -1738,7 +1609,6 @@ msgstr ""
 "フィールドは必要に応じて設定されます。"
 
 #: ../admin/views/coupons-add_edit.php:5
-#, fuzzy
 msgid "Add/Edit Coupons"
 msgstr "クーポンの追加/編集"
 
@@ -1767,12 +1637,10 @@ msgid "Affiliate"
 msgstr "アフィリエイト"
 
 #: ../admin/views/coupons-add_edit.php:41
-#, fuzzy
 msgid "Activate/Hold Coupon"
 msgstr "クーポンの有効化/ホールド"
 
 #: ../admin/views/coupons-add_edit.php:42
-#, fuzzy
 msgid "Activate or deactivate a coupon without needing to delete it."
 msgstr "クーポンを削除せずに有効または無効にします。"
 
@@ -1781,7 +1649,6 @@ msgid "Coupon Amount"
 msgstr "クーポン内容"
 
 #: ../admin/views/coupons-add_edit.php:56
-#, fuzzy
 msgid ""
 "A special amount for this specific coupon needs to be set which will replace "
 "the standard amount rank."
@@ -1798,26 +1665,22 @@ msgid "Value"
 msgstr "値"
 
 #: ../admin/views/coupons-list.php:3
-#, fuzzy
 msgid "Affiliates Coupons"
 msgstr "アフィリエイトクーポン"
 
 #: ../admin/views/coupons-list.php:7
-#, fuzzy
 msgid "Activate/Hold Coupons option for your Affiliates"
 msgstr "アフィリエイトのクーポンオプションの有効化/ホールド"
 
 #: ../admin/views/coupons-list.php:8 ../admin/views/lifetime_commissions.php:8
 #: ../admin/views/reccuring_referrals.php:8
 #: ../admin/views/sign_up_referrals.php:8
-#, fuzzy
 msgid "You can activate this option to take place in your affiliate system."
 msgstr ""
 "あなたのアフィリエイトのシステムで行われるこのオプションを有効にすることがで"
 "きます。"
 
 #: ../admin/views/coupons-list.php:26
-#, fuzzy
 msgid "Listing Coupons"
 msgstr "クーポンのリスト"
 
@@ -1863,26 +1726,22 @@ msgstr "無効"
 #: ../classes/Uap_Db.class.php:7305 ../classes/Uap_Db.class.php:8102
 #: ../public/views/account_page-generate_links.php:79
 #: ../public/views/account_page-header.php:110
-#, fuzzy
 msgid "Custom Affiliate Slug"
 msgstr "カスタムアフィリエイトスラグ"
 
 #: ../admin/views/custom_affiliate_slug.php:11
-#, fuzzy
 msgid "Activate/Hold Custom Affiliate Slug"
 msgstr "カスタムアフィリエイトスラグをアクティブ/ホールド"
 
 #: ../admin/views/custom_affiliate_slug.php:12
-#, fuzzy
 msgid ""
 "Provides personal slugs besides the default username or ID so affiliates can "
 "hide their identity or company name behind a custom slug."
 msgstr ""
-"デフォルトのユーザー名または ID 以外の個人ナメクジを提供するので、アフィリエ"
-"イトは、カスタムスラグの背後に自分の身元や会社名を隠すことができます。"
+"デフォルトのユーザー名または ID 以外の個人スラグを提供するので、アフィリエイ"
+"トは、カスタムスラグの背後に自分の身元や会社名を隠すことができます。"
 
 #: ../admin/views/custom_affiliate_slug.php:23
-#, fuzzy
 msgid ""
 "Establish conditional requirements when affiliates want to set their "
 "personal custom slug. Hint: The custom slug is unique and future users may "
@@ -1901,7 +1760,6 @@ msgid "Maximum number of characters"
 msgstr "最大文字数"
 
 #: ../admin/views/custom_affiliate_slug.php:37
-#, fuzzy
 msgid "Slug characters rule"
 msgstr "スラグ文字ルール"
 
@@ -1912,23 +1770,19 @@ msgstr "標準"
 
 #: ../admin/views/custom_affiliate_slug.php:39
 #: ../admin/views/register-settings.php:123
-#, fuzzy
 msgid "Characters and digits"
 msgstr "文字と数字"
 
 #: ../admin/views/custom_affiliate_slug.php:39
 #: ../admin/views/register-settings.php:124
-#, fuzzy
 msgid "Characters, digits, minimum one uppercase letter"
 msgstr "文字、数字、最小大文字1文字"
 
 #: ../admin/views/custom_affiliate_slug.php:56
-#, fuzzy
 msgid "Add/Edit Slug"
 msgstr "スラグの追加/編集"
 
 #: ../admin/views/custom_affiliate_slug.php:60
-#, fuzzy
 msgid ""
 "You can add or edit a custom slug for a specific affiliate from your side."
 msgstr ""
@@ -1947,15 +1801,13 @@ msgid "Action"
 msgstr "アクション"
 
 #: ../admin/views/dashboard.php:5
-#, fuzzy
 msgid "Dashboard Overall"
 msgstr "ダッシュボード全体"
 
 #: ../admin/views/dashboard.php:14 ../admin/views/payments.php:11
 #: ../admin/views/reports.php:50
-#, fuzzy
 msgid "Total Affiliates"
-msgstr "関連会社合計"
+msgstr "アフィリエイト合計"
 
 #: ../admin/views/dashboard.php:24 ../admin/views/payments.php:21
 #: ../admin/views/reports.php:60
@@ -1965,22 +1817,18 @@ msgid "Total Referrals"
 msgstr "総アフィリエイト件数"
 
 #: ../admin/views/dashboard.php:34 ../admin/views/payments.php:31
-#, fuzzy
 msgid "Total UnPaid Referrals"
 msgstr "合計未払いの紹介"
 
 #: ../admin/views/dashboard.php:44
-#, fuzzy
 msgid "Top Rank"
 msgstr "トップランク"
 
 #: ../admin/views/dashboard.php:56
-#, fuzzy
 msgid "Total Affiliates per Rank"
-msgstr "1ランクあたりのアフィリエイト数"
+msgstr "各ランクの提携社数"
 
 #: ../admin/views/dashboard.php:65
-#, fuzzy
 msgid "Last 5 Referrals"
 msgstr "最後の5紹介"
 
@@ -1989,67 +1837,55 @@ msgid " for "
 msgstr " ために "
 
 #: ../admin/views/dashboard.php:69
-#, fuzzy
 msgid " on "
-msgstr "に"
+msgstr " に "
 
 #: ../admin/views/dashboard.php:81
 msgid "Top"
 msgstr "上"
 
 #: ../admin/views/dashboard.php:87
-#, fuzzy
 msgid "Total Amount"
 msgstr "総量"
 
 #: ../admin/views/edit_affiliate_referral_relation.php:3
 #: ../admin/views/lifetime_commissions.php:3 ../classes/Uap_Db.class.php:7199
-#, fuzzy
 msgid "LifeTime Commissions"
-msgstr "終身コミッション"
+msgstr "ライフタイム・コミッション"
 
 #: ../admin/views/edit_affiliate_referral_relation.php:6
-#, fuzzy
 msgid "Referral Username:"
 msgstr "紹介ユーザー名:"
 
 #: ../admin/views/edit_affiliate_referral_relation.php:10
-#, fuzzy
 msgid "Affiliate Username:"
 msgstr "アフィリエイトのユーザー名:"
 
 #: ../admin/views/edit_wp_user.php:3
-#, fuzzy
 msgid "Become Affiliate"
 msgstr "アフィリエイトになる"
 
 #: ../admin/views/edit_wp_user.php:6
-#, fuzzy
 msgid "Already registered as Affiliate."
 msgstr "すでにアフィリエイトとして登録。"
 
 #: ../admin/views/edit_wp_user.php:8
-#, fuzzy
 msgid "Remove from Affiliates list"
 msgstr "アフィリエイトリストから削除"
 
 #: ../admin/views/edit_wp_user.php:11
-#, fuzzy
 msgid "Make This User Affiliate"
 msgstr "このユーザーをアフィリエイトにする"
 
 #: ../admin/views/email_verification.php:3 ../classes/Uap_Db.class.php:7377
-#, fuzzy
 msgid "E-mail Verification"
 msgstr "電子メールの確認"
 
 #: ../admin/views/email_verification.php:7
-#, fuzzy
 msgid "Activate/Hold Email Verification"
 msgstr "電子メール検証の有効化/ホールド"
 
 #: ../admin/views/email_verification.php:8
-#, fuzzy
 msgid ""
 "Requires the email address for new Affiliates to be verified before they "
 "will be able to login. If the email address is not confirmed, the user "
@@ -2060,50 +1896,43 @@ msgstr ""
 "ユーザーアカウントは一定時間が経過すると自動的に削除されることがあります。"
 
 #: ../admin/views/email_verification.php:17
-#, fuzzy
 msgid ""
 "Be sure that your notifications for “<strong>Double Email Verification</"
 "strong>” are properly set."
 msgstr ""
-"「<strong> 二重電子メール確認 </strong>」の通知が適切に設定されていることを確"
-"認してください。"
+"<strong>重複電子メール確認</strong>に対するお知らせが正しく設定されているかを"
+"確認してください。"
 
 #: ../admin/views/email_verification.php:27
-#, fuzzy
 msgid "Activation Link Expire Time:"
 msgstr "アクティベーションリンクの有効期限:"
 
 #: ../admin/views/email_verification.php:49
 msgid "Success Redirect:"
-msgstr "成功。リダイレクトします"
+msgstr "成功。リダイレクトします:"
 
 #: ../admin/views/email_verification.php:65
 msgid "Error Redirect:"
-msgstr "エラー。リダイレクトします"
+msgstr "エラー。リダイレクトします:"
 
 #: ../admin/views/email_verification.php:81
-#, fuzzy
 msgid "Delete User if is not verified:"
 msgstr "確認されていないユーザーを削除する:"
 
 #: ../admin/views/empty_progress_bar.php:3
-#, fuzzy
 msgid "Do not refresh or leave this page until the process it's over!"
 msgstr ""
-"プロセスが終わるまで、このページを更新したり、残したりしないでください。"
+"プロセスが完了するまでこのページをアップデートするか終了しないでください！"
 
 #: ../admin/views/friendly_links.php:3
-#, fuzzy
 msgid "Friendly Links"
 msgstr "友好的なリンク"
 
 #: ../admin/views/friendly_links.php:7
-#, fuzzy
 msgid "Activate/Hold Friendly Affiliate Links"
 msgstr "アクティブ/フレンドリーなアフィリエイトのリンクを保持する"
 
 #: ../admin/views/friendly_links.php:8
-#, fuzzy
 msgid ""
 "Affiliates will be able to use friendly links instead of the default one. "
 "They have a better looking structure and are easier to read. Ex: www."
@@ -2114,7 +1943,6 @@ msgstr ""
 "smith"
 
 #: ../admin/views/friendly_links.php:18
-#, fuzzy
 msgid ""
 "This feature is recommended only when the referral format is based on "
 "username. Affiliates will not be able to build custom links into a friendly "
@@ -2125,43 +1953,36 @@ msgstr ""
 "できません。例:? 順序 = true"
 
 #: ../admin/views/friendly_links.php:19
-#, fuzzy
 msgid "Refreshing the WP permalinks may be required."
-msgstr "WP のパーマリンクを更新する必要があります。"
+msgstr "WP のpermalinkを更新する必要があります。"
 
 #: ../admin/views/global_errors.php:2
-#, fuzzy
 msgid ""
 "<p>This is a Trial Version of <strong>Ultimate Affiliate Pro</strong> "
 "plugin. Please add your purchase code into Licence section to enable the "
 "Full Ultimate Affiliate Pro Version. Check your "
 msgstr ""
-"<p> これは <strong> 究極のアフィリエイトプロ </strong> プラグインの試用版で"
-"す。完全な最終的な関係団体のプロ版を可能にするために免許証セクションにあなた"
-"の購入コードを加えなさい。をチェック"
+"<p>これは<strong>Ultimate Affiliate Pro</strong>Full Ultimate Affiliate Pro"
+"バージョンです。 全体Ultimate Affiliate Proバージョンを活性化するためには、購"
+"買コードをライセンスセクションに追加してください。 確認する "
 
 #: ../admin/views/global_errors.php:2
-#, fuzzy
 msgid "licence section"
 msgstr "ライセンスセクション"
 
 #: ../admin/views/header.php:3
-#, fuzzy
 msgid "Are you sure you want to delete this Referral?"
 msgstr "この紹介を削除してもよろしいですか?"
 
 #: ../admin/views/header.php:4
-#, fuzzy
 msgid "Delete This "
-msgstr "この削除"
+msgstr "この削除 "
 
 #: ../admin/views/header.php:5
-#, fuzzy
 msgid "Delete selected Affiliates"
 msgstr "選択したアフィリエイトの削除"
 
 #: ../admin/views/header.php:6
-#, fuzzy
 msgid ""
 "An E-mail was sent to your Admin address. Check your inbox or Spam/Junk "
 "Folder!"
@@ -2170,12 +1991,10 @@ msgstr ""
 "メール/ジャンクフォルダをチェック!"
 
 #: ../admin/views/help.php:6
-#, fuzzy
 msgid "Activate Ultimate Affiliate Pro"
-msgstr "アクティベーション究極のアフィリエイトプロ"
+msgstr "Ultimateアフィリエイトプロのアクティブ"
 
 #: ../admin/views/help.php:11
-#, fuzzy
 msgid "cURL is disabled. You need to enable if for further activation request."
 msgstr ""
 "cURL は無効です。さらにアクティベーション要求の場合は有効にする必要がありま"
@@ -2190,12 +2009,10 @@ msgid "Activate"
 msgstr "有効化"
 
 #: ../admin/views/help.php:27
-#, fuzzy
 msgid "You've activated the Ultimate Affiliate Pro plugin!"
-msgstr "あなたは、究極のアフィリエイトプロプラグインを活性化しました!"
+msgstr "あなたは、Ultimateのアフィリエイトプロプラグインを活性化しました!"
 
 #: ../admin/views/help.php:31
-#, fuzzy
 msgid ""
 "You have entered an invalid purchase code or the Envato API could be down "
 "for a moment."
@@ -2203,31 +2020,26 @@ msgstr ""
 "無効な購入コードを入力したか、Envato API がダウンしている可能性があります。"
 
 #: ../admin/views/help.php:37
-#, fuzzy
 msgid "A valid purchase code Activate the Full Version of"
 msgstr "有効な購入コードのフルバージョンを有効にする"
 
 #: ../admin/views/help.php:37
-#, fuzzy
 msgid ""
 "plugin and provides access on support system. A purchase code can only be "
 "used for "
 msgstr ""
-"プラグインとサポートシステムへのアクセスを提供します。購入コードを使用できる"
-"のは、"
+"プラグインは支援システムに対するアクセスを提供します。 購買コードは次に限って"
+"使用することができます。 "
 
 #: ../admin/views/help.php:37
-#, fuzzy
 msgid "ONE"
-msgstr "1 つ"
+msgstr "1"
 
 #: ../admin/views/help.php:37
-#, fuzzy
 msgid "for WordPress installation on"
 msgstr "ワードプレスのインストールについて"
 
 #: ../admin/views/help.php:37
-#, fuzzy
 msgid ""
 "WordPress site at a time. If you previosly activated your purchase code on "
 "another website, then you have to get a"
@@ -2236,12 +2048,10 @@ msgstr ""
 "活性化 previosly 場合は、取得する必要があります"
 
 #: ../admin/views/help.php:37
-#, fuzzy
 msgid "new Licence"
 msgstr "新しいライセンス"
 
 #: ../admin/views/help.php:38
-#, fuzzy
 msgid "Where can I find my Purchase Code?"
 msgstr "購入コードはどこで確認できますか?"
 
@@ -2250,7 +2060,6 @@ msgid "Contact Support"
 msgstr "サポートに問い合わせる"
 
 #: ../admin/views/help.php:55
-#, fuzzy
 msgid ""
 "In order to contact Indeed support team you need to create a ticket "
 "providing all the necessary details via our support system:"
@@ -2283,41 +2092,34 @@ msgid "File"
 msgstr "ファイル"
 
 #: ../admin/views/landing_commissions-add_edit.php:5
-#, fuzzy
 msgid "Landing Commission Shortcode"
 msgstr "着陸委員会ショート"
 
 #: ../admin/views/landing_commissions-add_edit.php:10
-#, fuzzy
 msgid "Activate/Hold Shortcode"
-msgstr "アクティブ/ホールドショート"
+msgstr "アクティブ/ホールドショートコード"
 
 #: ../admin/views/landing_commissions-add_edit.php:11
-#, fuzzy
 msgid "Activate or deactivate a shortcode without needing to delete it."
-msgstr "ショートを削除せずにアクティブ化または非アクティブ化します。"
+msgstr "ショートコードを削除せずにアクティブ化または非アクティブ化します。"
 
 #: ../admin/views/landing_commissions-add_edit.php:27
-#, fuzzy
 msgid "unique slug"
-msgstr "ユニークなナメクジ"
+msgstr "ユニークなスラグ"
 
 #: ../admin/views/landing_commissions-add_edit.php:29
-#, fuzzy
 msgid ""
 "Be sure that you set a Unique Slug based only on lowercase characters and no "
 "additional symbols or spaces"
 msgstr ""
 "小文字のみに基づいて一意のスラグを設定し、記号やスペースを追加しないようにし"
-"てください。"
+"てください"
 
 #: ../admin/views/landing_commissions-add_edit.php:38
-#, fuzzy
 msgid "Commission Price"
 msgstr "コミッション価格"
 
 #: ../admin/views/landing_commissions-add_edit.php:39
-#, fuzzy
 msgid ""
 "Based on the landing commission price, the referral amount will be "
 "calculated depending on each affiliate rank amount."
@@ -2326,43 +2128,36 @@ msgstr ""
 "て計算されます。"
 
 #: ../admin/views/landing_commissions-add_edit.php:45
-#, fuzzy
 msgid "Additional dynamic Workflow"
 msgstr "追加の動的ワークフロー"
 
 #: ../admin/views/landing_commissions-add_edit.php:46
-#, fuzzy
 msgid ""
 "You can come out with a Dynamic reference Price via GET or POST if the  "
 "\"lc_amount\" variable is sent where the Landing Commission shortcode is set."
 msgstr ""
-"「lc_amount」変数が上陸任務ショートが置かれるところで送られれば得るか、または"
-"ポストによって動的参照価格と出て来ることができる。"
+"ランディング委員会のショートコードが設定されている場所に \"lc_amount\"変数が"
+"送信された場合,GET または POST 経由でダイナミック参照価格を提示できます."
 
 #: ../admin/views/landing_commissions-add_edit.php:53
-#, fuzzy
 msgid "Referral Default Status"
 msgstr "参照の既定の状態"
 
 #: ../admin/views/landing_commissions-add_edit.php:73
-#, fuzzy
 msgid "Source Name"
 msgstr "ソース名"
 
 #: ../admin/views/landing_commissions-add_edit.php:84
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:59
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:61
-#, fuzzy
 msgid "Referral Description"
 msgstr "紹介の説明"
 
 #: ../admin/views/landing_commissions-add_edit.php:93
-#, fuzzy
 msgid "Cookie Expire Time"
 msgstr "クッキーの有効期限時間"
 
 #: ../admin/views/landing_commissions-add_edit.php:94
-#, fuzzy
 msgid "Set time interval"
 msgstr "時間間隔の設定"
 
@@ -2375,17 +2170,14 @@ msgid "Color"
 msgstr "色"
 
 #: ../admin/views/landing_commissions-list.php:3
-#, fuzzy
 msgid "Add New Landing Commission"
 msgstr "新しいランディングコミッションの追加"
 
 #: ../admin/views/landing_commissions-list.php:4
-#, fuzzy
 msgid "...create your Landing Commission Shortcode"
 msgstr "着陸任務をショート"
 
 #: ../admin/views/landing_commissions-list.php:11
-#, fuzzy
 msgid ""
 "Just copy the landing commission shortcode into any successful page (ex: "
 "Thank You Register page) and the affiliate will receive a certain commission "
@@ -2396,28 +2188,22 @@ msgstr ""
 "取ることになります。"
 
 #: ../admin/views/landing_commissions-list.php:25
-#, fuzzy
 msgid "Source Name:"
 msgstr "ソース名:"
 
 #: ../admin/views/landing_commissions-list.php:52
-#, fuzzy
 msgid "No Shortcode to show. Please, add your first Shortcode. "
-msgstr ""
-"ショートは表示されません。してください、あなたの最初のショートを追加します。"
+msgstr "ショートは表示されません。あなたの最初のショートを追加してください。 "
 
 #: ../admin/views/lifetime_commissions.php:7
-#, fuzzy
 msgid "Activate/Hold LifeTime Commissions"
 msgstr "有効期間のコミッションの有効化/ホールド"
 
 #: ../admin/views/lifetime_commissions.php:23
-#, fuzzy
 msgid "LifeTime Amount For Each Rank"
 msgstr "各ランクの有効期間の金額"
 
 #: ../admin/views/lifetime_commissions.php:24
-#, fuzzy
 msgid ""
 "Set a special lifetime amount for each rank that will replace the default "
 "amount rank. This option will also become available in the “Rank Settings” "
@@ -2428,23 +2214,19 @@ msgstr ""
 
 #: ../admin/views/lifetime_commissions.php:27
 #: ../admin/views/reccuring_referrals.php:25
-#, fuzzy
 msgid "Rank Name"
 msgstr "ランク名"
 
 #: ../admin/views/lifetime_commissions.php:28
 #: ../admin/views/reccuring_referrals.php:26
-#, fuzzy
 msgid "Default Amount Rank"
 msgstr "既定の金額ランク"
 
 #: ../admin/views/lifetime_commissions.php:29
-#, fuzzy
 msgid "LifeTime Amount"
 msgstr "有効期間の金額"
 
 #: ../admin/views/lifetime_commissions.php:62
-#, fuzzy
 msgid "Search Lifetime User-Affiliates"
 msgstr "検索ライフタイムユーザー-アフィリエイト"
 
@@ -2452,13 +2234,11 @@ msgstr "検索ライフタイムユーザー-アフィリエイト"
 #: ../admin/views/lifetime_commissions.php:74 ../admin/views/mlm.php:154
 #: ../admin/views/simple_links.php:75 ../admin/views/visits.php:44
 #: ../admin/views/visits.php:57
-#, fuzzy
 msgid "Affiliate Username"
 msgstr "アフィリエイトのユーザー名"
 
 #: ../admin/views/lifetime_commissions.php:67
 #: ../admin/views/lifetime_commissions.php:75
-#, fuzzy
 msgid "Referral Username"
 msgstr "紹介ユーザー名"
 
@@ -2467,25 +2247,21 @@ msgid "Actions"
 msgstr "アクション"
 
 #: ../admin/views/login-custom_messages.php:3
-#, fuzzy
 msgid "Messages:"
 msgstr "メッセージ："
 
 #: ../admin/views/login-custom_messages.php:6
-#, fuzzy
 msgid "Login Messages"
 msgstr "ログインメッセージ"
 
 #: ../admin/views/login-custom_messages.php:8
 #: ../admin/views/login-custom_messages.php:28
-#, fuzzy
 msgid "Successfully Message:"
 msgstr "正常にメッセージ:"
 
 #: ../admin/views/login-custom_messages.php:12
-#, fuzzy
 msgid "Default message for pending users:"
-msgstr "保留中のユーザーの既定のメッセージ:"
+msgstr "保留中の使用者の基本メッセージ:"
 
 #: ../admin/views/login-custom_messages.php:16
 #: ../admin/views/login-custom_messages.php:33
@@ -2495,12 +2271,10 @@ msgid "Error Message:"
 msgstr "エラーメッセージ:"
 
 #: ../admin/views/login-custom_messages.php:20
-#, fuzzy
 msgid "E-mail Pending:"
 msgstr "保留中の電子メール:"
 
 #: ../admin/views/login-custom_messages.php:26
-#, fuzzy
 msgid "Reset Password Messages"
 msgstr "パスワードメッセージのリセット"
 
@@ -2511,12 +2285,10 @@ msgid "Login Form"
 msgstr "ログインフォーム"
 
 #: ../admin/views/login.php:12
-#, fuzzy
 msgid "Showcase Display"
 msgstr "ショーケース表示"
 
 #: ../admin/views/login.php:15
-#, fuzzy
 msgid "Login Template:"
 msgstr "ログインテンプレート:"
 
@@ -2534,16 +2306,14 @@ msgid "Remember Me"
 msgstr "ログイン状態を保存する"
 
 #: ../admin/views/login.php:47
-#, fuzzy
 msgid "Register Link"
 msgstr "登録リンク"
 
 #: ../admin/views/login.php:51
 msgid "Lost your password"
-msgstr "パスワードを忘れましたか？"
+msgstr "パスワードを忘れましたか"
 
 #: ../admin/views/login.php:56
-#, fuzzy
 msgid "Show ReCaptcha"
 msgstr "ReCaptcha を表示"
 
@@ -2552,17 +2322,14 @@ msgid "Custom CSS"
 msgstr "カスタムCSS"
 
 #: ../admin/views/max_amount.php:3 ../classes/Uap_Db.class.php:7417
-#, fuzzy
 msgid "Maximum Amount"
 msgstr "最大金額"
 
 #: ../admin/views/max_amount.php:8
-#, fuzzy
 msgid "Activate/Hold Maximum Amount"
 msgstr "最大量の有効化/ホールド"
 
 #: ../admin/views/max_amount.php:9
-#, fuzzy
 msgid ""
 "Set a maximum amount that can not be passed for a referral. It is a safety "
 "limit decided by the Admin for avoiding big referrals that have to be paid."
@@ -2571,12 +2338,10 @@ msgstr ""
 "ない大きい紹介を避けるために Admin によって決定される安全限界である。"
 
 #: ../admin/views/max_amount.php:24
-#, fuzzy
 msgid "Default Amount Limit"
 msgstr "既定の金額制限"
 
 #: ../admin/views/max_amount.php:25
-#, fuzzy
 msgid ""
 "Set the default flat amount limit that will be used when no special limit is "
 "set for a certain rank."
@@ -2585,17 +2350,14 @@ msgstr ""
 "度額を設定します。"
 
 #: ../admin/views/max_amount.php:27
-#, fuzzy
 msgid "Max Amount Limit"
 msgstr "最大限度額"
 
 #: ../admin/views/max_amount.php:39
-#, fuzzy
 msgid "Max Amount Limit for Each Rank"
 msgstr "各ランクの最大金額制限"
 
 #: ../admin/views/max_amount.php:40
-#, fuzzy
 msgid ""
 "Set a special max amount limit for each rank. This option will also become "
 "available in the “Rank Settings” page."
@@ -2606,7 +2368,6 @@ msgstr ""
 #: ../admin/views/migrate_affiliate_wp.php:8
 #: ../admin/views/migrate_affiliates_pro.php:8
 #: ../admin/views/migrate_wp_affiliates.php:8
-#, fuzzy
 msgid "Assign rank:"
 msgstr "ランクの割り当て:"
 
@@ -2619,19 +2380,16 @@ msgstr "トリガー"
 #: ../admin/views/migrate_affiliate_wp.php:35
 #: ../admin/views/migrate_affiliates_pro.php:35
 #: ../admin/views/migrate_wp_affiliates.php:35
-#, fuzzy
 msgid "Process completed!"
 msgstr "プロセス完了!"
 
 #: ../admin/views/mlm-view_affiliate_children.php:2
-#, fuzzy
 msgid "Display MLM Matrix"
 msgstr "表示マルチ商法マトリックス"
 
 #: ../admin/views/mlm-view_affiliate_children.php:40
 #: ../public/views/account_page-mlm.php:48
 #: ../public/views/account_page-mlm.php:56
-#, fuzzy
 msgid "Subaffiliate"
 msgstr "Subaffiliate"
 
@@ -2668,55 +2426,44 @@ msgstr "量"
 
 #: ../admin/views/mlm-view_affiliate_children.php:54
 #: ../public/views/account_page-mlm.php:73
-#, fuzzy
 msgid "No Children Yet!"
 msgstr "まだ子供はいません!"
 
 #: ../admin/views/mlm.php:3
-#, fuzzy
 msgid "Multi-Level Marketing"
 msgstr "マルチレベルマーケティング"
 
 #: ../admin/views/mlm.php:7
-#, fuzzy
 msgid "Activate/Hold Multi-Level Marketing"
 msgstr "マルチレベルマーケティングの有効化/ホールド"
 
 #: ../admin/views/mlm.php:8
-#, fuzzy
 msgid ""
 "You can activate this option to take in place into your Affiliate system."
 msgstr ""
-"あなたのアフィリエイトのシステムに場所を取るために、このオプションを有効にす"
-"ることができます。"
+"このオプションをアクティブにすると,アフィリエート システムに展開できます。"
 
 #: ../admin/views/mlm.php:21
-#, fuzzy
 msgid "There are multiple ways the MLM system may work."
-msgstr "マルチ商法のシステムが動作する可能性があります複数の方法があります。"
+msgstr "MLMシステムが作動する方法はいろいろあります。"
 
 #: ../admin/views/mlm.php:34
-#, fuzzy
 msgid "Matrix Options"
 msgstr "マトリックスのオプション"
 
 #: ../admin/views/mlm.php:37
-#, fuzzy
 msgid "Children Limit"
 msgstr "子供の制限"
 
 #: ../admin/views/mlm.php:41
-#, fuzzy
 msgid "Matrix Depth(Levels)"
 msgstr "マトリックスの深さ (レベル)"
 
 #: ../admin/views/mlm.php:49
-#, fuzzy
 msgid "MLM Worflow Concept"
 msgstr "MLM Worflow コンセプト"
 
 #: ../admin/views/mlm.php:50
-#, fuzzy
 msgid ""
 "By default, a MLM system rewards the uplines affiliates based on the main "
 "affiliate referral amount, no matter the source of the Referral. An "
@@ -2731,7 +2478,6 @@ msgstr ""
 "極のメンバーシッププロ, EDD)"
 
 #: ../admin/views/mlm.php:54
-#, fuzzy
 msgid "Child Referral amount"
 msgstr "子供紹介金額"
 
@@ -2740,12 +2486,10 @@ msgid "Product Price"
 msgstr "商品価格"
 
 #: ../admin/views/mlm.php:71 ../admin/views/sign_up_referrals.php:21
-#, fuzzy
 msgid "Default Amount"
 msgstr "既定の金額"
 
 #: ../admin/views/mlm.php:72
-#, fuzzy
 msgid ""
 "Set the default amount that will be used when no special amount is set for a "
 "certain rank."
@@ -2754,12 +2498,10 @@ msgstr ""
 "設定します。"
 
 #: ../admin/views/mlm.php:92
-#, fuzzy
 msgid "Amount For Each Level"
 msgstr "各レベルの金額"
 
 #: ../admin/views/mlm.php:93
-#, fuzzy
 msgid ""
 "Set a special MLM amount for each level of your ranks. This option will also "
 "become available in the “Rank Settings” page."
@@ -2772,37 +2514,30 @@ msgid "#"
 msgstr "#"
 
 #: ../admin/views/mlm.php:150
-#, fuzzy
 msgid "Search MLM Relations"
 msgstr "検索 MLM の関係"
 
 #: ../admin/views/notification_settings.php:3
-#, fuzzy
 msgid "Notifications Settings"
 msgstr "通知の設定"
 
 #: ../admin/views/notification_settings.php:6
-#, fuzzy
 msgid "'From' E-mail Address:"
 msgstr "' From ' 電子メールアドレス:"
 
 #: ../admin/views/notification_settings.php:9
-#, fuzzy
 msgid "'From' Name:"
 msgstr "' From ' の名前:"
 
 #: ../admin/views/notifications-add_edit.php:12
-#, fuzzy
 msgid "Add/Edit Notification"
 msgstr "通知の追加/編集"
 
 #: ../admin/views/notifications-add_edit.php:15
-#, fuzzy
 msgid "Action:"
 msgstr "アクション："
 
 #: ../admin/views/notifications-add_edit.php:21
-#, fuzzy
 msgid "Register Process"
 msgstr "登録プロセス"
 
@@ -2816,7 +2551,6 @@ msgid "Password"
 msgstr "パスワード"
 
 #: ../admin/views/notifications-add_edit.php:30
-#, fuzzy
 msgid "Profile Update"
 msgstr "プロファイルの更新"
 
@@ -2825,12 +2559,10 @@ msgid "Admin"
 msgstr "管理者"
 
 #: ../admin/views/notifications-add_edit.php:36
-#, fuzzy
 msgid "Double E-mail Verification"
-msgstr "二重電子メールの確認"
+msgstr "ダブル電子メール確認"
 
 #: ../admin/views/notifications-add_edit.php:58
-#, fuzzy
 msgid "Target Rank:"
 msgstr "目標ランク:"
 
@@ -2846,34 +2578,28 @@ msgstr "内容:"
 #: ../admin/views/notifications-add_edit.php:119
 #: ../admin/views/notifications-add_edit.php:122
 #: ../classes/Uap_Db.class.php:8108
-#, fuzzy
 msgid "Pushover Notification"
-msgstr "軟弱通知"
+msgstr "プッシュ・オーバーのお知らせ"
 
 #: ../admin/views/notifications-add_edit.php:132
-#, fuzzy
 msgid "Pushover Message:"
 msgstr "軟弱メッセージ:"
 
 #: ../admin/views/notifications-add_edit.php:134
-#, fuzzy
 msgid "Only Plain Text and up to "
-msgstr "プレーンテキストと最大"
+msgstr "プレーンテキストと最大 "
 
 #: ../admin/views/notifications-add_edit.php:134
-#, fuzzy
 msgid " characters are available!"
-msgstr "文字が利用可能です!"
+msgstr " 文字を利用できす!"
 
 #: ../admin/views/notifications-list.php:3
-#, fuzzy
 msgid "Activate New Notification"
 msgstr "新しい通知の有効化"
 
 #: ../admin/views/notifications-list.php:4
-#, fuzzy
 msgid "Check Mail Server"
-msgstr "メールサーバーを確認する"
+msgstr "メールサーバ確認"
 
 #: ../admin/views/notifications-list.php:14
 #: ../admin/views/notifications-list.php:25
@@ -2882,49 +2608,40 @@ msgstr "件名"
 
 #: ../admin/views/notifications-list.php:16
 #: ../admin/views/notifications-list.php:27
-#, fuzzy
 msgid "Goes to"
 msgstr "に行く"
 
 #: ../admin/views/notifications-list.php:17
 #: ../admin/views/notifications-list.php:28
-#, fuzzy
 msgid "Target Ranks"
 msgstr "ターゲットランク"
 
 #: ../admin/views/notifications-list.php:19
 #: ../admin/views/notifications-list.php:30
-#, fuzzy
 msgid "Mobile Notifications"
-msgstr "モバイル通知"
+msgstr "モバイルのお知らせ"
 
 #: ../admin/views/notifications-list.php:86
-#, fuzzy
 msgid "No Notification Available!"
 msgstr "通知はありません!"
 
 #: ../admin/views/offers-add_edit.php:5
-#, fuzzy
 msgid "Manage Offers"
 msgstr "オファーの管理"
 
 #: ../admin/views/offers-add_edit.php:10
-#, fuzzy
 msgid "Activate/Hold Offer"
 msgstr "アクティベーション/ホールドオファー"
 
 #: ../admin/views/offers-add_edit.php:11
-#, fuzzy
 msgid "Activate or deactivate an offer without needing to delete it."
 msgstr "オファーを削除せずに、キャンペーンを有効または無効にします。"
 
 #: ../admin/views/offers-add_edit.php:36
-#, fuzzy
 msgid "Offer Amount"
 msgstr "提供金額"
 
 #: ../admin/views/offers-add_edit.php:37
-#, fuzzy
 msgid ""
 "A special amount for this specific offer needs to be set which will replace "
 "the standard amount rank."
@@ -2937,7 +2654,6 @@ msgid "Date Range"
 msgstr "期間"
 
 #: ../admin/views/offers-add_edit.php:61
-#, fuzzy
 msgid ""
 "The offer will be active during a certain time interval based on your "
 "selling strategy."
@@ -2950,7 +2666,6 @@ msgid "Targeting"
 msgstr "ターゲティング（目的化）"
 
 #: ../admin/views/offers-add_edit.php:73
-#, fuzzy
 msgid ""
 "Based on referral source and only for certain affiliates, the offer will be "
 "available."
@@ -2963,12 +2678,10 @@ msgid "Products"
 msgstr "商品"
 
 #: ../admin/views/offers-add_edit.php:104
-#, fuzzy
 msgid "Specific Affiliate"
 msgstr "特定のアフィリエイト"
 
 #: ../admin/views/offers-add_edit.php:105
-#, fuzzy
 msgid ""
 "Choose certain affiliates or type \"All\" to provide this offer for all of "
 "your affiliate users."
@@ -2977,24 +2690,20 @@ msgstr ""
 "のオファーを提供するために \"all\" を入力します。"
 
 #: ../admin/views/offers-add_edit.php:130
-#, fuzzy
 msgid "Offer Color"
 msgstr "提供色"
 
 #: ../admin/views/offers-list.php:3
-#, fuzzy
 msgid "Add New Offer"
 msgstr "新しいオファーの追加"
 
 #: ../admin/views/offers-list.php:4
-#, fuzzy
 msgid "...create your Offers for specific Products or Affiliates"
 msgstr "特定の製品または関連会社のオファーを作成する"
 
 #: ../admin/views/offers-list.php:22
-#, fuzzy
 msgid "Target Affiliates:"
-msgstr "対象会社:"
+msgstr "対象アフィリエイト:"
 
 #: ../admin/views/offers-list.php:40 ../admin/views/referrals-list.php:63
 #: ../admin/views/referrals-list.php:77
@@ -3005,28 +2714,22 @@ msgid "From"
 msgstr "から"
 
 #: ../admin/views/offers-list.php:51
-#, fuzzy
 msgid "No Offers to show. Please, add your first Offer. "
-msgstr ""
-"オファーは表示されません。してください、あなたの最初のオファーを追加します。"
+msgstr "オファーは表示されません。あなたの最初のオファーを追加してください。 "
 
 #: ../admin/views/opt_in.php:8
-#, fuzzy
 msgid "Enable Opt-In"
 msgstr "オプトインを有効にする"
 
 #: ../admin/views/opt_in.php:17
-#, fuzzy
 msgid "Opt-In Destination:"
-msgstr "オプトイン先:"
+msgstr "オプトイン選択対象:"
 
 #: ../admin/views/opt_in.php:25
-#, fuzzy
 msgid "E-mail List"
 msgstr "電子メールリスト"
 
 #: ../admin/views/opt_in.php:44
-#, fuzzy
 msgid ""
 "During the registration process, the affiliate email address is sent to your "
 "OptIn destination."
@@ -3035,44 +2738,36 @@ msgstr ""
 "す。"
 
 #: ../admin/views/opt_in.php:58
-#, fuzzy
 msgid "Api URL"
 msgstr "Api URL"
 
 #: ../admin/views/opt_in.php:66 ../admin/views/opt_in.php:519
-#, fuzzy
 msgid "Api Key:"
 msgstr "Api キー:"
 
 #: ../admin/views/opt_in.php:74
-#, fuzzy
 msgid "List ID:"
 msgstr "リスト ID:"
 
 #: ../admin/views/opt_in.php:89
-#, fuzzy
 msgid "Additional Main E-Mail"
 msgstr "その他のメイン電子メール"
 
 #: ../admin/views/opt_in.php:106
-#, fuzzy
 msgid "Auth Code"
 msgstr "認証コード"
 
 #: ../admin/views/opt_in.php:119
-#, fuzzy
 msgid "Get Your Auth Code From Here"
 msgstr "ここから認証コードを取得する"
 
 #: ../admin/views/opt_in.php:125
-#, fuzzy
 msgid "Unique List ID:"
-msgstr "一意のリスト ID:"
+msgstr "ユニークリスト ID:"
 
 #: ../admin/views/opt_in.php:136
-#, fuzzy
 msgid "Get Unique List ID"
-msgstr "一意のリスト ID を取得する"
+msgstr "ユニークリスト ID を取得する"
 
 #: ../admin/views/opt_in.php:145
 msgid "Connect"
@@ -3084,34 +2779,28 @@ msgid "API Key"
 msgstr "APIキー"
 
 #: ../admin/views/opt_in.php:175 ../admin/views/opt_in.php:222
-#, fuzzy
 msgid "Where can I find my API Key?"
 msgstr "API キーはどこにありますか?"
 
 #: ../admin/views/opt_in.php:181
-#, fuzzy
 msgid "ID List"
 msgstr "ID 一覧"
 
 #: ../admin/views/opt_in.php:192 ../admin/views/opt_in.php:286
-#, fuzzy
 msgid "Where can I find List ID?"
 msgstr "リスト ID はどこで確認できますか?"
 
 #: ../admin/views/opt_in.php:228
-#, fuzzy
 msgid "Campaign Token"
 msgstr "キャンペーントークン"
 
 #: ../admin/views/opt_in.php:239
-#, fuzzy
 msgid "Where can I find Campaign Token?"
 msgstr "キャンペーントークンはどこにありますか?"
 
 #: ../admin/views/opt_in.php:269
-#, fuzzy
 msgid "Where can I find API Key ?"
-msgstr "どこで API キーを見つけることができますか?"
+msgstr "API Keyはどこにありますか?"
 
 #: ../admin/views/opt_in.php:275 ../admin/views/opt_in.php:338
 msgid "List ID"
@@ -3122,7 +2811,6 @@ msgid "App ID"
 msgstr "App ID"
 
 #: ../admin/views/opt_in.php:324
-#, fuzzy
 msgid "Where can I get my App ID?"
 msgstr "アプリ ID はどこで入手できますか?"
 
@@ -3131,17 +2819,14 @@ msgid "App Password"
 msgstr "App パスワード"
 
 #: ../admin/views/opt_in.php:350
-#, fuzzy
 msgid "Click on the list name:"
 msgstr "リスト名をクリックしてください:"
 
 #: ../admin/views/opt_in.php:354
-#, fuzzy
 msgid "Click on the list name and get the ID from the URL"
-msgstr "リスト名をクリックし、URL から ID を取得します。"
+msgstr "リスト名をクリックし、URL から ID を取得します"
 
 #: ../admin/views/opt_in.php:396
-#, fuzzy
 msgid "Get Lists"
 msgstr "リストの取得"
 
@@ -3150,44 +2835,36 @@ msgid "List"
 msgstr "リスト"
 
 #: ../admin/views/opt_in.php:435
-#, fuzzy
 msgid "Select Wysija List:"
 msgstr "Wysija リストを選択してください:"
 
 #: ../admin/views/opt_in.php:454
-#, fuzzy
 msgid "No List available "
-msgstr "リストがありません"
+msgstr "リストがありません "
 
 #: ../admin/views/opt_in.php:473
-#, fuzzy
 msgid "Select MyMail List:"
 msgstr "MyMail リストを選択してください:"
 
 #: ../admin/views/opt_in.php:492
-#, fuzzy
 msgid "No List available"
 msgstr "リストがありません"
 
 #: ../admin/views/opt_in.php:511
-#, fuzzy
 msgid "Username Or Email:"
 msgstr "ユーザー名または電子メール:"
 
 #: ../admin/views/opt_in.php:527
-#, fuzzy
 msgid "List Name:"
 msgstr "リスト名:"
 
 #: ../admin/views/opt_in.php:542
-#, fuzzy
 msgid "Saved E-mail List"
 msgstr "保存された電子メールリスト"
 
 #: ../admin/views/page-meta_box.php:2
-#, fuzzy
 msgid "Set the Page as:"
-msgstr "ページを次のように設定します。"
+msgstr "ページを次のように設定します:"
 
 #: ../admin/views/page-meta_box.php:9
 msgid "Page"
@@ -3198,35 +2875,30 @@ msgid "Default "
 msgstr "デフォルト "
 
 #: ../admin/views/page-meta_box.php:20
-#, fuzzy
 msgid "Page <b>Not Set!</b>"
 msgstr "ページ <b> が設定されていません! </b>"
 
 #: ../admin/views/payment-form.php:3
-#, fuzzy
 msgid "Payment Form"
 msgstr "お支払いフォーム"
 
 #: ../admin/views/payment-form.php:34
-#, fuzzy
 msgid "Pay With"
 msgstr "で支払う"
 
 #: ../admin/views/payment-form.php:35
-#, fuzzy
 msgid ""
 "Choose one of the Payment Gateway Option. \"Bank Transfer\" is an offline "
 "alternative payment."
 msgstr ""
-"[支払ゲートウェイ] オプションのいずれかを選択します。\"銀行振込\" は、オフラ"
-"インの代替支払いです。"
+"Payment Gatewayオプションのいずれかを選択します。\"銀行振替\"は、オフラインの"
+"代案であります。"
 
 #: ../admin/views/payment-form.php:60
 msgid "Payment Status"
 msgstr "支払い状況"
 
 #: ../admin/views/payment-form.php:61
-#, fuzzy
 msgid ""
 "As \"Bank Transfer\" payment option you can set for now the a temporary "
 "Payment status."
@@ -3291,22 +2963,18 @@ msgid "Total Paid Referrals"
 msgstr "総支払済みアフィリエイト件数"
 
 #: ../admin/views/payments.php:51
-#, fuzzy
 msgid "Total number of Paid Referrals"
 msgstr "有料の紹介の合計数"
 
 #: ../admin/views/payments.php:61
-#, fuzzy
 msgid "Total number of UnPaid Referrals"
 msgstr "未払いの紹介の合計数"
 
 #: ../admin/views/payments.php:71
-#, fuzzy
 msgid "Total number of Transactions"
 msgstr "トランザクションの合計数"
 
 #: ../admin/views/payments.php:84 ../admin/views/payments.php:94
-#, fuzzy
 msgid "Affiliate UserName"
 msgstr "アフィリエイトのユーザー名"
 
@@ -3317,12 +2985,10 @@ msgid "Paid Referrals"
 msgstr "支払済みアフィリエイト件数"
 
 #: ../admin/views/payments.php:86 ../admin/views/payments.php:96
-#, fuzzy
 msgid "Unpaid Referrals"
 msgstr "未払いの紹介"
 
 #: ../admin/views/payments.php:88 ../admin/views/payments.php:98
-#, fuzzy
 msgid "Unpaid Amount"
 msgstr "未払い金額"
 
@@ -3359,7 +3025,6 @@ msgid "UnPaid"
 msgstr "未払い"
 
 #: ../admin/views/payments_list_all_unpaid.php:14
-#, fuzzy
 msgid "Pay selected Referrals"
 msgstr "選択した紹介を支払う"
 
@@ -3368,23 +3033,20 @@ msgid "Pay"
 msgstr "支払う"
 
 #: ../admin/views/paypal.php:3
-#, fuzzy
 msgid "PayPal - Payouts"
 msgstr "ペイパル-ペイアウト"
 
 #: ../admin/views/paypal.php:8
-#, fuzzy
 msgid "Activate/Hold PayPal Gateway"
 msgstr "ペイパルゲートウェイをアクティブ/ホールド"
 
 #: ../admin/views/paypal.php:9
-#, fuzzy
 msgid ""
 "Once activated you can process payments to your affiliate users via PayPal "
 "directly from the affiliate system."
 msgstr ""
-"一度は、アフィリエイトのシステムから直接 PayPal 経由でお客様のアフィリエイト"
-"のユーザーへの支払いを処理することができます活性化。"
+"活性化されれば、アフィリエイトのシステムから直接 PayPal 経由でお客様のアフィ"
+"リエイトのユーザーへの支払いを処理することができます。"
 
 #: ../admin/views/paypal.php:21 ../admin/views/stripe.php:20
 #: ../admin/views/stripe_v2.php:21
@@ -3392,12 +3054,10 @@ msgid "Sandbox"
 msgstr "サンドボックス"
 
 #: ../admin/views/paypal.php:34
-#, fuzzy
 msgid "Sandbox Client ID"
 msgstr "サンドボックスクライアント ID"
 
 #: ../admin/views/paypal.php:38
-#, fuzzy
 msgid "Sandbox Client Secret"
 msgstr "サンドボックスクライアントシークレット"
 
@@ -3410,27 +3070,22 @@ msgid "Client Secret"
 msgstr "クライアントシークレット"
 
 #: ../admin/views/paypal.php:54 ../admin/views/pushover.php:57
-#, fuzzy
 msgid "1. Go to "
-msgstr "1. に行く"
+msgstr "1. に行く "
 
 #: ../admin/views/paypal.php:54
-#, fuzzy
 msgid "and login with your PayPal email and password."
 msgstr "そしてあなたの PayPal の電子メールおよびパスワードとログインしなさい。"
 
 #: ../admin/views/paypal.php:55
-#, fuzzy
 msgid "2. After you have successfully logged in go to: "
-msgstr "2. あなたが正常にログインした後に行く:"
+msgstr "2.、ログイン後、次の位置に移動します。: "
 
 #: ../admin/views/paypal.php:55
-#, fuzzy
 msgid " and create a new REST API application."
-msgstr "、新しい REST API アプリケーションを作成します。"
+msgstr " 新しいREST APIアプリケーションを作ります。"
 
 #: ../admin/views/paypal.php:56
-#, fuzzy
 msgid ""
 "3. After you have created a new application, the \"Client ID\" and \"Client "
 "Secret\" will be available."
@@ -3439,71 +3094,60 @@ msgstr ""
 "シークレット\" が使用可能になります。"
 
 #: ../admin/views/paypal.php:65
-#, fuzzy
 msgid "Your current version of PHP is "
-msgstr "現在のバージョンの PHP は"
+msgstr "現在のバージョンの PHP は "
 
 #: ../admin/views/paypal.php:65
-#, fuzzy
 msgid ". To use this feature You need >= PHP 5.4."
-msgstr ".この機能を使用するには、> = PHP 5.4 が必要です。"
+msgstr ". この機能を使用するには>=PHP 5.4が必要です。"
 
 #: ../admin/views/periodically_reports.php:3 ../classes/Uap_Db.class.php:7361
-#, fuzzy
 msgid "Periodically Reports"
 msgstr "定期的にレポート"
 
 #: ../admin/views/periodically_reports.php:8
-#, fuzzy
 msgid "Activate/Hold Periodical Reports"
 msgstr "定期レポートの有効化/保留"
 
 #: ../admin/views/periodically_reports.php:9
-#, fuzzy
 msgid ""
 "If this module is activated, affiliates will receive periodical reports "
 "about their affiliate account and rewards. Each affiliate may decide the "
 "frequency of these reports (daily, weekly, monthly) from his “Account Page”."
 msgstr ""
-"このモジュールを有効にすると、アフィリエイトのアカウントと報酬に関する定期的"
+"このモジュールを活性化すると、アフィリエイトのアカウントと報酬に関する定期的"
 "なレポートが表示されます。各アフィリエイトは、彼の \"アカウントページ\" か"
 "ら、これらのレポート (毎日、毎週、毎月) の頻度を決定することができます。"
 
 #: ../admin/views/periodically_reports.php:21
-#, fuzzy
 msgid "Report Subject"
 msgstr "レポートの件名"
 
 #: ../admin/views/periodically_reports.php:28
-#, fuzzy
 msgid "Report Content"
 msgstr "レポートの内容"
 
 #: ../admin/views/periodically_reports.php:33
-#, fuzzy
 msgid "Referral Reports constants"
 msgstr "参照レポートの定数"
 
 #: ../admin/views/periodically_reports.php:71
-#, fuzzy
 msgid "Send Notification Time"
 msgstr "通知時間の送信"
 
 #: ../admin/views/periodically_reports.php:72
-#, fuzzy
 msgid ""
 "Decide when it\\’s the best time of day for your website to start managing "
 "email reports. The script runs daily on the back-end and checks the report "
 "period for each affiliate and how much time has passed since the last "
 "report. Based on this new reports are managed automatically by the system."
 msgstr ""
-"あなたのウェブサイトは、電子メールレポートの管理を開始するための一日の最高の"
-"時間をいつそれを決定します。スクリプトは、バックエンドで毎日実行され、各ア"
-"フィリエイトのレポート期間と、最後のレポートから経過した時間を確認します。こ"
-"の新しいレポートに基づいて、システムによって自動的に管理されます。"
+"ウェブサイトが電子メール報告書管理を開始するに一番いい時間帯を決定します。 こ"
+"のスクリプトは、毎日バックエンドで実行され、各アフィリエイトの報告期間と最後"
+"の報告書以降、経過された時間を確認します。 この新しい報告書によって、システム"
+"で自動的に管理されます。"
 
 #: ../admin/views/periodically_reports.php:86
-#, fuzzy
 msgid ""
 "Keep in mind that it may be necessary to send a big number of emails and "
 "your hosting provider may restrict this action. Be sure that you are able to "
@@ -3521,7 +3165,6 @@ msgid "Register Form"
 msgstr "登録フォーム"
 
 #: ../admin/views/popup-shortcodes.php:12 ../admin/views/shortcodes.php:10
-#, fuzzy
 msgid "Logout Button"
 msgstr "ログアウトボタン"
 
@@ -3536,156 +3179,128 @@ msgstr "メンバーページ"
 #: ../admin/views/pushover.php:3 ../classes/Uap_Db.class.php:1750
 #: ../classes/Uap_Db.class.php:1751 ../classes/Uap_Db.class.php:7409
 #: ../public/views/account_page-header.php:118
-#, fuzzy
 msgid "Pushover Notifications"
-msgstr "軟弱通知"
+msgstr "プッシュ・オーバーのお知らせ"
 
 #: ../admin/views/pushover.php:7
-#, fuzzy
 msgid "Activate/Hold Pushover Notifications"
-msgstr "軟弱通知の有効化/ホールド"
+msgstr "Pushoverのお知らせの活性化/隠蔽する"
 
 #: ../admin/views/pushover.php:19
 msgid "App Token"
 msgstr "アプリケーション トークン"
 
 #: ../admin/views/pushover.php:28
-#, fuzzy
 msgid "Admin Personal User Token"
 msgstr "管理者個人ユーザートークン"
 
 #: ../admin/views/pushover.php:32
-#, fuzzy
 msgid "Use this to get 'Admin Notifications' on your own device."
-msgstr "これを使用して、独自のデバイスで ' 管理者通知 ' を取得します。"
+msgstr ""
+"このオプションを使用して自分のデバイスで'Admin Notifications'を取得します。"
 
 #: ../admin/views/pushover.php:49
-#, fuzzy
 msgid "URL Title"
 msgstr "URL のタイトル"
 
 #: ../admin/views/pushover.php:57
-#, fuzzy
 msgid " login with your credentials or sign up for a new account."
-msgstr "資格情報でログインするか、新しいアカウントにサインアップしてください。"
+msgstr ""
+" 資格情報でログインするか、新しいアカウントにサインアップしてください。"
 
 #: ../admin/views/pushover.php:58
-#, fuzzy
 msgid "2. After that go to "
-msgstr "2. その後に行く"
+msgstr "2. その後に行く "
 
 #: ../admin/views/pushover.php:58
-#, fuzzy
 msgid " and create new App."
-msgstr "新しいアプリを作成します。"
+msgstr " 新しいアプリを作成します。"
 
 #: ../admin/views/pushover.php:59
-#, fuzzy
 msgid "3. Set the type of App at 'Application'."
 msgstr "3. 「アプリケーション」でアプリの種類を設定します。"
 
 #: ../admin/views/pushover.php:60
-#, fuzzy
 msgid "4. Copy and paste API Token/Key."
 msgstr "4. API トークン/キーをコピーして貼り付けます。"
 
 #: ../admin/views/pushover.php:73
-#, fuzzy
 msgid "Notification Sound"
 msgstr "通知音"
 
 #: ../admin/views/pushover.php:76
-#, fuzzy
 msgid "Default Sound for mobile notification"
-msgstr "モバイル通知の既定のサウンド"
+msgstr "モバイルのお知らせの基本サウンド"
 
 #: ../admin/views/pushover.php:80
-#, fuzzy
 msgid "Bike"
 msgstr "自転車"
 
 #: ../admin/views/pushover.php:81
-#, fuzzy
 msgid "Bugle"
-msgstr "ラッパ"
+msgstr "バグル"
 
 #: ../admin/views/pushover.php:82
-#, fuzzy
 msgid "Cash Register"
 msgstr "レジ"
 
 #: ../admin/views/pushover.php:83
-#, fuzzy
 msgid "Classical"
 msgstr "クラシック"
 
 #: ../admin/views/pushover.php:84
-#, fuzzy
 msgid "Cosmic"
-msgstr "宇宙"
+msgstr "コスミック"
 
 #: ../admin/views/pushover.php:85
-#, fuzzy
 msgid "Falling"
 msgstr "落下"
 
 #: ../admin/views/pushover.php:86
-#, fuzzy
 msgid "Gamelan"
 msgstr "ガムラン"
 
 #: ../admin/views/pushover.php:87
-#, fuzzy
 msgid "Incoming"
 msgstr "受信"
 
 #: ../admin/views/pushover.php:88
-#, fuzzy
 msgid "Intermission"
 msgstr "休憩"
 
 #: ../admin/views/pushover.php:89
-#, fuzzy
 msgid "Magic"
 msgstr "魔法"
 
 #: ../admin/views/pushover.php:90
-#, fuzzy
 msgid "Mechanical"
-msgstr "機械"
+msgstr "機械的"
 
 #: ../admin/views/pushover.php:91
-#, fuzzy
 msgid "Piano Bar"
 msgstr "ピアノバー"
 
 #: ../admin/views/pushover.php:92
-#, fuzzy
 msgid "Siren"
 msgstr "サイレン"
 
 #: ../admin/views/pushover.php:93
-#, fuzzy
 msgid "Space Alarm"
 msgstr "スペースアラーム"
 
 #: ../admin/views/pushover.php:94
-#, fuzzy
 msgid "Tug Boat"
 msgstr "タグボート"
 
 #: ../admin/views/qr_code.php:3 ../classes/Uap_Db.class.php:7369
-#, fuzzy
 msgid "QR Codes"
 msgstr "QR コード"
 
 #: ../admin/views/qr_code.php:8
-#, fuzzy
 msgid "Activate/Hold QR Codes into Account Page"
 msgstr "QR コードをアカウントページにアクティブ/ホールド"
 
 #: ../admin/views/qr_code.php:9
-#, fuzzy
 msgid ""
 "Affiliates may download and share their QR codes anywhere out of the website."
 msgstr ""
@@ -3693,26 +3308,22 @@ msgstr ""
 "することができます。"
 
 #: ../admin/views/qr_code.php:23
-#, fuzzy
 msgid " QRCode Image Size"
-msgstr "QRCode 画像サイズ"
+msgstr " QRCode 画像サイズ"
 
 #: ../admin/views/qr_code.php:24
-#, fuzzy
 msgid ""
 "Decides the image size for the QR code. Bigger is much easier to scan, but "
 "has an increased load time."
 msgstr ""
-"QR コードの画像サイズを決定します。大きい方がスキャンがはるかに簡単ですが、負"
-"荷時間が増加しています。"
+"QR コードの画像サイズを決定します。大きい方がスキャンがはるかに簡単ですが、"
+"ローディング時間が増加します。"
 
 #: ../admin/views/qr_code.php:31
-#, fuzzy
 msgid "ECC Data Level"
 msgstr "ECC データレベル"
 
 #: ../admin/views/qr_code.php:32
-#, fuzzy
 msgid ""
 "Error Code Correction is their ability to sustain \"damage\" and continue to "
 "function even when a part of the QR code image is obscured. Level L or Level "
@@ -3721,37 +3332,31 @@ msgid ""
 msgstr ""
 "エラーコードの訂正は、QR コード画像の一部が不明瞭な場合でも、「損傷」を維持"
 "し、機能し続ける能力です。レベル L またはレベル M は、一般的なマーケティング"
-"の使用のための密度と堅牢性の間の最善の妥協を表しています。"
+"の使用のための密度と堅牢性の間の最善の妥協を表しています。 "
 
 #: ../admin/views/ranks-add_edit.php:3
-#, fuzzy
 msgid "Manage Rank"
 msgstr "ランクの管理"
 
 #: ../admin/views/ranks-add_edit.php:10
-#, fuzzy
 msgid "Activate/Hold Rank"
 msgstr "ランクの有効化/ホールド"
 
 #: ../admin/views/ranks-add_edit.php:11
-#, fuzzy
 msgid "Activate or deactivate a specific rank without needing to delete it."
 msgstr "特定のランクを削除せずにアクティブ化または非アクティブ化します。"
 
 #: ../admin/views/ranks-add_edit.php:25 ../admin/views/register-settings.php:59
-#, fuzzy
 msgid "Rank Settings"
 msgstr "ランク設定"
 
 #: ../admin/views/ranks-add_edit.php:26
-#, fuzzy
 msgid "The slug needs to be unique and set only with lowercase characters."
 msgstr "スラグはユニークで、小文字のみで設定する必要があります。"
 
 #: ../admin/views/ranks-add_edit.php:29
-#, fuzzy
 msgid "unique rank name"
-msgstr "一意のランク名"
+msgstr "ユニークランクの名"
 
 #: ../admin/views/ranks-add_edit.php:48 ../admin/views/referrals-list.php:65
 #: ../admin/views/referrals-list.php:79
@@ -3766,7 +3371,6 @@ msgid "Position"
 msgstr "位置"
 
 #: ../admin/views/ranks-add_edit.php:59
-#, fuzzy
 msgid ""
 "Based on rank position an affiliate may jump to the next rank if the "
 "achievement conditions are met."
@@ -3779,12 +3383,10 @@ msgid "Order"
 msgstr "注文"
 
 #: ../admin/views/ranks-add_edit.php:74
-#, fuzzy
 msgid "Rank Amount"
 msgstr "ランク金額"
 
 #: ../admin/views/ranks-add_edit.php:75
-#, fuzzy
 msgid ""
 "The default rank amount may be overwritten by specific offers or other "
 "special settings."
@@ -3797,7 +3399,6 @@ msgid "Achievement"
 msgstr "達成記録"
 
 #: ../admin/views/ranks-add_edit.php:100
-#, fuzzy
 msgid ""
 "To jump into current rank, affiliates need to accomplish the required "
 "achievements."
@@ -3806,22 +3407,18 @@ msgstr ""
 "あります。"
 
 #: ../admin/views/ranks-add_edit.php:173
-#, fuzzy
 msgid "Rank Color"
 msgstr "ランクの色"
 
 #: ../admin/views/ranks-add_edit.php:206
-#, fuzzy
 msgid "Bonus"
 msgstr "ボーナス"
 
 #: ../admin/views/ranks-add_edit.php:210
-#, fuzzy
 msgid "Achievement Bonus"
-msgstr "アチーブメントボーナス"
+msgstr "達成ボーナス"
 
 #: ../admin/views/ranks-add_edit.php:211
-#, fuzzy
 msgid ""
 "Affiliates will receive a bonus of a flat amount each time they will reach a "
 "higher rank."
@@ -3831,12 +3428,10 @@ msgstr ""
 
 #: ../admin/views/ranks-add_edit.php:226 ../admin/views/ranks-add_edit.php:230
 #: ../admin/views/sign_up_referrals.php:3 ../classes/Uap_Db.class.php:7191
-#, fuzzy
 msgid "SignUp Referrals"
 msgstr "サインアップの紹介"
 
 #: ../admin/views/ranks-add_edit.php:231
-#, fuzzy
 msgid ""
 "Available for membership system, awarding commission when referred user "
 "signs up."
@@ -3844,55 +3439,43 @@ msgstr ""
 "会員制のために利用できる、委員会を授与するときに参照ユーザーのサインアップ。"
 
 #: ../admin/views/ranks-add_edit.php:247
-#, fuzzy
 msgid "LifeTime"
 msgstr "有効 期間"
 
 #: ../admin/views/ranks-add_edit.php:251
-#, fuzzy
 msgid "LifeTime Comission"
-msgstr "生涯コミッション"
+msgstr "ライフタイムコミッション"
 
 #: ../admin/views/ranks-add_edit.php:252
-#, fuzzy
 msgid ""
 "Allow for your affiliate to receive commission for all lifetime referrals."
-msgstr ""
-"あなたのアフィリエイトのすべての生涯の紹介のためのコミッションを受け取ること"
-"ができます。"
+msgstr "あなたのアフィリエイトが一生の手数料を受けるようにしてください。"
 
 #: ../admin/views/ranks-add_edit.php:281 ../admin/views/ranks-add_edit.php:285
-#, fuzzy
 msgid "Reccurring Referrals"
 msgstr "Reccurring の紹介"
 
 #: ../admin/views/ranks-add_edit.php:286
-#, fuzzy
 msgid "Award commissions for recurring subscriptions into membership systems."
 msgstr "メンバーシップシステムに定期的なサブスクリプションのための賞の手数料。"
 
 #: ../admin/views/ranks-add_edit.php:313 ../admin/views/ranks-add_edit.php:317
-#, fuzzy
 msgid "MLM Referrals For Each MLM Level"
-msgstr "各 mlm のレベルのための mlm の紹介"
+msgstr "各 MLM のレベルのための MLM の紹介"
 
 #: ../admin/views/ranks-add_edit.php:318
-#, fuzzy
 msgid "Set a multi-level marketing system for your affiliates."
 msgstr "あなたの会社のためのマルチレベルのマーケティングシステムを設定します。"
 
 #: ../admin/views/ranks-list.php:6
-#, fuzzy
 msgid "Add new Rank"
 msgstr "新しいランクの追加"
 
 #: ../admin/views/ranks-list.php:7
-#, fuzzy
 msgid "...create your Rank with new achievements!"
 msgstr "新しい成果であなたのランクを作成!"
 
 #: ../admin/views/ranks-list.php:17 ../admin/views/ranks-list.php:25
-#, fuzzy
 msgid "Achieve"
 msgstr "達成"
 
@@ -3910,27 +3493,22 @@ msgid "Inactive"
 msgstr "非アクティブ"
 
 #: ../admin/views/ranks-list.php:90
-#, fuzzy
 msgid "No Ranks Available!"
 msgstr "ランクがありません!"
 
 #: ../admin/views/reccuring_referrals.php:3 ../classes/Uap_Db.class.php:7207
-#, fuzzy
 msgid "Recurring Referrals"
 msgstr "定期的な紹介"
 
 #: ../admin/views/reccuring_referrals.php:7
-#, fuzzy
 msgid "Activate/Hold Reccuring Referrals"
 msgstr "Reccuring の紹介をアクティブ/ホールド"
 
 #: ../admin/views/reccuring_referrals.php:21
-#, fuzzy
 msgid "Recurring Amount For Each Rank"
 msgstr "各ランクの定期的な金額"
 
 #: ../admin/views/reccuring_referrals.php:22
-#, fuzzy
 msgid ""
 "Set a special recurring amount for each rank that will replace the default "
 "amount rank. This option will also become available in the “Rank Settings” "
@@ -3940,31 +3518,26 @@ msgstr ""
 "プションは、[ランク設定] ページでも使用できるようになります。"
 
 #: ../admin/views/reccuring_referrals.php:27
-#, fuzzy
 msgid "Recurring Amount"
 msgstr "定期的な金額"
 
 #: ../admin/views/referral_list_details.php:3
-#, fuzzy
 msgid "View Referral Details"
 msgstr "紹介の詳細の表示"
 
 #: ../admin/views/referral_list_details.php:7
 #: ../admin/views/referrals-add_edit.php:9
-#, fuzzy
 msgid "Visit Id:"
 msgstr "訪問 Id:"
 
 #: ../admin/views/referral_list_details.php:12
 #: ../admin/views/referrals-add_edit.php:13
-#, fuzzy
 msgid "Referral User WP Id:"
 msgstr "紹介ユーザーの WP Id:"
 
 #: ../admin/views/referral_list_details.php:17
 #: ../admin/views/referrals-add_edit.php:17
 #: ../public/views/account_page-generate_links.php:52
-#, fuzzy
 msgid "Campaign:"
 msgstr "キャンペーン："
 
@@ -3980,25 +3553,21 @@ msgstr "ソース:"
 
 #: ../admin/views/referral_list_details.php:37
 #: ../admin/views/referrals-add_edit.php:40
-#, fuzzy
 msgid "Reference:"
 msgstr "参照："
 
 #: ../admin/views/referral_list_details.php:78
 #: ../admin/views/referrals-add_edit.php:44
-#, fuzzy
 msgid "Reference Details:"
 msgstr "参照の詳細:"
 
 #: ../admin/views/referral_list_details.php:83
 #: ../admin/views/referrals-add_edit.php:48
-#, fuzzy
 msgid "Referral Parent:"
 msgstr "紹介親:"
 
 #: ../admin/views/referral_list_details.php:88
 #: ../admin/views/referrals-add_edit.php:52
-#, fuzzy
 msgid "Referral Child:"
 msgstr "紹介子:"
 
@@ -4019,12 +3588,10 @@ msgid "Status:"
 msgstr "ステータス:"
 
 #: ../admin/views/referral_list_details.php:110
-#, fuzzy
 msgid "Unverfied"
 msgstr "Unverfied"
 
 #: ../admin/views/referral_list_details.php:120
-#, fuzzy
 msgid "Payment Status:"
 msgstr "お支払い状況:"
 
@@ -4033,12 +3600,10 @@ msgid "Unpaid"
 msgstr "未払い"
 
 #: ../admin/views/referral_list_details.php:138
-#, fuzzy
 msgid "No details available!"
 msgstr "詳細はありません!"
 
 #: ../admin/views/referral_notifications.php:9
-#, fuzzy
 msgid ""
 "If this module is activated, affiliates have the option to receive instant "
 "notifications when they get new referrals. The affiliate can decide from his "
@@ -4050,7 +3615,6 @@ msgstr ""
 "決定することができます。"
 
 #: ../admin/views/referrals-add_edit.php:5
-#, fuzzy
 msgid "Add/Edit Referral"
 msgstr "紹介の追加/編集"
 
@@ -4064,12 +3628,10 @@ msgid "Payment:"
 msgstr "支払い:"
 
 #: ../admin/views/referrals-list.php:14
-#, fuzzy
 msgid "Add New Referral"
 msgstr "新しい紹介の追加"
 
 #: ../admin/views/referrals-list.php:15
-#, fuzzy
 msgid "...add manual Referrals for specific Affiliate"
 msgstr "特定のアフィリエイトのマニュアル参照を追加する"
 
@@ -4079,7 +3641,6 @@ msgid "Apply"
 msgstr "適用"
 
 #: ../admin/views/referrals-list.php:36
-#, fuzzy
 msgid "Number of Referrals to Display:"
 msgstr "表示する参照の数:"
 
@@ -4088,7 +3649,6 @@ msgid "User ID"
 msgstr "ユーザーID"
 
 #: ../admin/views/referrals-list.php:78
-#, fuzzy
 msgid "Referance"
 msgstr "Referance"
 
@@ -4097,17 +3657,14 @@ msgid "Unknown"
 msgstr "不明"
 
 #: ../admin/views/referrals-list.php:187
-#, fuzzy
 msgid "Mark as "
-msgstr "としてマーク"
+msgstr "をマーク "
 
 #: ../admin/views/referrals-list.php:222
-#, fuzzy
 msgid "No Referrals Stored!"
 msgstr "紹介は保存されません!"
 
 #: ../admin/views/register-custom_fields.php:4
-#, fuzzy
 msgid "Add New Register Form Field"
 msgstr "新規登録フォームフィールドの追加"
 
@@ -4122,19 +3679,16 @@ msgstr "フィールドタイプ"
 
 #: ../admin/views/register-custom_fields.php:20
 #: ../admin/views/register-custom_fields.php:34
-#, fuzzy
 msgid "On Admin"
 msgstr "管理者に"
 
 #: ../admin/views/register-custom_fields.php:21
 #: ../admin/views/register-custom_fields.php:35
-#, fuzzy
 msgid "On Register Page"
-msgstr "[登録] ページ"
+msgstr "登録ページ"
 
 #: ../admin/views/register-custom_fields.php:22
 #: ../admin/views/register-custom_fields.php:36
-#, fuzzy
 msgid "On Account Page"
 msgstr "[アカウント] ページ"
 
@@ -4145,7 +3699,6 @@ msgstr "必須"
 
 #: ../admin/views/register-custom_fields.php:24
 #: ../admin/views/register-custom_fields.php:38
-#, fuzzy
 msgid "WP Native"
 msgstr "WP のネイティブ"
 
@@ -4157,7 +3710,6 @@ msgid "Always"
 msgstr "常に"
 
 #: ../admin/views/register-custom_fields.php:141
-#, fuzzy
 msgid "Required When Selected"
 msgstr "選択時に必須"
 
@@ -4172,7 +3724,6 @@ msgid "No"
 msgstr "いいえ"
 
 #: ../admin/views/register-custom_fields_add_edit.php:3
-#, fuzzy
 msgid "User Custom Fields"
 msgstr "ユーザーカスタムフィールド"
 
@@ -4190,12 +3741,10 @@ msgid "Values"
 msgstr "値"
 
 #: ../admin/views/register-custom_fields_add_edit.php:52
-#, fuzzy
 msgid "Add New Value"
 msgstr "新しい値の追加"
 
 #: ../admin/views/register-custom_fields_add_edit.php:57
-#, fuzzy
 msgid "Right Answer:"
 msgstr "正しい答え:"
 
@@ -4208,12 +3757,10 @@ msgid "Field Label:"
 msgstr "項目ラベル（項目名と同じ文字を入力）"
 
 #: ../admin/views/register-custom_fields_add_edit.php:89
-#, fuzzy
 msgid "SubLabel:"
-msgstr "SubLabel:"
+msgstr "サブラベル:"
 
 #: ../admin/views/register-custom_fields_add_edit.php:93
-#, fuzzy
 msgid "Style Class:"
 msgstr "スタイルクラス:"
 
@@ -4226,9 +3773,8 @@ msgid "Show:"
 msgstr "表示:"
 
 #: ../admin/views/register-custom_fields_add_edit.php:109
-#, fuzzy
 msgid "If Field:"
-msgstr "If フィールド:"
+msgstr "If Field:"
 
 #: ../admin/views/register-custom_fields_add_edit.php:119
 msgid "Is"
@@ -4239,77 +3785,62 @@ msgid "Contains"
 msgstr "を含む"
 
 #: ../admin/views/register-custom_messages.php:8
-#, fuzzy
 msgid "Error - Username is taken:"
-msgstr "エラー-ユーザー名を取得します。"
+msgstr "エラー-ユーザー名を取得します。:"
 
 #: ../admin/views/register-custom_messages.php:13
-#, fuzzy
 msgid "Error - Invalid Username:"
 msgstr "エラー-無効なユーザー名:"
 
 #: ../admin/views/register-custom_messages.php:18
-#, fuzzy
 msgid "Error - Email is taken:"
-msgstr "エラー-電子メールが取られます:"
+msgstr "エラー-電子メール受信:"
 
 #: ../admin/views/register-custom_messages.php:23
-#, fuzzy
 msgid "Error - Invalid Email Address:"
 msgstr "エラー-無効な電子メールアドレス:"
 
 #: ../admin/views/register-custom_messages.php:28
-#, fuzzy
 msgid "Error - Email Addresses did not Match:"
 msgstr "エラー-電子メールアドレスが一致しませんでした:"
 
 #: ../admin/views/register-custom_messages.php:33
-#, fuzzy
 msgid "Error - Password did not match:"
 msgstr "エラー-パスワードが一致しませんでした:"
 
 #: ../admin/views/register-custom_messages.php:38
-#, fuzzy
 msgid "Error - Password Only Characters and Digits:"
 msgstr "エラー-パスワードのみの文字と数字:"
 
 #: ../admin/views/register-custom_messages.php:45
-#, fuzzy
 msgid "Error - Password Min Length:"
-msgstr "エラー-パスワードの最小長:"
+msgstr "エラー-パスワードの最小の長さ:"
 
 #: ../admin/views/register-custom_messages.php:47
-#, fuzzy
 msgid "Where {X} will be the minimum length of password."
-msgstr "ここで、{X} はパスワードの最小長になります。"
+msgstr "ここで、{X} はパスワードの最小長さになります。"
 
 #: ../admin/views/register-custom_messages.php:51
-#, fuzzy
 msgid "Error - Password Characters, Digits and minimum one uppercase letter:"
 msgstr "エラー-パスワードの文字、数字、および最小1つの大文字:"
 
 #: ../admin/views/register-custom_messages.php:56
-#, fuzzy
 msgid "Error - Pending User:"
 msgstr "エラー-保留中のユーザー:"
 
 #: ../admin/views/register-custom_messages.php:61
-#, fuzzy
 msgid "Error - Empty Required Fields:"
-msgstr "エラー-空の必須フィールド:"
+msgstr "エラー-空白の必須フィールド:"
 
 #: ../admin/views/register-custom_messages.php:66
-#, fuzzy
 msgid "Error - ReCaptcha:"
 msgstr "エラー-ReCaptcha:"
 
 #: ../admin/views/register-custom_messages.php:71
-#, fuzzy
 msgid "Error - TOS:"
 msgstr "エラー-利用規約:"
 
 #: ../admin/views/register-custom_messages.php:76
-#, fuzzy
 msgid "Success Message:"
 msgstr "成功メッセージ:"
 
@@ -4318,67 +3849,54 @@ msgid "Design"
 msgstr "デザイン"
 
 #: ../admin/views/register-settings.php:17
-#, fuzzy
 msgid "Blue Box Theme"
 msgstr "ブルーボックスのテーマ"
 
 #: ../admin/views/register-settings.php:18
-#, fuzzy
 msgid "PlaceHolder Theme"
 msgstr "プレースホルダのテーマ"
 
 #: ../admin/views/register-settings.php:19
-#, fuzzy
 msgid "Strong Theme"
 msgstr "強力なテーマ"
 
 #: ../admin/views/register-settings.php:20
-#, fuzzy
 msgid "Double Strong Theme"
 msgstr "ダブルストロングテーマ"
 
 #: ../admin/views/register-settings.php:21
-#, fuzzy
 msgid "BackBox Theme"
 msgstr "BackBox のテーマ"
 
 #: ../admin/views/register-settings.php:22
-#, fuzzy
 msgid "Simple Border Theme"
 msgstr "シンプルなボーダーテーマ"
 
 #: ../admin/views/register-settings.php:23
-#, fuzzy
 msgid "Radius Theme"
 msgstr "半径のテーマ"
 
 #: ../admin/views/register-settings.php:24
-#, fuzzy
 msgid "BootStrap Theme"
 msgstr "ブートストラップのテーマ"
 
 #: ../admin/views/register-settings.php:25
-#, fuzzy
 msgid "Double Simple Border Theme"
 msgstr "ダブルシンプルなボーダーテーマ"
 
 #: ../admin/views/register-settings.php:26
-#, fuzzy
 msgid "Dobule Radius Theme"
 msgstr "Dobule の半径のテーマ"
 
 #: ../admin/views/register-settings.php:27
-#, fuzzy
 msgid "Double BootStrap Theme"
 msgstr "ダブルブートストラップのテーマ"
 
 #: ../admin/views/register-settings.php:30
-#, fuzzy
 msgid "Register Template:"
 msgstr "登録テンプレート:"
 
 #: ../admin/views/register-settings.php:61
-#, fuzzy
 msgid "Default rank assigned to a new user"
 msgstr "新しいユーザーに割り当てられた既定のランク"
 
@@ -4388,21 +3906,18 @@ msgid "WP Role"
 msgstr "WPの役割"
 
 #: ../admin/views/register-settings.php:79
-#, fuzzy
 msgid "Predefined Wordpress role assigned to new users:"
 msgstr "新しいユーザーに割り当てられた定義済みのワードプレスの役割:"
 
 #: ../admin/views/register-settings.php:93
-#, fuzzy
 msgid ""
 "If the \"Pending\" Role is set the user cannot login until the Admin "
 "manually approves the user."
 msgstr ""
-"\"保留中\" の役割が設定されている場合、管理者が手動でユーザーを承認するまで、"
-"ユーザーはログインできません。"
+"Pending'役割が設定された場合、管理者は、使用者を手動で承認するまでログインで"
+"きません。"
 
 #: ../admin/views/register-settings.php:97
-#, fuzzy
 msgid "After Approve Wordpress Role:"
 msgstr "ワードプレスの役割を承認した後:"
 
@@ -4411,12 +3926,10 @@ msgid "Form Settings"
 msgstr "フォームの設定"
 
 #: ../admin/views/register-settings.php:116
-#, fuzzy
 msgid "Password Minimum Length"
-msgstr "パスワードの最小長"
+msgstr "パスワードの最小長さ"
 
 #: ../admin/views/register-settings.php:120
-#, fuzzy
 msgid "Password Strength Options"
 msgstr "パスワードの強度オプション"
 
@@ -4425,12 +3938,10 @@ msgid "Admin Notification"
 msgstr "管理者通知"
 
 #: ../admin/views/register-settings.php:136
-#, fuzzy
 msgid "Notify admin address on every new registration"
 msgstr "新しい登録ごとに管理者アドレスに通知する"
 
 #: ../admin/views/register-settings.php:137
-#, fuzzy
 msgid ""
 "When a new user has registered, the WP Admin is notified using the default "
 "Email Admin address set into current WordPress Instance"
@@ -4443,17 +3954,14 @@ msgid "Other Settings"
 msgstr "その他の設定"
 
 #: ../admin/views/register-settings.php:149
-#, fuzzy
 msgid "Auto Login after Registration"
 msgstr "登録後の自動ログイン"
 
 #: ../admin/views/register-settings.php:160
-#, fuzzy
 msgid "Terms & Conditions (TOS) Label"
 msgstr "使用条件 (TOS) ラベル"
 
 #: ../admin/views/reports.php:10
-#, fuzzy
 msgid "Select reports from:"
 msgstr "レポートの選択元:"
 
@@ -4462,17 +3970,14 @@ msgid "Check Results"
 msgstr "結果確認"
 
 #: ../admin/views/reports.php:80
-#, fuzzy
 msgid "Successful Conversions"
 msgstr "変換の成功"
 
 #: ../admin/views/reports.php:90
-#, fuzzy
 msgid "Succesfully Rate"
 msgstr "成功率"
 
 #: ../admin/views/reports.php:151
-#, fuzzy
 msgid "All Visits"
 msgstr "すべての訪問"
 
@@ -4481,40 +3986,33 @@ msgid "Converted Visits"
 msgstr "購入した訪問者数"
 
 #: ../admin/views/reports.php:259
-#, fuzzy
 msgid "All Referrals"
 msgstr "すべての紹介"
 
 #: ../admin/views/reports.php:263
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:47
-#, fuzzy
 msgid "Refuse Referrals"
 msgstr "紹介を拒否する"
 
 #: ../admin/views/reports.php:267
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:46
-#, fuzzy
 msgid "Unverified Referrals"
 msgstr "未確認の紹介"
 
 #: ../admin/views/reports.php:271
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:45
-#, fuzzy
 msgid "Verified Referrals"
 msgstr "確認済みの紹介"
 
 #: ../admin/views/rewrite_referrals.php:3
-#, fuzzy
 msgid "ReWrite Referrals"
 msgstr "参照の書き換え"
 
 #: ../admin/views/rewrite_referrals.php:7
-#, fuzzy
 msgid "Activate/Hold ReWrite Referrals"
-msgstr "書き換えの参照をアクティブ/ホールド"
+msgstr "繰り返し書き活性化/隠蔽する"
 
 #: ../admin/views/rewrite_referrals.php:8
-#, fuzzy
 msgid ""
 "Decides if a new customer is re-assigned to the first or last linked "
 "affiliate. If the same customer is referred to a different affiliate than "
@@ -4535,7 +4033,6 @@ msgstr ""
 "定することができますので、アフィリエイトが紹介を受け取るかを決定する。"
 
 #: ../admin/views/settings-admin_workflow.php:4
-#, fuzzy
 msgid "Admin Workflow Settings"
 msgstr "管理ワークフローの設定"
 
@@ -4544,7 +4041,6 @@ msgid "Updates"
 msgstr "更新"
 
 #: ../admin/views/settings-admin_workflow.php:12
-#, fuzzy
 msgid "Update Affiliates Rank:"
 msgstr "アフィリエイトのランクを更新:"
 
@@ -4555,7 +4051,6 @@ msgstr "一時間ごと"
 
 #: ../admin/views/settings-admin_workflow.php:16
 #: ../admin/views/settings-admin_workflow.php:33
-#, fuzzy
 msgid "At every 12hours"
 msgstr "すべての12時間毎で"
 
@@ -4565,47 +4060,38 @@ msgid "Daily"
 msgstr "毎日"
 
 #: ../admin/views/settings-admin_workflow.php:29
-#, fuzzy
 msgid "Update Payments Status:"
 msgstr "支払ステータスの更新:"
 
 #: ../admin/views/settings-admin_workflow.php:53
-#, fuzzy
 msgid "Keep Referral Status as Unverified"
 msgstr "参照状態を未確認として保持"
 
 #: ../admin/views/settings-admin_workflow.php:55
-#, fuzzy
 msgid "Don't change the Referral Status to Verified"
 msgstr "紹介の状態を [確認済み] に変更しない"
 
 #: ../admin/views/settings-admin_workflow.php:68
-#, fuzzy
 msgid "Show Dashboard Notifications"
-msgstr "ダッシュボード通知を表示する"
+msgstr "ダッシュボードのお知らせ表示"
 
 #: ../admin/views/settings-admin_workflow.php:70
-#, fuzzy
 msgid "New Affiliates & Referrals"
 msgstr "新しいアフィリエイト & 紹介"
 
 #: ../admin/views/settings-captcha.php:7
-#, fuzzy
 msgid "Public Key:"
 msgstr "公開キー:"
 
 #: ../admin/views/settings-captcha.php:10
-#, fuzzy
 msgid "Private Key:"
 msgstr "秘密鍵:"
 
 #: ../admin/views/settings-captcha.php:12
-#, fuzzy
 msgid "Get Public and Private Keys from"
 msgstr "公開鍵と秘密キーの取得"
 
 #: ../admin/views/settings-custom_currencies.php:4
-#, fuzzy
 msgid "Add new Currency"
 msgstr "新しい通貨の追加"
 
@@ -4614,26 +4100,22 @@ msgid "Code:"
 msgstr "コード:"
 
 #: ../admin/views/settings-custom_currencies.php:9
-#, fuzzy
 msgid "Insert a valid Currency Code, ex: "
-msgstr "有効な通貨コードを挿入します (例:"
+msgstr "有効な通貨コードを挿入します (例: "
 
 #: ../admin/views/settings-custom_currencies.php:9
-#, fuzzy
 msgid "USD, EUR, CAD."
-msgstr "米ドル、ユーロ、カナダドル。"
+msgstr "USD, EUR, CAD."
 
 #: ../admin/views/settings-custom_currencies.php:12
 msgid "Name:"
 msgstr "名前："
 
 #: ../admin/views/settings-default_pages.php:8
-#, fuzzy
 msgid "Default Pages:"
 msgstr "既定のページ:"
 
 #: ../admin/views/settings-default_pages.php:12
-#, fuzzy
 msgid "Register:"
 msgstr "登録："
 
@@ -4650,35 +4132,30 @@ msgid "User Account Page:"
 msgstr "メンバーページ:"
 
 #: ../admin/views/settings-default_pages.php:80
-#, fuzzy
 msgid "TOS Page:"
-msgstr "TOS ページ:"
+msgstr "トス ページ:"
 
 #: ../admin/views/settings-default_pages.php:97
 msgid "Lost Password:"
 msgstr "パスワードをお忘れですか ?:"
 
 #: ../admin/views/settings-general.php:9
-#, fuzzy
 msgid "Which Amount should be used for Referral?"
-msgstr "紹介に使用する金額を教えてください。"
+msgstr "Referralにはどの金額を使用すれば良いですか?"
 
 #: ../admin/views/settings-general.php:10
-#, fuzzy
 msgid ""
 "If there are multiple Amounts set for the same action, like Ranks&Offers or "
 "multiple Offers decide which one will be taken in consideration"
 msgstr ""
 "同じアクションに対して複数の金額が設定されている場合は、ランク & オファーや複"
-"数のオファーのように、どちらを考慮するかを決定します。"
+"数のオファーのように、どちらを考慮するかを決定します"
 
 #: ../admin/views/settings-general.php:13
-#, fuzzy
 msgid "Lowest Amount"
 msgstr "最低金額"
 
 #: ../admin/views/settings-general.php:13
-#, fuzzy
 msgid "Biggest Amount"
 msgstr "最大の金額"
 
@@ -4687,27 +4164,22 @@ msgid "Redirect"
 msgstr "リダイレクト"
 
 #: ../admin/views/settings-general.php:29
-#, fuzzy
 msgid "Redirect Same Page Without URL parameters:"
 msgstr "URL パラメータを付けずに同じページをリダイレクトする:"
 
 #: ../admin/views/settings-general.php:43
-#, fuzzy
 msgid "Referral Settings"
 msgstr "紹介の設定"
 
 #: ../admin/views/settings-general.php:45
-#, fuzzy
 msgid "Set the referral Variable name"
 msgstr "参照変数名を設定する"
 
 #: ../admin/views/settings-general.php:54
-#, fuzzy
 msgid "Base Referral Link"
 msgstr "ベース紹介リンク"
 
 #: ../admin/views/settings-general.php:60
-#, fuzzy
 msgid ""
 "Please insert a link from the website on which this plugin is installed.\n"
 "Do not enter a link from a different website."
@@ -4717,12 +4189,10 @@ msgstr ""
 "別の web サイトからリンクを入力しないでください。"
 
 #: ../admin/views/settings-general.php:69
-#, fuzzy
 msgid "Referral Format:"
 msgstr "紹介形式:"
 
 #: ../admin/views/settings-general.php:87
-#, fuzzy
 msgid "Cookie Expiration:"
 msgstr "クッキーの有効期限:"
 
@@ -4731,22 +4201,18 @@ msgid "Days"
 msgstr "日"
 
 #: ../admin/views/settings-general.php:99
-#, fuzzy
 msgid "Campaign Settings"
 msgstr "キャンペーン設定"
 
 #: ../admin/views/settings-general.php:101
-#, fuzzy
 msgid "Set the Campaign Variable name"
 msgstr "キャンペーン変数名の設定"
 
 #: ../admin/views/settings-general.php:112
-#, fuzzy
 msgid "Amount Value Settings"
 msgstr "金額値の設定"
 
 #: ../admin/views/settings-general.php:126
-#, fuzzy
 msgid "Currency position:"
 msgstr "通貨の位置:"
 
@@ -4760,72 +4226,58 @@ msgstr "右"
 
 #: ../admin/views/settings-general.php:139
 msgid "Exclude Shipping"
-msgstr "送料を除外します。"
+msgstr "送料を除外します"
 
 #: ../admin/views/settings-general.php:149
-#, fuzzy
 msgid "Exclude Tax"
 msgstr "税の除外"
 
 #: ../admin/views/settings-general.php:167
-#, fuzzy
 msgid "Automatically Affiliate"
 msgstr "自動的にアフィリエイト"
 
 #: ../admin/views/settings-general.php:168
-#, fuzzy
 msgid "All new Users become Affiliates"
 msgstr "すべての新しいユーザーがアフィリエイトになる"
 
 #: ../admin/views/settings-general.php:183
-#, fuzzy
 msgid "Empty Referrals"
-msgstr "空の参照"
+msgstr "空いた参照"
 
 #: ../admin/views/settings-general.php:184
-#, fuzzy
 msgid "Save Empty Referrals"
-msgstr "空の参照を保存"
+msgstr "空いた参照を保存"
 
 #: ../admin/views/settings-public_workflow.php:4
-#, fuzzy
 msgid "Public Workflow Settings"
 msgstr "パブリックワークフローの設定"
 
 #: ../admin/views/settings-public_workflow.php:11
-#, fuzzy
 msgid "Hide Payment Warnings"
 msgstr "支払警告の非表示"
 
 #: ../admin/views/settings-public_workflow.php:23
-#, fuzzy
 msgid "Default Payment System"
 msgstr "既定の支払システム"
 
 #: ../admin/views/settings-public_workflow.php:24
-#, fuzzy
 msgid "When a new Affiliate SignUp this will be his payment system."
 msgstr ""
-"ときに、新しいアフィリエイトのサインアップは、この彼の支払いシステムになりま"
-"す。"
+"ときに、新しいアフィリエイトのサインアップは、彼の支払いシステムになります。"
 
 #: ../admin/views/settings-public_workflow.php:40
-#, fuzzy
 msgid "Disable Bank Transfer"
 msgstr "銀行振込を無効にする"
 
 #: ../admin/views/settings-public_workflow.php:41
-#, fuzzy
 msgid "Affiliates will not be able to use Bank Transfer anymore."
-msgstr "アフィリエイトは、もはや銀行振込を使用することはできません。"
+msgstr "アフィリエイトは、もう銀行振込を使用することはできません。"
 
 #: ../admin/views/settings-public_workflow.php:53
-#, fuzzy
 msgid "Sources custom names"
 msgstr "ソースのカスタム名"
 
 #: ../admin/views/settings-redirects.php:11
-#, fuzzy
 msgid "After LogOut:"
 msgstr "ログアウト後:"
 
@@ -4837,167 +4289,135 @@ msgstr "ログアウト後:"
 #: ../admin/views/settings-redirects.php:113
 #: ../admin/views/settings-redirects.php:131
 #: ../admin/views/settings-redirects.php:149
-#, fuzzy
 msgid "Do Not Redirect"
 msgstr "リダイレクトしない"
 
 #: ../admin/views/settings-redirects.php:29
-#, fuzzy
 msgid "After Registration:"
 msgstr "登録後:"
 
 #: ../admin/views/settings-redirects.php:47
-#, fuzzy
 msgid "After Login:"
 msgstr "ログイン後:"
 
 #: ../admin/views/settings-redirects.php:71
-#, fuzzy
 msgid "Extra Redirects"
 msgstr "余分なリダイレクト"
 
 #: ../admin/views/settings-redirects.php:75
-#, fuzzy
 msgid "Account Page - Non Logged Affiliates"
-msgstr "アカウントページ-非ログ関連会社"
+msgstr "アカウントページ-ログに記録されていないアフィリエート"
 
 #: ../admin/views/settings-redirects.php:93
-#, fuzzy
 msgid "Login Page - Affiliates Logged"
 msgstr "ログインページ-アフィリエイトを記録"
 
 #: ../admin/views/settings-redirects.php:111
-#, fuzzy
 msgid "Register Page - Affiliates Logged"
 msgstr "登録ページ-アフィリエイトを記録"
 
 #: ../admin/views/settings-redirects.php:129
-#, fuzzy
 msgid "LogOut Page - Non Logged Affiliates"
-msgstr "ログアウトページ-非ログイン関連会社"
+msgstr "ログアウトページ-非ログインアフィリエイト"
 
 #: ../admin/views/settings-redirects.php:147
-#, fuzzy
 msgid "Lost Password Page - Non Logged Affiliates"
 msgstr "失われたパスワードのページ-非ログ関連会社"
 
 #: ../admin/views/settings-uploads.php:4
-#, fuzzy
 msgid "Uploads Settings"
 msgstr "アップロードの設定"
 
 #: ../admin/views/settings-uploads.php:7
-#, fuzzy
 msgid "Upload File Accepted Extensions:"
-msgstr "アップロードファイルの拡張子を受け入れ:"
+msgstr "アップロードファイルの拡張子を受け入れる:"
 
 #: ../admin/views/settings-uploads.php:10
-#, fuzzy
 msgid "Write the extensions with comma between values! ex: pdf,jpg,mp3"
 msgstr "値の間にカンマで拡張子を書く!例: pdf、jpg、mp3"
 
 #: ../admin/views/settings-uploads.php:15
-#, fuzzy
 msgid "Upload File Maximum File Size:"
 msgstr "アップロードファイルの最大ファイルサイズ:"
 
 #: ../admin/views/settings-uploads.php:22
-#, fuzzy
 msgid "Avatar Maximum File Size:"
 msgstr "アバターの最大ファイルサイズ:"
 
 #: ../admin/views/shortcodes.php:3
-#, fuzzy
 msgid "Main ShortCodes"
-msgstr "メインショート"
+msgstr "メインショートコード"
 
 #: ../admin/views/shortcodes.php:12 ../admin/views/showcases.php:14
 #: ../indeed-affiliate-pro.php:193
-#, fuzzy
 msgid "Account Page"
 msgstr "アカウントページ"
 
 #: ../admin/views/shortcodes.php:22
-#, fuzzy
 msgid "User ShortCodes"
-msgstr "ユーザーショート"
+msgstr "ユーザーショートコード"
 
 #: ../admin/views/shortcodes.php:29
 msgid "Field"
 msgstr "フィールド"
 
 #: ../admin/views/shortcodes.php:30
-#, fuzzy
 msgid "Private Shortcode"
 msgstr "プライベートショート"
 
 #: ../admin/views/shortcodes.php:31
-#, fuzzy
 msgid "Public Shortcode"
 msgstr "公共ショート"
 
 #: ../admin/views/shortcodes.php:82
-#, fuzzy
 msgid "Other ShortCodes"
 msgstr "その他ショート"
 
 #: ../admin/views/shortcodes.php:87
-#, fuzzy
 msgid "User Become Affiliate Button"
 msgstr "ユーザーがアフィリエイトボタンになる"
 
 #: ../admin/views/shortcodes.php:89
-#, fuzzy
 msgid "Show content only for affiliate users."
 msgstr "アフィリエイトユーザーのみのコンテンツを表示します。"
 
 #: ../admin/views/shortcodes.php:89 ../admin/views/shortcodes.php:91
-#, fuzzy
 msgid "Your content here!"
 msgstr "ここにあなたのコンテンツ!"
 
 #: ../admin/views/shortcodes.php:91
-#, fuzzy
 msgid "Show content only for non-affiliate users."
 msgstr "非アフィリエイトユーザーのみのコンテンツを表示します。"
 
 #: ../admin/views/showcases.php:6
-#, fuzzy
 msgid "Front-End Showcases"
 msgstr "フロントエンドショーケース"
 
 #: ../admin/views/showcases.php:12
-#, fuzzy
 msgid "Templates, Custom Fields, Special Settings, Custom Messages"
 msgstr "テンプレート、カスタムフィールド、特別な設定、カスタムメッセージ"
 
 #: ../admin/views/showcases.php:13
-#, fuzzy
 msgid "Templates, Display Options, Custom Messages"
 msgstr "テンプレート、表示オプション、カスタムメッセージ"
 
 #: ../admin/views/showcases.php:14
-#, fuzzy
 msgid "Templates, ShowUp fields, ShowUp Tabs, Predefined Overview"
 msgstr "テンプレート、見せつけるフィールド、見せつけるタブ、定義済みの概要"
 
 #: ../admin/views/showcases.php:15 ../indeed-affiliate-pro.php:192
-#, fuzzy
 msgid "Top Affiliates"
 msgstr "トップアフィリエイト"
 
 #: ../admin/views/showcases.php:15
-#, fuzzy
 msgid "Public Affiliates List ordered by Earnings, Referrals or Visits"
 msgstr "決算、紹介または訪問によって発注される公共の会社のリスト"
 
 #: ../admin/views/sign_up_referrals.php:7
-#, fuzzy
 msgid "Activate/Hold SignUp Referrals"
 msgstr "サインアップの参照をアクティブ/ホールド"
 
 #: ../admin/views/sign_up_referrals.php:22
-#, fuzzy
 msgid ""
 "Set the default flat amount that will be used when no special amount is set "
 "for certain a rank."
@@ -5006,7 +4426,6 @@ msgstr ""
 "額を設定します。"
 
 #: ../admin/views/sign_up_referrals.php:50
-#, fuzzy
 msgid ""
 "Set a special sign up amount for each rank. This option will also become "
 "available in the “Rank Settings” page."
@@ -5015,32 +4434,27 @@ msgstr ""
 "ページでも使用できるようになります。"
 
 #: ../admin/views/simple_links.php:5 ../classes/Uap_Db.class.php:7425
-#, fuzzy
 msgid "Referrer Links"
 msgstr "リファラーのリンク"
 
 #: ../admin/views/simple_links.php:9
-#, fuzzy
 msgid "Activate/Hold Simple Links"
 msgstr "シンプルなリンクをアクティブ/ホールド"
 
 #: ../admin/views/simple_links.php:10
-#, fuzzy
 msgid ""
 "An affiliate\\’s name can now be masked by creating custom links. Users will "
 "no longer avoid links that could benefit a certain affiliate."
 msgstr ""
-"アフィリエイト \\ の名前は、カスタムリンクを作成することによってマスクするこ"
-"とができるようになりました。ユーザーは、もはや特定のアフィリエイトに利益をも"
-"たらす可能性のあるリンクを避けることができます。"
+"もう使用者指定のリンクを作ってアフィリエイト \\の名前をマスキングすることがで"
+"きます。 使用者たちはこれ以上特定の提携会社に利益ができるリンクを避けないんで"
+"す。"
 
 #: ../admin/views/simple_links.php:24
-#, fuzzy
 msgid "Referrer Links Limit"
 msgstr "リファラーリンクの制限"
 
 #: ../admin/views/simple_links.php:25
-#, fuzzy
 msgid ""
 "The number of links that can be submitted by an affiliate in his “Account "
 "Page”."
@@ -5049,32 +4463,26 @@ msgstr ""
 "クの数。"
 
 #: ../admin/views/simple_links.php:27
-#, fuzzy
 msgid "Links Limit per Affiliate"
 msgstr "アフィリエイトあたりのリンクの制限"
 
 #: ../admin/views/simple_links.php:42
-#, fuzzy
 msgid "Add New Referrer Link"
 msgstr "新しいリファラーリンクの追加"
 
 #: ../admin/views/simple_links.php:46
-#, fuzzy
 msgid ""
 "Attach a referrer link to a specific affiliate user directly from the “UAP "
 "Dashboard”."
 msgstr ""
-"\"UAP ダッシュボード\" から直接特定のアフィリエイトのユーザーにリファラーのリ"
-"ンクを添付してください。"
+"\"UAPのダッシュボード\"で特定の提携使用者にリファラリンクを直接連結しなさい。"
 
 #: ../admin/views/simple_links.php:53 ../admin/views/simple_links.php:92
 #: ../admin/views/simple_links.php:100
-#, fuzzy
 msgid "Referrer Link"
 msgstr "リファラーリンク"
 
 #: ../admin/views/simple_links.php:70
-#, fuzzy
 msgid "Search Links for Affiliate"
 msgstr "アフィリエイトの検索リンク"
 
@@ -5087,12 +4495,10 @@ msgid "Social Share"
 msgstr "ソーシャル共有"
 
 #: ../admin/views/social_share.php:11
-#, fuzzy
 msgid "Activate/Hold Social Share"
 msgstr "ソーシャルシェアの有効化/ホールド"
 
 #: ../admin/views/social_share.php:12
-#, fuzzy
 msgid ""
 "This Feature will work only if You have '<strong>Social Share & Locker Pro "
 "Wordpress Plugin</strong>' installed and activated."
@@ -5101,12 +4507,10 @@ msgstr ""
 "</strong> ' がインストールされ、アクティブになっている場合にのみ動作します。"
 
 #: ../admin/views/social_share.php:24
-#, fuzzy
 msgid "Custom Share Message"
 msgstr "カスタム共有メッセージ"
 
 #: ../admin/views/social_share.php:25
-#, fuzzy
 msgid ""
 "For a better share action, you may set a custom message that will be listed "
 "besides the affiliate links."
@@ -5119,80 +4523,67 @@ msgid "Shortcode"
 msgstr "ショートコード"
 
 #: ../admin/views/social_share.php:34
-#, fuzzy
 msgid ""
 "You can generate the social share shortcode from the “Social Share & Locker” "
 "dashboard and paste it here."
 msgstr ""
-"ソーシャルシェアショートを「ソーシャルシェア & ロッカー」ダッシュボードから生"
-"成し、ここに貼り付けることができます。"
+"ソーシャルシェアショートコードを「ソーシャルシェア & ロッカー」ダッシュボード"
+"から生成し、ここに貼り付けることができます。"
 
 #: ../admin/views/social_share.php:37
 msgid "Click here"
 msgstr "ここをクリック"
 
 #: ../admin/views/social_share.php:37
-#, fuzzy
 msgid " to grab a new shortcode."
-msgstr "新しいショートをつかむために。"
+msgstr " 新しいショートをつかむために。"
 
 #: ../admin/views/source_details.php:6 ../classes/Uap_Db.class.php:7393
 #: ../public/views/account_page-referrals.php:32
-#, fuzzy
 msgid "Source Details"
 msgstr "ソースの詳細"
 
 #: ../admin/views/source_details.php:10
-#, fuzzy
 msgid "Activate/Hold Source Details into Account Page"
 msgstr "ソースの詳細をアカウントページにアクティブ/ホールド"
 
 #: ../admin/views/source_details.php:27
-#, fuzzy
 msgid "WooCommerce Show Fields"
 msgstr "WooCommerce 表示フィールド"
 
 #: ../admin/views/source_details.php:48
-#, fuzzy
 msgid "Easy Download Digital Show Fields"
 msgstr "簡単にデジタルショーのフィールドをダウンロード"
 
 #: ../admin/views/source_details.php:69
-#, fuzzy
 msgid "Ultimate Membership Pro Show Fields"
-msgstr "究極のメンバーシッププロショーフィールド"
+msgstr "Ultimateメンバーシッププロショーフィールド"
 
 #: ../admin/views/source_details.php:97
-#, fuzzy
 msgid "SignUp Show Fields"
 msgstr "サインアップの表示フィールド"
 
 #: ../admin/views/stripe.php:3
-#, fuzzy
 msgid "Stripe - Payouts"
 msgstr "ストライプ-ペイアウト"
 
 #: ../admin/views/stripe.php:7 ../admin/views/stripe_v2.php:7
-#, fuzzy
 msgid "Activate/Hold Stripe Gateway"
 msgstr "ストライプゲートウェイのアクティブ化/ホールド"
 
 #: ../admin/views/stripe.php:8 ../admin/views/stripe_v2.php:8
-#, fuzzy
 msgid ""
 "Once activated you can process payments to your affiliate users via Stripe "
 "directly from the affiliate system."
 msgstr ""
-"一度活性化は、アフィリエイトのシステムから直接ストライプを介してアフィリエイ"
-"トのユーザーに支払いを処理することができます。"
+"活性化されれば、アフィリエイトのシステムから直接ストライプを介してアフィリエ"
+"イトのユーザーに支払いを処理することができます。"
 
 #: ../admin/views/stripe.php:33 ../admin/views/stripe_v2.php:34
-#, fuzzy
 msgid "Sandbox Secret Key"
 msgstr "サンドボックスシークレットキー"
 
 #: ../admin/views/stripe.php:39 ../admin/views/stripe_v2.php:40
-#, fuzzy
 msgid "Sandbox Publishable Key"
 msgstr "サンドボックス発行キー"
 
@@ -5205,40 +4596,34 @@ msgid "Live Publishable Key"
 msgstr "Live 公開キー"
 
 #: ../admin/views/stripe.php:67 ../admin/views/stripe_v2.php:68
-#, fuzzy
 msgid "1. Go to"
 msgstr "1. に行く"
 
 #: ../admin/views/stripe.php:67 ../admin/views/stripe_v2.php:68
-#, fuzzy
 msgid " and login with username and password."
-msgstr "ユーザー名とパスワードでログインします。"
+msgstr " ユーザー名とパスワードでログインします。"
 
 #: ../admin/views/stripe.php:68 ../admin/views/stripe_v2.php:69
-#, fuzzy
 msgid ""
 "2. Click on \"Dashboard\", and then select \"Your account\" -> \"Account "
 "settings\"."
 msgstr ""
-"2. 「ダッシュボード」をクリックし、「アカウント」→「アカウント設定」を選択し"
-"ます。"
+"2.\"ダッシュボード\"をクリックした後\"使用者のアカウント\"->\"アカウント設定"
+"\"を選択します。"
 
 #: ../admin/views/stripe.php:69 ../admin/views/stripe_v2.php:70
-#, fuzzy
 msgid ""
 "3. A popup will appear and you must go to API Keys, here you will find the "
 "“Secret Key” and “Publishable Key”."
 msgstr ""
-"3. ポップアップが表示されますし、API キーに行く必要があります, ここでは、\"秘"
-"密鍵\" と \"発行キー\" を見つける."
+"3. ポップアップが現れ、APIキーに行く必要があります、ここでは\"秘密鍵\"と\"発"
+"行鍵\"を見ることができます。"
 
 #: ../admin/views/stripe.php:70 ../admin/views/stripe_v2.php:71
-#, fuzzy
 msgid "4. Don't forget to set Your Webhook at: "
-msgstr "4. あなたの web フックを設定することを忘れないでください。"
+msgstr "4. あなたの web フックを設定することを忘れないでください。: "
 
 #: ../admin/views/stripe.php:71 ../admin/views/stripe_v2.php:72
-#, fuzzy
 msgid ""
 "5. Be sure you use the same currency in the Stripe account and in the "
 "“Ultimate Affiliate Pro” settings."
@@ -5247,17 +4632,14 @@ msgstr ""
 "通貨を使用していることを確認してください."
 
 #: ../admin/views/stripe.php:72 ../admin/views/stripe_v2.php:73
-#, fuzzy
 msgid "For testing purposes, you can find card credentials here: "
-msgstr "テストの目的で、ここでカードの資格情報を見つけることができます:"
+msgstr "テストの目的で、ここでカードの資格情報を見つけることができます: "
 
 #: ../admin/views/stripe_v2.php:3
-#, fuzzy
 msgid "Stripe v2 - Payouts"
 msgstr "ストライプ v2 の-ペイアウト"
 
 #: ../admin/views/stripe_v2.php:15
-#, fuzzy
 msgid ""
 "This Payout option is in Beta Mode. If for some reason the new Stripe Payout "
 "system is not working properly, use the first Stripe Payout system."
@@ -5268,29 +4650,24 @@ msgstr ""
 
 #: ../admin/views/top_affiliates.php:39
 #: ../admin/views/top_affiliates_settings.php:2
-#, fuzzy
 msgid "Top Affiliates List"
-msgstr "トップアフィリエイト一覧"
+msgstr "トップアフィリエイトリスト"
 
 #: ../admin/views/top_affiliates.php:43
-#, fuzzy
 msgid "ShortCode Generator"
-msgstr "ショートジェネレータ"
+msgstr "ショートコードジェネレータ"
 
 #: ../admin/views/top_affiliates.php:55
-#, fuzzy
 msgid "Display Entries"
-msgstr "表示項目"
+msgstr "項目の表示"
 
 #: ../admin/views/top_affiliates.php:58
-#, fuzzy
 msgid "Number Of Entries:"
 msgstr "エントリー数:"
 
 #: ../admin/views/top_affiliates.php:62
-#, fuzzy
 msgid "Entries Per Page:"
-msgstr "1ページあたりのエントリ数:"
+msgstr "各ページの項目数:"
 
 #: ../admin/views/top_affiliates.php:67
 msgid "Order By:"
@@ -5304,7 +4681,6 @@ msgid "Earnings"
 msgstr "収益"
 
 #: ../admin/views/top_affiliates.php:75
-#, fuzzy
 msgid "Register Date"
 msgstr "登録日"
 
@@ -5318,17 +4694,14 @@ msgid "Random"
 msgstr "ランダム"
 
 #: ../admin/views/top_affiliates.php:91
-#, fuzzy
 msgid "Order Type:"
 msgstr "注文の種類:"
 
 #: ../admin/views/top_affiliates.php:108
-#, fuzzy
 msgid "Filter By Rank"
 msgstr "ランクによるフィルタ"
 
 #: ../admin/views/top_affiliates.php:114
-#, fuzzy
 msgid "User's Ranks:"
 msgstr "ユーザーのランク:"
 
@@ -5359,82 +4732,66 @@ msgstr "カラム"
 #: ../admin/views/top_affiliates_settings.php:14
 #: ../admin/views/top_affiliates_settings.php:15
 #: ../admin/views/top_affiliates_settings.php:16
-#, fuzzy
 msgid " Columns"
-msgstr "列"
+msgstr " 列"
 
 #: ../admin/views/top_affiliates.php:207 ../admin/views/top_affiliates.php:331
 msgid "Additional Options"
 msgstr "追加オプション"
 
 #: ../admin/views/top_affiliates.php:211
-#, fuzzy
 msgid "Align the Items Centered"
 msgstr "項目の中央揃え"
 
 #: ../admin/views/top_affiliates.php:217
-#, fuzzy
 msgid "Show Fields Label"
 msgstr "フィールドラベルの表示"
 
 #: ../admin/views/top_affiliates.php:225
-#, fuzzy
 msgid "Slider ShowCase"
 msgstr "スライダーショーケース"
 
 #: ../admin/views/top_affiliates.php:229
-#, fuzzy
 msgid "Show as Slider"
 msgstr "スライダとして表示"
 
 #: ../admin/views/top_affiliates.php:230
-#, fuzzy
 msgid "If Slider Showcase is used, Pagination Showcase is disabled."
-msgstr ""
-"スライダショーケースを使用すると、改ページショーケースは無効になります。"
+msgstr "Slider Showcaseを使用する場合、Pagination Showcaseが無効化されます。"
 
 #: ../admin/views/top_affiliates.php:236
-#, fuzzy
 msgid "Items per Slide:"
 msgstr "スライドごとのアイテム数:"
 
 #: ../admin/views/top_affiliates.php:242
-#, fuzzy
 msgid "Slider Timeout:"
 msgstr "スライダのタイムアウト:"
 
 #: ../admin/views/top_affiliates.php:248
-#, fuzzy
 msgid "Pagination Speed:"
 msgstr "ページ割り付け速度:"
 
 #: ../admin/views/top_affiliates.php:254
-#, fuzzy
 msgid "Pagination Theme:"
-msgstr "改ページのテーマ:"
+msgstr "ページ指定テーマ:"
 
 #: ../admin/views/top_affiliates.php:258
-#, fuzzy
 msgid "Pagination Theme 1"
-msgstr "改ページのテーマ1"
+msgstr "ページ指定テーマ1"
 
 #: ../admin/views/top_affiliates.php:259
-#, fuzzy
 msgid "Pagination Theme 2"
-msgstr "改ページのテーマ2"
+msgstr "ページ指定テーマ2"
 
 #: ../admin/views/top_affiliates.php:260
-#, fuzzy
 msgid "Pagination Theme 3"
-msgstr "改ページのテーマ3"
+msgstr "ページ指定テーマ3"
 
 #: ../admin/views/top_affiliates.php:274
-#, fuzzy
 msgid "Animation Slide In"
-msgstr "アニメーションスライド"
+msgstr "アニメーションスライドイン"
 
 #: ../admin/views/top_affiliates.php:302
-#, fuzzy
 msgid "Animation Slide Out"
 msgstr "アニメーションスライドアウト"
 
@@ -5443,17 +4800,14 @@ msgid "Bullets"
 msgstr "箇条書き"
 
 #: ../admin/views/top_affiliates.php:339
-#, fuzzy
 msgid "Nav Button"
 msgstr "ナビゲーションボタン"
 
 #: ../admin/views/top_affiliates.php:343
-#, fuzzy
 msgid "AutoPlay"
-msgstr "自動"
+msgstr "自動再生"
 
 #: ../admin/views/top_affiliates.php:347
-#, fuzzy
 msgid "Stop On Hover"
 msgstr "ホバーで停止"
 
@@ -5470,22 +4824,18 @@ msgid "Lazy Load"
 msgstr "遅延読み込み"
 
 #: ../admin/views/top_affiliates.php:363
-#, fuzzy
 msgid "Play in Loop"
 msgstr "ループで再生"
 
 #: ../admin/views/top_affiliates.php:375
-#, fuzzy
 msgid "Displayed User Fields"
 msgstr "表示されるユーザーフィールド"
 
 #: ../admin/views/top_affiliates.php:434
-#, fuzzy
 msgid "ShortCode :"
-msgstr "ショート："
+msgstr "ショートコード："
 
 #: ../admin/views/top_affiliates.php:438
-#, fuzzy
 msgid "PHP Code:"
 msgstr "PHP コード:"
 
@@ -5498,7 +4848,6 @@ msgid "Responsive Settings"
 msgstr "レスポンシブ設定"
 
 #: ../admin/views/top_affiliates_settings.php:9
-#, fuzzy
 msgid "Screen Max-Width:"
 msgstr "画面の最大幅:"
 
@@ -5508,15 +4857,13 @@ msgstr "自動"
 
 #: ../admin/views/top_affiliates_settings.php:29
 #: ../admin/views/top_affiliates_settings.php:41
-#, fuzzy
 msgid "Screen Min-Width:"
 msgstr "画面の最小幅:"
 
 #: ../admin/views/top_affiliates_settings.php:29
 #: ../admin/views/top_affiliates_settings.php:41
-#, fuzzy
 msgid " and Screen Max-Width:"
-msgstr "と画面の最大幅:"
+msgstr " と画面の最大幅:"
 
 #: ../admin/views/top_affiliates_settings.php:53
 #: ../admin/views/top_affiliates_settings.php:66
@@ -5524,7 +4871,6 @@ msgid "Save changes"
 msgstr "変更を保存"
 
 #: ../admin/views/top_affiliates_settings.php:62
-#, fuzzy
 msgid ""
 "Add !important;  after each style option and full style path to be sure that "
 "it will take effect!"
@@ -5533,7 +4879,6 @@ msgstr ""
 "ることを確認する!"
 
 #: ../admin/views/transactions.php:9
-#, fuzzy
 msgid "Generate CSV File"
 msgstr "CSV ファイルの生成"
 
@@ -5550,32 +4895,26 @@ msgid "Paypal"
 msgstr "Paypal"
 
 #: ../admin/views/transactions.php:23 ../classes/Uap_Db.class.php:7241
-#, fuzzy
 msgid "Stripe v2"
 msgstr "ストライプ v2"
 
 #: ../admin/views/transactions.php:31
-#, fuzzy
 msgid "Switch Transactions to 'Complete' "
-msgstr "トランザクションを「完了」に切り替えます。"
+msgstr "トランザクションを「完了」に切り替えます "
 
 #: ../admin/views/transactions.php:38
-#, fuzzy
 msgid "Click on this if download doesn't start automatically in 20 seconds!"
 msgstr "ダウンロードが20秒で自動的に始まらなければこれをクリックしなさい!"
 
 #: ../admin/views/transactions.php:49
-#, fuzzy
 msgid "The Payment cannot be proceed for affiliate "
-msgstr "アフィリエイトの支払いを続行することはできません"
+msgstr "アフィリエイトの支払いを続行することはできません "
 
 #: ../admin/views/transactions.php:49
-#, fuzzy
 msgid " because of the payment settings."
-msgstr "支払い設定のため。"
+msgstr " 支払い設定のため。"
 
 #: ../admin/views/transactions.php:55
-#, fuzzy
 msgid "Check Payments Status"
 msgstr "支払ステータスの確認"
 
@@ -5592,7 +4931,6 @@ msgid "Update Date"
 msgstr "更新日"
 
 #: ../admin/views/transactions.php:70 ../admin/views/transactions.php:82
-#, fuzzy
 msgid "Payment Service Status"
 msgstr "支払サービスの状態"
 
@@ -5603,27 +4941,26 @@ msgid "Fail"
 msgstr "失敗"
 
 #: ../admin/views/transactions.php:116
-#, fuzzy
 msgid ""
 "Press the 'Check Payments Status' button to get the lattest status of "
 "transaction."
-msgstr "[支払い状況の確認] ボタンを押して、ラッテストの状態を取得します。"
+msgstr ""
+"Check Payments Status(支払いの状態を確認)'ボタンを押して取引の最も遅い状態を"
+"確認します."
 
 #: ../admin/views/transactions.php:129
 msgid "View Details"
 msgstr "詳細を見る"
 
 #: ../admin/views/transactions.php:135
-#, fuzzy
 msgid "Mark as Pending"
-msgstr "保留としてマーク"
+msgstr "保留中に表示"
 
 #: ../admin/views/transactions.php:140
 msgid "Mark as Complete"
 msgstr "完了にします"
 
 #: ../admin/views/visits.php:15
-#, fuzzy
 msgid "Number of Visits to Display:"
 msgstr "表示する訪問数:"
 
@@ -5632,7 +4969,6 @@ msgid "IP"
 msgstr "IP"
 
 #: ../admin/views/visits.php:45 ../admin/views/visits.php:58
-#, fuzzy
 msgid "Referral ID"
 msgstr "参照 ID"
 
@@ -5649,14 +4985,12 @@ msgid "Device"
 msgstr "デバイス"
 
 #: ../admin/views/visits.php:90
-#, fuzzy
 msgid "Just Visit"
-msgstr "ちょうど訪問"
+msgstr "訪問"
 
 #: ../admin/views/visits.php:110
-#, fuzzy
 msgid "No Visits Stored!"
-msgstr "いいえ訪問は保存!"
+msgstr "保存された訪問なし!"
 
 #: ../admin/views/wallet.php:3 ../classes/Uap_Db.class.php:1753
 #: ../classes/Uap_Db.class.php:1754 ../classes/Uap_Db.class.php:7313
@@ -5665,12 +4999,10 @@ msgid "Wallet"
 msgstr "財布"
 
 #: ../admin/views/wallet.php:7
-#, fuzzy
 msgid "Activate/Hold Wallet"
 msgstr "アクティブ/ホールドウォレット"
 
 #: ../admin/views/wallet.php:8
-#, fuzzy
 msgid ""
 "Affiliates will have the option to spend their earnings directly in the "
 "website by using generated coupons with a specific flat discount."
@@ -5679,7 +5011,6 @@ msgstr ""
 "に直接収益を費やすオプションがあります。"
 
 #: ../admin/views/wallet.php:19
-#, fuzzy
 msgid ""
 "Establish a minimum amount required for an affiliate to be able to move his "
 "earnings from his account into his wallet. Only referrals that are verified "
@@ -5696,17 +5027,14 @@ msgid "Minimum Amount"
 msgstr "設定投資金額"
 
 #: ../admin/views/wallet.php:35
-#, fuzzy
 msgid "Excluded sources:"
-msgstr "除外するソース:"
+msgstr "除外されたソース:"
 
 #: ../admin/views/woo_account_page.php:3
-#, fuzzy
 msgid "WooCommerce Account Page"
 msgstr "WooCommerce アカウントページ"
 
 #: ../admin/views/woo_account_page.php:9
-#, fuzzy
 msgid ""
 "Fully integrate a user’s “Affiliate Account” in their “WooCommerce "
 "MyAccount”. Once activated, a new tab in their “ Woo MyAccount” menu will "
@@ -5717,113 +5045,92 @@ msgstr ""
 "しいタブが表示されます。"
 
 #: ../admin/views/wp_social_login.php:9 ../classes/Uap_Db.class.php:7401
-#, fuzzy
 msgid "Wp Social Login Integration"
 msgstr "Wp のソーシャルログインの統合"
 
 #: ../admin/views/wp_social_login.php:14
-#, fuzzy
 msgid "Wp Social Login it's not active on Your system. You can find "
 msgstr ""
 "Wp のソーシャルログインそれはあなたのシステム上でアクティブではない。を見つけ"
-"ることができます"
+"ることができます "
 
 #: ../admin/views/wp_social_login.php:18
-#, fuzzy
 msgid "Activate/Hold"
 msgstr "アクティブ/ホールド"
 
 #: ../admin/views/wp_social_login.php:28
-#, fuzzy
 msgid "Login/Register Redirect"
 msgstr "ログイン/登録リダイレクト"
 
 #: ../admin/views/wp_social_login.php:41
-#, fuzzy
 msgid "Predefined Wordpress Role Assign to new Users:"
 msgstr "定義済みのワードプレスの役割は、新しいユーザーに割り当てる:"
 
 #: ../admin/views/wp_social_login.php:66
-#, fuzzy
 msgid "Rank assigned to new User"
 msgstr "新しいユーザーに割り当てられたランク"
 
 #: ../admin/views/wp_social_login.php:90
-#, fuzzy
 msgid "Wordpress Social Login - Settings"
 msgstr "ワードプレスのソーシャルログイン-設定"
 
 #: ../classes/ResetPassword.class.php:52 ../classes/ResetPassword.class.php:108
-#, fuzzy
 msgid "Password reset on "
-msgstr "パスワードのリセット"
+msgstr "パスワードのリセット "
 
 #: ../classes/ResetPassword.class.php:53
-#, fuzzy
 msgid ""
 "<p>You or someone else has requested to change password for your account.</"
 "p></br><p>To change Your Password click on this URL: </p>"
 msgstr ""
-"<p> あなたまたは他の誰かがあなたのアカウントのパスワードを変更することを要求"
-"している。 </p> </br><p> は、この URL をクリックしてパスワードを変更する: </"
-"p>"
+"<p>あなたや他の方がアカウントのパスワードの変更をリクエストしました.</p></"
+"br><p>パスワードを変更するには,このURLをクリックしてください:</p>"
 
 #: ../classes/ResetPassword.class.php:109
-#, fuzzy
 msgid "Your new password it's: "
-msgstr "あなたの新しいパスワードは:"
+msgstr "あなたの新しいパスワードは: "
 
 #: ../classes/Uap_Add_Edit_Affiliate.class.php:80
 msgid "Confirm Password"
 msgstr "パスワードを確認"
 
 #: ../classes/Uap_Add_Edit_Affiliate.class.php:224
-#, fuzzy
 msgid "Select a Parent for this Affiliate"
 msgstr "このアフィリエイトの親を選択してください"
 
 #: ../classes/Uap_Add_Edit_Affiliate.class.php:226
-#, fuzzy
 msgid "MLM Section"
-msgstr "マルチ商法のセクション"
+msgstr "MLMセクション"
 
 #: ../classes/Uap_Add_Edit_Affiliate.class.php:373
-#, fuzzy
 msgid "Affiliate Slug"
 msgstr "アフィリエイトスラグ"
 
 #: ../classes/Uap_Add_Edit_Affiliate.class.php:795
-#, fuzzy
 msgid "Select Post For Account Page Overview:"
-msgstr "[アカウントの投稿] ページの概要を選択します。"
+msgstr "アカウントページの概要選択:"
 
 #: ../classes/Uap_Add_Edit_Affiliate.class.php:1138
-#, fuzzy
 msgid "Error on trying to save custom slug"
 msgstr "カスタムスラグを保存しようとしたときのエラー"
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:57
-#, fuzzy
 msgid "Referral Amount"
 msgstr "紹介金額"
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:58
-#, fuzzy
 msgid "Referral Source"
 msgstr "参照元"
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:60
-#, fuzzy
 msgid "Referral Referece"
 msgstr "紹介参照"
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:62
-#, fuzzy
 msgid "Referral Date"
 msgstr "紹介日"
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:63
-#, fuzzy
 msgid "Referral Campaign"
 msgstr "紹介キャンペーン"
 
@@ -5832,19 +5139,16 @@ msgid "Referral Status"
 msgstr "紹介ステータス"
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:264
-#, fuzzy
 msgid "E-mail Address: "
-msgstr "電子メールアドレス:"
+msgstr "電子メールアドレス: "
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:265
-#, fuzzy
 msgid "First name: "
-msgstr "ファーストネーム:"
+msgstr "ファーストネーム: "
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:266
-#, fuzzy
 msgid "Last name: "
-msgstr "姓:"
+msgstr "姓: "
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:267
 msgid "Order date: "
@@ -5856,17 +5160,15 @@ msgstr "注文金額: "
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:269
 msgid "Phone: "
-msgstr "電話:"
+msgstr "電話: "
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:270
-#, fuzzy
 msgid "Shipping Address: "
-msgstr "配送先住所:"
+msgstr "配送住所: "
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:271
-#, fuzzy
 msgid "Billing Address: "
-msgstr "請求先住所:"
+msgstr "請求先住所: "
 
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:279
 msgid "Cart Items: "
@@ -5879,40 +5181,34 @@ msgid "Download"
 msgstr "ダウンロード"
 
 #: ../classes/Uap_Ajax.class.php:539
-#, fuzzy
 msgid "Testing Your E-mail Server"
 msgstr "電子メールサーバーのテスト"
 
 #: ../classes/Uap_Ajax.class.php:540
-#, fuzzy
 msgid "Just a simple message to test if Your E-mail Server is working"
 msgstr ""
 "電子メールサーバーが動作しているかどうかをテストするだけの簡単なメッセージ"
 
 #: ../classes/Uap_BP_Custom_Menu_item.class.php:46
-#, fuzzy
 msgid "Ultimate Affiliate Pro"
-msgstr "究極のアフィリエイトプロ"
+msgstr "Ultimateアフィリエイトプロ"
 
 #: ../classes/Uap_Cron_Jobs.class.php:108
 msgid "User "
 msgstr "ユーザ "
 
 #: ../classes/Uap_Cron_Jobs.class.php:108
-#, fuzzy
 msgid " has a custom slug that match with nickname of "
-msgstr "のニックネームと一致するカスタムスラグを持っています"
+msgstr " のニックネームと一致するカスタムスラグを持っています "
 
 #: ../classes/Uap_Cron_Jobs.class.php:111
-#, fuzzy
 msgid "We inform You that: "
-msgstr "次のことをお知らせします。"
+msgstr "次のことをお知らせします: "
 
 #: ../classes/Uap_Cron_Jobs.class.php:111
-#, fuzzy
 msgid "This could cause some errors into Ultimate Affiliate Pro."
 msgstr ""
-"これは、究極のアフィリエイトプロにいくつかのエラーが発生する可能性がありま"
+"これは、Ultimateアフィリエイトプロにいくつかのエラーが発生する可能性がありま"
 "す。"
 
 #: ../classes/Uap_Cron_Jobs.class.php:114
@@ -5920,7 +5216,6 @@ msgid "Hello"
 msgstr "こんにちは"
 
 #: ../classes/Uap_Db.class.php:376
-#, fuzzy
 msgid "Affiliate Register Page"
 msgstr "アフィリエイト登録ページ"
 
@@ -5929,47 +5224,38 @@ msgid "Affiliate Login Page"
 msgstr "アフェリエイトログインページ"
 
 #: ../classes/Uap_Db.class.php:384
-#, fuzzy
 msgid "Affiliate Account Page"
 msgstr "アフィリエイトのアカウントページ"
 
 #: ../classes/Uap_Db.class.php:388
-#, fuzzy
 msgid "Affiliate Lost Password"
-msgstr "アフィリエイトは、パスワードを失った"
+msgstr "アフィリエイトのパスワードを紛失しました"
 
 #: ../classes/Uap_Db.class.php:392
-#, fuzzy
 msgid "Affiliate TOS Page"
-msgstr "アフィリエイト TOS ページ"
+msgstr "アフィリエイト トス ページ"
 
 #: ../classes/Uap_Db.class.php:440
-#, fuzzy
 msgid "Demo Banner 1"
 msgstr "デモバナー1"
 
 #: ../classes/Uap_Db.class.php:447
-#, fuzzy
 msgid "Demo Banner 2"
 msgstr "デモバナー2"
 
 #: ../classes/Uap_Db.class.php:454
-#, fuzzy
 msgid "Demo Banner 3"
 msgstr "デモバナー3"
 
 #: ../classes/Uap_Db.class.php:461
-#, fuzzy
 msgid "Demo Banner 4"
 msgstr "デモバナー4"
 
 #: ../classes/Uap_Db.class.php:468
-#, fuzzy
 msgid "Demo Banner 5"
 msgstr "デモバナー5"
 
 #: ../classes/Uap_Db.class.php:1597
-#, fuzzy
 msgid "Accept our Terms&Conditions"
 msgstr "利用規約に同意する"
 
@@ -5979,7 +5265,6 @@ msgid "Overview"
 msgstr "概要"
 
 #: ../classes/Uap_Db.class.php:1697
-#, fuzzy
 msgid ""
 "Hey There,\n"
 "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThis is the Overview section.\n"
@@ -5996,25 +5281,21 @@ msgstr "アカウント詳細"
 
 #: ../classes/Uap_Db.class.php:1708 ../classes/Uap_Db.class.php:1709
 #: ../classes/Uap_Db.class.php:8111 ../public/views/account_page-header.php:135
-#, fuzzy
 msgid "Affiliate Links"
 msgstr "アフィリエイトのリンク"
 
 #: ../classes/Uap_Db.class.php:1711 ../classes/Uap_Db.class.php:1712
 #: ../classes/Uap_Db.class.php:8156 ../public/views/account_page-header.php:151
-#, fuzzy
 msgid "Campaigns"
 msgstr "キャンペーン"
 
 #: ../classes/Uap_Db.class.php:1717 ../classes/Uap_Db.class.php:1718
 #: ../public/views/account_page-header.php:213
-#, fuzzy
 msgid "Traffic Log"
 msgstr "トラフィックログ"
 
 #: ../classes/Uap_Db.class.php:1723 ../classes/Uap_Db.class.php:1724
 #: ../classes/Uap_Db.class.php:8138 ../public/views/account_page-header.php:221
-#, fuzzy
 msgid "Campaign Reports"
 msgstr "キャンペーンレポート"
 
@@ -6024,7 +5305,6 @@ msgstr "全体"
 
 #: ../classes/Uap_Db.class.php:1732 ../classes/Uap_Db.class.php:1733
 #: ../classes/Uap_Db.class.php:8141 ../public/views/account_page-header.php:229
-#, fuzzy
 msgid "Referrals History"
 msgstr "紹介履歴"
 
@@ -6040,16 +5320,14 @@ msgid "Coupons"
 msgstr "クーポン"
 
 #: ../classes/Uap_Db.class.php:1745
-#, fuzzy
 msgid "Custom Slug"
 msgstr "カスタムスラグ"
 
 #: ../classes/Uap_Db.class.php:1747 ../classes/Uap_Db.class.php:1748
 #: ../classes/Uap_Db.class.php:7257 ../classes/Uap_Db.class.php:8144
 #: ../public/views/account_page-header.php:237
-#, fuzzy
 msgid "MLM"
-msgstr "マルチ 商法"
+msgstr "MLM"
 
 #: ../classes/Uap_Db.class.php:1759 ../classes/Uap_Db.class.php:1760
 #: ../classes/Uap_Db.class.php:8114 ../public/views/account_page-header.php:143
@@ -6057,116 +5335,94 @@ msgid "Simple Links"
 msgstr "サイドバナー"
 
 #: ../classes/Uap_Db.class.php:1937 ../classes/Uap_Db.class.php:1946
-#, fuzzy
 msgid "How about you become our affiliate?"
-msgstr "どのように私たちのアフィリエイトになる?"
+msgstr "うちのアフィリエイトになりますか？"
 
 #: ../classes/Uap_Db.class.php:2392 ../public/Referral_Main.class.php:309
-#, fuzzy
 msgid "Bonus for reaching rank: "
-msgstr "ランクに達するためのボーナス:"
+msgstr "ランクに達するためのボーナス: "
 
 #: ../classes/Uap_Db.class.php:5116
-#, fuzzy
 msgid "Deleted Affiliate"
 msgstr "削除されたアフィリエイト"
 
 #: ../classes/Uap_Db.class.php:6010
-#, fuzzy
 msgid "Stripe Managed Accounts"
 msgstr "ストライプ管理アカウント"
 
 #: ../classes/Uap_Db.class.php:7194
-#, fuzzy
 msgid ""
 "Available for membership system, awarding commission when referred user "
 "signs up"
 msgstr "会員制のために利用可能, 授与委員会は、ユーザーがサインアップ参照"
 
 #: ../classes/Uap_Db.class.php:7202
-#, fuzzy
 msgid ""
 "Allow for your affiliate to receive commission for all lifetime referrals"
 msgstr ""
-"すべての生涯の紹介のためのコミッションを受け取るためにあなたのアフィリエイト"
+"すべての生涯の紹介のためのコミッションを受け取るためのあなたのアフィリエイト"
 "を許可"
 
 #: ../classes/Uap_Db.class.php:7210
-#, fuzzy
 msgid "Award commissions for recurring subscriptions into membership systems"
 msgstr "メンバーシップシステムへの定期購読のためのアワードコミッション"
 
 #: ../classes/Uap_Db.class.php:7218
-#, fuzzy
 msgid ""
 "Provides social share buttons for affiliate links using “Social Share & "
 "Locker”"
-msgstr ""
-"「ソーシャルシェア & ロッカー」を利用したアフィリエイトリンクのソーシャルシェ"
-"アボタンを提供"
+msgstr "連携リンクを向けたソーシャル共有ボタン提供-\"Social Share&Locker\""
 
 #: ../classes/Uap_Db.class.php:7227
-#, fuzzy
 msgid "Pay your affiliates via PayPal"
 msgstr "ペイパルを介してアフィリエイトを支払う"
 
 #: ../classes/Uap_Db.class.php:7236
-#, fuzzy
 msgid "Pay your affiliates via Stripe"
 msgstr "ストライプを介してアフィリエイトを支払う"
 
 #: ../classes/Uap_Db.class.php:7244
-#, fuzzy
 msgid "Managed accounts Stripe service"
 msgstr "管理アカウントストライプサービス"
 
 #: ../classes/Uap_Db.class.php:7249
-#, fuzzy
 msgid "Allow Own Reference"
 msgstr "独自の参照を許可"
 
 #: ../classes/Uap_Db.class.php:7252
-#, fuzzy
 msgid "Allow for your affiliate to earn commissions from their own referrals"
 msgstr "自分の紹介から手数料を得るためにあなたのアフィリエイトを許可する"
 
 #: ../classes/Uap_Db.class.php:7260
-#, fuzzy
 msgid "Set a multi-level marketing system for your affiliates"
 msgstr ""
-"あなたのアフィリエイトのためのマルチレベルのマーケティングシステムを設定する"
+"あなたのアフィリエイトのためのマルチレベルマーケティングシステムを設定する"
 
 #: ../classes/Uap_Db.class.php:7265
-#, fuzzy
 msgid "ReAssign Referral"
 msgstr "参照の再割り当て"
 
 #: ../classes/Uap_Db.class.php:7268
-#, fuzzy
 msgid ""
 "Decides if a new customer is re-assigned to the first or last linked "
 "affiliate"
 msgstr ""
 "新しい顧客が最初または最後にリンクしたアフィリエイトに再割り当てされるかどう"
-"かを決定します。"
+"かを決定します"
 
 #: ../classes/Uap_Db.class.php:7276
-#, fuzzy
 msgid "Set bonuses when one of your affiliates reach a specific rank"
-msgstr "あなたの会社の1つが特定のランクに達するときボーナスを置きなさい"
+msgstr "あなたの会社の1つが特定のランクに達するときボーナスを置いてください"
 
 #: ../classes/Uap_Db.class.php:7281
-#, fuzzy
 msgid "Opt-In"
 msgstr "オプトイン"
 
 #: ../classes/Uap_Db.class.php:7284
-#, fuzzy
 msgid "Send affiliate email addresses to your Opt-In destination"
-msgstr "あなたのオプトイン宛先にアフィリエイトのメールアドレスを送信"
+msgstr "Opt-In対象に連携のメールアドレスを送信"
 
 #: ../classes/Uap_Db.class.php:7292
-#, fuzzy
 msgid ""
 "Correlate an affiliate with a WooCommerce, Easy Digital Download or Ultimate "
 "Membership Pro coupon code"
@@ -6175,135 +5431,110 @@ msgstr ""
 "コードとアフィリエイトを関連付ける"
 
 #: ../classes/Uap_Db.class.php:7297
-#, fuzzy
 msgid "Friendly Affiliate Links"
 msgstr "友好的なアフィリエイトのリンク"
 
 #: ../classes/Uap_Db.class.php:7300
-#, fuzzy
 msgid "Affiliate URLs receive improved looks and a better structure"
-msgstr "アフィリエイトの url は、改善されたルックスとより良い構造を受け取る"
+msgstr "アフィリエイトの url は、改善されたルックスとより良い構造を受け取れる"
 
 #: ../classes/Uap_Db.class.php:7308
-#, fuzzy
 msgid "Provides personal slugs besides the default username or ID"
-msgstr "デフォルトのユーザー名または ID 以外の個人ナメクジを提供します。"
+msgstr "デフォルトのユーザー名または ID 以外、個人のスラグを提供します"
 
 #: ../classes/Uap_Db.class.php:7316
-#, fuzzy
 msgid ""
 "Affiliates will have the option to spend their earnings directly in the "
 "website"
 msgstr "アフィリエイトは、ウェブサイトに直接収益を費やすオプションがあります"
 
 #: ../classes/Uap_Db.class.php:7324
-#, fuzzy
 msgid ""
 "Customers decide which affiliate will be rewarded during the checkout process"
 msgstr "お客様は、チェックアウトプロセス中に報われるアフィリエイトを決定"
 
 #: ../classes/Uap_Db.class.php:7329
-#, fuzzy
 msgid "WooCommerce Account Page Integration"
 msgstr "WooCommerce アカウントページの統合"
 
 #: ../classes/Uap_Db.class.php:7337
-#, fuzzy
 msgid "BuddyPress Account Page Integration"
-msgstr "バディアカウントページの統合"
+msgstr "BuddyPressアカウントページの統合"
 
 #: ../classes/Uap_Db.class.php:7348
-#, fuzzy
 msgid "Notify the affiliates via email when they get any new referrals"
 msgstr ""
 "彼らは任意の新しい紹介を取得するときに電子メールを介してアフィリエイトを通知"
 "する"
 
 #: ../classes/Uap_Db.class.php:7353
-#, fuzzy
 msgid "Admin Referral Notifications"
 msgstr "管理者紹介通知"
 
 #: ../classes/Uap_Db.class.php:7364
-#, fuzzy
 msgid "Affiliates will receive periodical email reports about their stats"
 msgstr "アフィリエイトは、統計についての定期的な電子メールレポートを受け取る"
 
 #: ../classes/Uap_Db.class.php:7372
-#, fuzzy
 msgid "The Affiliate Links can be provided as QR Codes"
 msgstr "アフィリエイトのリンクは QR コードとして提供することができます"
 
 #: ../classes/Uap_Db.class.php:7380
-#, fuzzy
 msgid ""
 "Requires the email address of new affiliates to be verified before they can "
 "log in"
 msgstr ""
-"新しいアフィリエイトのメールアドレスを確認してからログインする必要がありま"
-"す。"
+"新しいアフィリエイトのメールアドレスを確認してからログインする必要があります"
 
 #: ../classes/Uap_Db.class.php:7385
 msgid "Custom Currencies"
 msgstr "カスタム通貨"
 
 #: ../classes/Uap_Db.class.php:7404
-#, fuzzy
 msgid "Integrated for a lite register / login with social accounts"
 msgstr "ソーシャルアカウントでライトレジスタ/ログイン用に統合"
 
 #: ../classes/Uap_Db.class.php:7413
-#, fuzzy
 msgid "Users receive notifications on mobile via Pushover"
-msgstr "ユーザーが軟弱経由でモバイルで通知を受け取る"
+msgstr "プッシュ・オーバーを通じ、モバイルでのお知らせ受信"
 
 #: ../classes/Uap_Db.class.php:7421
-#, fuzzy
 msgid "Set a maximum amount that can not be passed for a referral."
 msgstr "紹介のために渡すことができない最大量を設定します。"
 
 #: ../classes/Uap_Db.class.php:7429
-#, fuzzy
 msgid "Directly links without any visible affiliate links listed"
 msgstr "表示されているアフィリエイト・リンクなしで直接リンク"
 
 #: ../classes/Uap_Db.class.php:7433
-#, fuzzy
 msgid "Account Custom Tabs"
 msgstr "アカウントのカスタムタブ"
 
 #: ../classes/Uap_Db.class.php:7437
-#, fuzzy
 msgid "Create and reorder account page menu items"
 msgstr "アカウントページのメニュー項目の作成と順序変更"
 
 #: ../classes/Uap_Db.class.php:7441
-#, fuzzy
 msgid "Migrate AffiliateWP"
 msgstr "AffiliateWP の移行"
 
 #: ../classes/Uap_Db.class.php:7445
-#, fuzzy
 msgid "Migrate data from AffiliateWP plugin"
 msgstr "AffiliateWP プラグインからデータを移行する"
 
 #: ../classes/Uap_Db.class.php:7449
-#, fuzzy
 msgid "Migrate Affiliates Pro"
-msgstr "アフィリエイトを移行するプロ"
+msgstr "Migrateアフィリエイトプロ"
 
 #: ../classes/Uap_Db.class.php:7453
-#, fuzzy
 msgid "Migrate data from Affiliates Pro plugin"
-msgstr "アフィリエイトプロプラグインからのデータの移行"
+msgstr "アフィリエイトプロプラグインからのデータMigrate"
 
 #: ../classes/Uap_Db.class.php:7457
-#, fuzzy
 msgid "Migrate WP Affiliate"
-msgstr "移行 WP のアフィリエイト"
+msgstr "WPアフィリエイトMigrate"
 
 #: ../classes/Uap_Db.class.php:7461
-#, fuzzy
 msgid "Migrate data from WP Affiliate plugin"
 msgstr "WP のアフィリエイトプラグインからデータを移行する"
 
@@ -6316,42 +5547,34 @@ msgid "Marketing"
 msgstr "マーケティング"
 
 #: ../classes/Uap_GDPR.php:204
-#, fuzzy
 msgid "UAP user metas"
 msgstr "UAP ユーザーメタ"
 
 #: ../classes/Uap_GDPR.php:232
-#, fuzzy
 msgid "UAP affiliate data"
 msgstr "UAP アフィリエイトデータ"
 
 #: ../classes/Uap_GDPR.php:259
-#, fuzzy
 msgid "UAP offers data"
 msgstr "UAP が提供するデータ"
 
 #: ../classes/Uap_GDPR.php:288
-#, fuzzy
 msgid "UAP campaigns data"
 msgstr "UAP キャンペーンデータ"
 
 #: ../classes/Uap_GDPR.php:323
-#, fuzzy
 msgid "UAP payments data"
 msgstr "UAP 支払データ"
 
 #: ../classes/Uap_GDPR.php:351
-#, fuzzy
 msgid "UAP rank history"
-msgstr "UAP ランクの歴史"
+msgstr "UAP ランクの履歴"
 
 #: ../classes/Uap_GDPR.php:378
-#, fuzzy
 msgid "UAP coupons code"
 msgstr "UAP クーポンコード"
 
 #: ../classes/Uap_GDPR.php:406 ../classes/Uap_GDPR.php:433
-#, fuzzy
 msgid "UAP reports"
 msgstr "UAP レポート"
 
@@ -6361,7 +5584,7 @@ msgstr " 獲得金額 "
 
 #: ../classes/Uap_Listing_Affiliates.class.php:699
 msgid " Referrals"
-msgstr " アフィリエイト件数 "
+msgstr " アフィリエイト件数"
 
 #: ../classes/Uap_Listing_Affiliates.class.php:706
 msgid " Visits"
@@ -6373,7 +5596,7 @@ msgstr "通貨"
 
 #: ../classes/Uap_Stripe_V2.class.php:133
 msgid "From "
-msgstr "から"
+msgstr "から "
 
 #: ../classes/Uap_Stripe_V2.class.php:133
 msgid " to "
@@ -6384,37 +5607,30 @@ msgid "Affiliate Pages"
 msgstr "アフェリエイト用ページ"
 
 #: ../indeed-affiliate-pro.php:201
-#, fuzzy
 msgid "User Account Page"
-msgstr "[ユーザーアカウント] ページ"
+msgstr "ユーザアカウントページ"
 
 #: ../public/Affiliate_Account_Page.class.php:246
-#, fuzzy
 msgid "Payment Service Settings are not set properly"
 msgstr "支払サービスの設定が正しく設定されていません"
 
 #: ../public/Affiliate_Account_Page.class.php:390
-#, fuzzy
 msgid "Please complete all fields!"
 msgstr "すべてのフィールドを完了してください!"
 
 #: ../public/Affiliate_Account_Page.class.php:396
-#, fuzzy
 msgid "Your have changed your Password!"
-msgstr "パスワードが変更されました。"
+msgstr "パスワードが変更されました！"
 
 #: ../public/Affiliate_Account_Page.class.php:398
-#, fuzzy
 msgid "Passwords not match!"
 msgstr "パスワードが一致しません!"
 
 #: ../public/Affiliate_Account_Page.class.php:401
-#, fuzzy
 msgid "Old Password is not correct!"
 msgstr "古いパスワードが正しくありません!"
 
 #: ../public/Affiliate_Account_Page.class.php:715
-#, fuzzy
 msgid "You must accept the 'Terms of service' before saving the settings."
 msgstr "設定を保存する前に、「サービスの利用規約」に同意する必要があります。"
 
@@ -6428,17 +5644,14 @@ msgid "Corporation"
 msgstr "Corporation"
 
 #: ../public/Affiliate_Account_Page.class.php:1012
-#, fuzzy
 msgid "You have an error."
 msgstr "エラーが発生しました。"
 
 #: ../public/Affiliate_Account_Page.class.php:1014
-#, fuzzy
 msgid "This URL already was registered."
 msgstr "この URL は既に登録されています。"
 
 #: ../public/Uap_Login.class.php:78
-#, fuzzy
 msgid "Captcha Error"
 msgstr "キャプチャエラー"
 
@@ -6447,33 +5660,27 @@ msgid "Log Out"
 msgstr "ログアウト"
 
 #: ../public/Uap_Main_Public.class.php:405
-#, fuzzy
 msgid "Loggin Form is not showing up when You're logged."
 msgstr "ログインフォームが表示されない場合は、ログに記録している。"
 
 #: ../public/Uap_Main_Public.class.php:408
-#, fuzzy
 msgid "Register Form is not showing up when You're logged."
 msgstr "登録フォームは、ログインしているときに表示されません。"
 
 #: ../public/Uap_Main_Public.class.php:411
-#, fuzzy
 msgid "Affiliate Account Page!"
 msgstr "アフィリエイトのアカウントのページ!"
 
 #: ../public/Uap_Main_Public.class.php:414
-#, fuzzy
 msgid "Affiliate Lost Password Page!"
-msgstr "アフィリエイトは、パスワードのページを失った!"
+msgstr "消失されたアフィリエイトの暗号ページ!"
 
 #: ../public/services/Uap_UMP.class.php:188 ../public/services/Uap_Ulp.php:121
 #: ../public/services/Uap_Woo.class.php:255
-#, fuzzy
 msgid "Please complete all required fields!"
 msgstr "必須項目をすべて記入してください!"
 
 #: ../public/views/account_page-banners.php:22
-#, fuzzy
 msgid "Banner Size:"
 msgstr "バナーのサイズ:"
 
@@ -6482,15 +5689,13 @@ msgid "Target URL:"
 msgstr "ターゲットURL:"
 
 #: ../public/views/account_page-banners.php:26
-#, fuzzy
 msgid "Copy & Paste this Source Code Into Your Website: "
-msgstr "コピー & ペーストあなたのウェブサイトにこのソースコード:"
+msgstr "コピー & ペーストあなたのウェブサイトにこのソースコード: "
 
 #: ../public/views/account_page-campaign_reports.php:16
 #: ../public/views/account_page-campaign_reports.php:24
-#, fuzzy
 msgid "Unique Visits"
-msgstr "ユニークな訪問"
+msgstr "ユニーク訪問"
 
 #: ../public/views/account_page-campaign_reports.php:17
 #: ../public/views/account_page-campaign_reports.php:25
@@ -6500,12 +5705,10 @@ msgid "Total Visits"
 msgstr "すべての訪問者数"
 
 #: ../public/views/account_page-campaigns.php:12
-#, fuzzy
 msgid "List Of Campaigns"
-msgstr "キャンペーン一覧"
+msgstr "キャンペーンリスト"
 
 #: ../public/views/account_page-campaigns.php:23
-#, fuzzy
 msgid "Add New Campaign"
 msgstr "新しいキャンペーンの追加"
 
@@ -6527,7 +5730,6 @@ msgid "Code"
 msgstr "コード"
 
 #: ../public/views/account_page-custom_affiliate_slug.php:20
-#, fuzzy
 msgid "An error has occurred"
 msgstr "エラーが発生しました"
 
@@ -6536,32 +5738,26 @@ msgid "Saved"
 msgstr "保存された"
 
 #: ../public/views/account_page-generate_links.php:12
-#, fuzzy
 msgid "Your Affiliate ID is:"
-msgstr "アフィリエイト ID は次のとおりです。"
+msgstr "アフィリエイト ID は次のとおりです。:"
 
 #: ../public/views/account_page-generate_links.php:14
-#, fuzzy
 msgid "Your Affiliate Name is:"
-msgstr "あなたのアフィリエイトの名前です:"
+msgstr "あなたのアフィリエイト名です:"
 
 #: ../public/views/account_page-generate_links.php:18
-#, fuzzy
 msgid "Your referral URL is:"
-msgstr "紹介 URL は次のとおりです。"
+msgstr "紹介 URL は次のとおりです:"
 
 #: ../public/views/account_page-generate_links.php:31
-#, fuzzy
 msgid "Your Custom Slug:"
-msgstr "あなたのカスタムナメクジ:"
+msgstr "あなたのカスタムスラグ:"
 
 #: ../public/views/account_page-generate_links.php:48
-#, fuzzy
 msgid "Link Generator"
 msgstr "リンクジェネレータ"
 
 #: ../public/views/account_page-generate_links.php:49
-#, fuzzy
 msgid ""
 "If you'd prefer to append your own affiliate links with an alternate "
 "incoming URL, use the following structure. To build your link, take the "
@@ -6572,7 +5768,6 @@ msgstr ""
 "url を追加します。"
 
 #: ../public/views/account_page-generate_links.php:63
-#, fuzzy
 msgid "Friendly Links:"
 msgstr "友好的なリンク:"
 
@@ -6581,12 +5776,10 @@ msgid "Off"
 msgstr "オフ"
 
 #: ../public/views/account_page-generate_links.php:76
-#, fuzzy
 msgid "Referrence Type:"
 msgstr "参考タイプ:"
 
 #: ../public/views/account_page-generate_links.php:85
-#, fuzzy
 msgid "Specific URL:"
 msgstr "特定の URL:"
 
@@ -6596,30 +5789,25 @@ msgid ""
 "link!"
 msgstr ""
 "アフィリエイトURLは上記URLもしくは下記ジェネレータから生成したものをペースト"
-"してご利用ください。"
+"してご利用ください!"
 
 #: ../public/views/account_page-generate_links.php:93
-#, fuzzy
 msgid "Generate Link"
 msgstr "リンクの生成"
 
 #: ../public/views/account_page-header.php:46
-#, fuzzy
 msgid "Until the next Rank..."
 msgstr "次のランクまで..."
 
 #: ../public/views/account_page-header.php:177
-#, fuzzy
 msgid "Statements"
 msgstr "ステートメント"
 
 #: ../public/views/account_page-header.php:205
-#, fuzzy
 msgid "OverAll"
 msgstr "全体"
 
 #: ../public/views/account_page-header.php:247
-#, fuzzy
 msgid "Referral Notifications & Reports"
 msgstr "紹介通知とレポート"
 
@@ -6630,7 +5818,7 @@ msgstr "購入者数"
 #: ../public/views/account_page-list_visits.php:16
 #: ../public/views/account_page-reports.php:62
 msgid "Success Rate"
-msgstr "成約率（パーセント）"
+msgstr "販売率（パーセント）"
 
 #: ../public/views/account_page-list_visits.php:24
 #: ../public/views/account_page-list_visits.php:33
@@ -6652,42 +5840,34 @@ msgid "Your current Balance"
 msgstr "現在の残高"
 
 #: ../public/views/account_page-overview.php:59
-#, fuzzy
 msgid "Total number of Referrals:"
 msgstr "紹介の合計数:"
 
 #: ../public/views/account_page-overview.php:60
-#, fuzzy
 msgid "Total number of Payments:"
 msgstr "支払の合計数:"
 
 #: ../public/views/account_page-overview.php:61
-#, fuzzy
 msgid "Total number of Paid Referrals:"
 msgstr "有料の紹介の合計数:"
 
 #: ../public/views/account_page-overview.php:62
-#, fuzzy
 msgid "Total number of UnPaid Referrals:"
 msgstr "未払いの紹介の合計数:"
 
 #: ../public/views/account_page-overview.php:63
-#, fuzzy
 msgid "Total value of Paid Payments:"
 msgstr "支払の合計金額:"
 
 #: ../public/views/account_page-overview.php:64
-#, fuzzy
 msgid "Total value of Unpaid Payments:"
 msgstr "未払い支払の合計金額:"
 
 #: ../public/views/account_page-payment_settings.php:22
-#, fuzzy
 msgid "PayPal E-mail Address"
 msgstr "PayPal の電子メールアドレス"
 
 #: ../public/views/account_page-payment_settings.php:27
-#, fuzzy
 msgid "Bank Transfer Details"
 msgstr "銀行振込の詳細"
 
@@ -6701,14 +5881,13 @@ msgstr "カード番号"
 
 #: ../public/views/account_page-payment_settings.php:41
 msgid "CVC"
-msgstr "セキュリティーコード（カード裏面の3桁の数字）"
+msgstr "セキュリティーコード - カード裏面の3桁の数字"
 
 #: ../public/views/account_page-payment_settings.php:45
 msgid "Expiration"
 msgstr "有効期限"
 
 #: ../public/views/account_page-payment_settings.php:84
-#, fuzzy
 msgid "Tax ID"
 msgstr "税 ID"
 
@@ -6717,22 +5896,18 @@ msgid "Company"
 msgstr "会社名"
 
 #: ../public/views/account_page-payment_settings.php:150
-#, fuzzy
 msgid "Additional owners"
 msgstr "追加所有者"
 
 #: ../public/views/account_page-payment_settings.php:165
-#, fuzzy
 msgid "Birthday day"
 msgstr "誕生日の日"
 
 #: ../public/views/account_page-payment_settings.php:170
-#, fuzzy
 msgid "Birthday month"
 msgstr "誕生日月"
 
 #: ../public/views/account_page-payment_settings.php:175
-#, fuzzy
 msgid "Birthday year"
 msgstr "誕生日年"
 
@@ -6741,12 +5916,10 @@ msgid "Address"
 msgstr "住所"
 
 #: ../public/views/account_page-payment_settings.php:200
-#, fuzzy
 msgid "SSN Last 4"
 msgstr "SSN 最後の4"
 
 #: ../public/views/account_page-payment_settings.php:205
-#, fuzzy
 msgid "Personal ID Number"
 msgstr "個人 ID 番号"
 
@@ -6755,22 +5928,18 @@ msgid "Business Name"
 msgstr "会社名"
 
 #: ../public/views/account_page-payment_settings.php:215
-#, fuzzy
 msgid "Business Tax ID"
 msgstr "ビジネス税 ID"
 
 #: ../public/views/account_page-payment_settings.php:220
-#, fuzzy
 msgid "Personal Address - City"
 msgstr "個人用アドレス-市区町村"
 
 #: ../public/views/account_page-payment_settings.php:225
-#, fuzzy
 msgid "Personal Address - Line 1"
 msgstr "個人アドレス-行1"
 
 #: ../public/views/account_page-payment_settings.php:235
-#, fuzzy
 msgid "Verification Document"
 msgstr "検証文書"
 
@@ -6779,52 +5948,42 @@ msgid "Terms of service"
 msgstr "利用規約"
 
 #: ../public/views/account_page-payments.php:10
-#, fuzzy
 msgid "Total Transactions Amount"
 msgstr "トランザクション合計金額"
 
 #: ../public/views/account_page-pushover_notifications.php:10
-#, fuzzy
 msgid "User Token"
 msgstr "ユーザートークン"
 
 #: ../public/views/account_page-referral_notifications.php:16
-#, fuzzy
 msgid "Referral Notification"
 msgstr "紹介通知"
 
 #: ../public/views/account_page-referral_notifications.php:42
-#, fuzzy
 msgid "Periodical Reports Interval"
 msgstr "定期報告間隔"
 
 #: ../public/views/account_page-referral_notifications.php:45
-#, fuzzy
 msgid "Never send reports"
 msgstr "レポートを送信しない"
 
 #: ../public/views/account_page-referral_notifications.php:45
-#, fuzzy
 msgid "Daily Reports"
-msgstr "日次レポート"
+msgstr "一日報告書"
 
 #: ../public/views/account_page-referral_notifications.php:45
-#, fuzzy
 msgid "Weekly Reports"
 msgstr "ウィークリーレポート"
 
 #: ../public/views/account_page-referral_notifications.php:45
-#, fuzzy
 msgid "Monthly Reports"
-msgstr "月次報告"
+msgstr "月刊報告書"
 
 #: ../public/views/account_page-referrals.php:14
-#, fuzzy
 msgid "Verified Referral Amount"
 msgstr "確認済みの紹介金額"
 
 #: ../public/views/account_page-referrals.php:17
-#, fuzzy
 msgid "Unverified Referral Amount"
 msgstr "未確認の紹介金額"
 
@@ -6842,24 +6001,20 @@ msgid "Payment"
 msgstr "支払い"
 
 #: ../public/views/account_page-reports.php:15
-#, fuzzy
 msgid "Total referrals"
 msgstr "合計紹介"
 
 #: ../public/views/account_page-reports.php:24
-#, fuzzy
 msgid "Total Earnings (paid Referrals)"
 msgstr "総収益 (有料紹介)"
 
 #: ../public/views/account_page-reports.php:74
-#, fuzzy
 msgid "Your Achievements"
 msgstr "あなたの成果"
 
 #: ../public/views/account_page-reports.php:81
-#, fuzzy
 msgid "You moved from "
-msgstr "から移動した"
+msgstr "から移動した "
 
 #: ../public/views/account_page-simple_links.php:11
 #: ../public/views/account_page-simple_links.php:31
@@ -6888,23 +6043,20 @@ msgid "Log In"
 msgstr "ログイン"
 
 #: ../public/views/login_form.php:469 ../public/views/login_form.php:525
-#, fuzzy
 msgid "Dont have an account?"
-msgstr "アカウントを持ってはいけない?"
+msgstr "アカウントがないですか?"
 
 #: ../public/views/login_form.php:469 ../public/views/login_form.php:525
 msgid "Sign Up"
 msgstr "サインアップ"
 
 #: ../public/views/login_form.php:587
-#, fuzzy
 msgid "Please complete all require fields!"
 msgstr "すべての必須フィールドを完了してください!"
 
 #: ../public/views/message_for_admin.php:3
-#, fuzzy
 msgid "Admin Info: "
-msgstr "管理者情報:"
+msgstr "管理者情報: "
 
 #: ../public/views/reset_password.php:11 ../public/views/reset_password.php:19
 #: ../public/views/reset_password.php:30 ../public/views/reset_password.php:39
@@ -6923,7 +6075,6 @@ msgid "Get New Password"
 msgstr "新しいパスワードを取得する"
 
 #: ../public/views/trial_version_message.php:2
-#, fuzzy
 msgid ""
 "This is a Trial Version of <strong>Ultimate Affiliate Pro</strong> plugin. "
 "Please add your purchase code into Licence section to enable the Full "
@@ -6938,32 +6089,26 @@ msgid "Service Type"
 msgstr "サービスタイプ"
 
 #: ../public/views/wallet-add_new.php:53
-#, fuzzy
 msgid "Add On Wallet"
 msgstr "ウォレットに追加"
 
 #: ../public/views/wallet-add_new.php:56
-#, fuzzy
 msgid "Total Credit: "
-msgstr "合計クレジット:"
+msgstr "合計クレジット: "
 
 #: ../public/views/wallet-add_new.php:63
-#, fuzzy
 msgid "No service available!"
 msgstr "サービスは利用できません!"
 
 #: ../public/views/wallet.php:16
-#, fuzzy
 msgid "Wallet available Credit"
 msgstr "ウォレット利用可能なクレジット"
 
 #: ../public/views/wallet.php:25
-#, fuzzy
 msgid "Available Deposit based on your Earnings"
 msgstr "お客様の収益に基づいて利用可能な預金"
 
 #: ../public/views/wallet.php:32
-#, fuzzy
 msgid "Add New Wallet Credit"
 msgstr "新しいウォレットクレジットの追加"
 
@@ -6980,66 +6125,54 @@ msgid "Link:"
 msgstr "リンク:"
 
 #: ../utilities.php:602
-#, fuzzy
 msgid "Custom Link: "
-msgstr "カスタムリンク:"
+msgstr "カスタムリンク: "
 
 #: ../utilities.php:1026
 msgid "Start:"
 msgstr "開始:"
 
 #: ../utilities.php:1028
-#, fuzzy
 msgid "Until:"
 msgstr "まで："
 
 #: ../utilities.php:1419
-#, fuzzy
 msgid "Multi Level Marketing"
 msgstr "マルチレベルマーケティング"
 
 #: ../utilities.php:1422
-#, fuzzy
 msgid "Bonus Rank"
 msgstr "ボーナスランク"
 
 #: ../utilities.php:1425
-#, fuzzy
 msgid "SignUp"
-msgstr "サインアップ"
+msgstr "ログイン"
 
 #: ../utilities.php:1432
-#, fuzzy
 msgid "Based on Subscription purchases from Ultimate Membership system"
-msgstr "究極のメンバーシップシステムからのサブスクリプションの購入に基づいて"
+msgstr "Ultimateメンバーシップシステムからのサブスクリプションの購入に基づいて"
 
 #: ../utilities.php:1435
-#, fuzzy
 msgid "Based on Product purchases from WooCommerce system"
 msgstr "WooCommerce システムからの製品購入に基づいて"
 
 #: ../utilities.php:1438
-#, fuzzy
 msgid "Based on Product purchases from Ultimate Learning Pro system"
-msgstr "究極の学習プロシステムからの製品購入に基づいて"
+msgstr "Ultimate学習プロシステムからの製品購入に基づいて"
 
 #: ../utilities.php:1441
-#, fuzzy
 msgid "Based on Product purchases from Easy Digital Downloads system"
 msgstr "簡単なデジタルダウンロードシステムからの製品購入に基づいて"
 
 #: ../utilities.php:1444
-#, fuzzy
 msgid "Related on Rewarads provided to Affiliate from your MLM System"
 msgstr "Rewarads に関連するあなたの MLM システムからアフィリエイトに提供"
 
 #: ../utilities.php:1447
-#, fuzzy
 msgid "Bonus when a new Rank is achieved"
 msgstr "新しいランクが達成されるときボーナス"
 
 #: ../utilities.php:1450
-#, fuzzy
 msgid "Referrals from based on new user SignUp Rewards system"
 msgstr "新しいユーザーサインアップ報酬システムに基づいてからの紹介"
 
@@ -7276,9 +6409,8 @@ msgid "Cuba"
 msgstr "キューバ"
 
 #: ../utilities.php:1700
-#, fuzzy
 msgid "Cura&ccedil;ao"
-msgstr "クーラ &ccedil; ao"
+msgstr "クーラ&ccedil;ao"
 
 #: ../utilities.php:1701
 msgid "Cyprus"
@@ -7989,12 +7121,10 @@ msgid "United States (US)"
 msgstr "United States (US)"
 
 #: ../utilities.php:1878
-#, fuzzy
 msgid "United States (US) Minor Outlying Islands"
 msgstr "アメリカ合衆国 (米国) 小離島"
 
 #: ../utilities.php:1879
-#, fuzzy
 msgid "United States (US) Virgin Islands"
 msgstr "米国 (米国) バージン諸島"
 

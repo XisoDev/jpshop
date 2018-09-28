@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-09-21 11:50+0900\n"
+"PO-Revision-Date: 2018-09-28 16:32+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1819,7 +1819,7 @@ msgstr "등급 별 총 계열사"
 
 #: ../admin/views/dashboard.php:65
 msgid "Last 5 Referrals"
-msgstr "마지막 5 소개"
+msgstr "최근 5 건"
 
 #: ../admin/views/dashboard.php:69
 msgid " for "
@@ -3284,8 +3284,8 @@ msgid ""
 "Decides the image size for the QR code. Bigger is much easier to scan, but "
 "has an increased load time."
 msgstr ""
-"QR 코드의 이미지 크기를 결정합니다. 스캔이 훨씬 쉽지만 로드 시간이 길어집니"
-"다."
+"QR코드의 영상 크기를 결정합니다.큰 것이 스캔이 훨씬 쉽지만 로딩 시간이 증가합"
+"니다."
 
 #: ../admin/views/qr_code.php:31
 msgid "ECC Data Level"
@@ -3570,9 +3570,9 @@ msgid ""
 "notifications when they get new referrals. The affiliate can decide from his "
 "“Account Page” which type of referrals he will be notified of via email."
 msgstr ""
-"이 모듈이 활성화된 경우, 제휴사는 신규 리퍼런스를 받을 때 즉각적인 알림을 받"
-"을 수 있습니다. 제휴사는 자신의 \"회계 페이지\"에서 이메일을 통해 어떤 유형"
-"의 의뢰를 받을지 결정할 수 있다."
+"이 모듈이 액티브하게 되어 있는 경우, 제휴는 새로운 소개를 받을 때 즉석 통지"
+"를 받는 옵션을 가지고 있습니다.제휴는 그의 \"계정 페이지\"에서 그는 이메일을 "
+"통해서 통지하는 소개의 종류를 결정할 수 있습니다."
 
 #: ../admin/views/referrals-add_edit.php:5
 msgid "Add/Edit Referral"
