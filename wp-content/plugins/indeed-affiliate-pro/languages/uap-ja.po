@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-09-28 16:32+0900\n"
+"PO-Revision-Date: 2018-10-01 14:44+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -89,7 +89,7 @@ msgstr "セッション"
 #: ../public/views/account_page-referrals.php:20
 #: ../public/views/wallet-add_new.php:23
 msgid "Referrals"
-msgstr "紹介"
+msgstr "クリック数"
 
 #: ../admin/Uap_Main_Admin.class.php:448
 #: ../admin/views/notifications-add_edit.php:24
@@ -242,7 +242,7 @@ msgstr "全取引"
 
 #: ../admin/Uap_Main_Admin.class.php:1249
 msgid "View Transactions for"
-msgstr "トランザクションを表示する"
+msgstr "取引を表示する"
 
 #: ../admin/Uap_Main_Admin.class.php:1301
 msgid "View UnPaid Referrals for"
@@ -959,16 +959,16 @@ msgstr "なし"
 #: ../public/views/account_page-generate_links.php:66
 #: ../public/views/account_page-reports.php:81
 msgid "On"
-msgstr "オン"
+msgstr "日"
 
 #: ../admin/views/achievements.php:20
 msgid "has moved from "
-msgstr "から移動している "
+msgstr "になりました： "
 
 #: ../admin/views/achievements.php:20 ../admin/views/offers-list.php:40
 #: ../public/views/account_page-reports.php:81
 msgid "to"
-msgstr "から"
+msgstr "->"
 
 #: ../admin/views/admin_referral_notifications.php:3
 #: ../admin/views/referral_notifications.php:3 ../classes/Uap_Db.class.php:7345
@@ -1341,7 +1341,7 @@ msgstr "未承認"
 
 #: ../admin/views/affiliates-list.php:251 ../admin/views/transactions.php:2
 msgid "Transactions"
-msgstr "トランザクション"
+msgstr "取引"
 
 #: ../admin/views/affiliates-list.php:253 ../admin/views/mlm.php:20
 msgid "MLM Matrix"
@@ -2972,7 +2972,7 @@ msgstr "未払いの紹介の合計数"
 
 #: ../admin/views/payments.php:71
 msgid "Total number of Transactions"
-msgstr "トランザクションの合計数"
+msgstr "取引の合計数"
 
 #: ../admin/views/payments.php:84 ../admin/views/payments.php:94
 msgid "Affiliate UserName"
@@ -4900,7 +4900,7 @@ msgstr "ストライプ v2"
 
 #: ../admin/views/transactions.php:31
 msgid "Switch Transactions to 'Complete' "
-msgstr "トランザクションを「完了」に切り替えます "
+msgstr "取引を「完了」に切り替えます "
 
 #: ../admin/views/transactions.php:38
 msgid "Click on this if download doesn't start automatically in 20 seconds!"
@@ -5739,7 +5739,7 @@ msgstr "保存された"
 
 #: ../public/views/account_page-generate_links.php:12
 msgid "Your Affiliate ID is:"
-msgstr "アフィリエイト ID は次のとおりです。:"
+msgstr "あなたのアフィリエイトURLは次のとおりです。:"
 
 #: ../public/views/account_page-generate_links.php:14
 msgid "Your Affiliate Name is:"
@@ -5763,9 +5763,8 @@ msgid ""
 "incoming URL, use the following structure. To build your link, take the "
 "following URL and append it with the Alternate Incoming URL you want to use."
 msgstr ""
-"別の着信 URL を使用して独自のアフィリエイトリンクを追加する場合は、次のような"
-"構造にします。リンクを作成するには、次の url を受け取って、使用する代替着信 "
-"url を追加します。"
+"特定のセールページや商品ページのURLをあなたのアフィリエイトURLに変換したい場"
+"合はこちらから作成ください。"
 
 #: ../public/views/account_page-generate_links.php:63
 msgid "Friendly Links:"
@@ -5949,7 +5948,7 @@ msgstr "利用規約"
 
 #: ../public/views/account_page-payments.php:10
 msgid "Total Transactions Amount"
-msgstr "トランザクション合計金額"
+msgstr "取引合計金額"
 
 #: ../public/views/account_page-pushover_notifications.php:10
 msgid "User Token"
@@ -6014,7 +6013,7 @@ msgstr "あなたの成果"
 
 #: ../public/views/account_page-reports.php:81
 msgid "You moved from "
-msgstr "から移動した "
+msgstr "にランクアップしました。 "
 
 #: ../public/views/account_page-simple_links.php:11
 #: ../public/views/account_page-simple_links.php:31
