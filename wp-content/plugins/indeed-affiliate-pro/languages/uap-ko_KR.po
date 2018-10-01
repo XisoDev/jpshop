@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-01 17:17+0900\n"
+"PO-Revision-Date: 2018-10-01 17:24+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -228,28 +228,28 @@ msgstr "어필리에이트에 대한 지급액"
 
 #: ../admin/Uap_Main_Admin.class.php:1085
 msgid "All UnPaid Referrals"
-msgstr "모든 무료 추천"
+msgstr "모든 미지불 내역 조회"
 
 #: ../admin/Uap_Main_Admin.class.php:1086
 msgid "All Paid Referrals"
-msgstr "모든 유료 추천"
+msgstr "모든 지불내역 조회"
 
 #: ../admin/Uap_Main_Admin.class.php:1087 ../admin/views/payments.php:89
 #: ../admin/views/payments.php:99
 msgid "All Transactions"
-msgstr "모든 트랜잭션"
+msgstr "모든 거래 내역"
 
 #: ../admin/Uap_Main_Admin.class.php:1249
 msgid "View Transactions for"
-msgstr "트랜잭션 보기"
+msgstr "거래 내역 보기"
 
 #: ../admin/Uap_Main_Admin.class.php:1301
 msgid "View UnPaid Referrals for"
-msgstr "무료 추천 보기"
+msgstr "미지불 조회 보기"
 
 #: ../admin/Uap_Main_Admin.class.php:1346
 msgid "View Paid Referrals for"
-msgstr "유료 추천 보기"
+msgstr "지불된 내역 보기"
 
 #: ../admin/Uap_Main_Admin.class.php:1672
 msgid "Affiliate Register - Admin Notification"
@@ -1805,7 +1805,7 @@ msgstr "총 어필리에이트"
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:43
 #: ../public/views/account_page-overview.php:11
 msgid "Total Referrals"
-msgstr "총 추천"
+msgstr "총 조회수"
 
 #: ../admin/views/dashboard.php:34 ../admin/views/payments.php:31
 msgid "Total UnPaid Referrals"
@@ -2933,15 +2933,15 @@ msgstr "결제 세부 사항"
 #: ../admin/views/payments.php:2 ../admin/views/payments_list_all_unpaid.php:2
 #: ../public/views/account_page-overview.php:27
 msgid "UnPaid Referrals"
-msgstr "무료 추천"
+msgstr "미지불 조회"
 
 #: ../admin/views/payments.php:41
 msgid "Total Paid Referrals"
-msgstr "총 유료 추천"
+msgstr "모든 지불 내역 조회"
 
 #: ../admin/views/payments.php:51
 msgid "Total number of Paid Referrals"
-msgstr "유료 추천의 총 수"
+msgstr "지불된 총 조회수"
 
 #: ../admin/views/payments.php:61
 msgid "Total number of UnPaid Referrals"
@@ -2949,7 +2949,7 @@ msgstr "총 미결제 조회 수"
 
 #: ../admin/views/payments.php:71
 msgid "Total number of Transactions"
-msgstr "총 트랜잭션 수"
+msgstr "총 거래 수"
 
 #: ../admin/views/payments.php:84 ../admin/views/payments.php:94
 msgid "Affiliate UserName"
@@ -2999,7 +2999,7 @@ msgstr "결제 완료"
 #: ../admin/views/payments_list_all_paid.php:50
 #: ../public/views/account_page-referrals_history.php:43
 msgid "UnPaid"
-msgstr "무료"
+msgstr "미지불"
 
 #: ../admin/views/payments_list_all_unpaid.php:14
 msgid "Pay selected Referrals"
@@ -5789,7 +5789,7 @@ msgstr "현재 잔액"
 
 #: ../public/views/account_page-overview.php:59
 msgid "Total number of Referrals:"
-msgstr "총 조회 수:"
+msgstr "총 조회수:"
 
 #: ../public/views/account_page-overview.php:60
 msgid "Total number of Payments:"
@@ -5797,7 +5797,7 @@ msgstr "총 결제 횟수:"
 
 #: ../public/views/account_page-overview.php:61
 msgid "Total number of Paid Referrals:"
-msgstr "유료 추천의 총 수:"
+msgstr "지불된 총 조회수:"
 
 #: ../public/views/account_page-overview.php:62
 msgid "Total number of UnPaid Referrals:"
@@ -5805,7 +5805,7 @@ msgstr "총 미지급 조회 수:"
 
 #: ../public/views/account_page-overview.php:63
 msgid "Total value of Paid Payments:"
-msgstr "유료 지불의 총 가치:"
+msgstr "지불금 총액:"
 
 #: ../public/views/account_page-overview.php:64
 msgid "Total value of Unpaid Payments:"
@@ -5950,11 +5950,11 @@ msgstr "결제"
 
 #: ../public/views/account_page-reports.php:15
 msgid "Total referrals"
-msgstr "총 추천"
+msgstr "총 조회수"
 
 #: ../public/views/account_page-reports.php:24
 msgid "Total Earnings (paid Referrals)"
-msgstr "총 수익 (유료 추천)"
+msgstr "총 수익 (지불된 금액)"
 
 #: ../public/views/account_page-reports.php:74
 msgid "Your Achievements"
