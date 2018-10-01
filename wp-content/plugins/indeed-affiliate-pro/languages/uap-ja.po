@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-01 14:44+0900\n"
+"PO-Revision-Date: 2018-10-01 15:08+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -167,7 +167,7 @@ msgstr "参照を表示する"
 #: ../public/views/account_page-referrals.php:68
 #: ../public/views/account_page-referrals_history.php:55
 msgid "Refuse"
-msgstr "ごみ"
+msgstr "取り消し"
 
 #: ../admin/Uap_Main_Admin.class.php:969 ../admin/views/bonus_on_rank.php:43
 #: ../admin/views/landing_commissions-add_edit.php:56
