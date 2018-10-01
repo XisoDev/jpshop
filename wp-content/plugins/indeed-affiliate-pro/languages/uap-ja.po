@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-01 15:08+0900\n"
+"PO-Revision-Date: 2018-10-01 16:22+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -2422,7 +2422,7 @@ msgstr "レベル"
 #: ../public/views/account_page-referrals_history.php:18
 #: ../public/views/wallet-add_new.php:30 ../public/views/wallet.php:43
 msgid "Amount"
-msgstr "量"
+msgstr "手数料"
 
 #: ../admin/views/mlm-view_affiliate_children.php:54
 #: ../public/views/account_page-mlm.php:73
@@ -2711,7 +2711,7 @@ msgstr "対象アフィリエイト:"
 #: ../public/views/account_page-referrals_history.php:19
 #: ../public/views/wallet-add_new.php:31
 msgid "From"
-msgstr "から"
+msgstr "From"
 
 #: ../admin/views/offers-list.php:51
 msgid "No Offers to show. Please, add your first Offer. "
@@ -3997,7 +3997,7 @@ msgstr "紹介を拒否する"
 #: ../admin/views/reports.php:267
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:46
 msgid "Unverified Referrals"
-msgstr "未確認の紹介"
+msgstr "決済待ち"
 
 #: ../admin/views/reports.php:271
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:45
@@ -5596,7 +5596,7 @@ msgstr "通貨"
 
 #: ../classes/Uap_Stripe_V2.class.php:133
 msgid "From "
-msgstr "から "
+msgstr "From "
 
 #: ../classes/Uap_Stripe_V2.class.php:133
 msgid " to "
@@ -5980,11 +5980,11 @@ msgstr "月刊報告書"
 
 #: ../public/views/account_page-referrals.php:14
 msgid "Verified Referral Amount"
-msgstr "確認済みの紹介金額"
+msgstr "確認済みの利益"
 
 #: ../public/views/account_page-referrals.php:17
 msgid "Unverified Referral Amount"
-msgstr "未確認の紹介金額"
+msgstr "決済待ちの利益"
 
 #: ../public/views/account_page-referrals.php:27
 msgid "Id"
