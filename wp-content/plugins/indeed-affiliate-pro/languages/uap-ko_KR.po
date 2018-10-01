@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-01 17:24+0900\n"
+"PO-Revision-Date: 2018-10-01 17:32+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1412,7 +1412,7 @@ msgstr "새 배너 추가"
 
 #: ../admin/views/banners-list.php:4
 msgid "...create Banners for your Affiliates"
-msgstr "...제휴업체에 대한 배너 생성"
+msgstr "...어필리에이트에게 제공하기 위한 배너 생성"
 
 #: ../admin/views/banners-list.php:15 ../admin/views/banners-list.php:24
 msgid "Image"
