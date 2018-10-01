@@ -1,7 +1,9 @@
 <div class="uap-wrapper">
-	<div class="uap-page-title">Ultimate Affiliate Pro - <span class="second-text"><?php _e('Landing Commissions (CPA)', 'uap');?></span></div>
-		<a href="<?php echo $data['url-add_edit'];?>" class="uap-add-new-like-wp"><i class="fa-uap fa-add-uap"></i><span><?php _e('Add New Landing Commission (CPA)', 'uap');?></span></a>
-		<span class="uap-top-message"><?php _e('...create your Landing Commission (CPA -CostPerAction) Shortcode', 'uap');?></span>
+	<div class="uap-page-title">Ultimate Affiliate Pro - <span class="second-text">
+            <?php _e(/*'Landing Commissions (CPA)'*/'랜딩 커미션(CPA)', 'uap');?></span></div>
+		<a href="<?php echo $data['url-add_edit'];?>" class="uap-add-new-like-wp"><i class="fa-uap fa-add-uap"></i><span>
+                <?php _e(/*'Add New Landing Commission (CPA)'*/'새 랜딩 커미션(CPA)', 'uap');?></span></a>
+		<span class="uap-top-message"><?php _e('...랜딩 커미션 단축코드를 만듭니다 (CPA -CostPerAction) 단축코드', 'uap');?></span>
 		<?php if (!empty($data['errors'])) : ?>
 			<div class="uap-wrapp-the-errors"><?php echo $data['errors'];?></div>
 		<?php endif;?>

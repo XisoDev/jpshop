@@ -1,10 +1,12 @@
 			<form action="" method="post">
 				<div class="uap-stuffbox">
-					<h3 class="uap-h3"><?php _e('SignUp Referrals (CPL - Cost Per Lead)', 'uap');?></h3>
+					<h3 class="uap-h3"><?php /*_e('SignUp Referrals (CPL - Cost Per Lead)', 'uap');*/
+                        _e('가입 추천 (CPL - 리드 당 비용)', 'uap');?></h3>
 					<div class="inside">	
 					<div class="row">
 						<div class="col-xs-5">
-							<h3><?php _e('Activate/Hold SignUp Referrals (CPL)', 'uap');?></h3>
+							<h3><?php /*_e('Activate/Hold SignUp Referrals (CPL)', 'uap');*/
+                                _e('활성화/보류 가입 추천 (CPL - 리드 당 비용)', 'uap');?></h3>
 							<p><?php _e('You can activate this option to take place in your affiliate system.', 'uap');?></p>
 							<label class="uap_label_shiwtch" style="margin:10px 0 10px -10px;">
 								<?php $checked = ($data['metas']['uap_sign_up_referrals_enable']) ? 'checked' : '';?>

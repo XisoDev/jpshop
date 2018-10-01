@@ -354,9 +354,10 @@
 			<h3 class="uap-h3"><?php _e('PayPerClick (CPC) Campaign', 'uap');?></h3>
 			<div class="inside">
 			<div class="row">
-				<div class="col-xs-4">
+				<div class="col-xs-4">.
 					<h3><?php _e('PPC Amount', 'uap');?></h3>
-					<p><?php _e('Affiliates will receive a PPC Referral with flat amount each time a new referred user visit your website.', 'uap');?></p>	
+                    <p><?php //_e('Affiliates will receive a PPC Referral with flat amount each time a new referred user visit your website.', 'uap');
+                        _e('새로운 추천 사용자가 귀하의 웹 사이트를 방문 할 때마다 제휴사는 일정 금액의 PPC 추천을 받게됩니다.', 'uap');?></p>
 						<div class="input-group">
 							<span class="input-group-addon" id="basic-addon1">Amount</span>
 								 <input type="number" class="form-control" min="0" step="0.01" value="<?php echo $data['metas']['pay_per_click'];?>" name="pay_per_click" aria-describedby="basic-addon1">
@@ -370,12 +371,13 @@
 			</div>
 		</div>
         <div class="uap-stuffbox uap-magic-stuffbox" style="display: <?php echo  (empty($data['cpm_commission_enabled'])) ? 'none' : 'block'; ?>;">
-			<h3 class="uap-h3"><?php _e('Cost Per Mile (CPM) Campaign', 'uap');?></h3>
+			<h3 class="uap-h3"><?php _e(/*'Cost Per Mile (CPM) Campaign'*/'마일당 비용(CPM) 캠페인', 'uap');?></h3>
 			<div class="inside">
 			<div class="row">
 				<div class="col-xs-4">
-					<h3><?php _e('CPM Amount', 'uap');?></h3>
-					<p><?php _e('Affiliates will receive a CPM Referral with flat amount rewarded for 1000 impressions (displaying your banners 1000 times)', 'uap');?></p>	
+					<h3><?php _e('CPM 금액', 'uap');?></h3>
+					<p><?php _e(/*'Affiliates will receive a CPM Referral with flat amount rewarded for 1000 impressions (displaying your banners 1000 times)'*/
+                            '제휴사는 1,000 회 노출에 대해 보상 된 균일 금액의 CPM 추천을 받게됩니다 (귀하의 배너를 1000 번 표시).', 'uap');?></p>
 						<div class="input-group">
 							<span class="input-group-addon" id="basic-addon1">Amount</span>
 								 <input type="number" class="form-control" min="0" step="0.01" value="<?php echo $data['metas']['cpm_commission'];?>" name="cpm_commission" aria-describedby="basic-addon1">

@@ -7,7 +7,8 @@
 			<div class="row">
 				<div class="col-xs-7">
 				<h2><?php _e('Activate/Hold Simple Links', 'uap');?></h2>
-				<p><?php _e('An affiliate’s name can now be masked by creating custom links. Users will no longer avoid links that could benefit a certain affiliate.', 'uap');?></p>
+				<p><?php _e(/*'An affiliate’s name can now be masked by creating custom links. Users will no longer avoid links that could benefit a certain affiliate.'*/
+                        '이제 맞춤 링크를 만들어 제휴사의 이름을 숨길 수 있습니다. 사용자는 더 이상 특정 제휴사에 도움이되는 링크를 피할 수 없습니다. ', 'uap');?></p>
 				<label class="uap_label_shiwtch" style="margin:10px 0 10px -10px;">
 					<?php $checked = ($data['metas']['uap_simple_links_enabled']) ? 'checked' : '';?>
 					<input type="checkbox" class="uap-switch" onClick="uap_check_and_h(this, '#uap_simple_links_enabled');" <?php echo $checked;?> />

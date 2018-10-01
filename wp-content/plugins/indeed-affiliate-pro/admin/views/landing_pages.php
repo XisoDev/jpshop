@@ -7,8 +7,9 @@
         	<div class="uap-inside-item">
 			<div class="row">
 				<div class="col-xs-7">
-				<h2><?php _e('Activate/Hold Landing Pages', 'uap');?></h2>
-				<p><?php _e('An affiliate can be linked with a specific page from your website. Users will no longer avoid links that could benefit a certain affiliate because no affiliate link will be required on this case.', 'uap');?></p>
+				<h2><?php _e(/*'Activate/Hold Landing Pages'*/'랜딩 페이지', 'uap');?></h2>
+				<p><?php _e(/*'An affiliate can be linked with a specific page from your website. Users will no longer avoid links that could benefit a certain affiliate because no affiliate link will be required on this case.'*/
+                        '웹 사이트의 특정 페이지와 제휴사를 연결할 수 있습니다. 이 경우 제휴 링크가 필요하지 않기 때문에 이용자들은 특정 제휴사에 이익이 될 수 있는 링크를 더 이상 피하지 않을 것입니다.', 'uap');?></p>
 				<label class="uap_label_shiwtch" style="margin:10px 0 10px -10px;">
 					<?php $checked = ($data['metas']['uap_landing_pages_enabled']) ? 'checked' : '';?>
 					<input type="checkbox" class="uap-switch" onClick="uap_check_and_h(this, '#uap_landing_pages_enabled');" <?php echo $checked;?> />
@@ -23,8 +24,9 @@
 			<div class="uap-inside-item">
 				<div class="row">
 					<div class="col-xs-8" style="margin-bottom: 10px;">
-						<h3><?php _e('How it Works', 'uap');?></h3>
-						<p><?php _e('Once this Module is enabled, you will find on your editing page/post section an additional MetaBox dedicated for this purpose. There you can search for a specific <strong>Affiliate user</strong> and assiging him with current page.', 'uap');?></p>
+						<h3><?php _e(/*'How it Works'*/'작동 원리', 'uap');?></h3>
+						<p><?php _e(/*'Once this Module is enabled, you will find on your editing page/post section an additional MetaBox dedicated for this purpose. There you can search for a specific <strong>Affiliate user</strong> and assiging him with current page.'*/
+                                '이 모듈을 활성화하면 편집 페이지/포스트 섹션에서 이 용도로 사용되는 추가 MetaBox를 확인할 수 있습니다. 거기서 특정 제휴 사용자를 검색하여 현재 페이지로 그를 확인할 수 있습니다.', 'uap');?></p>
 
 					</div>
 				</div>
