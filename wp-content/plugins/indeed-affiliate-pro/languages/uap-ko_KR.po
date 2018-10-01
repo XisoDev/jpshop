@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-01 15:20+0900\n"
+"PO-Revision-Date: 2018-10-01 17:17+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -43,7 +43,7 @@ msgstr "여기"
 
 #: ../admin/Uap_Main_Admin.class.php:440 ../admin/views/dashboard.php:81
 msgid "Affiliates"
-msgstr "제휴사 목록"
+msgstr "어필리에이트"
 
 #: ../admin/Uap_Main_Admin.class.php:441 ../admin/views/ranks-list.php:5
 #: ../indeed-affiliate-pro.php:185
@@ -224,7 +224,7 @@ msgstr "확인됨으로 표시"
 
 #: ../admin/Uap_Main_Admin.class.php:1084
 msgid "Payments For Affiliates"
-msgstr "제휴사에 대한 지급액"
+msgstr "어필리에이트에 대한 지급액"
 
 #: ../admin/Uap_Main_Admin.class.php:1085
 msgid "All UnPaid Referrals"
@@ -273,7 +273,7 @@ msgstr "회원 프로필 업데이트"
 
 #: ../admin/Uap_Main_Admin.class.php:1677
 msgid "Affiliate get new Rank"
-msgstr "제휴사가 새로운 순위를 얻습니다"
+msgstr "어필리에이트가 새로운 등급을 가집니다"
 
 #: ../admin/Uap_Main_Admin.class.php:1678
 msgid "Reset Password - Start Process"
@@ -291,35 +291,35 @@ msgstr "비밀번호 변경"
 
 #: ../admin/Uap_Main_Admin.class.php:1681
 msgid "Admin - Affiliate get new Rank"
-msgstr "관리자 - 제휴사가 새로운 순위를 얻습니다"
+msgstr "관리자 - 어필리에이트가 새로운 등급을 가집니다"
 
 #: ../admin/Uap_Main_Admin.class.php:1682
 msgid "Admin - Affiliate update profile"
-msgstr "관리자 - 제휴사 프로필 업데이트"
+msgstr "관리자 - 어필리에이트 프로필 업데이트"
 
 #: ../admin/Uap_Main_Admin.class.php:1683
 msgid "Affiliate - Payment Inform - Fail"
-msgstr "제휴사 - 지불 정보 - 실패"
+msgstr "어필리에이트 - 지불 정보 - 실패"
 
 #: ../admin/Uap_Main_Admin.class.php:1684
 msgid "Affiliate - Payment Inform - Pending"
-msgstr "제휴사 - 지불 정보 - 보류"
+msgstr "어플리에이트 - 지불 정보 - 보류"
 
 #: ../admin/Uap_Main_Admin.class.php:1685
 msgid "Affiliate - Payment Inform - Complete"
-msgstr "제휴사 - 결제 정보-완료"
+msgstr "어필리에이트 - 결제 정보 - 완료"
 
 #: ../admin/Uap_Main_Admin.class.php:1686
 msgid "Affiliate - Send generated password"
-msgstr "제휴사 - 생성된 비밀번호 전송"
+msgstr "어필리에이트 - 생성된 비밀번호 전송"
 
 #: ../admin/Uap_Main_Admin.class.php:1687
 msgid "Affiliate - Double E-mail Verification Request"
-msgstr "제휴사 - 중복 이메일 확인 요청"
+msgstr "어필리에이트 - 중복 이메일 확인 요청"
 
 #: ../admin/Uap_Main_Admin.class.php:1688
 msgid "Affiliate - Double E-mail Verification Validated"
-msgstr "제휴사 - 중복 이메일 확인 확인"
+msgstr "어필리에이트 - 중복 이메일 확인 확인"
 
 #: ../admin/Uap_Main_Admin.class.php:1698
 #: ../admin/views/notifications-list.php:66 ../admin/views/transactions.php:19
@@ -515,7 +515,7 @@ msgstr "방문 횟수 보기"
 msgid ""
 "Be sure that you have filled all the reguired fields: Code, Affiliate, "
 "Amount Value."
-msgstr "코드, 제휴사, 금액 등, 모든 빈칸을 채웠는지 확인하십시오."
+msgstr "코드, 어필리에이트, 금액 등, 모든 빈칸을 채웠는지 확인하십시오."
 
 #: ../admin/Uap_Main_Admin.class.php:2550
 msgid "The Unilevel Plan"
@@ -542,27 +542,27 @@ msgstr "설정"
 
 #: ../admin/Uap_Main_Admin.class.php:3137
 msgid "Affiliates - Login Page"
-msgstr "제휴사-로그인 페이지"
+msgstr "어필리에이트-로그인 페이지"
 
 #: ../admin/Uap_Main_Admin.class.php:3140
 msgid "Affiliates - Register Page"
-msgstr "제휴사-페이지 등록"
+msgstr "어필리에이트-페이지 등록"
 
 #: ../admin/Uap_Main_Admin.class.php:3143
 msgid "Affiliates - Lost Password"
-msgstr "제휴사-비밀 번호 분실"
+msgstr "어필리에이트-비밀 번호 분실"
 
 #: ../admin/Uap_Main_Admin.class.php:3146
 msgid "Affiliates - LogOut Page"
-msgstr "제휴사-로그 아웃 페이지"
+msgstr "어필리에이트-로그 아웃 페이지"
 
 #: ../admin/Uap_Main_Admin.class.php:3149
 msgid "Affiliates - User Page"
-msgstr "제휴사-사용자 페이지"
+msgstr "어필리에이트-사용자 페이지"
 
 #: ../admin/Uap_Main_Admin.class.php:3152
 msgid "Affiliates - TOS"
-msgstr "제휴사-TOS"
+msgstr "어필리에이트-TOS"
 
 #: ../admin/Uap_Main_Admin.class.php:3174
 msgid "Affiliates Pro - Default Pages"
@@ -930,7 +930,7 @@ msgstr "메뉴 아이템 다시 정렬"
 
 #: ../admin/views/achievements.php:5
 msgid "Affiliate Username: "
-msgstr "제휴사 사용자 이름: "
+msgstr "어필리에이트 유저네임: "
 
 #: ../admin/views/achievements.php:6 ../admin/views/affiliates-list.php:57
 #: ../admin/views/lifetime_commissions.php:68 ../admin/views/mlm.php:156
@@ -983,8 +983,8 @@ msgid ""
 "If this module is activated, admins have the option to receive instant "
 "notifications when an affiliate gets a new referral."
 msgstr ""
-"이 모듈이 활성화되면 관리자는 제휴사가 신규로 추천할 때 즉각적인 통지를 받을 "
-"수 있다."
+"이 모듈이 활성화되면 관리자는 어필리에이트가 신규로 추천할 때 즉각적인 통지"
+"를 받을 수 있다."
 
 #: ../admin/views/admin_referral_notifications.php:21
 #: ../admin/views/referral_notifications.php:21
@@ -1013,7 +1013,7 @@ msgstr "네이티브 필드 상수"
 
 #: ../admin/views/affiliate-payment-settings.php:3
 msgid "Affiliate Payment Settings"
-msgstr "제휴사 결제 설정"
+msgstr "어필리에이트 결제 설정"
 
 #: ../admin/views/affiliate-payment-settings.php:8
 msgid "Payment Type:"
@@ -1150,7 +1150,7 @@ msgstr "제휴 추가/수정"
 
 #: ../admin/views/affiliates-list.php:2
 msgid "Listing Affiliates"
-msgstr "제휴사 목록"
+msgstr "어필리에이트 목록"
 
 #: ../admin/views/affiliates-list.php:3
 msgid "Add new Affiliate"
@@ -1347,7 +1347,7 @@ msgstr "MLM 매트릭스"
 
 #: ../admin/views/affiliates-list.php:271
 msgid "No Affiliates Stored!"
-msgstr "저장된 제휴사가 없습니다!"
+msgstr "저장된 어필리에이트가 없습니다!"
 
 #: ../admin/views/allow_own_referrence.php:3
 msgid "Allow Own Referrence"
@@ -1362,8 +1362,8 @@ msgid ""
 "Affiliates will be able to earn a commission on their own purchases via "
 "their own referral links."
 msgstr ""
-"제휴사들은 그들 자신의 추천 링크를 통한 구매에 대한 수수료를 받을 수 있을 것"
-"이다."
+"어필리에이트들은 그들 자신의 추천 링크를 통한 구매에 대한 수수료를 받을 수 있"
+"을 것이다."
 
 #: ../admin/views/banners-add_edit.php:4
 msgid "Manage Banners"
@@ -1387,7 +1387,8 @@ msgstr "배너 옵션:"
 #: ../admin/views/banners-add_edit.php:29
 msgid ""
 "Predefined URL And Image for your Custom Banner available for Affiliates"
-msgstr "제휴사에서 사용할 수 있는 사용자 지정 배너용 미리 정의된 URL 및 이미지"
+msgstr ""
+"어필리에이트가 사용할 수 있는 사용자 지정 배너용 미리 정의된 URL 및 이미지"
 
 #: ../admin/views/banners-add_edit.php:31
 msgid "URL:"
@@ -1443,7 +1444,8 @@ msgstr "등급 별 보너스 활성화/보류"
 msgid ""
 "Affiliates will receive a bonus flat amount each time they will reach a "
 "specific rank."
-msgstr "제휴사들은 특정 등급에 도달할 때마다 일정 액수의 보너스를 받게 된다."
+msgstr ""
+"어필리에이트들은 특정 등급에 도달할 때마다 일정 액수의 보너스를 받게 된다."
 
 #: ../admin/views/bonus_on_rank.php:23 ../admin/views/sign_up_referrals.php:49
 msgid "Amount For Each Rank"
@@ -1537,15 +1539,15 @@ msgstr "클라이언트가 목록에서 제휴 선택"
 
 #: ../admin/views/checkout_select_referral.php:38
 msgid "Client write the Username of Affiliate"
-msgstr "클라이언트는 제휴사의 사용자 이름을 작성"
+msgstr "클라이언트는 어필리에이트의 사용자 이름을 작성"
 
 #: ../admin/views/checkout_select_referral.php:47
 msgid "Affiliate Name Display"
-msgstr "제휴사 이름 표시"
+msgstr "어필리에이트 이름 표시"
 
 #: ../admin/views/checkout_select_referral.php:48
 msgid "How affiliates will be displayed."
-msgstr "제휴사의 표시 방법."
+msgstr "어플리에이트의 표시 방법."
 
 #: ../admin/views/checkout_select_referral.php:50
 msgid "Display Name"
@@ -1564,8 +1566,8 @@ msgid ""
 "Choose specific affiliates to show up in checkout selection if you do not "
 "want to display all of them."
 msgstr ""
-"모든 항목을 표시 하지 않으려면 특정 제휴사를 선택 하여 체크 아웃 선택에 표시 "
-"합니다."
+"모든 항목을 표시 하지 않으려면 특정 어필리에이트를 선택 하여 체크 아웃 선택"
+"에 표시 합니다."
 
 #: ../admin/views/checkout_select_referral.php:74
 #: ../admin/views/offers-add_edit.php:118
@@ -1585,20 +1587,20 @@ msgid ""
 "If there is an affiliate already assigned for the current visitor/customer "
 "this one can be ignored. If not, the checkout option will not show up."
 msgstr ""
-"현재 방문자/고객에게 이미 할당된 제휴사가 있는 경우, 이 회사는 무시될 수 있습"
-"니다. 그렇지 않으면 체크아웃 옵션이 표시되지 않습니다."
+"현재 방문자/고객에게 이미 할당된 어필리에이트가 있는 경우, 이 어필리에이트는 "
+"무시될 수 있습니다. 그렇지 않으면 체크아웃 옵션이 표시되지 않습니다."
 
 #: ../admin/views/checkout_select_referral.php:103
 msgid "Require select Affiliate"
-msgstr "제휴사를 선택해야 합니다"
+msgstr "어필리에이트를 선택해야 합니다"
 
 #: ../admin/views/checkout_select_referral.php:104
 msgid ""
 "Force the customer to select an affiliate to continue the checkout process. "
 "The additional field will be set as required."
 msgstr ""
-"고객이 계산 절차를 계속하려면 제휴사를 선택하도록 합니다. 추가 필드는 필요에 "
-"따라 설정됩니다."
+"고객이 계산 절차를 계속하려면 어필리에이트를 선택하도록 합니다. 추가 필드는 "
+"필요에 따라 설정됩니다."
 
 #: ../admin/views/coupons-add_edit.php:5
 msgid "Add/Edit Coupons"
@@ -1626,7 +1628,7 @@ msgstr "쿠폰 코드"
 #: ../admin/views/simple_links.php:99 ../classes/Uap_Db.class.php:1933
 #: ../classes/Uap_Db.class.php:1942 ../utilities.php:1024
 msgid "Affiliate"
-msgstr "제휴사"
+msgstr "어필리에이트"
 
 #: ../admin/views/coupons-add_edit.php:41
 msgid "Activate/Hold Coupon"
@@ -1657,11 +1659,11 @@ msgstr "값"
 
 #: ../admin/views/coupons-list.php:3
 msgid "Affiliates Coupons"
-msgstr "제휴사 쿠폰"
+msgstr "어필리에이ㅌ 쿠폰"
 
 #: ../admin/views/coupons-list.php:7
 msgid "Activate/Hold Coupons option for your Affiliates"
-msgstr "귀하의 제휴사에 대한 활성화/보류 쿠폰 옵션"
+msgstr "귀하의 어필리에이트에 대한 활성화/보류 쿠폰 옵션"
 
 #: ../admin/views/coupons-list.php:8 ../admin/views/lifetime_commissions.php:8
 #: ../admin/views/reccuring_referrals.php:8
@@ -1727,8 +1729,8 @@ msgid ""
 "Provides personal slugs besides the default username or ID so affiliates can "
 "hide their identity or company name behind a custom slug."
 msgstr ""
-"기본 사용자 이름 또는 ID 외에 개인 슬러그를 제공하여 제휴사가 사용자 정의 슬"
-"러그 뒤에 자신의 ID 또는 회사 이름을 숨길 수 있도록 합니다."
+"기본 사용자 이름 또는 ID 외에 개인 슬러그를 제공하여 어필리에이트가 사용자 정"
+"의 슬러그 뒤에 자신의 ID 또는 회사 이름을 숨길 수 있도록 합니다."
 
 #: ../admin/views/custom_affiliate_slug.php:23
 msgid ""
@@ -1736,9 +1738,9 @@ msgid ""
 "personal custom slug. Hint: The custom slug is unique and future users may "
 "not register it as their username or custom slug."
 msgstr ""
-"제휴사가 개인 맞춤 스레인을 설정하기를 원할 경우 조건부 요건을 설정한다. 힌"
-"트: 사용자 지정 버팀목은 고유하며, 이후 사용자는 사용자 이름 또는 사용자 정"
-"의 버팀대로 등록할 수 없습니다."
+"어필리에이트가 개인 맞춤 스레인을 설정하기를 원할 경우 조건부 요건을 설정한"
+"다. 힌트: 사용자 지정 버팀목은 고유하며, 이후 사용자는 사용자 이름 또는 사용"
+"자 정의 버팀대로 등록할 수 없습니다."
 
 #: ../admin/views/custom_affiliate_slug.php:29
 msgid "Minimum number of characters"
@@ -1796,7 +1798,7 @@ msgstr "전체 대시 보드"
 #: ../admin/views/dashboard.php:14 ../admin/views/payments.php:11
 #: ../admin/views/reports.php:50
 msgid "Total Affiliates"
-msgstr "총 제휴사"
+msgstr "총 어필리에이트"
 
 #: ../admin/views/dashboard.php:24 ../admin/views/payments.php:21
 #: ../admin/views/reports.php:60
@@ -1848,7 +1850,7 @@ msgstr "추천 유저 이름:"
 
 #: ../admin/views/edit_affiliate_referral_relation.php:10
 msgid "Affiliate Username:"
-msgstr "제휴사 유저 이름:"
+msgstr "어필리에이트 유저네임:"
 
 #: ../admin/views/edit_wp_user.php:3
 msgid "Become Affiliate"
@@ -1860,11 +1862,11 @@ msgstr "이미 제휴로 등록 되었습니다."
 
 #: ../admin/views/edit_wp_user.php:8
 msgid "Remove from Affiliates list"
-msgstr "제휴사 목록에서 제거"
+msgstr "어필리에이트 목록에서 제거"
 
 #: ../admin/views/edit_wp_user.php:11
 msgid "Make This User Affiliate"
-msgstr "이 사용자를 제휴사로 설정"
+msgstr "이 사용자를 어필리에이트로 설정"
 
 #: ../admin/views/email_verification.php:3 ../classes/Uap_Db.class.php:7377
 msgid "E-mail Verification"
@@ -1880,9 +1882,9 @@ msgid ""
 "will be able to login. If the email address is not confirmed, the user "
 "account may be automatically deleted after a certain time."
 msgstr ""
-"로그인 하기 전에 새로운 제휴사의 이메일 주소를 확인 해야 합니다. 이메일 주소"
-"가 확인 되지 않은 경우 일정 시간 후에 사용자 계정이 자동으로 삭제 될 수 있습"
-"니다."
+"로그인 하기 전에 새로운 어필리에이트의 이메일 주소를 확인 해야 합니다. 이메"
+"일 주소가 확인 되지 않은 경우 일정 시간 후에 사용자 계정이 자동으로 삭제 될 "
+"수 있습니다."
 
 #: ../admin/views/email_verification.php:17
 msgid ""
@@ -1926,8 +1928,8 @@ msgid ""
 "They have a better looking structure and are easier to read. Ex: www."
 "yourwebsite.com/ref/smith"
 msgstr ""
-"제휴사들은 기본 링크 대신에 우호 링크를 사용할 수 있을 것입니다. 그들에는 구"
-"조를 더 읽기 쉽다. 예: www.yourwebsite.com/ref/smith"
+"어필리에이트들은 기본 링크 대신에 우호 링크를 사용할 수 있을 것입니다. 그들에"
+"는 구조를 더 읽기 쉽다. 예: www.yourwebsite.com/ref/smith"
 
 #: ../admin/views/friendly_links.php:18
 msgid ""
@@ -1935,9 +1937,9 @@ msgid ""
 "username. Affiliates will not be able to build custom links into a friendly "
 "structure with variables inside. Ex: ?order=true"
 msgstr ""
-"이 기능은 조회 형식이 유저 네임을 기반으로 하는 경우에만 권장됩니다. 제휴사들"
-"은 내부에 변수가 있는 우호적인 구조로 맞춤형 링크를 구축할 수 없을 것이다. "
-"Ex: ?ord=true"
+"이 기능은 조회 형식이 유저 네임을 기반으로 하는 경우에만 권장됩니다. 어필리에"
+"이트들은 내부에 변수가 있는 우호적인 구조로 맞춤형 링크를 구축할 수 없을 것이"
+"다. Ex: ?ord=true"
 
 #: ../admin/views/friendly_links.php:19
 msgid "Refreshing the WP permalinks may be required."
@@ -1967,7 +1969,7 @@ msgstr "삭제 "
 
 #: ../admin/views/header.php:5
 msgid "Delete selected Affiliates"
-msgstr "선택한 제휴사 삭제"
+msgstr "선택한 어필리에이트 삭제"
 
 #: ../admin/views/header.php:6
 msgid ""
@@ -2110,7 +2112,8 @@ msgid ""
 "Based on the landing commission price, the referral amount will be "
 "calculated depending on each affiliate rank amount."
 msgstr ""
-"랜딩 커미션 가격에 따라 추천 금액은 각 제휴사 순위 금액에 따라 계산됩니다."
+"랜딩 커미션 가격에 따라 추천 금액은 각 어필리에이트 순위 금액에 따라 계산됩니"
+"다."
 
 #: ../admin/views/landing_commissions-add_edit.php:45
 msgid "Additional dynamic Workflow"
@@ -2169,7 +2172,7 @@ msgid ""
 "based on generated referral."
 msgstr ""
 "랜딩 커미션 단축 코드를 성공 페이지(예: 감사 레지스터 페이지)에 복사하기만 하"
-"면 제휴사는 생성된 조건에 따라 특정 커미션을 받게 됩니다."
+"면 어필리에이트는 생성된 조건에 따라 특정 커미션을 받게 됩니다."
 
 #: ../admin/views/landing_commissions-list.php:25
 msgid "Source Name:"
@@ -2212,14 +2215,14 @@ msgstr "평생 총액"
 
 #: ../admin/views/lifetime_commissions.php:62
 msgid "Search Lifetime User-Affiliates"
-msgstr "평생 사용자-제휴사 검색"
+msgstr "평생 사용자-어필리에이트 검색"
 
 #: ../admin/views/lifetime_commissions.php:66
 #: ../admin/views/lifetime_commissions.php:74 ../admin/views/mlm.php:154
 #: ../admin/views/simple_links.php:75 ../admin/views/visits.php:44
 #: ../admin/views/visits.php:57
 msgid "Affiliate Username"
-msgstr "제휴사 유저 이름"
+msgstr "어플리에이트 유저네임"
 
 #: ../admin/views/lifetime_commissions.php:67
 #: ../admin/views/lifetime_commissions.php:75
@@ -2241,7 +2244,7 @@ msgstr "로그인 메시지"
 #: ../admin/views/login-custom_messages.php:8
 #: ../admin/views/login-custom_messages.php:28
 msgid "Successfully Message:"
-msgstr "성공적인 메시지 :"
+msgstr "메시지 보내기 완료 :"
 
 #: ../admin/views/login-custom_messages.php:12
 msgid "Default message for pending users:"
@@ -2436,7 +2439,7 @@ msgstr "행렬 옵션"
 
 #: ../admin/views/mlm.php:37
 msgid "Children Limit"
-msgstr "하위 제휴사 수 제한"
+msgstr "하위 어필리에이트 수 제한"
 
 #: ../admin/views/mlm.php:41
 msgid "Matrix Depth(Levels)"
@@ -2454,10 +2457,10 @@ msgid ""
 "to Product price/Order amount when the main Referral is based on a purchased "
 "from integrated Systems (WooCommerce, Ultimate Membership Pro, EDD)"
 msgstr ""
-"기본적으로 MLM 시스템은 조회 출처에 상관없이 주요 제휴사 추천 금액을 기준으"
-"로 상위 제휴사에 보상을 제공합니다. 통합 시스템(WooCommerce, Ultimate "
-"Membership Pro, EDD)에서 구입한 주문 금액에 따라 MLM 보상을 제품 가격/주문 금"
-"액과 직접 연결할 수 있는 추가 워크플로우가 제공됩니다."
+"기본적으로 MLM 시스템은 조회 출처에 상관없이 주요 어필리에이트 추천 금액을 기"
+"준으로 상위 어필리에이트에게 보상을 제공합니다. 통합 시스템(WooCommerce, "
+"Ultimate Membership Pro, EDD)에서 구입한 주문 금액에 따라 MLM 보상을 제품 가"
+"격/주문 금액과 직접 연결할 수 있는 추가 워크플로우가 제공됩니다."
 
 #: ../admin/views/mlm.php:54
 msgid "Child Referral amount"
@@ -2657,15 +2660,15 @@ msgstr "상품"
 
 #: ../admin/views/offers-add_edit.php:104
 msgid "Specific Affiliate"
-msgstr "특정 제휴"
+msgstr "특정 어필리에이트"
 
 #: ../admin/views/offers-add_edit.php:105
 msgid ""
 "Choose certain affiliates or type \"All\" to provide this offer for all of "
 "your affiliate users."
 msgstr ""
-"특정 제휴사를 선택하거나 \"모두\"를 입력하여 모든 제휴 사용자에게 이 제안을 "
-"제공합니다."
+"특정 어필리에이트를 선택하거나 \"모두\"를 입력하여 모든 제휴 사용자에게 이 제"
+"안을 제공합니다."
 
 #: ../admin/views/offers-add_edit.php:130
 msgid "Offer Color"
@@ -2677,11 +2680,11 @@ msgstr "새 제품 추가"
 
 #: ../admin/views/offers-list.php:4
 msgid "...create your Offers for specific Products or Affiliates"
-msgstr "...특정 제품 또는 제휴사에 대한 제안 작성"
+msgstr "...특정 제품 또는 어필리에이트에 대한 제안 작성"
 
 #: ../admin/views/offers-list.php:22
 msgid "Target Affiliates:"
-msgstr "대상 제휴사:"
+msgstr "대상 어필리에이트:"
 
 #: ../admin/views/offers-list.php:40 ../admin/views/referrals-list.php:63
 #: ../admin/views/referrals-list.php:77
@@ -2950,7 +2953,7 @@ msgstr "총 트랜잭션 수"
 
 #: ../admin/views/payments.php:84 ../admin/views/payments.php:94
 msgid "Affiliate UserName"
-msgstr "제휴사 유저 이름"
+msgstr "어필리에이트 유저네임"
 
 #: ../admin/views/payments.php:85 ../admin/views/payments.php:95
 #: ../admin/views/payments_list_all_paid.php:2
@@ -3089,9 +3092,9 @@ msgid ""
 "about their affiliate account and rewards. Each affiliate may decide the "
 "frequency of these reports (daily, weekly, monthly) from his “Account Page”."
 msgstr ""
-"이 모듈이 활성화되면 제휴사들은 제휴사의 계정과 보상에 관한 정기 보고서를 받"
-"게 된다. 각 제휴사는 자신의 \"계정 페이지\"에서 이러한 보고서의 빈도(매일, 매"
-"주, 매월)를 결정할 수 있다."
+"이 모듈이 활성화되면 어필리에이트들은 자신의 계정과 보상에 관한 정기 보고서"
+"를 받게 된다. 각 어필리에이트는 자신의 \"계정 페이지\"에서 이러한 보고서의 빈"
+"도(매일, 매주, 매월)를 결정할 수 있다."
 
 #: ../admin/views/periodically_reports.php:21
 msgid "Report Subject"
@@ -3116,10 +3119,10 @@ msgid ""
 "period for each affiliate and how much time has passed since the last "
 "report. Based on this new reports are managed automatically by the system."
 msgstr ""
-"웹 사이트가 전자 메일 보고서 관리를 시작하기 가장 좋은 시간대를 결정합니다. "
-"이 스크립트는 매일 백엔드에서 실행되며 각 계열사의 보고 기간과 마지막 보고서 "
-"이후 경과된 시간을 확인합니다. 이 새 보고서에 따라 시스템에서 자동으로 관리됩"
-"니다."
+"웹 사이트가 이메일 보고서 관리를 시작하기 가장 좋은 시간대를 결정합니다. 이 "
+"스크립트는 매일 백엔드에서 실행되며 각 계열사의 보고 기간과 마지막 보고서 이"
+"후 경과된 시간을 확인합니다. 이 새 보고서에 따라 시스템에서 자동으로 관리됩니"
+"다."
 
 #: ../admin/views/periodically_reports.php:86
 msgid ""
@@ -3127,8 +3130,8 @@ msgid ""
 "your hosting provider may restrict this action. Be sure that you are able to "
 "manage email reports for all of your affiliates."
 msgstr ""
-"많은 수의 전자 메일을 보내야 할 수 있으며 호스팅 공급자가 이 작업을 제한할 "
-"수 있습니다. 모든 제휴사의 전자 메일 보고서를 관리할 수 있는지 확인하십시오."
+"많은 수의 이메일을 보내야 할 수 있으며 호스팅 공급자가 이 작업을 제한할 수 있"
+"습니다. 모든 어필리에이트의 이메일 보고서를 관리할 수 있는지 확인하십시오."
 
 #: ../admin/views/popup-shortcodes.php:10
 #: ../admin/views/register-settings.php:2 ../admin/views/shortcodes.php:8
@@ -3273,7 +3276,8 @@ msgstr "계정 페이지에서 QR 코드 활성화/보류"
 #: ../admin/views/qr_code.php:9
 msgid ""
 "Affiliates may download and share their QR codes anywhere out of the website."
-msgstr "제휴사는 웹사이트에서 QR 코드를 다운로드 하여 공유할 수 있습니다."
+msgstr ""
+"어필리에이트는 웹사이트에서 QR 코드를 다운로드 하여 공유할 수 있습니다."
 
 #: ../admin/views/qr_code.php:23
 msgid " QRCode Image Size"
@@ -3343,7 +3347,8 @@ msgid ""
 "Based on rank position an affiliate may jump to the next rank if the "
 "achievement conditions are met."
 msgstr ""
-"등급에 따라 성과 조건이 충족되면 제휴사는 다음 등급으로 올라갈 수 있다."
+"등급에 따라 성과 조건이 충족되면 어필리에이트는 다음 등급으로 승급할 수 있습"
+"니다."
 
 #: ../admin/views/ranks-add_edit.php:63
 msgid "Order"
@@ -3361,13 +3366,13 @@ msgstr "기본 등급 금액은 특정 제안 또는 기타 특수 설정으로 
 
 #: ../admin/views/ranks-add_edit.php:99
 msgid "Achievement"
-msgstr "성적"
+msgstr "성과"
 
 #: ../admin/views/ranks-add_edit.php:100
 msgid ""
 "To jump into current rank, affiliates need to accomplish the required "
 "achievements."
-msgstr "현재 지위로 진입하려면 제휴사별로 필요한 성과를 달성해야 합니다."
+msgstr "현재 지위로 진입하려면 어필리에이트별로 필요한 성과를 달성해야 합니다."
 
 #: ../admin/views/ranks-add_edit.php:173
 msgid "Rank Color"
@@ -3386,7 +3391,8 @@ msgid ""
 "Affiliates will receive a bonus of a flat amount each time they will reach a "
 "higher rank."
 msgstr ""
-"제휴사들은 높은 등급에 오를 때마다 일정한 액수의 보너스를 받게 될 것이다."
+"어필리에이트들은 높은 등급에 오를 때마다 일정한 액수의 보너스를 받게 될 것이"
+"다."
 
 #: ../admin/views/ranks-add_edit.php:226 ../admin/views/ranks-add_edit.php:230
 #: ../admin/views/sign_up_referrals.php:3 ../classes/Uap_Db.class.php:7191
@@ -3410,7 +3416,7 @@ msgstr "평생 수수료"
 #: ../admin/views/ranks-add_edit.php:252
 msgid ""
 "Allow for your affiliate to receive commission for all lifetime referrals."
-msgstr "귀하의 제휴사가 모든 평생 의뢰에 대한 수수료를 받도록 하십시오."
+msgstr "귀하의 어필리에이트가 모든 평생 의뢰에 대한 수수료를 받도록 하십시오."
 
 #: ../admin/views/ranks-add_edit.php:281 ../admin/views/ranks-add_edit.php:285
 msgid "Reccurring Referrals"
@@ -3426,7 +3432,7 @@ msgstr "각 MLM 수준에 대 한 추천 MLM"
 
 #: ../admin/views/ranks-add_edit.php:318
 msgid "Set a multi-level marketing system for your affiliates."
-msgstr "제휴사에 대한 다단계 마케팅 시스템을 설정합니다."
+msgstr "어필리에이트에 대한 다단계 마케팅 시스템을 설정합니다."
 
 #: ../admin/views/ranks-list.php:6
 msgid "Add new Rank"
@@ -3593,7 +3599,7 @@ msgstr "새 조회 추가"
 
 #: ../admin/views/referrals-list.php:15
 msgid "...add manual Referrals for specific Affiliate"
-msgstr "특정 제휴에 대한 수동 추천 추가"
+msgstr "특정 어필리에이트에 대한 수동 추천 추가"
 
 #: ../admin/views/referrals-list.php:32 ../admin/views/referrals-list.php:217
 #: ../utilities.php:1045
@@ -3931,11 +3937,11 @@ msgstr "결과 확인"
 
 #: ../admin/views/reports.php:80
 msgid "Successful Conversions"
-msgstr "성공적인 전환"
+msgstr "전환 완료"
 
 #: ../admin/views/reports.php:90
 msgid "Succesfully Rate"
-msgstr "성공적으로 속도"
+msgstr "주문 성사율"
 
 #: ../admin/views/reports.php:151
 msgid "All Visits"
@@ -3983,13 +3989,13 @@ msgid ""
 "linked to the first affiliate (Smith), or the last one (Bob), therefore "
 "deciding which affiliate will receive referral."
 msgstr ""
-"신규 고객을 첫 번째 또는 마지막으로 연결된 제휴사에 재할당할지 여부를 결정한"
-"다. 동일한 고객이 첫 번째 고객이 아닌 다른 계열사로 참조되는 경우, 참조의 변"
-"경 여부를 결정할 수 있습니다.\n"
+"신규 고객을 첫 번째 또는 마지막으로 연결된 어필리에이트에 재할당할지 여부를 "
+"결정한다. 동일한 고객이 첫 번째 고객이 아닌 다른 계열사로 참조되는 경우, 참조"
+"의 변경 여부를 결정할 수 있습니다.\n"
 "예: John은 Smith와 연결된 고객입니다. 존은 웹사이트에 들어가지만 아무것도 사"
 "지 않는다. 나중에 John은 Bob의 링크(관계자)를 통해 웹사이트에 들어가서 구매"
-"를 합니다. John이 첫 번째 제휴사사(Smith)에 연결될지 아니면 마지막 제휴사"
-"(Bob)에 연결할지 결정할 수 있습니다."
+"를 합니다. John이 첫 번째 어필리에이트(Smith)를 선택할지 아니면 마지막 어필리"
+"에이트(Bob)를 선택할지 결정할 수 있습니다."
 
 #: ../admin/views/settings-admin_workflow.php:4
 msgid "Admin Workflow Settings"
@@ -4001,7 +4007,7 @@ msgstr "업데이트"
 
 #: ../admin/views/settings-admin_workflow.php:12
 msgid "Update Affiliates Rank:"
-msgstr "제휴사 등급 업데이트:"
+msgstr "어필리에이트 등급 업데이트:"
 
 #: ../admin/views/settings-admin_workflow.php:15
 #: ../admin/views/settings-admin_workflow.php:32
@@ -4036,7 +4042,7 @@ msgstr "대시보드 알림 표시"
 
 #: ../admin/views/settings-admin_workflow.php:70
 msgid "New Affiliates & Referrals"
-msgstr "신규 제휴사 소개"
+msgstr "신규 어필리에이트 & 방문자"
 
 #: ../admin/views/settings-captcha.php:7
 msgid "Public Key:"
@@ -4196,7 +4202,7 @@ msgstr "자동 제휴"
 
 #: ../admin/views/settings-general.php:168
 msgid "All new Users become Affiliates"
-msgstr "모든 신규 사용자가 제휴사 가입"
+msgstr "모든 신규 사용자가 어필리에이트화"
 
 #: ../admin/views/settings-general.php:183
 msgid "Empty Referrals"
@@ -4228,7 +4234,7 @@ msgstr "은행 송금 사용 중지"
 
 #: ../admin/views/settings-public_workflow.php:41
 msgid "Affiliates will not be able to use Bank Transfer anymore."
-msgstr "제휴사는 더 이상 은행 송금을 사용할 수 없습니다."
+msgstr "어필리에이트는 더 이상 은행 송금을 사용할 수 없습니다."
 
 #: ../admin/views/settings-public_workflow.php:53
 msgid "Sources custom names"
@@ -4267,15 +4273,15 @@ msgstr "계정 페이지 - 저장되지 않은 계열사"
 
 #: ../admin/views/settings-redirects.php:93
 msgid "Login Page - Affiliates Logged"
-msgstr "로그인 페이지-제휴사 로그"
+msgstr "로그인 페이지-어필리에이트 로그"
 
 #: ../admin/views/settings-redirects.php:111
 msgid "Register Page - Affiliates Logged"
-msgstr "등록 페이지-제휴사 기록"
+msgstr "등록 페이지-어필리에이트 기록"
 
 #: ../admin/views/settings-redirects.php:129
 msgid "LogOut Page - Non Logged Affiliates"
-msgstr "로그 아웃 페이지-비 기록 제휴사"
+msgstr "로그 아웃 페이지-비 기록 어필리에이트"
 
 #: ../admin/views/settings-redirects.php:147
 msgid "Lost Password Page - Non Logged Affiliates"
@@ -4364,7 +4370,7 @@ msgstr "템플릿, showup 필드, showup 탭, 미리 정의 된 개요"
 
 #: ../admin/views/showcases.php:15 ../indeed-affiliate-pro.php:192
 msgid "Top Affiliates"
-msgstr "톱 제휴사"
+msgstr "TOP 어필리에이트"
 
 #: ../admin/views/showcases.php:15
 msgid "Public Affiliates List ordered by Earnings, Referrals or Visits"
@@ -4403,8 +4409,9 @@ msgid ""
 "An affiliate\\’s name can now be masked by creating custom links. Users will "
 "no longer avoid links that could benefit a certain affiliate."
 msgstr ""
-"제휴사의 이름을 사용자 정의 링크를 만들어 가면 마스킹 할 수 있습니다. 사용자"
-"들은 더 이상 특정 제휴사에 이익이 될 수 있는 링크들을 피하지 않을 것이다."
+"이제 사용자 지정 링크를 만들어 어플리에이트\\의 이름을 마스킹할 수 있습니다. "
+"사용자들은 더 이상 특정 어플리에이트에 이익이 될 수 있는 링크들을 피하지 않"
+"을 것이다."
 
 #: ../admin/views/simple_links.php:24
 msgid "Referrer Links Limit"
@@ -4414,11 +4421,11 @@ msgstr "리퍼러 링크 제한"
 msgid ""
 "The number of links that can be submitted by an affiliate in his “Account "
 "Page”."
-msgstr "그의 \"계정 페이지\"에서 제휴사가 제출할 수 있는 링크 수."
+msgstr "그의 \"계정 페이지\"에서 어필리에이트가 제출할 수 있는 링크 수."
 
 #: ../admin/views/simple_links.php:27
 msgid "Links Limit per Affiliate"
-msgstr "제휴사 당 링크 제한"
+msgstr "어필리에이트 당 링크 제한"
 
 #: ../admin/views/simple_links.php:42
 msgid "Add New Referrer Link"
@@ -4438,7 +4445,7 @@ msgstr "참조 링크"
 
 #: ../admin/views/simple_links.php:70
 msgid "Search Links for Affiliate"
-msgstr "제휴에 대 한 검색 링크"
+msgstr "어플리에이트에 대한 검색 링크"
 
 #: ../admin/views/simple_links.php:120
 msgid "Approve"
@@ -4861,7 +4868,7 @@ msgstr "다운로드가 20 초 후에 자동으로 시작되지 않으면 이것
 
 #: ../admin/views/transactions.php:49
 msgid "The Payment cannot be proceed for affiliate "
-msgstr "제휴사에 대한 지급을 진행할 수 없습니다 "
+msgstr "어필리에이트에 대한 지급을 진행할 수 없습니다 "
 
 #: ../admin/views/transactions.php:49
 msgid " because of the payment settings."
@@ -4958,8 +4965,8 @@ msgid ""
 "Affiliates will have the option to spend their earnings directly in the "
 "website by using generated coupons with a specific flat discount."
 msgstr ""
-"제휴사들은 특정한 균일 할인과 함께 생성된 쿠폰을 사용하여 수익을 웹사이트에"
-"서 직접 지출할 수 있다."
+"어필리에이트들은 특정한 균일 할인과 함께 생성된 쿠폰을 사용하여 수익을 웹사이"
+"트에서 직접 지출할 수 있다."
 
 #: ../admin/views/wallet.php:19
 msgid ""
@@ -4968,9 +4975,9 @@ msgid ""
 "but not yet paid can be available for converting into coupons in an "
 "affiliate’s “Wallet”."
 msgstr ""
-"제휴사가 자신의 계좌에서 수익을 지갑으로 옮길 수 있도록 최소한의 금액을 설정"
-"하세요. 검증되었지만 아직 지불되지 않은 의뢰서만 제휴사의 \"월렛\"에서 쿠폰으"
-"로 전환할 수 있다."
+"어필리에이트가 자신의 계좌에서 수익을 지갑으로 옮길 수 있도록 최소한의 금액"
+"을 설정하세요. 확인이 되었지만 아직 지불되지 않은 이익만 어필리에이트의 \"월"
+"렛\"에서 쿠폰으로 전환할 수 있다."
 
 #: ../admin/views/wallet.php:25
 msgid "Minimum Amount"
@@ -5283,7 +5290,7 @@ msgstr "간단한 링크"
 
 #: ../classes/Uap_Db.class.php:1937 ../classes/Uap_Db.class.php:1946
 msgid "How about you become our affiliate?"
-msgstr "우리 제휴사가 되는 게 어때요?"
+msgstr "우리 어필리에이트가 되는 게 어때요?"
 
 #: ../classes/Uap_Db.class.php:2392 ../public/Referral_Main.class.php:309
 msgid "Bonus for reaching rank: "
@@ -5291,7 +5298,7 @@ msgstr "등급 도달 보너스: "
 
 #: ../classes/Uap_Db.class.php:5116
 msgid "Deleted Affiliate"
-msgstr "삭제된 제휴사"
+msgstr "삭제된 어필리에이트"
 
 #: ../classes/Uap_Db.class.php:6010
 msgid "Stripe Managed Accounts"
@@ -5306,7 +5313,7 @@ msgstr "멤버십 시스템에 사용 가능, 참조된 사용자 가입 시 커
 #: ../classes/Uap_Db.class.php:7202
 msgid ""
 "Allow for your affiliate to receive commission for all lifetime referrals"
-msgstr "귀하의 제휴사가 모든 평생 의뢰에 대한 수수료를 받도록 하십시오"
+msgstr "귀하의 어필리에이트가 모든 평생 의뢰에 대한 수수료를 받도록 하십시오"
 
 #: ../classes/Uap_Db.class.php:7210
 msgid "Award commissions for recurring subscriptions into membership systems"
@@ -5320,11 +5327,11 @@ msgstr "제휴 링크를 위한 소셜 공유 버튼 제공 - \"Social Share & L
 
 #: ../classes/Uap_Db.class.php:7227
 msgid "Pay your affiliates via PayPal"
-msgstr "페이팔을 통해 당신의 제휴사에 지불하세요"
+msgstr "페이팔을 통해 당신의 어필리에이트에게 지불하세요"
 
 #: ../classes/Uap_Db.class.php:7236
 msgid "Pay your affiliates via Stripe"
-msgstr "스프라이트를 통해 제휴사 지불"
+msgstr "어필리에이트에게 지불 - 스프라이트"
 
 #: ../classes/Uap_Db.class.php:7244
 msgid "Managed accounts Stripe service"
@@ -5336,11 +5343,11 @@ msgstr "자체 추천 허용"
 
 #: ../classes/Uap_Db.class.php:7252
 msgid "Allow for your affiliate to earn commissions from their own referrals"
-msgstr "귀하의 제휴사에 대 한 자신의 추천에서 수수료를 적립 허용"
+msgstr "귀하의 어필리에이트에 대 한 자신의 추천에서 수수료를 적립 허용"
 
 #: ../classes/Uap_Db.class.php:7260
 msgid "Set a multi-level marketing system for your affiliates"
-msgstr "귀하의 제휴사에 대한 다단계 마케팅 시스템을 설정"
+msgstr "귀하의 어필리에이트에 대한 다단계 마케팅 시스템을 설정"
 
 #: ../classes/Uap_Db.class.php:7265
 msgid "ReAssign Referral"
@@ -5351,11 +5358,12 @@ msgid ""
 "Decides if a new customer is re-assigned to the first or last linked "
 "affiliate"
 msgstr ""
-"새 고객을 첫 번째 또는 마지막으로 연결된 제휴사에 재할당할지 결정 합니다"
+"새 고객을 첫 번째 또는 마지막으로 연결된 어필리에이트에 재할당할지 결정 합니"
+"다"
 
 #: ../classes/Uap_Db.class.php:7276
 msgid "Set bonuses when one of your affiliates reach a specific rank"
-msgstr "귀하의 제휴사 중 하나가 특정 순위에 도달 하면 보너스를 설정"
+msgstr "귀하의 어필리에이트 중 하나가 특정 순위에 도달 하면 보너스를 설정"
 
 #: ../classes/Uap_Db.class.php:7281
 msgid "Opt-In"
@@ -5375,7 +5383,7 @@ msgstr ""
 
 #: ../classes/Uap_Db.class.php:7297
 msgid "Friendly Affiliate Links"
-msgstr "우호 제휴사 링크"
+msgstr "우호 어필리에이트 링크"
 
 #: ../classes/Uap_Db.class.php:7300
 msgid "Affiliate URLs receive improved looks and a better structure"
@@ -5390,12 +5398,14 @@ msgid ""
 "Affiliates will have the option to spend their earnings directly in the "
 "website"
 msgstr ""
-"제휴사들은 그들의 수입을 웹사이트에서 직접 쓸 수 있는 선택권을 갖게 될 것이다"
+"어필리에이트들은 그들의 수입을 웹사이트에서 직접 쓸 수 있는 선택권을 갖게 될 "
+"것이다"
 
 #: ../classes/Uap_Db.class.php:7324
 msgid ""
 "Customers decide which affiliate will be rewarded during the checkout process"
-msgstr "고객이 체크아웃 과정에서 어떤 제휴사에 보상을 할 것인지 결정합니다"
+msgstr ""
+"고객이 체크아웃 과정에서 어떤 어필리에이트에 보상을 할 것인지 결정합니다"
 
 #: ../classes/Uap_Db.class.php:7329
 msgid "WooCommerce Account Page Integration"
@@ -5407,7 +5417,7 @@ msgstr "버디프레스 계정페이지 통합"
 
 #: ../classes/Uap_Db.class.php:7348
 msgid "Notify the affiliates via email when they get any new referrals"
-msgstr "신규 의뢰가 있을 경우 전자 메일로 제휴사에 통보"
+msgstr "신규 의뢰가 있을 경우 이메일로 어필리에이트에게 통보"
 
 #: ../classes/Uap_Db.class.php:7353
 msgid "Admin Referral Notifications"
@@ -5415,7 +5425,7 @@ msgstr "관리자 조회 알림"
 
 #: ../classes/Uap_Db.class.php:7364
 msgid "Affiliates will receive periodical email reports about their stats"
-msgstr "제휴사는 자신의 통계에 대한 정기적 이메일 보고서를 받게 됩니다"
+msgstr "어필리에이트는 자신의 통계에 대한 정기적 이메일 보고서를 받게 됩니다"
 
 #: ../classes/Uap_Db.class.php:7372
 msgid "The Affiliate Links can be provided as QR Codes"
@@ -5425,7 +5435,7 @@ msgstr "제휴 링크는 QR 코드로 제공될 수 있습니다"
 msgid ""
 "Requires the email address of new affiliates to be verified before they can "
 "log in"
-msgstr "로그인하기 전에 새 제휴사의 이메일 주소를 확인해야 합니다"
+msgstr "로그인하기 전에 새 어필리에이트의 이메일 주소를 확인해야 합니다"
 
 #: ../classes/Uap_Db.class.php:7385
 msgid "Custom Currencies"
@@ -5529,7 +5539,7 @@ msgstr " 추천"
 
 #: ../classes/Uap_Listing_Affiliates.class.php:706
 msgid " Visits"
-msgstr " 방문"
+msgstr " 방문자"
 
 #: ../classes/Uap_Payments_Export.class.php:101
 msgid "Currency"
@@ -5680,11 +5690,11 @@ msgstr "저장됨"
 
 #: ../public/views/account_page-generate_links.php:12
 msgid "Your Affiliate ID is:"
-msgstr "제휴사 ID는 다음과 같습니다:"
+msgstr "당신의 어필리에이트 ID는 다음과 같습니다:"
 
 #: ../public/views/account_page-generate_links.php:14
 msgid "Your Affiliate Name is:"
-msgstr "귀하의 제휴사 이름입니다:"
+msgstr "귀하의 어필리에이트 이름입니다:"
 
 #: ../public/views/account_page-generate_links.php:18
 msgid "Your referral URL is:"
