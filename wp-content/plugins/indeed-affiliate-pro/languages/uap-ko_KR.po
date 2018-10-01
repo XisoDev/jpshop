@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-09-28 16:32+0900\n"
+"PO-Revision-Date: 2018-10-01 15:20+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -166,7 +166,7 @@ msgstr "추천 보기"
 #: ../public/views/account_page-referrals.php:68
 #: ../public/views/account_page-referrals_history.php:55
 msgid "Refuse"
-msgstr "거부"
+msgstr "취소"
 
 #: ../admin/Uap_Main_Admin.class.php:969 ../admin/views/bonus_on_rank.php:43
 #: ../admin/views/landing_commissions-add_edit.php:56
@@ -212,7 +212,7 @@ msgstr "삭제"
 
 #: ../admin/Uap_Main_Admin.class.php:978
 msgid "Mark as Refuse"
-msgstr "거부로 표시"
+msgstr "취소로 표시"
 
 #: ../admin/Uap_Main_Admin.class.php:979
 msgid "Mark as Unverified"
@@ -3618,7 +3618,7 @@ msgstr "알 수 없음"
 
 #: ../admin/views/referrals-list.php:187
 msgid "Mark as "
-msgstr "다음으로 표시 "
+msgstr "다음으로 변경 "
 
 #: ../admin/views/referrals-list.php:222
 msgid "No Referrals Stored!"
@@ -3952,7 +3952,7 @@ msgstr "모든 추천"
 #: ../admin/views/reports.php:263
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:47
 msgid "Refuse Referrals"
-msgstr "추천 거부"
+msgstr "추천 취소"
 
 #: ../admin/views/reports.php:267
 #: ../classes/Uap_Affiliate_Notification_Reports.class.php:46
