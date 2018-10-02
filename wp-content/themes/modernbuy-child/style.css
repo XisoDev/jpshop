@@ -78,3 +78,11 @@ ul{
     margin-left:0;
     -webkit-appearance: none;
 }
+
+/*어필리에이트 링크 글자 튀어나가는것 방지*/
+.uap-ap-wrap .uap-ap-generate-links-result{
+    word-break:break-all;
+}
+.uap-banners-wrapp .uap-banner .uap-banner-content{
+    word-break:break-all;
+}
