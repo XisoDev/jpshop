@@ -89,15 +89,28 @@ ul{
 .uap-ap-theme-2 .uap-user-page-content{
     word-break:break-all;
 }
-.uap-account-table th td .url{
+/*계정 -> 트래픽 내역 사이즈 조정*/
+.uap-account-table th.url{
     width: 60%;
 }
-.uap-account-table th td .browser{
+.uap-account-table th.browser{
     width: 9%;
 }
-.uap-account-table th td .device{
+.uap-account-table th.device{
     width: 9%;
 }
-.uap-account-table th td .date{
+.uap-account-table th.date{
+    width: 10%;
+}
+.uap-account-table td.url{
+    width: 60%;
+}
+.uap-account-table td.browser{
+    width: 9%;
+}
+.uap-account-table td.device{
+    width: 9%;
+}
+.uap-account-table td.date{
     width: 10%;
 }
