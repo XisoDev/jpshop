@@ -89,21 +89,15 @@ ul{
 .uap-ap-theme-2 .uap-user-page-content{
     word-break:break-all;
 }
-.uap-account-table th.url{
-    width: 60px;
+.uap-account-table th td .url{
+    width: 60%;
 }
-.uap-account-table th.browser{
-    width: 30px;
+.uap-account-table th td .browser{
+    width: 9%;
 }
-.uap-account-table th.device{
-    width: 30px;
+.uap-account-table th td .device{
+    width: 9%;
 }
-.uap-account-table td.url{
-    width: 60px;
-}
-.uap-account-table td.browser{
-    width: 30px;
-}
-.uap-account-table td.device{
-    width: 30px;
+.uap-account-table th td .date{
+    width: 10%;
 }
