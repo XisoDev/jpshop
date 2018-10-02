@@ -86,3 +86,15 @@ ul{
 .uap-banners-wrapp .uap-banner .uap-banner-content{
     word-break:break-all;
 }
+.uap-ap-theme-2 .uap-user-page-content{
+    word-break:break-all;
+}
+.uap-account-table.url{
+    width: 60px;
+}
+.uap-account-table.browser{
+    width: 30px;
+}
+.uap-account-table.url.device{
+    width: 30px;
+}
