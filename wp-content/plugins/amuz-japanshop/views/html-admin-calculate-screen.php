@@ -421,6 +421,7 @@ else {
     if($order->get_meta('환불시 배송여부') !=""){
         $total_excise=0;
         $oHsRefundInfo['tqoon_tax']=0;
+        $pg_tax = 0;
     }
 
     #송금 수수료
