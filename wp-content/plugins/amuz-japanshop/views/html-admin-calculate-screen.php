@@ -385,7 +385,7 @@ else {
     }
     else $pgm_tax= $pgm_tx;
 
-    $interpers = $item_subtotal;
+    $interpers = $order->get_subtotal();
     $inter=0;
     if ($payment == '대인결제'){
         if($interpers < 1)$inter = 0;
@@ -407,11 +407,11 @@ else {
         elseif ($interpers < 600000){
             $inter = 6000;
         }
+
+        $interper = round($inter * 1.08);
+
     }
-        if ($payment == '대인결제') {
-            $interper = round($inter * 1.08);
-        }
-        else $interper=0;
+    else $interper=0;
 
     $oHSInfo = getHsValues($hs_codes, $order->get_items());
 
