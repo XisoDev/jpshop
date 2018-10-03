@@ -176,7 +176,7 @@ echo "<thead><tr>
     <th BGCOLOR='#ff7373'>(-)<br>합계<br>금액</th> <th BGCOLOR='#99ffff'>(+)<br>소비세</th> <th BGCOLOR='#99ffff'>(+)<br>티쿤<br>수수료</th>
     <th BGCOLOR='#99ffff'>(+)<br>배송<br>비용</th> <th BGCOLOR='#99ffff'>(+)<br>상품<br>정산</th> 
     <th BGCOLOR='#99ffff'>(+)<br>결제<br>수수료</th><th BGCOLOR='#99ffff'>(+)<br>관세</th>
-    <th BGCOLOR='#ff7373'>(-)<br>소비세</th> <th BGCOLOR='#ff7373'>(-)<br>티쿤<br>수수료</th> <th BGCOLOR='#ff7373'>(-)<br>PG 결제<br>수수료</th> 
+    <th BGCOLOR='#ff7373'>(-)<br>소비세</th> <th BGCOLOR='#ff7373'>(-)<br>티쿤<br>수수료</th> <th BGCOLOR='#ff7373'>(-)<br> 결제<br>수수료</th> 
     <th BGCOLOR='#ff7373'><br>(-)환불</th> <th BGCOLOR='#ff7373'>(-)<br>송금<br>수수료</th>  
     <th BGCOLOR='#ff7373'>(-)<br>관세</th> <th BGCOLOR='#ff7373'>(-)<br>[청구서]<br>배송료</th>
 </tr></thead>";
@@ -548,7 +548,7 @@ else {
     $total['jungsan'] += $jungsan;
 
 
-    $total['pg_tax'] += $pg_tax;
+    $total['pg_tax'] += $pg_tax + $interper + $total_Convenience;
     $total['pgm_tax'] += $pgm_tax;
 
     $total['Remittance'] += $remittance;
@@ -605,7 +605,7 @@ echo "<td BGCOLOR='#ccffff'>￥".number_format($total['excise'])            ."</
 echo "<td BGCOLOR='#ccffff'>￥".number_format($total['tax'])               ."</td>";  #수수료
 echo "<td BGCOLOR='#ccffff'>￥".number_format($total['delivery'])          ."</td>";#배송비
 echo "<td BGCOLOR='#ccffff'>￥".number_format($total['amount'])            ."</td>";   #상품정산
-echo "<td BGCOLOR='#ccffff'>￥".number_format($total['pg_tax'])            ."</td>";   #PG 결제 수수료
+echo "<td BGCOLOR='#ccffff'>￥".number_format($total['pg_tax'])            ."</td>";   # 결제 수수료
 echo "<td BGCOLOR='#ccffff'>￥".number_format($total['customs'])           ."</td>";#+관세
 echo "<td BGCOLOR='#ffe0eb'>￥".number_format($total['m_excise'])          ."</td>";    #청구된 소비세
 echo "<td BGCOLOR='#ffe0eb'>￥".number_format($total['m_tax'])             ."</td>"; #청구된 수수료
