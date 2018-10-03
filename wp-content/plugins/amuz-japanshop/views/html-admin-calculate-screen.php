@@ -172,11 +172,13 @@ echo "<cols>
 echo "<thead><tr>
     <th><input id='cart_all' type='checkbox'></th>
     <th>날짜</th>
-    <th>주문번호</th> <th>결제방법</th> <th>정산금액</th> <th>(+)합계금액</th>
-    <th>(-)합계금액</th> <th>(+)소비세</th> <th>(+)수수료</th>
-    <th>(+)배송비용</th> <th>(+)상품정산</th> <th>(+)PG 결제 수수료</th><th>(+)관세</th>
-    <th>(-)소비세</th> <th>(-)수수료</th> <th>(-)PG 결제 수수료</th> <th>(-)환불</th>
-    <th>(-)송금 수수료</th>  <th>(-)관세</th> <th>(-)[청구서] 배송료</th>
+    <th>주문<br>번호</th> <th>결제<br>방법</th> <th>정산<br>금액</th> <th BGCOLOR='#99ffff'>(+)<br>합계<br>금액</th>
+    <th BGCOLOR='#ff7373'>(-)<br>합계<br>금액</th> <th BGCOLOR='#99ffff'>(+)<br>소비세</th> <th BGCOLOR='#99ffff'>(+)<br>티쿤<br>수수료</th>
+    <th BGCOLOR='#99ffff'>(+)<br>배송<br>비용</th> <th BGCOLOR='#99ffff'>(+)<br>상품<br>정산</th> 
+    <th BGCOLOR='#99ffff'>(+)<br>결제<br>수수료</th><th BGCOLOR='#99ffff'>(+)<br>관세</th>
+    <th BGCOLOR='#ff7373'>(-)<br>소비세</th> <th BGCOLOR='#ff7373'>(-)<br>티쿤<br>수수료</th> <th BGCOLOR='#ff7373'>(-)<br>PG 결제<br>수수료</th> 
+    <th BGCOLOR='#ff7373'><br>(-)환불</th> <th BGCOLOR='#ff7373'>(-)<br>송금<br>수수료</th>  
+    <th BGCOLOR='#ff7373'>(-)<br>관세</th> <th BGCOLOR='#ff7373'>(-)<br>[청구서]<br>배송료</th>
 </tr></thead>";
 // ^ 테이블 헤드
 // 테이블 주 내용
@@ -240,18 +242,22 @@ echo "<div class='V1'>";
     $custom_fee = $order->get_fees();
     $fees=0;
 if ($payment == '편의점') {
-    foreach ($custom_fee as $fee) {
-        if ($fee->get_amount() != "") {
-            $Convenience = $fee->get_amount() / 1.08;
-            $Convenience_fee = $Convenience * 0.08;
-        }
+    if ($order->get_subtotal() < 1000) $fee = 130;
+    elseif ($order->get_subtotal() < 2000) $fee = 150;
+    elseif ($order->get_subtotal() < 3000) $fee = 180;
+    elseif ($order->get_subtotal() < 10000) $fee = 210;
+    elseif ($order->get_subtotal() < 30000) $fee = 270;
+    elseif ($order->get_subtotal() < 100000) $fee = 410;
+    elseif ($order->get_subtotal() < 150000) $fee = 560;
+    elseif ($order->get_subtotal() < 300000) $fee = 770;
+    $Convenience = $fee;
+    $Convenience_fee = $Convenience * 0.08;
     }
-}else {
+else {
     $Convenience = 0;
     $Convenience_fee = 0;
 }
     $total_Convenience = $Convenience+$Convenience_fee;
-
 
     #환불 받은 가격
     #오차 수정이 발생했을 경우 meta data
@@ -297,11 +303,11 @@ if ($payment == '편의점') {
     #환불 수수료 계산
     foreach ($order->get_refunds() as $item_key => $item_values) {
         $line_amount = $refunds;
-        $total_tax += $line_amount * 0.08;                  # 총 결제금액의 수수료 계산
+        $total_tax += $line_amount * 0.08;                  # 총 결제금액의 티쿤 수수료 계산
         $total_excise += round($total_tax / 1.08); # 소비세 계산
     }
     $pay_refund = $refund;
-    if ($payment == '편의점') {
+    /*if ($payment == '편의점') {
             if($pay_refund < 1)$pg_tax = 0;
             elseif($pay_refund < 2000) $pg_tax = 125;
             elseif ($pay_refund < 3000) $pg_tax = 140;
@@ -310,13 +316,13 @@ if ($payment == '편의점') {
             elseif ($pay_refund < 100000) $pg_tax = 300;
             elseif ($pay_refund < 150000) $pg_tax = 400;
             elseif ($pay_refund < 300000) $pg_tax = 600;
-        } elseif ($payment == '신용카드'){
+        } else*/if ($payment == '신용카드'){
         if($card_type=='visa'||$card_type=='mastercard')
             $pg_tax = $pay_refund * 3.35 / 100;
         else $pg_tax = $pay_refund * 2.85 / 100;
         }
-        elseif ($payment == '은행결제') $pg_tax = /*($pay_refund * 1.50) / 100;*/0;
-        elseif ($payment == '대인결제'){
+        /*elseif ($payment == '은행결제') $pg_tax = /*($pay_refund * 1.50) / 100;*/##0;
+        /*if ($payment == '대인결제'){
             if($pay_refund < 1)$pg_tax = 0;
             elseif($pay_refund < 10000) $pg_tax = 300;
             elseif ($pay_refund < 30000) $pg_tax = 400;
@@ -324,10 +330,10 @@ if ($payment == '편의점') {
             elseif ($pay_refund < 300000) $pg_tax = 1000;
             elseif ($pay_refund < 500000) $pg_tax = 2000;
             elseif ($pay_refund < 600000) $pg_tax = 6000;
-        }
-        elseif ($payment == '기타')$pg_tax = 0;
-
+        }else
+        if($payment == '기타')$pg_tax = 0;*/
         $pg_tx = $pg_tax*1.08;
+
     if($pay_refund!=0 and $payment == '신용카드') {
         $pg_tax = $pg_tx + 5;
     }
@@ -440,7 +446,7 @@ if ($payment == '편의점') {
 
 
     #  + 합계금액
-    $total_calculate = ($itemtotal + $delivery + $total_tax + $total_excise + $interper + $pg_tax + $total_Convenience + round($oHsRefundInfo['tqoon_tax']));
+    $total_calculate = ($itemtotal + $delivery + $total_tax + $total_excise + $pg_tax +$interper + $total_Convenience + round($oHsRefundInfo['tqoon_tax']));
 
     # - 합계금액
     $total_m_calculate = $refund + $totalm_tax + $totalm_excise +  $oHSInfo['tqoon_tax'] + $pgm_tax + $remittance + $custom_delivery;
@@ -465,40 +471,45 @@ if ($payment == '편의점') {
     # 총 정산금액
     echo "<td>￥" . number_format($jungsan) . "</td>";
     # + 합계  = 상품가격  + 배송료
-    echo "<td>￥" . number_format($total_calculate) . "</td>";
+    echo "<td BGCOLOR='#ccffff'>￥" . number_format($total_calculate) . "</td>";
     # -합계 = 환불 +
-    echo "<td>￥" . number_format($total_m_calculate) . "</td>";
+    echo "<td BGCOLOR='#ffe0eb'>￥" . number_format($total_m_calculate) . "</td>";
     #소비세
-    echo "<td>￥" . number_format($total_excise) . "</td>";
+    echo "<td BGCOLOR='#ccffff'>￥" . number_format($total_excise) . "</td>";
     #수수료
-    echo "<td>￥" . number_format($total_tax) . "</td>";
+    echo "<td BGCOLOR='#ccffff'>￥" . number_format($total_tax) . "</td>";
     #배송비
-    echo "<td>￥" . number_format($delivery) . "</td>";
+    echo "<td BGCOLOR='#ccffff'>￥" . number_format($delivery) . "</td>";
     #상품정산
-    echo "<td>￥" . number_format($itemtotal) . "</td>";
+    echo "<td BGCOLOR='#ccffff'>￥" . number_format($itemtotal) . "</td>";
 
-    #PG 결제 수수료
-    echo "<td>￥" . number_format($pg_tax) . "</td>";
+    # + 결제 수수료
+    if($payment == '편의점')
+        echo "<td BGCOLOR='#ccffff'>￥" . number_format($total_Convenience) . "</td>";
+    elseif($payment == '대인결제')
+        echo "<td BGCOLOR='#ccffff'>￥" . number_format($interper) . "</td>";
+    else
+        echo "<td BGCOLOR='#ccffff'>￥" . number_format($pg_tax) . "</td>";
     //관세 받아올것
     #+관세
-    echo "<td>".$oHSInfo_refund_tax."</td>";
+    echo "<td BGCOLOR='#ccffff'>".$oHSInfo_refund_tax."</td>";
     #-소비세
-    echo "<td>￥" . number_format($totalm_excise) . "</td>";
+    echo "<td BGCOLOR='#ffe0eb'>￥" . number_format($totalm_excise) . "</td>";
     #-수수료
-    echo "<td>￥" . number_format($totalm_tax) . "</td>";
+    echo "<td BGCOLOR='#ffe0eb'>￥" . number_format($totalm_tax) . "</td>";
     #-PG 결제 수수료
-    echo "     <td>￥" . number_format($pgm_tax) . "</td>";
+    echo "<td BGCOLOR='#ffe0eb'>￥" . number_format($pgm_tax) . "</td>";
     #환불
-    echo "<td>￥" . number_format($refund) . "</td>";
+    echo "<td BGCOLOR='#ffe0eb'>￥" . number_format($refund) . "</td>";
     #송금 수수료
-    echo "<td>￥".number_format($remittance)."</td>";
+    echo "<td BGCOLOR='#ffe0eb'>￥".number_format($remittance)."</td>";
 
     #-관세
     /*echo $implode = "상품의 관세".implode("<br>"."상품의 관세",$oHSInfo["items"]);
     echo $implode = "관세".implode("%"."<br>"."관세",$oHSInfo["ttax"]);*/
-    echo "<td>￥".$oHSInfo_tax."</td>";
+    echo "<td BGCOLOR='#ffe0eb'>￥".$oHSInfo_tax."</td>";
 
-    echo "<td>￥".number_format($custom_delivery)."</td>";
+    echo "<td BGCOLOR='#ffe0eb'>￥".number_format($custom_delivery)."</td>";
 
 
     # 총 합계 배송비
@@ -587,22 +598,22 @@ echo "</tbody>";
 echo "<tfoot>";
 echo "<tr><th></th>
 <td colspan='3'>총합계</td>";
-echo "<td>￥".number_format($total['jungsan'])           ."</td>";#정산금액
-echo "<td>￥".number_format($total['plus'])              ."</td>"; #+ 총합
-echo "<td>￥".number_format($total['minus'])             ."</td>";   #-합계
-echo "<td>￥".number_format($total['excise'])            ."</td>";   #소비세
-echo "<td>￥".number_format($total['tax'])               ."</td>";  #수수료
-echo "<td>￥".number_format($total['delivery'])          ."</td>";#배송비
-echo "<td>￥".number_format($total['amount'])            ."</td>";   #상품정산
-echo "<td>￥".number_format($total['pg_tax'])            ."</td>";   #PG 결제 수수료
-echo "<td>￥".number_format($total['customs'])           ."</td>";#+관세
-echo "<td>￥".number_format($total['m_excise'])          ."</td>";    #청구된 소비세
-echo "<td>￥".number_format($total['m_tax'])             ."</td>"; #청구된 수수료
-echo "<td>￥".number_format($total['pgm_tax'])           ."</td>";
-echo "<td>￥".number_format($total['refund'])            ."</td>";  #환불
-echo "<td>￥".number_format($total['Remittance'])        ."</td>";
-echo "<td>￥".number_format($total['m_customs'])         ."</td>";
-echo "<td>￥".number_format($total['custom_delivery'])   ."</td>";
+echo "<td >￥".number_format($total['jungsan'])           ."</td>";#정산금액
+echo "<td BGCOLOR='#ccffff'>￥".number_format($total['plus'])              ."</td>"; #+ 총합
+echo "<td BGCOLOR='#ffe0eb'>￥".number_format($total['minus'])             ."</td>";   #-합계
+echo "<td BGCOLOR='#ccffff'>￥".number_format($total['excise'])            ."</td>";   #소비세
+echo "<td BGCOLOR='#ccffff'>￥".number_format($total['tax'])               ."</td>";  #수수료
+echo "<td BGCOLOR='#ccffff'>￥".number_format($total['delivery'])          ."</td>";#배송비
+echo "<td BGCOLOR='#ccffff'>￥".number_format($total['amount'])            ."</td>";   #상품정산
+echo "<td BGCOLOR='#ccffff'>￥".number_format($total['pg_tax'])            ."</td>";   #PG 결제 수수료
+echo "<td BGCOLOR='#ccffff'>￥".number_format($total['customs'])           ."</td>";#+관세
+echo "<td BGCOLOR='#ffe0eb'>￥".number_format($total['m_excise'])          ."</td>";    #청구된 소비세
+echo "<td BGCOLOR='#ffe0eb'>￥".number_format($total['m_tax'])             ."</td>"; #청구된 수수료
+echo "<td BGCOLOR='#ffe0eb'>￥".number_format($total['pgm_tax'])           ."</td>";
+echo "<td BGCOLOR='#ffe0eb'>￥".number_format($total['refund'])            ."</td>";  #환불
+echo "<td BGCOLOR='#ffe0eb'>￥".number_format($total['Remittance'])        ."</td>";
+echo "<td BGCOLOR='#ffe0eb'>￥".number_format($total['m_customs'])         ."</td>";
+echo "<td BGCOLOR='#ffe0eb'>￥".number_format($total['custom_delivery'])   ."</td>";
 echo "</tr></tfoot>";
 echo "</table>";
 
