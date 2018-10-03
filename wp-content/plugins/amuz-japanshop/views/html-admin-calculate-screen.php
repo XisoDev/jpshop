@@ -385,7 +385,7 @@ else {
     }
     else $pgm_tax= $pgm_tx;
 
-    $interpers = $order->get_subtotal();
+    $interpers = $itemtotal;
     $inter=0;
     if ($payment == '대인결제'){
         if($interpers < 1)$inter = 0;
