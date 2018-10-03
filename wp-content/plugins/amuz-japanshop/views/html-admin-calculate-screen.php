@@ -250,7 +250,7 @@ if ($payment == '편의점') {
     elseif ($order->get_subtotal() < 100000) $fee = 410;
     elseif ($order->get_subtotal() < 150000) $fee = 560;
     elseif ($order->get_subtotal() < 300000) $fee = 770;
-    $Convenience = $fee;
+    $Convenience = $fee/1.08;
     $Convenience_fee = $Convenience * 0.08;
     }
 else {
