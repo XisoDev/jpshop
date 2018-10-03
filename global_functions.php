@@ -42,7 +42,7 @@ function woocommerce_custom_fee() {
     elseif ($total+$deli < 150000) $fee = 560;
     elseif ($total+$deli < 300000) $fee = 770;
 
-    $fee_fee = $fee / 1.08;
+    $fee_fee = ($fee / 1.08);
     $chosen_gateway = $woocommerce->session->chosen_payment_method;
 
 
