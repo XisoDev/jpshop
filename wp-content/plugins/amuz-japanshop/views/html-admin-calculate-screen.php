@@ -350,6 +350,7 @@ else {
         elseif ($pay_refund < 600000) $pg_tax = 6000;
     }*/
         elseif($payment == '기타')$pg_tax = 0;
+
         $pg_tx = $pg_tax*1.08;
 
     if($pay_refund!=0 and $payment == '신용카드') {
@@ -373,7 +374,7 @@ else {
                 $pgm_tax = $zeusm * 2.85 / 100;
             elseif($order->get_meta('credit')=='JCB'||$order->get_meta('credit')=='AMEX'
                 ||$order->get_meta('credit')=='Diners')
-                $pg_tax = $pay_refund * 3.35 / 100;
+                $pgm_tax = $pay_refund * 3.35 / 100;
             else $pgm_tax = $zeusm * 2.85 / 100;
         }
         elseif ($payment == '은행결제') $pgm_tax = ($zeusm * 1.50) / 100;
