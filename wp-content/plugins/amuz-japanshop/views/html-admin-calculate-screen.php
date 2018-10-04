@@ -241,7 +241,9 @@ echo "<div class='V1'>";
     echo "<td>" . "<a href='" . get_edit_post_link($order->get_order_number()) . "' target='_blank'>" . $site_code["order_code"]
         . trim(str_replace('#', '', $order->get_order_number())) . "</a></td>";
 
-    echo "<td>{$payment}</td>";
+    if($order->get_meta('비교')=='협찬')
+        echo "<td>협찬</td>";
+        else echo "<td>{$payment}</td>";
 
 
     #배송비용
@@ -470,6 +472,9 @@ else {
 
     # 정산금액
     $jungsan = $total_calculate - $total_m_calculate;
+    if($jungsan<0)
+        $jungsan = $jungsan*-1;
+
 
     //환불시 돌려받는 관세
     $oHSInfo_refund_tax = number_format($oHsRefundInfo['tqoon_tax']);
