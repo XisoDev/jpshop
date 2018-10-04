@@ -374,7 +374,7 @@ else {
                 $pgm_tax = $zeusm * 2.85 / 100;
             elseif($order->get_meta('credit')=='JCB'||$order->get_meta('credit')=='AMEX'
                 ||$order->get_meta('credit')=='Diners')
-                $pgm_tax = $pay_refund * 3.35 / 100;
+                $pgm_tax = $zeusm * 3.35 / 100;
             else $pgm_tax = $zeusm * 2.85 / 100;
         }
         elseif ($payment == '은행결제') $pgm_tax = ($zeusm * 1.50) / 100;
