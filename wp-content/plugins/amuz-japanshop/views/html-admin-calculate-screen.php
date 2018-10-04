@@ -471,9 +471,11 @@ else {
     $total_m_calculate = $refund + $totalm_tax + $totalm_excise +  $oHSInfo['tqoon_tax'] + $pgm_tax + $remittance + $custom_delivery;
 
     # 정산금액
-    $jungsan = $total_calculate - $total_m_calculate;
-    if($jungsan<0)
-        $jungsan = $jungsan*-1;
+    if($total_calculate<=0)
+        $jungsan =  $total_m_calculate - $total_calculate;
+    else
+        $jungsan = $total_calculate - $total_m_calculate;
+
 
 
     //환불시 돌려받는 관세
