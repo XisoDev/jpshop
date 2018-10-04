@@ -334,6 +334,8 @@ else {
         } else*/if ($payment == '신용카드'){
         if($card_type=='visa'||$card_type=='mastercard')
             $pg_tax = $pay_refund * 3.35 / 100;
+        elseif($order->get_meta('credit')=='visa'||$order->get_meta('credit')=='mastercard')
+            $pg_tax = $pay_refund * 3.35 / 100;
         else $pg_tax = $pay_refund * 2.85 / 100;
         }
         /*elseif ($payment == '은행결제') $pg_tax = /*($pay_refund * 1.50) / 100;*/##0;
@@ -433,8 +435,8 @@ else {
     if($order->get_meta('환불시 배송여부') !=""){
         $total_excise=0;
         $oHsRefundInfo['tqoon_tax']=0;
-        $pg_tax = 0;
     }
+    else $pg_tax = 0;
 
     #송금 수수료
     if($order->get_meta('remittance_fee')!="")
