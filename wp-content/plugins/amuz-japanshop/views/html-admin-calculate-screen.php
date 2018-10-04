@@ -333,22 +333,22 @@ else {
             elseif ($pay_refund < 300000) $pg_tax = 600;
         } else*/if ($payment == '신용카드'){
         if($card_type=='visa'||$card_type=='mastercard')
-            $pg_tax = $pay_refund * 3.35 / 100;
+            $pg_tax = $pay_refund * 2.85 / 100;
         elseif($order->get_meta('credit')=='visa'||$order->get_meta('credit')=='mastercard')
-            $pg_tax = $pay_refund * 3.35 / 100;
-        else $pg_tax = $pay_refund * 2.85 / 100;
+            $pg_tax = $pay_refund * 2.85 / 100;
+        else $pg_tax = $pay_refund * 3.35 / 100;
         }
-        /*elseif ($payment == '은행결제') $pg_tax = /*($pay_refund * 1.50) / 100;*/##0;
-        /*if ($payment == '대인결제'){
-            if($pay_refund < 1)$pg_tax = 0;
-            elseif($pay_refund < 10000) $pg_tax = 300;
-            elseif ($pay_refund < 30000) $pg_tax = 400;
-            elseif ($pay_refund < 100000) $pg_tax = 600;
-            elseif ($pay_refund < 300000) $pg_tax = 1000;
-            elseif ($pay_refund < 500000) $pg_tax = 2000;
-            elseif ($pay_refund < 600000) $pg_tax = 6000;
-        }else
-        if($payment == '기타')$pg_tax = 0;*/
+    /*elseif ($payment == '은행결제') $pg_tax = /*($pay_refund * 1.50) / 100;*/##0;
+    /*if ($payment == '대인결제'){
+        if($pay_refund < 1)$pg_tax = 0;
+        elseif($pay_refund < 10000) $pg_tax = 300;
+        elseif ($pay_refund < 30000) $pg_tax = 400;
+        elseif ($pay_refund < 100000) $pg_tax = 600;
+        elseif ($pay_refund < 300000) $pg_tax = 1000;
+        elseif ($pay_refund < 500000) $pg_tax = 2000;
+        elseif ($pay_refund < 600000) $pg_tax = 6000;
+    }*/
+        elseif($payment == '기타')$pg_tax = 0;
         $pg_tx = $pg_tax*1.08;
 
     if($pay_refund!=0 and $payment == '신용카드') {
