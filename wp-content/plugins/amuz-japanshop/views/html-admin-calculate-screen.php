@@ -355,8 +355,7 @@ else {
     else
         $pg_tax = $pg_tx;
 
-    echo wc_get_credit_card_type_label($type);
-    print_r($labels);
+echo $order->payment_method_title;
     $zeusm = $itemtotal + $delivery;
         if ($payment == '편의점') {
             if($zeusm < 1)$pgm_tax = 0;
