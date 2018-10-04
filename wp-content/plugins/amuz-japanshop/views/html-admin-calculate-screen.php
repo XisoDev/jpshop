@@ -464,34 +464,31 @@ else {
     if($custom_delivery== "") $custom_delivery = 0;
 
 
+    if($itemtotal==0){
+        $totalm_excise = 0;
+        $totalm_tax = 0;
+        $remittance=0;
+        $pgm_tax=0;
+        $oHSInfo['tqoon_tax']=0;
+        $oHSInfo_tax = 0;
+        $total_m_calculate = 0;
+        $total_calculate = 0;
+        $jungsan=0;
+    }
+
     #  + 합계금액
     $total_calculate = ($itemtotal + $delivery + $total_tax + $total_excise + $pg_tax +$interper + $total_Convenience + round($oHsRefundInfo['tqoon_tax']));
 
     # - 합계금액
     $total_m_calculate = $refund + $totalm_tax + $totalm_excise +  $oHSInfo['tqoon_tax'] + $pgm_tax + $remittance + $custom_delivery;
 
-    echo $total_m_calculate;
-    # 정산금액
-    if($total_calculate<=0)
-        $jungsan =  $total_m_calculate - $total_calculate;
-    else
-        $jungsan = $total_calculate - $total_m_calculate;
-
+    $jungsan = $total_calculate - $total_m_calculate;
 
 
     //환불시 돌려받는 관세
     $oHSInfo_refund_tax = number_format($oHsRefundInfo['tqoon_tax']);
     //관세
     $oHSInfo_tax = number_format($oHSInfo['tqoon_tax']);
-
-    if($itemtotal==0){
-        $totalm_excise = 0;
-        $totalm_tax = 0;
-        $oHSInfo_tax = 0;
-        $total_m_calculate = 0;
-        $total_calculate = 0;
-        $jungsan=0;
-    }
 
     # 총 정산금액
     echo "<td>￥" . number_format($jungsan) . "</td>";
