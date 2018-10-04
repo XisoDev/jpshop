@@ -355,7 +355,6 @@ else {
     else
         $pg_tax = $pg_tx;
 
-echo $order->payment_method_title;
     $zeusm = $itemtotal + $delivery;
         if ($payment == '편의점') {
             if($zeusm < 1)$pgm_tax = 0;
@@ -368,8 +367,10 @@ echo $order->payment_method_title;
             elseif ($zeusm < 300000) $pgm_tax = 600;
         } elseif ($payment == '신용카드'){
             if($card_type=='visa'||$card_type=='mastercard')
-                $pgm_tax = $zeusm * 3.35 / 100;
-            else $pgm_tax = $zeusm * 2.85 / 100;
+                $pgm_tax = $zeusm * 2.85 / 100;
+            elseif($order->get_meta('credit')=='visa'||$order->get_meta('credit')=='mastercard')
+                $pgm_tax = $zeusm * 2.85 / 100;
+            else $pgm_tax = $zeusm * 3.35 / 100;
         }
         elseif ($payment == '은행결제') $pgm_tax = ($zeusm * 1.50) / 100;
         elseif ($payment == '대인결제'){
