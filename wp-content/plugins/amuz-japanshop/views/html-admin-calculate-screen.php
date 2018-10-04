@@ -470,6 +470,7 @@ else {
     # - 합계금액
     $total_m_calculate = $refund + $totalm_tax + $totalm_excise +  $oHSInfo['tqoon_tax'] + $pgm_tax + $remittance + $custom_delivery;
 
+    echo $total_m_calculate;
     # 정산금액
     if($total_calculate<=0)
         $jungsan =  $total_m_calculate - $total_calculate;
