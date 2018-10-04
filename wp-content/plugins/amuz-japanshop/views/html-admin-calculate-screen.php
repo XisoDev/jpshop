@@ -439,7 +439,6 @@ else {
         $total_excise=0;
         $oHsRefundInfo['tqoon_tax']=0;
     }
-    else $pg_tax = 0;
 
     #송금 수수료
     if($order->get_meta('remittance_fee')!="")
