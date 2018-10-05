@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-05 16:52+0900\n"
+"PO-Revision-Date: 2018-10-05 18:33+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1268,7 +1268,7 @@ msgstr "이메일 상태"
 #: ../admin/views/affiliates-list.php:107
 #: ../admin/views/affiliates-list.php:128
 msgid "Affiliate Since"
-msgstr "제휴 시작"
+msgstr "가입일"
 
 #: ../admin/views/affiliates-list.php:108
 #: ../admin/views/affiliates-list.php:129
@@ -1425,7 +1425,7 @@ msgstr "URL"
 
 #: ../admin/views/banners-list.php:17 ../admin/views/banners-list.php:26
 msgid "Create Time"
-msgstr "시간 만들기"
+msgstr "만든 시간"
 
 #: ../admin/views/banners-list.php:54
 msgid "No Banners Available!"
@@ -2280,7 +2280,7 @@ msgstr "로그인 템플릿 :"
 
 #: ../admin/views/login.php:37
 msgid "Additional Display Options"
-msgstr "추가적인 디스플에이 옵션"
+msgstr "추가적인 디스플레이 옵션"
 
 #: ../admin/views/login.php:42 ../public/views/login_form.php:46
 #: ../public/views/login_form.php:111 ../public/views/login_form.php:154
@@ -5433,7 +5433,7 @@ msgstr "로그인하기 전에 새 파트너의 이메일 주소를 확인해야
 
 #: ../classes/Uap_Db.class.php:7385
 msgid "Custom Currencies"
-msgstr "맞춤 통화"
+msgstr "통화 추가"
 
 #: ../classes/Uap_Db.class.php:7404
 msgid "Integrated for a lite register / login with social accounts"
