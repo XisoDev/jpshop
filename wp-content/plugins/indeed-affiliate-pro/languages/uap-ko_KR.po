@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-05 14:32+0900\n"
+"PO-Revision-Date: 2018-10-05 16:43+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -392,11 +392,11 @@ msgstr "회원가입 화면 디자인"
 #: ../admin/Uap_Main_Admin.class.php:1980
 #: ../admin/views/register-custom_messages.php:3
 msgid "Custom Messages"
-msgstr "사용자 정의 메시지"
+msgstr "커스텀 메시지"
 
 #: ../admin/Uap_Main_Admin.class.php:1900
 msgid "Custom Fields"
-msgstr "사용자 정의 필드"
+msgstr "커스텀 필드"
 
 #: ../admin/Uap_Main_Admin.class.php:1901 ../admin/views/opt_in.php:5
 msgid "Opt-In Settings"
@@ -1716,19 +1716,19 @@ msgstr "비활성화"
 #: ../public/views/account_page-generate_links.php:79
 #: ../public/views/account_page-header.php:110
 msgid "Custom Affiliate Slug"
-msgstr "사용자 정의 파트너 Slug"
+msgstr "커스텀 파트너 Slug"
 
 #: ../admin/views/custom_affiliate_slug.php:11
 msgid "Activate/Hold Custom Affiliate Slug"
-msgstr "활성화/보류 사용자 정의 파트너 슬러그"
+msgstr "활성화/보류 커스텀 파트너 슬러그"
 
 #: ../admin/views/custom_affiliate_slug.php:12
 msgid ""
 "Provides personal slugs besides the default username or ID so affiliates can "
 "hide their identity or company name behind a custom slug."
 msgstr ""
-"기본 사용자 이름 또는 ID 외에 개인 슬러그를 제공하여 파트너가 사용자 정의 슬"
-"러그 뒤에 자신의 ID 또는 회사 이름을 숨길 수 있도록 합니다."
+"기본 사용자 이름 또는 ID 외에 개인 슬러그를 제공하여 파트너가 커스텀 슬러그 "
+"뒤에 자신의 ID 또는 회사 이름을 숨길 수 있도록 합니다."
 
 #: ../admin/views/custom_affiliate_slug.php:23
 msgid ""
@@ -1775,8 +1775,8 @@ msgstr "슬러그 추가/편집"
 msgid ""
 "You can add or edit a custom slug for a specific affiliate from your side."
 msgstr ""
-"특정 계열사에 대한 사용자 정의 슬러그를 사용자 쪽에서 추가하거나 편집할 수 있"
-"습니다."
+"특정 계열사에 대한 커스텀 슬러그를 사용자 쪽에서 추가하거나 편집할 수 있습니"
+"다."
 
 #: ../admin/views/custom_affiliate_slug.php:86
 #: ../admin/views/custom_affiliate_slug.php:93
@@ -2305,7 +2305,7 @@ msgstr "리캡차 보여주기"
 
 #: ../admin/views/login.php:65 ../admin/views/top_affiliates_settings.php:59
 msgid "Custom CSS"
-msgstr "사용자 정의 CSS"
+msgstr "커스텀 CSS"
 
 #: ../admin/views/max_amount.php:3 ../classes/Uap_Db.class.php:7417
 msgid "Maximum Amount"
@@ -4234,7 +4234,7 @@ msgstr "파트너는 더 이상 은행 송금을 사용할 수 없습니다."
 
 #: ../admin/views/settings-public_workflow.php:53
 msgid "Sources custom names"
-msgstr "소스 사용자 정의 이름"
+msgstr "소스 커스텀 이름"
 
 #: ../admin/views/settings-redirects.php:11
 msgid "After LogOut:"
@@ -4354,7 +4354,7 @@ msgstr "프론드-엔드 화면 디자인"
 
 #: ../admin/views/showcases.php:12
 msgid "Templates, Custom Fields, Special Settings, Custom Messages"
-msgstr "템플릿, 사용자 정의 필드, 특수 설정, 사용자 정의 메시지"
+msgstr "템플릿, 커스텀 필드, 특수 설정, 커스텀 메시지"
 
 #: ../admin/views/showcases.php:13
 msgid "Templates, Display Options, Custom Messages"
