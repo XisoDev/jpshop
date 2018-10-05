@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-04 16:10+0900\n"
+"PO-Revision-Date: 2018-10-05 14:32+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1351,11 +1351,11 @@ msgstr "저장된 파트너가 없습니다!"
 
 #: ../admin/views/allow_own_referrence.php:3
 msgid "Allow Own Referrence"
-msgstr "자체 조회 허용"
+msgstr "파트너 직접 구매"
 
 #: ../admin/views/allow_own_referrence.php:7
 msgid "Activate/Hold Allow Own Referrence"
-msgstr "활성화/보유 자체 조회 허용"
+msgstr "활성화/보유 파트너 직접 구매"
 
 #: ../admin/views/allow_own_referrence.php:8
 msgid ""
@@ -1918,7 +1918,7 @@ msgstr "우호 링크"
 
 #: ../admin/views/friendly_links.php:7
 msgid "Activate/Hold Friendly Affiliate Links"
-msgstr "활성화/보류 우호 파트너 링크"
+msgstr "활성화/보류 친숙한 링크 생성"
 
 #: ../admin/views/friendly_links.php:8
 msgid ""
@@ -1926,8 +1926,10 @@ msgid ""
 "They have a better looking structure and are easier to read. Ex: www."
 "yourwebsite.com/ref/smith"
 msgstr ""
-"파트너들은 기본 링크 대신에 우호 링크를 사용할 수 있을 것입니다. 그들에는 구"
-"조를 더 읽기 쉽다. 예: www.yourwebsite.com/ref/smith"
+"파트너들은 기본 링크 대신에 더웃 친숙한 링크를 사용할 수 있을 것입니다. 일반"
+"인들이 구조를 읽기 쉽다. ex)\n"
+"기본 = www.yourwebsite.com/?ref=smith \n"
+"변경 = www.yourwebsite.com/ref/smith"
 
 #: ../admin/views/friendly_links.php:18
 msgid ""
@@ -1936,8 +1938,8 @@ msgid ""
 "structure with variables inside. Ex: ?order=true"
 msgstr ""
 "이 기능은 조회 형식이 유저 네임을 기반으로 하는 경우에만 권장됩니다. 파트너들"
-"은 내부에 변수가 있는 우호적인 구조로 맞춤형 링크를 구축할 수 없을 것이다. "
-"Ex: ?ord=true"
+"은 변수가 있는 익숙한 구조의 맞춤형 링크를 구축할 수 없을 것이다. Ex: ?"
+"ord=true"
 
 #: ../admin/views/friendly_links.php:19
 msgid "Refreshing the WP permalinks may be required."
@@ -2359,7 +2361,7 @@ msgstr "등급 할당:"
 #: ../admin/views/migrate_affiliates_pro.php:19
 #: ../admin/views/migrate_wp_affiliates.php:19
 msgid "Trigger"
-msgstr "트리그"
+msgstr "트리거"
 
 #: ../admin/views/migrate_affiliate_wp.php:35
 #: ../admin/views/migrate_affiliates_pro.php:35
@@ -3520,7 +3522,7 @@ msgstr "참조:"
 #: ../admin/views/referral_list_details.php:78
 #: ../admin/views/referrals-add_edit.php:44
 msgid "Reference Details:"
-msgstr "참조 정보:"
+msgstr "조회 정보:"
 
 #: ../admin/views/referral_list_details.php:83
 #: ../admin/views/referrals-add_edit.php:48
@@ -3966,7 +3968,7 @@ msgstr "확인 된 추천"
 
 #: ../admin/views/rewrite_referrals.php:3
 msgid "ReWrite Referrals"
-msgstr "추천 재작성"
+msgstr "추천인 선택"
 
 #: ../admin/views/rewrite_referrals.php:7
 msgid "Activate/Hold ReWrite Referrals"
@@ -3983,11 +3985,11 @@ msgid ""
 "linked to the first affiliate (Smith), or the last one (Bob), therefore "
 "deciding which affiliate will receive referral."
 msgstr ""
-"신규 고객을 첫 번째 또는 마지막으로 연결된 파트너에 재할당할지 여부를 결정한"
-"다. 동일한 고객이 첫 번째 고객이 아닌 다른 계열사로 참조되는 경우, 참조의 변"
-"경 여부를 결정할 수 있습니다.\n"
+"신규 고객에게 첫 번째 또는 마지막으로 연결된 파트너에 재할당할지 여부를 결정"
+"한다. 동일한 고객이 첫 번째 파트너가 아닌 다른 파트너링크를 이용하게 되는 경"
+"우, 파트너의 변경 여부를 결정할 수 있습니다.\n"
 "예: John은 Smith와 연결된 고객입니다. 존은 웹사이트에 들어가지만 아무것도 사"
-"지 않는다. 나중에 John은 Bob의 링크(관계자)를 통해 웹사이트에 들어가서 구매"
+"지 않았다. 나중에 John은 Bob의 링크(관계자)를 통해 웹사이트에 들어가서 구매"
 "를 합니다. John이 첫 번째 파트너(Smith)를 선택할지 아니면 마지막 파트너(Bob)"
 "를 선택할지 결정할 수 있습니다."
 
@@ -5333,7 +5335,7 @@ msgstr "스프라이트 서비스 관리 계정"
 
 #: ../classes/Uap_Db.class.php:7249
 msgid "Allow Own Reference"
-msgstr "자체 추천 허용"
+msgstr "파트너 직접 구매"
 
 #: ../classes/Uap_Db.class.php:7252
 msgid "Allow for your affiliate to earn commissions from their own referrals"
@@ -5345,7 +5347,7 @@ msgstr "귀하의 파트너에 대한 다단계 마케팅 시스템을 설정"
 
 #: ../classes/Uap_Db.class.php:7265
 msgid "ReAssign Referral"
-msgstr "참조 재할당"
+msgstr "추천인 재지정"
 
 #: ../classes/Uap_Db.class.php:7268
 msgid ""
@@ -5376,7 +5378,7 @@ msgstr ""
 
 #: ../classes/Uap_Db.class.php:7297
 msgid "Friendly Affiliate Links"
-msgstr "우호 파트너 링크"
+msgstr "친숙한 링크 생성"
 
 #: ../classes/Uap_Db.class.php:7300
 msgid "Affiliate URLs receive improved looks and a better structure"
@@ -5450,7 +5452,7 @@ msgstr "표시된 가시적 파트너 연결이 없는 직접 링크"
 
 #: ../classes/Uap_Db.class.php:7433
 msgid "Account Custom Tabs"
-msgstr "계정 커스텀 Tabs"
+msgstr "계정 커스텀 메뉴"
 
 #: ../classes/Uap_Db.class.php:7437
 msgid "Create and reorder account page menu items"
