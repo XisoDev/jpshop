@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-05 16:43+0900\n"
+"PO-Revision-Date: 2018-10-05 16:52+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1943,7 +1943,7 @@ msgstr ""
 
 #: ../admin/views/friendly_links.php:19
 msgid "Refreshing the WP permalinks may be required."
-msgstr "WP permalinks를 새로 고쳐야 할 수도 있습니다."
+msgstr "WP permalinks를 새로 고침해야 할 수도 있습니다."
 
 #: ../admin/views/global_errors.php:2
 msgid ""
@@ -5003,7 +5003,8 @@ msgstr "WP 소셜 통합 로그인"
 #: ../admin/views/wp_social_login.php:14
 msgid "Wp Social Login it's not active on Your system. You can find "
 msgstr ""
-"WWp 소셜 로그인 사용자 시스템에서 활성화되지 않았습니다. 찾을 수 있습니다 "
+"Wp 소셜 로그인 사용자 시스템에서 활성화되지 않았습니다. 여기서 찾을 수 있습니"
+"다 "
 
 #: ../admin/views/wp_social_login.php:18
 msgid "Activate/Hold"
@@ -5464,7 +5465,7 @@ msgstr "Migrate AffiliateWP"
 
 #: ../classes/Uap_Db.class.php:7445
 msgid "Migrate data from AffiliateWP plugin"
-msgstr "AffiliateWP 플러그인에서 Migrate data 으로"
+msgstr "Affiliates WP 플러그인에서 데이터 이전"
 
 #: ../classes/Uap_Db.class.php:7449
 msgid "Migrate Affiliates Pro"
@@ -5472,7 +5473,7 @@ msgstr "Migrate Affiliates Pro"
 
 #: ../classes/Uap_Db.class.php:7453
 msgid "Migrate data from Affiliates Pro plugin"
-msgstr "Affiliates Pro 플러그인 에서 Migrate data 으로"
+msgstr "Affiliates Pro 플러그인에서 데이터 이전"
 
 #: ../classes/Uap_Db.class.php:7457
 msgid "Migrate WP Affiliate"
@@ -5480,7 +5481,7 @@ msgstr "Migrate WP Affiliate"
 
 #: ../classes/Uap_Db.class.php:7461
 msgid "Migrate data from WP Affiliate plugin"
-msgstr "WP Affiliate 플러그인에서 데이터 마이그레이션"
+msgstr "WP Affiliate plugin에서 데이터 이전"
 
 #: ../classes/Uap_Db.class.php:8203 ../public/views/account_page-header.php:79
 msgid "Profile"

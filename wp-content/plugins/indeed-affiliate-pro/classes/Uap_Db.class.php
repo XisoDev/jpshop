@@ -7723,7 +7723,7 @@ if (!class_exists('Uap_Db')){
 							'link' => admin_url('admin.php?page=ultimate_affiliates_pro&tab=magic_features&subtab=rest_api'),
 							'icon' => 'fa-rest_api-uap',
 							'extra_class' => '',
-							'description' => __(/*'CRUD actions for main affiliate system data'*/'주요 제휴 시스템 데이터에 대한 CRUD 조치', 'uap'),
+							'description' => __(/*'CRUD actions for main affiliate system data'*/'주요 제휴 시스템 데이터에 대한 CRUD 작업', 'uap'),
 							'enabled' => $this->is_magic_feat_enable('rest_api'),
 					),
 			);
