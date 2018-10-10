@@ -363,23 +363,25 @@ else {
 
     $zeusm = $itemtotal + $delivery;
 
-    if($_GET['cardbrand'] == 'V'){
-        $message = "VISA";
-    }elseif($_GET['cardbrand'] == 'M'){
-        $message = "Mastercard";
-    }elseif($_GET['cardbrand'] == 'J'){
-        $message = "JCB";
-    }elseif($_GET['cardbrand'] == 'A'){
-        $message = "American Express";
-    }elseif($_GET['cardbrand'] == 'I'){
-        $message = "Discover";
-    }elseif($_GET['cardbrand'] == 'D'){
-        $message = "Diners";
-    }else{
-        $message = "Proper";
+    if($payment=='신용카드') {
+        $order->get_meta('cardbrand');
+        if ($order->get_meta('cardbrand') == 'V') {
+            $message = "VISA";
+        } elseif ($order->get_meta('cardbrand') == 'M') {
+            $message = "Mastercard";
+        } elseif ($order->get_meta('cardbrand') == 'J') {
+            $message = "JCB";
+        } elseif ($order->get_meta('cardbrand') == 'A') {
+            $message = "American Express";
+        } elseif ($order->get_meta('cardbrand') == 'I') {
+            $message = "Discover";
+        } elseif ($order->get_meta('cardbrand') == 'D') {
+            $message = "Diners";
+        } else {
+            $message = "Proper";
+        }
+        echo $message;
     }
-    echo $message;
-
     //get_post_meta( $order->get_order_number(), '_transaction_id', wc_clean( $_GET[ 'ordd' ] ) );
 
         if ($payment == '편의점') {
