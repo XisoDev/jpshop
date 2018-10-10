@@ -363,26 +363,8 @@ else {
 
     $zeusm = $itemtotal + $delivery;
 
-    if($payment=='신용카드') {
-        $order->get_meta('cardbrand');
-        if ($order->get_meta('cardbrand') == 'V') {
-            $message = "VISA";
-        } elseif ($order->get_meta('cardbrand') == 'M') {
-            $message = "Mastercard";
-        } elseif ($order->get_meta('cardbrand') == 'J') {
-            $message = "JCB";
-        } elseif ($order->get_meta('cardbrand') == 'A') {
-            $message = "American Express";
-        } elseif ($order->get_meta('cardbrand') == 'I') {
-            $message = "Discover";
-        } elseif ($order->get_meta('cardbrand') == 'D') {
-            $message = "Diners";
-        } else {
-            $message = "Proper";
-        }
-        echo $message;
-    }
-    //get_post_meta( $order->get_order_number(), '_transaction_id', wc_clean( $_GET[ 'ordd' ] ) );
+
+    print_r(get_post_meta( $order->get_order_number(), '_transaction_id', wc_clean( $_GET[ 'cardbrand' ] ) ));
 
         if ($payment == '편의점') {
             if($zeusm < 1)$pgm_tax = 0;
