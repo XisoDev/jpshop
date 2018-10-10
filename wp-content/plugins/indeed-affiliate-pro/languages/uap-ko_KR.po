@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-05 18:33+0900\n"
+"PO-Revision-Date: 2018-10-10 12:29+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1242,7 +1242,7 @@ msgstr "Rank"
 #: ../admin/views/visits.php:89 ../public/views/account_page-list_visits.php:28
 #: ../public/views/account_page-list_visits.php:37
 msgid "Converted"
-msgstr "전환"
+msgstr "구매"
 
 #: ../admin/views/affiliates-list.php:101
 #: ../admin/views/affiliates-list.php:122 ../admin/views/payments.php:87
@@ -3933,7 +3933,7 @@ msgstr "결과 확인"
 
 #: ../admin/views/reports.php:80
 msgid "Successful Conversions"
-msgstr "전환 완료"
+msgstr "구매 완료"
 
 #: ../admin/views/reports.php:90
 msgid "Succesfully Rate"
@@ -3945,7 +3945,7 @@ msgstr "모든 방문"
 
 #: ../admin/views/reports.php:155 ../public/views/account_page-reports.php:53
 msgid "Converted Visits"
-msgstr "전환된 방문자"
+msgstr "구매한 방문자"
 
 #: ../admin/views/reports.php:259
 msgid "All Referrals"
@@ -4940,7 +4940,7 @@ msgstr "장치"
 
 #: ../admin/views/visits.php:90
 msgid "Just Visit"
-msgstr "접속만"
+msgstr "접속"
 
 #: ../admin/views/visits.php:110
 msgid "No Visits Stored!"
