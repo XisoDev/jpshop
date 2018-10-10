@@ -210,8 +210,9 @@ function zeus_recieved_func(){
 
             }elseif($_GET['status'] == '05'){//Finish sales
                 $output->message = "completed";
-                $order->update_status( 'completed','入金完了' . $message);
+                $order->update_status( 'processing','入金完了' . $message);
             }
+            // $order->update_status('completed' ==> 'processing','入金完了' . $message);
             $output->txt_message = $message;
             //카드 수신
         }elseif(isset($_GET['clientip']) and $_GET['clientip'] == $clientip_array['cc']){
