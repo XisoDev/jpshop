@@ -363,8 +363,25 @@ else {
 
     $zeusm = $itemtotal + $delivery;
 
+    print_r(get_post_meta( $order->get_order_number(), '_transaction_id', wc_clean( $_GET[ 'ordd' ] ) ));
+        if ($_GET['cardbrand'] == 'V') {
+            $message = "VISA";
+        } elseif ($_GET['cardbrand'] == 'M') {
+            $message = "Mastercard";
+        } elseif ($_GET['cardbrand'] == 'J') {
+            $message = "JCB";
+        } elseif ($_GET['cardbrand'] == 'A') {
+            $message = "American Express";
+        } elseif ($_GET['cardbrand'] == 'I') {
+            $message = "Discover";
+        } elseif ($_GET['cardbrand'] == 'D') {
+            $message = "Diners";
+        } else {
+            $message = "Proper";
+        }
 
-    print_r(get_post_meta( $order->get_order_number(), '_transaction_id', wc_clean( $_GET[ 'cardbrand' ] ) ));
+
+    //get_post_meta( $order->get_order_number(), '_transaction_id', wc_clean( $_GET[ 'ordd' ] ) );
 
         if ($payment == '편의점') {
             if($zeusm < 1)$pgm_tax = 0;
