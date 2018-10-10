@@ -1,5 +1,5 @@
 <div class="uap-wrapper">
-	<div class="uap-page-title">Ultimate Affiliate Pro - <span class="second-text"><?php _e('Referrals (rewards)', 'uap');?></span></div>
+	<div class="uap-page-title">Ultimate Affiliate Pro - <span class="second-text"><?php _e(/*'Referrals (rewards)'*/'수입 내역', 'uap');?></span></div>
 
 		<?php if (!empty($data['error'])):?>
 			<div class="uap-wrapp-the-errors">
@@ -12,7 +12,7 @@
 		<?php endif;?>
 
 		<a href="<?php echo $data['url-add_edit'];?>" class="uap-add-new-like-wp"><i class="fa-uap fa-add-uap"></i><?php _e('Add New Referral', 'uap');?></a>
-		<span class="uap-top-message"><?php _e('...add manual Referral (reward) for specific Affiliate', 'uap');?></span>
+		<span class="uap-top-message"><?php _e(/*'...add manual Referral (reward) for specific Affiliate'*/'...특정 파트너에게 수동으로 수수료 추가', 'uap');?></span>
 
 		<div class="uap-special-box" style="margin-top: 20px;">
 		<?php echo $data['filter'];?>
