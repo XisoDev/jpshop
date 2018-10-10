@@ -362,6 +362,26 @@ else {
         $pg_tax = $pg_tx;
 
     $zeusm = $itemtotal + $delivery;
+
+    if($_GET['cardbrand'] == 'V'){
+        $message = "VISA";
+    }elseif($_GET['cardbrand'] == 'M'){
+        $message = "Mastercard";
+    }elseif($_GET['cardbrand'] == 'J'){
+        $message = "JCB";
+    }elseif($_GET['cardbrand'] == 'A'){
+        $message = "American Express";
+    }elseif($_GET['cardbrand'] == 'I'){
+        $message = "Discover";
+    }elseif($_GET['cardbrand'] == 'D'){
+        $message = "Diners";
+    }else{
+        $message = "Proper";
+    }
+    echo $message;
+
+    //get_post_meta( $order->get_order_number(), '_transaction_id', wc_clean( $_GET[ 'ordd' ] ) );
+
         if ($payment == '편의점') {
             if($zeusm < 1)$pgm_tax = 0;
             elseif($zeusm < 2000) $pgm_tax = 125;
