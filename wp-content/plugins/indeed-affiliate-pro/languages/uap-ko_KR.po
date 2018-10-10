@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-10 14:07+0900\n"
+"PO-Revision-Date: 2018-10-10 14:20+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -2822,7 +2822,7 @@ msgstr "이용할 수 있는 목록이 없습니다 "
 
 #: ../admin/views/opt_in.php:473
 msgid "Select MyMail List:"
-msgstr "나의 메일 목록 선택 :"
+msgstr "마이메일 리스트 선택 :"
 
 #: ../admin/views/opt_in.php:492
 msgid "No List available"
@@ -2932,7 +2932,7 @@ msgstr "결제 세부 사항"
 #: ../admin/views/payments.php:2 ../admin/views/payments_list_all_unpaid.php:2
 #: ../public/views/account_page-overview.php:27
 msgid "UnPaid Referrals"
-msgstr "나에게 미지급된 수익"
+msgstr "미지급한 수수료"
 
 #: ../admin/views/payments.php:41
 msgid "Total Paid Referrals"
@@ -2958,7 +2958,7 @@ msgstr "파트너 유저네임"
 #: ../admin/views/payments_list_all_paid.php:2
 #: ../public/views/account_page-overview.php:19
 msgid "Paid Referrals"
-msgstr "나에게 지불된 수익"
+msgstr "지급된 수수료"
 
 #: ../admin/views/payments.php:86 ../admin/views/payments.php:96
 msgid "Unpaid Referrals"
