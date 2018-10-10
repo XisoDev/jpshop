@@ -363,24 +363,40 @@ else {
 
     $zeusm = $itemtotal + $delivery;
 
-    print_r(get_post_meta( $order->get_order_number(), '_transaction_id', wc_clean( $_GET[ 'ordd' ] ) ));
-        if ($_GET['cardbrand'] == 'V') {
-            $message = "VISA";
-        } elseif ($_GET['cardbrand'] == 'M') {
-            $message = "Mastercard";
-        } elseif ($_GET['cardbrand'] == 'J') {
-            $message = "JCB";
-        } elseif ($_GET['cardbrand'] == 'A') {
-            $message = "American Express";
-        } elseif ($_GET['cardbrand'] == 'I') {
-            $message = "Discover";
-        } elseif ($_GET['cardbrand'] == 'D') {
-            $message = "Diners";
-        } else {
-            $message = "Proper";
+    global $wpdb;
+    $output = new stdClass();
+    $output->error = "0";
+    $output->message = "update success";
+    $woocommerce_zeus_cc = get_option('woocommerce_zeus_cc_settings');
+    $woocommerce_zeus_cs = get_option('woocommerce_zeus_cs_settings');
+    $woocommerce_zeus_bt = get_option('woocommerce_zeus_bt_settings');
+    $clientip_array = array(
+        'cc' => $woocommerce_zeus_cc['authentication_clientip'],
+        'cs' => $woocommerce_zeus_cs['authentication_clientip'],
+        'bt' => $woocommerce_zeus_bt['authentication_clientip']
+    );
+    if(isset($_GET['clientip']) and $_GET['clientip'] == $clientip_array['cs']) {
+        $output->method = "Convenience store";
+        if (isset($_GET['clientip']) and $_GET['clientip'] == $clientip_array['cc']) {
+            $output->method = "Credit Card";
+            if ($_GET['cardbrand'] == 'V') {
+                $message = "VISA";
+            } elseif ($_GET['cardbrand'] == 'M') {
+                $message = "Mastercard";
+            } elseif ($_GET['cardbrand'] == 'J') {
+                $message = "JCB";
+            } elseif ($_GET['cardbrand'] == 'A') {
+                $message = "American Express";
+            } elseif ($_GET['cardbrand'] == 'I') {
+                $message = "Discover";
+            } elseif ($_GET['cardbrand'] == 'D') {
+                $message = "Diners";
+            } else {
+                $message = "Proper";
+            }
+            echo $message;
         }
-
-
+    }
     //get_post_meta( $order->get_order_number(), '_transaction_id', wc_clean( $_GET[ 'ordd' ] ) );
 
         if ($payment == '편의점') {
