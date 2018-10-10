@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-10 14:20+0900\n"
+"PO-Revision-Date: 2018-10-10 14:36+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -2247,7 +2247,7 @@ msgstr "메시지 보내기 완료 :"
 
 #: ../admin/views/login-custom_messages.php:12
 msgid "Default message for pending users:"
-msgstr "대기중인 사용자를 위한 디폴트 메시지 :"
+msgstr "대기 중인 사용자를 위한 디폴트 메시지 :"
 
 #: ../admin/views/login-custom_messages.php:16
 #: ../admin/views/login-custom_messages.php:33
@@ -2891,7 +2891,7 @@ msgstr "\"은행 송금\" 결제 옵션으로 지금 임시 지불 상태를 설
 #: ../public/views/account_page-referrals_history.php:46
 #: ../public/views/account_page-simple_links.php:51
 msgid "Pending"
-msgstr "대기중"
+msgstr "대기 중"
 
 #: ../admin/views/payment-form.php:66
 #: ../admin/views/payments_list_all_paid.php:56
@@ -4908,7 +4908,7 @@ msgstr "세부 사항 보기"
 
 #: ../admin/views/transactions.php:135
 msgid "Mark as Pending"
-msgstr "보류 중으로 표시"
+msgstr "대기 중 전환"
 
 #: ../admin/views/transactions.php:140
 msgid "Mark as Complete"
