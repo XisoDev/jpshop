@@ -48,6 +48,7 @@ foreach($order_list as $no => $order_id){
         $cart_total    += $item->get_total();
     }
     $item_subtotal = $cart_total+round($cart_tax_total);
+
     if(count($items) > 1){
         $item_title .= sprintf(" 외 %d종", count($items));
     }
@@ -91,7 +92,7 @@ foreach($order_list as $no => $order_id){
 
     $objPHPExcel->getActiveSheet()->setCellValue("G" . ($no+2),$total_Convenience);
     ##총 결제액
-    $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),number_format($order->get_shipping_total()+$fee_totals+$total_Convenience));
+    $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),number_format($item_subtotal + $fee_totals + $total_Convenience));
     ##관세율
     $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),'대응 중');
     ##결제방법
