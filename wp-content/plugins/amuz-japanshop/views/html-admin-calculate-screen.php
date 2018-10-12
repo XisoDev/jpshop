@@ -275,7 +275,7 @@ else {
 }
     if($order->get_meta('결제 수수료')=='없음') $total_Convenience=0;
     else$total_Convenience = $Convenience+$Convenience_fee;
-
+    $total_Convenience= $total_Convenience*1.08;
     #환불 받은 가격
     #오차 수정이 발생했을 경우 meta data
     $errorcorrection=0;

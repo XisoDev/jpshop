@@ -89,7 +89,7 @@ foreach($order_list as $no => $order_id){
     }
     if($order->get_meta('결제 수수료')=='없음') $total_Convenience=0;
     else$total_Convenience = $Convenience+$Convenience_fee;
-
+    $total_Convenience = $total_Convenience * 1.08;
     $objPHPExcel->getActiveSheet()->setCellValue("G" . ($no+2),$total_Convenience);
     ##총 결제액
     $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),($item_subtotal + $fee_totals + $total_Convenience + $shipping));
