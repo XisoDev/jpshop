@@ -79,6 +79,11 @@ Version: 3.6.0.1533112807
 
 /* Only PC */
 @media all and (min-width:851px) {
+    .cart-container .container .page-wrapper .page-checkout{
+        padding-left:15%
+    }
+    .large-5{max-width:0;flex-basis:41.66667%}
+    .large-7{max-width:0;flex-basis:58.33333%}
     /* Q&A 서비스 버튼 css */
     div#ch-plugin-core div:nth-of-type(3) {
         position: fixed !important;
