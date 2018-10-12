@@ -6,19 +6,19 @@ $objPHPExcel->getActiveSheet()->setTitle('패킹리스트');
 //
 $fields_list = explode(",","주문일시,주문번호,상품명,상품가격,배송비
 ,대인수수료,편의점수수료,총결제액,관세율,결제방법,IP코드,입금상태,주문단계,발송일,동시발송,비고");
-$th_address = range("A","N");
+$th_address = range("A","P");
 foreach($fields_list as $no => $title){
     $objPHPExcel->getActiveSheet()->setCellValue($th_address[$no].'1', $title);
 }
 $objPHPExcel->getActiveSheet()->getStyle('A1:N2')->getAlignment()->setWrapText(true);
 // set heading styles
-cellColor('A1:N1', 'D09896');
+cellColor('A1:P1', 'D09896');
 cellColor('H1:I1', 'AAAAAA');
 cellColor('K1:L1', 'AAAAAA');
 cellColor('N1', 'AAAAAA');
-cellAlign('A1:N1');
-cellFont("A1:N1",11,true,000000);
-cellBorder("A1:N1");
+cellAlign('A1:P1');
+cellFont("A1:P1",11,true,000000);
+cellBorder("A1:P1");
 cellWidth("A",18);
 cellWidth("B",15);
 cellWidth("C",40);
