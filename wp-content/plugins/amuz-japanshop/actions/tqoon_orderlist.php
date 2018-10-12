@@ -88,22 +88,23 @@ foreach($order_list as $no => $order_id){
     }
     if($order->get_meta('결제 수수료')=='없음') $total_Convenience=0;
     else$total_Convenience = $Convenience+$Convenience_fee;
+
     $objPHPExcel->getActiveSheet()->setCellValue("G" . ($no+2),$total_Convenience);
     ##총 결제액
     $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),number_format($order->get_shipping_total()+$fee_totals+$total_Convenience));
     ##관세율
-    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),get_payment_method($order->payment_method));
+    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),'대응 중');
     ##결제방법
     $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),get_payment_method($order->payment_method));
 
     ##입금상태
-    if(get_payment_method($order->payment_method)=="codpf") {
+    if($order->payment_method=="codpf") {
         if ($status_list["wc-" . $order->get_status()] == "대기") {
             $status = "대인 > 미결제";
         }
         else$status = "대인 > 결제";
     }
-    elseif(get_payment_method($order->payment_method)=="zeus_cs") {
+    elseif($order->payment_method=="zeus_cs") {
         if ($status_list["wc-" . $order->get_status()] == "대기") {
             $status = "편의점 > 미결제";
         }
