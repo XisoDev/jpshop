@@ -4,7 +4,8 @@ include("../load_excel.php");
 $objPHPExcel->getActiveSheet()->setTitle('패킹리스트');
 //set heading fields
 //
-$fields_list = explode(",","주문일시,주문번호,상품명,상품가격,대인수수료,배송비,결제방법,입금상태,입금일시,발송일,수취완료여부,수취일,주문단계,비고");
+$fields_list = explode(",","주문일시,주문번호,상품명,상품가격,배송비
+,대인수수료,편의점수수료,총결제액,관세율,결제방법,IP코드,입금상태,주문단계,발송일,동시발송,비고");
 $th_address = range("A","N");
 foreach($fields_list as $no => $title){
     $objPHPExcel->getActiveSheet()->setCellValue($th_address[$no].'1', $title);
@@ -24,6 +25,7 @@ cellWidth("C",40);
 cellWidth("D:H",13);
 cellWidth("I:L",20);
 cellWidth("M:N",13);
+cellWidth("O:P",13);
 cellHeight("1",20);
 $site_code = getSiteOrderCode();
 //set Data
@@ -45,28 +47,91 @@ foreach($order_list as $no => $order_id){
         //총상품가
         $cart_total    += $item->get_total();
     }
-
+    $item_subtotal = $cart_total+round($cart_tax_total);
     if(count($items) > 1){
         $item_title .= sprintf(" 외 %d종", count($items));
     }
+    ##상품명
     $objPHPExcel->getActiveSheet()->setCellValue("C" . ($no+2),$item_title);
-    $objPHPExcel->getActiveSheet()->setCellValue("D" . ($no+2),($cart_total+round($cart_tax_total)));
+    ##상품가
+    $objPHPExcel->getActiveSheet()->setCellValue("D" . ($no+2),$item_subtotal);
+    ##배송비
+    $shipping = number_format($order->get_shipping_total());
+    $objPHPExcel->getActiveSheet()->setCellValue("E" . ($no+2),$shipping);
+
+    ##대인수수료
+    $fee_total=0;
     if($order->payment_method == "codpf"){
         $fee_total = 0;
         foreach ( $order->get_fees() as $fee ) {
             $fee_total += $fee->get_amount();
         }
-        $objPHPExcel->getActiveSheet()->setCellValue("E" . ($no+2),number_format(($fee_total*1.08)));
-    }else{
-        $objPHPExcel->getActiveSheet()->setCellValue("E" . ($no+2),"0");
     }
-    $objPHPExcel->getActiveSheet()->setCellValue("F" . ($no+2),number_format($order->get_shipping_total()));
-    $objPHPExcel->getActiveSheet()->setCellValue("G" . ($no+2),get_payment_method($order->payment_method));
-    $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),$status_list["wc-".$order->get_status()]);
+    $fee_totals = number_format(($fee_total*1.08));
+    $objPHPExcel->getActiveSheet()->setCellValue("F" . ($no+2),$fee_totals);
+    ##편의점수수료
+    if ($payment == '편의점') {
+        if ($order->get_subtotal() < 1000) $fee = 130;
+        elseif ($order->get_subtotal() < 2000) $fee = 150;
+        elseif ($order->get_subtotal() < 3000) $fee = 180;
+        elseif ($order->get_subtotal() < 10000) $fee = 210;
+        elseif ($order->get_subtotal() < 30000) $fee = 270;
+        elseif ($order->get_subtotal() < 100000) $fee = 410;
+        elseif ($order->get_subtotal() < 150000) $fee = 560;
+        elseif ($order->get_subtotal() < 300000) $fee = 770;
+        $Convenience = $fee/1.08;
+        $Convenience_fee = $Convenience * 0.08;
+    }
+    else {
+        $Convenience = 0;
+        $Convenience_fee = 0;
+    }
+    if($order->get_meta('결제 수수료')=='없음') $total_Convenience=0;
+    else$total_Convenience = $Convenience+$Convenience_fee;
+    $objPHPExcel->getActiveSheet()->setCellValue("G" . ($no+2),$total_Convenience);
+    ##총 결제액
+    $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),number_format($order->get_shipping_total()+$fee_totals+$total_Convenience));
+    ##관세율
+    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),get_payment_method($order->payment_method));
+    ##결제방법
+    $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),get_payment_method($order->payment_method));
+
+    ##입금상태
+    if(get_payment_method($order->payment_method)=="대인결제") {
+        if ($status_list["wc-" . $order->get_status()] == "결재 대기 중") {
+            $status = "미결제";
+        }
+        else$status = "결제";
+    }
+    elseif(get_payment_method($order->payment_method)=="편의점") {
+        if ($status_list["wc-" . $order->get_status()] == "결재 대기 중") {
+            $status = "편의점 > 미결제";
+        }
+        else$status = "편의점 > 결제";
+    }
+    elseif(get_payment_method($order->payment_method)=="대인결제") {
+        if ($status_list["wc-" . $order->get_status()] == "결재 대기 중") {
+            $status = "대인 > 미결제";
+        }
+        else$status = "대인 > 결제";
+    }
+    else{
+        if ($status_list["wc-" . $order->get_status()] == "결재 대기 중") {
+            $status = "PG결제 > 미결제";
+        }
+        else$status = "PG결제 > 결제";
+    }
+    $objPHPExcel->getActiveSheet()->setCellValue("L" . ($no+2),$status);
+    /*##입금일시
     $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),get_post_meta( trim(str_replace('#', '', $order->get_order_number())), '_paid_date', true));
-    $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),$order->get_meta('ywot_pick_up_date' ));
-    $objPHPExcel->getActiveSheet()->setCellValue("N" . ($no+2),$order->get_meta('비고' ));
-    $range_id = "A" . ($no+2) . ":N" . ($no+2);
+    */
+    ##주문단계
+    $objPHPExcel->getActiveSheet()->setCellValue("M" . ($no+2),$status_list["wc-".$order->get_status()]);
+    ##발송일
+    $objPHPExcel->getActiveSheet()->setCellValue("N" . ($no+2),$order->get_meta('ywot_pick_up_date' ));
+    ##비고
+    $objPHPExcel->getActiveSheet()->setCellValue("P" . ($no+2),$order->get_meta('비고' ));
+    $range_id = "A" . ($no+2) . ":P" . ($no+2);
     cellHeight($no+2,20);
     cellBorder($range_id);
     cellAlign($range_id);
