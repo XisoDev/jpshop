@@ -65,27 +65,6 @@ Version: 3.6.0.1533112807
     color : #FF6699;
 }
 @media all and (max-width:850px){
-    .cart-container .container .page-wrapper .page-checkout{
-        width:688px;
-        padding-left:2%;
-        padding-right:0;
-    }
-    .col.large-7.pd-0 {
-        max-width:0;
-    }
-    .cart-collaterals .large-5 col .pb-0{
-        max-width:0;
-    }
-    .row.category-page-row div.col.large-9 {
-        max-width: 80%;
-        flex-basis: 80%;
-    }
-    .cart-container .container .page-wrapper .page-checkout{
-        width:688px;
-        padding-left:2%;
-        padding-right:0;
-    }
-
     /* 사이드바 모바일 비출력 css */
     .sidebars{
         display:none;
