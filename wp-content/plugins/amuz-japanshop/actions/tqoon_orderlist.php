@@ -4,8 +4,7 @@ include("../load_excel.php");
 $objPHPExcel->getActiveSheet()->setTitle('패킹리스트');
 //set heading fields
 //
-$fields_list = explode(",","주문일시,주문번호,상품명,상품가격,배송비
-,대인수수료,편의점수수료,총결제액,관세율,결제방법,IP코드,입금상태,주문단계,발송일,동시발송,비고");
+$fields_list = explode(",","주문일시,주문번호,상품명,상품가격,배송비,대인수수료,편의점수수료,총결제액,관세율,결제방법,IP코드,입금상태,주문단계,발송일,동시발송,비고");
 $th_address = range("A","P");
 foreach($fields_list as $no => $title){
     $objPHPExcel->getActiveSheet()->setCellValue($th_address[$no].'1', $title);
