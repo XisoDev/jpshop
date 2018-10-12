@@ -21,6 +21,7 @@ cellBorder("A1:P1");
 cellWidth("A",18);
 cellWidth("B",15);
 cellWidth("C",40);
+cellWidth("G",16);
 cellWidth("D:H",13);
 cellWidth("I:L",20);
 cellWidth("M:N",13);
