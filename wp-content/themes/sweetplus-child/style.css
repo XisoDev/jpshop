@@ -65,6 +65,21 @@ Version: 3.6.0.1533112807
     color : #FF6699;
 }
 @media all and (max-width:850px){
+    div.row.category-page-row div.col.large-3 {
+        max-width: 20%;
+        flex-basis: 20%;
+    }
+
+    div.row.category-page-row div.col.large-9 {
+        max-width: 80%;
+        flex-basis: 80%;
+    }
+    div.cart-container .container .page-wrapper .page-checkout{
+        width:688px;
+        padding-left:2%;
+        padding-right:0;
+    }
+
     /* 사이드바 모바일 비출력 css */
     .sidebars{
         display:none;
