@@ -70,7 +70,7 @@ foreach($order_list as $no => $order_id){
     $fee_totals = number_format(($fee_total*1.08));
     $objPHPExcel->getActiveSheet()->setCellValue("F" . ($no+2),$fee_totals);
     ##편의점수수료
-    if ($payment == '편의점') {
+    if ($order->payment_method == 'zeus_cs') {
         if ($order->get_subtotal() < 1000) $fee = 130;
         elseif ($order->get_subtotal() < 2000) $fee = 150;
         elseif ($order->get_subtotal() < 3000) $fee = 180;
@@ -97,26 +97,20 @@ foreach($order_list as $no => $order_id){
     $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),get_payment_method($order->payment_method));
 
     ##입금상태
-    if(get_payment_method($order->payment_method)=="대인결제") {
-        if ($status_list["wc-" . $order->get_status()] == "결재 대기 중") {
-            $status = "미결제";
-        }
-        else$status = "결제";
-    }
-    elseif(get_payment_method($order->payment_method)=="편의점") {
-        if ($status_list["wc-" . $order->get_status()] == "결재 대기 중") {
-            $status = "편의점 > 미결제";
-        }
-        else$status = "편의점 > 결제";
-    }
-    elseif(get_payment_method($order->payment_method)=="대인결제") {
-        if ($status_list["wc-" . $order->get_status()] == "결재 대기 중") {
+    if(get_payment_method($order->payment_method)=="codpf") {
+        if ($status_list["wc-" . $order->get_status()] == "대기") {
             $status = "대인 > 미결제";
         }
         else$status = "대인 > 결제";
     }
+    elseif(get_payment_method($order->payment_method)=="zeus_cs") {
+        if ($status_list["wc-" . $order->get_status()] == "대기") {
+            $status = "편의점 > 미결제";
+        }
+        else$status = "편의점 > 결제";
+    }
     else{
-        if ($status_list["wc-" . $order->get_status()] == "결재 대기 중") {
+        if ($status_list["wc-" . $order->get_status()] == "대기") {
             $status = "PG결제 > 미결제";
         }
         else$status = "PG결제 > 결제";
