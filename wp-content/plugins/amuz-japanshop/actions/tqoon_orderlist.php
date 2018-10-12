@@ -92,7 +92,7 @@ foreach($order_list as $no => $order_id){
 
     $objPHPExcel->getActiveSheet()->setCellValue("G" . ($no+2),$total_Convenience);
     ##총 결제액
-    $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),number_format($item_subtotal + $fee_totals + $total_Convenience));
+    $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),($item_subtotal + $fee_totals + $total_Convenience));
     ##관세율
     $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),'대응 중');
     ##결제방법
