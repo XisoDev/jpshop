@@ -289,7 +289,6 @@ else {
         }
     }
 
-    $refunds= ($get_refunds)-($errorcorrection);
 
     #환불 시 돌려줄 배송료
     $shipping_refunded = $order->get_total_shipping_refunded();
@@ -298,6 +297,7 @@ else {
     #환불 시 돌려줄 주문(편의점 카드 수수료 등) 수수료
     $custom_tax = $order->get_total()-$order->get_total_tax()-$order->get_shipping_total();
 
+    $refunds= ($get_refunds)-($errorcorrection);
 
     #환불 받은 상품 가격
     if($refunds!="0") {
@@ -477,19 +477,29 @@ else {
         $jungsan=0;
     }
 
-    #  + 합계금액
-    $total_calculate = ($itemtotal + $delivery + $total_tax + $total_excise + $pg_tax +$interper + $total_Convenience + round($oHsRefundInfo['tqoon_tax']));
-
-    # - 합계금액
-    $total_m_calculate = $refund + $totalm_tax + $totalm_excise +  $oHSInfo['tqoon_tax'] + $pgm_tax + $remittance + $custom_delivery;
-
-    $jungsan = $total_calculate - $total_m_calculate;
-
-
     //환불시 돌려받는 관세
     $oHSInfo_refund_tax = number_format($oHsRefundInfo['tqoon_tax']);
     //관세
     $oHSInfo_tax = number_format($oHSInfo['tqoon_tax']);
+
+    if($payment == '편의점')
+        $plustax=$total_Convenience;
+    elseif($payment == '대인결제')
+        $plustax=$interper;
+    else
+        $plustax=$pg_tax;
+
+    #  + 합계금액
+    $total_calculate = $itemtotal + $delivery + $total_tax + $total_excise + $plustax + $oHSInfo_refund_tax;
+
+
+    # - 합계금액
+    $total_m_calculate = $refund + $totalm_tax + $totalm_excise +   $oHSInfo_tax + $pgm_tax + $remittance + $custom_delivery;
+
+    $jungsan = round($total_calculate - $total_m_calculate);
+
+
+
 
     # 총 정산금액
     echo "<td>￥" . number_format($jungsan) . "</td>";
@@ -499,7 +509,7 @@ else {
     echo "<td class='minus'>￥" . number_format($total_m_calculate) . "</td>";
     #소비세
     echo "<td class='plus'>￥" . number_format($total_excise) . "</td>";
-    #수수료
+    #티쿤수수료
     echo "<td class='plus'>￥" . number_format($total_tax) . "</td>";
     #배송비
     echo "<td class='plus'>￥" . number_format($delivery) . "</td>";
@@ -507,13 +517,6 @@ else {
     echo "<td class='plus'>￥" . number_format($itemtotal) . "</td>";
 
     # + 결제 수수료
-    if($payment == '편의점')
-        $plustax=$total_Convenience;
-    elseif($payment == '대인결제')
-        $plustax=$interper;
-    else
-        $plustax=$pg_tax;
-
     echo "<td class='plus'>￥" . number_format($plustax) . "</td>";
     //관세 받아올것
     #+관세
