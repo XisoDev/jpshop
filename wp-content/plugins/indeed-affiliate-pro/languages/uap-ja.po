@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-02 18:58+0900\n"
+"PO-Revision-Date: 2018-10-16 17:42+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -2956,7 +2956,7 @@ msgstr "支払情報の詳細"
 #: ../admin/views/payments.php:2 ../admin/views/payments_list_all_unpaid.php:2
 #: ../public/views/account_page-overview.php:27
 msgid "UnPaid Referrals"
-msgstr "未払い収益の履歴"
+msgstr "未払い収益の件数"
 
 #: ../admin/views/payments.php:41
 msgid "Total Paid Referrals"
@@ -2982,7 +2982,7 @@ msgstr "アフィリエイトのユーザー名"
 #: ../admin/views/payments_list_all_paid.php:2
 #: ../public/views/account_page-overview.php:19
 msgid "Paid Referrals"
-msgstr "支払済みの収益の履歴"
+msgstr "受け取り済みの件数"
 
 #: ../admin/views/payments.php:86 ../admin/views/payments.php:96
 msgid "Unpaid Referrals"
