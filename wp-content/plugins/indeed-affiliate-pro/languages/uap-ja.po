@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-16 19:30+0900\n"
+"PO-Revision-Date: 2018-10-17 15:47+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -6001,7 +6001,7 @@ msgstr "支払い"
 
 #: ../public/views/account_page-reports.php:15
 msgid "Total referrals"
-msgstr "合計紹介"
+msgstr "総購入者数"
 
 #: ../public/views/account_page-reports.php:24
 msgid "Total Earnings (paid Referrals)"
