@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-17 15:47+0900\n"
+"PO-Revision-Date: 2018-10-17 16:08+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -3983,7 +3983,7 @@ msgstr "すべての訪問"
 
 #: ../admin/views/reports.php:155 ../public/views/account_page-reports.php:53
 msgid "Converted Visits"
-msgstr "購入した訪問者数"
+msgstr "接続し早速、購入した回数"
 
 #: ../admin/views/reports.php:259
 msgid "All Referrals"
@@ -5702,7 +5702,7 @@ msgstr "ユニーク訪問"
 #: ../public/views/account_page-list_visits.php:10
 #: ../public/views/account_page-reports.php:44
 msgid "Total Visits"
-msgstr "すべての訪問者数"
+msgstr "総訪問者数"
 
 #: ../public/views/account_page-campaigns.php:12
 msgid "List Of Campaigns"
@@ -6001,7 +6001,7 @@ msgstr "支払い"
 
 #: ../public/views/account_page-reports.php:15
 msgid "Total referrals"
-msgstr "総購入者数"
+msgstr "総購入数"
 
 #: ../public/views/account_page-reports.php:24
 msgid "Total Earnings (paid Referrals)"
