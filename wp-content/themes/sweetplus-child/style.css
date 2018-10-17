@@ -121,7 +121,7 @@ Version: 3.6.0.1533112807
 }
 /*계정 -> 트래픽 내역 사이즈 조정*/
 .uap-account-table th.url{
-    width: 55%;
+    width: 50%;
 }
 .uap-account-table th.browser{
     width: 11.5%;
@@ -133,7 +133,7 @@ Version: 3.6.0.1533112807
     width: 12%;
 }
 .uap-account-table td.url{
-    width: 55%;
+    width: 50%;
 }
 .uap-account-table td.browser{
     width: 11.5%;
