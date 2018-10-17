@@ -118,6 +118,9 @@ ul{
     width: 10%;
 }
 /*계정 아바타 스타일*/
+.uap-ap-top-theme-2 .uap-user-page-details{
+    border-radius: 100%;
+}
 .uap-ap-top-theme-2 .uap-user-page-avatar{
     padding-right:0px;
     max-width: 190px;
