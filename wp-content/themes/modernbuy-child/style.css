@@ -117,3 +117,13 @@ ul{
 .uap-account-table td.date{
     width: 10%;
 }
+/*계정 아바타 스타일*/
+.uap-ap-top-theme-2 .uap-user-page-avatar{
+    padding-right:0px;
+    max-width: 190px;
+}
+.uap-ap-top-theme-2 .uap-user-page-avatar img{
+    border-radius:100%;
+    box-shadow:none;
+    border: 5px solid #fff;
+}
