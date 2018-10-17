@@ -89,6 +89,9 @@ ul{
 .uap-ap-theme-2 .uap-user-page-content{
     word-break:break-all;
 }
+.uap-ap-theme-3 .uap-user-page-content{
+    word-break:break-all;
+}
 /*계정 -> 트래픽 내역 사이즈 조정*/
 .uap-account-table th.url{
     width: 60%;

@@ -105,3 +105,42 @@ Version: 3.6.0.1533112807
 .back-to-down{margin:0;opacity:0;bottom:20px;right:20px;pointer-events:none;-ms-transform:translateY(-30%);transform:translateY(-30%)}
 .back-to-down.active{opacity:1;pointer-events:inherit;-ms-transform:translateY(0);transform:translateY(0)}
 */
+
+/*어필리에이트 링크 글자 튀어나가는것 방지*/
+.uap-ap-wrap .uap-ap-generate-links-result{
+    word-break:break-all;
+}
+.uap-banners-wrapp .uap-banner .uap-banner-content{
+    word-break:break-all;
+}
+.uap-ap-theme-2 .uap-user-page-content{
+    word-break:break-all;
+}
+.uap-ap-theme-3 .uap-user-page-content{
+    word-break:break-all;
+}
+/*계정 -> 트래픽 내역 사이즈 조정*/
+.uap-account-table th.url{
+    width: 60%;
+}
+.uap-account-table th.browser{
+    width: 9%;
+}
+.uap-account-table th.device{
+    width: 9%;
+}
+.uap-account-table th.date{
+    width: 10%;
+}
+.uap-account-table td.url{
+    width: 60%;
+}
+.uap-account-table td.browser{
+    width: 9%;
+}
+.uap-account-table td.device{
+    width: 9%;
+}
+.uap-account-table td.date{
+    width: 10%;
+}
