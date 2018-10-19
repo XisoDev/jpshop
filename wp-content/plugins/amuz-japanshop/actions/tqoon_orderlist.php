@@ -95,6 +95,10 @@ foreach($order_list as $no => $order_id){
     ##총 결제액
     $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),($item_subtotal + $fee_totals + $total_Convenience + $shipping));
 
+    if($order->get_meta('평균 관세율')!="")
+    $perper = $order->get_meta('평균 관세율');
+    else
+        $perper = "준비 중";
   /*  $oHSInfo = getHsValues($hs_codes, $order->get_items()); */
 /*
     $oHSInfo['tqoon_per'];
@@ -102,7 +106,7 @@ foreach($order_list as $no => $order_id){
     $perepr = $oHSInfo['tqoon_per']/$oHSInfo_count;
 */
     ##관세율
-    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),'준비 중');
+    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),$perper);
     ##결제방법
     $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),get_payment_method($order->payment_method));
 
