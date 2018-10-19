@@ -25,7 +25,7 @@ foreach ( $get_hscode_db as $hs_code )
 function getHsValues($hs_codes, $items){
     $oHsInfo = array();
     $oHSInfo["items"] = array();
-
+    $oHSInfo['tqoon_per']=0;
     foreach ($items as $item_key => $item_values) {
 
         $item_data = $item_values->get_data();
@@ -34,6 +34,7 @@ function getHsValues($hs_codes, $items){
         $hscode = get_post_meta($product_id, '수출용_관세코드', true);
         $hs_info = $hs_codes[$hscode];
         ///식
+        /// $items = $order->get_items();
         ///
         #주문 된 상품가격
         $prices = $item_data['total'];
@@ -152,6 +153,7 @@ function getHsValues($hs_codes, $items){
 ///
         if($product_id == 6256)
             $tax = "10.90%";
+
         $oHSInfo['total']=$item_data['total'];
         $oHSInfo['ttax'][$item_data['product_id']]=$tax;
         $oHSInfo["items"][$item_data['product_id']]=$item_tax;
@@ -169,7 +171,6 @@ function getHsValues($hs_codes, $items){
         //orderlist
         //카운트
         $oHSInfo['order_count']+=count($item_data);
-
         $oHSInfo['tax_total']+= $tax;
         //판매대행수수료
         $sale_fee = $prices*0.08;
@@ -189,8 +190,12 @@ function getHsValues($hs_codes, $items){
         //티쿤 요구 관세 (제휴사 공급가 + 국제송료(250))*관세율
         $oHSInfo['tqoon_tax']+=round($oHSInfo['addprint']+250)*($tax/100);
 
+
+
         //관세 확률 합
-        $oHSInfo['tqoon_per']+=$item_tax;
+        $oHSInfo['tqoon_per']+=$tax;
+        $a+=1;
+
     }
     //카운트 총합
     $oHSInfo['total_count']+=$oHSInfo['item_count'];

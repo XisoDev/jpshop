@@ -30,6 +30,9 @@ cellWidth("O:P",13);
 cellHeight("1",20);
 $site_code = getSiteOrderCode();
 //set Data
+$hs_codes = array();
+include"../views/hscodes.php";
+
 foreach($order_list as $no => $order_id){
     $order = new WC_Order( $order_id );
     $objPHPExcel->getActiveSheet()->setCellValue("A" . ($no+2),$order->get_date_created()->format("Y.m.d H:i"));
@@ -93,8 +96,15 @@ foreach($order_list as $no => $order_id){
     $objPHPExcel->getActiveSheet()->setCellValue("G" . ($no+2),$total_Convenience);
     ##총 결제액
     $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),($item_subtotal + $fee_totals + $total_Convenience + $shipping));
+
+    $oHSInfo = getHsValues($hs_codes, $order->get_items());
+
+    $oHSInfo['tqoon_per'];
+    $oHSInfo_count=count($items);
+    $perepr = $oHSInfo['tqoon_per']/$oHSInfo_count;
+
     ##관세율
-    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),'대응 중');
+    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),$perepr);
     ##결제방법
     $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),get_payment_method($order->payment_method));
 
