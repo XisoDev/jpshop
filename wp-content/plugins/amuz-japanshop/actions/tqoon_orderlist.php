@@ -31,8 +31,8 @@ cellHeight("1",20);
 $site_code = getSiteOrderCode();
 //set Data
 
-foreach($order_list as $no => $order_id){
-    $order = new WC_Order( $order_id );
+foreach($order_list as $no => $order){
+    $order = new WC_Order( $order->ID );
     $objPHPExcel->getActiveSheet()->setCellValue("A" . ($no+2),$order->get_date_created()->format("Y.m.d H:i"));
     $objPHPExcel->getActiveSheet()->setCellValue("B" . ($no+2),$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())));
     // Sum line item costs.
