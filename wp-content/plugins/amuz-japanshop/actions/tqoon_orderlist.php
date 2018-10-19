@@ -31,8 +31,8 @@ cellHeight("1",20);
 $site_code = getSiteOrderCode();
 //set Data
 
-foreach($order_list as $no => $order){
-    $order = new WC_Order( $order->ID );
+foreach($order_list as $no => $order_id){
+    $order = new WC_Order( $order_id );
     $objPHPExcel->getActiveSheet()->setCellValue("A" . ($no+2),$order->get_date_created()->format("Y.m.d H:i"));
     $objPHPExcel->getActiveSheet()->setCellValue("B" . ($no+2),$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())));
     // Sum line item costs.
@@ -95,7 +95,6 @@ foreach($order_list as $no => $order){
     ##총 결제액
     $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),($item_subtotal + $fee_totals + $total_Convenience + $shipping));
 
-    print_r($order->get_items());
   /*  $oHSInfo = getHsValues($hs_codes, $order->get_items()); */
 /*
     $oHSInfo['tqoon_per'];
@@ -103,7 +102,7 @@ foreach($order_list as $no => $order){
     $perepr = $oHSInfo['tqoon_per']/$oHSInfo_count;
 */
     ##관세율
-    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),$perepr);
+    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),'준비 중');
     ##결제방법
     $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),get_payment_method($order->payment_method));
 
