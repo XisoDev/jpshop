@@ -197,6 +197,10 @@ function getHsValues($hs_codes, $items){
         $a+=1;
 
     }
+    $oHSInfo['tqoon_per'];
+    $oHSInfo_count=count($items);
+    $oHSInfo['per'] = $oHSInfo['tqoon_per']/$oHSInfo_count;
+
     //카운트 총합
     $oHSInfo['total_count']+=$oHSInfo['item_count'];
     //관세 확률 총합
