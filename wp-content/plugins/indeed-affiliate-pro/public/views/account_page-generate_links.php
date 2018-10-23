@@ -79,8 +79,8 @@
 			<option value="1"><?php _e('Custom Affiliate Slug', 'uap');?></option>
 		</select>
 	</div>		
-	<?php endif;?>	
-	
+	<?php endif;?>
+
 	<div class="uap-ap-field">
 		<label class="uap-ap-label uap-special-label"><?php _e("Specific URL:", 'uap');?> </label> 
 		<input type="text" value="" id="ia_generate_aff_custom_url"  class="uap-public-form-control ">
@@ -90,8 +90,8 @@
 	<div class="uap-ap-generate-social-result" style="visibility: hidden;"></div>
 	<div class="uap-ap-generate-qr-code" style="visibility: hidden;"></div>
 	<div class="uap-ap-field">
-		<button type="button" onClick="ia_generate_link(<?php echo $data['affiliate_id'];?>);"><?php _e("Generate Link", 'uap');?></button>
+		<button type="button" class = "link_create" onClick="ia_generate_link(<?php echo $data['affiliate_id'];?>);"><?php _e("Generate Link", 'uap');?></button>
 	</div>
-   </div> 
+   </>
 </div>
 
