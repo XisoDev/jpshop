@@ -25,7 +25,9 @@
 
 	<div class="uap-ap-field" id="uap_payment_with_bt" style="display: none;">
 		<label class="uap-ap-label"><?php _e("Bank Transfer Details", 'uap');?></label>
-		<textarea style="min-height: 100px;" class="uap-public-form-control" name="uap_affiliate_bank_transfer_data"><?php echo $data['metas']['uap_affiliate_bank_transfer_data'];?></textarea>
+		<textarea style="min-height: 100px;" class="uap-public-form-control" placeholder="パートナー様の口座情報をご記入してください。"
+                  onfocus="this.value='銀行名 : \n支店名 : \n店番号 : \n口座番号 : \n口座名 : ';"
+                  name="uap_affiliate_bank_transfer_data"><?php echo $data['metas']['uap_affiliate_bank_transfer_data'];?></textarea>
 	</div>
 	
 	<div class="uap-ap-field" id="uap_payment_with_stripe" style="display: none;">
