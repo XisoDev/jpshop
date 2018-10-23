@@ -987,6 +987,7 @@ function uap_create_affiliate_link($url='', $ref_param='', $ref_value='', $campa
 		if ($campaign_name && $campaign_value){
 			$url .= '/' . implode('/', array($campaign_name, $campaign_value));
 		}
+        $url = file_get_contents('http://tinyurl.com/api-create.php?url=' . $url);
 		return $url;
 	}
 	$url = add_query_arg($ref_param, $ref_value, $url);
@@ -996,7 +997,11 @@ function uap_create_affiliate_link($url='', $ref_param='', $ref_value='', $campa
 	if ($prettify){
 		$url = user_trailingslashit($url);
 	}
+            $url = file_get_contents('http://tinyurl.com/api-create.php?url=' . $url);
 	return $url;
+
+
+
 }
 
 function uap_return_cc_list($user, $pass){
