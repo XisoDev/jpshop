@@ -244,6 +244,14 @@ if(isset($_POST['wc-amuz-japanshop-list_count'])) $_SESSION['wc-amuz-japanshop-l
 
                 echo "</tr>";
             }
+            $oHSInfo['per'];
+            if($order->get_meta('평균 관세율')==""){
+                add_post_meta($order->get_order_number(),'평균 관세율',round($oHSInfo['per'],2));
+            }
+            elseif($order->get_meta('평균 관세율')!=$oHSInfo['per']){
+                update_post_meta($order->get_order_number(),'평균 관세율',round($oHSInfo['per'],2));
+            }
+
         }
     echo "</tbody>";
     echo "<tfoot>";

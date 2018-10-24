@@ -499,15 +499,6 @@ else {
     $jungsan = round($total_calculate - $total_m_calculate);
 
 
-    $oHSInfo['per'];
-    if($order->get_meta('평균 관세율')==""){
-        add_post_meta($order->get_order_number(),'평균 관세율',$oHSInfo['per']);
-    }
-    elseif($order->get_meta('평균 관세율')!=$oHSInfo['per']){
-        update_post_meta($order->get_order_number(),'평균 관세율',$oHSInfo['per']);
-    }
-
-
     # 총 정산금액
     echo "<td>￥" . number_format($jungsan) . "</td>";
     # + 합계  = 상품가격  + 배송료
