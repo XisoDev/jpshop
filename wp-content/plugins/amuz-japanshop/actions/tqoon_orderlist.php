@@ -96,8 +96,8 @@ foreach($order_list as $no => $order_id){
     $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),($item_subtotal + $fee_totals + $total_Convenience + $shipping));
 
     if($order->get_meta('평균 관세율')!="")
-    $perper = $order->get_meta('평균 관세율');
-    else $perper = "준비 중";
+    $perper = $order->get_meta('평균 관세율')."%";
+    else $perper = "확인 중";
   /*  $oHSInfo = getHsValues($hs_codes, $order->get_items()); */
 /*
     $oHSInfo['tqoon_per'];
