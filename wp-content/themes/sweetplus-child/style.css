@@ -78,11 +78,17 @@ Version: 3.6.0.1533112807
 }
 
 /* Only PC */
-@media all and (min-width:851px) {
+@media all and (min-width:850px) {
     /* Q&A 서비스 버튼 css */
     div#ch-plugin-core div:nth-of-type(3) {
         position: fixed !important;
         bottom: 60px !important;
+    }
+    .large-7{
+        max-width: 100%;
+    }
+    .large-5{
+        max-width: 100%;
     }
 }
 /*페이지 템플릿 PULL 상태일떄 사이드바 비출력*/
