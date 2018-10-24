@@ -111,7 +111,7 @@ foreach($order_list as $no => $order_id){
 
     ##입금상태
     if($order->payment_method=="codpf") {
-        if ($order->get_meta('payment_status')=="complete") {
+        if ($status_list["wc-" . $order->get_status()] == "완료" or $status_list["wc-" . $order->get_status()] == "환불") {
             $status = "대인 > 결제";
         }
         else$status = "대인 > 미결제";
