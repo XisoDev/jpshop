@@ -95,6 +95,7 @@ foreach($order_list as $no => $order_id){
     ##총 결제액
     $objPHPExcel->getActiveSheet()->setCellValue("H" . ($no+2),($item_subtotal + $fee_totals + $total_Convenience + $shipping));
 
+    print_r($order);
     if($order->get_meta('평균 관세율')!="")
     $perper = $order->get_meta('평균 관세율');
     else
