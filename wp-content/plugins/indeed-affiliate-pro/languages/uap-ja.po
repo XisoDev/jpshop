@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uao\n"
 "POT-Creation-Date: 2018-05-30 11:09+0300\n"
-"PO-Revision-Date: 2018-10-17 16:08+0900\n"
+"PO-Revision-Date: 2018-10-24 10:40+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -5695,7 +5695,7 @@ msgstr "コピー & ペーストあなたのウェブサイトにこのソース
 #: ../public/views/account_page-campaign_reports.php:16
 #: ../public/views/account_page-campaign_reports.php:24
 msgid "Unique Visits"
-msgstr "ユニーク訪問"
+msgstr "訪問数"
 
 #: ../public/views/account_page-campaign_reports.php:17
 #: ../public/views/account_page-campaign_reports.php:25
@@ -5763,8 +5763,8 @@ msgid ""
 "incoming URL, use the following structure. To build your link, take the "
 "following URL and append it with the Alternate Incoming URL you want to use."
 msgstr ""
-"特定のセールページや商品ページのURLをあなたのアフィリエイトURLに変換したい場"
-"合はこちらから作成ください。"
+"特定のセールページや商品ページのURLをあなたのアフィリエイトURLに\n"
+"変換したい場合はこちらから作成ください。"
 
 #: ../public/views/account_page-generate_links.php:63
 msgid "Friendly Links:"
@@ -5787,8 +5787,8 @@ msgid ""
 "Enter any URL from this website in the form below to generate a referral "
 "link!"
 msgstr ""
-"アフィリエイトURLは上記URLもしくは下記ジェネレータから生成したものをペースト"
-"してご利用ください!"
+"アフィリエイトURLは上記URLもしくは下記ジェネレータから\n"
+"生成したものをペーストしてご利用ください!"
 
 #: ../public/views/account_page-generate_links.php:93
 msgid "Generate Link"
