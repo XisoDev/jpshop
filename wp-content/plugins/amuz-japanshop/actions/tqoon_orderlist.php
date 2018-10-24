@@ -105,7 +105,7 @@ foreach($order_list as $no => $order_id){
     $perepr = $oHSInfo['tqoon_per']/$oHSInfo_count;
 */
     ##관세율
-    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),$perper);
+    $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),floatval($perper));
     ##결제방법
     $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),get_payment_method($order->payment_method));
 
