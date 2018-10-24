@@ -111,22 +111,23 @@ foreach($order_list as $no => $order_id){
 
     ##입금상태
     if($order->payment_method=="codpf") {
-        if ($order->get_meta('payment_status')!="complete") {
-            $status = "대인 > 미결제";
+        if ($order->get_meta('payment_status')=="complete") {
+            $status = "대인 > 결제";
         }
-        else$status = "대인 > 결제";
+        else$status = "대인 > 미결제";
     }
     elseif($order->payment_method=="zeus_cs") {
-        if ($order->get_meta('payment_status')!="complete") {
-            $status = "편의점 > 미결제";
+        if ($order->get_meta('payment_status')=="complete") {
+            $status = "편의점 > 결제";
         }
-        else$status = "편의점 > 결제";
+        else$status = "편의점 > 미결제";
+
     }
     else{
-        if ($order->get_meta('payment_status')!="complete") {
-            $status = "PG결제 > 미결제";
+        if ($order->get_meta('payment_status')=="complete") {
+            $status = "PG결제 > 결제";
         }
-        else$status = "PG결제 > 결제";
+        else$status = "PG결제 > 미결제";
     }
     $objPHPExcel->getActiveSheet()->setCellValue("L" . ($no+2),$status);
     /*##입금일시
