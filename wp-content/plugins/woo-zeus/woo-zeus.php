@@ -246,6 +246,11 @@ function zeus_recieved_func(){
             }elseif($_GET['result'] == 'OK'){//Finish payment
                 $output->message = "payment finish";
                 $order->update_status( 'processing', __( 'Zeus Auto finished to sale.' , 'woo-zeus' ) . $message );
+
+                if($order->get_meta('payment_status')==""){
+                    add_post_meta($order->get_order_number(),'payment_status','complete');
+                }
+
             }
 
             //set transaction id for Zeus Order Number
