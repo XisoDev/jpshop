@@ -211,6 +211,10 @@ function zeus_recieved_func(){
             }elseif($_GET['status'] == '05'){//Finish sales
                 $output->message = "completed";
                 $order->update_status( 'processing','入金完了' . $message);
+                //결제 완료 시 기록용 - 취소, 환불시 결제여부 확인용
+                if($order->get_meta('payment_status')==""){
+                    @add_post_meta($order->get_order_number(),'payment_status','complete');
+                }
             }
             // $order->update_status('completed' ==> 'processing','入金完了' . $message);
             $output->txt_message = $message;
@@ -247,8 +251,9 @@ function zeus_recieved_func(){
                 $output->message = "payment finish";
                 $order->update_status( 'processing', __( 'Zeus Auto finished to sale.' , 'woo-zeus' ) . $message );
 
+                //결제 완료 시 기록용 - 취소, 환불시 결제여부 확인용
                 if($order->get_meta('payment_status')==""){
-                    add_post_meta($order->get_order_number(),'payment_status','complete');
+                    @add_post_meta($order->get_order_number(),'payment_status','complete');
                 }
 
             }
@@ -267,6 +272,10 @@ function zeus_recieved_func(){
             }elseif($_GET['status'] == '03'){//Finish payment
                 $output->message = "payment finish";
                 $order->update_status( 'processing','入金完了');
+                //결제 완료 시 기록용 - 취소, 환불시 결제여부 확인용
+                if($order->get_meta('payment_status')==""){
+                    @add_post_meta($order->get_order_number(),'payment_status','complete');
+                }
             }elseif($_GET['status'] == '04'){//Error
                 $output->message = "payment error";
                 $order->update_status( 'failed','入金エラー。');
