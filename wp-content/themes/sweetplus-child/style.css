@@ -178,3 +178,6 @@ Version: 3.6.0.1533112807
     text-shadow: 0 1px 0 rgba(0,0,0,0.5);
     color: #FFF;
 }
+.uap-ap-wrap .uap-ap-field .uap-ap-label{
+    width:35%
+}
