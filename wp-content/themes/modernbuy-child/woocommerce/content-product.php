@@ -69,6 +69,7 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
 		<div class="box-text <?php echo flatsome_product_box_text_class(); ?>">
 
             <?php
+            ## 컬러칩 생성
             $array=array();
             $color = $product->get_attribute('color');
             if(strpos($color,'|'))      $array=explode("|", $color);
@@ -80,53 +81,17 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
 
             if($color!="") {
                 echo "<ul class='color-chip'>";
-                for ($i=0; $i<= $color_count; $i++) {
-                    $array[$i]= strtoupper($array[$i]);
-                    if($array[$i] == "WHITE") $array[$i] = "#FFFFFF";
-                    elseif ($array[$i] == "BEIGE") $array[$i] = "#d1c1a1";
-                    elseif ($array[$i] == "BLACK") $array[$i] = "#242424";
-                    elseif ($array[$i] == "BLUE") $array[$i] = "#0f4ad0";
-                    elseif ($array[$i] == "BLUEGREEN") $array[$i] = "#0d97b4";
-                    elseif ($array[$i] == "BROWN") $array[$i] = "#832b13";
-                    elseif ($array[$i] == "CAMEL") $array[$i] = "#d27028";
-                    elseif ($array[$i] == "CHARCOAL") $array[$i] = "#4f566d";
-                    elseif ($array[$i] == "CHECK") $array[$i] = "#8a8a8a";
-                    elseif ($array[$i] == "DARKBLUE") $array[$i] = "#021b76";
-                    elseif ($array[$i] == "DARKGRAY") $array[$i] = "#4b4e5b";
-                    elseif ($array[$i] == "DARKBEIGE") $array[$i] = "#c6ac93";
-                    elseif ($array[$i] == "GRAY") $array[$i] = "#a8a8a8";
-                    elseif ($array[$i] == "GREEN") $array[$i] = "#056e16";
-                    elseif ($array[$i] == "IVORY") $array[$i] = "#fbfaf7";
-                    elseif ($array[$i] == "KHAKI") $array[$i] = "#89907a";
-                    elseif ($array[$i] == "LIME") $array[$i] = "#e5ffcc";
-                    elseif ($array[$i] == "LACE") $array[$i] = "#ffffff";
-                    elseif ($array[$i] == "LEATHERBLACK") $array[$i] = "#000000";
-                    elseif ($array[$i] == "MINT") $array[$i] = "#a3e09e";
-                    elseif ($array[$i] == "MUSTARD") $array[$i] = "#ffbe0e";
-                    elseif ($array[$i] == "ORABGE") $array[$i] = "#ff7e15";
-                    elseif ($array[$i] == "PINK") $array[$i] = "#ff81a5";
-                    elseif ($array[$i] == "PINKBEIGE") $array[$i] = "#f0dddb";
-                    elseif ($array[$i] == "PURPLE") $array[$i] = "#eba1f8";
-                    elseif ($array[$i] == "RED") $array[$i] = "#FF0000";
-                    elseif ($array[$i] == "WINE") $array[$i] = "#bb0f38";
-                    elseif ($array[$i] == "YELLOW") $array[$i] = "#ffd200";
-                    elseif ($array[$i] == "SKY") $array[$i] = "#6eadde";
-                    elseif ($array[$i] == "SKYBLUE") $array[$i] = "#87CEEB";
-                    elseif ($array[$i] == "SUEDEBLACK") $array[$i] = "#000000";
-                    elseif ($array[$i] == "PURPLE") $array[$i] = "#eba1f8";
-                    elseif ($array[$i] == "PEACH") $array[$i] = "#F98B88";
-                    elseif ($array[$i] == "NAVY") $array[$i] = "#233263";
-                    elseif ($array[$i] == "PEACH") $array[$i] = "#F98B88";
-                    elseif ($array[$i] == "LIGHTBLUE") $array[$i] = "#ADD8E6";
-                    elseif ($array[$i] == "LIGHTGARY") $array[$i] = "#D3D3D3";
-                    elseif ($array[$i] == "LIGHTBEIGE") $array[$i] = "#eee6de";
+                color();
 
+                for($i = 0; $i <= $color_count; $i++) {
                     ?>
                     <li style="background:<?= $array[$i] ?>; border:1px solid;"></li>
                     <?php
                 }
+
                 echo "</ul>";
             }
+
 				echo '<div class="title-wrapper">';
 				do_action( 'woocommerce_shop_loop_item_title' );
 				echo '</div>';
