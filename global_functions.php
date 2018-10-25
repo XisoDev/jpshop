@@ -125,28 +125,6 @@ function color()
     return $array;
 }
 
-
-## 품절 상태일 때 글자 회색표시
-add_filter( 'woocommerce_variation_option_name', 'customizing_variations_terms_name', 10, 1 );
-
-function customizing_variations_terms_name( $term_name ) {
-
-    global $product;
-    // Get available product variations
-    $product_variations = $product->get_available_variations();
-
-    foreach ( $product_variations as $product_variation ) {
-        if( isset( $product_variation['attributes'] ) ) {
-            $key = array_search($term_name, $product_variation['attributes']);
-
-            if( $key !== false && ! $product_variation['is_in_stock'] ) {
-                return $term_name . ' - Out of Stock';
-            }
-        }
-    }
-
-    return $term_name;
-}
 ## 품절 상태일 때 선택 불가
 add_filter( 'woocommerce_variation_is_active', 'grey_out_variations_when_out_of_stock', 10, 2 );
 
