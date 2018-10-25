@@ -94,9 +94,6 @@ Version: 3.6.0.1533112807
         padding-right:0;
         max-width: 100%;
     }
-    div.cart-container.container.page-wrapper.page-checkout{
-        padding-left:210px;
-    }
 }
 /*페이지 템플릿 PULL 상태일떄 사이드바 비출력*/
 .page-template.page-template-page-blank .sidebars{
