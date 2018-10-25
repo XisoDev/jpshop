@@ -94,8 +94,8 @@ Version: 3.6.0.1533112807
         padding-right:0;
         max-width: 100%;
     }
-    .cart-container .container .page-wrapper .page-checkout{
-        padding-left:190px;
+    .cart-container.container.page-wrapper.page-checkout div.woocommerce{
+        padding-left:180px;
     }
 }
 /*페이지 템플릿 PULL 상태일떄 사이드바 비출력*/
