@@ -34,7 +34,7 @@ Updated: 2018-08-01 17:42:05
 }
 
 /* PC 에서만 적용 */
-@media all and (min-width:851px) {
+@media all and (min-width:850px) {
     /* 카테고리탭 카테고리, 상품 썸네일 사이즈 조정*/
     div.row.category-page-row div.col.large-3 {
         max-width: 20%;
@@ -52,6 +52,18 @@ Updated: 2018-08-01 17:42:05
         right:10px !important;
         bottom: 60px !important;
     }
+
+    .large-7{
+        padding-left:50px;
+        padding-right:0;
+        max-width: 100%;
+    }
+    .large-5{
+        padding-left:50px;
+        padding-right:0;
+        max-width: 100%;
+    }
+
 }
 
 ul{
