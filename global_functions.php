@@ -136,4 +136,5 @@ function grey_out_variations_when_out_of_stock( $grey_out, $variation ) {
     return true;
 }
 
+
 ?>
