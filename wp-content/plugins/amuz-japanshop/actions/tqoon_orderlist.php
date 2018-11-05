@@ -98,12 +98,7 @@ foreach($order_list as $no => $order_id){
     if($order->get_meta('평균 관세율')!="")
     $perper = $order->get_meta('평균 관세율');
     else $perper = "확인 중";
-  /*  $oHSInfo = getHsValues($hs_codes, $order->get_items()); */
-/*
-    $oHSInfo['tqoon_per'];
-    $oHSInfo_count=count($items);
-    $perepr = $oHSInfo['tqoon_per']/$oHSInfo_count;
-*/
+
     ##관세율
     $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),floatval($perper));
     ##결제방법
