@@ -90,6 +90,12 @@ function flatsome_go_to_top(){
 }
 add_action( 'flatsome_footer', 'flatsome_go_to_top');
 
+function flatsome_go_to_down(){
+    if(!get_theme_mod('back_to_down', 1)) return;
+    echo get_template_part('template-parts/footer/back-to-down');
+}
+add_action( 'flatsome_footer', 'flatsome_go_to_down');
+
 
 /* Custom footer scripts */
 function flatsome_footer_scripts(){

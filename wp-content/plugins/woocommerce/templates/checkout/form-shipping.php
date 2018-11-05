@@ -53,6 +53,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php endif; ?>
 </div>
+<div class="precautions">
+<?php
+echo "発送までに7~14日ほどいただいておりますので<br>
+    お急ぎの方はお早めにご注文下さいませ。";
+?>
+</div>
 <div class="woocommerce-additional-fields">
 	<?php do_action( 'woocommerce_before_order_notes', $checkout ); ?>
 

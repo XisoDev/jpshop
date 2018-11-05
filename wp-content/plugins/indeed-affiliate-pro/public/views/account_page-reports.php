@@ -68,7 +68,6 @@
 </div>
 
 
-
 <?php
 if (!empty($data['achivements'])): ?>
 <div class="uap-achievements">

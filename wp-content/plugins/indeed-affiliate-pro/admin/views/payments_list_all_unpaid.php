@@ -3,8 +3,8 @@
 	
 		<?php if (!empty($data['subtitle'])):?>
 			<h4><?php echo $data['subtitle'];?></h4>
-		<?php endif;?>	
-	
+		<?php endif;?>
+
 	<?php if (!empty($data['listing_items'])) : ?>
 	<div class="uap-special-box">
 	<?php echo $data['filter'];?>
