@@ -194,7 +194,6 @@ function getHsValues($hs_codes, $items){
 
         //관세 확률 합
         $oHSInfo['tqoon_per']+=$tax;
-        $a+=1;
 
     }
     $oHSInfo['tqoon_per'];
