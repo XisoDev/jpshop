@@ -55,7 +55,7 @@
 			</div>
 		</div>
 <?php endif;?>
-<?php /*if (!empty($data['success_rate'])): ?>
+<?php if (!empty($data['success_rate'])): ?>
 		<div class="uapcol-md-3">
 			<div class="uap-account-no-box">
 			  <div class="uap-account-no-box-inside">
@@ -63,7 +63,7 @@
 			  </div>
 			</div>
 		</div>
-<?php endif;*/?>
+<?php endif;?>
 
 </div>
 

@@ -12,11 +12,11 @@
 		<div class="uapcol-md-3 uap-account-visits-tab2">
 			<div class="uap-account-no-box uap-account-box-blue"><div class="uap-account-no-box-inside"><div class="uap-count"><?php echo $data['stats']['conversions'];?></div><div class="uap-detail"><?php _e('Conversions', 'uap');?></div></div></div>
 		</div>
-        <?php /*?>
+        <?php ?>
 		<div class="uapcol-md-3 uap-account-visits-tab3">
 			<div class="uap-account-no-box uap-account-box-red"><div class="uap-account-no-box-inside"><div class="uap-count"><?php echo $data['stats']['success_rate'] . ' %';?></div><div class="uap-detail"><?php _e('Success Rate', 'uap');?></div></div></div>
 		</div>
-        <?php */?>
+        <?php ?>
 
 	</div>
 	<?php echo $data['filter'];?>
