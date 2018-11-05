@@ -17,6 +17,7 @@
 			<div class="uap-account-no-box uap-account-box-red"><div class="uap-account-no-box-inside"><div class="uap-count"><?php echo $data['stats']['success_rate'] . ' %';?></div><div class="uap-detail"><?php _e('Success Rate', 'uap');?></div></div></div>
 		</div>
         <?php */?>
+
 	</div>
 	<?php echo $data['filter'];?>
 	<?php if (!empty($data['items']) && is_array($data['items'])):?>
