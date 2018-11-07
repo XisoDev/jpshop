@@ -322,6 +322,11 @@ else {
         $total_tax += $line_amount * 0.08;                  # 총 결제금액의 티쿤 수수료 계산
         $total_excise += round($total_tax / 1.08); # 소비세 계산
     }
+    if($order->get_meta("환불 소비세 조정") !=""){
+        $total_excise = $total_excise - $order->get_meta("환불 소비세 조정");
+    }
+    if($order->get_meta("환불 티쿤 수수료 조정") !="")
+        $total_tax = $total_tax - $order->get_meta("티쿤 수수료 조정");
     $pay_refund = $refund;
     /*if ($payment == '편의점') {
             if($pay_refund < 1)$pg_tax = 0;
