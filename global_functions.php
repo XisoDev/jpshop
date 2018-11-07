@@ -89,7 +89,7 @@ function color()
         elseif ($array[$i] == "BLUE") $array[$i] = "#0f4ad0";
         elseif ($array[$i] == "BLUEGREEN") $array[$i] = "#0d97b4";
         elseif ($array[$i] == "BROWN") $array[$i] = "#832b13";
-        elseif ($array[$i] == "CAMEL") $array[$i] = "#d27028";
+        elseif ($array[$i] == "CAMEL") $array[$i] = "#954906";
         elseif ($array[$i] == "CHARCOAL") $array[$i] = "#4f566d";
         elseif ($array[$i] == "CHECK") $array[$i] = "#8a8a8a";
         elseif ($array[$i] == "DARKBLUE") $array[$i] = "#021b76";
