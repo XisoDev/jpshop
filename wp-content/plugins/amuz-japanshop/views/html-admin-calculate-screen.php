@@ -326,7 +326,7 @@ else {
         $total_excise = $total_excise - $order->get_meta("환불 소비세 조정");
     }
     if($order->get_meta("환불 티쿤 수수료 조정") !="")
-        $total_tax = $total_tax - $order->get_meta("티쿤 수수료 조정");
+        $total_tax = $total_tax - $order->get_meta("환불 티쿤 수수료 조정");
     $pay_refund = $refund;
     /*if ($payment == '편의점') {
             if($pay_refund < 1)$pg_tax = 0;
