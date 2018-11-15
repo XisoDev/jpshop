@@ -104,25 +104,29 @@ foreach($order_list as $no => $order_id){
     ##결제방법
     $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),get_payment_method($order->payment_method));
 
+    ##주문 ip 어드레스
+    $IP=get_post_meta( $order->id, '_customer_ip_address', true );
+    $ip_address = str_replace(':','',$IP);
+    $objPHPExcel->getActiveSheet()->setCellValue("K" . ($no+2),$ip_address);
     ##입금상태
     if($order->payment_method=="codpf") {
         if ($status_list["wc-" . $order->get_status()] == "완료" or $status_list["wc-" . $order->get_status()] == "환불") {
-            $status = "대인 > 결제";
+            $status = "입금";
         }
-        else$status = "대인 > 미결제";
+        else$status = "미입금";
     }
     elseif($order->payment_method=="zeus_cs") {
         if ($order->get_meta('payment_status')=="complete") {
-            $status = "편의점 > 결제";
+            $status = "입금";
         }
-        else$status = "편의점 > 미결제";
+        else$status = "미입금";
 
     }
     else{
         if ($order->get_meta('payment_status')=="complete") {
-            $status = "PG결제 > 결제";
+            $status = "입금";
         }
-        else$status = "PG결제 > 미결제";
+        else$status = "미입금";
     }
     $objPHPExcel->getActiveSheet()->setCellValue("L" . ($no+2),$status);
     /*##입금일시
