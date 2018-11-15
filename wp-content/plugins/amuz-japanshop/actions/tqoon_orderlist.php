@@ -110,7 +110,7 @@ foreach($order_list as $no => $order_id){
         $payment='편의점결제';
     elseif(get_payment_method($order->payment_method)=="기타")
         $payment='기타';
-    $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),get_payment_method($order->payment_method));
+    $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),$payment);
 
     ##주문 ip 어드레스
     $IP=get_post_meta( $order->id, '_customer_ip_address', true );
