@@ -102,6 +102,14 @@ foreach($order_list as $no => $order_id){
     ##관세율
     $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),floatval($perper));
     ##결제방법
+    if(get_payment_method($order->payment_method)=="신용카드")
+        $payment='카드결제';
+    elseif(get_payment_method($order->payment_method)=="대인결제")
+        $payment='대인결제';
+    elseif(get_payment_method($order->payment_method)=="편의점")
+        $payment='편의점결제';
+    elseif(get_payment_method($order->payment_method)=="기타")
+        $payment='기타';
     $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),get_payment_method($order->payment_method));
 
     ##주문 ip 어드레스
