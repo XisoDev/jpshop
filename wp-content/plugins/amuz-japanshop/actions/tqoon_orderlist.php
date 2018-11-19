@@ -121,7 +121,10 @@ foreach($order_list as $no => $order_id){
             elseif($site_code["fullname"]=="modernbuy")
                 $ip_address = '';
         }
-        else$status = "미입금";
+        else {
+            $status = "미입금";
+            $ip_address = "";
+        }
     }
     elseif($order->payment_method=="zeus_cs") {
         if ($order->get_meta('payment_status')=="complete") {
@@ -131,7 +134,10 @@ foreach($order_list as $no => $order_id){
             elseif($site_code["fullname"]=="modernbuy")
                 $ip_address = '2132000299';
         }
-        else$status = "미입금";
+        else {
+            $status = "미입금";
+            $ip_address = "";
+        }
 
     }
     elseif($order->payment_method=="zeus_cc"){
@@ -142,7 +148,10 @@ foreach($order_list as $no => $order_id){
             elseif($site_code["fullname"]=="modernbuy")
                 $ip_address = '2012007284';
         }
-        else$status = "미입금";
+        else {
+            $status = "미입금";
+            $ip_address = "";
+        }
     }
     else{
         if ($order->get_meta('payment_status')=="complete") {
@@ -152,7 +161,10 @@ foreach($order_list as $no => $order_id){
             elseif($site_code["fullname"]=="modernbuy")
                 $ip_address = '2082000820';
         }
-        else$status = "미입금";
+        else {
+            $status = "미입금";
+            $ip_address = "";
+        }
     }
 
     $objPHPExcel->getActiveSheet()->setCellValue("K" . ($no+2),$ip_address);
