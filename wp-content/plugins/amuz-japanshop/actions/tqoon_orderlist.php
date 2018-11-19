@@ -112,30 +112,50 @@ foreach($order_list as $no => $order_id){
         $payment='기타';
     $objPHPExcel->getActiveSheet()->setCellValue("J" . ($no+2),$payment);
 
-    ##주문 ip 어드레스
-    $IP=get_post_meta( $order->id, '_customer_ip_address', true );
-    $ip_address = str_replace(':','',$IP);
-    $objPHPExcel->getActiveSheet()->setCellValue("K" . ($no+2),$ip_address);
     ##입금상태
     if($order->payment_method=="codpf") {
         if ($status_list["wc-" . $order->get_status()] == "완료" or $status_list["wc-" . $order->get_status()] == "환불") {
             $status = "입금";
+            if($site_code["fullname"]=="sweetplus")
+                $ip_address = '';
+            elseif($site_code["fullname"]=="modernbuy")
+                $ip_address = '';
         }
         else$status = "미입금";
     }
     elseif($order->payment_method=="zeus_cs") {
         if ($order->get_meta('payment_status')=="complete") {
             $status = "입금";
+            if($site_code["fullname"]=="sweetplus")
+                $ip_address = '2132000268';
+            elseif($site_code["fullname"]=="modernbuy")
+                $ip_address = '2132000299';
         }
         else$status = "미입금";
 
     }
-    else{
+    elseif($order->payment_method=="zeus_cc"){
         if ($order->get_meta('payment_status')=="complete") {
             $status = "입금";
+            if($site_code["fullname"]=="sweetplus")
+                $ip_address = '2012007001';
+            elseif($site_code["fullname"]=="modernbuy")
+                $ip_address = '2012007284';
         }
         else$status = "미입금";
     }
+    else{
+        if ($order->get_meta('payment_status')=="complete") {
+            $status = "입금";
+            if($site_code["fullname"]=="sweetplus")
+                $ip_address = '2082000772';
+            elseif($site_code["fullname"]=="modernbuy")
+                $ip_address = '2082000820';
+        }
+        else$status = "미입금";
+    }
+
+    $objPHPExcel->getActiveSheet()->setCellValue("K" . ($no+2),$ip_address);
     $objPHPExcel->getActiveSheet()->setCellValue("L" . ($no+2),$status);
     /*##입금일시
     $objPHPExcel->getActiveSheet()->setCellValue("I" . ($no+2),get_post_meta( trim(str_replace('#', '', $order->get_order_number())), '_paid_date', true));
