@@ -34,7 +34,7 @@ $site_code = getSiteOrderCode();
 
 foreach($order_list as $no => $order_id){
     $order = new WC_Order( $order_id );
-    $objPHPExcel->getActiveSheet()->setCellValue("A" . ($no+2),$order->get_date_created()->format("Y.m.d H:i"));
+    $objPHPExcel->getActiveSheet()->setCellValue("A" . ($no+2),$order->get_date_created()->format("Y-m-d H:i"));
     $objPHPExcel->getActiveSheet()->setCellValue("B" . ($no+2),$site_code["order_code"] . trim(str_replace('#', '', $order->get_order_number())));
     // Sum line item costs.
     $cart_total = 0;
@@ -177,7 +177,7 @@ foreach($order_list as $no => $order_id){
     $objPHPExcel->getActiveSheet()->setCellValue("M" . ($no+2),$status_list["wc-".$order->get_status()]);
 
     ##발송일
-    $randomHour = mt_rand(1,5);
+    $randomHour = sprintf('%02d', mt_rand(2,5));
     $randomMin = sprintf('%02d', mt_rand(1,59));
     $randomSc = mt_rand(1,59);
     if($order->get_meta('ywot_pick_up_date' )!="") {
