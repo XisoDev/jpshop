@@ -176,11 +176,14 @@ foreach($order_list as $no => $order_id){
     $objPHPExcel->getActiveSheet()->setCellValue("M" . ($no+2),$status_list["wc-".$order->get_status()]);
 
     ##발송일
-    $randomHour = mt_rand(3,6);
-    $randomMin = mt_rand(10, 59);
-    $randomSc=mt_rand(10,59);
-    $objPHPExcel->getActiveSheet()->setCellValue("N" . ($no+2),($order->get_meta('ywot_pick_up_date' ) .$randomHour.":".$randomMin.":".$randomSc));
-
+    $randomHour = sprintf('%02d', mt_rand(1,5));
+    $randomMin = sprintf('%02d', mt_rand(1,59));
+    $randomSc = sprintf('%02d', mt_rand(1,59));
+    if($order->get_meta('ywot_pick_up_date' )!="") {
+        $objPHPExcel->getActiveSheet()->setCellValue("N" . ($no + 2), ($order->get_meta('ywot_pick_up_date') ." ". $randomHour . ":" . $randomMin . ":" . $randomSc));
+    }
+    else
+        $objPHPExcel->getActiveSheet()->setCellValue("N" . ($no + 2), "");
     ##비고
     $objPHPExcel->getActiveSheet()->setCellValue("P" . ($no+2),$order->get_meta('비고' ));
     $range_id = "A" . ($no+2) . ":P" . ($no+2);
