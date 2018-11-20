@@ -175,7 +175,9 @@ foreach($order_list as $no => $order_id){
     ##주문단계
     $objPHPExcel->getActiveSheet()->setCellValue("M" . ($no+2),$status_list["wc-".$order->get_status()]);
     ##발송일
-    $objPHPExcel->getActiveSheet()->setCellValue("N" . ($no+2),$order->get_meta('ywot_pick_up_date' ));
+    $randomHour = mt_rand(1,6);
+    $randomMin = mt_rand(1, 59);
+    $objPHPExcel->getActiveSheet()->setCellValue("N" . ($no+2),date("($order->get_meta('ywot_pick_up_date' ) $randomHour:$randomMin)"));
     ##비고
     $objPHPExcel->getActiveSheet()->setCellValue("P" . ($no+2),$order->get_meta('비고' ));
     $range_id = "A" . ($no+2) . ":P" . ($no+2);
